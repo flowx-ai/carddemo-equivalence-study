@@ -1,0 +1,5 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-tranrept-zflx-sonnet-r3/memory ALLOWED
+OUTSIDE Glob ~/Dev/_tests/carddemo-builds DENIED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-tranrept-zflx-sonnet-r3/memory/tranrept-build-location.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-tranrept-zflx-sonnet-r3/memory/MEMORY.md ALLOWED
+outside accesses: 4

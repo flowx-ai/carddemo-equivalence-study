@@ -1,0 +1,8 @@
+{
+ "case": "e2e-o2-rpt-01",
+ "outcome": "carried through",
+ "touched_units": 1,
+ "differing": [],
+ "session_divergences": 6,
+ "baseline_divergences": 6
+}

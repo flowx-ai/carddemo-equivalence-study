@@ -1,0 +1,181 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version 346f817f (head of the build branch, plan COMPLETED)\n- START: transact, acctdata, cardxref, custdata; MODE files\n- END: top-level creastmt_statements, creastmt_statements_html, assumptions_md\n- Register: manifest lines 51-77",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   51,
+   "encoding and copybooks not supplied"
+  ],
+  [
+   "R-STMT-TXN",
+   51,
+   "encoding and copybooks not supplied"
+  ],
+  [
+   "R-STMT-TOTAL",
+   51,
+   "encoding and copybooks not supplied"
+  ],
+  [
+   "R-STMT-SET",
+   51,
+   "encoding and copybooks not supplied"
+  ],
+  [
+   "R-STMT-BAL",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   52,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   54,
+   "line handling not specified"
+  ],
+  [
+   "R-STMT-ABEND",
+   55,
+   "missing input and malformed policy"
+  ],
+  [
+   "R-STMT-SET",
+   55,
+   "missing input and malformed policy"
+  ],
+  [
+   "R-STMT-TXN",
+   58,
+   "key discrepancy unresolved"
+  ],
+  [
+   "R-STMT-SET",
+   58,
+   "key discrepancy unresolved"
+  ],
+  [
+   "R-STMT-TXN",
+   59,
+   "cycle filter left to confirm"
+  ],
+  [
+   "R-STMT-BAL",
+   60,
+   "sign variants not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   60,
+   "sign variants not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   60,
+   "sign variants not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   61,
+   "overflow and arithmetic not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   61,
+   "overflow and arithmetic not specified"
+  ],
+  [
+   "R-STMT-SET",
+   63,
+   "duplicate input absent"
+  ],
+  [
+   "R-STMT-TXN",
+   63,
+   "duplicate input absent"
+  ],
+  [
+   "R-STMT-SET",
+   64,
+   "omission policy absent"
+  ],
+  [
+   "R-STMT-ABEND",
+   64,
+   "omission policy absent"
+  ],
+  [
+   "R-STMT-NAME",
+   65,
+   "assembly not fixed"
+  ],
+  [
+   "R-STMT-ADDR",
+   65,
+   "assembly not fixed"
+  ],
+  [
+   "R-STMT-FICO",
+   66,
+   "blank handling not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   71,
+   "HTML capacity rules absent"
+  ],
+  [
+   "R-STMT-NAME",
+   71,
+   "HTML capacity rules absent"
+  ],
+  [
+   "R-STMT-SET",
+   72,
+   "concatenation recovery not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   72,
+   "concatenation recovery not specified"
+  ]
+ ]
+}

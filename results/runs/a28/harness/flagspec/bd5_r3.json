@@ -1,0 +1,168 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "statementOutputs"
+ },
+ "source": "- A2 version: 13f6d29d (head of the build branch, committed; plan COMPLETED, no retry)\n- START: transact, acctdata, cardxref, custdata = file text, contract names\n- END returns statementOutputs (plan's end node and the run's output_keys); decode _root statementOutputs\n- MODE files\n- Register: assume(id, what, source) lines 47-66",
+ "cr_rule": "line 49 totals: positive amounts only in Total EXP, credits and returns retained as lines, citing pp.2,4,13,21; stated as source-defined.",
+ "register": null,
+ "mode": null,
+ "build": [
+  [
+   "R-STMT-SET",
+   47,
+   "account-wide pooling and tie order unstated"
+  ],
+  [
+   "R-STMT-TXN",
+   47,
+   "account-wide pooling and tie order unstated"
+  ],
+  [
+   "R-STMT-TXN",
+   48,
+   "cycle filtering TODO; no filter"
+  ],
+  [
+   "R-STMT-SET",
+   51,
+   "line endings, encoding and filler unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   52,
+   "xref offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   53,
+   "account offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   54,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   54,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   54,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   55,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   55,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   56,
+   "sign encoding inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   56,
+   "sign encoding inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   56,
+   "sign encoding inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   57,
+   "concatenation unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   58,
+   "no assembly rule"
+  ],
+  [
+   "R-STMT-FICO",
+   59,
+   "conversion and missing-value presentation unstated"
+  ],
+  [
+   "R-STMT-OTHER",
+   59,
+   "conversion and missing-value presentation unstated"
+  ],
+  [
+   "R-STMT-NAME",
+   60,
+   "input trimming and overflow unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   60,
+   "input trimming and overflow unstated"
+  ],
+  [
+   "R-STMT-TXN",
+   60,
+   "input trimming and overflow unstated"
+  ],
+  [
+   "R-STMT-BAL",
+   61,
+   "overflow behaviour unstated"
+  ],
+  [
+   "R-STMT-TXN",
+   61,
+   "overflow behaviour unstated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   61,
+   "overflow behaviour unstated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   61,
+   "overflow behaviour unstated"
+  ],
+  [
+   "R-STMT-NAME",
+   62,
+   "escaping and line overflow unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   62,
+   "escaping and line overflow unstated"
+  ],
+  [
+   "R-STMT-SET",
+   64,
+   "record error handling unspecified"
+  ],
+  [
+   "R-STMT-ABEND",
+   64,
+   "record error handling unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   65,
+   "empty runs unspecified"
+  ]
+ ]
+}

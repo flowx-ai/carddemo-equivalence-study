@@ -1,0 +1,93 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytranFile",
+  "acctdata": "acctdataFile",
+  "cardxref": "cardxrefFile",
+  "tcatbal": "tcatbalFile",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "posttranOutput"
+ },
+ "source": "- START (register A2; script lines 82-138, 329-330): dailytranFile, acctdataFile, cardxrefFile, tcatbalFile (text), businessDate; batchId unset\n- END payload ${posttranOutput} (README line 11; script lines 328-341) holding posttran_transact/_dalyrejs/_acctdata/_tcatbal: decode _root posttranOutput (merged when present), contract names\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-POST-102",
+   44,
+   "B1 BR-10 order vs the sequential read loop of BR-09 / legacy comparison: the wiki does not reconcile these"
+  ],
+  [
+   "R-POST-103",
+   54,
+   "C1 whether later checks still run after 100/101: not said"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   59,
+   "C2 open DECISION resolved as keep last (103 over 102)"
+  ],
+  [
+   "R-POST-103",
+   77,
+   "C6 blank expiry dates: wiki silent"
+  ],
+  [
+   "R-POST-101",
+   83,
+   "C8 status/card checks absent from the rules"
+  ],
+  [
+   "R-POST-WRITE",
+   95,
+   "D3 tran_id: a conflict in the wiki (sequence vs idempotency); daily id kept"
+  ],
+  [
+   "R-POST-BAL",
+   106,
+   "D5 overflow: silence; low-order digits kept"
+  ],
+  [
+   "R-POST-TCAT",
+   106,
+   "D5 overflow: silence"
+  ],
+  [
+   "R-POST-COPY",
+   119,
+   "E1 DT-12 TODO on the trailer layout"
+  ],
+  [
+   "R-POST-WRITE",
+   130,
+   "F2 restart DECISION resolved as rerun"
+  ],
+  [
+   "R-POST-WRITE",
+   135,
+   "F3 duplicate ids: conflict with read = posted + rejected"
+  ],
+  [
+   "R-POST-WRITE",
+   149,
+   "G1 short or blank lines: CONTRACT silent"
+  ],
+  [
+   "R-POST-COPY",
+   154,
+   "G2 sign encoding not named"
+  ],
+  [
+   "R-POST-BAL",
+   154,
+   "G2 sign encoding not named"
+  ],
+  [
+   "R-POST-BAL",
+   157,
+   "G3 duplicate keys: silence"
+  ]
+ ],
+ "cr_rule": "B1: whole feed sorted ascending by amount (stable, feed order on ties) before any check; implemented as written while noting BR-10 cites CBTRN02C and BR-09/legacy comparison describe a sequential loop ('The wiki does not reconcile these'). C5: formula with stored negative debits (no sign change)."
+}

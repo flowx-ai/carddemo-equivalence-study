@@ -1,0 +1,85 @@
+2026-10-29T18:22:19Z start A24 adapter validation (defs) on demo_ui_carddemo_pilot, profile demo_ui; instrument only
+2026-10-29T18:22:20Z end A24 adapter validation (defs)
+2026-10-29T18:23:55Z start A24 adapter validation (run) on demo_ui_carddemo_pilot, profile demo_ui; instrument only
+2026-10-29T18:24:48Z start A24 adapter validation: make-loader fix, probing operator loader creation on the pilot (USRSEC), instrument only
+2026-10-29T18:26:35Z end A24 adapter validation: make-loader fix; operator loader workflows zz_a24_op_{clear,insert}_<file> created on the pilot (10 workflows, 10 DB operations zzA24Op*), instrument only
+2026-10-29T18:27:25Z start A24 adapter validation (run) on demo_ui_carddemo_pilot, profile demo_ui; instrument only
+2026-10-29T18:30:19Z aborted A24 adapter validation (run) by the operator after 3 cases: pilot map body for the menu actions lacks the nested params object (map and adapter fix 2); pilot stores restored by the next run
+2026-10-29T18:31:41Z start A24 adapter validation (run) on demo_ui_carddemo_pilot, profile demo_ui; instrument only
+2026-10-29T18:43:08Z end A24 adapter validation (run); pilot stores restored to the base state
+2026-10-29T18:43:40Z start A24 adapter validation (browser subset) on demo_ui_carddemo_pilot; instrument only
+2026-10-29T18:47:53Z end A24 adapter validation (browser subset); pilot stores restored
+2026-10-29T18:48:51Z start A24 adapter validation (browser subset) on demo_ui_carddemo_pilot; instrument only
+2026-10-29T18:53:12Z end A24 adapter validation (browser subset); pilot stores restored
+2026-10-29T18:53:31Z start A24 adapter validation (browser subset) on demo_ui_carddemo_pilot; instrument only
+2026-10-29T18:57:41Z end A24 adapter validation (browser subset); pilot stores restored
+2026-10-29T18:59:50Z START A24 zflx build cd_a24_sf6_zflx_r1 (profile a24_ui via proxy, claude-opus-5-5)
+2026-10-29T19:17:56Z END A24 zflx build cd_a24_sf6_zflx_r1
+2026-10-29T19:23:01Z start A24 operator loaders on cd_a24_sf6_zflx_r1 (make-loader; instrument addition, not part of the build)
+2026-10-29T19:23:40Z end A24 operator loaders on cd_a24_sf6_zflx_r1
+2026-10-29T19:24:14Z start A24 online execution cd_a24_sf6_zflx_r1 (17 cases, workflow level)
+2026-10-29T19:35:05Z end A24 online execution cd_a24_sf6_zflx_r1
+2026-10-29T19:36:10Z start A24 browser subset cd_a24_sf6_zflx_r1
+2026-10-29T19:40:22Z end A24 browser subset cd_a24_sf6_zflx_r1
+2026-10-29T19:40:41Z start A24 e2e baseline (zflx batch chain on the base state, no session)
+2026-10-29T19:40:41Z aborted A24 e2e-base cd_a24_sf6_zflx_r1 rc=1
+2026-10-29T19:41:20Z note: the aborted e2e baseline failed while writing its first request (relative output path under the scratch root), before any FlowX call; partial dir removed; a24_exec.sh now passes absolute paths
+2026-10-29T19:41:20Z start A24 e2e baseline (zflx batch chain on the base state, no session)
+2026-10-29T19:41:30Z end A24 e2e baseline
+2026-10-29T19:41:32Z start A24 e2e cd_a24_sf6_zflx_r1 (o-bil-01 on base state, then the zflx batch chain)
+2026-10-29T19:42:54Z aborted A24 e2e cd_a24_sf6_zflx_r1 rc=1
+2026-10-29T19:45:05Z START A24 zflx build cd_a24_sf6_zflx_r2 (profile a24_ui via proxy, claude-opus-5-5)
+2026-10-29T19:47:12Z note: r1 e2e scored offline after instrument fix 5 (832bd2b), no FlowX call
+2026-10-29T19:48:41Z note: r1 e2e scored offline with instrument fix 5 (832bd2b + completion), no FlowX call; outcome recorded in runs/a24/zflx/r1/e2e/result.json
+2026-10-29T20:08:42Z END A24 zflx build cd_a24_sf6_zflx_r2
+2026-10-29T20:17:59Z note: cd_a24_sf6_zflx_r2 builder session ended at 20:08:42Z on the account's seven-day usage limit (rate_limit_event rejected, resets 2026-11-02 01:00 Europe/Bucharest), after 363 tool calls and $12.04, mid-build (last calls: create_db_operation x5, get_workflow); no register (assumptions.md) written; log.txt 'result: success' is the CLI's subtype, not a finished build. Extraction run; sample passwords in transcript and one DB system's test-data operation masked (raw outside repo). Not scored pending the coordinator.
+2026-10-29T20:18:42Z infrastructure intervention: harness image on dev-env set to <registry>/harness:local-3cc15a66e-1793305090 (digest sha256:7360d185d448749b7d62a46c232a9da88dfac8ac7c694f2110ebc5885f31b2ca; D6, A1, A9/A12 fixes, the platform repository 3cc15a66e on <internal branch>), user-approved one-time deploy; rollout complete 20:19:12Z, pod harness-54cdb86cfc-dcnvm ready, 0 restarts, liveness 200, readiness UP; harness pod restarted; no zflx build in flight (r2 ended 20:08:42Z, no r3 START, runs/a24/zflx/r3/log.txt absent); no study build started, no relogin; rollback image local-4144a2849-1793274007 (sha256:1eff15db...0003)
+2026-10-29T20:27:31Z start A24 operator loaders on cd_a24_sf6_zflx_r2 (make-loader; instrument addition, not part of the build)
+2026-10-29T20:28:11Z end A24 operator loaders on cd_a24_sf6_zflx_r2
+2026-10-29T20:28:20Z start A24 online execution cd_a24_sf6_zflx_r2 (17 cases, workflow level)
+2026-10-29T20:38:57Z end A24 online execution cd_a24_sf6_zflx_r2
+2026-10-29T20:40:04Z start A24 browser subset cd_a24_sf6_zflx_r2
+2026-10-29T20:44:19Z end A24 browser subset cd_a24_sf6_zflx_r2
+2026-10-29T20:44:32Z start A24 e2e cd_a24_sf6_zflx_r2 (o-bil-01 on base state, then the zflx batch chain)
+2026-10-29T20:46:03Z aborted A24 e2e cd_a24_sf6_zflx_r2 rc=1
+2026-10-29T20:46:23Z note: the r2 e2e 'aborted rc=1' line is the final secrets check: its only hit is the repository's own tools/fxc_relogin.sh seen through the scratch root's symlink (not committed; the same file r1's chain root holds); the chain, its scoring and the context restore had completed; result.json written. PR2127_LOCK (held for r2 execution since 20:27:27Z) released
+2026-10-29T20:47:37Z note: claude -p probe ('reply ok', claude-opus-5-5, run from a scratch directory, no MCP, no dev-env call) accepted: result success 'ok'. r3 waits for A25 per the coordinator (PR2127_LOCK absent 10 continuous minutes, or the A25 harness A24 arm finished)
+2026-10-30T06:54:01Z note: claude -p probe accepted (resume after the 00:45Z usage-limit stop; user approved continuing); PR2127_LOCK taken for cd_a24_sf6_zflx_r3 (build + execution)
+2026-10-30T06:54:01Z START A24 zflx build cd_a24_sf6_zflx_r3 (profile a24_ui via proxy, claude-opus-5-5)
+2026-10-30T07:17:33Z END A24 zflx build cd_a24_sf6_zflx_r3
+2026-10-30T07:20:52Z start A24 operator loaders on cd_a24_sf6_zflx_r3 (make-loader; instrument addition, not part of the build)
+2026-10-30T07:21:24Z end A24 operator loaders on cd_a24_sf6_zflx_r3
+2026-10-30T07:21:29Z start A24 online execution cd_a24_sf6_zflx_r3 (17 cases, workflow level)
+2026-10-30T07:30:16Z end A24 online execution cd_a24_sf6_zflx_r3
+2026-10-30T07:30:48Z start A24 browser subset cd_a24_sf6_zflx_r3
+2026-10-30T07:31:18Z aborted A24 browser cd_a24_sf6_zflx_r3 rc=3
+2026-10-30T07:31:38Z start A24 e2e cd_a24_sf6_zflx_r3 (o-bil-01 on base state, then the zflx batch chain)
+2026-10-30T07:32:46Z aborted A24 e2e cd_a24_sf6_zflx_r3 rc=1
+2026-10-30T07:32:59Z note: the r3 e2e 'aborted rc=1' line is the final secrets check (its only hit: the repository's tools/fxc_relogin.sh through the scratch root's symlink, not committed); scoring and context restore had completed. r3 browser subset stopped at a Designer sign-in (H18 pending, no output written). PR2127_LOCK released after r3's execution (r2b not before 2026-10-30T07:32:59Z + 3 min)
+2026-10-30T07:35:15Z infrastructure intervention: harness image on dev-env set to <registry>/harness:local-e98bdf0bb-1793344174 (digest sha256:260f21f907743872bd358e0d7385d21c682749975a02c1a7cff17f3f5848bee8; R14, D7 fix + decide-line log level, the platform repository e98bdf0bb on <internal branch>), user-approved deploy; PR2127_LOCK taken 07:35:09Z ('r14deploy') after A24 zflx r3 released it, released 07:36:17Z; rollout complete 07:35:40Z, pod harness-77f49cfb66-mvqzh ready, 0 restarts, liveness 200, readiness UP; harness pod restarted; no study build started, no relogin; rollback image local-3cc15a66e-1793305090 (sha256:7360d185...b2ca)
+2026-10-30T07:39:30Z note: PR2127_LOCK taken for cd_a24_sf6_zflx_r2b (exploratory sensitivity run, post hoc, coordinator ruling; never counted toward H15-H19). Between r3 and r2b another agent held the lock as 'r14deploy' 07:35:09-07:36:25Z
+2026-10-30T07:39:30Z START A24 zflx build cd_a24_sf6_zflx_r2b (profile a24_ui via proxy, claude-opus-5-5)
+2026-10-30T08:13:04Z END A24 zflx build cd_a24_sf6_zflx_r2b
+2026-10-30T08:13:19Z note: browser re-sign-in: the user signed in to dev-env in the browser profile; r3 browser subset run now (the 07:31Z attempt stopped at the sign-in before any case ran and wrote nothing), under PR2127_LOCK held for r2b, after r2b's build ended
+2026-10-30T08:13:19Z aborted A24 browser cd_a24_sf6_zflx_r3 rc=1
+2026-10-30T08:13:33Z note: the 07:31Z attempt had left an empty runs/a24/zflx/r3/browser directory (no file); removed with rmdir before the rerun
+2026-10-30T08:13:33Z start A24 browser subset cd_a24_sf6_zflx_r3
+2026-10-30T08:13:35Z aborted A24 browser cd_a24_sf6_zflx_r3 rc=1
+2026-10-30T08:14:06Z note: the 08:13:33Z r3 browser attempt failed at its first store reset, before any page was opened (the a24_ui profile's project context still pointed at r2b after r2b's build); empty browser dir removed; a24_ui context set back to r3 (set_project_context through the a24_ui wrapper); rerun
+2026-10-30T08:14:06Z start A24 browser subset cd_a24_sf6_zflx_r3
+2026-10-30T08:18:05Z end A24 browser subset cd_a24_sf6_zflx_r3
+2026-10-30T08:21:56Z note: a24_ui context set to r2b (set_project_context through the a24_ui wrapper) before r2b's execution
+2026-10-30T08:22:19Z note: correction - the 08:22Z context call above went to the shared default zflx profile by mistake (operator slip, no workflow run in between); the shared context was restored at once to its prior value (app 57294b5c..., version 28d6678b..., as recorded in r2b/shared_ctx_before.txt and r3/e2e/shared_ctx_before.json), and the a24_ui context was set to r2b through the a24_ui wrapper
+2026-10-30T08:22:23Z start A24 operator loaders on cd_a24_sf6_zflx_r2b (make-loader; instrument addition, not part of the build)
+2026-10-30T08:22:57Z end A24 operator loaders on cd_a24_sf6_zflx_r2b
+2026-10-30T08:24:24Z note: the Claude CLI login changed account at about 08:24Z, after every registered zflx build (r1, r2, r3) and r2b's build had ended, with the same model id (claude-opus-5-5); no build ran across the change
+2026-10-30T08:24:24Z start A24 online execution cd_a24_sf6_zflx_r2b (17 cases, workflow level)
+2026-10-30T08:24:42Z aborted A24 online cd_a24_sf6_zflx_r2b rc=1
+2026-10-30T08:30:48Z note: r2b online start at 08:24Z aborted in the first load, before any build workflow ran: dev-env answered 500 (error.internal.request.authorization_system.failed) then 503 on workflow runs, from at least 08:24Z to about 08:28Z, steady again from 08:29Z; attempt kept as r2b/online_aborted_platform_500; no case was executed; rerun
+2026-10-30T08:30:48Z start A24 online execution cd_a24_sf6_zflx_r2b (17 cases, workflow level)
+2026-10-30T08:41:42Z end A24 online execution cd_a24_sf6_zflx_r2b
+2026-10-30T08:42:08Z start A24 browser subset cd_a24_sf6_zflx_r2b
+2026-10-30T08:48:54Z end A24 browser subset cd_a24_sf6_zflx_r2b
+2026-10-30T08:49:01Z start A24 e2e cd_a24_sf6_zflx_r2b (o-bil-01 on base state, then the zflx batch chain)
+2026-10-30T08:50:35Z aborted A24 e2e cd_a24_sf6_zflx_r2b rc=1
+2026-10-30T08:50:42Z end A24 r2b execution; lock released. e2e rc=1 is the known check_secrets false positive on the repo's own tools/fxc_relogin.sh through the scratch-root symlink, after scoring completed

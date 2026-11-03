@@ -1,0 +1,205 @@
+[
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTDUP",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 48,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 48,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 48,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 49,
+  "note": "reference offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 49,
+  "note": "reference offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 51,
+  "note": "implied scale and overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 51,
+  "note": "implied scale and overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 51,
+  "note": "implied scale and overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 53,
+  "note": "selection on processing timestamp, normalisation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 54,
+  "note": "order and stability, no secondary ordering stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 56,
+  "note": "duplicate reference key, first wins",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 56,
+  "note": "duplicate reference key, first wins",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 57,
+  "note": "missing type or category: placeholder, detail kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 57,
+  "note": "missing type or category: placeholder, detail kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 58,
+  "note": "missing cross-reference: blank account, detail kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 58,
+  "note": "missing cross-reference: blank account, detail kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 59,
+  "note": "undecodable record skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 62,
+  "note": "break on card, page boundary unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 63,
+  "note": "account total after each card's last detail, last card included",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 63,
+  "note": "account total after each card's last detail, last card included",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 66,
+  "note": "sum of signed cents, no rounding algorithm stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 66,
+  "note": "sum of signed cents, no rounding algorithm stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+  "line": 67,
+  "note": "amount picture, negative zero unstated",
+  "origin": "build"
+ }
+]

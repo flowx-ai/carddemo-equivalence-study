@@ -1,0 +1,183 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "custdata": "custdata",
+  "carddata": "carddata",
+  "trantype": "trantype",
+  "trancatg": "trancatg"
+ },
+ "decode": {
+  "_root": "postingOutput"
+ },
+ "source": "- A2 version 80196b16 (head of the build branch, plan PAUSED)\n- START: nine file contents as text; MODE files\n- END: {\"postingOutput\": {...}}; contract names inside\n- Register: manifest lines 50-76\n- plan PAUSED item_evidence 8/10, own stop under A18, scored as it ended",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-POST-100",
+   51,
+   "parity unverified, reject reasons TODO"
+  ],
+  [
+   "R-POST-101",
+   51,
+   "parity unverified, reject reasons TODO"
+  ],
+  [
+   "R-POST-102",
+   51,
+   "parity unverified, reject reasons TODO"
+  ],
+  [
+   "R-POST-103",
+   51,
+   "parity unverified, reject reasons TODO"
+  ],
+  [
+   "R-POST-BAL",
+   51,
+   "parity unverified, reject reasons TODO"
+  ],
+  [
+   "R-POST-WRITE",
+   52,
+   "daily layout, CVTRA06Y not provided"
+  ],
+  [
+   "R-POST-COPY",
+   52,
+   "daily layout, CVTRA06Y not provided"
+  ],
+  [
+   "R-POST-COPY",
+   53,
+   "encoding not specified"
+  ],
+  [
+   "R-POST-COPY",
+   54,
+   "signed encoding, copybooks absent"
+  ],
+  [
+   "R-POST-BAL",
+   54,
+   "signed encoding, copybooks absent"
+  ],
+  [
+   "R-POST-TCAT",
+   54,
+   "signed encoding, copybooks absent"
+  ],
+  [
+   "R-POST-103",
+   59,
+   "expiry not assigned a posting rule, not validated"
+  ],
+  [
+   "R-POST-100",
+   60,
+   "account lookup mechanics omitted"
+  ],
+  [
+   "R-POST-BAL",
+   61,
+   "duplicate master records, no policy"
+  ],
+  [
+   "R-POST-TCAT",
+   61,
+   "duplicate master records, no policy"
+  ],
+  [
+   "R-POST-WRITE",
+   62,
+   "no malformed record policy"
+  ],
+  [
+   "R-POST-WRITE",
+   63,
+   "sorting and duplicate ids not specified"
+  ],
+  [
+   "R-POST-BAL",
+   63,
+   "sorting and duplicate ids not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   64,
+   "timestamps kept"
+  ],
+  [
+   "R-POST-COPY",
+   64,
+   "timestamps kept"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   67,
+   "precedence and missing master not stated"
+  ],
+  [
+   "R-POST-100",
+   67,
+   "precedence and missing master not stated"
+  ],
+  [
+   "R-POST-101",
+   67,
+   "precedence and missing master not stated"
+  ],
+  [
+   "R-POST-100",
+   69,
+   "no numeric codes or descriptions in the wiki"
+  ],
+  [
+   "R-POST-101",
+   69,
+   "no numeric codes or descriptions in the wiki"
+  ],
+  [
+   "R-POST-102",
+   69,
+   "no numeric codes or descriptions in the wiki"
+  ],
+  [
+   "R-POST-103",
+   69,
+   "no numeric codes or descriptions in the wiki"
+  ],
+  [
+   "R-POST-102",
+   70,
+   "equality and refund not stated"
+  ],
+  [
+   "R-POST-BAL",
+   72,
+   "type code sign not specified"
+  ],
+  [
+   "R-POST-BAL",
+   73,
+   "cycle posting not stated"
+  ],
+  [
+   "R-POST-BAL",
+   74,
+   "absent category not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   74,
+   "absent category not specified"
+  ]
+ ]
+}

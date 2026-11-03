@@ -1,0 +1,129 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "disclosureGroups": {
+   "interest_rate": "rate"
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran",
+  "intcalc_acctdata": "intcalc_acctdata"
+ },
+ "source": "- A2 version a3eae6c7 (head of the build branch, plan COMPLETED, no retry)\n- START: decoded accounts, disclosureGroups, cardXrefs; rate renamed from interest_rate; MODE records\n- END: result; contract names inside\n- Flags: entries stating silence or inference, each to the rule a divergence would produce",
+ "cr_rule": null,
+ "register": null,
+ "mode": "records",
+ "build": [
+  [
+   "R-INT-RATE",
+   30,
+   "grouping TODO; account balance as base"
+  ],
+  [
+   "R-INT-RATE",
+   31,
+   "rate layout and units absent"
+  ],
+  [
+   "R-INT-RATE",
+   32,
+   "period conversion absent, formula TODO"
+  ],
+  [
+   "R-INT-TRUNC",
+   33,
+   "rounding unconfirmed"
+  ],
+  [
+   "R-INT-RATE",
+   36,
+   "negative handling not stated"
+  ],
+  [
+   "R-INT-APPLY",
+   36,
+   "negative handling not stated"
+  ],
+  [
+   "R-INT-ZERO",
+   37,
+   "zero-value transaction not stated"
+  ],
+  [
+   "R-INT-CYC",
+   38,
+   "cycle totals not stated"
+  ],
+  [
+   "R-INT-LAST",
+   38,
+   "cycle totals not stated"
+  ],
+  [
+   "R-INT-RATE",
+   39,
+   "duplicate account absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   41,
+   "type value absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   42,
+   "category value absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   43,
+   "source value absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   44,
+   "description wording absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   45,
+   "merchant values absent"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "id rule absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   48,
+   "timestamp rules absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   49,
+   "card selection absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   50,
+   "missing card absent"
+  ],
+  [
+   "R-INT-RATE",
+   51,
+   "group matching absent"
+  ],
+  [
+   "R-INT-RATE",
+   52,
+   "missing rate fallback absent"
+  ],
+  [
+   "R-INT-RATE",
+   53,
+   "malformed and overflow absent"
+  ]
+ ]
+}

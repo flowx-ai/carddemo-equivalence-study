@@ -1,0 +1,1255 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 100,
+  "silent_records": 0,
+  "flagged_records": 100,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ADDR",
+   "R-STMT-NAME",
+   "R-STMT-TXN"
+  ],
+  "flags_raised": 27,
+  "flags_unneeded": 13,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.1378
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.1906
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-ADDR/flagged": 100,
+  "R-STMT-NAME/flagged": 1,
+  "R-STMT-TXN/flagged": 10
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Altenwerthshire NC USA 12546",
+   "cand": "Altenwerthshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Andersonfurt",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Julianneburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Predovicton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Bruenfurt",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Concepcionland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Hansenville",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Mitchellmouth",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Anabelton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Hendersonbury",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Walshberg",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Hayesstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Kutchland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Hermanborough",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Predovicburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Haleyport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Pfefferhaven",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Lubowitzberg",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Erniechester TX USA 87156-8689",
+   "cand": "Erniechester",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Reillyland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Abbottshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Alexandroview",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Albertville",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Langoshstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Alvinaport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Madieport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Altenwerthshire NC USA 12546",
+   "cand": "Altenwerthshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Andersonfurt",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Julianneburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Predovicton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "cand": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Bruenfurt",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Concepcionland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Hansenville",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "cand": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Mitchellmouth",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Anabelton",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Hendersonbury",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Walshberg",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "cand": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Hayesstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "cand": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Kutchland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "name",
+   "golden": "Lucious Otto O'Connell",
+   "cand": "Lucious Otto O&#39;Connell",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Hermanborough",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Predovicburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Haleyport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Pfefferhaven",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Lubowitzberg",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "cand": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', 'Purchase at D&#39;Amore-Batz', Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', D",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Erniechester TX USA 87156-8689",
+   "cand": "Erniechester",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "cand": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Reillyland",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Abbottshire",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Alexandroview",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "cand": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', 'Purchase at Kulas, Reichert a",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Albertville",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "cand": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Langoshstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "cand": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', 'Purchase at O&#39;Hara, Ledner and Runte', Decimal('49.55')), ('0000000432231260', 'Return ite",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Alvinaport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Madieport",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "cand": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 5,
+   "note": "[3] sign representation absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 5,
+   "note": "[3] sign representation absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 7,
+   "note": "[5] one statement per account, ordered by account ID; ordering absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 9,
+   "note": "[7] statement holder = lowest customer ID on the account; primary customer undefined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 10,
+   "note": "[8] duplicates or unresolved joins rejected, no partial statements",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 10,
+   "note": "[8] duplicates or unresolved joins rejected, no partial statements",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 12,
+   "note": "[10] account ID, FICO, balance; conversion unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 12,
+   "note": "[10] account ID, FICO, balance; conversion unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 13,
+   "note": "[11] details field, truncation, Total EXP rule not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 15,
+   "note": "[13] HTML escaping and numeric overflow unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 15,
+   "note": "[13] HTML escaping and numeric overflow unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_harness_opus/r2/exec/assumption_register.md",
+   "line": 16,
+   "note": "[14] wiki's extra figures not printed",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

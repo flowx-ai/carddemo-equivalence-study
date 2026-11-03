@@ -1,0 +1,191 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 30,
+  "note": "[account_layout] complete copybook and filler layout not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 34,
+  "note": "[category_layout] complete copybook not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 38,
+  "note": "[disclosure_layout] no disclosure layout in the wiki; unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 42,
+  "note": "[signed_encoding] ASCII sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 44,
+  "note": "[rate_scale] rate layout, scale and sign encoding omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 50,
+  "note": "[group_normalisation] group id normalisation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 52,
+  "note": "[group_rate_agreement] grouping left as TODO; conflicting-rate precedence unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 54,
+  "note": "[direct_multiplier] exact formula left as TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 58,
+  "note": "[rounding] rounding mode TODO; none supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 62,
+  "note": "[negative_balances] signed-balance handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 68,
+  "note": "[cycle_fields] cycle credit/debit updates not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 76,
+  "note": "[transaction_emission] zero-rounded transaction emission not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 80,
+  "note": "[transaction_identifier] identifier generation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 86,
+  "note": "[type_default] type metadata not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 88,
+  "note": "[category_default] category metadata not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 90,
+  "note": "[source_default] source metadata not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 92,
+  "note": "[description_default] description metadata not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 94,
+  "note": "[merchant_id_default] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 96,
+  "note": "[merchant_name_default] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 98,
+  "note": "[merchant_city_default] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 100,
+  "note": "[merchant_zip_default] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 102,
+  "note": "[card_default] card number metadata not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 104,
+  "note": "[original_timestamp] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r1/exec/assumption_register.md",
+  "line": 106,
+  "note": "[processing_timestamp] not specified",
+  "origin": "build"
+ }
+]

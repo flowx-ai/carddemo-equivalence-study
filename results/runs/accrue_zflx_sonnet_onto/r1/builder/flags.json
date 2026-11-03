@@ -1,0 +1,10 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/02_accrue_interest.js:78 - monthly interest truncated toward zero to cents (BR-08 TODO: truncate vs ROUNDED unconfirmed)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/02_accrue_interest.js:34 - system clock at write time, DB2 format; not reproducible against the oracle run"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/02_accrue_interest.js:34 - same value as orig_ts"},
+  {"output": "accrue_systxn.json", "key": "card_num", "source": "flowx/02_accrue_interest.js:22-23 - account with several cards: lowest card number assumed (alternate-index order), wiki silent"},
+  {"output": "accrue_systxn.json", "key": "tran_id", "source": "flowx/02_accrue_interest.js:26,86 - PARM + 6-digit run-local suffix from 000001, assigned in balance key order"},
+  {"rule": "R-MISSING-ACCOUNT", "source": "flowx/02_accrue_interest.js:61 - balances of an account absent from ledgacc are skipped (legacy would abend), wiki silent"},
+  {"rule": "R-MISSING-RATE", "source": "flowx/02_accrue_interest.js:72 - no row for group nor STANDARD: no interest posted (legacy would abend), wiki silent"},
+  {"rule": "R-SIGN-ENCODING", "source": "flowx/01_parse_inputs.js:7 - every S9 field decoded as trailing overpunch; wiki states the encoding only for RG-INT-RATE"}
+]

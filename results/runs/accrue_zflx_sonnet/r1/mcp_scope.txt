@@ -1,0 +1,2 @@
+own appId <uuid>; mcp calls 19; outside-scope calls 1
+  list_projects {} foreign=[] visible_projects=['ll_accrue_zflx_sonnet_r1']

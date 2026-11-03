@@ -1,0 +1,1 @@
+../../../../../golden/v1/cases/c01/out/posttran_tcatbal.txt

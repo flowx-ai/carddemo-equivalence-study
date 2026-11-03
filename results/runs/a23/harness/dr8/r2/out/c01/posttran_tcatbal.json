@@ -1,0 +1,602 @@
+[
+ {
+  "acct_id": 1,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1949.23"
+ },
+ {
+  "acct_id": 2,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2339.97"
+ },
+ {
+  "acct_id": 3,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2090.87"
+ },
+ {
+  "acct_id": 4,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1945.65"
+ },
+ {
+  "acct_id": 5,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1266.85"
+ },
+ {
+  "acct_id": 6,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2750.41"
+ },
+ {
+  "acct_id": 7,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1287.09"
+ },
+ {
+  "acct_id": 8,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2368.19"
+ },
+ {
+  "acct_id": 9,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2907.66"
+ },
+ {
+  "acct_id": 10,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1529.20"
+ },
+ {
+  "acct_id": 11,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2072.76"
+ },
+ {
+  "acct_id": 12,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2357.09"
+ },
+ {
+  "acct_id": 13,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2875.87"
+ },
+ {
+  "acct_id": 14,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "942.21"
+ },
+ {
+  "acct_id": 15,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "4081.98"
+ },
+ {
+  "acct_id": 16,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1346.87"
+ },
+ {
+  "acct_id": 17,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "0.00"
+ },
+ {
+  "acct_id": 18,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2656.20"
+ },
+ {
+  "acct_id": 19,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2639.19"
+ },
+ {
+  "acct_id": 20,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2453.10"
+ },
+ {
+  "acct_id": 21,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "889.65"
+ },
+ {
+  "acct_id": 22,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "3328.86"
+ },
+ {
+  "acct_id": 23,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1881.42"
+ },
+ {
+  "acct_id": 24,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2163.87"
+ },
+ {
+  "acct_id": 25,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1589.76"
+ },
+ {
+  "acct_id": 26,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1322.98"
+ },
+ {
+  "acct_id": 27,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "3584.64"
+ },
+ {
+  "acct_id": 28,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "256.00"
+ },
+ {
+  "acct_id": 29,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "3170.97"
+ },
+ {
+  "acct_id": 30,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "0.00"
+ },
+ {
+  "acct_id": 31,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "540.99"
+ },
+ {
+  "acct_id": 32,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "250.22"
+ },
+ {
+  "acct_id": 33,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "3389.98"
+ },
+ {
+  "acct_id": 34,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2573.87"
+ },
+ {
+  "acct_id": 35,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1339.20"
+ },
+ {
+  "acct_id": 36,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2078.20"
+ },
+ {
+  "acct_id": 37,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "0.00"
+ },
+ {
+  "acct_id": 38,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2987.75"
+ },
+ {
+  "acct_id": 39,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2050.87"
+ },
+ {
+  "acct_id": 40,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1635.09"
+ },
+ {
+  "acct_id": 41,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2399.53"
+ },
+ {
+  "acct_id": 42,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2164.75"
+ },
+ {
+  "acct_id": 43,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2938.19"
+ },
+ {
+  "acct_id": 44,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2012.20"
+ },
+ {
+  "acct_id": 45,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "2143.76"
+ },
+ {
+  "acct_id": 46,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "3577.41"
+ },
+ {
+  "acct_id": 47,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1308.43"
+ },
+ {
+  "acct_id": 48,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1371.66"
+ },
+ {
+  "acct_id": 49,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1996.08"
+ },
+ {
+  "acct_id": 50,
+  "type_cd": "01",
+  "cat_cd": 1,
+  "bal": "1501.75"
+ },
+ {
+  "acct_id": 17,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-998.33"
+ },
+ {
+  "acct_id": 49,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-962.77"
+ },
+ {
+  "acct_id": 22,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-945.66"
+ },
+ {
+  "acct_id": 30,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-930.33"
+ },
+ {
+  "acct_id": 20,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-919.00"
+ },
+ {
+  "acct_id": 25,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-907.00"
+ },
+ {
+  "acct_id": 3,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-880.22"
+ },
+ {
+  "acct_id": 29,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-852.33"
+ },
+ {
+  "acct_id": 23,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-835.44"
+ },
+ {
+  "acct_id": 8,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-835.11"
+ },
+ {
+  "acct_id": 2,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-763.00"
+ },
+ {
+  "acct_id": 12,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-762.44"
+ },
+ {
+  "acct_id": 41,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-756.66"
+ },
+ {
+  "acct_id": 11,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-744.77"
+ },
+ {
+  "acct_id": 32,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-742.99"
+ },
+ {
+  "acct_id": 14,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-710.66"
+ },
+ {
+  "acct_id": 24,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-641.77"
+ },
+ {
+  "acct_id": 47,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-585.44"
+ },
+ {
+  "acct_id": 7,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-579.88"
+ },
+ {
+  "acct_id": 38,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-538.22"
+ },
+ {
+  "acct_id": 10,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-537.44"
+ },
+ {
+  "acct_id": 48,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-535.88"
+ },
+ {
+  "acct_id": 42,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-501.44"
+ },
+ {
+  "acct_id": 35,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-499.99"
+ },
+ {
+  "acct_id": 34,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-457.55"
+ },
+ {
+  "acct_id": 33,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-445.55"
+ },
+ {
+  "acct_id": 36,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-439.33"
+ },
+ {
+  "acct_id": 46,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-435.00"
+ },
+ {
+  "acct_id": 5,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-428.99"
+ },
+ {
+  "acct_id": 6,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-396.22"
+ },
+ {
+  "acct_id": 27,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-372.99"
+ },
+ {
+  "acct_id": 26,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-372.00"
+ },
+ {
+  "acct_id": 31,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-362.22"
+ },
+ {
+  "acct_id": 15,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-358.44"
+ },
+ {
+  "acct_id": 45,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-344.77"
+ },
+ {
+  "acct_id": 4,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-322.99"
+ },
+ {
+  "acct_id": 16,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-270.99"
+ },
+ {
+  "acct_id": 9,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-260.11"
+ },
+ {
+  "acct_id": 43,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-243.00"
+ },
+ {
+  "acct_id": 44,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-215.33"
+ },
+ {
+  "acct_id": 37,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-132.88"
+ },
+ {
+  "acct_id": 18,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-113.11"
+ },
+ {
+  "acct_id": 28,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-75.22"
+ },
+ {
+  "acct_id": 19,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-71.66"
+ },
+ {
+  "acct_id": 39,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-70.99"
+ },
+ {
+  "acct_id": 1,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-70.77"
+ },
+ {
+  "acct_id": 13,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-56.77"
+ },
+ {
+  "acct_id": 50,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-47.88"
+ },
+ {
+  "acct_id": 21,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-41.77"
+ },
+ {
+  "acct_id": 40,
+  "type_cd": "03",
+  "cat_cd": 1,
+  "bal": "-25.99"
+ }
+]

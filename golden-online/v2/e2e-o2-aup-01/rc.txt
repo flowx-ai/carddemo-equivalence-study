@@ -1,0 +1,5 @@
+POSTTRAN rc=4
+INTCALC rc=0
+ONLINE_TRANSACT: 0 rows added to the TRANSACT backup
+CREASTMT rc=0
+TRANREPT rc=0

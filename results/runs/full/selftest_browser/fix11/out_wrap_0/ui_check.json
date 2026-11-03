@@ -1,0 +1,39 @@
+{
+ "build": "fix11",
+ "started": "2026-11-03T02:09:26.169Z",
+ "cases": [
+  {
+   "case": "t",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COMEN1A",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {},
+     "fields": {
+      "OPTN001": false,
+      "OPTN002": false
+     },
+     "rows": 0,
+     "rows_missing": [],
+     "rows_ok": true,
+     "u2011": false,
+     "ok": false
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COMEN1A",
+     "reached": false,
+     "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: /^report type/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <input id=\"c\" readonly value=\"\" role=\"combobox\" aria-label=\"Report type\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting "
+    }
+   ]
+  }
+ ],
+ "cases_all_steps_ok": {
+  "t": false
+ },
+ "steps_ok": "0/2"
+}

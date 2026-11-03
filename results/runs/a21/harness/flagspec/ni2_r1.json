@@ -1,0 +1,111 @@
+{
+ "workflow": "<uuid>",
+ "map": null,
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- START (script lines 72-73, 91-92): decoded record lists accounts, categoryBalances, disclosureGroups, cardXrefs with the canonical field names (acct_id, group_id, open_date, curr_bal, type_cd, cat_cd, bal, interest_rate, card_num); businessDate/interestRunDate default to the contract values 2022-07-18 / 2022071800 when absent\n- END (Finalize result, line 120): output={result:{intcalc_systran, intcalc_acctdata, ...}}: decode _root result, contract names\n- MODE records (the adapter's encode, no renaming)",
+ "build": [
+  [
+   "R-INT-TRUNC",
+   49,
+   "BR-08 TODO quoted: truncate vs ROUNDED"
+  ],
+  [
+   "R-INT-RATE",
+   50,
+   "rate floor: scope for a negative original rate not stated"
+  ],
+  [
+   "R-INT-RATE",
+   51,
+   "ten-year cutoff: no leap-day rule given"
+  ],
+  [
+   "R-INT-TXID",
+   52,
+   "intra-account order not specified"
+  ],
+  [
+   "R-INT-TXID",
+   53,
+   "BR-05 suffix width, start, overflow not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   54,
+   "card selection not specified"
+  ],
+  [
+   "R-INT-RATE",
+   54,
+   "missing linked card prevents the transaction; not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   55,
+   "merchant values not supplied"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   56,
+   "generated timestamps not stated"
+  ],
+  [
+   "R-INT-TXID",
+   57,
+   "run-parameter mismatch handling not specified"
+  ],
+  [
+   "R-INT-RATE",
+   58,
+   "absent or unusable DEFAULT row: no handling specified"
+  ],
+  [
+   "R-INT-RATE",
+   59,
+   "duplicate keys: not defined; balances skipped"
+  ],
+  [
+   "R-INT-APPLY",
+   59,
+   "duplicate keys: not defined; balances skipped"
+  ],
+  [
+   "R-INT-RATE",
+   60,
+   "malformed input handling not defined"
+  ],
+  [
+   "R-INT-CYC",
+   61,
+   "accounts with no or only failed balances: not stated"
+  ],
+  [
+   "R-INT-APPLY",
+   61,
+   "accounts with no or only failed balances: not stated"
+  ],
+  [
+   "R-INT-ZERO",
+   62,
+   "zero computed amounts not supplied; transaction emitted"
+  ],
+  [
+   "R-INT-APPLY",
+   63,
+   "failure-time aggregation not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   65,
+   "decoded-input normalization rules not given"
+  ],
+  [
+   "R-INT-APPLY",
+   67,
+   "fees: scenario 7 marks the future choice unresolved; stub kept"
+  ]
+ ],
+ "cr_rule": "line 50 (and the rate code): effective rate reduced by 2.00 for eligible accounts, floored at zero (BR-03); flags that the scope for a negative original rate is not stated (line 50) and that BR-03 gives no leap-day rule for the cutoff (line 51)."
+}

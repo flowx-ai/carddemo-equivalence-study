@@ -1,0 +1,4 @@
+Read from runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md (and the build's own README/register) before execution; no output opened.
+- START (Calculate interest, lines 99-135): input.acctdataText, discgrpText, cardxrefText, tcatbalText (fixed-width text), interestRunDate, businessDate
+- END (Finalize results, line 209): output={result:{intcalc_systran, intcalc_acctdata, assumptions_md}}: decode _root result, contract names
+- MODE files

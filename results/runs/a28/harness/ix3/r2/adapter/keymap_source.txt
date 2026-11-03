@@ -1,0 +1,6 @@
+Read from runs/a28/harness/ix3/r2/exec/workflow_d3e3bac7-490e-407a-bb94-878a68d408d0.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 90cdc304 (head of the build branch, committed; plan COMPLETED on R18, no retry)
+- START: transactText, cardxrefText, trantypeText, trancatgText, startDate, endDate
+- END returns tranrept_report (string), assumptions_md, reportStatus: decoder default, contract name, no decode map
+- MODE files
+- Register: assumptions table, lines 123-163

@@ -1,0 +1,184 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 3,
+  "note": "[1] sign encoding; copybook sign details absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 3,
+  "note": "[1] sign encoding; copybook sign details absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 3,
+  "note": "[1] sign encoding; copybook sign details absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] one statement per xref card, not per account",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] card-only transactions; orphan treatment not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] card-only transactions; orphan treatment not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 8,
+  "note": "[6] no cycle or status filter; cycle filter TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 8,
+  "note": "[6] no cycle or status filter; cycle filter TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "[7] name concatenation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] address concatenation not defined; country omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] blank FICO as 0; blank formatting unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] total; overflow treatment unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] text truncation and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] text truncation and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] text truncation and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] HTML escaping and overlength unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] HTML escaping and overlength unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 18,
+  "note": "[16] missing reference or duplicates fail the whole batch, no partial statements",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 18,
+  "note": "[16] missing reference or duplicates fail the whole batch, no partial statements",
+  "origin": "build"
+ }
+]

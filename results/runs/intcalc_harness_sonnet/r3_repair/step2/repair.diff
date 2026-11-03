@@ -1,0 +1,3 @@
+deleted from script 'Transform': if(!own(accountMap,a))fail(p+' refers to a missing account '+a);  (the occurrence followed by: unique(xrefKeys)
+
+-if(!own(accountMap,a))fail(p+' refers to a missing account '+a);

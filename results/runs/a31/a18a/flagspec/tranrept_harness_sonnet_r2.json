@@ -1,0 +1,135 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version ddcf45b5 (head of the build branch, plan COMPLETED, no retry)\n- START: four file texts plus startDate, endDate; MODE files\n- END: {\"result\": ${result}}; tranrept_report inside\n- Register: lines 52-76",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   54,
+   "transaction offsets not verified"
+  ],
+  [
+   "R-REPT-AMT",
+   54,
+   "transaction offsets not verified"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   54,
+   "transaction offsets not verified"
+  ],
+  [
+   "R-REPT-XREF",
+   55,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   55,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-SET",
+   56,
+   "encoding and newline not specified"
+  ],
+  [
+   "R-REPT-AMT",
+   59,
+   "sign encoding not explicit"
+  ],
+  [
+   "R-REPT-ACCT",
+   59,
+   "sign encoding not explicit"
+  ],
+  [
+   "R-REPT-GRAND",
+   59,
+   "sign encoding not explicit"
+  ],
+  [
+   "R-REPT-SET",
+   62,
+   "no secondary order"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   64,
+   "duplicate reference keys"
+  ],
+  [
+   "R-REPT-XREF",
+   64,
+   "duplicate reference keys"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   65,
+   "missing lookup, legacy behaviour TODO"
+  ],
+  [
+   "R-REPT-XREF",
+   65,
+   "missing lookup, legacy behaviour TODO"
+  ],
+  [
+   "R-REPT-SET",
+   65,
+   "missing lookup, legacy behaviour TODO"
+  ],
+  [
+   "R-REPT-SET",
+   66,
+   "malformed record detail not specified"
+  ],
+  [
+   "R-REPT-HEADER",
+   68,
+   "page size TODO, 60 chosen"
+  ],
+  [
+   "R-REPT-ACCT",
+   70,
+   "coincident boundaries not defined"
+  ],
+  [
+   "R-REPT-HEADER",
+   70,
+   "coincident boundaries not defined"
+  ],
+  [
+   "R-REPT-ACCT",
+   71,
+   "final card total at EOF, order not defined"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   71,
+   "final card total at EOF, order not defined"
+  ],
+  [
+   "R-REPT-AMT",
+   73,
+   "negative zero normalised"
+  ],
+  [
+   "R-REPT-AMT",
+   74,
+   "no overflow rule"
+  ]
+ ]
+}

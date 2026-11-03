@@ -1,0 +1,168 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version: 840d9ef0 (head of the build branch, committed; plan COMPLETED on R21, no retry)\n- START: transact, cardxref, trantype, trancatg, startDate, endDate\n- END returns tranrept_report, assumptions_md: no decode map",
+ "cr_rule": "line 115: type 01 + category 0005 excluded before details, lookup or totals (fact 'selection', line 190).",
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   184,
+   "date defaults and invalid range unstated"
+  ],
+  [
+   "R-REPT-SET",
+   185,
+   "line and blank record handling unstated"
+  ],
+  [
+   "R-REPT-SET",
+   186,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   186,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   186,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   186,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   187,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   187,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   188,
+   "sign encoding assumed"
+  ],
+  [
+   "R-REPT-ACCT",
+   188,
+   "sign encoding assumed"
+  ],
+  [
+   "R-REPT-GRAND",
+   188,
+   "sign encoding assumed"
+  ],
+  [
+   "R-REPT-SET",
+   189,
+   "malformed-field handling not specified"
+  ],
+  [
+   "R-REPT-SET",
+   190,
+   "date prefix assumed"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   192,
+   "missing reference policies not stated"
+  ],
+  [
+   "R-REPT-XREF",
+   192,
+   "missing reference policies not stated"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   193,
+   "duplicate references"
+  ],
+  [
+   "R-REPT-XREF",
+   193,
+   "duplicate references"
+  ],
+  [
+   "R-REPT-SET",
+   194,
+   "tie order assumed"
+  ],
+  [
+   "R-REPT-ACCT",
+   195,
+   "account total by card, arithmetic unspecified"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   195,
+   "account total by card, arithmetic unspecified"
+  ],
+  [
+   "R-REPT-GRAND",
+   195,
+   "account total by card, arithmetic unspecified"
+  ],
+  [
+   "R-REPT-ACCT",
+   196,
+   "page capacity TODO, break order not supplied"
+  ],
+  [
+   "R-REPT-HEADER",
+   196,
+   "page capacity TODO, break order not supplied"
+  ],
+  [
+   "R-REPT-HEADER",
+   197,
+   "final sequencing unstated"
+  ],
+  [
+   "R-REPT-GRAND",
+   197,
+   "final sequencing unstated"
+  ],
+  [
+   "R-REPT-AMT",
+   198,
+   "zero suppression not fully stated"
+  ],
+  [
+   "R-REPT-AMT",
+   199,
+   "overflow not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   199,
+   "overflow not specified"
+  ],
+  [
+   "R-REPT-GRAND",
+   199,
+   "overflow not specified"
+  ],
+  [
+   "R-REPT-SET",
+   200,
+   "malformed input policy"
+  ]
+ ]
+}

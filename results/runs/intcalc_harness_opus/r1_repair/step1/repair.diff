@@ -1,0 +1,3 @@
+deleted from script 'Compute interest': err('CONFLICTING_RATE','Disclosure rows in a group disagree.','discgrp.dat',r.line,'rate');
+
+-err('CONFLICTING_RATE','Disclosure rows in a group disagree.','discgrp.dat',r.line,'rate');

@@ -1,0 +1,149 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 49,
+  "note": "BR-08 TODO quoted: truncate vs ROUNDED",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 50,
+  "note": "rate floor: scope for a negative original rate not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 51,
+  "note": "ten-year cutoff: no leap-day rule given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 52,
+  "note": "intra-account order not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 53,
+  "note": "BR-05 suffix width, start, overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 54,
+  "note": "card selection not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 54,
+  "note": "missing linked card prevents the transaction; not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 55,
+  "note": "merchant values not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 56,
+  "note": "generated timestamps not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 57,
+  "note": "run-parameter mismatch handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 58,
+  "note": "absent or unusable DEFAULT row: no handling specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 59,
+  "note": "duplicate keys: not defined; balances skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 59,
+  "note": "duplicate keys: not defined; balances skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 60,
+  "note": "malformed input handling not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 61,
+  "note": "accounts with no or only failed balances: not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 61,
+  "note": "accounts with no or only failed balances: not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 62,
+  "note": "zero computed amounts not supplied; transaction emitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 63,
+  "note": "failure-time aggregation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 65,
+  "note": "decoded-input normalization rules not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+  "line": 67,
+  "note": "fees: scenario 7 marks the future choice unresolved; stub kept",
+  "origin": "build"
+ }
+]

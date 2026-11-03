@@ -1,0 +1,254 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 51,
+  "note": "parity unverified, reject reasons TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 51,
+  "note": "parity unverified, reject reasons TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 51,
+  "note": "parity unverified, reject reasons TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 51,
+  "note": "parity unverified, reject reasons TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 51,
+  "note": "parity unverified, reject reasons TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 52,
+  "note": "daily layout, CVTRA06Y not provided",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 52,
+  "note": "daily layout, CVTRA06Y not provided",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 53,
+  "note": "encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 54,
+  "note": "signed encoding, copybooks absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 54,
+  "note": "signed encoding, copybooks absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 54,
+  "note": "signed encoding, copybooks absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 59,
+  "note": "expiry not assigned a posting rule, not validated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 60,
+  "note": "account lookup mechanics omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 61,
+  "note": "duplicate master records, no policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 61,
+  "note": "duplicate master records, no policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 62,
+  "note": "no malformed record policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 63,
+  "note": "sorting and duplicate ids not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 63,
+  "note": "sorting and duplicate ids not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 64,
+  "note": "timestamps kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 64,
+  "note": "timestamps kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 67,
+  "note": "precedence and missing master not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 67,
+  "note": "precedence and missing master not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 67,
+  "note": "precedence and missing master not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 69,
+  "note": "no numeric codes or descriptions in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 69,
+  "note": "no numeric codes or descriptions in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 69,
+  "note": "no numeric codes or descriptions in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 69,
+  "note": "no numeric codes or descriptions in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 70,
+  "note": "equality and refund not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 72,
+  "note": "type code sign not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 73,
+  "note": "cycle posting not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 74,
+  "note": "absent category not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md",
+  "line": 74,
+  "note": "absent category not specified",
+  "origin": "build"
+ }
+]

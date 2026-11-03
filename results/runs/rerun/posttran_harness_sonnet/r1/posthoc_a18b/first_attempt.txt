@@ -1,0 +1,9 @@
+version <uuid> WIP branch ai/calculate-carddemo-daily-trans-9a57da 'work in progress 2026-10-27 10:28:14:16'
+first run_started 2026-10-27T10:28:13.081788+00:00 run <uuid>
+first-attempt WIP 2026-10-27T10:28:14+00:00
+first run_finished 2026-10-27T10:28:37.497740+00:00 status failed commit None
+driver: 2026-10-27T10:28:39Z auto: plan FAILED (behaviour_failed), A2 platform-error retry 1
+first retry run_started 2026-10-27T10:28:40.814631+00:00 run <uuid>
+session.json mentions behaviour_failed 2 time(s)
+other non-main versions: 6db87f74 WIP ai/calculate-carddemo-daily-trans-867911 'work in progress 2026-10-27 10:28:41:37'; 00c31006 COMMITTED ai/calculate-carddemo-daily-trans-afb461 'Agent: Create dataset PostingAssumptions'; fa7bcead COMMITTED ai/calculate-carddemo-daily-trans-afb461 'Calculate daily postings: A callable cal'
+VERIFIED first attempt: True

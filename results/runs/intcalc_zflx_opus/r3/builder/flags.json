@@ -1,0 +1,10 @@
+[
+  {"rule": "R-INT-BASE-CATEGORY-BALANCE", "source": "assumptions.md:18"},
+  {"rule": "R-INT-MONTHLY-DIV-1200", "source": "assumptions.md:26"},
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md:31"},
+  {"rule": "R-INT-RATE-DEFAULT-FALLBACK", "source": "assumptions.md:37"},
+  {"rule": "R-INT-ZERO-BAL-WRITES-TXN", "source": "assumptions.md:47"},
+  {"output": "intcalc_systran.json", "key": "tran_id/orig_ts/proc_ts", "source": "assumptions.md:55"},
+  {"rule": "R-INT-CYCLE-RESET", "source": "assumptions.md:73"},
+  {"output": "intcalc_acctdata.json", "key": "last account (highest acct_id) present in tcatbal.dat", "source": "assumptions.md:78"}
+]

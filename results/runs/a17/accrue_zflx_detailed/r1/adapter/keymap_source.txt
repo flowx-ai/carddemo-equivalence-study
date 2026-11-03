@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_ccb71f63-...md, inputs ledgaccFile/balcatFile/rategrpFile/cardlinkFile/interestRunDate; END keys accrue_systxn, accrue_ledgacc, lines 242-243) and builder/assumptions.md line 7, before execution:
+- files mode, VARIANT=d1 rate file; contract names -> the build's START keys (pure renaming)
+- decode.json: disguised output names -> canonical (as A5); record fields already contract snake_case

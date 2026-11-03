@@ -1,0 +1,30 @@
+[
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ }
+]

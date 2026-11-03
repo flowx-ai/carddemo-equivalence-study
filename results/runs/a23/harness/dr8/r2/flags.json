@@ -1,0 +1,142 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-dr8/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-dr8/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 63,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 48,
+  "note": "A02 transaction offsets inferred, not verified against the copybook",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 48,
+  "note": "A02 transaction offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 49,
+  "note": "A03 account offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 50,
+  "note": "A04 cross-reference layout inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 50,
+  "note": "A04 category-balance layout inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 51,
+  "note": "A05 daily-feed money encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 51,
+  "note": "A05 money encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 51,
+  "note": "A05 money encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 52,
+  "note": "A06 line endings and blank records not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 56,
+  "note": "A10 BR-09 idempotence vs pp.9,23 sequences; feed id kept, conflicting duplicates errored",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 58,
+  "note": "A12 p.4 invalid-card-plus-expired-account example not explained",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 59,
+  "note": "A13 no timezone or invalid-date handling stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 61,
+  "note": "A15 rounding and overflow not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 61,
+  "note": "A15 rounding and overflow not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 62,
+  "note": "A16 no malformed-record or parse-error codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 63,
+  "note": "A17 duplicate master input behaviour not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 63,
+  "note": "A17 duplicate master input behaviour not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md",
+  "line": 63,
+  "note": "A17 duplicate master input behaviour not defined",
+  "origin": "build"
+ }
+]

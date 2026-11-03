@@ -1,0 +1,651 @@
+[
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "CACTVWA",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #5",
+  "note": "account view always starts at the search field (session.accountId skip not implemented)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "TEXT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #9",
+  "note": "exit text 'Thank you for using CardDemo application...' (CSMSG01Y), EXIT card",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN001",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN002",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN003",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN004",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN005",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN006",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN007",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN008",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN009",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN010",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN011",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #12",
+  "note": "option list shown as text above a typed option field",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN011",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #13",
+  "note": "option 11 (Pending Authorization View) not listed (toggle false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #13",
+  "note": "typing option 11 gives 'This option <label> is not installed...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #14",
+  "note": "options 2-9 return 'This option <label> is not installed...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "COMEN1A",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #14",
+  "note": "options 2-9 stay on the menu",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #17",
+  "note": "invalid/empty/0/too-large option: 'Please enter a valid option number...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #18",
+  "note": "account id must be exactly 11 digits and non-zero; no zero padding",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #19",
+  "note": "read order account, xref, customer; not-found messages in that order",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTNUM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTSSN",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTDOB",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTFCO",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSFNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSMNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSLNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL1",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL2",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCITY",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSSTTE",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCTRY",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSZIPC",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN1",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN2",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSGOVT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSEFTC",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPFLG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #20",
+  "note": "first card of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #21",
+  "note": "other store errors: 'Unable to read the account data. Try again later...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTTUS",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ADTOPEN",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AEXPDT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AREISDT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRDLIM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSHLIM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACURBAL",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRCYCR",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRCYDB",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AADDGRP",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTNUM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTSSN",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTDOB",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTFCO",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSFNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSMNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSLNAM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL1",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL2",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCITY",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSSTTE",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCTRY",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSZIPC",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN1",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN2",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSGOVT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSEFTC",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPFLG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #22",
+  "note": "display formatting: money '$ 1,234.56', ids padded, SSN masked ***-**-NNNN, address comma-joined, phones ' / ', dates as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #24",
+  "note": "bill payment validation order (empty id, confirm value, account read, balance<=0, blank confirm, Y pays)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "ACTIDIN",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #24",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #24",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #24",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #25",
+  "note": "1-11 digit id read numerically; non-numeric gives 'Account ID NOT found...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #26",
+  "note": "transaction id = highest tran_id + 1, 16 digits",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #27",
+  "note": "payment literals type 02, cat 2, POS TERM, BILL PAYMENT - ONLINE, merchant 999999999 / BILL PAYMENT / N/A / N/A, card from first xref",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #28",
+  "note": "timestamps 26 chars UTC, orig_ts = proc_ts",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-ACCT",
+  "file": "ACCTDAT",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #29",
+  "note": "new balance = old - amount, guarded update, compensation on failure",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #30",
+  "note": "success message 'Payment successful. Your Transaction ID is <id>.'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "ACTIDIN",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #30",
+  "note": "all fields cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #30",
+  "note": "all fields cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #30",
+  "note": "all fields cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r1/builder/assumptions.md #32",
+  "note": "store error texts from COBIL00C",
+  "origin": "register"
+ }
+]

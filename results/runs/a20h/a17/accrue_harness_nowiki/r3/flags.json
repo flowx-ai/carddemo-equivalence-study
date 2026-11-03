@@ -1,0 +1,72 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 165,
+  "note": "A09: joins assumed; no default group or fallback documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 166,
+  "note": "A10: no eligibility rule; zero or negative balances/rates not charged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 167,
+  "note": "A11: no formula or period specified; one day of a 365-day year assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 168,
+  "note": "A12: no rounding rule stated; half away from zero chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 168,
+  "note": "A12: charges that round to zero omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 169,
+  "note": "A13: update rules not prescribed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 170,
+  "note": "A14: generated transaction values not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 171,
+  "note": "A15: card selection not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 172,
+  "note": "A16: identifier algorithm absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md",
+  "line": 173,
+  "note": "A17: no timestamp policy",
+  "origin": "build"
+ }
+]

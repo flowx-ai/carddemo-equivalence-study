@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-dr8/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-dr8/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 63,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 32,
+  "note": "A-05 BR-10 order vs 'replaces the legacy sequential read loop' / CBTRN02C source: noted conflict, BR-10 wins",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 51,
+  "note": "A-08 AC-6 gives no expected code; resolves to 100",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 54,
+  "note": "A-09 BR-04 and AC DECISIONs resolved as keep (103 over 102)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 66,
+  "note": "A-12 no rule mentions activeStatus",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 69,
+  "note": "A-13 DT-12 TODO on the trailer layout left open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 92,
+  "note": "A-20 overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 92,
+  "note": "A-20 overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 98,
+  "note": "A-21 AC-10 restart DECISION unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 111,
+  "note": "A-23 ASCII encoding not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 111,
+  "note": "A-23 ASCII encoding not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 115,
+  "note": "A-24 duplicate keys: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a21/zflx/dr8/r2/builder/output/assumptions.md",
+  "line": 115,
+  "note": "A-24 blank/short lines: wiki silent",
+  "origin": "build"
+ }
+]

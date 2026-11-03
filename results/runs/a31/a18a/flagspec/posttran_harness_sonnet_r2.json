@@ -1,0 +1,157 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "custdata": "custdata",
+  "carddata": "carddata",
+  "trantype": "trantype",
+  "trancatg": "trancatg"
+ },
+ "decode": {
+  "_root": "result",
+  "posttran_transact": "posttran_transact_json",
+  "posttran_dalyrejs": "posttran_dalyrejs_json",
+  "posttran_acctdata": "posttran_acctdata_json",
+  "posttran_tcatbal": "posttran_tcatbal_json"
+ },
+ "source": "- A2 version d9ca6f59 (head of the build branch, plan COMPLETED)\n- START: nine file contents as text; MODE files\n- END: {\"result\": ${result}}; four lists under names ending _json\n- Register: manifest lines 47-72\n- START also takes processingTimestamp, left at its default (same date contract)",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-POST-WRITE",
+   48,
+   "transaction offsets, copybook absent"
+  ],
+  [
+   "R-POST-COPY",
+   48,
+   "transaction offsets, copybook absent"
+  ],
+  [
+   "R-POST-102",
+   49,
+   "account offsets, copybook absent"
+  ],
+  [
+   "R-POST-BAL",
+   49,
+   "account offsets, copybook absent"
+  ],
+  [
+   "R-POST-100",
+   50,
+   "xref offsets, lengths only"
+  ],
+  [
+   "R-POST-TCAT",
+   51,
+   "category offsets, copybook absent"
+  ],
+  [
+   "R-POST-COPY",
+   52,
+   "input encoding unstated"
+  ],
+  [
+   "R-POST-BAL",
+   52,
+   "input encoding unstated"
+  ],
+  [
+   "R-POST-TCAT",
+   52,
+   "input encoding unstated"
+  ],
+  [
+   "R-POST-COPY",
+   53,
+   "amount width, picture conflicts with example"
+  ],
+  [
+   "R-POST-BAL",
+   53,
+   "amount width, picture conflicts with example"
+  ],
+  [
+   "R-POST-TCAT",
+   53,
+   "amount width, picture conflicts with example"
+  ],
+  [
+   "R-POST-TCAT",
+   55,
+   "category field types not specified"
+  ],
+  [
+   "R-POST-100",
+   56,
+   "invalid card plus expired account example unresolved"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   56,
+   "invalid card plus expired account example unresolved"
+  ],
+  [
+   "R-POST-WRITE",
+   59,
+   "input id kept, replacement rules not supplied"
+  ],
+  [
+   "R-POST-COPY",
+   59,
+   "input id kept, replacement rules not supplied"
+  ],
+  [
+   "R-POST-WRITE",
+   60,
+   "duplicate feed handling not described"
+  ],
+  [
+   "R-POST-BAL",
+   61,
+   "duplicate master keys not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   61,
+   "duplicate master keys not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   62,
+   "processed timestamp clock and format unspecified"
+  ],
+  [
+   "R-POST-COPY",
+   62,
+   "processed timestamp clock and format unspecified"
+  ],
+  [
+   "R-POST-WRITE",
+   66,
+   "malformed master policy not specified"
+  ],
+  [
+   "R-POST-BAL",
+   66,
+   "malformed master policy not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   66,
+   "malformed master policy not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   67,
+   "malformed feed record, no reason code"
+  ]
+ ]
+}

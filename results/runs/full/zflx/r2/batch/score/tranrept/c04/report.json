@@ -1,0 +1,95 @@
+{
+ "summary": {
+  "records_union": 370,
+  "equivalence_strict": 0.9973,
+  "equivalence_business": 0.9973,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 7,
+  "flags_unneeded": 6,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9606,
+    "page_totals_equal": false,
+    "pages_golden": 19,
+    "pages_candidate": 19
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 370,
+   "candidate": 370,
+   "equal_strict": 369,
+   "equal_business": 369,
+   "union": 370
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79636.18",
+   "cand": "79615.75",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-SET",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #35",
+   "note": "date range from input (contract defaults 2022-07-01..07-31) chosen over the wiki config; filter on proc_ts date, inclusive",
+   "origin": "register"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #36",
+   "note": "report totals layout is TODO in the wiki: account total on card change, page size 20",
+   "origin": "register"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #36",
+   "note": "report totals layout is TODO in the wiki: page total then grand total (sum of page totals)",
+   "origin": "register"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #37",
+   "note": "legacy defect not reproduced: the last card's account total is written",
+   "origin": "register"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #39",
+   "note": "unknown card/type/category logged, line printed with blank descriptions, run continues (wiki TODO); legacy abends",
+   "origin": "register"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "step": "tranrept",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #39",
+   "note": "unknown card logged, line printed with blank account, run continues (wiki TODO); legacy abends",
+   "origin": "register"
+  }
+ ],
+ "excluded": []
+}

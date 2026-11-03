@@ -1,0 +1,160 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 13,
+  "flags_unneeded": 12,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 29,
+   "note": "A4 record offsets derived from attribute lists; copybooks not in attachment",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 38,
+   "note": "A5 overpunch for every signed field assumed; wiki states it only for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 51,
+   "note": "A7 key processing order not stated in the wiki; fixes tran id suffixes",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 59,
+   "note": "A9 no STANDARD row either: wiki silent; no interest, warning",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 63,
+   "note": "A10 balance for account not in ledgacc: wiki silent; skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 66,
+   "note": "A11 card source not given by wiki; several cards: lowest card number",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 76,
+   "note": "A13 truncation toward zero; BR-08 TODO, flagged uncertain",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 86,
+   "note": "A16 negative balances: wiki has no sign rule; negative interest",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 89,
+   "note": "A17 fees DECISION open: stub kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 93,
+   "note": "A18 suffix width not stated; 6 digits from 000001",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+   "line": 96,
+   "note": "A19 merchant fields: wiki silent; 0 and blank",
+   "origin": "build"
+  }
+ ]
+}

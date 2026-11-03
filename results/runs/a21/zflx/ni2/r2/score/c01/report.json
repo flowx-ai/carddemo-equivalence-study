@@ -1,0 +1,195 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 17,
+  "flags_unneeded": 17,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 50,
+   "intcalc_systran.orig_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1962.13",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 32,
+   "note": "A-04 offsets: the wiki gives no byte offsets",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 35,
+   "note": "A-05 overpunch set not listed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 37,
+   "note": "A-06 blank/short/non-numeric records: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 40,
+   "note": "A-08 duplicate disclosure key: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 46,
+   "note": "A-09 processing order: wiki does not say whether the file is pre-sorted",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 48,
+   "note": "A-10 balance without account: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 51,
+   "note": "A-12 update with zero interest, cycle reset: listed in builder flags.json",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 59,
+   "note": "A-13 no DEFAULT row: BR-02 does not cover it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 63,
+   "note": "A-14 ten-year rule: leap-day and invalid dates not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 66,
+   "note": "A-15 negative rates not discussed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 69,
+   "note": "A-16 BR-08 TODO: truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 72,
+   "note": "A-18 AC 7 DECISION left as keep stub",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 73,
+   "note": "A-19 balance overflow: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 79,
+   "note": "A-20 suffix width/start not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 85,
+   "note": "A-23 card choice not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/zflx/ni2/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A-24 merchant fields not mentioned",
+   "origin": "build"
+  }
+ ]
+}

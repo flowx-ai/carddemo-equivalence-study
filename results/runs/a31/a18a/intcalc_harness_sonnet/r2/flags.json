@@ -1,0 +1,156 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 102,
+  "note": "rounding TODO; truncate per transaction",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 106,
+  "note": "type and category normalisation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 107,
+  "note": "group normalisation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 109,
+  "note": "malformed or duplicate rate rows unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 112,
+  "note": "missing DEFAULT unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 114,
+  "note": "duplicate rows not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 115,
+  "note": "duplicate balance rows absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 117,
+  "note": "cycle reset coverage not explicit",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 117,
+  "note": "cycle reset coverage not explicit",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 118,
+  "note": "untouched account unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 118,
+  "note": "untouched account unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 127,
+  "note": "identifier format unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 128,
+  "note": "suffix width and order absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 129,
+  "note": "card selection, missing card",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 131,
+  "note": "timestamp population not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 132,
+  "note": "merchant id not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 133,
+  "note": "merchant name not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 134,
+  "note": "merchant city not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 135,
+  "note": "merchant zip not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 136,
+  "note": "overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md",
+  "line": 137,
+  "note": "overflow absent",
+  "origin": "build"
+ }
+]

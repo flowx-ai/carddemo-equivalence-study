@@ -1,0 +1,94 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 3,
+  "flags_unneeded": 3,
+  "volatile_masked": {}
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "step": "intcalc",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #28",
+   "note": "interest truncated toward zero; BR-08 'rounding COBOL truncation (TODO)' vs acceptance 'rounding to two decimals'",
+   "origin": "register"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "step": "intcalc",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #29",
+   "note": "interest transaction card = account's first xref in card-number order (taken as what the legacy alternate-index read returns)",
+   "origin": "register"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "step": "intcalc",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #30",
+   "note": "rate missing for group and DEFAULT: logged and treated as 0, no transaction; the wiki does not cover the case",
+   "origin": "register"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version f9920c3c (head of the build branch, plan COMPLETED, no retry)\n- START: transact, acctdata, cardxref, custdata = file text, MODE files\n- END: {\"result\": ${result}}; contract names inside\n- Register: assume() lines 25-68",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   29,
+   "account offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   30,
+   "xref offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   32,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   32,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   32,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   33,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   33,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   37,
+   "FICO handling"
+  ],
+  [
+   "R-STMT-BAL",
+   38,
+   "implied scale"
+  ],
+  [
+   "R-STMT-TXN",
+   38,
+   "implied scale"
+  ],
+  [
+   "R-STMT-BAL",
+   39,
+   "overpunch decode"
+  ],
+  [
+   "R-STMT-TXN",
+   39,
+   "overpunch decode"
+  ],
+  [
+   "R-STMT-TOTAL",
+   39,
+   "overpunch decode"
+  ],
+  [
+   "R-STMT-TXN",
+   44,
+   "card selection, maker chose"
+  ],
+  [
+   "R-STMT-TXN",
+   45,
+   "transaction order"
+  ],
+  [
+   "R-STMT-SET",
+   45,
+   "transaction order"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "no period filter"
+  ],
+  [
+   "R-STMT-NAME",
+   48,
+   "name assembly, maker chose"
+  ],
+  [
+   "R-STMT-ADDR",
+   49,
+   "address lines, maker chose"
+  ],
+  [
+   "R-STMT-ADDR",
+   50,
+   "address assembly, maker chose"
+  ],
+  [
+   "R-STMT-ABEND",
+   52,
+   "malformed records"
+  ],
+  [
+   "R-STMT-SET",
+   52,
+   "malformed records"
+  ],
+  [
+   "R-STMT-TOTAL",
+   60,
+   "overflow"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   60,
+   "overflow"
+  ]
+ ]
+}

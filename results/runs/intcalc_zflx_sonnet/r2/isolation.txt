@@ -1,0 +1,5 @@
+OUTSIDE Read ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-sonnet-r2/memory/MEMORY.md DENIED
+OUTSIDE Grep ~ DENIED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-sonnet-r2/memory/intcalc-build.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-sonnet-r2/memory/MEMORY.md ALLOWED
+outside accesses: 4

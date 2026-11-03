@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/tranrept_harness_sonnet/r3/exec/workflow_6f7a7051-34cc-4f23-a1fd-a7314a034616.md (and the build's own register) before execution; no output opened.
+- A2 version bd61bb98 (head of the build branch, plan COMPLETED, no retry)
+- START: four file texts plus startDate, endDate; MODE files
+- END: {"result": ${result}}; tranrept_report inside
+- Register: lines 48-67

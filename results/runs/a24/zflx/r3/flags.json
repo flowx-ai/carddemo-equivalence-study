@@ -1,0 +1,731 @@
+[
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #4",
+  "note": "last transaction = highest tran_id as a string",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "COSGN0A",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #8",
+  "note": "credential check in the app against users.pwd (identity-provider DECISION not followed)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COSGN0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #9",
+  "note": "user id and password upper-cased, compared with stored values as stored",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COSGN0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #11",
+  "note": "sign-on messages BR-01..BR-06; 'Unable to verify the User ...' on a store read failure",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "TEXT",
+  "field": "TEXT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #12",
+  "note": "exit text 'Thank you for using CardDemo application...' is the builder's choice (TODO confirm exit text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #15",
+  "note": "options 2-9 answer 'This option <name> is coming soon ...' (text is the builder's)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "COMEN1A",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #15",
+  "note": "options 2-9 stay on the menu",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN011",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #16",
+  "note": "option 11 hidden from the list (toggle false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #16",
+  "note": "option 11 gives 'This option <name> is not installed...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #17",
+  "note": "empty/non-numeric/out-of-range option: 'Please enter a valid option number...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "COMEN1A",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #18",
+  "note": "exit on a menu ends the session and returns to sign-on",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "CACTVWA",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #19",
+  "note": "Back returns to the menu of the user type",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "COBIL0A",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #19",
+  "note": "Back returns to the menu of the user type",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #20",
+  "note": "account number exactly 11 digits, non-zero, empty included: 'Account number must be a non zero 11 digit number'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #21",
+  "note": "read order account, xref, customer; not-found messages in that order",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTNUM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTSSN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTDOB",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTFCO",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSFNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSMNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSLNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL1",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL2",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCITY",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSSTTE",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCTRY",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSZIPC",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN1",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN2",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSGOVT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSEFTC",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPFLG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #22",
+  "note": "first xref document of the account (lowest card_num) gives the customer",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "CACTVWA",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #23",
+  "note": "BR-02/03/04 texts used as written (TODO confirm exact texts); store-error texts are the builder's",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTSSN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #24",
+  "note": "SSN shown as ***-**-NNNN",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTTUS",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ADTOPEN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AEXPDT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AREISDT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRDLIM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSHLIM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACURBAL",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRCYCR",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACRCYDB",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AADDGRP",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTNUM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTSSN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTDOB",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTFCO",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSFNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSMNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSLNAM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL1",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSADL2",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCITY",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSSTTE",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSCTRY",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSZIPC",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN1",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPHN2",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSGOVT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSEFTC",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSPFLG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #25",
+  "note": "display formats: money '$ #,##0.00' with leading '-', ISO dates, address and pairs joined, card number shown",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #26",
+  "note": "search field pre-filled with session.accountId; a successful view updates it",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "screen": "CACTVWA",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #26",
+  "note": "the search is not skipped when the session carries an account (wiki silent)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #28",
+  "note": "bill payment validation order (empty id, N clears, confirm value, account read)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "ACTIDIN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #28",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #28",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #28",
+  "note": "N/n clears the screen",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #29",
+  "note": "account id must be 11 digits, otherwise 'Account ID NOT found...' (TODO confirm text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #30",
+  "note": "blank confirm with a valid account: balance and 'Confirm to make a bill payment...'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #30",
+  "note": "blank confirm shows the balance",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #31",
+  "note": "balance <= 0: 'You have nothing to pay...' on lookup and on Y",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #32",
+  "note": "confirm is a one-character text input",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #33",
+  "note": "full balance paid, active_status not checked (DECISION)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-ACCT",
+  "file": "ACCTDAT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #33",
+  "note": "full balance paid, active_status not checked (DECISION)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #34",
+  "note": "payment literals type 02, cat 2, POS TERM, BILL PAYMENT - ONLINE, merchant 999999999 / BILL PAYMENT / N/A / N/A (TODO verify literals)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #35",
+  "note": "timestamps current UTC, 26 chars, orig_ts = proc_ts",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #36",
+  "note": "transaction id = highest tran_id + 1, 16 digits",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-ACCT",
+  "file": "ACCTDAT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #37",
+  "note": "only curr_bal changes, guarded by the balance read",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-ACCT",
+  "file": "ACCTDAT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #38",
+  "note": "transaction inserted first; compensating delete if the update fails",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #38",
+  "note": "transaction inserted first; compensating delete if the update fails",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #38",
+  "note": "'Unable to Update Account...' when the guarded update fails",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #39",
+  "note": "success 'Payment successful. Your Transaction ID is <id>.' (TODO confirm text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "ACTIDIN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #39",
+  "note": "screen cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #39",
+  "note": "screen cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #39",
+  "note": "screen cleared after success",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "ACTIDIN",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #40",
+  "note": "Clear empties the fields; account id pre-filled from the session after a lookup",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CURBAL",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #40",
+  "note": "Clear empties the fields; account id pre-filled from the session after a lookup",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COBIL0A",
+  "field": "CONFIRM",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #40",
+  "note": "Clear empties the fields; account id pre-filled from the session after a lookup",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #40",
+  "note": "Clear empties the message",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "COBIL0A",
+  "field": "ERRMSG",
+  "source": "runs/a24/zflx/r3/builder/assumptions.md #41",
+  "note": "store-error texts from COBIL00C",
+  "origin": "register"
+ }
+]

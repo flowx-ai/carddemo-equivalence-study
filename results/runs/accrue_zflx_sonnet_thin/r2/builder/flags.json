@@ -1,0 +1,8 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md A-01; flowx/accrue_core.js accrueInterest (interest = bal*rate/120000, BigInt truncation); wiki BR-08 TODO"},
+  {"rule": "R-LAST-ACCT", "source": "assumptions.md A-03; flowx/accrue_core.js ACCRUE.UPDATE_LAST_ACCOUNT=false; wiki BR-06 'At each change of account'"},
+  {"rule": "R-CARD-XREF", "source": "assumptions.md A-07; flowx/accrue_core.js cardByAcct (lowest card number per account)"},
+  {"rule": "R-TXN-TS", "source": "assumptions.md A-08; flowx/accrue_core.js accrueDb2Timestamp (run time, orig_ts = proc_ts)"},
+  {"rule": "R-TXN-FIELDS", "source": "assumptions.md A-08; merchant_id 0, empty merchant name/city/zip, desc 'Accrued int ' + 11-digit account id"},
+  {"rule": "R-RATE-MISSING", "source": "assumptions.md A-05; no STANDARD row -> no interest"}
+]

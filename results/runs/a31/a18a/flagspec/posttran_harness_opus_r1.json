@@ -1,0 +1,148 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "custdata": "custdata",
+  "carddata": "carddata",
+  "trantype": "trantype",
+  "trancatg": "trancatg"
+ },
+ "decode": {
+  "_root": "postingResults"
+ },
+ "source": "- A2 version aa5dbf7e (head of the build branch, plan COMPLETED)\n- START: nine file contents as text; MODE files\n- END: {\"postingResults\": ${result}}; contract names inside\n- Register: manifest lines line 23 (numbered entries)",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-POST-WRITE",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-COPY",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-100",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-102",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-BAL",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-TCAT",
+   23,
+   "entry 2: layout, copybooks not supplied"
+  ],
+  [
+   "R-POST-COPY",
+   23,
+   "entry 7: display sign encoding not specified"
+  ],
+  [
+   "R-POST-BAL",
+   23,
+   "entry 7: display sign encoding not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   23,
+   "entry 7: display sign encoding not specified"
+  ],
+  [
+   "R-POST-BAL",
+   23,
+   "entries 11-12: corrupt or duplicate masters, wiki silent"
+  ],
+  [
+   "R-POST-TCAT",
+   23,
+   "entries 11-12: corrupt or duplicate masters, wiki silent"
+  ],
+  [
+   "R-POST-100",
+   23,
+   "entry 13: lookup precedence not specified"
+  ],
+  [
+   "R-POST-100",
+   23,
+   "entry 15: reject codes provisional, source deferred; entry 16 precedence"
+  ],
+  [
+   "R-POST-101",
+   23,
+   "entry 15: reject codes provisional, source deferred; entry 16 precedence"
+  ],
+  [
+   "R-POST-102",
+   23,
+   "entry 15: reject codes provisional, source deferred; entry 16 precedence"
+  ],
+  [
+   "R-POST-103",
+   23,
+   "entry 15: reject codes provisional, source deferred; entry 16 precedence"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   23,
+   "entry 16: precedence not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   23,
+   "entry 17: order and duplicate ids, wiki silent"
+  ],
+  [
+   "R-POST-BAL",
+   23,
+   "entry 17: order and duplicate ids, wiki silent"
+  ],
+  [
+   "R-POST-102",
+   23,
+   "entry 18: sign exceptions, wiki silent"
+  ],
+  [
+   "R-POST-BAL",
+   23,
+   "entries 19-20: negative amounts and cycle totals not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   23,
+   "entry 21: absent category, wiki silent"
+  ],
+  [
+   "R-POST-WRITE",
+   23,
+   "entry 23: malformed transactions, wiki silent"
+  ],
+  [
+   "R-POST-WRITE",
+   23,
+   "entry 25: timestamp replacement not specified"
+  ],
+  [
+   "R-POST-COPY",
+   23,
+   "entry 25: timestamp replacement not specified"
+  ]
+ ]
+}

@@ -1,0 +1,55 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             COACTVWC resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COACTVWC (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COACTVWC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   3 COACTVWC s0004 SEND-MAP         CACTVWA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   3 COACTVWC s0003 RETURN-TRANSID   CAVW     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAVW) commarea length2000
+##### step   4: ENTER
+=== task   4 tran CAVW program COACTVWC aid ENTER calen     2000
+T   4 COACTVWC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   4 COACTVWC s0005 RECEIVE-MAP      CACTVWA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COACTVWC s0006 READ             CXACAIX  key=00000000001      resp=        0 resp2=        0 rules=R-AIX-READ,
+T   4 COACTVWC s0007 READ             ACCTDAT  key=00000000001      resp=        0 resp2=        0 rules=
+T   4 COACTVWC s0008 READ             CUSTDAT  key=000000001        resp=        0 resp2=        0 rules=
+T   4 COACTVWC s0004 SEND-MAP         CACTVWA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   4 COACTVWC s0003 RETURN-TRANSID   CAVW     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAVW) commarea length2000
+##### step   5: PF3
+=== task   5 tran CAVW program COACTVWC aid PF3   calen     2000
+T   5 COACTVWC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   5 COACTVWC s0002 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   5 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   5 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   5 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   6: PF3
+=== task   6 tran CM00 program COMEN01C aid PF3   calen      160
+T   6 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 COMEN01C s0005 XCTL             COSGN00C resp=        0 resp2=        0 rules=
+--- XCTL in task   6 to program COSGN00C (EIBAID kept: R-XCTL-AID) calen        0
+T   6 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   6 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   6 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   6 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+END outcome=OK

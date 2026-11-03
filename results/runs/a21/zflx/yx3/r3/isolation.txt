@@ -1,0 +1,7 @@
+OUTSIDE Glob ~/Dev/_tests/carddemo-builds DENIED
+OUTSIDE Glob ~/Dev/_tests/carddemo-builds/a21 DENIED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r3/<uuid>/tool-results/toolu_01EKvUsxHMqtfdBZ1ZyrD5tM.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r3/<uuid>/tool-results/toolu_01EKvUsxHMqtfdBZ1ZyrD5tM.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r3/<uuid>/tool-results/toolu_01EKvUsxHMqtfdBZ1ZyrD5tM.json ALLOWED
+OUTSIDE Read ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r3/<uuid>/tool-results/toolu_01EKvUsxHMqtfdBZ1ZyrD5tM.json ALLOWED
+outside accesses: 6

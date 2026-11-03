@@ -1,0 +1,6 @@
+[
+  {"rule": "R-INT-ROUND-HALF-AWAY", "source": "outputs/assumptions.md A-12; flowx/02_compute_interest.js:30 (interestCents)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts,proc_ts", "source": "outputs/assumptions.md A-08"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "outputs/assumptions.md A-06"},
+  {"output": "intcalc_systran.json", "key": "tran_id", "source": "outputs/assumptions.md A-09, A-10"}
+]

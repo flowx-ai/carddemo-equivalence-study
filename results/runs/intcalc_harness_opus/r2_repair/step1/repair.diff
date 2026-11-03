@@ -1,0 +1,5 @@
+deleted from script 'Calculate interest': bad('Duplicate disclosure group at '+ri);
+
+-if(Object.prototype.hasOwnProperty.call(rateMap,rk)){bad('Duplicate disclosure group at '+ri);
+-continue;
++if(Object.prototype.hasOwnProperty.call(rateMap,rk)){continue;

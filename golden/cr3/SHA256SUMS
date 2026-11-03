@@ -1,0 +1,10 @@
+9de8545dfaaac1eba8f4d38a9c354db0895c982103837c5797df9549bb041aec  ./cases/c01/out/intcalc_acctdata.txt
+40e8d43fc3271009f5ea3c29a135cb0e838056b29f1de02773e223f33bee4ffe  ./cases/c01/out/intcalc_systran.txt
+e226034eb731b2e40503c2d234d647421403d20d13c91e3cb7898024d075d568  ./cases/c02/out/intcalc_acctdata.txt
+40c80446455e0571f4347d3b401411837da6b284438737a737837708bc4b5427  ./cases/c02/out/intcalc_systran.txt
+f4df586f98f92057feb094ddc00b8fb8cb976f5b43a1b7d1a09689e8efc3b7fd  ./cases/c03/out/intcalc_acctdata.txt
+de19cc5b0109fb7481de43d01163f3b59114185cb4abb587b83643b4cb85408a  ./cases/c03/out/intcalc_systran.txt
+3d7686865108581708a467101e4c8394cd2b14e4e75544e5508c64b963c1f24e  ./cases/c04/out/intcalc_acctdata.txt
+d40b317f7ddd5e8ba6459e59837c163a5a0d86d89132dce4cefbeda0d657f97d  ./cases/c04/out/intcalc_systran.txt
+f4df586f98f92057feb094ddc00b8fb8cb976f5b43a1b7d1a09689e8efc3b7fd  ./intcalc_acctdata.txt
+de19cc5b0109fb7481de43d01163f3b59114185cb4abb587b83643b4cb85408a  ./intcalc_systran.txt

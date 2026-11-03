@@ -1,0 +1,5 @@
+[
+  {"tran_id": "2022071800000001", "type_cd": "07", "cat_cd": 12, "source": "System", "desc": "Int. for a/c 00000000001", "amt": "7.70", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "4000000000000002", "orig_ts": "2022-07-18-00.00.00.000000", "proc_ts": "2022-07-18-00.00.00.000000"},
+  {"tran_id": "2022071800000002", "type_cd": "07", "cat_cd": 12, "source": "System", "desc": "Int. for a/c 00000000001", "amt": "-1.99", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "4000000000000002", "orig_ts": "2022-07-18-00.00.00.000000", "proc_ts": "2022-07-18-00.00.00.000000"},
+  {"tran_id": "2022071800000003", "type_cd": "07", "cat_cd": 12, "source": "System", "desc": "Int. for a/c 00000000002", "amt": "4.16", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "5555555555554444", "orig_ts": "2022-07-18-00.00.00.000000", "proc_ts": "2022-07-18-00.00.00.000000"}
+]

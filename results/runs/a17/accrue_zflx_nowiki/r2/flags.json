@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 25,
+  "note": "A-03 sign encoding not stated anywhere",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 32,
+  "note": "A-04 formula from CardDemo recall; pages silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 32,
+  "note": "A-04 truncation from CardDemo recall; pages silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 40,
+  "note": "A-06 zero rate rule from recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 42,
+  "note": "A-07 DEFAULT fallback from recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 46,
+  "note": "A-08 id layout from recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 50,
+  "note": "A-09 transaction constants from recall; none in the pages",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 58,
+  "note": "A-11 card number from layout plus recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 65,
+  "note": "A-14 account update from recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 65,
+  "note": "A-14 account update from recall",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 70,
+  "note": "A-12 last account not updated (recalled defect replicated), riskiest assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 76,
+  "note": "A-13 duplicate/missing keys handled by choice",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r2/builder/assumptions.md",
+  "line": 86,
+  "note": "A-16 fees: pages silent, recall",
+  "origin": "build"
+ }
+]

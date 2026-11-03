@@ -1,0 +1,4 @@
+Read from runs/a31/harness/ix3/r3/exec/workflow_48c4601a-ce3a-4d2d-9748-2a0950d94ef7.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 840d9ef0 (head of the build branch, committed; plan COMPLETED on R21, no retry)
+- START: transact, cardxref, trantype, trancatg, startDate, endDate
+- END returns tranrept_report, assumptions_md: no decode map

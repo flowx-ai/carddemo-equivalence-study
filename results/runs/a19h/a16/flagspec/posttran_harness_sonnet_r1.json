@@ -1,0 +1,70 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytranText",
+  "acctdata": "acctdataText",
+  "cardxref": "cardxrefText",
+  "tcatbal": "tcatbalText",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "Files mode: Post transactions reads input.dailytranText, acctdataText, cardxrefText, tcatbalText (required); discgrp/custdata/carddata/trantype/trancatg Text and businessDate accepted, unused; input.processingTimestamp (26 chars, 'now') is required for posting - left unset, as every earlier POSTTRAN execution leaves timestamps unset (A4/A11; notebook \u00a740), so the adapter stays a pure renaming. END: output={result:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, assumptions, assumptions_md, runSummary}} -> _root result.",
+ "wiki": [
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+   63,
+   "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   62,
+   "DECISION: keep or collect all reject reasons"
+  ]
+ ],
+ "build": [
+  [
+   "R-POST-COPY",
+   136,
+   "transaction byte offsets: no copybook supplied"
+  ],
+  [
+   "R-POST-BAL",
+   137,
+   "account layout: copybook not included"
+  ],
+  [
+   "R-POST-TCAT",
+   138,
+   "xref/category layouts: no complete layouts"
+  ],
+  [
+   "R-POST-BAL",
+   139,
+   "POSTTRAN input sign encoding not specified"
+  ],
+  [
+   "R-POST-COPY",
+   139,
+   "POSTTRAN input sign encoding not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   146,
+   "duplicate feed ids / sequence / idempotency not given"
+  ],
+  [
+   "R-POST-TCAT",
+   147,
+   "initial balance of a new category row not stated"
+  ],
+  [
+   "R-POST-BAL",
+   148,
+   "malformed record / duplicate master keys: no rule"
+  ]
+ ]
+}

@@ -1,0 +1,2 @@
+2026-10-28T10:55:14Z A22: attempt 1 (session <uuid>) ended with turn event lease_expired, retryable true, before any plan (D3); kept in attempt1/ with its R-ABSENT scoring record, never scored as the build. Retry once in the same project (app <uuid>) with a new session, after the zflx CR3-CR8 arm ends.
+2026-10-28T13:46:03Z A22 retry (session <uuid>, same project): plan COMPLETED after one A18 retry (committed_preview_changed); this is the scored build.

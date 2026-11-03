@@ -1,0 +1,477 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.697,
+  "equivalence_business": 0.697,
+  "divergent_records": 30,
+  "silent_records": 1,
+  "flagged_records": 29,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [
+   "R-INT-APPLY",
+   "R-INT-RATE"
+  ],
+  "flags_raised": 21,
+  "flags_unneeded": 11,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 49,
+   "intcalc_systran.proc_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 34,
+   "equal_business": 34,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 35,
+   "equal_business": 35,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-APPLY/flagged": 14,
+  "R-INT-LAST/silent": 3,
+  "R-INT-RATE/flagged": 15
+ },
+ "divergences": [
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "18.77",
+   "cand": "16.26",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "29.46",
+   "cand": "25.53",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "32.98",
+   "cand": "28.59",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "32.17",
+   "cand": "27.88",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "11.1",
+   "cand": "9.62",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "51.02",
+   "cand": "44.22",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "0.36",
+   "cand": "0.31",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "36.72",
+   "cand": "31.83",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "30.09",
+   "cand": "26.08",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "37.34",
+   "cand": "32.36",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "18.99",
+   "cand": "16.46",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "23.51",
+   "cand": "20.38",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "27.14",
+   "cand": "23.52",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "29.6",
+   "cand": "25.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "kind": "field",
+   "field": "amt",
+   "rule": "R-INT-RATE",
+   "golden": "20.43",
+   "cand": "17.71",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2167.68",
+   "cand": "2163.73",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1800.11",
+   "cand": "1796.18",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1503.13",
+   "cand": "1499.51",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "4263.56",
+   "cand": "4256.76",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3080.51",
+   "cand": "3076.12",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "969.98",
+   "cand": "968.50",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1173.49",
+   "cand": "1170.36",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1212.86",
+   "cand": "1210.33",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "-898.53",
+   "cand": "-898.58",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2401.49",
+   "cand": "2397.20",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3098.87",
+   "cand": "3093.89",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1672.53",
+   "cand": "1669.81",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3341.91",
+   "cand": "3337.02",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2278.86",
+   "cand": "2274.85",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1962.13",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 49,
+   "note": "BR-08 TODO quoted: truncate vs ROUNDED",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 52,
+   "note": "intra-account order not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 53,
+   "note": "BR-05 suffix width, start, overflow not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 54,
+   "note": "card selection not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 55,
+   "note": "merchant values not supplied",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 56,
+   "note": "generated timestamps not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 57,
+   "note": "run-parameter mismatch handling not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 61,
+   "note": "accounts with no or only failed balances: not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 62,
+   "note": "zero computed amounts not supplied; transaction emitted",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md",
+   "line": 65,
+   "note": "decoded-input normalization rules not given",
+   "origin": "build"
+  }
+ ]
+}

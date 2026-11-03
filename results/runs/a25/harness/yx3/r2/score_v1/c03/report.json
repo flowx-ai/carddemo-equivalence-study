@@ -1,0 +1,3485 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 100,
+  "silent_records": 0,
+  "flagged_records": 100,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ABEND",
+   "R-STMT-ADDR",
+   "R-STMT-FICO",
+   "R-STMT-NAME",
+   "R-STMT-TXN"
+  ],
+  "flags_raised": 52,
+  "flags_unneeded": 21,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.7517
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.8797
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-ABEND/flagged": 12,
+  "R-STMT-ADDR/flagged": 176,
+  "R-STMT-FICO/flagged": 88,
+  "R-STMT-NAME/flagged": 44,
+  "R-STMT-TXN/flagged": 8
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Andersonfurt CT 44803-4279",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Julianneburgh WA 24984",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Predovicton MN 78861",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Bruenfurt OR 02322",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase RI 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland DE 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Concepcionland VT 84390",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Hansenville AP 96003-5867",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire RI 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita IN 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Mitchellmouth MH 72362",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton CA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Anabelton MD 01993-9116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Hendersonbury KS 78239-9466",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho KS 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Walshberg IL 59945",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight GU 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore AS 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Hayesstad NH 01226",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys GA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Kutchland AK 64266",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Hermanborough MS 56133-5636",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Predovicburgh AK 85943-7605",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Haleyport AR 19113-4329",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh ME 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Pfefferhaven LA 46142",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh AL 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Lubowitzberg NV 11857-8177",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi VA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna IA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie MI 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad VT 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Reillyland FM 83589",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview OK 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King ID 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Abbottshire NV 09048",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Alexandroview PW 63082-4520",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough GU 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Albertville OR 83985-4937",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Langoshstad GA 12288-3495",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Alvinaport MI 02251-1698",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester OR 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad VI 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Madieport AL 34206-2974",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "name",
+   "golden": "Maybell Creola Mann",
+   "cand": "Maybell Creola Mann 77933 Adah Dale",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "add1",
+   "golden": "77933 Adah Dale",
+   "cand": "Suite 343",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 343",
+   "cand": "Andersonfurt CT 44803-4279",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "name",
+   "golden": "Hayden Ressie Pfannerstill",
+   "cand": "Hayden Ressie Pfannerstill 14895 Everette Ridges",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "add1",
+   "golden": "14895 Everette Ridges",
+   "cand": "Apt. 443",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 443",
+   "cand": "Julianneburgh WA 24984",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "name",
+   "golden": "Maci Alan Robel",
+   "cand": "Maci Alan Robel 80501 Isac Cliffs",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "add1",
+   "golden": "80501 Isac Cliffs",
+   "cand": "Suite 623",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 623",
+   "cand": "Predovicton MN 78861",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "cand": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "name",
+   "golden": "Mariane Oma Fadel",
+   "cand": "Mariane Oma Fadel 2689 Derick Mission",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "add1",
+   "golden": "2689 Derick Mission",
+   "cand": "Suite 055",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 055",
+   "cand": "Bruenfurt OR 02322",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "name",
+   "golden": "Chelsea Ignacio Marks",
+   "cand": "Chelsea Ignacio Marks 747 Dino Lodge",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add1",
+   "golden": "747 Dino Lodge",
+   "cand": "Apt. 850",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 850",
+   "cand": "West Chase RI 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "name",
+   "golden": "Aubree Elliot Hermann",
+   "cand": "Aubree Elliot Hermann 36365 Ledner Drives",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add1",
+   "golden": "36365 Ledner Drives",
+   "cand": "Suite 882",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 882",
+   "cand": "Port Efrainland DE 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "name",
+   "golden": "Carroll Cicero Bergstrom",
+   "cand": "Carroll Cicero Bergstrom 06988 Thiel Falls",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "add1",
+   "golden": "06988 Thiel Falls",
+   "cand": "Suite 148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 148",
+   "cand": "Concepcionland VT 84390",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "name",
+   "golden": "Emile Jairo White",
+   "cand": "Emile Jairo White 133 Bergnaum Square",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "add1",
+   "golden": "133 Bergnaum Square",
+   "cand": "Apt. 328",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 328",
+   "cand": "Hansenville AP 96003-5867",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "name",
+   "golden": "Hadley Sigrid Hamill",
+   "cand": "Hadley Sigrid Hamill 6273 Ondricka Meadows",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add1",
+   "golden": "6273 Ondricka Meadows",
+   "cand": "Apt. 130",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 130",
+   "cand": "New Arturoshire RI 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "cand": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "name",
+   "golden": "Enrico April Rosenbaum",
+   "cand": "Enrico April Rosenbaum 4917 Myrna Flats",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add1",
+   "golden": "4917 Myrna Flats",
+   "cand": "Apt. 453",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 453",
+   "cand": "West Bernita IN 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "name",
+   "golden": "Carter Oren Veum",
+   "cand": "Carter Oren Veum 5845 Allison Valleys",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "add1",
+   "golden": "5845 Allison Valleys",
+   "cand": "Suite 934",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 934",
+   "cand": "Mitchellmouth MH 72362",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "name",
+   "golden": "Jerrold Adolphus Maggio",
+   "cand": "Jerrold Adolphus Maggio 401 Haylie Crest",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add1",
+   "golden": "401 Haylie Crest",
+   "cand": "Apt. 320",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 320",
+   "cand": "North Myrnaton CA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "name",
+   "golden": "Allene Icie Brown",
+   "cand": "Allene Icie Brown 4467 Donnie Crossroad",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "add1",
+   "golden": "4467 Donnie Crossroad",
+   "cand": "Apt. 437",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 437",
+   "cand": "Anabelton MD 01993-9116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "name",
+   "golden": "Johnson Blanca Ruecker",
+   "cand": "Johnson Blanca Ruecker 2433 Jacobi Forks",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "add1",
+   "golden": "2433 Jacobi Forks",
+   "cand": "Apt. 845",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 845",
+   "cand": "Hendersonbury KS 78239-9466",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "name",
+   "golden": "Stefanie Verla Dickinson",
+   "cand": "Stefanie Verla Dickinson 6367 Stracke River",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add1",
+   "golden": "6367 Stracke River",
+   "cand": "Apt. 444",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 444",
+   "cand": "East Otho KS 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "name",
+   "golden": "Marjory Damien Stracke",
+   "cand": "Marjory Damien Stracke 30161 Bogan Canyon",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "add1",
+   "golden": "30161 Bogan Canyon",
+   "cand": "Suite 916",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 916",
+   "cand": "Walshberg IL 59945",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "name",
+   "golden": "Ward Henri Jones",
+   "cand": "Ward Henri Jones 210 Amaya Turnpike",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add1",
+   "golden": "210 Amaya Turnpike",
+   "cand": "Suite 180",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 180",
+   "cand": "Port Dwight GU 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "cand": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "name",
+   "golden": "Hester Vesta Hane",
+   "cand": "Hester Vesta Hane 06816 Ursula Meadows",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add1",
+   "golden": "06816 Ursula Meadows",
+   "cand": "Suite 605",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 605",
+   "cand": "South Aurore AS 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "name",
+   "golden": "Rickie Otho Daugherty",
+   "cand": "Rickie Otho Daugherty 676 Funk Curve",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "add1",
+   "golden": "676 Funk Curve",
+   "cand": "Apt. 375",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 375",
+   "cand": "Hayesstad NH 01226",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "cand": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "name",
+   "golden": "Larry Cody Homenick",
+   "cand": "Larry Cody Homenick 362 Esta Parks",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add1",
+   "golden": "362 Esta Parks",
+   "cand": "Apt. 390",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 390",
+   "cand": "New Gladys GA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "name",
+   "golden": "Layla Dannie Ullrich",
+   "cand": "Layla Dannie Ullrich 269 Eleazar Circle",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "add1",
+   "golden": "269 Eleazar Circle",
+   "cand": "Apt. 817",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 817",
+   "cand": "Kutchland AK 64266",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "name",
+   "golden": "Lucious Otto O'Connell",
+   "cand": "Lucious Otto O&#39;Connell 919 Swift Valleys",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "add1",
+   "golden": "919 Swift Valleys",
+   "cand": "Suite 548",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 548",
+   "cand": "Hermanborough MS 56133-5636",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "name",
+   "golden": "Stephany Meda Fisher",
+   "cand": "Stephany Meda Fisher 63452 Kenny Streets",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "add1",
+   "golden": "63452 Kenny Streets",
+   "cand": "Apt. 116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 116",
+   "cand": "Predovicburgh AK 85943-7605",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "name",
+   "golden": "Bernice Norbert Herman",
+   "cand": "Bernice Norbert Herman 877 Kassandra Ranch",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "add1",
+   "golden": "877 Kassandra Ranch",
+   "cand": "Suite 956",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 956",
+   "cand": "Haleyport AR 19113-4329",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "name",
+   "golden": "Faustino Jess Schmidt",
+   "cand": "Faustino Jess Schmidt 44132 Michel Square",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add1",
+   "golden": "44132 Michel Square",
+   "cand": "Suite 007",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 007",
+   "cand": "South Margarettaburgh ME 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "name",
+   "golden": "Angelica Damaris Dach",
+   "cand": "Angelica Damaris Dach 396 Pearl Loop",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "add1",
+   "golden": "396 Pearl Loop",
+   "cand": "Suite 383",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 383",
+   "cand": "Pfefferhaven LA 46142",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "name",
+   "golden": "Toney Emerald Gerhold",
+   "cand": "Toney Emerald Gerhold 35943 Raleigh Harbor",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add1",
+   "golden": "35943 Raleigh Harbor",
+   "cand": "Apt. 116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 116",
+   "cand": "Lake Derekburgh AL 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "name",
+   "golden": "Shany Darby Walker",
+   "cand": "Shany Darby Walker 91196 Heaney Turnpike",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "add1",
+   "golden": "91196 Heaney Turnpike",
+   "cand": "Suite 814",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 814",
+   "cand": "Lubowitzberg NV 11857-8177",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "name",
+   "golden": "Angela Ceasar Ankunding",
+   "cand": "Angela Ceasar Ankunding 65482 Zoila Skyway",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add1",
+   "golden": "65482 Zoila Skyway",
+   "cand": "Apt. 054",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 054",
+   "cand": "East Malachi VA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "cand": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', 'Purchase at D&#39;Amore-Batz', Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', D",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "name",
+   "golden": "Aliyah Horace Berge",
+   "cand": "Aliyah Horace Berge 5761 Pasquale Trail",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add1",
+   "golden": "5761 Pasquale Trail",
+   "cand": "Apt. 616",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 616",
+   "cand": "New Sabryna IA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "name",
+   "golden": "Delbert Kaia Parisian",
+   "cand": "Delbert Kaia Parisian 638 Blanda Gateway",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add1",
+   "golden": "638 Blanda Gateway",
+   "cand": "Apt. 076",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 076",
+   "cand": "Lake Virginie MI 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "name",
+   "golden": "Lucinda Kiana Dach",
+   "cand": "Lucinda Kiana Dach 3220 Yolanda Corner",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add1",
+   "golden": "3220 Yolanda Corner",
+   "cand": "Suite 649",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 649",
+   "cand": "East Harmonystad VT 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "name",
+   "golden": "Heather Ericka Nienow",
+   "cand": "Heather Ericka Nienow 5523 Archibald Club",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "add1",
+   "golden": "5523 Archibald Club",
+   "cand": "Apt. 358",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 358",
+   "cand": "Reillyland FM 83589",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "name",
+   "golden": "Britney Jermain Waters",
+   "cand": "Britney Jermain Waters 97765 Bernhard Fort",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add1",
+   "golden": "97765 Bernhard Fort",
+   "cand": "Apt. 666",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 666",
+   "cand": "South Marisaview OK 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "name",
+   "golden": "Irving Kiera Emard",
+   "cand": "Irving Kiera Emard 978 Fatima Stream",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add1",
+   "golden": "978 Fatima Stream",
+   "cand": "Apt. 110",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 110",
+   "cand": "Lake King ID 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "name",
+   "golden": "Dixie Norris Beier",
+   "cand": "Dixie Norris Beier 441 Levi Prairie",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "add1",
+   "golden": "441 Levi Prairie",
+   "cand": "Suite 749",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 749",
+   "cand": "Abbottshire NV 09048",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "name",
+   "golden": "Cindy Kira Cremin",
+   "cand": "Cindy Kira Cremin 494 Lang Avenue",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "add1",
+   "golden": "494 Lang Avenue",
+   "cand": "Apt. 937",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 937",
+   "cand": "Alexandroview PW 63082-4520",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "name",
+   "golden": "Rigoberto Savanna Hoeger",
+   "cand": "Rigoberto Savanna Hoeger 00097 Gleichner Spur",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add1",
+   "golden": "00097 Gleichner Spur",
+   "cand": "Apt. 932",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 932",
+   "cand": "Port Aidanborough GU 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "cand": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', 'Purchase at Kulas, Reichert a",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "name",
+   "golden": "Lyric Mackenzie Pacocha",
+   "cand": "Lyric Mackenzie Pacocha 453 Rosina Mountain",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "add1",
+   "golden": "453 Rosina Mountain",
+   "cand": "Apt. 011",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 011",
+   "cand": "Albertville OR 83985-4937",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "cand": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "name",
+   "golden": "Immanuel Ellie Bednar",
+   "cand": "Immanuel Ellie Bednar 5423 Esther Locks",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "add1",
+   "golden": "5423 Esther Locks",
+   "cand": "Apt. 142",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 142",
+   "cand": "Langoshstad GA 12288-3495",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "cand": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', 'Purchase at O&#39;Hara, Ledner and Runte', Decimal('49.55')), ('0000000432231260', 'Return ite",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "name",
+   "golden": "Treva Manley Schowalter",
+   "cand": "Treva Manley Schowalter 5653 Legros Plaza",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "add1",
+   "golden": "5653 Legros Plaza",
+   "cand": "Apt. 968",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 968",
+   "cand": "Alvinaport MI 02251-1698",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "name",
+   "golden": "Aniya Alba Von",
+   "cand": "Aniya Alba Von 1588 Nienow Cape",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add1",
+   "golden": "1588 Nienow Cape",
+   "cand": "Suite 187",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 187",
+   "cand": "New Aricchester OR 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "name",
+   "golden": "Ignacio Emery Douglas",
+   "cand": "Ignacio Emery Douglas 3963 Yasmin Port",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add1",
+   "golden": "3963 Yasmin Port",
+   "cand": "Suite 756",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Suite 756",
+   "cand": "Port Josephstad VI 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "name",
+   "golden": "Cooper Dennis Mayert",
+   "cand": "Cooper Dennis Mayert 6490 Zakary Locks",
+   "rule": "R-STMT-NAME",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "add1",
+   "golden": "6490 Zakary Locks",
+   "cand": "Apt. 765",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "add2",
+   "golden": "Apt. 765",
+   "cand": "Madieport AL 34206-2974",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Basic Details",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 51,
+   "note": "account offsets absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 55,
+   "note": "transaction offsets absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 55,
+   "note": "card offset inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 60,
+   "note": "positive overpunch inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 60,
+   "note": "positive overpunch inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 61,
+   "note": "negative alphabet and negative zero absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 61,
+   "note": "negative alphabet absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 62,
+   "note": "transport encoding not supplied",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 62,
+   "note": "transport encoding not supplied",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 65,
+   "note": "duplicate resolution unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 66,
+   "note": "duplicate resolution unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 67,
+   "note": "duplicate resolution unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 69,
+   "note": "account wording resolved by maker choice",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 72,
+   "note": "unreferenced transactions: no rule",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 81,
+   "note": "statement continuation absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 82,
+   "note": "malformed-record handling not specified (TODO)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 84,
+   "note": "no overflow policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 84,
+   "note": "no overflow policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+   "line": 84,
+   "note": "no overflow policy",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

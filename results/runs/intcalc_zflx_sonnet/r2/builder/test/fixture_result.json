@@ -1,0 +1,25 @@
+{
+  "runSummary": {
+    "categoryBalancesRead": 6,
+    "accountsRead": 5,
+    "accountsUpdated": 4,
+    "transactionsWritten": 4,
+    "defaultGroupFallbacks": 1,
+    "warnings": [
+      "No card xref for account 00000000004; interest transaction written without card number"
+    ]
+  },
+  "accounts": [
+    {"accountId": "00000000001", "activeStatus": "Y", "currentBalance": 209.25, "creditLimit": 2020, "cashCreditLimit": 1020, "openDate": "2014-11-20", "expiryDate": "2025-05-20", "reissueDate": "2025-05-20", "currentCycleCredit": 0, "currentCycleDebit": 0, "addressZip": "12345", "groupId": "A000000000"},
+    {"accountId": "00000000002", "activeStatus": "Y", "currentBalance": 6.66, "creditLimit": 2020, "cashCreditLimit": 1020, "openDate": "2014-11-20", "expiryDate": "2025-05-20", "reissueDate": "2025-05-20", "currentCycleCredit": 0, "currentCycleDebit": 0, "addressZip": "23456", "groupId": "NOGROUP"},
+    {"accountId": "00000000003", "activeStatus": "Y", "currentBalance": 500, "creditLimit": 2020, "cashCreditLimit": 1020, "openDate": "2014-11-20", "expiryDate": "2025-05-20", "reissueDate": "2025-05-20", "currentCycleCredit": 0, "currentCycleDebit": 0, "addressZip": "34567", "groupId": "ZEROAPR"},
+    {"accountId": "00000000004", "activeStatus": "N", "currentBalance": -152.8, "creditLimit": 2020, "cashCreditLimit": 1020, "openDate": "2014-11-20", "expiryDate": "2025-05-20", "reissueDate": "2025-05-20", "currentCycleCredit": 0, "currentCycleDebit": 0, "addressZip": "45678", "groupId": "A000000000"},
+    {"accountId": "00000000005", "activeStatus": "Y", "currentBalance": 75.25, "creditLimit": 2020, "cashCreditLimit": 1020, "openDate": "2014-11-20", "expiryDate": "2025-05-20", "reissueDate": "2025-05-20", "currentCycleCredit": 5, "currentCycleDebit": 0, "addressZip": "56789", "groupId": "A000000000"}
+  ],
+  "transactions": [
+    {"transactionId": "2022071800000001", "typeCode": "01", "categoryCode": "0005", "source": "System", "description": "Int. for a/c 00000000001", "amount": 15, "merchantId": "000000000", "merchantName": "", "merchantCity": "", "merchantZip": "", "cardNumber": "4111111111111111", "originalTimestamp": "2026-10-25-09.50.19.297000", "processedTimestamp": "2026-10-25-09.50.19.297000"},
+    {"transactionId": "2022071800000002", "typeCode": "01", "categoryCode": "0005", "source": "System", "description": "Int. for a/c 00000000001", "amount": 0.25, "merchantId": "000000000", "merchantName": "", "merchantCity": "", "merchantZip": "", "cardNumber": "4111111111111111", "originalTimestamp": "2026-10-25-09.50.19.297000", "processedTimestamp": "2026-10-25-09.50.19.297000"},
+    {"transactionId": "2022071800000003", "typeCode": "01", "categoryCode": "0005", "source": "System", "description": "Int. for a/c 00000000002", "amount": 6.66, "merchantId": "000000000", "merchantName": "", "merchantCity": "", "merchantZip": "", "cardNumber": "4222222222222222", "originalTimestamp": "2026-10-25-09.50.19.297000", "processedTimestamp": "2026-10-25-09.50.19.297000"},
+    {"transactionId": "2022071800000004", "typeCode": "01", "categoryCode": "0005", "source": "System", "description": "Int. for a/c 00000000004", "amount": -2.25, "merchantId": "000000000", "merchantName": "", "merchantCity": "", "merchantZip": "", "cardNumber": "", "originalTimestamp": "2026-10-25-09.50.19.297000", "processedTimestamp": "2026-10-25-09.50.19.297000"}
+  ]
+}

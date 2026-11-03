@@ -1,0 +1,8 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-APPLY", 46, "A-12 assumed STOP RUN keeps records written before an abend"],
+  ["R-INT-RATE", 85, "A-04 duplicate keys: assumed load behaviour"],
+  ["R-INT-TXFORMAT", 89, "A-05 card choice with several cards: decision where the source is silent"],
+  ["R-INT-RATE", 101, "A-03 non-digit bytes read as 0"],
+  ["R-INT-APPLY", 109, "A-11 overflow, environment-dependent"]
+ ]}

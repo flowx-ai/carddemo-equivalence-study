@@ -1,0 +1,6 @@
+Read from runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 60d9f730 (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Build statements, lines 105-108): input.acctdata, custdata, cardxref, transact = file text, contract names (identity map)
+- END: Finalize outputs (line 234) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); decoder's 'result' unwrapping, no decode map
+- MODE files
+- Register: assumption() entries at lines 50-68 (one per line)

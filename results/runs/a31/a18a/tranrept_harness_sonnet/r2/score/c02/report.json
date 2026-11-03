@@ -1,0 +1,245 @@
+{
+ "summary": {
+  "records_union": 363,
+  "equivalence_strict": 0.9835,
+  "equivalence_business": 0.9917,
+  "divergent_records": 3,
+  "silent_records": 0,
+  "flagged_records": 3,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-HEADER",
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 29,
+  "flags_unneeded": 24,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.8524,
+    "page_totals_equal": false,
+    "pages_golden": 17,
+    "pages_candidate": 6
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 362,
+   "candidate": 363,
+   "equal_strict": 357,
+   "equal_business": 360,
+   "union": 363
+  }
+ },
+ "by_rule": {
+  "R-REPT-HEADER/flagged": 1,
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79233.78",
+   "cand": "79213.35",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "header",
+   "kind": "field",
+   "field": "range",
+   "golden": "('2022-07-01', '2022-07-31')",
+   "cand": "None",
+   "rule": "R-REPT-HEADER",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 54,
+   "note": "transaction offsets not verified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 54,
+   "note": "transaction offsets not verified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 54,
+   "note": "transaction offsets not verified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 55,
+   "note": "reference offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 55,
+   "note": "reference offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 56,
+   "note": "encoding and newline not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 59,
+   "note": "sign encoding not explicit",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 59,
+   "note": "sign encoding not explicit",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 59,
+   "note": "sign encoding not explicit",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 62,
+   "note": "no secondary order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 64,
+   "note": "duplicate reference keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 64,
+   "note": "duplicate reference keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 65,
+   "note": "missing lookup, legacy behaviour TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 65,
+   "note": "missing lookup, legacy behaviour TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 65,
+   "note": "missing lookup, legacy behaviour TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 66,
+   "note": "malformed record detail not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 70,
+   "note": "coincident boundaries not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 71,
+   "note": "final card total at EOF, order not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 73,
+   "note": "negative zero normalised",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_sonnet/r2/exec/workflow_15f44288-bfeb-4d08-ab5d-918d3b166d6d.md",
+   "line": 74,
+   "note": "no overflow rule",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

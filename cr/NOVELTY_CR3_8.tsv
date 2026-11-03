@@ -1,0 +1,46 @@
+cr	source:query	hits
+CR3	repo:loyalty	0
+CR3	repo:tenure	0
+CR3	repo:ACCT-OPEN-DATE	0
+CR3	repo:interest rate discount	0
+CR3	repo:CBACT04C rate	0
+CR3	global:CardDemo interest loyalty discount	0
+CR3	global:CBACT04C open date interest	0
+CR4	repo:velocity	0
+CR4	repo:transactions per card	0
+CR4	repo:daily limit	0
+CR4	repo:CBTRN02C validation	0
+CR4	repo:reason 104	0
+CR4	global:CardDemo CBTRN02C velocity	0
+CR4	global:CBTRN02C daily purchase limit	0
+CR5	repo:posting order	0
+CR5	repo:sort DALYTRAN	0
+CR5	repo:ascending amount	0
+CR5	repo:CBTRN02C order	0
+CR5	global:CardDemo posting order smallest first	0
+CR5	global:CBTRN02C sort amount	0
+CR6	repo:Total EXP	0
+CR6	repo:WS-TOTAL-AMT	1 (PR #32: CBACT04C ROUNDED, CBTRN02C limit sign, CBTRN03C date filter and EOF double count; not a CR6 proposal)
+CR6	repo:statement total	0
+CR6	repo:CBSTM03A total	0
+CR6	global:CBSTM03A total credits	0
+CR6	global:CardDemo statement total purchases	0
+CR7	repo:TRANREPT interest	0
+CR7	repo:CBTRN03C interest	0
+CR7	repo:transaction report exclude	0
+CR7	repo:CBTRN03C filter	0
+CR7	global:CBTRN03C interest exclude	0
+CR7	global:CardDemo transaction report interest	0
+CR8	repo:FICO	0
+CR8	repo:credit score	0
+CR8	repo:CBSTM03A FICO	0
+CR8	repo:score band	0
+CR8	global:CardDemo FICO band statement	0
+CR8	global:CBSTM03A FICO	0
+CR3	web:CardDemo CBACT04C interest rate discount account open date	0
+CR4	web:CardDemo CBTRN02C daily purchase limit per card reject reason 104	0
+CR5	web:CardDemo POSTTRAN posting order ascending amount	0
+CR6	web:CardDemo CBSTM03A statement "Total EXP" credits	0
+CR7	web:CardDemo CBTRN03C transaction report exclude interest transactions	0
+CR8	web:CardDemo CBSTM03A FICO score band statement	0
+all	local: full dump of 98 issues/PRs + 49 comments, regex groups velocity|per-day limit|posting order|tenure/loyalty|rate discount|Total EXP|FICO|band|104|interest-in-report	0 relevant (fee: #39, comment on #9, unrelated; interest-in-report: #59 parity port, not a proposal)

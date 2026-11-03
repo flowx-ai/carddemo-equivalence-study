@@ -1,0 +1,10 @@
+bin/*
+!bin/.keep
+ported/*
+!ported/.keep
+scorer/selftest/
+__pycache__/
+.DS_Store
+run/
+cr/*/bin/
+node_modules/

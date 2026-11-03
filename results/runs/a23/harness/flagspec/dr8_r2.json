@@ -1,0 +1,114 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "_named": {
+   "files": {
+    "dailytran": "dailytran.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "tcatbal": "tcatbal.dat"
+   }
+  }
+ },
+ "decode": {
+  "_root": "postingResult",
+  "posttran_transact": "posttran_transact_json",
+  "posttran_dalyrejs": "posttran_dalyrejs_json",
+  "posttran_acctdata": "posttran_acctdata_json",
+  "posttran_tcatbal": "posttran_tcatbal_json"
+ },
+ "source": "- START (Calculate daily posting, lines 78-82, 88-91): input.files = list of {name, content} with names dailytran.dat, acctdata.dat, cardxref.dat, tcatbal.dat (file text); processingTimestamp optional, left unset (runtime UTC). businessDate is not read by the code (A14 text only).\n- END: Assemble posting result (line 118) writes output={postingResult:{posttran_transact_json, posttran_dalyrejs_json, posttran_acctdata_json, posttran_tcatbal_json, assumptions_md, summary}}: _root postingResult, names renamed\n- MODE files; '_named' (opt-in, notebook \u00a772, commit bf484ee, added before this build executed) sends the four padded files as [{name, content}] (pure restructuring)\n- Register: assumption() calls A01-A21 at lines 47-67 (one per line)",
+ "build": [
+  [
+   "R-POST-COPY",
+   48,
+   "A02 transaction offsets inferred, not verified against the copybook"
+  ],
+  [
+   "R-POST-WRITE",
+   48,
+   "A02 transaction offsets inferred, not verified"
+  ],
+  [
+   "R-POST-BAL",
+   49,
+   "A03 account offsets inferred"
+  ],
+  [
+   "R-POST-100",
+   50,
+   "A04 cross-reference layout inferred"
+  ],
+  [
+   "R-POST-TCAT",
+   50,
+   "A04 category-balance layout inferred"
+  ],
+  [
+   "R-POST-BAL",
+   51,
+   "A05 daily-feed money encoding unstated"
+  ],
+  [
+   "R-POST-TCAT",
+   51,
+   "A05 money encoding unstated"
+  ],
+  [
+   "R-POST-COPY",
+   51,
+   "A05 money encoding unstated"
+  ],
+  [
+   "R-POST-WRITE",
+   52,
+   "A06 line endings and blank records not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   56,
+   "A10 BR-09 idempotence vs pp.9,23 sequences; feed id kept, conflicting duplicates errored"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   58,
+   "A12 p.4 invalid-card-plus-expired-account example not explained"
+  ],
+  [
+   "R-POST-103",
+   59,
+   "A13 no timezone or invalid-date handling stated"
+  ],
+  [
+   "R-POST-BAL",
+   61,
+   "A15 rounding and overflow not stated"
+  ],
+  [
+   "R-POST-TCAT",
+   61,
+   "A15 rounding and overflow not stated"
+  ],
+  [
+   "R-POST-WRITE",
+   62,
+   "A16 no malformed-record or parse-error codes"
+  ],
+  [
+   "R-POST-BAL",
+   63,
+   "A17 duplicate master input behaviour not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   63,
+   "A17 duplicate master input behaviour not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   63,
+   "A17 duplicate master input behaviour not defined"
+  ]
+ ],
+ "cr_rule": "code line 98: the de-duplicated feed is sorted by amount in cents ascending, ties by feed line (stable), before any check or posting (line 100). No register entry mentions posting order (CR flag: no). Over-limit formula credit - debit + amount with stored signs (line 100, no sign change)."
+}

@@ -1,0 +1,467 @@
+{
+ "cases": {
+  "o-avw-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    26,
+    63
+   ],
+   "screen_tagged": [
+    4,
+    23
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-avw-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    14,
+    90
+   ],
+   "screen_tagged": [
+    3,
+    41
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    12,
+    47
+   ],
+   "screen_tagged": [
+    2,
+    21
+   ],
+   "file_untagged": [
+    421,
+    421
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    9,
+    37
+   ],
+   "screen_tagged": [
+    2,
+    21
+   ],
+   "file_untagged": [
+    421,
+    421
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    5,
+    17
+   ],
+   "screen_tagged": [
+    4,
+    40
+   ],
+   "file_untagged": [
+    423,
+    423
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-bil-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    10,
+    36
+   ],
+   "screen_tagged": [
+    11,
+    13
+   ],
+   "file_untagged": [
+    421,
+    421
+   ],
+   "file_tagged": [
+    2,
+    2
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, flagged",
+   "screen_untagged": [
+    37,
+    66
+   ],
+   "screen_tagged": [
+    2,
+    5
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, flagged",
+   "screen_untagged": [
+    15,
+    41
+   ],
+   "screen_tagged": [
+    9,
+    10
+   ],
+   "file_untagged": [
+    421,
+    421
+   ],
+   "file_tagged": [
+    2,
+    2
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, flagged",
+   "screen_untagged": [
+    10,
+    36
+   ],
+   "screen_tagged": [
+    9,
+    10
+   ],
+   "file_untagged": [
+    420,
+    420
+   ],
+   "file_tagged": [
+    2,
+    2
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, flagged",
+   "screen_untagged": [
+    10,
+    36
+   ],
+   "screen_tagged": [
+    9,
+    10
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    2,
+    2
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-07": {
+   "outcome_untagged": "matches legacy",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    2,
+    2
+   ],
+   "screen_tagged": [
+    1,
+    3
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": []
+  },
+  "o-mnu-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    13,
+    37
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-mnu-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    5,
+    17
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-sgn-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    4,
+    5
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": []
+  },
+  "o-sgn-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen_untagged": [
+    10,
+    11
+   ],
+   "screen_tagged": [
+    2,
+    3
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ],
+   "rules_flagged": []
+  },
+  "o-sgn-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    4,
+    6
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    422,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ],
+   "rules_flagged": []
+  }
+ },
+ "pooled": {
+  "screen_untagged": {
+   "equal": 186,
+   "units": 547,
+   "equivalence": 0.340036563071298
+  },
+  "screen_tagged": {
+   "equal": 58,
+   "units": 200,
+   "equivalence": 0.29
+  },
+  "file_untagged": {
+   "equal": 6747,
+   "units": 6747,
+   "equivalence": 1.0
+  },
+  "file_tagged": {
+   "equal": 8,
+   "units": 8,
+   "equivalence": 1.0
+  }
+ },
+ "H16_core_no_silent": {
+  "cases": [
+   "o-sgn-01",
+   "o-sgn-02",
+   "o-mnu-01",
+   "o-avw-01",
+   "o-bil-01",
+   "o-bil-02",
+   "o-bil-03"
+  ],
+  "silent_units": 23,
+  "holds": false
+ },
+ "H15_payment_files": {
+  "silent_units": 0,
+  "holds": true
+ },
+ "H17_account_view_fields": {
+  "equal": 16,
+  "units": 29,
+  "holds": false
+ }
+}

@@ -1,0 +1,17 @@
+[
+  {"rule": "R-POST-RULESET-LEGACY-VS-WIKI", "source": "output/assumptions.md:12"},
+  {"rule": "R-POST-OVERLIMIT-FORMULA", "source": "output/assumptions.md:24"},
+  {"rule": "R-POST-ACTIVE-STATUS-CHECKS", "source": "output/assumptions.md:31"},
+  {"rule": "R-POST-REJECT-REASON-CODES", "source": "output/assumptions.md:42"},
+  {"rule": "R-POST-REJECT-PRECEDENCE", "source": "output/assumptions.md:49"},
+  {"rule": "R-POST-EXPIRATION-CHECK", "source": "output/assumptions.md:56"},
+  {"rule": "R-POST-ACCOUNT-VIA-XREF", "source": "output/assumptions.md:63"},
+  {"rule": "R-POST-CYCLE-CREDIT-DEBIT-SPLIT", "source": "output/assumptions.md:78"},
+  {"rule": "R-POST-TCATBAL-CREATE-MISSING", "source": "output/assumptions.md:85"},
+  {"rule": "R-POST-SEQUENTIAL-BALANCES", "source": "output/assumptions.md:92"},
+  {"rule": "R-POST-FIELD-OVERFLOW-TRUNC", "source": "output/assumptions.md:99"},
+  {"rule": "R-POST-BUSINESS-DATE-NO-FILTER", "source": "output/assumptions.md:108"},
+  {"rule": "R-POST-ZONED-SIGN-ENCODING", "source": "output/assumptions.md:143"},
+  {"rule": "R-POST-DUPLICATE-KEYS", "source": "output/assumptions.md:152"},
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "output/assumptions.md:116"}
+]

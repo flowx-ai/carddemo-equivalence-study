@@ -1,0 +1,181 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 15,
+  "flags_unneeded": 15,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 50,
+   "intcalc_systran.orig_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: exact interest formula and grouping",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: rounding",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+   "line": 18,
+   "note": "AC 2 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 15,
+   "note": "A1 divisor 1200 inferred; no source states it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 26,
+   "note": "A2 truncation; AC TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 34,
+   "note": "A3 driver: ontology over process page 'for each account'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 50,
+   "note": "A5 standard group literal not given: STANDARD then DEFAULT; none: no interest",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 67,
+   "note": "A7 cycle reset: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 76,
+   "note": "A8 account missing from ledgacc: wiki silent; skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 81,
+   "note": "A9 several cards: ontology silent; first in file order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 88,
+   "note": "A10 zero rate: no transaction; zero balance: 0.00 transaction",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 100,
+   "note": "A11 suffix width inferred, start not documented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 117,
+   "note": "A13 sign encoding not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 127,
+   "note": "A14 no overflow emulation: silence",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+   "line": 132,
+   "note": "A15 fees: no behaviour documented",
+   "origin": "build"
+  }
+ ]
+}

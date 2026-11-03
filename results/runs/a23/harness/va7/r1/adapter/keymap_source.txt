@@ -1,0 +1,5 @@
+Read from runs/a23/harness/va7/r1/exec/workflow_78e9f579-52e1-4f20-b78d-0cef4a2fc569.md (and the build's own README/register) before execution; no output opened.
+- START (ParsePostingInputs, lines 37-43): input.dailytran, acctdata, cardxref, tcatbal (file contents as strings), businessDate; processingTimestamp, chunkSize, resumeState optional (absent: runtime UTC timestamp, all records, no checkpoint)
+- END: BuildPostingOutputs (line 103) writes postingOutput{posttranTransact, posttranDalyrejs, posttranAcctdata, posttranTcatbal, ...}; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: _root (result.)postingOutput, names renamed (register item 26 names the same mapping)
+- MODE files
+- Register: the assumptions text at line 99 (items 1-26, all on that line)

@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 28,
+  "note": "A-04 overpunch assumed for every S9 field; wiki states it for the rate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 35,
+  "note": "A-05 DEFAULT row missing too: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 39,
+  "note": "A-06 fields BR-04 does not name (card, merchant)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 46,
+  "note": "A-07 balance for unknown account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 53,
+  "note": "A-09 suffix width and start not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 65,
+  "note": "A-12 wiki rounding implemented; legacy may truncate, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 71,
+  "note": "A-13 zero-rate accounts still updated; scenario 5 only says no transaction",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 79,
+  "note": "A-15 account status: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+  "line": 82,
+  "note": "A-16 AC 7 fees DECISION open; stub kept",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,2 @@
+OUTSIDE Grep ~/.local DENIED
+outside accesses: 1

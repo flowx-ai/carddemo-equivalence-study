@@ -1,0 +1,5320 @@
+[
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COMEN1A",
+  "field": "OPTN011",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "main-menu option 11 (pending authorizations) left out: no 11th option on the page",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COADM1A",
+  "field": "OPTN005",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "admin-menu options 5 and 6 left out",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COADM1A",
+  "field": "OPTN006",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "admin-menu options 5 and 6 left out",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o-mnu-01",
+  "step": 4,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "option 11 has no button (optional module left out)",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-adm-01",
+  "step": 4,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 347,
+  "note": "option 99: 'Please enter a valid option number\u2026' cannot occur, menus are buttons",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-adm-01",
+  "step": 5,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 347,
+  "note": "option 0: invalid-option message cannot occur, menus are buttons",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-adm-01",
+  "step": 6,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 347,
+  "note": "option 7: invalid-option message cannot occur, menus are buttons",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-adm-01",
+  "step": 7,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "admin option 5 left out",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-adm-01",
+  "step": 8,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "admin option 6 left out",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-usl-01",
+  "step": 8,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 348,
+  "note": "admin option 5 left out",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-UNREACH",
+  "case": "o2-usl-01",
+  "step": 10,
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U3",
+  "line": 347,
+  "note": "option 7: invalid-option message cannot occur, menus are buttons",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH1A",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH1B",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH1C",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH2A",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH2B",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "ACSPH2C",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U9",
+  "line": 399,
+  "note": "wiki does not give the phone input format; (999)999-9999 from the seed data used",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CCRDUPA",
+  "field": "CRDNAME",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U12",
+  "line": 421,
+  "note": "embossed name stored upper-cased; the wiki is silent",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-FILE",
+  "file": "CARDDAT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U12",
+  "line": 421,
+  "note": "embossed name stored upper-cased; the wiki is silent",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U14",
+  "line": 438,
+  "note": "new tran_id = highest tran_id + 1 (the wiki suggests a FlowX sequence)",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #U15",
+  "line": 451,
+  "note": "bill payment merchant city and zip 'N/A': not given in the spec",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "file": "TRANSACT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A1",
+  "line": 37,
+  "note": "timestamp format of written transactions (26 characters): the wiki never says",
+  "origin": "register",
+  "scorer": "online"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-act-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-act-03",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-act-03",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-crd-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-03",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-03",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-cus-02",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-02",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-exp-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-03",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-03",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-imp-04",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-04",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-04",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-xrf-02",
+  "name": "RC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: rc 12 (the wiki gives no return-code value)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-02",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A4",
+  "line": 70,
+  "note": "missing required input: the two-line abend sysout",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-act-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-act-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-trn-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-trn-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-trn-03",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-trn-04",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text START line (the wiki does not dictate the non-record lines)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-01",
+  "name": "sysout:52",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text END line, after the build's START line and the case's records",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-02",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text END line, after the build's START line and the case's records",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-01",
+  "name": "sysout:52",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text END line, after the build's START line and the case's records",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-01",
+  "name": "sysout:52",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "free-text END line, after the build's START line and the case's records",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-01",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-02",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-04",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "export sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-01",
+  "name": "sysout:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-02",
+  "name": "sysout:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-03",
+  "name": "sysout:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-05",
+  "name": "sysout:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A7",
+  "line": 95,
+  "note": "import sysout: every line is free text (counts)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_array.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:51",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:52",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:53",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:54",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:55",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:56",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:57",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:58",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:59",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:60",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:61",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:62",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:63",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:64",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:65",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:66",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:67",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:68",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:69",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:70",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:71",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:72",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:73",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:74",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:75",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:76",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:77",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:78",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:79",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:80",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:81",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:82",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:83",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:84",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:85",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:86",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:87",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:88",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:89",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:90",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:91",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:92",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:93",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:94",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:95",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:96",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:97",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:98",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:99",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-01",
+  "name": "acctext_vb.json:100",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_array.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E2",
+  "line": 274,
+  "note": "acctext_array occurrences 2-5 null: the wiki does not say what fills them",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:51",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:52",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:53",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:54",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:55",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:56",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:57",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:58",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:59",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:60",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:61",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:62",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:63",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:64",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:65",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:66",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:67",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:68",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:69",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:70",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:71",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:72",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:73",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:74",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:75",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:76",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:77",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:78",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:79",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:80",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:81",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:82",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:83",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:84",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:85",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:86",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:87",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:88",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:89",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:90",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:91",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:92",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:93",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:94",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:95",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:96",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:97",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:98",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:99",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-act-02",
+  "name": "acctext_vb.json:100",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #E3",
+  "line": 281,
+  "note": "acctext_vb: how often each record shape is written is not stated",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X1",
+  "line": 311,
+  "note": "export seq numbering not given (every export record carries seq)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X2",
+  "line": 315,
+  "note": "branch_id/region_code values not documented (every export record carries them)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X1",
+  "line": 311,
+  "note": "export seq numbering not given (every export record carries seq)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X2",
+  "line": 315,
+  "note": "branch_id/region_code values not documented (every export record carries them)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-04",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X1",
+  "line": 311,
+  "note": "export seq numbering not given (every export record carries seq)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-04",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X2",
+  "line": 315,
+  "note": "branch_id/region_code values not documented (every export record carries them)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-01",
+  "name": "export.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:1",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:2",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:3",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:4",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:5",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:6",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:7",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:8",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:9",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:10",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:11",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:12",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:13",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:14",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:15",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:16",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:17",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:18",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:19",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:20",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:21",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:22",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:23",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:24",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:25",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:26",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:27",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:28",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:29",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:30",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:31",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:32",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:33",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:34",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:35",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:36",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:37",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:38",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:39",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:40",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:41",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:42",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:43",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:44",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:45",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:46",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:47",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:48",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:49",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-exp-02",
+  "name": "export.json:50",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #X4",
+  "line": 323,
+  "note": "SSN exported in clear (wiki tags encryption @manual, round trip needs clear); customer records come first (X1)",
+  "origin": "register",
+  "scorer": "batch_full"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #P1",
+  "line": 110,
+  "note": "whether 103 can replace 102 is not in the wiki",
+  "origin": "register",
+  "scorer": "posttran"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #P2",
+  "line": 115,
+  "note": "overlimit test on running values: the wiki is silent on intra-run effects",
+  "origin": "register",
+  "scorer": "posttran"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #P3",
+  "line": 123,
+  "note": "negative amount added to curr_cyc_debit literally: the wiki does not say to take the absolute value",
+  "origin": "register",
+  "scorer": "posttran"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #A6",
+  "line": 87,
+  "note": "truncation vs rounding: the wiki note says nothing about it",
+  "origin": "register",
+  "scorer": "intcalc"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #I2",
+  "line": 148,
+  "note": "rate 0 when DEFAULT is also missing: the wiki is silent",
+  "origin": "register",
+  "scorer": "intcalc"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #I5",
+  "line": 170,
+  "note": "account missing for a balance: skipped, nothing in the wiki",
+  "origin": "register",
+  "scorer": "intcalc"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #I4",
+  "line": 166,
+  "note": "tran_id suffix width not in the wiki",
+  "origin": "register",
+  "scorer": "intcalc"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #I4",
+  "line": 166,
+  "note": "merchant values of the interest transaction not in the wiki",
+  "origin": "register",
+  "scorer": "intcalc"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #S2",
+  "line": 200,
+  "note": "customer name assembly: the wiki says only X(75)",
+  "origin": "register",
+  "scorer": "creastmt"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #S3",
+  "line": 204,
+  "note": "address line 3 assembly: the wiki does not define it",
+  "origin": "register",
+  "scorer": "creastmt"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #S6",
+  "line": 220,
+  "note": "statement printed when customer or account is missing: the wiki is silent",
+  "origin": "register",
+  "scorer": "creastmt"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #S6",
+  "line": 220,
+  "note": "run continues when customer or account is missing: the wiki is silent",
+  "origin": "register",
+  "scorer": "creastmt"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #R1",
+  "line": 237,
+  "note": "which timestamp the date range filters: the wiki does not say",
+  "origin": "register",
+  "scorer": "tranrept"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #R4",
+  "line": 251,
+  "note": "no account total after the last card: 'account total (card change)' read literally",
+  "origin": "register",
+  "scorer": "tranrept"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #R6",
+  "line": 262,
+  "note": "unknown type/category: blank and continue (wiki TODO: confirm legacy abend behaviour)",
+  "origin": "register",
+  "scorer": "tranrept"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/full/zflx/r1/builder/assumptions.md #R6",
+  "line": 262,
+  "note": "unknown cross-reference: blank and continue (wiki TODO: confirm legacy abend behaviour)",
+  "origin": "register",
+  "scorer": "tranrept"
+ }
+]

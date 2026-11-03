@@ -1,0 +1,810 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.52,
+  "divergent_records": 48,
+  "silent_records": 0,
+  "flagged_records": 48,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ADDR"
+  ],
+  "flags_raised": 46,
+  "flags_unneeded": 40,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.1449
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.1973
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 26,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 26,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-ADDR/flagged": 48
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase RI USA 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland DE USA 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley FM USA 56181-0584",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire RI USA 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita IN USA 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton CA USA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho KS USA 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa NH USA 75721-7382",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight GU USA 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore AS USA 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys GA USA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh ME USA 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh AL USA 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi VA USA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna IA USA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie MI USA 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad VT USA 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview OK USA 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King ID USA 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough GU USA 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester OR USA 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad VI USA 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad SC USA 27610",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden VI USA 21113",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase RI USA 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland DE USA 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley FM USA 56181-0584",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire RI USA 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita IN USA 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton CA USA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho KS USA 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa NH USA 75721-7382",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight GU USA 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore AS USA 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys GA USA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh ME USA 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh AL USA 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi VA USA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna IA USA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie MI USA 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad VT USA 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview OK USA 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King ID USA 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough GU USA 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester OR USA 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad VI USA 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad SC USA 27610",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden VI USA 21113",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 51,
+   "note": "[full offset tables are absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 51,
+   "note": "[full offset tables are absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 51,
+   "note": "[full offset tables are absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 51,
+   "note": "[full offset tables are absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 51,
+   "note": "[full offset tables are absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 52,
+   "note": "[no unused-field validation is stated] unused-field validation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 56,
+   "note": "[newline conventions are absent] newlines",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 57,
+   "note": "[sign encoding and invalid-number policy are absent] monetary encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 57,
+   "note": "[sign encoding and invalid-number policy are absent] monetary encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 57,
+   "note": "[sign encoding and invalid-number policy are absent] monetary encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 58,
+   "note": "[arithmetic and rounding implementation are unspecified] arithmetic",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 59,
+   "note": "[status filtering and ordering are unstated] statement set",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 60,
+   "note": "[additional selection and ordering are absent] transaction selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 60,
+   "note": "[additional selection and ordering are absent] transaction selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 61,
+   "note": "[multi-holder recipient precedence is absent] holder selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 61,
+   "note": "[multi-holder recipient precedence is absent] holder selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 61,
+   "note": "[multi-holder recipient precedence is absent] holder selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 62,
+   "note": "[duplicate-input behaviour is unstated] duplicates",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 62,
+   "note": "[duplicate-input behaviour is unstated] duplicates",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 63,
+   "note": "[assembly is unspecified] name assembly",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 65,
+   "note": "[leaves legacy totals TODO] totals TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 65,
+   "note": "[leaves legacy totals TODO] totals TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 66,
+   "note": "[without an explicit mapping] transaction details",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 67,
+   "note": "[exact legacy totals remain TODO] total EXP",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 68,
+   "note": "[truncation and identifier conversion are not] truncation and conversion",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 68,
+   "note": "[truncation and identifier conversion are not] truncation and conversion",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 68,
+   "note": "[truncation and identifier conversion are not] truncation and conversion",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 69,
+   "note": "[negative zero is not addressed] negative zero",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 69,
+   "note": "[negative zero is not addressed] negative zero",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 69,
+   "note": "[negative zero is not addressed] negative zero",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 70,
+   "note": "[overflow behaviour is absent] overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 70,
+   "note": "[overflow behaviour is absent] overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 71,
+   "note": "[overlong insertion and escaping are unspecified] escaping and padding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 71,
+   "note": "[overlong insertion and escaping are unspecified] escaping and padding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 73,
+   "note": "[No malformed-record or unresolved-link handling is documented] recovery",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 73,
+   "note": "[No malformed-record or unresolved-link handling is documented] recovery",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/rerun/creastmt_harness_opus/r1/exec/workflow_fbabd277-9d95-4a08-bdf4-0ef0f6768bd3.md",
+   "line": 74,
+   "note": "[missing-file behaviour is absent] missing files",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

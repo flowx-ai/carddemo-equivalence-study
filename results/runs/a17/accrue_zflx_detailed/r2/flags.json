@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 41,
+  "note": "A5 rate example 5 chars vs 6-byte field",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 51,
+  "note": "A7 STANDARD row missing too: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 55,
+  "note": "A8 BR-08 TODO open; truncation applied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 56,
+  "note": "A8 negative balances: wiki does not exclude",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 62,
+  "note": "A10 processing order never stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 73,
+  "note": "A12 eligibility filters: wiki mentions none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 76,
+  "note": "A13 balances for unknown account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 79,
+  "note": "A14 AC 7 fees DECISION unresolved; stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 86,
+  "note": "A15 DT-05 sequence generator vs BR-05 suffix: conflict resolved for BR-05",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 92,
+  "note": "A16 desc spacing and padding not given beyond the example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 96,
+  "note": "A17 card number: wiki never says",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_detailed/r2/builder/assumptions.md",
+  "line": 100,
+  "note": "A18 merchant fields: wiki silent",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/dr8/r2/exec/workflow_a6003cf4-e434-4335-ac95-7f3364b10183.md (and the build's own README/register) before execution; no output opened.
+- START (register A-02, A-04; script lines 62-158): dailytran, acctdata, cardxref, tcatbal as raw text, one string per file; businessDate accepted (unused); batchId unset
+- END (script lines 317-320): transactJson, dalyrejsJson, acctdataJson, tcatbalJson = JSON strings of the contract lists -> decode.json renaming
+- MODE files

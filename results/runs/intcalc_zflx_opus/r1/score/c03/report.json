@@ -1,0 +1,157 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 17,
+  "flags_unneeded": 17,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 50,
+   "intcalc_systran.orig_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: exact interest formula and grouping",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: rounding",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+   "line": 18,
+   "note": "AC 2 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 20,
+   "note": "A2 formula from recalled legacy, against the wiki; preface: could be wrong",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 21,
+   "note": "A3 AC TODO rounding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-LAST",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 22,
+   "note": "A4 last account not rewritten (recalled legacy)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 22,
+   "note": "A4 posting rule from recalled legacy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 22,
+   "note": "A4 cycle reset from recalled legacy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 24,
+   "note": "A6 fallback not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 24,
+   "note": "A6 zero-amount transaction (legacy, not in wiki)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 25,
+   "note": "A7 transaction ids not described",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 26,
+   "note": "A8 SYSTRAN not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 27,
+   "note": "A9 card number not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 29,
+   "note": "A11 overflow: sizes only",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 30,
+   "note": "A12 missing reference data: not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 34,
+   "note": "A16 status not mentioned",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_opus/r1/builder/assumptions.md",
+   "line": 35,
+   "note": "A17 fees: wiki mentions only interest",
+   "origin": "build"
+  }
+ ]
+}

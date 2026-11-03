@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_f302f957-...md, script lines 59-106, 131, 291-296) and builder/assumptions.md lines 8-9, before execution:
+- START inputs acctdata, tcatbal, discgrp, cardxref (raw fixed-width text), interestRunDate -> files mode
+- END: the Format node writes output.result = {intcalc_systran, intcalc_acctdata, summary} -> decode.json _root=result (pure renaming); record fields in contract snake_case

@@ -1,0 +1,1130 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 99,
+  "silent_records": 99,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-ABSENT"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 14,
+  "flags_unneeded": 14,
+  "volatile_masked": {}
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50,
+   "absent": true
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 49,
+   "absent": true
+  }
+ },
+ "by_rule": {
+  "R-ABSENT/silent": 99
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000002",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000003",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000004",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000005",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000006",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000007",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000009",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000010",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000011",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000013",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000016",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000017",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000018",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000020",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000022",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000024",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000025",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000027",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000028",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000029",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000031",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000032",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000033",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000035",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000036",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000037",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000039",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000041",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000042",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000044",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000046",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000047",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000048",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000049",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3999169246375885#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2988091353094312#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6009619150674526#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2871968252812490#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4859452612877065#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9501733721429893#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3260763612337560#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7427684863423209#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4011500891777367#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6727055190616014#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9349107475869214#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5671184478505844#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0927987108636232#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2940139362300449#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2760836797107565#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9056297931664011#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0683586198171516#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6723000463207764#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7251508149188883#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7026637615032277#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7094142751055551#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6832676047698087#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1561409106491600#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4534784102713951#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1142167692878931#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2745303720002090#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3766281984155154#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5975117516616077#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1014086565224350#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5656830544981216#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5787351228879339#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6503535181795992#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8262593602473076#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 47,
+   "note": "[LAYOUT-ACCOUNT] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 48,
+   "note": "[LAYOUT-CATEGORY] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 49,
+   "note": "[LAYOUT-RATE] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 50,
+   "note": "[LAYOUT-XREF] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 52,
+   "note": "[OVERPUNCH] full decoding table not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 53,
+   "note": "[TRUNCATION] golden-file rounding check requested",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 54,
+   "note": "[ORDER] tie ordering not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 57,
+   "note": "[MISSING-DEFAULT] absent DEFAULT row not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 58,
+   "note": "[CARD-SELECTION] card selection not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 59,
+   "note": "[UNTOUCHED-ACCOUNTS] not stated separately",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 60,
+   "note": "[TRANSACTION-SEQUENCE] start, width, overflow, restart not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 61,
+   "note": "[TIMESTAMPS] values not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 62,
+   "note": "[MERCHANT-DEFAULTS] merchant fields not initialised by the wiki",
+   "origin": "build"
+  }
+ ]
+}

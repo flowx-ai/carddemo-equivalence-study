@@ -1,0 +1,133 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "statementRun"
+ },
+ "source": "- A2 version: 27d190c0 (head of the build branch, committed; plan COMPLETED on R21, no retry)\n- START: transact, acctdata, cardxref, custdata\n- END: statementRun; contract names inside\n- Register: assumption(...) calls, all on script line 46; flag notes name the entry",
+ "cr_rule": "line 46, band(): FICO band per BR-07; 'fico-bands' cites it, 'unreadable-fico' flags only blank or unreadable scores. Coarse R-STMT-FICO flag also from offsets.",
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "sequential-field-offsets: offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "ascii-overpunch: sign encoding not prescribed"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "ascii-overpunch: sign encoding not prescribed"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "ascii-overpunch: sign encoding not prescribed"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "name-assembly: algorithm not specified"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "address-assembly: no assembly algorithm"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "no-cycle-or-status-filter: wiki TODO, no filter"
+  ],
+  [
+   "R-STMT-FICO",
+   46,
+   "unreadable-fico: handling not specified"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "first-occurrence-masters: no duplicate rule"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "first-occurrence-transactions: no duplicate rule"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "first-occurrence-transactions: no duplicate rule"
+  ],
+  [
+   "R-STMT-ABEND",
+   46,
+   "record-local-recovery and missing files: not specified"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "record-local-recovery and missing files: not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   46,
+   "numeric-picture-overflow: overflow not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "numeric-picture-overflow: overflow not specified"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "numeric-picture-overflow: overflow not specified"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "record-delimiters: blank lines not specified"
+  ]
+ ]
+}

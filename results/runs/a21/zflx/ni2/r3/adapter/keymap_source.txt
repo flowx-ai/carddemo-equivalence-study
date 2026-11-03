@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/ni2/r3/exec/workflow_f9e87ca8-cbee-4afb-9334-62fe22e9408c.md (and the build's own README/register) before execution; no output opened.
+- START inputs acctdata, tcatbal, discgrp, cardxref (raw file text) and interestRunDate (register A-02/A-04; script lines 75-136); runTimestamp optional, unset
+- END payload ${result} = {intcalc_systran, intcalc_acctdata, summary} (register line 6; script line 310): contract names, adapter reads 'result'; no decode.json
+- MODE files

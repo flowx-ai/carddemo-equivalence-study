@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 55,
+  "note": "PERIOD: no formula, rate unit or period given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 56,
+  "note": "ROUND: no rounding rule stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 56,
+  "note": "ROUND: no zero-charge rule stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 57,
+  "note": "ELIGIBLE: no eligibility or debit/credit-balance policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 58,
+  "note": "JOIN: no matching or fallback algorithm",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 60,
+  "note": "DUPLICATES: no duplicate resolution rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 61,
+  "note": "MISSING_MATCH: no unmatched-record policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 62,
+  "note": "ACCOUNT_UPDATE: no balance or cycle update rules",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 63,
+  "note": "TRANSACTION_UNIT: no grouping or ordering rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 64,
+  "note": "TRANSACTION_ID: no identifier construction rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 59,
+  "note": "CARD: no card-selection policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 65,
+  "note": "TRANSACTION_CODES: no type, source, category mapping or description",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 66,
+  "note": "MERCHANT: no merchant defaults",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md",
+  "line": 67,
+  "note": "TIME: no timestamp rule",
+  "origin": "build"
+ }
+]

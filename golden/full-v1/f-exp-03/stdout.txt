@@ -1,0 +1,8 @@
+CBEXPORT: Starting Customer Data Export
+ERROR: Cannot open CARD-INPUT, Status: 35
+CBEXPORT: ABENDING PROGRAM
+CEE3ABD ABEND CALLED
+libcob: warning: implicit CLOSE of TRANSACTION-INPUT ('TRANSACT')
+libcob: warning: implicit CLOSE of XREF-INPUT ('XREFFILE')
+libcob: warning: implicit CLOSE of ACCOUNT-INPUT ('ACCTFILE')
+libcob: warning: implicit CLOSE of CUSTOMER-INPUT ('CUSTFILE')

@@ -1,0 +1,167 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             COCRDLIC resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COCRDLIC (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COCRDLIC s0007 STARTBR          CARDDAT  key=                 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=0500024453765740 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=0683586198171516 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=0923877193247330 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=0927987108636232 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=0982496213629795 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=1014086565224350 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0008 READNEXT         CARDDAT  key=1142167692878931 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0009 READNEXT         CARDDAT  key=1561409106491600 resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0010 ENDBR            CARDDAT  resp=        0 resp2=        0 rules=
+T   3 COCRDLIC s0005 SEND-MAP         CCRDLIA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   3 COCRDLIC s0004 RETURN-TRANSID   CCLI     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   4: ENTER
+=== task   4 tran CCLI program COCRDLIC aid ENTER calen     2000
+T   4 COCRDLIC s0006 RECEIVE-MAP      CCRDLIA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COCRDLIC s0005 SEND-MAP         CCRDLIA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   4 COCRDLIC s0004 RETURN-TRANSID   CCLI     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   5: ENTER
+=== task   5 tran CCLI program COCRDLIC aid ENTER calen     2000
+T   5 COCRDLIC s0006 RECEIVE-MAP      CCRDLIA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   5 COCRDLIC s0007 STARTBR          CARDDAT  key=0500024453765740 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=0500024453765740 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=0683586198171516 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=0923877193247330 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=0927987108636232 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=0982496213629795 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=1014086565224350 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=1142167692878931 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=1561409106491600 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=2745303720002090 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=2760836797107565 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=2871968252812490 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=2940139362300449 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=2988091353094312 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=3260763612337560 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=3766281984155154 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=3940246016141489 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=3999169246375885 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=4011500891777367 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=4385271476627819 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=4534784102713951 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=4859452612877065 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=5407099850479866 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=5656830544981216 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=5671184478505844 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=5787351228879339 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=5975117516616077 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6009619150674526 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6349250331648509 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6503535181795992 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6509230362553816 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6723000463207764 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6727055190616014 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=6832676047698087 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7026637615032277 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7058267261837752 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7094142751055551 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7251508149188883 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7379335634661142 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7427684863423209 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=7443870988897530 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=8040580410348680 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=8112545834239735 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=8262593602473076 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=8517866958206008 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=8931369351894783 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9056297931664011 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9349107475869214 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9501733721429893 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9680294154603697 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9805583408996588 resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0008 READNEXT         CARDDAT  key=9805583408996588 resp=       20 resp2=       90 rules=
+T   5 COCRDLIC s0010 ENDBR            CARDDAT  resp=        0 resp2=        0 rules=
+T   5 COCRDLIC s0005 SEND-MAP         CCRDLIA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   5 COCRDLIC s0004 RETURN-TRANSID   CCLI     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   6: ENTER
+=== task   6 tran CCLI program COCRDLIC aid ENTER calen     2000
+T   6 COCRDLIC s0006 RECEIVE-MAP      CCRDLIA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 COCRDLIC s0007 STARTBR          CARDDAT  key=1561409106491600 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=1561409106491600 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=2745303720002090 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=2760836797107565 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=2871968252812490 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=2940139362300449 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=2988091353094312 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=3260763612337560 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=3766281984155154 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=3940246016141489 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=3999169246375885 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=4011500891777367 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=4385271476627819 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=4534784102713951 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=4859452612877065 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=5407099850479866 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=5656830544981216 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=5671184478505844 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=5787351228879339 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=5975117516616077 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6009619150674526 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6349250331648509 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6503535181795992 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6509230362553816 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6723000463207764 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6727055190616014 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=6832676047698087 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7026637615032277 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7058267261837752 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7094142751055551 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7251508149188883 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7379335634661142 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7427684863423209 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=7443870988897530 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=8040580410348680 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=8112545834239735 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=8262593602473076 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=8517866958206008 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=8931369351894783 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9056297931664011 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9349107475869214 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9501733721429893 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9680294154603697 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9805583408996588 resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0008 READNEXT         CARDDAT  key=9805583408996588 resp=       20 resp2=       90 rules=
+T   6 COCRDLIC s0010 ENDBR            CARDDAT  resp=        0 resp2=        0 rules=
+T   6 COCRDLIC s0005 SEND-MAP         CCRDLIA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   6 COCRDLIC s0004 RETURN-TRANSID   CCLI     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   7: ENTER
+=== task   7 tran CCLI program COCRDLIC aid ENTER calen     2000
+T   7 COCRDLIC s0006 RECEIVE-MAP      CCRDLIA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   7 COCRDLIC s0005 SEND-MAP         CCRDLIA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   7 COCRDLIC s0004 RETURN-TRANSID   CCLI     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   8: PF3
+=== task   8 tran CCLI program COCRDLIC aid PF3   calen     2000
+T   8 COCRDLIC s0006 RECEIVE-MAP      CCRDLIA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   8 COCRDLIC s0001 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   8 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   8 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   8 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

@@ -1,0 +1,9 @@
+19a08c9a602cf03121f4acf71f9ccce10f628e10dcc7be9e66512d113ac0bd37  ./01-data-model/project-data-model.md
+046807ce951f3948d1a6873a09a493e1a68f65a4d0712ab6ba58c319832e7e94  ./02-processes/process-end-of-day-batch-chain.md
+35158bc7b81d188a313ab64676f7b5d55d6afd53f5e49271865967c5ac0bc1f3  ./02-processes/process-report-request.md
+81d9bdaf49b90346a9333dd99d67f76f9860d030c72fbf131f9bff713cc16386  ./02-processes/process-transaction-report.md
+82fad6dd0ec79af7f76f7460d650aa91ccae1b34d63b3d21b020ff0ca7c738d4  ./04-integrations/workflow-reference-data-access.md
+8ae1ebb714f0d9c8a1af57eb1032ffeed0963efc89b4e33d136652dcc273602f  ./04-integrations/workflow-transaction-data-access.md
+2371054506bd16306c8904db9b935d0842a7eae02a61fd2a4edd320be8cd1f4a  ./07-plugins/plugin-transaction-report-document.md
+e2c6079970ef1ee55b06eb5530d10afb66b9521137121318ed816b5e8d972461  ./10-acceptance-criteria/acceptance-criteria-transaction-report.md
+08b597a64704850390d6aa71cd7a5b0e51a7529e1b647723bf7e8746ec833e5f  ./CONTRACT.md

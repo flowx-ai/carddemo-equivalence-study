@@ -1,0 +1,17 @@
+[
+ {
+  "tran_id": "2022071800000001",
+  "type_cd": "07",
+  "cat_cd": 12,
+  "source": "Batch",
+  "desc": "Accrued int 00000000001",
+  "amt": "23.29",
+  "merchant_id": 0,
+  "merchant_name": "",
+  "merchant_city": "",
+  "merchant_zip": "",
+  "card_num": "9680294154603697",
+  "orig_ts": "2026-10-25-17.52.23.600000",
+  "proc_ts": "2026-10-25-17.52.23.600000"
+ }
+]

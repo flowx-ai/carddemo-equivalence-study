@@ -1,0 +1,73 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 5,
+  "flags_unneeded": 5,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 53,
+   "intcalc_systran.orig_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+   "line": 46,
+   "note": "A-12 assumed STOP RUN keeps records written before an abend",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+   "line": 85,
+   "note": "A-04 duplicate keys: assumed load behaviour",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+   "line": 89,
+   "note": "A-05 card choice with several cards: decision where the source is silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+   "line": 101,
+   "note": "A-03 non-digit bytes read as 0",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+   "line": 109,
+   "note": "A-11 overflow, environment-dependent",
+   "origin": "build"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "output/assumptions.md A10 (wiki P-15 BR-08 TODO: truncate vs ROUNDED)"},
+  {"rule": "R-LAST-ACCT-UPDATE", "source": "output/assumptions.md A21 (wiki P-15 BR-06 'at each change of account')"},
+  {"rule": "R-ZERO-AMOUNT-TX", "source": "output/assumptions.md A13 (wiki P-15 BR-03 gates on rate, not amount)"},
+  {"rule": "R-TRANID-SUFFIX", "source": "output/assumptions.md A15 (wiki P-15 BR-05 suffix width not given)"},
+  {"rule": "R-PROCESSING-ORDER", "source": "output/assumptions.md A9 (wiki P-15 'grouped per account')"},
+  {"rule": "R-DEFAULT-MISSING", "source": "output/assumptions.md A11 (wiki silent when DEFAULT row also missing)"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "output/assumptions.md A18 (wiki silent on which card an interest transaction carries)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "output/assumptions.md A19 (processing timestamp, run-dependent)"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "output/assumptions.md A19 (processing timestamp, run-dependent)"},
+  {"output": "intcalc_systran.json", "key": "merchant_id", "source": "output/assumptions.md A17 (wiki silent on merchant fields)"}
+]

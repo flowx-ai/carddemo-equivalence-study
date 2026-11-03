@@ -1,0 +1,213 @@
+{
+ "summary": {
+  "records_union": 88,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 24,
+  "flags_unneeded": 24,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 1.0
+   },
+   "creastmt_statements_html": {
+    "line_match": 1.0
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 44,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 44
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 44,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 44
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 57,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 22,
+   "note": "B1 duplicate card numbers keep file order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 23,
+   "note": "B2 no account or card status filter; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 24,
+   "note": "B3 every transaction on file, no cycle filter; rests on the wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 26,
+   "note": "B5 no limit on transactions per card; legacy bounds not reproduced",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 27,
+   "note": "B6 accumulator overflow behaviour not in the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 28,
+   "note": "B7 missing customer or account stops the run; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 28,
+   "note": "B7 missing customer or account stops the run; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 29,
+   "note": "B8 numeric key matching, first duplicate wins; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 35,
+   "note": "C1 name composition (first word of each part); wiki only says 'customer name'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 36,
+   "note": "C2 address line 3 composition (incl. country code); wiki does not give it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 38,
+   "note": "C4 FICO display rule not defined by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 39,
+   "note": "C5 balance at or above 1,000,000,000.00 loses its high-order digit",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 41,
+   "note": "C7 HTML name with trailing spaces removed; contract gives no width",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 41,
+   "note": "C7 HTML address lines with trailing spaces removed; contract gives no width",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 42,
+   "note": "C8 sign convention of the other signed fields assumed equal to the seed file's",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 42,
+   "note": "C8 sign convention of the other signed fields assumed equal to the seed file's",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_sonnet/r2/builder/assumptions.md",
+   "line": 42,
+   "note": "C8 sign convention of the other signed fields assumed equal to the seed file's",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

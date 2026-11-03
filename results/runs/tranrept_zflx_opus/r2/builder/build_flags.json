@@ -1,0 +1,12 @@
+[
+  {"rule": "R-TRANREPT-TYPE-CATG-LAYOUT", "source": "assumptions.md A5; workflow tranrept_daily_transaction_report, node 'Query report data' (trantype/trancatg parsing)"},
+  {"rule": "R-TRANREPT-DATE-FIELD-PROC-TS", "source": "assumptions.md A7; node 'Query report data' (procDate = TRAN-PROC-TS 1:10)"},
+  {"rule": "R-TRANREPT-SORT-BY-CARD", "source": "assumptions.md A8; node 'Query report data' (selected.sort)"},
+  {"rule": "R-TRANREPT-LOOKUP-FAILURE-ABORTS", "source": "assumptions.md A11; node 'Query report data' (throw on missing lookup)"},
+  {"rule": "R-TRANREPT-PAGE-SIZE-20", "source": "assumptions.md A13; node 'Render report' (PAGE_SIZE, lineCounter)"},
+  {"rule": "R-TRANREPT-ACCOUNT-BREAK-ON-CARD", "source": "assumptions.md A14; node 'Render report' (currCard control break)"},
+  {"rule": "R-TRANREPT-EOF-LAST-AMOUNT-DOUBLE-COUNTED", "source": "assumptions.md A15-A16; node 'Render report' (end-of-file block)"},
+  {"rule": "R-TRANREPT-NO-FINAL-ACCOUNT-TOTAL", "source": "assumptions.md A15; node 'Render report' (end-of-file block)"},
+  {"rule": "R-TRANREPT-ZERO-AMOUNT-BLANK", "source": "assumptions.md A17; node 'Render report' (edited)"},
+  {"rule": "R-TRANREPT-EMPTY-REPORT-HEADER", "source": "assumptions.md A18; node 'Render report' (rowCount === 0)"}
+]

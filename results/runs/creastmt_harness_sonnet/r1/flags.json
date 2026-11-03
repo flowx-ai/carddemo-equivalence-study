@@ -1,0 +1,198 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] signed numeric encoding; physical encoding omitted by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] signed numeric encoding; physical encoding omitted by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] signed numeric encoding; physical encoding omitted by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] one statement per xref card, card-only transactions, no date filter; cycle filter TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] one statement per xref card, card-only transactions, no date filter; cycle filter TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] name: trim parts, omit blanks, single spaces; concatenation undefined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 8,
+  "note": "[6] address line 3 = line3 + state + ZIP, no country; no assembly rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 9,
+  "note": "[7] account ID and FICO display; no conversion rules",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] text truncation policy; no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] text truncation policy; no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] text truncation policy; no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] HTML escaping of inserted text; escaping omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] HTML escaping of inserted text; escaping omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] duplicates rejected; duplicate handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] duplicates rejected; duplicate handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] missing account or customer fails the batch; orphan transactions ignored",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] missing account or customer fails the batch; orphan transactions ignored",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] missing account or customer fails the batch; orphan transactions ignored",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] arithmetic and numeric overflow fail the batch; overflow handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] arithmetic and numeric overflow fail the batch; overflow handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] batch failure without partial statements; no statement-specific policy",
+  "origin": "build"
+ }
+]

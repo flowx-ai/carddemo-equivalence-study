@@ -1,0 +1,2 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r2/memory ALLOWED
+outside accesses: 1

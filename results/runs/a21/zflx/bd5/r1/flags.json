@@ -1,0 +1,135 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 40,
+  "note": "7 no statement-period filter; rests on the wiki TODO, nothing defines a filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 42,
+  "note": "8 no account/card status filter; the wiki defines none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 44,
+  "note": "9 missing customer or account still produces a statement; wiki silent for batch",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 44,
+  "note": "9 missing customer or account still produces a statement; wiki silent for batch",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 55,
+  "note": "11 name assembly; wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 61,
+  "note": "12 address lines; AC gives no format",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 69,
+  "note": "15 FICO printed as stored (3 digits); wiki silent on its print form",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 82,
+  "note": "18 sign encoding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 82,
+  "note": "18 sign encoding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 82,
+  "note": "18 sign encoding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 93,
+  "note": "21 no HTML escaping; wiki otherwise silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a21/zflx/bd5/r1/builder/assumptions.md",
+  "line": 93,
+  "note": "21 no HTML escaping; wiki otherwise silent",
+  "origin": "build"
+ }
+]

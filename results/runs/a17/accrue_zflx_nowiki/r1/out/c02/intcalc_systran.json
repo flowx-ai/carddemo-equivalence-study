@@ -1,0 +1,17 @@
+[
+ {
+  "tran_id": "2022071800000001",
+  "type_cd": "01",
+  "cat_cd": 5,
+  "source": "System",
+  "desc": "Int. for a/c 00000000001",
+  "amt": "23.29",
+  "merchant_id": 0,
+  "merchant_name": "",
+  "merchant_city": "",
+  "merchant_zip": "",
+  "card_num": "9680294154603697",
+  "orig_ts": "2026-10-27-23.53.33.650000",
+  "proc_ts": "2026-10-27-23.53.33.650000"
+ }
+]

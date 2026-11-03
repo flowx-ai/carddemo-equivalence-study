@@ -1,0 +1,167 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 14,
+  "flags_unneeded": 13,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 49,
+   "intcalc_systran.proc_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 30,
+   "note": "#4 encoding only stated for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 34,
+   "note": "#5 rate example 5 vs 6 chars",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 37,
+   "note": "#6 comparison rules not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 43,
+   "note": "#7 BR-08 TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 49,
+   "note": "#9 negative balances: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 52,
+   "note": "#10 DEFAULT missing: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 55,
+   "note": "#11 AC-7 DECISION (fees)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 63,
+   "note": "#13 suffix width and start not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 67,
+   "note": "#14 order not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 72,
+   "note": "#16 merchant fields: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 92,
+   "note": "#22 orphan balances: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 94,
+   "note": "#23 overflow: wiki silent",
+   "origin": "build"
+  }
+ ]
+}

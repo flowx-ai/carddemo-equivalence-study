@@ -1,0 +1,1 @@
+{"batchId": "TEST-001", "businessDate": "2022-07-18", "status": "WARNING", "returnCode": 4, "processedCount": 3, "rejectedCount": 5, "readCount": 8, "duplicatesSkipped": 0, "countsBalance": true, "flowxRunId": "6ae1e3c73695c563ea50acf3"}

@@ -1,0 +1,14 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/scripts/02_compute_interest.js:30 (assumptions.md A5)"},
+  {"rule": "R-INT-MONTHLY-1200", "source": "flowx/scripts/02_compute_interest.js:30 (assumptions.md A4)"},
+  {"rule": "R-INT-BASE-CATEGORY-BALANCE", "source": "flowx/scripts/02_compute_interest.js:21 (assumptions.md A2/A3)"},
+  {"rule": "R-RATE-DEFAULT-GROUP", "source": "flowx/scripts/02_compute_interest.js:8 (assumptions.md A6)"},
+  {"rule": "R-RATE-MISSING-ZERO", "source": "flowx/scripts/02_compute_interest.js:56 (assumptions.md A7)"},
+  {"rule": "R-INT-ZERO-RATE-SKIP", "source": "flowx/scripts/02_compute_interest.js:62 (assumptions.md A8)"},
+  {"rule": "R-POST-CYCLE-RESET", "source": "flowx/scripts/03_post_interest.js:64 (assumptions.md A10)"},
+  {"rule": "R-POST-LAST-ACCOUNT", "source": "flowx/scripts/03_post_interest.js:61 (assumptions.md A16)"},
+  {"rule": "R-TXN-CARD-FIRST-LINK", "source": "flowx/scripts/03_post_interest.js:21 (assumptions.md A11)"},
+  {"rule": "R-TXN-ID-PARM-SEQ", "source": "flowx/scripts/03_post_interest.js:44 (assumptions.md A12a)"},
+  {"rule": "R-TXN-FIXED-FIELDS", "source": "flowx/scripts/03_post_interest.js:45-48 (assumptions.md A12b)"},
+  {"rule": "R-TXN-TIMESTAMP", "source": "flowx/scripts/03_post_interest.js:29 (assumptions.md A12c)"}
+]

@@ -1,0 +1,3296 @@
+{
+ "summary": {
+  "records_union": 371,
+  "equivalence_strict": 0.1402,
+  "equivalence_business": 0.1456,
+  "divergent_records": 317,
+  "silent_records": 0,
+  "flagged_records": 317,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-ACCT",
+   "R-REPT-GRAND",
+   "R-REPT-LASTACCT",
+   "R-REPT-SET"
+  ],
+  "flags_raised": 22,
+  "flags_unneeded": 11,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.0429,
+    "page_totals_equal": false,
+    "pages_golden": 19,
+    "pages_candidate": 2
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 370,
+   "candidate": 105,
+   "equal_strict": 52,
+   "equal_business": 54,
+   "union": 371
+  }
+ },
+ "by_rule": {
+  "R-REPT-ACCT/flagged": 49,
+  "R-REPT-GRAND/flagged": 1,
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-SET/flagged": 266
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "0000000000683580",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000001774260",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000006292564",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000009101861",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000010142252",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000010229018",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000016259484",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000017874199",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000019065428",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000021711604",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000025430891",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000028097268",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000030755266",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000032979555",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000033688127",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000043636099",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000051205286",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000054288996",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000054727064",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000058866561",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000060921254",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000061394789",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000070754800",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000072220498",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000084515950",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000085824369",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000095706092",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000099965527",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000100915314",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000107748365",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000109340521",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000109506921",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000115716061",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000130111733",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000132831571",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000137879630",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000139910093",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000142315472",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000143386237",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000152467982",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000160469204",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000166444519",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000169879332",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000173069364",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000174748684",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000184933166",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000187573156",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000189414937",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000191360674",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000192039153",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000194189303",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000196728331",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000198494663",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000201032783",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000202217428",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000202886897",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000203305494",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000204143988",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000211219588",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000218186931",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000220745261",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000223138231",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000224060323",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000226849749",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000232640164",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000238329981",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000241121967",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000246307558",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000246312084",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000246549911",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000248557079",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000250062442",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000253579636",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000253685514",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000263663553",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000263926805",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000265935610",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000272698228",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000273137276",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000274427056",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000274596018",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000283702177",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000292939458",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000298764221",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000298806396",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000307523903",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000312054308",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000312439873",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000312675172",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000313527007",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000325686503",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000328781772",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000329724245",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000338128146",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000341155503",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000341634875",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000357518499",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000358543876",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000361866674",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000366513257",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000373973344",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000375247552",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000378710702",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000379084859",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000380632461",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000382018782",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000382291356",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000392772234",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000397282953",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000399296572",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000400022505",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000400762013",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000402032668",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000407178785",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000407637739",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000412515011",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000415671623",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000416848414",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000420768809",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000429557611",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000432231260",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000433607101",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000434343718",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000435144487",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000445507761",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000446945803",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000450622695",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000458331136",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000462765346",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000474475283",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000475609951",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000475746885",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000482016448",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000482116790",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000486159054",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000490043047",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000496711357",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000497995808",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000498548061",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000498615524",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000498857207",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000499424514",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000500479019",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000500885895",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000503557384",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000504099546",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000519935575",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000522130011",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000528007115",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000532120892",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000539225404",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000540034453",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000540260014",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000544248006",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000547488622",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000549364593",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000550089732",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000550860982",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000555363230",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000561673599",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000569807281",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000570880433",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000573732499",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000576344938",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000577165878",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000577826814",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000585883106",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000588642606",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000598262041",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000600564499",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000601274842",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000603071214",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000605048564",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000606140907",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000606716618",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000606830191",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000614267358",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000618712102",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000621178666",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000624335286",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000627601011",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000628524597",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000634329004",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000635121182",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000641694180",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000643758597",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000647754915",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000652713581",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000669905307",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000672061881",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000672573296",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000673250360",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000676149118",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000685488982",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000686167627",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000689276136",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000700096853",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000703553020",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000717135758",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000727152111",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000731515153",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000734452614",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000747646163",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000749493129",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000751145919",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000751696292",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000760577632",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000762269241",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000767314476",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000768119840",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000770707563",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000772421231",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000778829157",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000781512834",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000784621975",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000793409700",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000796832699",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000802663079",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000803014982",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000806255008",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000812607213",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000821287727",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000822135100",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000824152956",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000828072981",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000835855923",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000838587312",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000838796166",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000840146978",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000841555701",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000845039454",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000855260493",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000858238426",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000858501945",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000865987685",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000869383367",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000874953803",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000882360848",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000884070277",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000898285002",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000899241176",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000900382063",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000903281896",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000909001545",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000909315074",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000925687557",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000926624843",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000934798061",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000934945079",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000942960329",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000943918566",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000946277676",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000956474921",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000957695517",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000957864065",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000961714986",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000971342087",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000973907278",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000974167587",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000976770816",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000982241353",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "0000000996722787",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "C04T000000000001",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "C04T000000000002",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "C04T000000000003",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "C04T000000000004",
+   "kind": "missing",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-SET",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "kind": "field",
+   "field": "total",
+   "golden": "1108.66",
+   "cand": "14.56",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000002",
+   "kind": "field",
+   "field": "total",
+   "golden": "1606.21",
+   "cand": "29.24",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "kind": "field",
+   "field": "total",
+   "golden": "1743.03",
+   "cand": "32.38",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "kind": "field",
+   "field": "total",
+   "golden": "1520.96",
+   "cand": "21.75",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "kind": "field",
+   "field": "total",
+   "golden": "1361.60",
+   "cand": "23.74",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "kind": "field",
+   "field": "total",
+   "golden": "2388.57",
+   "cand": "34.38",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "kind": "field",
+   "field": "total",
+   "golden": "723.29",
+   "cand": "16.08",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "kind": "field",
+   "field": "total",
+   "golden": "1562.68",
+   "cand": "29.60",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "kind": "field",
+   "field": "total",
+   "golden": "2683.89",
+   "cand": "36.34",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "kind": "field",
+   "field": "total",
+   "golden": "1010.87",
+   "cand": "19.11",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "kind": "field",
+   "field": "total",
+   "golden": "1353.89",
+   "cand": "25.90",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "kind": "field",
+   "field": "total",
+   "golden": "1624.11",
+   "cand": "29.46",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "kind": "field",
+   "field": "total",
+   "golden": "2855.04",
+   "cand": "35.94",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "kind": "field",
+   "field": "total",
+   "golden": "1488.13",
+   "cand": "27.14",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "kind": "field",
+   "field": "total",
+   "golden": "3774.56",
+   "cand": "51.02",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "kind": "field",
+   "field": "total",
+   "golden": "1092.71",
+   "cand": "16.83",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "kind": "field",
+   "field": "total",
+   "golden": "-650.27",
+   "cand": "4.29",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "kind": "field",
+   "field": "total",
+   "golden": "2581.92",
+   "cand": "33.27",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "kind": "field",
+   "field": "total",
+   "golden": "2600.51",
+   "cand": "32.98",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "kind": "field",
+   "field": "total",
+   "golden": "1564.76",
+   "cand": "30.66",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "kind": "field",
+   "field": "total",
+   "golden": "857.98",
+   "cand": "11.10",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "kind": "field",
+   "field": "total",
+   "golden": "2424.81",
+   "cand": "41.61",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "kind": "field",
+   "field": "total",
+   "golden": "1069.49",
+   "cand": "23.51",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "kind": "field",
+   "field": "total",
+   "golden": "1549.14",
+   "cand": "27.04",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "kind": "field",
+   "field": "total",
+   "golden": "702.63",
+   "cand": "19.87",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "kind": "field",
+   "field": "total",
+   "golden": "1166.86",
+   "cand": "18.99",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "kind": "field",
+   "field": "total",
+   "golden": "3256.45",
+   "cand": "44.80",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "kind": "field",
+   "field": "total",
+   "golden": "743.89",
+   "cand": "10.11",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "kind": "field",
+   "field": "total",
+   "golden": "2358.27",
+   "cand": "39.63",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "kind": "field",
+   "field": "total",
+   "golden": "-900.53",
+   "cand": "0.36",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "kind": "field",
+   "field": "total",
+   "golden": "310.40",
+   "cand": "8.30",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "kind": "field",
+   "field": "total",
+   "golden": "445.22",
+   "cand": "14.66",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "kind": "field",
+   "field": "total",
+   "golden": "2986.80",
+   "cand": "42.37",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "kind": "field",
+   "field": "total",
+   "golden": "2148.49",
+   "cand": "32.17",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "kind": "field",
+   "field": "total",
+   "golden": "855.95",
+   "cand": "16.74",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "kind": "field",
+   "field": "total",
+   "golden": "1899.30",
+   "cand": "28.87",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000037",
+   "kind": "field",
+   "field": "total",
+   "golden": "-132.88",
+   "cand": "0.00",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "kind": "field",
+   "field": "total",
+   "golden": "2486.87",
+   "cand": "37.34",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "kind": "field",
+   "field": "total",
+   "golden": "2005.51",
+   "cand": "25.63",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "kind": "field",
+   "field": "total",
+   "golden": "1672.86",
+   "cand": "29.99",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "kind": "field",
+   "field": "total",
+   "golden": "1690.36",
+   "cand": "27.05",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "kind": "field",
+   "field": "total",
+   "golden": "2731.91",
+   "cand": "36.72",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "kind": "field",
+   "field": "total",
+   "golden": "1822.02",
+   "cand": "25.15",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "kind": "field",
+   "field": "total",
+   "golden": "2092.86",
+   "cand": "30.09",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "kind": "field",
+   "field": "total",
+   "golden": "3187.12",
+   "cand": "44.71",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "kind": "field",
+   "field": "total",
+   "golden": "1032.63",
+   "cand": "19.97",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "kind": "field",
+   "field": "total",
+   "golden": "995.79",
+   "cand": "18.90",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "kind": "field",
+   "field": "total",
+   "golden": "1058.26",
+   "cand": "24.95",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "kind": "field",
+   "field": "total",
+   "golden": "1472.64",
+   "cand": "18.77",
+   "rule": "R-REPT-ACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79636.18",
+   "cand": "1284.50",
+   "rule": "R-REPT-GRAND",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 136,
+   "note": "offsets from field order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 136,
+   "note": "offsets from field order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 137,
+   "note": "layout absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 138,
+   "note": "no copybook or offsets",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 139,
+   "note": "sign convention not provided",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 143,
+   "note": "duplicate and lookup rules absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 143,
+   "note": "duplicate and lookup rules absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 144,
+   "note": "no missing-lookup policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 144,
+   "note": "no missing-lookup policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 146,
+   "note": "no page capacity",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a31/a18a/tranrept_harness_opus/r2/exec/workflow_572283e0-c05d-4051-bd55-3f2e2793c9eb.md",
+   "line": 151,
+   "note": "overflow not stated",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

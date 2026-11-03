@@ -1,0 +1,21 @@
+[
+ {"rule": "R-INT-PER-CATEGORY-BALANCE", "source": "flowx/02_compute_interest.js:75 (assumptions.md A-01)"},
+ {"rule": "R-INT-RATE-KEY-GROUP-TYPE-CAT", "source": "flowx/02_compute_interest.js:65 (assumptions.md A-02)"},
+ {"rule": "R-INT-DEFAULT-GROUP-FALLBACK", "source": "flowx/02_compute_interest.js:67 (assumptions.md A-03)"},
+ {"rule": "R-INT-DIV-1200", "source": "flowx/02_compute_interest.js:52 (assumptions.md A-04)"},
+ {"rule": "R-INT-TRUNC", "source": "flowx/02_compute_interest.js:75 (assumptions.md A-05)"},
+ {"rule": "R-INT-ZERO-RATE-SKIP-ZERO-BAL-WRITES", "source": "flowx/02_compute_interest.js:72 (assumptions.md A-06)"},
+ {"rule": "R-INT-TXN-PER-CATEGORY", "source": "flowx/02_compute_interest.js:81 (assumptions.md A-09)"},
+ {"output": "accrue_systxn.json", "key": "tran_id", "source": "flowx/02_compute_interest.js:82 (assumptions.md A-10, A-15)"},
+ {"output": "accrue_systxn.json", "key": "type_cd", "source": "flowx/02_compute_interest.js:39 (assumptions.md A-11)"},
+ {"output": "accrue_systxn.json", "key": "cat_cd", "source": "flowx/02_compute_interest.js:39 (assumptions.md A-11)"},
+ {"output": "accrue_systxn.json", "key": "source", "source": "flowx/02_compute_interest.js:85 (assumptions.md A-12)"},
+ {"output": "accrue_systxn.json", "key": "desc", "source": "flowx/02_compute_interest.js:86 (assumptions.md A-12)"},
+ {"output": "accrue_systxn.json", "key": "card_num", "source": "flowx/02_compute_interest.js:30 (assumptions.md A-13)"},
+ {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/02_compute_interest.js:51 (assumptions.md A-14)"},
+ {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/02_compute_interest.js:51 (assumptions.md A-14)"},
+ {"output": "accrue_ledgacc.json", "key": "curr_cyc_credit", "source": "flowx/03_post_interest.js:25 (assumptions.md A-16)"},
+ {"output": "accrue_ledgacc.json", "key": "curr_cyc_debit", "source": "flowx/03_post_interest.js:26 (assumptions.md A-16)"},
+ {"output": "accrue_ledgacc.json", "key": "curr_bal", "source": "flowx/03_post_interest.js:24 (assumptions.md A-18 last account posted)"},
+ {"rule": "R-RATEGRP-LAYOUT", "source": "flowx/01_load_accounts.js:109-112 (assumptions.md A-23)"}
+]

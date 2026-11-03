@@ -1,0 +1,6459 @@
+{
+ "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+ "concepts": [
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/efa36eddef84ab10",
+   "label": "0000-BALCATF-OPEN",
+   "synonyms": [],
+   "description": "Procedure to open the BALCAT-FILE and set application result code based on open status.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-2",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0001",
+     "approved_at": "2026-10-25T16:40:10.401260+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:12.684121+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.393700Z",
+   "updated_at": "2026-10-25T16:40:10.393700Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/9f42544f43f17a6b",
+   "label": "1000-BALCATF-GET-NEXT",
+   "synonyms": [],
+   "description": "Procedure to get the next record from BALCAT file until end of file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0003",
+     "approved_at": "2026-10-25T16:40:10.106810+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.364409+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.099170Z",
+   "updated_at": "2026-10-25T16:40:10.099170Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/2aec4667b2f44fab",
+   "label": "1050-UPDATE-ACCOUNT",
+   "synonyms": [],
+   "description": "Procedure to update account information.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0004",
+     "approved_at": "2026-10-25T16:40:09.874889+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.472750+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.866494Z",
+   "updated_at": "2026-10-25T16:40:09.866494Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/c640582a1b61a6ce",
+   "label": "1100-GET-LACC-DATA",
+   "synonyms": [],
+   "description": "Procedure to get LACC data.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0005",
+     "approved_at": "2026-10-25T16:40:10.132429+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.556358+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.124799Z",
+   "updated_at": "2026-10-25T16:40:10.124799Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/513ab08b25ad353e",
+   "label": "1110-GET-LINK-DATA",
+   "synonyms": [],
+   "description": "Procedure to get link data related to LACC.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-10",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0006",
+     "approved_at": "2026-10-25T16:40:10.158829+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.642968+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.150704Z",
+   "updated_at": "2026-10-25T16:40:10.150704Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "label": "1200-A-GET-STANDARD-INT-RATE",
+   "synonyms": [],
+   "description": "A procedure performed to get the standard interest rate when the disclosure group status is '23'.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0007",
+     "approved_at": "2026-10-25T16:40:10.426679+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.109769+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.418450Z",
+   "updated_at": "2026-10-25T16:40:10.418450Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "label": "1200-GET-INTEREST-RATE",
+   "synonyms": [],
+   "description": "Procedure to retrieve interest rate for a rate group.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0008",
+     "approved_at": "2026-10-25T16:40:10.525068+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.737279+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.514298Z",
+   "updated_at": "2026-10-25T16:40:10.514298Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b860f5b79f9cef65",
+   "label": "1300-B-WRITE-TX",
+   "synonyms": [],
+   "description": "A procedure called to write transaction data after interest computation.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0009",
+     "approved_at": "2026-10-25T16:40:10.669102+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:04.789173+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.659620Z",
+   "updated_at": "2026-10-25T16:40:10.659620Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8937416561bd9899",
+   "label": "1300-COMPUTE-INTEREST",
+   "synonyms": [],
+   "description": "Procedure to compute interest based on interest rate.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0010",
+     "approved_at": "2026-10-25T16:40:10.183907+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.812724+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.176466Z",
+   "updated_at": "2026-10-25T16:40:10.176466Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/7638844a431ec599",
+   "label": "1400-COMPUTE-FEES",
+   "synonyms": [],
+   "description": "Procedure to compute fees related to transactions.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0011",
+     "approved_at": "2026-10-25T16:40:09.902037+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.890496+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.893702Z",
+   "updated_at": "2026-10-25T16:40:09.893702Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/e8b7893b9d1eb53c",
+   "label": "9000-BALCATF-CLOSE",
+   "synonyms": [],
+   "description": "Procedure to close the BALCAT file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-16",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0012",
+     "approved_at": "2026-10-25T16:40:10.211625+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:58.961588+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.203465Z",
+   "updated_at": "2026-10-25T16:40:10.203465Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/27d1904db6cc63c0",
+   "label": "9100-LINKFILE-CLOSE",
+   "synonyms": [],
+   "description": "Procedure to close the LINK file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0013",
+     "approved_at": "2026-10-25T16:40:09.927179+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.032308+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.920001Z",
+   "updated_at": "2026-10-25T16:40:09.920001Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b5936f1f85b0f2b0",
+   "label": "9200-RATEGRP-CLOSE",
+   "synonyms": [],
+   "description": "Procedure to close the RATEGRP file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-18",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0014",
+     "approved_at": "2026-10-25T16:40:10.240865+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.104849+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.232512Z",
+   "updated_at": "2026-10-25T16:40:10.232512Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/15552e15efe40d7f",
+   "label": "9300-LEDGFILE-CLOSE",
+   "synonyms": [],
+   "description": "Procedure to close the LEDGFILE file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0015",
+     "approved_at": "2026-10-25T16:40:09.952716+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.183366+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.943864Z",
+   "updated_at": "2026-10-25T16:40:09.943864Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/664078477eba2844",
+   "label": "9400-TXNFILEX-CLOSE",
+   "synonyms": [],
+   "description": "Procedure to close the TXNFILEX file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0016",
+     "approved_at": "2026-10-25T16:40:10.267466+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.255895+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.259432Z",
+   "updated_at": "2026-10-25T16:40:10.259432Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "label": "9910-DISPLAY-IO-STATUS",
+   "synonyms": [
+    "Display IO Status Procedure"
+   ],
+   "description": "A procedure performed to display the IO status code.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0017",
+     "approved_at": "2026-10-25T16:35:55.013117+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.698159+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.005203Z",
+   "updated_at": "2026-10-25T16:35:55.005203Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "label": "9999-ABEND-PROGRAM",
+   "synonyms": [
+    "Abend Program Procedure"
+   ],
+   "description": "A procedure performed to abort the program after an error.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0018",
+     "approved_at": "2026-10-25T16:35:55.240821+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.816897+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.233150Z",
+   "updated_at": "2026-10-25T16:35:55.233150Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d632cc24a07cc295",
+   "label": "Account",
+   "synonyms": [
+    "account entity",
+    "account record"
+   ],
+   "description": "A data structure representing an account with various attributes such as ID, status, balances, limits, dates, and identifiers.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Financial_Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "LACC-ID": "Account identifier, numeric string of length 11",
+    "LACC-ACTIVE-STATUS": "Account active status, single character",
+    "LACC-CURR-BAL": "Current balance, signed numeric with 10 digits and 2 decimals",
+    "LACC-CREDIT-LIMIT": "Credit limit, signed numeric with 10 digits and 2 decimals",
+    "LACC-CASH-CREDIT-LIMIT": "Cash credit limit, signed numeric with 10 digits and 2 decimals",
+    "LACC-OPEN-DATE": "Account open date, string of length 10",
+    "LACC-EXPIRY-DATE": "Account expiry date, string of length 10",
+    "LACC-REISSUE-DATE": "Account reissue date, string of length 10",
+    "LACC-CURR-CYC-CREDIT": "Current cycle credit, signed numeric with 10 digits and 2 decimals",
+    "LACC-CURR-CYC-DEBIT": "Current cycle debit, signed numeric with 10 digits and 2 decimals",
+    "LACC-ADDR-ZIP": "Account address zip code, string of length 10",
+    "LACC-GROUP-ID": "Account group identifier, string of length 10",
+    "sources": [
+     {
+      "document_id": "LXV022Y",
+      "chunk_id": "LXV022Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0019",
+     "approved_at": "2026-10-25T16:35:54.579061+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.254157+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.569918Z",
+   "updated_at": "2026-10-25T16:35:54.569918Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5712a722e5465537",
+   "label": "ACCOUNT-FILE",
+   "synonyms": [
+    "Account Master File"
+   ],
+   "description": "A file containing account master data, which is opened for input-output operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "file_mode": "I-O",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0020",
+     "approved_at": "2026-10-25T16:35:54.957853+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.253330+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.950099Z",
+   "updated_at": "2026-10-25T16:35:54.950099Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/64206b8a7dd3b8ac",
+   "label": "Account Record",
+   "synonyms": [
+    "Account Data",
+    "Account Entry"
+   ],
+   "description": "A record representing an account with balance and transaction details.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Financial_Record",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "balance": "LACC-CURR-BAL",
+    "current_cycle_credit": "LACC-CURR-CYC-CREDIT",
+    "current_cycle_debit": "LACC-CURR-CYC-DEBIT",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0021",
+     "approved_at": "2026-10-25T16:35:55.266423+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:47.788901+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.258521Z",
+   "updated_at": "2026-10-25T16:35:55.258521Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/dee94f3009703e21",
+   "label": "APPL-AOK",
+   "synonyms": [
+    "Application OK Flag"
+   ],
+   "description": "A flag indicating whether the application operation was successful.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Boolean_Flag",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0022",
+     "approved_at": "2026-10-25T16:35:55.186298+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.344074+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.178460Z",
+   "updated_at": "2026-10-25T16:35:55.178460Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/15fe60c99c3552ab",
+   "label": "Application OK Flag",
+   "synonyms": [
+    "APPL-AOK"
+   ],
+   "description": "Flag indicating whether the application process was successful.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Process_Status",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0023",
+     "approved_at": "2026-10-25T16:35:55.349865+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:48.126593+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.341302Z",
+   "updated_at": "2026-10-25T16:35:55.341302Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/dec3c560d5773a82",
+   "label": "Application Result",
+   "synonyms": [
+    "APPL-RESULT"
+   ],
+   "description": "Result code indicating success or failure of updating the account record.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Process_Status",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "result_code": null,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0024",
+     "approved_at": "2026-10-25T16:35:55.322049+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:48.013897+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.313230Z",
+   "updated_at": "2026-10-25T16:35:55.313230Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/520a70bc59a06c3d",
+   "label": "Application Result Code",
+   "synonyms": [
+    "APPL-RESULT"
+   ],
+   "description": "Code indicating the result of an application operation; 0 indicates success, 8 or 12 indicate different failure states.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Result_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "success_code": 0,
+    "failure_codes": [
+     8,
+     12
+    ],
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0025",
+     "approved_at": "2026-10-25T16:35:55.453117+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.520230+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.445142Z",
+   "updated_at": "2026-10-25T16:35:55.445142Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1d493f80729b3d64",
+   "label": "APPL-RESULT",
+   "synonyms": [
+    "Application Result Code"
+   ],
+   "description": "A numeric code representing the result of an application operation, such as opening a file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Application_Status_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0026",
+     "approved_at": "2026-10-25T16:35:55.160683+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.161131+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.150345Z",
+   "updated_at": "2026-10-25T16:35:55.150345Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d8d1a6688c829058",
+   "label": "BALCAT-FILE",
+   "synonyms": [],
+   "description": "Indexed file with sequential access mode, record key FD-TXN-CAT-KEY, and file status BALCATF-STATUS.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "organization": "INDEXED",
+    "access_mode": "SEQUENTIAL",
+    "record_key": "FD-TXN-CAT-KEY",
+    "file_status": "BALCATF-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0027",
+     "approved_at": "2026-10-25T16:35:55.096962+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.848734+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.087967Z",
+   "updated_at": "2026-10-25T16:35:55.087967Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/6a77944694f202b8",
+   "label": "BCAT-CD",
+   "synonyms": [],
+   "description": "Category code field in the transaction category key, numeric with 4 digits.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "data_type": "numeric",
+    "length": 4,
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0028",
+     "approved_at": "2026-10-25T16:35:54.770192+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.933574+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.762846Z",
+   "updated_at": "2026-10-25T16:35:54.762846Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d503f057b5f4f9c9",
+   "label": "BCAT-LACC-ID",
+   "synonyms": [],
+   "description": "Account ID field in the transaction category key, numeric with 11 digits.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "data_type": "numeric",
+    "length": 11,
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0029",
+     "approved_at": "2026-10-25T16:35:54.717972+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.775284+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.710038Z",
+   "updated_at": "2026-10-25T16:35:54.710038Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d6f4fbc5836622fc",
+   "label": "BCAT-TYPE-CD",
+   "synonyms": [],
+   "description": "Type code field in the transaction category key, alphanumeric with 2 characters.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "data_type": "alphanumeric",
+    "length": 2,
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0030",
+     "approved_at": "2026-10-25T16:35:54.745720+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.859761+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.737862Z",
+   "updated_at": "2026-10-25T16:35:54.737862Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8572d097647e2547",
+   "label": "CRD-LINK-RECORD",
+   "synonyms": [],
+   "description": "Data structure representing a card cross-reference record with fields for card number, client ID, and account ID.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "LINK-CRD-NUM": "string(16)",
+    "LINK-CLNT-ID": "integer(9)",
+    "LINK-LACC-ID": "integer(11)",
+    "FILLER": "string(14)",
+    "sources": [
+     {
+      "document_id": "LXV024Y",
+      "chunk_id": "LXV024Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0031",
+     "approved_at": "2026-10-25T16:35:54.613176+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.374832+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.603967Z",
+   "updated_at": "2026-10-25T16:35:54.603967Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/510107469d1c12c7",
+   "label": "Current Date Function",
+   "synonyms": [
+    "FUNCTION CURRENT-DATE"
+   ],
+   "description": "A function that returns the current date and time, used to populate timestamp components.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Function",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0032",
+     "approved_at": "2026-10-25T16:35:55.576586+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.934170+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.568723Z",
+   "updated_at": "2026-10-25T16:35:55.568723Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/3609d425e91b2be1",
+   "label": "DB2 Timestamp Format",
+   "synonyms": [
+    "DB2-FORMAT-TS"
+   ],
+   "description": "A timestamp format used in DB2 databases, constructed from current date and time components with specific separators.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Timestamp_Format",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "year": "DB2-YYYY",
+    "month": "DB2-MM",
+    "day": "DB2-DD",
+    "hour": "DB2-HH",
+    "minute": "DB2-MIN",
+    "second": "DB2-SS",
+    "millisecond": "DB2-MIL",
+    "separator_dash": "DB2-STREEP-1, DB2-STREEP-2, DB2-STREEP-3",
+    "separator_dot": "DB2-DOT-1, DB2-DOT-2, DB2-DOT-3",
+    "rest": "DB2-REST",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0033",
+     "approved_at": "2026-10-25T16:35:55.479251+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.788506+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.470927Z",
+   "updated_at": "2026-10-25T16:35:55.470927Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/343336eabcf0c948",
+   "label": "Disclosure Group Record",
+   "synonyms": [
+    "RG-GROUP-RECORD"
+   ],
+   "description": "A data structure representing a disclosure group record with fields for group key, interest rate, and filler.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "RG-LACC-GROUP-ID": "string(10)",
+    "RG-TXN-TYPE-CD": "string(2)",
+    "RG-TXN-CAT-CD": "integer(4)",
+    "RG-INT-RATE": "signed decimal(6,2)",
+    "FILLER": "string(28)",
+    "sources": [
+     {
+      "document_id": "LXV027Y",
+      "chunk_id": "LXV027Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0034",
+     "approved_at": "2026-10-25T16:35:55.042201+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.340198+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.033808Z",
+   "updated_at": "2026-10-25T16:35:55.033808Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/6859ce715e24f519",
+   "label": "Error Message",
+   "synonyms": [
+    "Error Display"
+   ],
+   "description": "Message displayed when an error occurs during account file rewriting.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/System_Message",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "text": "ERROR RE-WRITING ACCOUNT FILE",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0035",
+     "approved_at": "2026-10-25T16:35:55.398676+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:48.309596+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.391455Z",
+   "updated_at": "2026-10-25T16:35:55.391455Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/83ee91dba9b93dd3",
+   "label": "ERROR OPENING ACCOUNT MASTER FILE",
+   "synonyms": [
+    "Account File Open Error Message"
+   ],
+   "description": "An error message displayed when the account master file cannot be opened.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Error_Message",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0036",
+     "approved_at": "2026-10-25T16:35:55.213429+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.572346+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.204397Z",
+   "updated_at": "2026-10-25T16:35:55.204397Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8b023b3c4ae9d504",
+   "label": "FD-LACC-ID",
+   "synonyms": [
+    "File Data LACC ID"
+   ],
+   "description": "Field storing the LACC ID for file operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0037",
+     "approved_at": "2026-10-25T16:40:10.031338+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.680252+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.023735Z",
+   "updated_at": "2026-10-25T16:40:10.023735Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/66cbbbcf1049da26",
+   "label": "FD-LINK-LACC-ID",
+   "synonyms": [
+    "File Data Link LACC ID"
+   ],
+   "description": "Field storing the linked LACC ID for file operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0038",
+     "approved_at": "2026-10-25T16:40:10.348576+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.790337+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.340189Z",
+   "updated_at": "2026-10-25T16:40:10.340189Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/13055d84cb73a590",
+   "label": "FD-RG-LACC-GROUP-ID",
+   "synonyms": [
+    "File Data Rate Group LACC Group ID"
+   ],
+   "description": "Field storing the rate group LACC group ID for file operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0039",
+     "approved_at": "2026-10-25T16:40:10.056135+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.888145+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.048214Z",
+   "updated_at": "2026-10-25T16:40:10.048214Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/18cbfb7ad9f01ab9",
+   "label": "FD-RG-TXN-CAT-CD",
+   "synonyms": [
+    "File Data Rate Group Transaction Category Code"
+   ],
+   "description": "Field storing the transaction category code for rate group file operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0040",
+     "approved_at": "2026-10-25T16:40:10.375901+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.981401+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.368007Z",
+   "updated_at": "2026-10-25T16:40:10.368007Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/bc11035fdb62721b",
+   "label": "FD-RG-TXN-TYPE-CD",
+   "synonyms": [
+    "File Data Rate Group Transaction Type Code"
+   ],
+   "description": "Field storing the transaction type code for rate group file operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0041",
+     "approved_at": "2026-10-25T16:40:10.081760+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:00.076286+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.074090Z",
+   "updated_at": "2026-10-25T16:40:10.074090Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/2d73bf9fbe888098",
+   "label": "FILE STATUS",
+   "synonyms": [
+    "File IO Status"
+   ],
+   "description": "A status message displayed to indicate the current file input/output status.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Message",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "format": "NNNN",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0042",
+     "approved_at": "2026-10-25T16:35:55.686741+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:51.276917+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.679144Z",
+   "updated_at": "2026-10-25T16:35:55.679144Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fde2bfbb3797b95a",
+   "label": "Input/Output Status",
+   "synonyms": [
+    "IO-STATUS"
+   ],
+   "description": "Status code representing the input/output error state, set from the transaction file close status on failure.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Status_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0043",
+     "approved_at": "2026-10-25T16:35:55.549854+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.653250+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.539989Z",
+   "updated_at": "2026-10-25T16:35:55.539989Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/f7f88728a47c9626",
+   "label": "IO-STAT1",
+   "synonyms": [
+    "IO Status 1"
+   ],
+   "description": "A variable representing the first part of the IO status code, used in conditional checks.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "length": 1,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0044",
+     "approved_at": "2026-10-25T16:35:55.720739+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:50.701236+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.707855Z",
+   "updated_at": "2026-10-25T16:35:55.707855Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/93557e6d5f317fc2",
+   "label": "IO-STAT2",
+   "synonyms": [
+    "IO Status 2"
+   ],
+   "description": "A variable representing the second part of the IO status code, used in data movement operations.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0045",
+     "approved_at": "2026-10-25T16:35:55.635112+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:50.811489+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.627193Z",
+   "updated_at": "2026-10-25T16:35:55.627193Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/a2a3751988523641",
+   "label": "IO Status",
+   "synonyms": [
+    "IO-STATUS"
+   ],
+   "description": "Status code representing the input/output operation result.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/System_Status",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0046",
+     "approved_at": "2026-10-25T16:35:55.374719+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:48.217292+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.367169Z",
+   "updated_at": "2026-10-25T16:35:55.367169Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "I/auto/85a056a3df884f3e",
+   "label": "IO-STATUS",
+   "synonyms": [
+    "Input/Output Status"
+   ],
+   "description": "A status code representing the input/output operation status, set from LEDGFILE-STATUS on error.",
+   "category": "I/O Status Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0047",
+     "approved_at": "2026-10-25T16:35:54.986245+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.451728+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.977589Z",
+   "updated_at": "2026-10-25T16:35:54.977589Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d2922bb9272c9770",
+   "label": "IO-STATUS-04",
+   "synonyms": [
+    "IO Status 04"
+   ],
+   "description": "A variable used to store a formatted IO status code for display purposes.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "length": 4,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0048",
+     "approved_at": "2026-10-25T16:35:55.757048+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:50.913912+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.746929Z",
+   "updated_at": "2026-10-25T16:35:55.746929Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/f174fc69e4f53273",
+   "label": "Ledger File Record",
+   "synonyms": [
+    "FD-LEDGFILE-REC",
+    "Ledger Entry"
+   ],
+   "description": "A record in the ledger file representing account transactions and status.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Financial_Record",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "status": "LEDGFILE-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-8",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0049",
+     "approved_at": "2026-10-25T16:35:55.294124+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:47.882590+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.285372Z",
+   "updated_at": "2026-10-25T16:35:55.285372Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ddae28a20e01d346",
+   "label": "Ledgerline_v1.0-15-g27d6c6f-68",
+   "synonyms": [
+    "Ledgerline version 1.0-15-g27d6c6f-68"
+   ],
+   "description": "Version identifier for the data structure definition, dated 2022-07-19 23:16:00 CDT.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Version",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "version": "v1.0-15-g27d6c6f-68",
+    "date": "2022-07-19T23:16:00-05:00",
+    "sources": [
+     {
+      "document_id": "LXV024Y",
+      "chunk_id": "LXV024Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0050",
+     "approved_at": "2026-10-25T16:35:54.640836+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.483231+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.633185Z",
+   "updated_at": "2026-10-25T16:35:54.633185Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1590ccb38b46b0c1",
+   "label": "LEDGFILE-STATUS",
+   "synonyms": [
+    "Ledger File Status"
+   ],
+   "description": "A status code indicating the result of attempting to open the ledger file.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/File_Status_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0051",
+     "approved_at": "2026-10-25T16:35:54.931840+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.069404+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.922829Z",
+   "updated_at": "2026-10-25T16:35:54.922829Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/22e382dcc46bdc6c",
+   "label": "LINK-FILE",
+   "synonyms": [],
+   "description": "Indexed file with random access mode, record key FD-LINK-CRD-NUM, alternate record key FD-LINK-LACC-ID, and file status LINKFILE-STATUS.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "organization": "INDEXED",
+    "access_mode": "RANDOM",
+    "record_key": "FD-LINK-CRD-NUM",
+    "alternate_record_key": "FD-LINK-LACC-ID",
+    "file_status": "LINKFILE-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0052",
+     "approved_at": "2026-10-25T16:35:54.877378+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.973839+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.869725Z",
+   "updated_at": "2026-10-25T16:35:54.869725Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5a5222f9d3c796fb",
+   "label": "LXB002C",
+   "synonyms": [
+    "LXB002C.CBL"
+   ],
+   "description": "A batch COBOL program that functions as an interest calculator.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Software_Program",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "application": "Ledgerline",
+    "type": "BATCH COBOL Program",
+    "function": "interest calculator program",
+    "author": "LEDGERLINE",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0053",
+     "approved_at": "2026-10-25T16:35:54.852407+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.739919+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.845099Z",
+   "updated_at": "2026-10-25T16:35:54.845099Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/6fb86bd540763c55",
+   "label": "LXZ009D",
+   "synonyms": [],
+   "description": "A program called by 9999-ABEND-PROGRAM using parameters ABCODE and TIMING.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/program",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-21",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0054",
+     "approved_at": "2026-10-25T16:35:55.600599+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:35.184230+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.592888Z",
+   "updated_at": "2026-10-25T16:35:55.592888Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8620ab25f0158a13",
+   "label": "RATEGRP-FILE",
+   "synonyms": [],
+   "description": "Indexed file with random access mode, record key FD-RATEGRP-KEY, and file status RATEGRP-STATUS.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "organization": "INDEXED",
+    "access_mode": "RANDOM",
+    "record_key": "FD-RATEGRP-KEY",
+    "file_status": "RATEGRP-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0055",
+     "approved_at": "2026-10-25T16:35:54.904792+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.260692+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.896677Z",
+   "updated_at": "2026-10-25T16:35:54.896677Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/722aa9bdef413eab",
+   "label": "RATEGRP-STATUS",
+   "synonyms": [],
+   "description": "Status code returned after attempting to read RATEGRP-FILE; '00' or '23' indicate success or special condition, others indicate failure.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Status_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0056",
+     "approved_at": "2026-10-25T16:40:10.460106+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:42.738619+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.451899Z",
+   "updated_at": "2026-10-25T16:40:10.451899Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/f93214822bb191ad",
+   "label": "RG-GROUP-KEY",
+   "synonyms": [],
+   "description": "A substructure within Disclosure Group Record containing group ID, transaction type code, and transaction category code.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure_Subcomponent",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "RG-LACC-GROUP-ID": "string(10)",
+    "RG-TXN-TYPE-CD": "string(2)",
+    "RG-TXN-CAT-CD": "integer(4)",
+    "sources": [
+     {
+      "document_id": "LXV027Y",
+      "chunk_id": "LXV027Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0057",
+     "approved_at": "2026-10-25T16:35:54.825559+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.467386+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.816739Z",
+   "updated_at": "2026-10-25T16:35:54.816739Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fecb50a8b24815fc",
+   "label": "RG-GROUP-RECORD",
+   "synonyms": [],
+   "description": "A record structure into which data from RATEGRP-FILE is read.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Record",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0058",
+     "approved_at": "2026-10-25T16:40:10.553650+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:42.623864+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.544380Z",
+   "updated_at": "2026-10-25T16:40:10.544380Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8efde7b1f308695d",
+   "label": "RG-INT-RATE",
+   "synonyms": [
+    "Interest Rate"
+   ],
+   "description": "Interest rate used to compute monthly interest.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "numeric",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0059",
+     "approved_at": "2026-10-25T16:40:10.638205+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:04.600879+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.630478Z",
+   "updated_at": "2026-10-25T16:40:10.630478Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5c25df5480fd619f",
+   "label": "Transaction Category Balance Record",
+   "synonyms": [
+    "TXN-CAT-BAL-RECORD"
+   ],
+   "description": "Data structure representing a transaction category balance record with key and balance fields.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "TXN-CAT-KEY": "Transaction Category Key",
+    "TXN-CAT-BAL": "Transaction Category Balance",
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0060",
+     "approved_at": "2026-10-25T16:35:54.665953+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.590396+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.658081Z",
+   "updated_at": "2026-10-25T16:35:54.658081Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/79359aae0490bf3b",
+   "label": "Transaction Category Key",
+   "synonyms": [
+    "TXN-CAT-KEY"
+   ],
+   "description": "Key identifying the transaction category, composed of BCAT-LACC-ID, BCAT-TYPE-CD, and BCAT-CD.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "BCAT-LACC-ID": "Account ID (numeric, 11 digits)",
+    "BCAT-TYPE-CD": "Type Code (alphanumeric, 2 characters)",
+    "BCAT-CD": "Category Code (numeric, 4 digits)",
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0061",
+     "approved_at": "2026-10-25T16:35:54.691689+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:32.677576+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:54.684353Z",
+   "updated_at": "2026-10-25T16:35:54.684353Z",
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/18aced87ebc0b094",
+   "label": "Transaction File",
+   "synonyms": [
+    "TXNFILE-FILE"
+   ],
+   "description": "A file used for transaction processing, which can be opened and closed with status codes indicating success or failure.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0062",
+     "approved_at": "2026-10-25T16:35:55.423719+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.230153+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.415509Z",
+   "updated_at": "2026-10-25T16:35:55.415509Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/648bb91fd8f64ab6",
+   "label": "Transaction File Close Status",
+   "synonyms": [
+    "TXNFILEX-STATUS"
+   ],
+   "description": "Status code returned after attempting to close the transaction file; '00' indicates success, other values indicate failure.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Status_Code",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "success_code": "00",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0063",
+     "approved_at": "2026-10-25T16:35:55.516963+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:34.371304+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.508586Z",
+   "updated_at": "2026-10-25T16:35:55.508586Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/2804aa016ba1d79f",
+   "label": "Transaction Record",
+   "synonyms": [
+    "TRANsaction record",
+    "TXN-RECORD"
+   ],
+   "description": "A data structure representing a transaction record with various attributes such as ID, type, category, source, description, amount, merchant details, card number, and timestamps.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "TXN-ID": "string(16)",
+    "TXN-TYPE-CD": "string(2)",
+    "TXN-CAT-CD": "numeric(4)",
+    "TXN-SOURCE": "string(10)",
+    "TXN-DESC": "string(100)",
+    "TXN-AMT": "signed numeric(9,2)",
+    "TXN-MERCHANT-ID": "numeric(9)",
+    "TXN-MERCHANT-NAME": "string(50)",
+    "TXN-MERCHANT-CITY": "string(50)",
+    "TXN-MERCHANT-ZIP": "string(10)",
+    "TXN-CRD-NUM": "string(16)",
+    "TXN-ORIG-TS": "string(26)",
+    "TXN-PROC-TS": "string(26)",
+    "sources": [
+     {
+      "document_id": "LXV030Y",
+      "chunk_id": "LXV030Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0064",
+     "approved_at": "2026-10-25T16:35:55.070449+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:56.580094+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.062509Z",
+   "updated_at": "2026-10-25T16:35:55.062509Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/854c1f62a9524ec0",
+   "label": "TWO-BYTES-BINARY",
+   "synonyms": [],
+   "description": "A variable representing a two-byte binary value, used in IO status processing.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "binary",
+    "length": 2,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0065",
+     "approved_at": "2026-10-25T16:35:55.661273+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:51.023659+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.652354Z",
+   "updated_at": "2026-10-25T16:35:55.652354Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/20b1394b245e10f0",
+   "label": "TWO-BYTES-RIGHT",
+   "synonyms": [],
+   "description": "A variable representing the right two bytes of a value, used in IO status processing.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "binary",
+    "length": 2,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-22",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0066",
+     "approved_at": "2026-10-25T16:35:55.787612+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:51.139790+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.777711Z",
+   "updated_at": "2026-10-25T16:35:55.777711Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/3c6c295b622afe9b",
+   "label": "TXN-CAT-BAL",
+   "synonyms": [
+    "Transaction Category Balance"
+   ],
+   "description": "The balance amount for the transaction category used in interest calculation.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "signed numeric",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_supersedes": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/676a6fa0ff350ccd",
+    "_ontology_promotion": {
+     "write_id": "ID0067",
+     "approved_at": "2026-10-25T16:40:10.598758+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:04.480965+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.580056Z",
+   "updated_at": "2026-10-25T16:40:10.580056Z",
+   "valid_from": "2026-10-25T16:40:10.587539Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/99ed58c3c03575bd",
+   "label": "TXN-CAT-CD",
+   "synonyms": [
+    "Transaction Category Code"
+   ],
+   "description": "Code representing the transaction category; set to '12' in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0068",
+     "approved_at": "2026-10-25T16:40:10.911227+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:24.652204+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.901938Z",
+   "updated_at": "2026-10-25T16:40:10.901938Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/4bb92a210d61ea6b",
+   "label": "TXN-CRD-NUM",
+   "synonyms": [
+    "Transaction Card Number"
+   ],
+   "description": "Card number associated with the transaction; set to LINK-CRD-NUM in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0069",
+     "approved_at": "2026-10-25T16:40:11.020422+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.553743+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:11.011787Z",
+   "updated_at": "2026-10-25T16:40:11.011787Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5752ec7575ad4d13",
+   "label": "TXN-DESC",
+   "synonyms": [
+    "Transaction Description"
+   ],
+   "description": "Description of the transaction, composed of the string 'Accrued int ' concatenated with LACC-ID.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0070",
+     "approved_at": "2026-10-25T16:40:10.940110+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:24.849070+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.930932Z",
+   "updated_at": "2026-10-25T16:40:10.930932Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/925aa8f7522fd7d9",
+   "label": "TXNFILE-FILE",
+   "synonyms": [
+    "TXNFILE"
+   ],
+   "description": "Sequential file with sequential access mode, and file status TXNFILEX-STATUS.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "organization": "SEQUENTIAL",
+    "access_mode": "SEQUENTIAL",
+    "file_status": "TXNFILEX-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0071",
+     "approved_at": "2026-10-25T16:35:55.131902+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.391888+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:35:55.122265Z",
+   "updated_at": "2026-10-25T16:35:55.122265Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/124bf849724311c5",
+   "label": "TXN-ID",
+   "synonyms": [
+    "Transaction ID"
+   ],
+   "description": "Identifier for the transaction, composed by concatenating PARM-DATE and WS-TRANID-SUFFIX.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0072",
+     "approved_at": "2026-10-25T16:40:10.882990+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:24.446345+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.875282Z",
+   "updated_at": "2026-10-25T16:40:10.875282Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/47eb0e3c31bad309",
+   "label": "TXN-MERCHANT-CITY",
+   "synonyms": [
+    "Transaction Merchant City"
+   ],
+   "description": "City of the merchant; set to spaces indicating no merchant city in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0073",
+     "approved_at": "2026-10-25T16:40:10.992109+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.301375+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.983785Z",
+   "updated_at": "2026-10-25T16:40:10.983785Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/c9c2da168812a062",
+   "label": "TXN-MERCHANT-ID",
+   "synonyms": [
+    "Transaction Merchant ID"
+   ],
+   "description": "Identifier for the merchant; set to 0 indicating no merchant in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "numeric",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0074",
+     "approved_at": "2026-10-25T16:40:10.966671+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.076222+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.959037Z",
+   "updated_at": "2026-10-25T16:40:10.959037Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/946f698af4287ce7",
+   "label": "TXN-MERCHANT-NAME",
+   "synonyms": [
+    "Transaction Merchant Name"
+   ],
+   "description": "Name of the merchant; set to spaces indicating no merchant name in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0075",
+     "approved_at": "2026-10-25T16:40:10.787487+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.185400+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.778246Z",
+   "updated_at": "2026-10-25T16:40:10.778246Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ccf69c02bcfa285a",
+   "label": "TXN-MERCHANT-ZIP",
+   "synonyms": [
+    "Transaction Merchant ZIP"
+   ],
+   "description": "ZIP code of the merchant; set to spaces indicating no merchant ZIP in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0076",
+     "approved_at": "2026-10-25T16:40:10.814019+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.419671+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.806172Z",
+   "updated_at": "2026-10-25T16:40:10.806172Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5619f0bb4f3c997d",
+   "label": "TXN-ORIG-TS",
+   "synonyms": [
+    "Transaction Original Timestamp"
+   ],
+   "description": "Original timestamp of the transaction; set to DB2-FORMAT-TS after formatting.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "timestamp",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0077",
+     "approved_at": "2026-10-25T16:40:10.841003+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.724653+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.833005Z",
+   "updated_at": "2026-10-25T16:40:10.833005Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d2715a19bd17ebdd",
+   "label": "TXN-PROC-TS",
+   "synonyms": [
+    "Transaction Processed Timestamp"
+   ],
+   "description": "Processed timestamp of the transaction; set to DB2-FORMAT-TS after formatting.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "timestamp",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0078",
+     "approved_at": "2026-10-25T16:40:11.047876+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:25.907910+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:11.039918Z",
+   "updated_at": "2026-10-25T16:40:11.039918Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/6e0d8b8bbeb07c7c",
+   "label": "TXN-SOURCE",
+   "synonyms": [
+    "Transaction Source"
+   ],
+   "description": "Source of the transaction; set to 'Batch' in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0079",
+     "approved_at": "2026-10-25T16:40:10.732803+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:24.752069+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.716886Z",
+   "updated_at": "2026-10-25T16:40:10.716886Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8aa54b4579438037",
+   "label": "TXN-TYPE-CD",
+   "synonyms": [
+    "Transaction Type Code"
+   ],
+   "description": "Code representing the type of transaction; set to '07' in this context.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0080",
+     "approved_at": "2026-10-25T16:40:10.697142+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:24.552857+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.689397Z",
+   "updated_at": "2026-10-25T16:40:10.689397Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/2e38e69f771bb7cd",
+   "label": "WS-FIRST-TIME",
+   "synonyms": [
+    "Work Storage First Time Flag"
+   ],
+   "description": "Flag indicating if it is the first time processing a record for a given LACC ID.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "char",
+    "values": [
+     "Y",
+     "N"
+    ],
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0081",
+     "approved_at": "2026-10-25T16:40:10.294280+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.414690+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.286428Z",
+   "updated_at": "2026-10-25T16:40:10.286428Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/adc5c51784814d91",
+   "label": "WS-LAST-LACC-NUM",
+   "synonyms": [
+    "Work Storage Last LACC Number"
+   ],
+   "description": "Stores the last processed BCAT-LACC-ID value.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "string",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0082",
+     "approved_at": "2026-10-25T16:40:10.005916+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.509954+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.997376Z",
+   "updated_at": "2026-10-25T16:40:09.997376Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ffa912c1d4b85ead",
+   "label": "WS-MONTHLY-INT",
+   "synonyms": [
+    "Monthly Interest"
+   ],
+   "description": "Working storage field representing the computed monthly interest amount.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "numeric",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0083",
+     "approved_at": "2026-10-25T16:40:10.486482+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:04.383512+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.478367Z",
+   "updated_at": "2026-10-25T16:40:10.478367Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/74b5292724750a18",
+   "label": "WS-RECORD-COUNT",
+   "synonyms": [
+    "Work Storage Record Count"
+   ],
+   "description": "Counter for the number of records processed.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "integer",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0084",
+     "approved_at": "2026-10-25T16:40:09.978899+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.333794+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:09.971294Z",
+   "updated_at": "2026-10-25T16:40:09.971294Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/76fc6a595c63091b",
+   "label": "WS-TOTAL-INT",
+   "synonyms": [
+    "Work Storage Total Interest"
+   ],
+   "description": "Accumulator for total interest amount.",
+   "category": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+   "source_pdm_entity_id": null,
+   "popularity_score": 0.0,
+   "confidence": 1.0,
+   "provenance": "agent_write",
+   "attributes": {
+    "type": "numeric",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1b",
+      "page": null,
+      "char_span": null
+     },
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0085",
+     "approved_at": "2026-10-25T16:40:10.321233+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:37:59.597555+00:00"
+    }
+   },
+   "domains": [],
+   "created_at": "2026-10-25T16:40:10.312451Z",
+   "updated_at": "2026-10-25T16:40:10.312451Z",
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  }
+ ],
+ "relations": [
+  {
+   "id": "ID0086",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8572d097647e2547",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ddae28a20e01d346",
+   "type": "defined_in_version",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV024Y",
+      "chunk_id": "LXV024Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0087",
+     "approved_at": "2026-10-25T16:35:55.826478+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.101184+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0088",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5c25df5480fd619f",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/676a6fa0ff350ccd",
+   "type": "has_part",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0089",
+     "approved_at": "2026-10-25T16:35:55.859804+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.159903+00:00"
+    }
+   },
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0090",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/343336eabcf0c948",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/f93214822bb191ad",
+   "type": "has_substructure",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV027Y",
+      "chunk_id": "LXV027Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0091",
+     "approved_at": "2026-10-25T16:35:55.924019+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.521443+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0092",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1590ccb38b46b0c1",
+   "to_concept_id": "I/auto/85a056a3df884f3e",
+   "type": "sets_value",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0093",
+     "approved_at": "2026-10-25T16:35:56.000027+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:31.017075+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0094",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/79359aae0490bf3b",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d503f057b5f4f9c9",
+   "type": "has_part",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0095",
+     "approved_at": "2026-10-25T16:35:56.059696+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.188189+00:00"
+    }
+   },
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0096",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5a5222f9d3c796fb",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d8d1a6688c829058",
+   "type": "uses_file",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0097",
+     "approved_at": "2026-10-25T16:35:56.119179+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.554233+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0098",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5a5222f9d3c796fb",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/925aa8f7522fd7d9",
+   "type": "uses_file",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0099",
+     "approved_at": "2026-10-25T16:35:56.180798+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.689663+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0100",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/83ee91dba9b93dd3",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0101",
+     "approved_at": "2026-10-25T16:35:56.246287+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:31.154220+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0102",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/18aced87ebc0b094",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/648bb91fd8f64ab6",
+   "type": "has_status",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0103",
+     "approved_at": "2026-10-25T16:35:56.305886+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:35.281675+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0104",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/648bb91fd8f64ab6",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/520a70bc59a06c3d",
+   "type": "sets_value",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "condition": "if TXNFILEX-STATUS = '00' then APPL-RESULT = 0 else APPL-RESULT = 12",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0105",
+     "approved_at": "2026-10-25T16:35:56.373247+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:35.327417+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0106",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/efa36eddef84ab10",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fde2bfbb3797b95a",
+   "type": "sets",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "value_source": "BALCATF-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-2",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0107",
+     "approved_at": "2026-10-25T16:40:11.127231+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:12.949408+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0108",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/efa36eddef84ab10",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-2",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0109",
+     "approved_at": "2026-10-25T16:40:11.183545+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:12.773504+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0110",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/79359aae0490bf3b",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d6f4fbc5836622fc",
+   "type": "has_part",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0111",
+     "approved_at": "2026-10-25T16:35:55.892512+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.214195+00:00"
+    }
+   },
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0112",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5a5222f9d3c796fb",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/22e382dcc46bdc6c",
+   "type": "uses_file",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0113",
+     "approved_at": "2026-10-25T16:35:55.957656+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.589899+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0114",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5c25df5480fd619f",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/79359aae0490bf3b",
+   "type": "has_part",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0115",
+     "approved_at": "2026-10-25T16:35:56.030898+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.129447+00:00"
+    }
+   },
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0116",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/79359aae0490bf3b",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/6a77944694f202b8",
+   "type": "has_part",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXV026Y",
+      "chunk_id": "LXV026Y-1",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0117",
+     "approved_at": "2026-10-25T16:35:56.089137+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:33.239930+00:00"
+    }
+   },
+   "valid_from": "2022-07-19T00:00:00Z",
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0118",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/5a5222f9d3c796fb",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8620ab25f0158a13",
+   "type": "uses_file",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-1a",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0119",
+     "approved_at": "2026-10-25T16:35:56.150980+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:33:57.622825+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0120",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1590ccb38b46b0c1",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1d493f80729b3d64",
+   "type": "sets_value",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "value": "0 if LEDGFILE-STATUS = '00', else 12",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0121",
+     "approved_at": "2026-10-25T16:35:56.214315+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:30.975353+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0122",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/83ee91dba9b93dd3",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-5",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0123",
+     "approved_at": "2026-10-25T16:35:56.277689+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:34:31.194212+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0124",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/648bb91fd8f64ab6",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fde2bfbb3797b95a",
+   "type": "sets_value",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "condition": "on error, IO-STATUS = TXNFILEX-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0125",
+     "approved_at": "2026-10-25T16:35:56.336256+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:35.372258+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0126",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/3609d425e91b2be1",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/510107469d1c12c7",
+   "type": "uses_function",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-20",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0127",
+     "approved_at": "2026-10-25T16:35:56.401549+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:35:35.416241+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0128",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/efa36eddef84ab10",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-2",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0129",
+     "approved_at": "2026-10-25T16:40:11.096045+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:12.838828+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0130",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/22e382dcc46bdc6c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/66cbbbcf1049da26",
+   "type": "has_record_key",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-10",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0131",
+     "approved_at": "2026-10-25T16:40:11.155767+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:27.300712+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0132",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/513ab08b25ad353e",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs_procedure",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-10",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0133",
+     "approved_at": "2026-10-25T16:40:11.216680+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:27.566039+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0134",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/722aa9bdef413eab",
+   "type": "sets_status",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0135",
+     "approved_at": "2026-10-25T16:40:11.296053+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.443610+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0136",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/22e382dcc46bdc6c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8572d097647e2547",
+   "type": "has_record_structure",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-10",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0137",
+     "approved_at": "2026-10-25T16:40:11.366162+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:27.482554+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0138",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0139",
+     "approved_at": "2026-10-25T16:40:11.428367+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.324642+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0140",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fecb50a8b24815fc",
+   "type": "uses",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0141",
+     "approved_at": "2026-10-25T16:40:11.514819+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:54.506009+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0142",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0143",
+     "approved_at": "2026-10-25T16:40:11.584637+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:54.980272+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0144",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0145",
+     "approved_at": "2026-10-25T16:40:11.658548+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:54.911765+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0146",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b860f5b79f9cef65",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/925aa8f7522fd7d9",
+   "type": "writes_to",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-14",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0147",
+     "approved_at": "2026-10-25T16:40:11.719107+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:26.551123+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0148",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/e8b7893b9d1eb53c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d8d1a6688c829058",
+   "type": "closes_file",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-16",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0149",
+     "approved_at": "2026-10-25T16:40:11.789424+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:41.636224+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0150",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/e8b7893b9d1eb53c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs_procedure",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-16",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0151",
+     "approved_at": "2026-10-25T16:40:11.856165+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:41.789322+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0152",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/22e382dcc46bdc6c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/648bb91fd8f64ab6",
+   "type": "has status",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-17",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0153",
+     "approved_at": "2026-10-25T16:40:11.914504+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:47.309278+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0154",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0155",
+     "approved_at": "2026-10-25T16:40:11.262162+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.241187+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0156",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1d493f80729b3d64",
+   "type": "sets_result_code",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0157",
+     "approved_at": "2026-10-25T16:40:11.325537+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.579925+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0158",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/513ab08b25ad353e",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1d493f80729b3d64",
+   "type": "sets_status",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "value_if_success": 0,
+    "value_if_failure": 12,
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-10",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0159",
+     "approved_at": "2026-10-25T16:40:11.396182+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:27.629130+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0160",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/ae78c0c566ee3a08",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-11",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0161",
+     "approved_at": "2026-10-25T16:40:11.458407+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:43.399884+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0162",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/1d493f80729b3d64",
+   "type": "sets",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "value": "0 or 12 depending on RATEGRP-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0163",
+     "approved_at": "2026-10-25T16:40:11.544066+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:54.673434+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0164",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d0bc8ef5baa4bdac",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/722aa9bdef413eab",
+   "type": "checks",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-12",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0165",
+     "approved_at": "2026-10-25T16:40:11.626406+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:38:54.742396+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0166",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/8937416561bd9899",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b860f5b79f9cef65",
+   "type": "calls",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-13",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0167",
+     "approved_at": "2026-10-25T16:40:11.688474+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:04.876696+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0168",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/27d1904db6cc63c0",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-17",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0169",
+     "approved_at": "2026-10-25T16:40:11.749256+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:47.578149+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0170",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/e8b7893b9d1eb53c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fde2bfbb3797b95a",
+   "type": "sets_status_code",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "source_status_code": "BALCATF-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-16",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0171",
+     "approved_at": "2026-10-25T16:40:11.825191+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:41.713433+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0172",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/e8b7893b9d1eb53c",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs_procedure",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-16",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0173",
+     "approved_at": "2026-10-25T16:40:11.885759+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:41.877191+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0174",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/27d1904db6cc63c0",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-17",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0175",
+     "approved_at": "2026-10-25T16:40:11.945005+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:47.720513+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0176",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b5936f1f85b0f2b0",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/d97ef2185e5b0ec3",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-18",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0177",
+     "approved_at": "2026-10-25T16:40:11.973402+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:57.426617+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0178",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b5936f1f85b0f2b0",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/fde2bfbb3797b95a",
+   "type": "sets",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "value_source": "RATEGRP-STATUS",
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-18",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0179",
+     "approved_at": "2026-10-25T16:40:12.037888+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:57.660389+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  },
+  {
+   "id": "ID0180",
+   "from_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/b5936f1f85b0f2b0",
+   "to_concept_id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/auto/cc83ee177bcb10df",
+   "type": "performs",
+   "confidence": 0.6,
+   "provenance": "agent_write",
+   "attributes": {
+    "sources": [
+     {
+      "document_id": "LXB002C",
+      "chunk_id": "LXB002C-18",
+      "page": null,
+      "char_span": null
+     }
+    ],
+    "_ontology_promotion": {
+     "write_id": "ID0181",
+     "approved_at": "2026-10-25T16:40:12.005099+00:00",
+     "approved_by": "ID0002",
+     "mode": "manual",
+     "source": "extraction",
+     "proposed_at": "2026-10-25T16:39:57.512335+00:00"
+    }
+   },
+   "valid_from": null,
+   "valid_to": null,
+   "recorded_at": null,
+   "invalidated_at": null
+  }
+ ],
+ "concept_types": {
+  "backend": "postgres",
+  "types": [
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Application_Status_Code",
+    "label": "Application_Status_Code",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Boolean_Flag",
+    "label": "Boolean_Flag",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Field",
+    "label": "Data_Field",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 27,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_File",
+    "label": "Data_File",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 5,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Record",
+    "label": "Data_Record",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure",
+    "label": "Data_Structure",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 5,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Data_Structure_Subcomponent",
+    "label": "Data_Structure_Subcomponent",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Error_Message",
+    "label": "Error_Message",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/File",
+    "label": "File",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/File_Status_Code",
+    "label": "File_Status_Code",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Financial_Data_Structure",
+    "label": "Financial_Data_Structure",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Financial_Record",
+    "label": "Financial_Record",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 2,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Function",
+    "label": "Function",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Message",
+    "label": "Message",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "I/O Status Code",
+    "label": "O Status Code",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Procedure",
+    "label": "Procedure",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 17,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Process_Status",
+    "label": "Process_Status",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 2,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/program",
+    "label": "program",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Result_Code",
+    "label": "Result_Code",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Software_Program",
+    "label": "Software_Program",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Status_Code",
+    "label": "Status_Code",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 3,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/System_Message",
+    "label": "System_Message",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/System_Status",
+    "label": "System_Status",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Timestamp_Format",
+    "label": "Timestamp_Format",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Variable",
+    "label": "Variable",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 5,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   },
+   {
+    "id": "ont:TENANT/ba46323a52704c0b8222ce090e30fb1a/cat/Version",
+    "label": "Version",
+    "description": "",
+    "defined": false,
+    "sources": [
+     "in_use"
+    ],
+    "parent_ids": [],
+    "entity_count": 1,
+    "domains": [],
+    "provenance": null,
+    "type_contract": null,
+    "links": [],
+    "required_attributes": [],
+    "attribute_enums": {},
+    "fields": {}
+   }
+  ],
+  "entity_count": 84,
+  "untyped_count": 0,
+  "truncated": false,
+  "truncation_reason": null
+ },
+ "jobs": [
+  {
+   "id": "ID0182",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "4b4f1861b5fa4ad69aa1dd076339daf1"
+    ],
+    "candidates_seen": 15,
+    "deduped_to_enrichment": 0,
+    "staged": 15,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 15,
+    "per_document_counts": {
+     "LXV022Y": {
+      "seen": 1,
+      "staged": 1,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     },
+     "LXV024Y": {
+      "seen": 3,
+      "staged": 3,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     },
+     "LXV026Y": {
+      "seen": 11,
+      "staged": 11,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "119f433cdf1fa76d36ac94cbcdaeb01f28d8bb15175136cec7c82c983bbe21e3",
+    "1a5d7289172f212089360dd9abd9a56644182bf418bd092bcf31a5fed98f8588",
+    "48cd38a88cf9e287a5f3d69bbbd556225eaf91c22e3048b648ecdd0f7129acbc",
+    "55413e0e19acf2d51658d70c9539d29d702c41a1d7b5827aaac36e6c9e64adc5",
+    "8809b56f9a6590845bdaf29c7ce73cbe19086b0788ff9f6223c2adbbb945e7af",
+    "ad997da257c5bfd27b5008972c36050b6d6cac5c8e136e1ce95bce718a2e64e5",
+    "b40f04f831fd1a43ecb78046b1111f4e33b2ad319be9a0a3ca54ef049459f52e",
+    "bd3158be8834ffd5d5bf9643282e41e0680e29fd290fca0bafadd29095fccb8a",
+    "dc782819ffdbad7542d505b6321a2b57d41253b541cd31fa461c0bb856e26232",
+    "ddeab5e0307a64ee1c5f4a49bbfc4e51c52221465d00d8bf952d2f0a72ef0549",
+    "dfcc67ceefe754640d42121d45a5ab6938f7cf9be4681a8cb028e8f8151bdeef",
+    "e38c5d378f9cf62d290e91c62fc4d792614aaa64586fde6f3a0123b8c84940dc",
+    "ecf6027f98b09660a21cda05ca547b5de18e66c3c4042c67fb8a75e40ed1760f",
+    "ed275cbdcc511c7c64b5599b4303ce48309bdf81e1def6d04a9110752a9910b3",
+    "fe2e25933cc12f8c48a74e9af7f7660acd466cc278c3f7dda3d00564c0d29358"
+   ],
+   "created_at": "2026-10-25T16:33:15.705996Z",
+   "updated_at": "2026-10-25T16:33:33.271378Z",
+   "completed_at": "2026-10-25T16:33:33.270171Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0183",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "5862d4c414154e2690d0d7d4b76094c2"
+    ],
+    "candidates_seen": 15,
+    "deduped_to_enrichment": 0,
+    "staged": 15,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 15,
+    "per_document_counts": {
+     "LXV027Y": {
+      "seen": 3,
+      "staged": 3,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     },
+     "LXV030Y": {
+      "seen": 1,
+      "staged": 1,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     },
+     "LXB002C": {
+      "seen": 11,
+      "staged": 11,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "06332058faa176503079a4ccbb7dc43b95c681ce4dd257d95bf177d3767d7775",
+    "1ef4ed261670d1fb3709bd8c8ef63a5cd45d9eb4c20f7c3d651b1c340b3a6446",
+    "265d70c95253f705937e7ad57a36b8d672d0b4c54ace73a0f9c79a1ee51c18ff",
+    "288bf105d69b673a555d7f417320c54f05ee254141943af35aa6960086487ee8",
+    "3767dba061cc238362c3dc61e76a69a735100c025f93684ec73c906234691bc2",
+    "3a645b000947ca402215b41e4273fe05bf1decc1a8f98a4a59c3e260cefeb4fc",
+    "57af2cec5d7ee23130a87b496fa9bfa0d342f2ede935769fa9dc13c7d2cd58b7",
+    "783e75acdbfa8af6d68367eccebf2c90c2d62bc3d823af961f427164d73d0ee0",
+    "a8def0bed5b7983214382216a31704ecf751e385c35c4588cd0c8f0bd95823e8",
+    "b1013bb2ac29cdf836bbada34e07ce89b6977bde292f2cadc8d67eee21186021",
+    "bda6a81920cad2020dad5989a51967bf131b7ff5eb74c30ca7215cbba35a94a3",
+    "d28f0879d518fe37e89c19bad72adbb9e9d53c49241a82795167663606efccd5",
+    "dcca9bdec697a270a431922f1811caf575ab8b0fcbed6aeca1b502e893c78d4c",
+    "f1640822e08153d1412a479ffa4f976c91d409a5003657c3a54daa5e38d44da4",
+    "f2f5b4d172fa37cf2554fd5f6a65962a9596ae2ef1b6f59c772c52bfd4ed51aa"
+   ],
+   "created_at": "2026-10-25T16:33:36.952419Z",
+   "updated_at": "2026-10-25T16:33:57.726227Z",
+   "completed_at": "2026-10-25T16:33:57.725040Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0184",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 0,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {},
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [],
+   "created_at": "2026-10-25T16:34:07.886955Z",
+   "updated_at": "2026-10-25T16:34:09.824148Z",
+   "completed_at": "2026-10-25T16:34:09.822604Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0185",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "1daa064b4beb4c43b374f34307b802ca"
+    ],
+    "candidates_seen": 15,
+    "deduped_to_enrichment": 0,
+    "staged": 12,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 3,
+    "staged_writes_persisted": 12,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 15,
+      "staged": 12,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 3
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "325e7f08661b926bdf8ecfd512b2628789663e2b0bb0bac0050fe13a2d0510fd",
+    "4706204d66ac7557a71b2378d31a945da346e4472dc404caf26676361b1eaeea",
+    "548aa7401366b4e3679f84f9fd6cf628f34066fab0d31b4d4826ea5f8080d6a3",
+    "796d708a4bf8111452576328e69b396152fd63316f6b880b056389180575c340",
+    "7a0c91e08e96888b6ac9d29b673e138a8188e9590cdcc37104fb29f8f85663b5",
+    "849d0fa157fbdbbfbcc87dfe76cd87b4d1dbaf580abcb1e01197f843e049d556",
+    "8e2b24b4cd4ecbccd653b25c5e7bb40a4df129ca4890cc88a4d818c0fcfab5ef",
+    "b6a105173dbc37be3bfe6597d74ad0fbb8433b56c53963cb5c2289d3d547d2b3",
+    "bdd0fe30584dbf25574657533515b30b7f09d73ee65db99edd250386f511feb0",
+    "c09b0a8ffef099f57d85d1d2f477cf25de9edce9ce6f5022a6fe5dfe9627a04d",
+    "cddb90e54e05e0b649bfe57f4d86ab52018a45070835e553cba435e0ec48b88a",
+    "db23f0a0e3a15bc9b8200c745c514fd20148aa0899576032f73f74710e0c8330",
+    "eeb113d1fcd477e0e046cd55613cd2a8c3b2bcbe12857053f17c3c517ab234da",
+    "ff4a6b08a9ff2c83fb7bf82e73485e0088c8dffe2734bd204db742c0427bbdb8",
+    "ffebfd29fa8738ccb2e1f1c7f4d0c02a7af5475171c8c08847ca663a506cb748"
+   ],
+   "created_at": "2026-10-25T16:34:18.819691Z",
+   "updated_at": "2026-10-25T16:34:31.242448Z",
+   "completed_at": "2026-10-25T16:34:31.241259Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0186",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "dec1bc2fefaf46d9848bb39bf1547080"
+    ],
+    "candidates_seen": 11,
+    "deduped_to_enrichment": 0,
+    "staged": 6,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 5,
+    "staged_writes_persisted": 6,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 11,
+      "staged": 6,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 5
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "26050aec47b7fee903bad8e0812ed4f17715edf1a8a0f3efa7d1db6b7147056a",
+    "3cd6cc1a0d424e5337980441dd45cdbb7bfd9a3a5d519a2ee93654e7acaab54c",
+    "656a9e23e2b10d875c232073f5a7e0b3f1ce9153243c5b9489c3d4d60951dd12",
+    "6a1a871ccf99c16dc3ffedd0ca2733b07b499e48455b237584daf4f9877f2597",
+    "96ecedfcc03590ab4b61d9a2654b9338fa38c4756af23052e0d10058ba2597b4",
+    "9725818527342ca81bb87f585512fc50b47309d4c57fd1442ea8c21023aa3239",
+    "9d1eb98d79470642c44ec568a936c05036a64c141255a0f896892dc5458bc1cc",
+    "a63d0f907acd321a9677c2ba7eecfa4aa50ae6255c19535f4a0ac7c17a496fe4",
+    "e0251f49aa1cde26a6f11c9a858bed3ebb9d39eaa88bf81351e0e0eda6b21e77",
+    "eb583003e84be6ff94b31c9b22c169a8a25ef680232970336c3f70ad395f2d92",
+    "fca3f69c20ad35f52a73848b6e06f0d99491109ed0a6e33b97413cfdaf66aa65"
+   ],
+   "created_at": "2026-10-25T16:34:39.594357Z",
+   "updated_at": "2026-10-25T16:34:48.688428Z",
+   "completed_at": "2026-10-25T16:34:48.687381Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0187",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 0,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {},
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [],
+   "created_at": "2026-10-25T16:34:50.186780Z",
+   "updated_at": "2026-10-25T16:34:51.686761Z",
+   "completed_at": "2026-10-25T16:34:51.685468Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0188",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 0,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {},
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [],
+   "created_at": "2026-10-25T16:35:00.987349Z",
+   "updated_at": "2026-10-25T16:35:02.700099Z",
+   "completed_at": "2026-10-25T16:35:02.698910Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0189",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 0,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {},
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [],
+   "created_at": "2026-10-25T16:35:11.859898Z",
+   "updated_at": "2026-10-25T16:35:13.426205Z",
+   "completed_at": "2026-10-25T16:35:13.424337Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0190",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "489d3a9c202144188e1437cc3e212ccb"
+    ],
+    "candidates_seen": 13,
+    "deduped_to_enrichment": 0,
+    "staged": 13,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 13,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 13,
+      "staged": 13,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "4e617fb9f651a0caf19b0f242eefa789e9f763d3bfbf99941ffca0d2237ae446",
+    "56ebec5ae89aa13d2efa3337c7955ee15edf37cbe186db3ec960cdc2adf317b5",
+    "6b0d5ac6fbd132f415e74ae50511b3a3739e9b6a0cd19d797bcc14f05fd65405",
+    "7955dd5168b08123613a85d6e0e1979a37b548fe247302837b0b10e8cde275cb",
+    "85a03e04056d0b5d80ad6bfb2bb12a3e67a87683c42572eac728c9f49c60fe55",
+    "85bd4afecedfbfca76c890ad4df286102b6ce813b6e57bff15366db33c578cff",
+    "9aca730524011ded305e89d76156e6020778afb0b99c31ddeb0be1fe30147954",
+    "9d87db1979cbaa85ea19fb904aca161b66728821e6e520a18d27fd1e126e33d1",
+    "aa73dbbc43aace42717ea8794d1dcda33475a529dad2abca7794c3042ea3a1e9",
+    "ae0a13fdacc152020b8eb80511c1965ed9b3533215af4cff815a77f4fb4188a5",
+    "b0c0afa65d171e770773f3106eccf3cccd40b5a433a630640498d019b45a1c93",
+    "f5c4b13b0293e1ea0be1dc29335943448d0cfc2165d9e52f034e3c54532a48d3",
+    "ff9f860458ffc2f38f9f7ff6710d05122ed14a8529ed765f089fffffba3b0c91"
+   ],
+   "created_at": "2026-10-25T16:35:22.407388Z",
+   "updated_at": "2026-10-25T16:35:35.518579Z",
+   "completed_at": "2026-10-25T16:35:35.517098Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0191",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "2dbcf344b21f4d0ca4c80789edd8fea1"
+    ],
+    "candidates_seen": 9,
+    "deduped_to_enrichment": 0,
+    "staged": 9,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 9,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 9,
+      "staged": 9,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "0ea4d5a286445bc1097c31151c493b035b9e9cadc0133ebd4809ccaa04f9b0d2",
+    "20765b1c6dbaadd83deed967a8315894d37b6b5737566f849df2a054cb8a6585",
+    "69a217beb3a4543efe1ac9c24093ae8431b47ca3ee68b6175ee98b5333775467",
+    "6ccae497725e25bfd4d126bab6392d0832f19cd44fd5dbcc9913125c8f0efb63",
+    "6d30700ceba9aa1a9ad2b9c03f51fc1fe0e1e466af95d45db21808d725cdbaa7",
+    "8fff90be371b635b04dee46c5fd4b5d86e120dfac99c46891d249626fae7150d",
+    "afb118bfc6aa7ec8eccb87e34ea5b6699717301ce31226f7f9d6ab3490da42dc",
+    "be0c6360b065124b83361c2c9b89c1a47f9a9974f7a504f604be8731bba28b1b",
+    "edebbd28ffe0f39470903a5db5be1d9dd3b7b85d9c4792ed38f9e424e022a267"
+   ],
+   "created_at": "2026-10-25T16:35:43.173750Z",
+   "updated_at": "2026-10-25T16:35:51.557220Z",
+   "completed_at": "2026-10-25T16:35:51.555682Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0192",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "d93149eee9b04b808599753170b9e94a"
+    ],
+    "candidates_seen": 33,
+    "deduped_to_enrichment": 0,
+    "staged": 21,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 12,
+    "staged_writes_persisted": 21,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 33,
+      "staged": 21,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 12
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "1051846c2a896d6e93bafbbad15eda7b5a49c70a404d6c8ca5078b5820ff4121",
+    "168235d88aee47ce69ad8ef4b9fcf0a93355348118357ef180539cb2f86fda04",
+    "17a68f52da53144c520cb1d697fdd356742643844d3a69664f09685f83087282",
+    "1a6ff84635b7354b95804e3ad12d031abf08ca745c78dcf87de8fdfe3283433b",
+    "1aadbbcae38214c0750fc7f9760909bea76be950163b01c9bf7d66a3b4a7be08",
+    "1adf8eb4dd83739ae06963369d082d42dce56eaa204d438cc693dfdf83961f0e",
+    "2edfb766096c57c191adb53fc095a12558fd926e40a08133968672a9740296f4",
+    "3232bb1b8964bad54b5e5af852988ce871da82b2995bde8adbbc305b14b962e3",
+    "393a23e6c6905c93a3fde176d0ba4714281d2c6ff0ab9c24472b3a7514e04907",
+    "39725005c4735d0207179d840a7a52298f62df09c0463dd3870bf7d76eb50df2",
+    "3a1ec3b0b82f3ac2ef8e8091e108e1b33627317db381169b951cbcc3bbff38c2",
+    "3a38a879192d0e560a0957e79293394c3ab4f38777df88eace44845f7a43371d",
+    "3ac937b7efd836283595eb286a265e51de7e007c1012ddf35245e473cb829e9c",
+    "4706e16eaa7d9f15ef43befcc5ed86383f2c1303be61b707f87deaa107f17123",
+    "53d23ddfe9abdf142f1be961272c0a5f3eb1f5bc09e373552da74080725d2ce4",
+    "5b70e8454a818104a4b8aeb337d19559b530a3e18414c2b0550ab4d0e47fc6cf",
+    "5e51908c2cbc1e5ce37ca38e63f98bb8b571c65f183a0590e6eb0c9155aeb4fd",
+    "6253b63f7790a29d2d2e535721583a39c053a6896ed35afe3ca448e2fad09cd1",
+    "66050c01307f4997aaa300c5ca4e1822d4067c464a1fb41f68102b3fafd432d4",
+    "6e7ed5de63339bdc2d2a243a8f7e2ad6918179b89927b0fc163306c6bad5ff21",
+    "78a0b9e94ee731fca92e4db777628bdba9bc0821ff9d4a6167b4fb3bad8f6000",
+    "7ebf38f3f699eb7c054aafa6464da5dba73d7dbd58cca06531c55b584de5f176",
+    "83ee0eaa25fb50914d852e2a6c07fe2b32e40d3c621d1c87ae93c3589b7e06b2",
+    "872b4eed0627135aaf0dbec06da88a9af0cba57157175874e7ff7344410b3874",
+    "8f5469c0dd7c4d9996c67e91303e3307178542c7dcc66c15ebb7d8eb0301cb38",
+    "923d0da981f54ee6add04dd1dc09d8ba079ad11010074d075fcf8238f47e2141",
+    "bc3aafe2f87273c3086e14165ed5a394e9fc83b10749a78754e72cb3ef17e17f",
+    "cd288b80fe3975a41770add7c2d691caf66ba827c36f41d4464b9d412f417ec1",
+    "d7b1e81d878163f0e80413fc4af14baa624b70d9e82c400233ec1667dd28fb02",
+    "d7c9f248323cb6300b3970d976f2fbbafd9fffcc0fde11acf395af1e19dc0cb1",
+    "eee03de7d1142deafb0cc89c026705815b5de47fe9b12ae97e1566a6baf325ae",
+    "f0f896bbd05ffc58ada8cebb9c6cf9eb27a3d8b4893064c1d3efa76f6409698d",
+    "fa87988de7e370200ab256f3a99e9b6bdafa09d12a76fa1dce961b07e7b52153"
+   ],
+   "created_at": "2026-10-25T16:37:36.743625Z",
+   "updated_at": "2026-10-25T16:38:00.821444Z",
+   "completed_at": "2026-10-25T16:38:00.820192Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0193",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 5,
+    "deduped_to_enrichment": 0,
+    "staged": 4,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 1,
+    "staged_writes_persisted": 4,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 5,
+      "staged": 4,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 1
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "4a7e084688481fed1130dd4c3c6eecba4d94bc9b43e0d51cc771a73f3b7ab7a1",
+    "54b95d6b118a913df7c059c68019447a3cce3b93a80a35201971ed545dbe2ea4",
+    "9acb070e8f53047803010965730505dae5e6811f3dbabeac2ccc1627f073c409",
+    "c49b55e4c4cd39ea8eff4deb143f2d1e07d2635ab262395b3c81b673225f1998",
+    "cadf50e97f7739603fbbce0acee8d2dd6314393842a663b8e91a86313d782061"
+   ],
+   "created_at": "2026-10-25T16:38:08.534802Z",
+   "updated_at": "2026-10-25T16:38:13.016688Z",
+   "completed_at": "2026-10-25T16:38:13.015242Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0194",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 7,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 7,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 7,
+      "staged": 0,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 7
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "08e29c4d3ed2cb565913cef6ad6e07090c505cbab08439f7f3fa184b4c8eecd5",
+    "13bef8e6a7019ca246cfe499db2a1978b50b7831549d225272eea947b7249972",
+    "1db7fbb0a6a0b9e2ea40435296a059ec37cf4846a8f5edb87d03bc50c552d200",
+    "256535b2f76c8a98539c57ef666e02900131c9877e13832d8f21e1873ec47066",
+    "27c1daf94bb403fdac82c9ad23d018788bd3b5bec463200dcd1a2b1861be7fcf",
+    "4d8ad00cd2b4a443f12d4e3ff5dbbb2a59b04959cff37803d2a0ae21b543a69e",
+    "7abcdebe3b891b1c565919dd46164b86937221c13093cbe37b1b794495a86ef8"
+   ],
+   "created_at": "2026-10-25T16:38:14.736516Z",
+   "updated_at": "2026-10-25T16:38:20.481546Z",
+   "completed_at": "2026-10-25T16:38:20.480320Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0195",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 7,
+    "deduped_to_enrichment": 0,
+    "staged": 5,
+    "reinforced": 1,
+    "conflicted": 0,
+    "skipped": 1,
+    "staged_writes_persisted": 5,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 7,
+      "staged": 5,
+      "reinforced": 1,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 1
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "48ac38d7f0ae5ca0d84f47c2571a5cccddb841d638e7a865c8422c7a318224fd",
+    "766aad9742381a9ad133b42157cc9c280b6a6dafc4a909da9ed5d234048000d7",
+    "79fafce37845345b20d24bf004cad231f9b2e0e81d63fa44d7d47778d8a7f015",
+    "7f287aa8cbbadda263314e80f9020875b23fdc8b44657e5bea88772f63531f4f",
+    "8d8cafa4d12dc585bdf4eedc5c3f6388aa79faf683262249163c874c664abeea",
+    "b68cf05b9a0c351e9e1790e238cad137f91af31bcd431b47633ece0f156c3204",
+    "cc5493c71582abb6d8bc5a77cb607d824e2ed0b64b085657ecb9f99afd1f35e4"
+   ],
+   "created_at": "2026-10-25T16:38:21.675418Z",
+   "updated_at": "2026-10-25T16:38:27.780580Z",
+   "completed_at": "2026-10-25T16:38:27.779418Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0196",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 15,
+    "deduped_to_enrichment": 2,
+    "staged": 12,
+    "reinforced": 1,
+    "conflicted": 1,
+    "skipped": 0,
+    "staged_writes_persisted": 12,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 15,
+      "staged": 12,
+      "reinforced": 1,
+      "deduped_to_enrichment": 2,
+      "conflicted": 1,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "0bfa7b705ce8bcee70287ab700436ac8486ab496085df2b195e75d73469bd2df",
+    "4dfaaa6eb53ff8b968a7236146e4f2a970734da0d995999f98b464a3655d5da2",
+    "6bdcc8757534f30c5f2e2a83460a1e7829231a3a41a59c202d46db8968ca6b26",
+    "7c4179e7852237184a86c824f4d5a52ed7df74c74aee4a9ac53fae26b4881c68",
+    "87d9385fed0505856f753c1a6857ff0de81f2c4d4de7272830f5d1ca9951fe04",
+    "88d58646257311eac639767163d18e83608471fbbe4b70cecf0b6bae4fb5cbaf",
+    "952e24722e25d6377ca5083126a09e9d4c3c007dc03b25601cda1f88ad0910a3",
+    "989609e170c03f234061367dab1051a7ba3fd67c907e201e900e750072f1420a",
+    "a43332315a070ca043078895026423a0ce7c37805d80d4523f379806ef3b831f",
+    "bd78c300766cabddf49829ba447e3cd13252274e7a9b70618c944894a64faba4",
+    "c4a2e6b79a80b15d294a64bd0bd76a9aff7d2e49063dd35bfc9abc08ab61edcb",
+    "c7f94b95f11877abadf699269c1f2b1bb3c85ae8925fc5ef495d0b6287b76c83",
+    "d420108a4d9d8a6a7f54e182ae8b7a74d36837716e57ff91460814c7ba4cb396",
+    "f6fa0400af4b824945c2d75b27e52b262de4b4ba3cc6b059f636aa710512d4fa",
+    "fe2514c434c302f9640e3fcd13c1bc510d21fd63aabc5372f249e747a27f8d57"
+   ],
+   "created_at": "2026-10-25T16:38:29.756565Z",
+   "updated_at": "2026-10-25T16:38:43.694862Z",
+   "completed_at": "2026-10-25T16:38:43.693681Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0197",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 8,
+    "deduped_to_enrichment": 0,
+    "staged": 7,
+    "reinforced": 1,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 7,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 8,
+      "staged": 7,
+      "reinforced": 1,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "0bec6156415b2effb8e7fda7d141f30f45cbda5ebfb18412d71194e116aa80ee",
+    "11fe0235eea4833bdbd9e409f48d914e8972a29f939c413c2a5ec15d7a8fc7fb",
+    "32b28cbed8f6745b1b7fc8ef238fac8330970efe90316cfd4259f93c635f4d64",
+    "4692bcefa863c2e86ac4e4b6df2f980b0041c28bda311d78c119cce71c97f38d",
+    "4f12f279b49fd1a76a9546fbb64c2562da0f3a0ba6230bf4a383b8d1eb73dedb",
+    "57614fb9712ad9c7e9d452a1af76e78e9f2151495d364fdf9a6bb14eba5aef29",
+    "63caaf8b8d5084c9360b0a62670685bbfa74bc2a6a2ecde1812bf6b05b8823c1",
+    "746a661ea39cb842835f75f498b6281e838358730608575f11943b6b98261cdc"
+   ],
+   "created_at": "2026-10-25T16:38:48.632387Z",
+   "updated_at": "2026-10-25T16:38:55.051376Z",
+   "completed_at": "2026-10-25T16:38:55.050200Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0198",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "8640a4cfff254b33ad0d7c285b967bfe"
+    ],
+    "candidates_seen": 7,
+    "deduped_to_enrichment": 0,
+    "staged": 5,
+    "reinforced": 2,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 5,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 7,
+      "staged": 5,
+      "reinforced": 2,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "30cd1043ed2e78fe21588471d02e8a5184b0df3dfe8ab1c015f94f3dd5f318ae",
+    "36d468b85dc9d5eff8a5f74c09254cd8f50fd3a6c6052537bf1d4538e7ac1634",
+    "87756a95faf06f7820cbcf3b7c25ff6a32f08230425350c0e3b142c7d8b67d55",
+    "98bde8b7b7f087706f53da92847990c640ab6a117702c39fd709fc77d2b44217",
+    "c7eb4f60ce3d9ef875e1ae423d52aa606c6b5e04ae0a2f95ae94da4bea4245bd",
+    "ed9e957770585a546b815d09bd38d6465beba51d5d380c0e71f2757fca5eb547",
+    "f5b828cff45637109f4248b4d1ffd690df455efbc147a5015d869b30f1093641"
+   ],
+   "created_at": "2026-10-25T16:38:59.274950Z",
+   "updated_at": "2026-10-25T16:39:04.925112Z",
+   "completed_at": "2026-10-25T16:39:04.923926Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0199",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [
+     "0e917e6e5c274bd5a57f48b2b68c8b9f"
+    ],
+    "candidates_seen": 20,
+    "deduped_to_enrichment": 1,
+    "staged": 18,
+    "reinforced": 1,
+    "conflicted": 2,
+    "skipped": 0,
+    "staged_writes_persisted": 18,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 20,
+      "staged": 18,
+      "reinforced": 1,
+      "deduped_to_enrichment": 1,
+      "conflicted": 2,
+      "skipped": 0
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "012ee228722cfd1468e73a534a3f6bd2a706118c7ec0bc33b33c063f5e2ef456",
+    "0771d4aeeeef0c02d9d8ff182d84383c784c56bc4686c76acce6cd86d1f41b64",
+    "207297c6dcf425940c780f48c982eef851de6ef4f688d9d771edc219979d0ca0",
+    "2eb38edf516216748faf0a13b0370adfdb607c61f7b58535fd1d0e74cbb0ae90",
+    "31c8cd4020e563bcb2d46ecae13044e5fca59163791e0ea4cf620abfea79db58",
+    "3a488676eee87644b64f0acbc26c427fe71bd19444c10e68519703f630e22cbb",
+    "4420269986b2412e769b42358872bb6fc6b457d0701d47b6943e625cb14e8c6e",
+    "4e29f4f65b19eeefded3c9159aa2fbcac78a245a8c8f21bf5ea74f2c5ec76480",
+    "789c8d0c5532571b20520380b1061bc409e4b76038a1118de2d8b4ff0087857d",
+    "79217ef04c8412629783792969eaaf1fe30c60f1e66cfbed51b980ed04ec047d",
+    "792a2b9720bf7434ddcdc383ad5845fb25d386889461e13a46ef89d4995ef9c1",
+    "813d2adfeb8f0fa1ecf31df89adff45750c9236e4899d5b392e9dd470f82813d",
+    "85f25081c8f9b0d27876e7547d82e6e989877d63d8b06bccc6dbeacff65ecec1",
+    "91749f375fcc35ce273b1f837ddec0e60b2fd9bdfe8b3a7a991bc30680a3ddc9",
+    "91e2d182637fc1948bf6e4f55d8a404cb2ebe68477cd277f7bac9c5658e4dee9",
+    "c7b938d87a4b37762cf07f2355f34aaf8c598bd85487a1fbfbd4408ed70fabda",
+    "f2b58542fac8e0f38aa7cc47d9e9036debcb09d6d31bfb124ad5c16a61816ac4",
+    "f31bf0c8a9662685e04b99d9f2f4d565723ba6ba1256a563a36228555c54b77e",
+    "f4112d2dbd9d487aff820e2ca3ae6fd8aea9ef77e9926a39361fe616b57288ba",
+    "fa8e8063a071973fb719df9823a16fa3a4f246e5f4de21acd560896446c73967"
+   ],
+   "created_at": "2026-10-25T16:39:10.718444Z",
+   "updated_at": "2026-10-25T16:39:26.830055Z",
+   "completed_at": "2026-10-25T16:39:26.828754Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0200",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 0,
+    "deduped_to_enrichment": 0,
+    "staged": 0,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 0,
+    "staged_writes_persisted": 0,
+    "per_document_counts": {},
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [],
+   "created_at": "2026-10-25T16:39:35.311123Z",
+   "updated_at": "2026-10-25T16:39:35.948623Z",
+   "completed_at": "2026-10-25T16:39:35.947528Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0201",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 6,
+    "deduped_to_enrichment": 0,
+    "staged": 4,
+    "reinforced": 1,
+    "conflicted": 0,
+    "skipped": 1,
+    "staged_writes_persisted": 4,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 6,
+      "staged": 4,
+      "reinforced": 1,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 1
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "226da519cbfb3b22fdb6d40a7b6b451f572b7d3a39103f5b65f1759e0dbd44b7",
+    "4e71a3e6285bd6b98fe5bec54d5147f4c9a93160863426c3d36d32c82db9ab77",
+    "53bac1a1b82938fdd558405be1f5bd119c57cedd9573f26219d8161991e3b228",
+    "81c25468dd622877a8766cdb7065372fe59694df93a203f33f100984fa9b8471",
+    "cfc29a1e095543d87f9c08ae82c495d99f37723ecf5e435d5861eae4ad8efe6d",
+    "ef763d6d28ad39b61851eafb83285ac8ec8b0730d3dd6779c4273582bc283949"
+   ],
+   "created_at": "2026-10-25T16:39:36.670089Z",
+   "updated_at": "2026-10-25T16:39:41.959692Z",
+   "completed_at": "2026-10-25T16:39:41.958500Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0202",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 5,
+    "deduped_to_enrichment": 0,
+    "staged": 3,
+    "reinforced": 0,
+    "conflicted": 0,
+    "skipped": 2,
+    "staged_writes_persisted": 3,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 5,
+      "staged": 3,
+      "reinforced": 0,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 2
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "6984789f995a4f896be966c899623635704ba1982469cf1f34512d1299d38fa6",
+    "a300a9084a8fea5305f1961dc1d90462e3070a23356bc38fd7e8c4aee8af2163",
+    "abee5a4cef14bce448d4c8003ab0d9ddb656136c05f05b8e509735b829b4e14d",
+    "c60c792f412b44e757558173145638f33f338d73290f69936acd38848d876204",
+    "e5bb6e2752bd8913381ee68664e84683dc00c9ca34b95a9c0ed637b9264bec31"
+   ],
+   "created_at": "2026-10-25T16:39:43.857606Z",
+   "updated_at": "2026-10-25T16:39:47.859543Z",
+   "completed_at": "2026-10-25T16:39:47.858346Z",
+   "owner": "7:5d6658b192d4435bb2c414b26877003d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  },
+  {
+   "id": "ID0203",
+   "ontology_id": "ba46323a52704c0b8222ce090e30fb1a",
+   "state": "completed",
+   "options": {
+    "category_hints": [],
+    "dedup_threshold": null,
+    "max_staged_writes": 2000,
+    "dry_run": false,
+    "schema_induction": null
+   },
+   "report": {
+    "document_archive_ids": [],
+    "candidates_seen": 6,
+    "deduped_to_enrichment": 0,
+    "staged": 4,
+    "reinforced": 1,
+    "conflicted": 0,
+    "skipped": 1,
+    "staged_writes_persisted": 4,
+    "per_document_counts": {
+     "LXB002C": {
+      "seen": 6,
+      "staged": 4,
+      "reinforced": 1,
+      "deduped_to_enrichment": 0,
+      "conflicted": 0,
+      "skipped": 1
+     }
+    },
+    "truncated": false,
+    "would_stage": [],
+    "domains": {},
+    "induction": null
+   },
+   "error": null,
+   "principal": "ID0002",
+   "candidate_hashes": [
+    "5d2e6b8cfa460d1c508051e2d5cee38d03dabf7e3628bc74a856cfbaef4be84d",
+    "879a6e455055f0db3997b7c948bebed5fab760e4e58a6e487223c10eb75e061e",
+    "a13849744a8e58218692502da464af832c57308600415d44a57631280702ace6",
+    "d9f6491090817f52952caf9f42448a23b0f9a5cdd012a3b9fca4064caf2a50cb",
+    "dfb3aa3fede77bf80c69212b89e6a0380c1013236ee61e8e39ec013698934e06",
+    "e738b34b2350560d0ec6f5807698e5bc231247821ca2a50538ef1823b3485d19"
+   ],
+   "created_at": "2026-10-25T16:39:52.938382Z",
+   "updated_at": "2026-10-25T16:39:57.879974Z",
+   "completed_at": "2026-10-25T16:39:57.878781Z",
+   "owner": "8:bc31926bd9154bf5a75192adf586d91d",
+   "fencing_token": 1,
+   "lease_expires_at": null
+  }
+ ]
+}

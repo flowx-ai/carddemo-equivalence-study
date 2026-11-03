@@ -1,0 +1,29 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc",
+  "tcatbal": "balcat",
+  "discgrp": "rategrp",
+  "cardxref": "cardlink",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Files mode: ParseAccrueInputs (lines 26-42) reads input.ledgacc, cardlink, balcat, rategrp as strings and input.accrueParameter (default 2022071800). FormatAccrueOutputs (line 167): output={accrue_systxn, accrue_ledgacc, assumptions_md, status, returnCode, diagnostics} at the root; the last node 'Escape text' (line 175) outputs only endText {t0, t1}, so the END output is decoded as delivered, whatever it holds. Flags: the assumptions_md lines (131-166) that call a point absent from the source.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-TXFORMAT",
+   161,
+   "unassigned transaction-text tails assumed space-initialised; initial-storage policy absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   162,
+   "UTC because the host timezone is absent"
+  ]
+ ]
+}

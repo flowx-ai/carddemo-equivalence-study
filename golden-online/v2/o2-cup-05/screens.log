@@ -1,0 +1,468 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|5|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |5|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COCRDUPC (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDNAME  N ||
+  CRDSTCD  N ||
+  EXPMON   N ||
+  EXPYEAR  N ||
+  EXPDAY   N ||
+  INFOMSG  D |Please enter Account and Card Number|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   4: ENTER
+INPUT aid=ENTER ACCTSID=|00000000007| CARDSID=|4859452612877065|
+=== task   4 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=T |00000000007|
+  in CARDSID  len  16 mdt=T |4859452612877065|
+  in CRDNAME  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTCD  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPMON   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPYEAR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPDAY   len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  80 mdt=F R-MDT-FSET ||
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |2024|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Details of selected card shown above|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   5: ENTER
+INPUT aid=ENTER EXPMON=|13|
+=== task   5 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=T |13|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2024|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET ||
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |13|
+  EXPYEAR  D |2024|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Update card details presented above.|
+  ERRMSG   D |Card expiry month must be between 1 and 12|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   6: ENTER
+INPUT aid=ENTER EXPMON=|00|
+=== task   6 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=T |00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2024|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET |Card expiry month must be between 1 and 12|
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |*|
+  EXPYEAR  D |2024|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Update card details presented above.|
+  ERRMSG   D |Card expiry month must be between 1 and 12|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   7: ENTER
+INPUT aid=ENTER EXPMON=|12| EXPYEAR=|1900|
+=== task   7 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=T |12|
+  in EXPYEAR  len   4 mdt=T |1900|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET |Card expiry month must be between 1 and 12|
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |1900|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Update card details presented above.|
+  ERRMSG   D |Invalid card expiry year|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   8: ENTER
+INPUT aid=ENTER EXPYEAR=|0000|
+=== task   8 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |12|
+  in EXPYEAR  len   4 mdt=T |0000|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET |Invalid card expiry year|
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |*|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Update card details presented above.|
+  ERRMSG   D |Invalid card expiry year|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   9: ENTER
+INPUT aid=ENTER EXPMON=|13| EXPYEAR=|1900|
+=== task   9 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=T |13|
+  in EXPYEAR  len   4 mdt=T |1900|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET |Invalid card expiry year|
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |13|
+  EXPYEAR  D |1900|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Update card details presented above.|
+  ERRMSG   D |Card expiry month must be between 1 and 12|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  10: ENTER
+INPUT aid=ENTER EXPMON=|12| EXPYEAR=|2026|
+=== task  10 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=T |12|
+  in EXPYEAR  len   4 mdt=T |2026|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET |Card expiry month must be between 1 and 12|
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |2026|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Changes validated.Press F5 to save|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |F5=Save F12=Cancel|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  11: PF12
+INPUT aid=PF12
+=== task  11 tran CCUP program COCRDUPC aid PF12  calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |12|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2026|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET ||
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |2024|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Details of selected card shown above|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  12: ENTER
+INPUT aid=ENTER EXPYEAR=|2026|
+=== task  12 tran CCUP program COCRDUPC aid ENTER calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |12|
+  in EXPYEAR  len   4 mdt=T |2026|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET ||
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |2026|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Changes validated.Press F5 to save|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |F5=Save F12=Cancel|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  13: PF5
+INPUT aid=PF5
+=== task  13 tran CCUP program COCRDUPC aid PF5   calen     2000
+RECEIVE MAP CCRDUPA  into COCRDUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000007|
+  in CARDSID  len  16 mdt=A R-MDT-ATTR |4859452612877065|
+  in CRDNAME  len  50 mdt=A R-MDT-ATTR |COOPER MAYERT|
+  in CRDSTCD  len   1 mdt=A R-MDT-ATTR |Y|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |12|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2026|
+  in EXPDAY   len   2 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  80 mdt=F R-MDT-FSET ||
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000007|
+  CARDSID  D |4859452612877065|
+  CRDNAME  D |COOPER MAYERT|
+  CRDSTCD  D |Y|
+  EXPMON   D |12|
+  EXPYEAR  D |2026|
+  EXPDAY   D |<dark>|
+  INFOMSG  D |Changes committed to database|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  14: ENTER
+INPUT aid=ENTER
+=== task  14 tran CCUP program COCRDUPC aid ENTER calen     2000
+SEND MAP CCRDUPA  mapset COCRDUP  from COCRDUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDNAME  N ||
+  CRDSTCD  N ||
+  EXPMON   N ||
+  EXPYEAR  N ||
+  EXPDAY   N ||
+  INFOMSG  D |Please enter Account and Card Number|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEYSC   I |<dark>|
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  15: PF3
+INPUT aid=PF3
+=== task  15 tran CCUP program COCRDUPC aid PF3   calen     2000
+--- XCTL in task  15 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

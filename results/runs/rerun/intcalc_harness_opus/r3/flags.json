@@ -1,0 +1,135 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 78,
+  "note": "[Rate units] exact formula TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 79,
+  "note": "[Grouping] trimming and duplicates not specified; grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 80,
+  "note": "[Rounding] rounding mode unconfirmed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 84,
+  "note": "[Zero interest] omission of a zero transaction is an assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 86,
+  "note": "[Account fields] updates to other fields unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 88,
+  "note": "[Card selection] unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 89,
+  "note": "[Transaction type] provisional, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 90,
+  "note": "[Transaction category] provisional",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 91,
+  "note": "[Transaction source] wording not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 92,
+  "note": "[Transaction description] no specified wording",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 93,
+  "note": "[Merchant identifier] none supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 94,
+  "note": "[Merchant name] none specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 95,
+  "note": "[Merchant city] none specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 96,
+  "note": "[Merchant ZIP] none specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 97,
+  "note": "[Timestamps] no interest timestamp rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_opus/r3/exec/workflow_b2a98296-838b-40c1-8186-2a1155ba0b1e.md",
+  "line": 98,
+  "note": "[Transaction identifiers] construction unstated",
+  "origin": "build"
+ }
+]

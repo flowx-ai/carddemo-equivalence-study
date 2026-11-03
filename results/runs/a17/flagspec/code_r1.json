@@ -1,0 +1,5 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 16, "2 duplicate keys: rests on an absence in the source"],
+  ["R-INT-APPLY", 73, "15 overflow handling uncertain (GnuCOBOL size-error behaviour)"]
+ ]}

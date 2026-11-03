@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 9,
+  "note": "1 truncation, not ROUNDED",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 16,
+  "note": "2 negative balances: negative interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 24,
+  "note": "5 fees: AC 7 DECISION open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 33,
+  "note": "7 last account not rewritten; conflicts with AC 3; switch applyFinalAccountUpdate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 52,
+  "note": "11 no STANDARD row: rate 0",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 56,
+  "note": "12 rate field parse; wiki example one char short",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 72,
+  "note": "15 several cards per account",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+  "line": 87,
+  "note": "19 missing account / card link: skipped",
+  "origin": "build"
+ }
+]

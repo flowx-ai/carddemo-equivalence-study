@@ -1,0 +1,240 @@
+[
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] no date filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] textual sign encoding not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] textual sign encoding not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] textual sign encoding not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "[7] numeric-to-X display conversion not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] duplicates rejected; unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] duplicates rejected; unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] unresolved links fail the batch; unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] unresolved links fail the batch; unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] unresolved links fail the batch; unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] addressee = smallest linked customer ID",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] addressee = smallest linked customer ID",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] addressee = smallest linked customer ID",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] one statement per account incl. inactive",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] accounts numeric, transactions by ID; sort keys not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] accounts numeric, transactions by ID; sort keys not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 15,
+  "note": "[13] current balance only; wiki's other figures not printed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] Total EXP formula not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] overflow policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] overflow policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] overflow policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 18,
+  "note": "[16] name assembly unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 19,
+  "note": "[17] address assembly unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] Tran Details assembly not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 24,
+  "note": "[22] HTML escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 24,
+  "note": "[22] HTML escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 25,
+  "note": "[23] overlong-substitution policy not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 25,
+  "note": "[23] overlong-substitution policy not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 25,
+  "note": "[23] overlong-substitution policy not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/creastmt_harness_opus/r3/exec/assumption_register.md",
+  "line": 26,
+  "note": "[24] atomic failure, no partial statements",
+  "origin": "build"
+ }
+]

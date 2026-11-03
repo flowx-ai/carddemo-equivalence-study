@@ -1,0 +1,2 @@
+Read from runs/a20h/a17/accrue_harness_nowiki/r3/exec/workflow_d8c8f263-02a1-480e-80e3-0cedbc3d70ca.md before execution; no output opened.
+Files mode: Calculate interest (line 228, calculate(input); lines 93-119) reads input.ledgacc, balcat, rategrp, cardlink as text and input.businessDate / input.accrueParameter (defaults 2022-07-18 / 2022071800). Finalize result (line 252): output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, ...}}. Flags: register lines 156-176; a flag when the entry says the source leaves the point open.

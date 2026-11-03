@@ -1,0 +1,6 @@
+Read from runs/a23/harness/va7/r3/exec/workflow_bf2aa58f-88c5-41fb-a0d8-5a8b035d3eb3.md (and the build's own README/register) before execution; no output opened.
+- START (Calculate posting, run() lines 100-111 of the split script; all on definition line 46): input.dailytran, acctdata, cardxref, tcatbal (file contents as strings), batchId (required: a nonempty string, else a configuration diagnostic and run() returns before any record), businessDate (default 2022-07-18), chunkSize, processingTimestamp, checkpoint optional. CONTRACT.md carries no batch identifier: batchId is a run value the contract does not carry and is left unset (§41, as A21 CR4 r1 processingTimestamp); processingTimestamp, chunkSize, checkpoint unset.
+- END: Package results (line 52) writes output={postingResult:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, summary, errors, checkpoint, assumptions, assumptions_md}}: _root postingResult, contract names already used (no renaming)
+- MODE files
+- Register: the ledger array (14 entries, assumption + source) at the start of definition line 46 (Calculate posting script, one line)
+- Build status: plan PAUSED goal_at_risk at step 4 of 4 (verification of resume and fallback); A18: the build's own stop ends the run, the latest version (A2 pick 1a34a5c1) is scored

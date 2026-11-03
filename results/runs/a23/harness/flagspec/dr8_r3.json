@@ -1,0 +1,54 @@
+{
+ "workflow": "<uuid>",
+ "map": null,
+ "decode": {
+  "posttran_transact": "posttranTransact",
+  "posttran_dalyrejs": "posttranDalyrejs",
+  "posttran_acctdata": "posttranAcctdata",
+  "posttran_tcatbal": "posttranTcatbal"
+ },
+ "source": "- START (Calculate postings, calculate(bag) lines 78-90, called at line 143 with input): bag.dailyTransactions, accounts, cardXrefs, categoryBalances = decoded records with the contract field names (the adapter's encode body, no renaming); processedTimestamp optional, left unset (runtime UTC).\n- END: Package results (line 171) writes output={result:{posttranTransact, posttranDalyrejs, posttranAcctdata, posttranTcatbal, summary, assumptionEntries, assumptionsMarkdown, ...}}; the decoder's own 'result' unwrapping, then names renamed (no _root)\n- MODE records (run with MODE=records; no map.json)\n- Register: evidence entries A01-A15 at lines 46-60 (one per line)",
+ "build": [
+  [
+   "R-POST-PRECEDENCE",
+   46,
+   "A01 lookup order conflicts with the invalid-card/expired-account example"
+  ],
+  [
+   "R-POST-WRITE",
+   47,
+   "A02 sequence allocation (pp.9,23) vs BR09 transactionId; incoming numbers kept, a departure from the sequence wording"
+  ],
+  [
+   "R-POST-BAL",
+   49,
+   "A04 arithmetic precision not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   49,
+   "A04 arithmetic precision not specified"
+  ],
+  [
+   "R-POST-103",
+   51,
+   "A06 extracting the ISO date from the timestamp not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   53,
+   "A08 repeated feed rows, winning occurrence and duplicate reason not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   56,
+   "A11 pure-calculation errors and their return code not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   59,
+   "A14 category-balance cat_cd type not specified; kept as four-character text"
+  ]
+ ],
+ "cr_rule": "code lines 91-92: feed sorted by amount in cents ascending, ties by feed index (stable), unreadable amounts last, before any check or posting (line 93). No register entry mentions posting order (CR flag: no). Over-limit: credit - debit + amount with stored signs (line 100, no sign change). Own regression at line 128 asserts 'ascending amount'."
+}

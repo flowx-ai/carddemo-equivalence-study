@@ -1,0 +1,95 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=ADMIN001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0009 XCTL             COADM01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COADM01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T   2 COADM01C s0005 SEND-MAP         COADM1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COADM01C s0002 RETURN-TRANSID   CA00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CA00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CA00 program COADM01C aid ENTER calen      160
+T   3 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T   3 COADM01C s0006 RECEIVE-MAP      COADM1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COADM01C s0003 XCTL             COUSR01C resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COUSR01C (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COUSR01C s0003 SEND-MAP         COUSR1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   3 COUSR01C s0001 RETURN-TRANSID   CU01     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU01) commarea length 160
+##### step   4: ENTER
+=== task   4 tran CU01 program COUSR01C aid ENTER calen      160
+T   4 COUSR01C s0004 RECEIVE-MAP      COUSR1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COUSR01C s0003 SEND-MAP         COUSR1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   4 COUSR01C s0001 RETURN-TRANSID   CU01     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU01) commarea length 160
+##### step   5: ENTER
+=== task   5 tran CU01 program COUSR01C aid ENTER calen      160
+T   5 COUSR01C s0004 RECEIVE-MAP      COUSR1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   5 COUSR01C s0005 WRITE            USRSEC   key=USER0001         resp=       14 resp2=      150 rules=
+T   5 COUSR01C s0003 SEND-MAP         COUSR1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   5 COUSR01C s0001 RETURN-TRANSID   CU01     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU01) commarea length 160
+##### step   6: ENTER
+=== task   6 tran CU01 program COUSR01C aid ENTER calen      160
+T   6 COUSR01C s0004 RECEIVE-MAP      COUSR1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 COUSR01C s0005 WRITE            USRSEC   key=TESTU001         resp=        0 resp2=        0 rules=
+T   6 COUSR01C s0003 SEND-MAP         COUSR1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   6 COUSR01C s0001 RETURN-TRANSID   CU01     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU01) commarea length 160
+##### step   7: PF9
+=== task   7 tran CU01 program COUSR01C aid PF9   calen      160
+T   7 COUSR01C s0004 RECEIVE-MAP      COUSR1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   7 COUSR01C s0003 SEND-MAP         COUSR1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   7 COUSR01C s0001 RETURN-TRANSID   CU01     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU01) commarea length 160
+##### step   8: PF3
+=== task   8 tran CU01 program COUSR01C aid PF3   calen      160
+T   8 COUSR01C s0004 RECEIVE-MAP      COUSR1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   8 COUSR01C s0002 XCTL             COADM01C resp=        0 resp2=        0 rules=
+--- XCTL in task   8 to program COADM01C (EIBAID kept: R-XCTL-AID) calen      160
+T   8 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T   8 COADM01C s0005 SEND-MAP         COADM1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   8 COADM01C s0002 RETURN-TRANSID   CA00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CA00) commarea length 160
+##### step   9: ENTER
+=== task   9 tran CA00 program COADM01C aid ENTER calen      160
+T   9 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T   9 COADM01C s0006 RECEIVE-MAP      COADM1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   9 COADM01C s0003 XCTL             COUSR00C resp=        0 resp2=        0 rules=
+--- XCTL in task   9 to program COUSR00C (EIBAID kept: R-XCTL-AID) calen      160
+T   9 COUSR00C s0008 STARTBR          USRSEC   key=LOW-VALUES       resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=ADMIN001         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=ADMIN002         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=ADMIN003         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=ADMIN004         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=ADMIN005         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=TESTU001         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=USER0002         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=USER0003         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=USER0004         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0009 READNEXT         USRSEC   key=USER0005         resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0011 ENDBR            USRSEC   resp=        0 resp2=        0 rules=
+T   9 COUSR00C s0005 SEND-MAP         COUSR0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   9 COUSR00C s0005 SEND-MAP         COUSR0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   9 COUSR00C s0001 RETURN-TRANSID   CU00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CU00) commarea length 194
+##### step  10: PF3
+=== task  10 tran CU00 program COUSR00C aid PF3   calen      194
+T  10 COUSR00C s0007 RECEIVE-MAP      COUSR0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  10 COUSR00C s0004 XCTL             COADM01C resp=        0 resp2=        0 rules=
+--- XCTL in task  10 to program COADM01C (EIBAID kept: R-XCTL-AID) calen      194
+T  10 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T  10 COADM01C s0005 SEND-MAP         COADM1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T  10 COADM01C s0002 RETURN-TRANSID   CA00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CA00) commarea length 160
+END outcome=OK

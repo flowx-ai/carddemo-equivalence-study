@@ -1,0 +1,2 @@
+own appId <uuid>; mcp calls 16; outside-scope calls 1
+  list_projects {} foreign=[] visible_projects=['ll_a17_accrue_zflx_detailed_r1', 'll_accrue_zflx_opus_onto_r1', 'll_accrue_zflx_opus_onto_r2', 'll_accrue_zflx_opus_onto_r3', 'll_accrue_zflx_opus_r1', 'll_accrue_zflx_opus_r2', 'll_accrue_zflx_opus_r3', 'll_accrue_zflx_opus_thin_r1', 'll_accrue_zflx_opus_thin_r2', 'll_accrue_zflx_opus_thin_r3']

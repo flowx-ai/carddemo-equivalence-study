@@ -1,0 +1,15 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "out/assumptions.md A11 (acceptance page scenario 2: TODO confirm rounding mode)"},
+  {"output": "accrue_systxn.json", "key": "amt", "source": "out/assumptions.md A8-A10 (process page: TODO exact interest formula and grouping; per-category balance x rate / 1200)"},
+  {"output": "accrue_ledgacc.json", "key": "curr_bal", "source": "out/assumptions.md A8-A12 (interest summed from per-category truncated lines, DEFAULT group fallback)"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_credit", "source": "out/assumptions.md A18 (wiki silent on cycle-total reset; not reset)"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_debit", "source": "out/assumptions.md A18 (wiki silent on cycle-total reset; not reset)"},
+  {"output": "accrue_systxn.json", "key": "tran_id", "source": "out/assumptions.md A14, A20 (wiki silent on interest transactions)"},
+  {"output": "accrue_systxn.json", "key": "type_cd", "source": "out/assumptions.md A20"},
+  {"output": "accrue_systxn.json", "key": "cat_cd", "source": "out/assumptions.md A20"},
+  {"output": "accrue_systxn.json", "key": "desc", "source": "out/assumptions.md A20"},
+  {"output": "accrue_systxn.json", "key": "card_num", "source": "out/assumptions.md A21"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "out/assumptions.md A22"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "out/assumptions.md A22"},
+  {"output": "accrue_systxn.json", "key": "<record set>", "source": "out/assumptions.md A13 (zero-balance lines written as 0.00; rate-0 lines not written)"}
+]

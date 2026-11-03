@@ -1,0 +1,5 @@
+[
+  {"tran_id": "T000000000000001", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "valid purchase", "amt": "25.50", "merchant_id": 800000001, "merchant_name": "TEST MERCHANT", "merchant_city": "SPRINGFIELD", "merchant_zip": "12345", "card_num": "4000000000000001", "orig_ts": "2022-07-18-10.15.00.000000", "proc_ts": "2022-07-18-23.59.00.000000"},
+  {"tran_id": "T000000000000002", "type_cd": "02", "cat_cd": 2, "source": "POS TERM", "desc": "valid payment (negative)", "amt": "-10.00", "merchant_id": 800000001, "merchant_name": "TEST MERCHANT", "merchant_city": "SPRINGFIELD", "merchant_zip": "12345", "card_num": "4000000000000001", "orig_ts": "2022-07-18-10.15.00.000000", "proc_ts": "2022-07-18-23.59.00.000000"},
+  {"tran_id": "T000000000000005", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "exactly the available credit", "amt": "100.00", "merchant_id": 800000001, "merchant_name": "TEST MERCHANT", "merchant_city": "SPRINGFIELD", "merchant_zip": "12345", "card_num": "4000000000000003", "orig_ts": "2022-07-18-10.15.00.000000", "proc_ts": "2022-07-18-23.59.00.000000"}
+]

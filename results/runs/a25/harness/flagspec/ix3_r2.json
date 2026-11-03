@@ -1,0 +1,171 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version: 782e7790 (head of the build branch, committed; plan COMPLETED after one A8 retry of a harness-attributed item_evidence pause)\n- START (Transform, lines 56-61, 71): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate\n- END: Transform (line 83) writes output={result:{tranrept_report (lines joined by \\n), ...}}; decoder's 'result' unwrapping, contract name, no decode map\n- MODE files\n- Register: assume() entries at lines 26-46 (one per line)",
+ "build": [
+  [
+   "R-REPT-SET",
+   27,
+   "older generic default dates vs the step contract"
+  ],
+  [
+   "R-REPT-SET",
+   29,
+   "transaction offsets inferred, copybook absent"
+  ],
+  [
+   "R-REPT-AMT",
+   29,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   29,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   29,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   30,
+   "reference copybooks not reproduced"
+  ],
+  [
+   "R-REPT-XREF",
+   30,
+   "reference copybooks not reproduced"
+  ],
+  [
+   "R-REPT-SET",
+   31,
+   "no secondary sort"
+  ],
+  [
+   "R-REPT-SET",
+   32,
+   "no timezone rule"
+  ],
+  [
+   "R-REPT-AMT",
+   34,
+   "sign encoding not fully specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   34,
+   "sign encoding not fully specified"
+  ],
+  [
+   "R-REPT-GRAND",
+   34,
+   "sign encoding not fully specified"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   35,
+   "duplicate/malformed reference handling undefined"
+  ],
+  [
+   "R-REPT-XREF",
+   35,
+   "duplicate/malformed reference handling undefined"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   36,
+   "unknown references: TODO on legacy abend; category/card silent"
+  ],
+  [
+   "R-REPT-XREF",
+   36,
+   "unknown card reference silent"
+  ],
+  [
+   "R-REPT-SET",
+   36,
+   "TODO on legacy abend behaviour"
+  ],
+  [
+   "R-REPT-SET",
+   37,
+   "no malformed-record policy"
+  ],
+  [
+   "R-REPT-HEADER",
+   38,
+   "page capacity TODO"
+  ],
+  [
+   "R-REPT-ACCT",
+   39,
+   "spanning-page sequencing unstated"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   39,
+   "spanning-page sequencing unstated"
+  ],
+  [
+   "R-REPT-HEADER",
+   39,
+   "spanning-page sequencing unstated"
+  ],
+  [
+   "R-REPT-HEADER",
+   40,
+   "coincident-boundary sequencing unstated"
+  ],
+  [
+   "R-REPT-ACCT",
+   40,
+   "coincident-boundary sequencing unstated"
+  ],
+  [
+   "R-REPT-AMT",
+   43,
+   "zero-value editing unstated"
+  ],
+  [
+   "R-REPT-ACCT",
+   43,
+   "zero-value editing unstated"
+  ],
+  [
+   "R-REPT-GRAND",
+   43,
+   "zero-value editing unstated"
+  ],
+  [
+   "R-REPT-SET",
+   44,
+   "broader input rejection unspecified"
+  ],
+  [
+   "R-REPT-AMT",
+   45,
+   "overflow rule absent"
+  ],
+  [
+   "R-REPT-ACCT",
+   45,
+   "overflow rule absent"
+  ],
+  [
+   "R-REPT-GRAND",
+   45,
+   "overflow rule absent"
+  ]
+ ],
+ "cr_rule": "line 72 / register line 33: type 01 + category 0005 skipped before parsing, lookup, counting or totals, citing BR-07 and scenario 7 (statement of behaviour, not a flag). R-REPT-SET carries flags from 27, 29, 31, 32, 36, 37, 44 and the wiki TODO (rubric 5). No entry names end-of-file handling (no R-REPT-LASTDUP flag)."
+}

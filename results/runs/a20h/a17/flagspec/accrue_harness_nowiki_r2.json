@@ -1,0 +1,98 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc.dat",
+  "tcatbal": "balcat.dat",
+  "discgrp": "rategrp.dat",
+  "cardxref": "cardlink.dat",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate",
+  "_wrap": {
+   "files": [
+    "acctdata",
+    "tcatbal",
+    "discgrp",
+    "cardxref"
+   ]
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Files mode: Transform (lines 95-97) reads input.files['ledgacc.dat','balcat.dat','rategrp.dat','cardlink.dat'] as text (required) and input.businessDate / input.accrueParameter (defaults 2022-07-18 / 2022071800). CheckAssumptions (line 163): output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, status, diagnostics}}. Flags: assume() register lines 47-72; a flag when its basis says the source leaves the point open.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-APPLY",
+   55,
+   "PERIOD: no formula, rate unit or period given"
+  ],
+  [
+   "R-INT-TRUNC",
+   56,
+   "ROUND: no rounding rule stated"
+  ],
+  [
+   "R-INT-ZERO",
+   56,
+   "ROUND: no zero-charge rule stated"
+  ],
+  [
+   "R-INT-ZERO",
+   57,
+   "ELIGIBLE: no eligibility or debit/credit-balance policy"
+  ],
+  [
+   "R-INT-RATE",
+   58,
+   "JOIN: no matching or fallback algorithm"
+  ],
+  [
+   "R-INT-RATE",
+   60,
+   "DUPLICATES: no duplicate resolution rule"
+  ],
+  [
+   "R-INT-RATE",
+   61,
+   "MISSING_MATCH: no unmatched-record policy"
+  ],
+  [
+   "R-INT-CYC",
+   62,
+   "ACCOUNT_UPDATE: no balance or cycle update rules"
+  ],
+  [
+   "R-INT-TXID",
+   63,
+   "TRANSACTION_UNIT: no grouping or ordering rule"
+  ],
+  [
+   "R-INT-TXID",
+   64,
+   "TRANSACTION_ID: no identifier construction rule"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   59,
+   "CARD: no card-selection policy"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   65,
+   "TRANSACTION_CODES: no type, source, category mapping or description"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   66,
+   "MERCHANT: no merchant defaults"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   67,
+   "TIME: no timestamp rule"
+  ]
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "workflow": "<uuid>",
+ "map": null,
+ "decode": null,
+ "source": "- START (Post transactions, line 60): input.dailyTransactions, accounts, cardXrefs, categoryBalances = decoded records with the contract field names (the adapter's encode body, no renaming); processingTimestamp optional, left unset (runtime UTC). No businessDate or batchId read.\n- END: Finish results (line 131) writes output={result:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, summary, assumptions, assumptions_md}}; the decoder's own 'result' unwrapping reaches the contract names: no decode.json\n- MODE records (run with MODE=records; no map.json)\n- Register: inventory entries at lines 97-111 (one per line)",
+ "build": [
+  [
+   "R-POST-102",
+   98,
+   "posting order: malformed-amount ordering unstated; unreadable amounts isolated as failures (narrow: the order of valid amounts is stated as BR-10)"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   99,
+   "scenario 6 (missing card plus expiry) not explained; one reason kept, 103 over 102"
+  ],
+  [
+   "R-POST-BAL",
+   101,
+   "rounding and overflow behaviour unstated"
+  ],
+  [
+   "R-POST-TCAT",
+   101,
+   "rounding and overflow behaviour unstated"
+  ],
+  [
+   "R-POST-WRITE",
+   105,
+   "BR-09 vs pp.9,23 sequences; input id kept, duplicate handling an implementation choice"
+  ],
+  [
+   "R-POST-BAL",
+   107,
+   "identifier normalization not otherwise specified; numeric account keys compared by digit value"
+  ],
+  [
+   "R-POST-TCAT",
+   107,
+   "identifier normalization not otherwise specified; category keys compared by digit value"
+  ],
+  [
+   "R-POST-TCAT",
+   108,
+   "category-balance key types listed by name only; aligned as integers"
+  ],
+  [
+   "R-POST-BAL",
+   109,
+   "input-error codes and ambiguous-key policy unstated"
+  ],
+  [
+   "R-POST-TCAT",
+   109,
+   "input-error codes and ambiguous-key policy unstated"
+  ],
+  [
+   "R-POST-WRITE",
+   109,
+   "input-error codes and ambiguous-key policy unstated"
+  ]
+ ],
+ "cr_rule": "line 98 (code line 68): all feed records stably sorted by signed amount, ascending, before any check or posting; equal amounts keep feed order; unreadable amounts sorted last and isolated as failures. Over-limit formula with stored signs (line 102, no sign change). Flags only malformed-amount ordering as unstated (R-POST-102 flag: yes, narrow)."
+}

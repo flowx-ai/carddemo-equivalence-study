@@ -1,0 +1,6 @@
+[
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "outputs/assumptions.md A9 (BR-05 processedTimestamp = now; format not given by the wiki)"},
+  {"rule": "BR-10-POSTING-ORDER", "source": "outputs/assumptions.md A1 (BR-10 ascending-amount order vs legacy sequential DALYTRAN read)"},
+  {"rule": "AC-06-MULTI-FAILURE", "source": "outputs/assumptions.md A2 (invalid card short-circuits; reason 100)"},
+  {"rule": "BR-09-DUPLICATE-TRAN-ID", "source": "outputs/assumptions.md A12 (duplicate ids in one feed skipped, not posted or rejected)"}
+]

@@ -1,0 +1,174 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 0.9903,
+  "equivalence_business": 0.9903,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 14,
+  "flags_unneeded": 14,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 53,
+   "intcalc_systran.orig_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 18,
+   "note": "[8] zero results from nonzero rates kept by policy, not asserted as legacy behaviour",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 22,
+   "note": "[10] rounding requires confirmation; per-category truncation is not a proven rule",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 24,
+   "note": "[11] fee or exemption rules not established by the summaries",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 26,
+   "note": "[12] zero-rate affected-account boundary: summary incomplete",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 32,
+   "note": "[15] posting order not settled",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 34,
+   "note": "[16] prefix/suffix allocation and exhaustion are implementation choices",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 36,
+   "note": "[17] cross-run sequence persistence not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 38,
+   "note": "[18] description padding follows implementation policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 40,
+   "note": "[19] multiple-card selection not settled",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 42,
+   "note": "[20] interest merchant-id default not established",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 44,
+   "note": "[21] interest merchant-text values not established",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 46,
+   "note": "[22] timestamp time-of-day default not established",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_harness_sonnet/r3/exec/assumption_register.md",
+   "line": 52,
+   "note": "[25] missing DEFAULT not fully specified",
+   "origin": "build"
+  }
+ ]
+}

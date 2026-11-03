@@ -1,0 +1,2 @@
+own appId <uuid>; mcp calls 327; outside-scope calls 1
+  list_project_versions {"appId": "<uuid>"} foreign=[] visible_projects=[]

@@ -1,0 +1,86 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 11,
+  "note": "A-01 last account in BALCAT order not rewritten; wiki silent at the boundary",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 24,
+  "note": "A-02 truncation toward zero",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 33,
+  "note": "A-03 negative balances: silent, negative interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 45,
+  "note": "A-05 suffix width/start assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 58,
+  "note": "A-07 several cards: lowest card number",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 78,
+  "note": "A-10 own group then STANDARD; both missing: no interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 86,
+  "note": "A-11 missing account record: balances skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 109,
+  "note": "A-15 fees DECISION: none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 120,
+  "note": "A-17 numeric decoding; rate example ambiguous",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 129,
+  "note": "A-18 no overflow emulation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r2/builder/out/assumptions.md",
+  "line": 135,
+  "note": "A-19 group id matching",
+  "origin": "build"
+ }
+]

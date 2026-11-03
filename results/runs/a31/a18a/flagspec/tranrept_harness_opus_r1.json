@@ -1,0 +1,173 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version 358cd85d (head of the build branch, plan COMPLETED, no retry)\n- START: four file texts plus startDate, endDate; MODE files\n- END: top-level tranrept_report, assumptions_md\n- Register: lines 117-157",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   123,
+   "offsets not reproduced"
+  ],
+  [
+   "R-REPT-AMT",
+   123,
+   "offsets not reproduced"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   123,
+   "offsets not reproduced"
+  ],
+  [
+   "R-REPT-XREF",
+   124,
+   "referenced without offsets"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   125,
+   "layout provisional"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   126,
+   "positions inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   128,
+   "sign representation provisional"
+  ],
+  [
+   "R-REPT-ACCT",
+   128,
+   "sign representation provisional"
+  ],
+  [
+   "R-REPT-GRAND",
+   128,
+   "sign representation provisional"
+  ],
+  [
+   "R-REPT-SET",
+   132,
+   "no malformed policy"
+  ],
+  [
+   "R-REPT-SET",
+   133,
+   "selection timestamp not stated"
+  ],
+  [
+   "R-REPT-SET",
+   134,
+   "validation order not specified"
+  ],
+  [
+   "R-REPT-XREF",
+   135,
+   "join algorithm absent"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   135,
+   "join algorithm absent"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   136,
+   "key structure not reproduced"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   137,
+   "no duplicate policy"
+  ],
+  [
+   "R-REPT-XREF",
+   137,
+   "no duplicate policy"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   138,
+   "no not-found fallback"
+  ],
+  [
+   "R-REPT-XREF",
+   139,
+   "unmatched-card handling absent"
+  ],
+  [
+   "R-REPT-SET",
+   140,
+   "grouping and order not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   140,
+   "grouping and order not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   142,
+   "aggregation not stated"
+  ],
+  [
+   "R-REPT-GRAND",
+   142,
+   "aggregation not stated"
+  ],
+  [
+   "R-REPT-AMT",
+   142,
+   "aggregation not stated"
+  ],
+  [
+   "R-REPT-HEADER",
+   143,
+   "page capacity not given"
+  ],
+  [
+   "R-REPT-ACCT",
+   144,
+   "accumulation scopes not given"
+  ],
+  [
+   "R-REPT-GRAND",
+   144,
+   "accumulation scopes not given"
+  ],
+  [
+   "R-REPT-ACCT",
+   145,
+   "coincident order absent"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   145,
+   "coincident order absent"
+  ],
+  [
+   "R-REPT-AMT",
+   149,
+   "no overflow policy"
+  ],
+  [
+   "R-REPT-AMT",
+   157,
+   "negative zero not defined"
+  ]
+ ]
+}

@@ -1,0 +1,2 @@
+Read from runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md before execution; no output opened.
+Files mode: Calculate interest reads input.acctdata/tcatbal/discgrp/cardxref as file text (other five files optional), input.businessDate, input.interestRunDate. END: Validate assumptions writes output={result:{intcalc_systran, intcalc_acctdata, assumptions, assumptions_md, diagnostics, status}} -> _root result.

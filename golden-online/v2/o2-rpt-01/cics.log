@@ -1,0 +1,87 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             CORPT00C resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program CORPT00C (EIBAID kept: R-XCTL-AID) calen      160
+T   3 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   3 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   4: ENTER
+=== task   4 tran CR00 program CORPT00C aid ENTER calen      160
+T   4 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   4 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   5: PF5
+=== task   5 tran CR00 program CORPT00C aid PF5   calen      160
+T   5 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   5 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   5 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   6: ENTER
+=== task   6 tran CR00 program CORPT00C aid ENTER calen      160
+T   6 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   6 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   7: ENTER
+=== task   7 tran CR00 program CORPT00C aid ENTER calen      160
+T   7 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   7 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   7 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   8: ENTER
+=== task   8 tran CR00 program CORPT00C aid ENTER calen      160
+T   8 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   8 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   8 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   9: ENTER
+=== task   9 tran CR00 program CORPT00C aid ENTER calen      160
+T   9 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0002 WRITEQ-TD        JOBS     resp=        0 resp2=        0 rules=R-TDQ-EXTRA,
+T   9 CORPT00C s0004 SEND-MAP         CORPT0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   9 CORPT00C s0006 RETURN-TRANSID   CR00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step  10: PF3
+=== task  10 tran CR00 program CORPT00C aid PF3   calen      160
+T  10 CORPT00C s0007 RECEIVE-MAP      CORPT0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  10 CORPT00C s0003 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task  10 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T  10 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T  10 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

@@ -1,0 +1,9 @@
+version <uuid> WIP branch ai/carddemo-daily-transaction-rep-968c40 'work in progress 2026-10-26 19:14:58:72'
+first run_started 2026-10-26T19:14:56.897393+00:00 run <uuid>
+first-attempt WIP 2026-10-26T19:14:58+00:00
+first run_finished 2026-10-26T19:15:40.798678+00:00 status failed commit None
+driver: 2026-10-26T19:15:54Z auto: plan FAILED (behaviour_failed), A2 platform-error retry 1
+first retry run_started 2026-10-26T19:15:56.953742+00:00 run <uuid>
+session.json mentions behaviour_failed 7 time(s)
+other non-main versions: 5a69bf12 WIP ai/carddemo-daily-transaction-rep-bbc9a7 'work in progress 2026-10-26 19:15:57:76'; d5ebed04 WIP ai/carddemo-daily-transaction-rep-f3da66 'work in progress 2026-10-26 19:16:47:72'
+VERIFIED first attempt: True

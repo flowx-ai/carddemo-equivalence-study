@@ -1,0 +1,3 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md:82 (wiki BR-08 {{TODO: confirm rounding mode (truncate vs ROUNDED)}})"}
+]

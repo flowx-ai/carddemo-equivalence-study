@@ -1,0 +1,254 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 58,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 54,
+  "note": "newline and blank records: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 60,
+  "note": "sign bytes: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 60,
+  "note": "sign bytes: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 60,
+  "note": "sign bytes: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 62,
+  "note": "overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 62,
+  "note": "overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 62,
+  "note": "overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 63,
+  "note": "malformed record recovery: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 63,
+  "note": "malformed record recovery: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 64,
+  "note": "duplicate account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 65,
+  "note": "duplicate customer: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 66,
+  "note": "duplicate xref: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 67,
+  "note": "duplicate transaction: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 67,
+  "note": "duplicate transaction: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 68,
+  "note": "missing reference recovery: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 68,
+  "note": "missing reference recovery: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 73,
+  "note": "cycle filter TODO; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 75,
+  "note": "name joining: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 76,
+  "note": "display trimming: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 77,
+  "note": "third line assembly not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 78,
+  "note": "missing score rendering: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+  "line": 56,
+  "note": "missing input: wiki silent",
+  "origin": "build"
+ }
+]

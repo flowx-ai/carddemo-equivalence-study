@@ -1,0 +1,212 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 58,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 82,
+  "note": "offsets derived, copybooks not attached",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 87,
+  "note": "sign encoding not separately stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 87,
+  "note": "sign encoding not separately stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 87,
+  "note": "sign encoding not separately stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 89,
+  "note": "name concatenation rules omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 90,
+  "note": "address assembly not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 92,
+  "note": "cycle filter: wiki says confirm; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 94,
+  "note": "missing or malformed score unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 95,
+  "note": "overflow and padding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 96,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 96,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 96,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 97,
+  "note": "duplicate input not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 98,
+  "note": "malformed record and missing master recovery omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 98,
+  "note": "malformed record and missing master recovery omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 99,
+  "note": "record delimiter handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/harness/yx3/r1/exec/workflow_5bd66d3b-1cac-413b-9718-af5e99748013.md",
+  "line": 100,
+  "note": "missing file completion not distinguished",
+  "origin": "build"
+ }
+]

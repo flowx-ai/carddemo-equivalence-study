@@ -1,0 +1,121 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 26,
+  "note": "A3 rategrp layout not documented (CardDemo DIS-GROUP-RECORD)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 30,
+  "note": "A7 sign encoding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 36,
+  "note": "A8 per category, deviates from literal formula; grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 37,
+  "note": "A9 lookup key: group alone ambiguous",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 38,
+  "note": "A10 formula TODO; CardDemo CBACT04C /1200",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 39,
+  "note": "A11 AC TODO rounding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 40,
+  "note": "A12 fallback: wiki silent; CardDemo DEFAULT",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 41,
+  "note": "A13 zero transaction: AC 3 does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 43,
+  "note": "A15 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 44,
+  "note": "A16 status: wiki defines no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 51,
+  "note": "A18 cycle totals NOT reset; wiki silent; least sure",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 53,
+  "note": "A20 interest transactions never mentioned in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 53,
+  "note": "A20 interest transactions never mentioned; CardDemo constants",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r2/builder/out/assumptions.md",
+  "line": 54,
+  "note": "A21 card number: wiki silent",
+  "origin": "build"
+ }
+]

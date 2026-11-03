@@ -1,0 +1,174 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version: 006bc8cb (head of the build branch, committed; plan PAUSED goal_at_risk after 5 of 8 steps, the build's own stop under A18, after two A8 retries of harness-attributed item_evidence pauses)\n- START (Build statements, lines 126-137): input.transact, acctdata, cardxref, custdata = file text strings, contract names (identity map)\n- END: Package outputs (line 236) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); the decoder's own 'result' unwrapping reaches the contract names: no decode map\n- MODE files\n- Register: assume() entries at lines 51-77 (one per line)",
+ "build": [
+  [
+   "R-STMT-BAL",
+   52,
+   "account offsets unverified"
+  ],
+  [
+   "R-STMT-SET",
+   53,
+   "xref offsets unverified"
+  ],
+  [
+   "R-STMT-NAME",
+   54,
+   "customer offsets unverified"
+  ],
+  [
+   "R-STMT-ADDR",
+   54,
+   "customer offsets unverified"
+  ],
+  [
+   "R-STMT-FICO",
+   54,
+   "customer offsets unverified"
+  ],
+  [
+   "R-STMT-TXN",
+   55,
+   "transaction offsets absent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   55,
+   "transaction offsets absent"
+  ],
+  [
+   "R-STMT-BAL",
+   58,
+   "amount encoding not supplied"
+  ],
+  [
+   "R-STMT-TXN",
+   58,
+   "amount encoding not supplied"
+  ],
+  [
+   "R-STMT-TOTAL",
+   58,
+   "amount encoding not supplied"
+  ],
+  [
+   "R-STMT-OTHER",
+   59,
+   "identifier conversion not specified"
+  ],
+  [
+   "R-STMT-SET",
+   61,
+   "shared-card semantics unresolved"
+  ],
+  [
+   "R-STMT-TXN",
+   61,
+   "shared-card semantics unresolved"
+  ],
+  [
+   "R-STMT-TXN",
+   62,
+   "duplicate rows unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   62,
+   "lookup collisions unspecified"
+  ],
+  [
+   "R-STMT-TXN",
+   63,
+   "cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-NAME",
+   64,
+   "name assembly unspecified"
+  ],
+  [
+   "R-STMT-ADDR",
+   65,
+   "address concatenation unspecified"
+  ],
+  [
+   "R-STMT-FICO",
+   66,
+   "missing-value rendering unspecified"
+  ],
+  [
+   "R-STMT-BAL",
+   68,
+   "signed zero not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   68,
+   "signed zero not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   68,
+   "signed zero not specified"
+  ],
+  [
+   "R-STMT-BAL",
+   69,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   69,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   69,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   69,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-NAME",
+   72,
+   "HTML escaping absent"
+  ],
+  [
+   "R-STMT-ADDR",
+   72,
+   "HTML escaping absent"
+  ],
+  [
+   "R-STMT-SET",
+   73,
+   "malformed-record rules omitted"
+  ],
+  [
+   "R-STMT-TXN",
+   73,
+   "malformed-record rules omitted"
+  ],
+  [
+   "R-STMT-SET",
+   74,
+   "missing joins unspecified"
+  ],
+  [
+   "R-STMT-ABEND",
+   74,
+   "missing joins unspecified"
+  ]
+ ],
+ "cr_rule": "line 157 / register A20 (line 70): Total EXP sums only strictly positive amounts; zero and negative listed, not added, citing BR-03 and scenario 7 (statement of behaviour, not a flag). Coarse R-STMT-TOTAL flags (55, 58, 68, 69) and the wiki TODO (rubric 5)."
+}

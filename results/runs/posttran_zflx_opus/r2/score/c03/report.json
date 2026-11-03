@@ -1,0 +1,991 @@
+{
+ "summary": {
+  "records_union": 469,
+  "equivalence_strict": 0.8721,
+  "equivalence_business": 0.8721,
+  "divergent_records": 60,
+  "silent_records": 0,
+  "flagged_records": 60,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-POST-102",
+   "R-POST-BAL",
+   "R-POST-TCAT"
+  ],
+  "flags_raised": 37,
+  "flags_unneeded": 25,
+  "volatile_masked": {
+   "posttran_transact.proc_ts": 259
+  }
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 262,
+   "candidate": 274,
+   "equal_strict": 259,
+   "equal_business": 259,
+   "union": 277
+  },
+  "posttran_dalyrejs": {
+   "golden": 39,
+   "candidate": 27,
+   "equal_strict": 24,
+   "equal_business": 24,
+   "union": 42
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 38,
+   "equal_business": 38,
+   "union": 50
+  },
+  "posttran_tcatbal": {
+   "golden": 100,
+   "candidate": 100,
+   "equal_strict": 88,
+   "equal_business": 88,
+   "union": 100
+  }
+ },
+ "by_rule": {
+  "R-POST-102/flagged": 36,
+  "R-POST-BAL/flagged": 24,
+  "R-POST-TCAT/flagged": 12
+ },
+ "divergences": [
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000424689871",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000502617711",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000508429766",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000554096178",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000570013846",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000601496057",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000741999667",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000822135100",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000823157599",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000961186055",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000424689871",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000502617711",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000508429766",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000554096178",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000570013846",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000601496057",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000741999667",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000822135100",
+   "kind": "extra",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000823157599",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000961186055",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-POST-102",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000007",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "900.21",
+   "cand": "1855.32",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000007",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "1287.09",
+   "cand": "2242.20",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "1475.99",
+   "cand": "2222.76",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "2171.65",
+   "cand": "2918.42",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "-621.56",
+   "cand": "485.32",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "343.77",
+   "cand": "1450.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "2692.65",
+   "cand": "2849.42",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "2661.76",
+   "cand": "2818.53",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "801.78",
+   "cand": "248.78",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "809",
+   "cand": "256.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "-898.89",
+   "cand": "1.33",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "29.44",
+   "cand": "929.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "333.1",
+   "cand": "705.43",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "664.32",
+   "cand": "1036.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "460.56",
+   "cand": "720.67",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "1173.55",
+   "cand": "1433.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "1980.43",
+   "cand": "2701.42",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "2309.76",
+   "cand": "3030.75",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000037",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "-125.88",
+   "cand": "422.45",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000037",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "0",
+   "cand": "548.33",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "1044.66",
+   "cand": "2182.43",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "1598.1",
+   "cand": "2735.87",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-POST-BAL",
+   "golden": "1202.89",
+   "cand": "1925.22",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-POST-BAL",
+   "golden": "1512.77",
+   "cand": "2235.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000007|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "1287.09",
+   "cand": "2242.20",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "2171.65",
+   "cand": "2918.42",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "343.77",
+   "cand": "1450.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "2661.76",
+   "cand": "2818.53",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "809",
+   "cand": "256.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "29.44",
+   "cand": "929.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "664.32",
+   "cand": "1036.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "1173.55",
+   "cand": "1433.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "2309.76",
+   "cand": "3030.75",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000037|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "0",
+   "cand": "548.33",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "1598.1",
+   "cand": "2735.87",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "kind": "field",
+   "field": "bal",
+   "rule": "R-POST-TCAT",
+   "golden": "1512.77",
+   "cand": "2235.10",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-100",
+   "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+   "line": 77,
+   "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-101",
+   "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+   "line": 77,
+   "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-103",
+   "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+   "line": 77,
+   "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-104",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 16,
+   "note": "A1 default rule set is the wiki's (active account, active card, creditLimit - currentBalance)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-105",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 16,
+   "note": "A1 default rule set is the wiki's (active account, active card, creditLimit - currentBalance)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-103",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 22,
+   "note": "A2 wiki contradicts itself; recalled legacy rules differ in four ways, kept as a non-default profile",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 22,
+   "note": "A2 wiki contradicts itself; recalled legacy rules differ in four ways, kept as a non-default profile",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-100",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 37,
+   "note": "A3 account reached through the cross-reference; wiki does not say how",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-101",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 37,
+   "note": "A3 account reached through the cross-reference; wiki does not say how",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-100",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 43,
+   "note": "A4 wiki gives no reason codes; 104/105 invented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-101",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 43,
+   "note": "A4 wiki gives no reason codes; 104/105 invented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-103",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 43,
+   "note": "A4 wiki gives no reason codes; 104/105 invented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-104",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 43,
+   "note": "A4 wiki gives no reason codes; 104/105 invented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-105",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 43,
+   "note": "A4 wiki gives no reason codes; 104/105 invented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 55,
+   "note": "A5 order of checks, first failure wins: wiki gives no precedence",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-104",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 62,
+   "note": "A6 active means status Y; status enums not supplied",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-105",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 62,
+   "note": "A6 active means status Y; status enums not supplied",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-105",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 67,
+   "note": "A7 card missing from carddata not rejected: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 106,
+   "note": "B5 rejects keep the daily proc_ts: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 110,
+   "note": "B6 business date does not filter; GDG TODO open",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 123,
+   "note": "C1 copybook offsets not in the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 130,
+   "note": "C2 sign encoding not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 142,
+   "note": "C3 non-numeric int fields become 0",
+   "origin": "build"
+  },
+  {
+   "rule": "R-PASSTHRU",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 146,
+   "note": "C4 output contents and order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/posttran_zflx_opus/r2/builder/outputs/assumptions.md",
+   "line": 156,
+   "note": "C5 type/category codes not validated",
+   "origin": "build"
+  }
+ ]
+}

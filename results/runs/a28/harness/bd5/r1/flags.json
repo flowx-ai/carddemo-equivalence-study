@@ -1,0 +1,240 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "DISPLAY-AMOUNTS: statement-input sign encoding unsettled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "DISPLAY-AMOUNTS: statement-input sign encoding unsettled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "DISPLAY-AMOUNTS: statement-input sign encoding unsettled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "RECORD-FRAMING: exact compatibility with byte-oriented files unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "CUSTOMER-ASSEMBLY: joins unspecified, maker-selected",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "CUSTOMER-ASSEMBLY: joins unspecified, maker-selected",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "FICO: blank storage and range enforcement silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "DUPLICATES: duplicate input records silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "FAULT-ISOLATION: per-card recovery, maker-required",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "FAULT-ISOLATION: per-card recovery, maker-required",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "NUMERIC-OVERFLOW: overflow recovery silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "NUMERIC-OVERFLOW: overflow recovery silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "NUMERIC-OVERFLOW: overflow recovery silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "NUMERIC-OVERFLOW: overflow recovery silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "PRINTED-NUMBERS: negative and zero picture rendering silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "PRINTED-NUMBERS: negative and zero picture rendering silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "PRINTED-NUMBERS: negative and zero picture rendering silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "HTML-ESCAPING-CLIPPING: escaping and overlong values silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "HTML-ESCAPING-CLIPPING: escaping and overlong values silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md",
+  "line": 46,
+  "note": "OMITTED-SECTIONS: p.21 sections marked TODO, omitted",
+  "origin": "build"
+ }
+]

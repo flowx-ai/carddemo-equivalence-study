@@ -1,0 +1,284 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 31,
+  "flags_unneeded": 31,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9984
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 58,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 24,
+   "note": "B2 blank and short lines: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 25,
+   "note": "B3 sign encoding not stated for transact/acctdata",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 25,
+   "note": "B3 sign encoding not stated for transact/acctdata",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 25,
+   "note": "B3 sign encoding not stated for transact/acctdata",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 26,
+   "note": "B4 duplicate keys not addressed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 34,
+   "note": "C3 cycle-filter TODO; no filter",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 35,
+   "note": "C4 orphan transactions: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 37,
+   "note": "C6 missing customer or account: silent; card skipped (legacy abends, recollection)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 37,
+   "note": "C6 missing customer or account: silent; card skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 38,
+   "note": "C7 no limit per card; the wiki gives no size; legacy table overflow not reproduced",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 44,
+   "note": "D1 name: silent; follows CBSTM03A (recollection)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 45,
+   "note": "D2 address line 3: no build rule in the wiki; follows CBSTM03A (recollection)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 48,
+   "note": "D5 missing score not covered; prints blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 58,
+   "note": "E2 HTML name: no width in the contract; legacy delimiter reading",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r2/builder/assumptions.md",
+   "line": 58,
+   "note": "E2 HTML address: no width in the contract; legacy delimiter reading",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 2,
+   "note": "builder flag: name construction, the wiki does not define it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 2,
+   "note": "builder flag: address line 3 construction, the wiki does not define it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 3,
+   "note": "builder flag: HTML name",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 3,
+   "note": "builder flag: HTML address lines",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 4,
+   "note": "builder flag: missing customer or account skipped, legacy abends",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 4,
+   "note": "builder flag: missing customer or account skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 5,
+   "note": "builder flag: legacy 51x10 table limit not reproduced",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 6,
+   "note": "builder flag: FICO field when score blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r2/builder/flags.json",
+   "line": 7,
+   "note": "builder flag: no statement-period filter (wiki TODO)",
+   "origin": "build"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

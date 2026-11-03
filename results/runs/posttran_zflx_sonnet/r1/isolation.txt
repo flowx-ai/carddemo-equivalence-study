@@ -1,0 +1,4 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-posttran-zflx-sonnet-r1/memory ALLOWED
+OUTSIDE Glob ~/Dev/_tests DENIED
+OUTSIDE Glob ~/Dev/_tests/carddemo-builds DENIED
+outside accesses: 3

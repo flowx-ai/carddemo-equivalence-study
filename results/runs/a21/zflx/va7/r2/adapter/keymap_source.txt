@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/va7/r2/exec/workflow_c7a6fc61-4c91-4966-86ab-b29ff840115d.md (and the build's own README/register) before execution; no output opened.
+- START (register A-02, G; script lines 81-125, 315-316): dailytran, acctdata, cardxref, tcatbal as whole-file text, businessDate; batchId unset
+- END output.result = {posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, ...} (script line 402): contract names, adapter reads 'result'; no decode.json
+- MODE files

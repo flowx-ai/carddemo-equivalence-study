@@ -1,0 +1,9 @@
+[
+  {"output": "tranrept_report.txt", "key": "Page Total (last page) / Grand Total", "source": "output/assumptions.md A-12: totals are the plain sum of selected amounts; the legacy end-of-file double-add of the last amount is not reproduced"},
+  {"output": "tranrept_report.txt", "key": "Account Total (last card)", "source": "output/assumptions.md A-10: no account total after the last card (BR-04 'on card change')"},
+  {"output": "tranrept_report.txt", "key": "page breaks", "source": "output/assumptions.md A-11: page size 20, every printed line counted (wiki: TODO lines per page)"},
+  {"output": "tranrept_report.txt", "key": "zero amounts", "source": "output/assumptions.md A-15: zero value with an all-Z picture prints as spaces"},
+  {"output": "tranrept_report.txt", "key": "unknown reference", "source": "output/assumptions.md A-08: blank field and run continues (AC #5), legacy abend not reproduced"},
+  {"output": "tranrept_report.txt", "key": "empty range", "source": "output/assumptions.md A-14: header block printed with blank zero totals"},
+  {"output": "tranrept_report.txt", "key": "detail order within a card", "source": "output/assumptions.md A-05: stable sort, input order kept for equal card numbers"}
+]

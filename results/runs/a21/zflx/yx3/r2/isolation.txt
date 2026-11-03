@@ -1,0 +1,5 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r2/memory ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r2/<uuid>/tool-results/toolu_01T1py6VRjr3qmxZkRbY83UV.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r2/<uuid>/tool-results/toolu_01T1py6VRjr3qmxZkRbY83UV.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-yx3-zflx-r2/<uuid>/tool-results/toolu_01T1py6VRjr3qmxZkRbY83UV.json ALLOWED
+outside accesses: 4

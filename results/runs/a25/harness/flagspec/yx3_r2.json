@@ -1,0 +1,239 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version: 24c3250c (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Build statements, lines 46, 120): calculate(input) reads input[file] for the layout keys acctdata, custdata, cardxref, transact = file text, contract names (identity map)\n- END: Package outputs (line 133) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); decoder's 'result' unwrapping, no decode map\n- MODE files\n- Register: assumption() entries at lines 51-96 (one per line)",
+ "build": [
+  [
+   "R-STMT-BAL",
+   51,
+   "account offsets absent"
+  ],
+  [
+   "R-STMT-ADDR",
+   52,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   53,
+   "FICO offset inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   54,
+   "transaction offsets absent"
+  ],
+  [
+   "R-STMT-TXN",
+   55,
+   "transaction offsets absent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   55,
+   "transaction offsets absent"
+  ],
+  [
+   "R-STMT-SET",
+   55,
+   "card offset inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   56,
+   "CUSTREC vs CVCUS01Y equivalence unverified"
+  ],
+  [
+   "R-STMT-ADDR",
+   56,
+   "layout equivalence unverified"
+  ],
+  [
+   "R-STMT-FICO",
+   56,
+   "layout equivalence unverified"
+  ],
+  [
+   "R-STMT-BAL",
+   60,
+   "positive overpunch inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   60,
+   "positive overpunch inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   60,
+   "positive overpunch inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   61,
+   "negative alphabet and negative zero absent"
+  ],
+  [
+   "R-STMT-TXN",
+   61,
+   "negative alphabet absent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   61,
+   "negative alphabet absent"
+  ],
+  [
+   "R-STMT-BAL",
+   62,
+   "transport encoding not supplied"
+  ],
+  [
+   "R-STMT-TXN",
+   62,
+   "transport encoding not supplied"
+  ],
+  [
+   "R-STMT-TOTAL",
+   62,
+   "transport encoding not supplied"
+  ],
+  [
+   "R-STMT-SET",
+   65,
+   "duplicate resolution unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   66,
+   "duplicate resolution unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   67,
+   "duplicate resolution unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   69,
+   "account wording resolved by maker choice"
+  ],
+  [
+   "R-STMT-TXN",
+   69,
+   "account wording resolved by maker choice"
+  ],
+  [
+   "R-STMT-TXN",
+   70,
+   "equal-key behaviour absent"
+  ],
+  [
+   "R-STMT-TXN",
+   71,
+   "cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-SET",
+   72,
+   "unreferenced transactions: no rule"
+  ],
+  [
+   "R-STMT-NAME",
+   74,
+   "assembly rule absent"
+  ],
+  [
+   "R-STMT-ADDR",
+   77,
+   "assembly absent"
+  ],
+  [
+   "R-STMT-ADDR",
+   78,
+   "country omission chosen by the maker"
+  ],
+  [
+   "R-STMT-FICO",
+   79,
+   "no missing/undecodable FICO display rule"
+  ],
+  [
+   "R-STMT-SET",
+   81,
+   "statement continuation absent"
+  ],
+  [
+   "R-STMT-ABEND",
+   81,
+   "statement continuation absent"
+  ],
+  [
+   "R-STMT-SET",
+   82,
+   "malformed-record handling not specified (TODO)"
+  ],
+  [
+   "R-STMT-TXN",
+   82,
+   "malformed-record handling not specified"
+  ],
+  [
+   "R-STMT-BAL",
+   84,
+   "no overflow policy"
+  ],
+  [
+   "R-STMT-TXN",
+   84,
+   "no overflow policy"
+  ],
+  [
+   "R-STMT-TOTAL",
+   84,
+   "no overflow policy"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   84,
+   "no overflow policy"
+  ],
+  [
+   "R-STMT-NAME",
+   85,
+   "overlong-field handling not specified"
+  ],
+  [
+   "R-STMT-ADDR",
+   85,
+   "overlong-field handling not specified"
+  ],
+  [
+   "R-STMT-NAME",
+   87,
+   "no escaping rule; entities added"
+  ],
+  [
+   "R-STMT-ADDR",
+   87,
+   "no escaping rule; entities added"
+  ],
+  [
+   "R-STMT-NAME",
+   88,
+   "unspecified placeholder widths"
+  ],
+  [
+   "R-STMT-ADDR",
+   88,
+   "unspecified placeholder widths"
+  ]
+ ],
+ "cr_rule": "line 113 / register 'fico_domain' (line 80): five BR-07 thresholds applied to any decoded three-digit score (statement of behaviour). Register line 79 flags only missing/undecodable FICO (R-STMT-FICO); coarse R-STMT-FICO flags from offsets (53, 56)."
+}

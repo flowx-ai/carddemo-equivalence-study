@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/va7/r3/exec/workflow_784b5a67-aab5-466f-af58-6d3ec8e71c4d.md (and the build's own README/register) before execution; no output opened.
+- START (README Contract table; script lines 101-104): dailytran, acctdata, cardxref, tcatbal (file contents), businessDate; batchId unset
+- END (README; script lines 251-254): transactJson, dalyrejsJson, acctdataJson, tcatbalJson = JSON strings of the contract lists -> decode.json renaming (the adapter parses a list returned as a string)
+- MODE files

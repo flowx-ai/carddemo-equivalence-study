@@ -1,0 +1,216 @@
+{
+ "build": "cd_a32_kk7_zflx_r1",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/full_zflx/zFLX-full",
+ "context": {
+  "workspaceId": "<uuid>",
+  "appId": "<uuid>",
+  "appVersionId": "<uuid>"
+ },
+ "notes": [
+  "Written 2026-11-03 from the build's definitions only (exec/workflow_*.md SCRIPT code, builder/assumptions.md A3, F2, X5); nothing was run.",
+  "Input convention (A3, and inFile() in every batch SCRIPT): input.files[<file name>] holds the file as one string (lines split at \\n) or a list of lines; outputs are top-level END keys named after the contract file without its extension; <step>_rc is set only on an error or warnings (A3, A4).",
+  "Added steps: CBACT01C/02C/03C, CBCUS01C, CBTRN01C run in batch_readutils (bdd79b9d\u2026). With input.step omitted all five programs run, each abending on its own missing input (F2); the executor sends no step, so the case's program runs together with the others, whose outputs are not read. dailycheck: the case also names custdata/carddata/transact DDs; they are sent under files and the build does not read them.",
+  "CBEXPORT/CBIMPORT run in batch_export_import (66d45bfd\u2026), which selects the program by input.step (CBEXPORT|CBIMPORT); any other value returns export_import_rc 12 and no contract output. Instrument fix 10: each step sends \"const\": {\"step\": \"CBEXPORT\"} / {\"step\": \"CBIMPORT\"} at the top level of the START body, next to files. rc is mapped to the build's per-program key (export_rc, import_rc).",
+  "Core steps: the adapters' file mode, files nested under 'files' (_wrap), canonical names renamed to the build's file names. business_date is not sent: the build reads the run date from the project parameter RUN_TIMESTAMP (A1). intcalc_parm -> input 'parm' (I4). tranrept start_date/end_date -> inputs start_date/end_date (R1). Outputs and field names are the contract's (identity decode)."
+ ],
+ "steps": {
+  "acctext": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "acctdata.dat": "acctdata.dat"
+   },
+   "wrap": "files",
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "acctext_out.json": "acctext_out",
+    "acctext_array.json": "acctext_array",
+    "acctext_vb.json": "acctext_vb",
+    "acctext_sysout.txt": "acctext_sysout"
+   },
+   "rc": "acctext_rc",
+   "fields": {}
+  },
+  "cardprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "carddata.dat": "carddata.dat"
+   },
+   "wrap": "files",
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "cardprint_sysout.txt": "cardprint_sysout"
+   },
+   "rc": "cardprint_rc",
+   "fields": {}
+  },
+  "xrefprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "cardxref.dat": "cardxref.dat"
+   },
+   "wrap": "files",
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "xrefprint_sysout.txt": "xrefprint_sysout"
+   },
+   "rc": "xrefprint_rc",
+   "fields": {}
+  },
+  "custprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata.dat"
+   },
+   "wrap": "files",
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "custprint_sysout.txt": "custprint_sysout"
+   },
+   "rc": "custprint_rc",
+   "fields": {}
+  },
+  "dailycheck": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "dailytran.dat": "dailytran.dat",
+    "cardxref.dat": "cardxref.dat",
+    "acctdata.dat": "acctdata.dat",
+    "custdata.dat": "custdata.dat",
+    "carddata.dat": "carddata.dat",
+    "transact.dat": "transact.dat"
+   },
+   "wrap": "files",
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "dailycheck_sysout.txt": "dailycheck_sysout"
+   },
+   "rc": "dailycheck_rc",
+   "fields": {}
+  },
+  "export": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata.dat",
+    "acctdata.dat": "acctdata.dat",
+    "cardxref.dat": "cardxref.dat",
+    "transact.dat": "transact.dat",
+    "carddata.dat": "carddata.dat"
+   },
+   "wrap": "files",
+   "const": {
+    "step": "CBEXPORT"
+   },
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "export.json": "export",
+    "export_sysout.txt": "export_sysout"
+   },
+   "rc": "export_rc",
+   "fields": {}
+  },
+  "import": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "export.json": "export.json"
+   },
+   "wrap": "files",
+   "const": {
+    "step": "CBIMPORT"
+   },
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "import_customers.json": "import_customers",
+    "import_accounts.json": "import_accounts",
+    "import_card_xref.json": "import_card_xref",
+    "import_transactions.json": "import_transactions",
+    "import_cards.json": "import_cards",
+    "import_errors.json": "import_errors",
+    "import_sysout.txt": "import_sysout"
+   },
+   "rc": "import_rc",
+   "fields": {}
+  },
+  "posttran": {
+   "workflow": "<uuid>",
+   "map": {
+    "_wrap": {
+     "files": [
+      "dailytran",
+      "acctdata",
+      "cardxref",
+      "tcatbal"
+     ]
+    },
+    "dailytran": "dailytran.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "tcatbal": "tcatbal.dat"
+   },
+   "decode": null
+  },
+  "intcalc": {
+   "workflow": "<uuid>",
+   "map": {
+    "_wrap": {
+     "files": [
+      "tcatbal",
+      "acctdata",
+      "cardxref",
+      "discgrp"
+     ]
+    },
+    "tcatbal": "tcatbal.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "discgrp": "discgrp.dat",
+    "intcalc_parm": "parm"
+   },
+   "decode": null
+  },
+  "creastmt": {
+   "workflow": "<uuid>",
+   "map": {
+    "_wrap": {
+     "files": [
+      "transact",
+      "acctdata",
+      "cardxref",
+      "custdata"
+     ]
+    },
+    "transact": "transact.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "custdata": "custdata.dat"
+   },
+   "decode": null
+  },
+  "tranrept": {
+   "workflow": "<uuid>",
+   "map": {
+    "_wrap": {
+     "files": [
+      "transact",
+      "cardxref",
+      "trantype",
+      "trancatg"
+     ]
+    },
+    "transact": "transact.dat",
+    "cardxref": "cardxref.dat",
+    "trantype": "trantype.dat",
+    "trancatg": "trancatg.dat",
+    "start_date": "start_date",
+    "end_date": "end_date"
+   },
+   "decode": null
+  }
+ }
+}

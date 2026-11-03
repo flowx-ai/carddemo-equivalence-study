@@ -1,0 +1,261 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 58,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 51,
+  "note": "duplicate cross-reference handling unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 52,
+  "note": "per card vs per account (p.21); repeated keys deduplicated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 52,
+  "note": "per card vs per account (p.21); repeated keys deduplicated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 53,
+  "note": "cycle filter TODO; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "copybook layouts not reproduced; offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 54,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 55,
+  "note": "identifier presentation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 56,
+  "note": "duplicate lookup records not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 58,
+  "note": "statement input encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 58,
+  "note": "statement input encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 58,
+  "note": "statement input encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 59,
+  "note": "joining unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 60,
+  "note": "assembly unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 61,
+  "note": "missing and malformed score handling unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 62,
+  "note": "truncation beyond the printed lines unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 62,
+  "note": "truncation beyond the printed lines unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 63,
+  "note": "overflow representation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 63,
+  "note": "overflow representation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 63,
+  "note": "overflow representation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 63,
+  "note": "overflow representation unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 64,
+  "note": "escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 64,
+  "note": "escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 66,
+  "note": "orphan behaviour not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 67,
+  "note": "per-card failure handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a25/harness/yx3/r1/exec/workflow_39364ad5-9dbd-49c8-9101-62b5105a2ff5.md",
+  "line": 67,
+  "note": "per-card failure handling absent",
+  "origin": "build"
+ }
+]

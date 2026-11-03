@@ -1,0 +1,4 @@
+Read from runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md (Transform script) before execution, no output opened.
+Inputs (encode mode, records): input.accounts, input.categoryBalances, input.disclosureGroups (rate field interestRate), input.cardXrefs;
+businessDate / interestRunDate default to 2022-07-18 / 2022071800 when omitted (CONTRACT values). map.json renames interest_rate -> interestRate.
+Output: output={result:{intcalc_systran_json, intcalc_acctdata_json, assumptions, assumptions_md, errors, status}} -> decode.json _root result.

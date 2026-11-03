@@ -1,0 +1,336 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             COACTUPC resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COACTUPC (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   3 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   3 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   4: ENTER
+=== task   4 tran CAUP program COACTUPC aid ENTER calen     2000
+T   4 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   4 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COACTUPC s0007 READ             CXACAIX  key=00000000001      resp=        0 resp2=        0 rules=R-AIX-READ,
+T   4 COACTUPC s0008 READ             ACCTDAT  key=00000000001      resp=        0 resp2=        0 rules=
+T   4 COACTUPC s0009 READ             CUSTDAT  key=000000001        resp=        0 resp2=        0 rules=
+T   4 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   4 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   5: ENTER
+=== task   5 tran CAUP program COACTUPC aid ENTER calen     2000
+T   5 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   5 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T   5 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   5 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   6: ENTER
+=== task   6 tran CAUP program COACTUPC aid ENTER calen     2000
+T   6 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   6 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T   6 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   6 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   7: ENTER
+=== task   7 tran CAUP program COACTUPC aid ENTER calen     2000
+T   7 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   7 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T   7 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   7 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   8: ENTER
+=== task   8 tran CAUP program COACTUPC aid ENTER calen     2000
+T   8 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   8 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T   8 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   8 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   9: ENTER
+=== task   9 tran CAUP program COACTUPC aid ENTER calen     2000
+T   9 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   9 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T   9 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T   9 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  10: ENTER
+=== task  10 tran CAUP program COACTUPC aid ENTER calen     2000
+T  10 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  10 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  10 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  10 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  11: ENTER
+=== task  11 tran CAUP program COACTUPC aid ENTER calen     2000
+T  11 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  11 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  11 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  11 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  12: ENTER
+=== task  12 tran CAUP program COACTUPC aid ENTER calen     2000
+T  12 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  12 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  12 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  12 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  13: ENTER
+=== task  13 tran CAUP program COACTUPC aid ENTER calen     2000
+T  13 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  13 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  13 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  13 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  14: ENTER
+=== task  14 tran CAUP program COACTUPC aid ENTER calen     2000
+T  14 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  14 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  14 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  14 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  15: ENTER
+=== task  15 tran CAUP program COACTUPC aid ENTER calen     2000
+T  15 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  15 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  15 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  15 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  16: ENTER
+=== task  16 tran CAUP program COACTUPC aid ENTER calen     2000
+T  16 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  16 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20300608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    163501 rules=R-CEE-PIC8
+T  16 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  16 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  17: ENTER
+=== task  17 tran CAUP program COACTUPC aid ENTER calen     2000
+T  17 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  17 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  17 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  17 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  18: ENTER
+=== task  18 tran CAUP program COACTUPC aid ENTER calen     2000
+T  18 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  18 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  18 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  18 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  19: ENTER
+=== task  19 tran CAUP program COACTUPC aid ENTER calen     2000
+T  19 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  19 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  19 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  19 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  20: ENTER
+=== task  20 tran CAUP program COACTUPC aid ENTER calen     2000
+T  20 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  20 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  20 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  20 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  21: ENTER
+=== task  21 tran CAUP program COACTUPC aid ENTER calen     2000
+T  21 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  21 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  21 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  21 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  22: ENTER
+=== task  22 tran CAUP program COACTUPC aid ENTER calen     2000
+T  22 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  22 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  22 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  22 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  23: ENTER
+=== task  23 tran CAUP program COACTUPC aid ENTER calen     2000
+T  23 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  23 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  23 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  23 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  24: ENTER
+=== task  24 tran CAUP program COACTUPC aid ENTER calen     2000
+T  24 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  24 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  24 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  24 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  25: ENTER
+=== task  25 tran CAUP program COACTUPC aid ENTER calen     2000
+T  25 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  25 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  25 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  25 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  26: ENTER
+=== task  26 tran CAUP program COACTUPC aid ENTER calen     2000
+T  26 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  26 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  26 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  26 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  27: ENTER
+=== task  27 tran CAUP program COACTUPC aid ENTER calen     2000
+T  27 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  27 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  27 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  27 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  28: ENTER
+=== task  28 tran CAUP program COACTUPC aid ENTER calen     2000
+T  28 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  28 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  28 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  28 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  29: ENTER
+=== task  29 tran CAUP program COACTUPC aid ENTER calen     2000
+T  29 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  29 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  29 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  29 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  30: ENTER
+=== task  30 tran CAUP program COACTUPC aid ENTER calen     2000
+T  30 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  30 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  30 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  30 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  31: ENTER
+=== task  31 tran CAUP program COACTUPC aid ENTER calen     2000
+T  31 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  31 COACTUPC s0005 RECEIVE-MAP      CACTUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+CEEDAYS date8=|20141120| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    157822 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|20250520| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    161656 rules=R-CEE-PIC8
+CEEDAYS date8=|19610608| pic=|YYYYMMDD  | sev=0000 msg=0000 lilian=    138299 rules=R-CEE-PIC8
+T  31 COACTUPC s0006 SEND-MAP         CACTUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE
+T  31 COACTUPC s0004 RETURN-TRANSID   CAUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  32: PF3
+=== task  32 tran CAUP program COACTUPC aid PF3   calen     2000
+T  32 COACTUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  32 COACTUPC s0002 SYNCPOINT                 resp=        0 resp2=        0 rules=R-SYNC-NONE,
+T  32 COACTUPC s0003 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task  32 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T  32 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T  32 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

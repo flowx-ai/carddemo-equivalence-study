@@ -1,0 +1,10 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "output/assumptions.md:25"},
+  {"output": "intcalc_systran.json", "key": "tran_id", "source": "output/assumptions.md:57"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "output/assumptions.md:74"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "output/assumptions.md:74"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "output/assumptions.md:70"},
+  {"output": "intcalc_systran.json", "key": "amt", "source": "output/assumptions.md:29"},
+  {"output": "intcalc_acctdata.json", "key": "curr_cyc_credit", "source": "output/assumptions.md:34"},
+  {"output": "intcalc_acctdata.json", "key": "curr_cyc_debit", "source": "output/assumptions.md:34"}
+]

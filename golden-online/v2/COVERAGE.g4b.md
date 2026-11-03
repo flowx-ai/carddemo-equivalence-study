@@ -1,0 +1,127 @@
+# Online oracle v2 coverage, group 4a + 4b (COCRDUPC)
+
+Traces: 5 case runs. Statement coverage over original source statements (EXEC CICS = one statement); paragraph coverage over paragraphs. Method in tools/coverage_online.py.
+
+| program | statements hit | statements | % | paragraphs hit | paragraphs |
+|---|---|---|---|---|---|
+| COCRDUPC | 396 | 474 | 83.5 | 42 | 45 |
+| COCRDUPC copybooks | 23 | 58 | 39.7 | 2 | 2 |
+| all | 419 | 532 | 78.8 | 44 | 47 |
+
+## COCRDUPC: statements not executed
+
+- COCRDUPC.cbl:391 `INITIALIZE CARDDEMO-COMMAREA`
+- COCRDUPC.cbl:393 `SET CDEMO-PGM-ENTER TO TRUE`
+- COCRDUPC.cbl:394 `SET CCUP-DETAILS-NOT-FETCHED TO TRUE`
+- COCRDUPC.cbl:444 `MOVE LIT-MENUTRANID  TO CDEMO-TO-TRANID`
+- COCRDUPC.cbl:451 `MOVE LIT-MENUPGM     TO CDEMO-TO-PROGRAM`
+- COCRDUPC.cbl:561 `EXIT`
+- COCRDUPC.cbl:591 `MOVE LOW-VALUES           TO  CC-ACCT-ID`
+- COCRDUPC.cbl:600 `MOVE LOW-VALUES           TO  CC-CARD-NUM`
+- COCRDUPC.cbl:609 `MOVE LOW-VALUES           TO  CCUP-NEW-CRDNAME`
+- COCRDUPC.cbl:616 `MOVE LOW-VALUES           TO  CCUP-NEW-CRDSTCD`
+- COCRDUPC.cbl:625 `MOVE LOW-VALUES           TO  CCUP-NEW-EXPMON`
+- COCRDUPC.cbl:632 `MOVE LOW-VALUES           TO  CCUP-NEW-EXPYEAR`
+- COCRDUPC.cbl:741 `SET INPUT-ERROR TO TRUE`
+- COCRDUPC.cbl:742 `SET FLG-ACCTFILTER-NOT-OK TO TRUE`
+- COCRDUPC.cbl:743 `IF WS-RETURN-MSG-OFF`
+- COCRDUPC.cbl:744 `MOVE`
+- COCRDUPC.cbl:748 `MOVE ZERO       TO CDEMO-ACCT-ID`
+- COCRDUPC.cbl:749 `MOVE LOW-VALUES TO CCUP-NEW-ACCTID`
+- COCRDUPC.cbl:774 `SET WS-PROMPT-FOR-CARD TO TRUE`
+- COCRDUPC.cbl:785 `SET INPUT-ERROR TO TRUE`
+- COCRDUPC.cbl:786 `SET FLG-CARDFILTER-NOT-OK TO TRUE`
+- COCRDUPC.cbl:787 `IF WS-RETURN-MSG-OFF`
+- COCRDUPC.cbl:788 `MOVE`
+- COCRDUPC.cbl:792 `MOVE ZERO          TO CDEMO-CARD-NUM`
+- COCRDUPC.cbl:793 `MOVE LOW-VALUES    TO CCUP-NEW-CARDID`
+- COCRDUPC.cbl:853 `SET INPUT-ERROR           TO TRUE`
+- COCRDUPC.cbl:854 `SET FLG-CARDSTATUS-BLANK  TO TRUE`
+- COCRDUPC.cbl:855 `IF WS-RETURN-MSG-OFF`
+- COCRDUPC.cbl:856 `SET CARD-STATUS-MUST-BE-YES-NO TO TRUE`
+- COCRDUPC.cbl:976 `SET CCUP-CHANGES-OK-NOT-CONFIRMED TO TRUE`
+- COCRDUPC.cbl:994 `SET CCUP-CHANGES-OKAYED-LOCK-ERROR TO TRUE`
+- COCRDUPC.cbl:996 `SET CCUP-CHANGES-OKAYED-BUT-FAILED TO TRUE`
+- COCRDUPC.cbl:1011 `WHEN CCUP-CHANGES-OKAYED-AND-DONE`
+- COCRDUPC.cbl:1012 `SET CCUP-SHOW-DETAILS TO TRUE`
+- COCRDUPC.cbl:1013 `IF CDEMO-FROM-TRANID    EQUAL LOW-VALUES`
+- COCRDUPC.cbl:1015 `MOVE ZEROES       TO CDEMO-ACCT-ID`
+- COCRDUPC.cbl:1017 `MOVE LOW-VALUES   TO CDEMO-ACCT-STATUS`
+- COCRDUPC.cbl:1020 `MOVE LIT-THISPGM    TO ABEND-CULPRIT`
+- COCRDUPC.cbl:1021 `MOVE '0001'         TO ABEND-CODE`
+- COCRDUPC.cbl:1022 `MOVE SPACES         TO ABEND-REASON`
+- COCRDUPC.cbl:1023 `MOVE 'UNEXPECTED DATA SCENARIO'`
+- COCRDUPC.cbl:1025 `PERFORM ABEND-ROUTINE`
+- COCRDUPC.cbl:1125 `MOVE CCUP-OLD-CRDNAME    TO CRDNAMEO OF CCRDUPAO`
+- COCRDUPC.cbl:1126 `MOVE CCUP-OLD-CRDSTCD    TO CRDSTCDO OF CCRDUPAO`
+- COCRDUPC.cbl:1127 `MOVE CCUP-OLD-EXPDAY     TO EXPDAYO  OF CCRDUPAO`
+- COCRDUPC.cbl:1128 `MOVE CCUP-OLD-EXPMON     TO EXPMONO  OF CCRDUPAO`
+- COCRDUPC.cbl:1129 `MOVE CCUP-OLD-EXPYEAR    TO EXPYEARO OF CCRDUPAO`
+- COCRDUPC.cbl:1153 `WHEN CCUP-CHANGES-OKAYED-LOCK-ERROR`
+- COCRDUPC.cbl:1154 `SET INFORM-FAILURE             TO TRUE`
+- COCRDUPC.cbl:1155 `WHEN CCUP-CHANGES-OKAYED-BUT-FAILED`
+- COCRDUPC.cbl:1156 `SET INFORM-FAILURE             TO TRUE`
+- COCRDUPC.cbl:1157 `WHEN WS-NO-INFO-MESSAGE`
+- COCRDUPC.cbl:1158 `SET PROMPT-FOR-SEARCH-KEYS      TO TRUE`
+- COCRDUPC.cbl:1201 `MOVE DFHBMFSE      TO ACCTSIDA OF CCRDUPAI`
+- COCRDUPC.cbl:1203 `MOVE DFHBMPRF      TO CRDNAMEA OF CCRDUPAI`
+- COCRDUPC.cbl:1220 `MOVE -1             TO CARDSIDL OF CCRDUPAI`
+- COCRDUPC.cbl:1281 `MOVE '*'                TO CRDSTCDO OF CCRDUPAO`
+- COCRDUPC.cbl:1282 `MOVE DFHRED             TO CRDSTCDC OF CCRDUPAO`
+- COCRDUPC.cbl:1310 `MOVE DFHBMDAR           TO INFOMSGA OF CCRDUPAI`
+- COCRDUPC.cbl:1403 `SET INPUT-ERROR                    TO TRUE`
+- COCRDUPC.cbl:1404 `IF  WS-RETURN-MSG-OFF`
+- COCRDUPC.cbl:1405 `SET FLG-ACCTFILTER-NOT-OK      TO TRUE`
+- COCRDUPC.cbl:1407 `MOVE 'READ'                        TO ERROR-OPNAME`
+- COCRDUPC.cbl:1408 `MOVE LIT-CARDFILENAME              TO ERROR-FILE`
+- COCRDUPC.cbl:1409 `MOVE WS-RESP-CD                    TO ERROR-RESP`
+- COCRDUPC.cbl:1410 `MOVE WS-REAS-CD                    TO ERROR-RESP2`
+- COCRDUPC.cbl:1411 `MOVE WS-FILE-ERROR-MESSAGE         TO WS-RETURN-MSG`
+- COCRDUPC.cbl:1444 `SET INPUT-ERROR                    TO TRUE`
+- COCRDUPC.cbl:1445 `IF  WS-RETURN-MSG-OFF`
+- COCRDUPC.cbl:1446 `SET COULD-NOT-LOCK-FOR-UPDATE  TO TRUE`
+- COCRDUPC.cbl:1491 `SET LOCKED-BUT-UPDATE-FAILED    TO TRUE`
+- COCRDUPC.cbl:1533 `IF ABEND-MSG EQUAL LOW-VALUES`
+- COCRDUPC.cbl:1534 `MOVE 'UNEXPECTED ABEND OCCURRED.' TO ABEND-MSG`
+- COCRDUPC.cbl:1537 `MOVE LIT-THISPGM       TO ABEND-CULPRIT`
+- COCRDUPC.cbl:1539 `EXEC CICS SEND`
+- COCRDUPC.cbl:1546 `EXEC CICS HANDLE ABEND`
+- COCRDUPC.cbl:1550 `EXEC CICS ABEND`
+- COCRDUPC.cbl:1555 `EXIT`
+- CSSTRPFY.CPY:25 `(generated or copybook line)`
+- CSSTRPFY.CPY:27 `(generated or copybook line)`
+- CSSTRPFY.CPY:29 `(generated or copybook line)`
+- CSSTRPFY.CPY:31 `(generated or copybook line)`
+- CSSTRPFY.CPY:33 `(generated or copybook line)`
+- CSSTRPFY.CPY:37 `(generated or copybook line)`
+- CSSTRPFY.CPY:41 `(generated or copybook line)`
+- CSSTRPFY.CPY:43 `(generated or copybook line)`
+- CSSTRPFY.CPY:45 `(generated or copybook line)`
+- CSSTRPFY.CPY:49 `(generated or copybook line)`
+- CSSTRPFY.CPY:51 `(generated or copybook line)`
+- CSSTRPFY.CPY:54 `(generated or copybook line)`
+- CSSTRPFY.CPY:55 `(generated or copybook line)`
+- CSSTRPFY.CPY:56 `(generated or copybook line)`
+- CSSTRPFY.CPY:57 `(generated or copybook line)`
+- CSSTRPFY.CPY:58 `(generated or copybook line)`
+- CSSTRPFY.CPY:59 `(generated or copybook line)`
+- CSSTRPFY.CPY:60 `(generated or copybook line)`
+- CSSTRPFY.CPY:61 `(generated or copybook line)`
+- CSSTRPFY.CPY:62 `(generated or copybook line)`
+- CSSTRPFY.CPY:63 `(generated or copybook line)`
+- CSSTRPFY.CPY:64 `(generated or copybook line)`
+- CSSTRPFY.CPY:65 `(generated or copybook line)`
+- CSSTRPFY.CPY:66 `(generated or copybook line)`
+- CSSTRPFY.CPY:67 `(generated or copybook line)`
+- CSSTRPFY.CPY:68 `(generated or copybook line)`
+- CSSTRPFY.CPY:69 `(generated or copybook line)`
+- CSSTRPFY.CPY:70 `(generated or copybook line)`
+- CSSTRPFY.CPY:71 `(generated or copybook line)`
+- CSSTRPFY.CPY:72 `(generated or copybook line)`
+- CSSTRPFY.CPY:73 `(generated or copybook line)`
+- CSSTRPFY.CPY:74 `(generated or copybook line)`
+- CSSTRPFY.CPY:75 `(generated or copybook line)`
+- CSSTRPFY.CPY:76 `(generated or copybook line)`
+- CSSTRPFY.CPY:77 `(generated or copybook line)`
+
+Paragraphs not entered: 0000-MAIN-EXIT (COCRDUPC.cbl:596), ABEND-ROUTINE (COCRDUPC.cbl:1598), ABEND-ROUTINE-EXIT (COCRDUPC.cbl:1641)

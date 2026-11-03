@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode (cited by the precision entry)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "precision: BR-08 leaves confirmation open; per-category truncation chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "zeroCent: source does not separately discuss zero-cent results",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "accountBoundary: end-of-file handling not specified; final account flushed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "accountBoundary: absent-account handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "duplicateRows: duplicate behaviour not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "accountFailure: missing rate after STANDARD fallback not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "transactionSequence/processingOrder: initialization and allocation order not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+  "line": 45,
+  "note": "cardSelection/merchantDetails/timestamps: not specified for interest transactions",
+  "origin": "build"
+ }
+]

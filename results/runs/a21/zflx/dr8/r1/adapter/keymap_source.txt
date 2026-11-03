@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/dr8/r1/exec/workflow_29ae119b-1f56-46bc-95aa-32e019c4d253.md (and the build's own README/register) before execution; no output opened.
+- START (script lines 59-95, 254-255; builder posttran_io.py prepare lines 24-27): dailytranLines, acctdataLines, cardxrefLines, tcatbalLines = lists of the file's lines; businessDate; batchId unset. '_lines' opt-in as CR4 r1 (§64)
+- END: output.posttran_transact/_dalyrejs/_acctdata/_tcatbal at the top level (script lines 249-252): contract names; no decode.json
+- MODE files

@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 32,
+  "note": "A-06 offsets not given by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 36,
+  "note": "A-08 blank/short lines, blank numerics: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 38,
+  "note": "A-09 duplicate keys: behaviour not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 51,
+  "note": "A-13 balance without account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 60,
+  "note": "A-16 no group and no DEFAULT row: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 70,
+  "note": "A-19 29 February run date: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 71,
+  "note": "A-20 malformed openDate: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 77,
+  "note": "A-23 recalled public CBACT04C has no age-based reduction ('as far as I know'); BR-03 implemented as the wiki states",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 84,
+  "note": "A-24 BR-08 TODO left open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 89,
+  "note": "A-27 AC 7 DECISION left as keep stub",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 95,
+  "note": "A-28 suffix start value and scope not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 98,
+  "note": "A-30 merchant fields: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/zflx/ni2/r3/builder/assumptions.md",
+  "line": 102,
+  "note": "A-31 which card to pick not stated",
+  "origin": "build"
+ }
+]

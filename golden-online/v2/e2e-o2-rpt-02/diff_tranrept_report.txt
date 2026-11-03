@@ -1,0 +1,56 @@
+--- golden/v1
++++ e2e
+@@ -1 +1 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -43 +43 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -63 +63 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -103 +103 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -123 +123 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -143 +143 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -163 +163 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -183 +183 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -223 +223 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -263 +263 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -283 +283 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -303 +303 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -343 +343 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -363 +363 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -383 +383 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -423 +423 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -463 +463 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31
+@@ -503 +503 @@
+-DALYREPT                              Daily Transaction Report                 Date Range: 2022-07-01 to 2022-07-31
++DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-12-31

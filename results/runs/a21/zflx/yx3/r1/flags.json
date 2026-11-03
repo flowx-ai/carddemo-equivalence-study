@@ -1,0 +1,128 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 58,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 40,
+  "note": "B2 whether one account's cards are merged: the wiki does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 40,
+  "note": "B2 whether one account's cards are merged: the wiki does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 43,
+  "note": "B3 cycle-filter TODO; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 49,
+  "note": "B5 missing customer or account: wiki silent; card skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 49,
+  "note": "B5 missing customer or account: wiki silent; card skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 54,
+  "note": "C1 name: the wiki says only customer name; legacy followed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 54,
+  "note": "C1/C2 address formatting not defined by the acceptance criteria; legacy followed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 70,
+  "note": "C4 HTML name has no field width; cut at the first double space",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 70,
+  "note": "C4 HTML address has no field width; cut at the first double space",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 76,
+  "note": "C6 balance overflow: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+  "line": 85,
+  "note": "C7 blank or non-numeric score: the wiki does not say what to print; treated as 0 (Poor)",
+  "origin": "build"
+ }
+]

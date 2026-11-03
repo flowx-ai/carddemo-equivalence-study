@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/yx3/r2/exec/workflow_b5b0532f-c469-4b1e-8cf0-c06bb2462ac9.md (and the build's own README/register) before execution; no output opened.
+- START (register A2; script lines 82-101): transact, acctdata, cardxref, custdata (file contents)
+- END (register A2; script lines 265, 388): creastmt_statements, creastmt_statements_html (lines joined by \n), contract names, no decode map
+- MODE files

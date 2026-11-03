@@ -1,0 +1,5 @@
+Read from runs/a31/harness/yx3/r2/exec/workflow_d3bb9cd7-0831-4e05-9079-5f7ba2abc89b.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 27d190c0 (head of the build branch, committed; plan COMPLETED on R21, no retry)
+- START: transact, acctdata, cardxref, custdata
+- END: statementRun; contract names inside
+- Register: assumption(...) calls, all on script line 46; flag notes name the entry

@@ -1,0 +1,140 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactText",
+  "cardxref": "cardxrefText",
+  "trantype": "trantypeText",
+  "trancatg": "trancatgText",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version bd61bb98 (head of the build branch, plan COMPLETED, no retry)\n- START: four file texts plus startDate, endDate; MODE files\n- END: {\"result\": ${result}}; tranrept_report inside\n- Register: lines 48-67",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   49,
+   "time of day and timezone unstated"
+  ],
+  [
+   "R-REPT-SET",
+   50,
+   "no secondary order"
+  ],
+  [
+   "R-REPT-SET",
+   51,
+   "copybook not attached, offsets from widths"
+  ],
+  [
+   "R-REPT-AMT",
+   51,
+   "copybook not attached, offsets from widths"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   51,
+   "copybook not attached, offsets from widths"
+  ],
+  [
+   "R-REPT-XREF",
+   52,
+   "copybook not attached"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   53,
+   "full copybooks not given"
+  ],
+  [
+   "R-REPT-AMT",
+   54,
+   "encoding not supplied"
+  ],
+  [
+   "R-REPT-ACCT",
+   54,
+   "encoding not supplied"
+  ],
+  [
+   "R-REPT-GRAND",
+   54,
+   "encoding not supplied"
+  ],
+  [
+   "R-REPT-SET",
+   55,
+   "line-ending and filler"
+  ],
+  [
+   "R-REPT-HEADER",
+   56,
+   "lines per page TODO, 50 chosen"
+  ],
+  [
+   "R-REPT-ACCT",
+   57,
+   "card break versus account label"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   57,
+   "card break versus account label"
+  ],
+  [
+   "R-REPT-ACCT",
+   58,
+   "silent on coincident break order"
+  ],
+  [
+   "R-REPT-HEADER",
+   58,
+   "silent on coincident break order"
+  ],
+  [
+   "R-REPT-AMT",
+   61,
+   "zero value not exemplified"
+  ],
+  [
+   "R-REPT-AMT",
+   62,
+   "no overflow policy"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   63,
+   "missing references, legacy TODO, xref unstated"
+  ],
+  [
+   "R-REPT-XREF",
+   63,
+   "missing references, legacy TODO, xref unstated"
+  ],
+  [
+   "R-REPT-SET",
+   63,
+   "missing references, legacy TODO, xref unstated"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   64,
+   "duplicate handling unstated"
+  ],
+  [
+   "R-REPT-XREF",
+   64,
+   "duplicate handling unstated"
+  ],
+  [
+   "R-REPT-SET",
+   65,
+   "no malformed policy"
+  ]
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc",
+  "tcatbal": "balcat",
+  "discgrp": "rategrp",
+  "cardxref": "cardlink",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Files mode: Calculate interest (line 228, calculate(input); lines 93-119) reads input.ledgacc, balcat, rategrp, cardlink as text and input.businessDate / input.accrueParameter (defaults 2022-07-18 / 2022071800). Finalize result (line 252): output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, ...}}. Flags: register lines 156-176; a flag when the entry says the source leaves the point open.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-RATE",
+   165,
+   "A09: joins assumed; no default group or fallback documented"
+  ],
+  [
+   "R-INT-ZERO",
+   166,
+   "A10: no eligibility rule; zero or negative balances/rates not charged"
+  ],
+  [
+   "R-INT-APPLY",
+   167,
+   "A11: no formula or period specified; one day of a 365-day year assumed"
+  ],
+  [
+   "R-INT-TRUNC",
+   168,
+   "A12: no rounding rule stated; half away from zero chosen"
+  ],
+  [
+   "R-INT-ZERO",
+   168,
+   "A12: charges that round to zero omitted"
+  ],
+  [
+   "R-INT-CYC",
+   169,
+   "A13: update rules not prescribed"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   170,
+   "A14: generated transaction values not defined"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   171,
+   "A15: card selection not defined"
+  ],
+  [
+   "R-INT-TXID",
+   172,
+   "A16: identifier algorithm absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   173,
+   "A17: no timestamp policy"
+  ]
+ ]
+}

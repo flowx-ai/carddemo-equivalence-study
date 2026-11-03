@@ -1,0 +1,6 @@
+Read from runs/a25/harness/ix3/r1/exec/workflow_863fc1d1-89dc-4cff-b930-ad7658a4c0f9.md (and the build's own README/register) before execution; no output opened.
+- A2 version: b4751cd5 (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Calculate report, lines 82-87, 92-95): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate
+- END: Finalize outputs (line 141) writes output={result:{tranrept_report (line list), ...}}; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: decoder's 'result' unwrapping, contract name, no decode map
+- MODE files
+- Register: assumption() entries at lines 50-73 (one per line)

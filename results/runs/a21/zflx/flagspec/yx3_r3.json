@@ -1,0 +1,136 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- START (register A2; script lines 105-151): transact, acctdata, cardxref, custdata (whole file contents)\n- END (register A2; script lines 390, 517): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-STMT-BAL",
+   56,
+   "B2 sign encoding: the wiki is silent about the other files"
+  ],
+  [
+   "R-STMT-TXN",
+   56,
+   "B2 sign encoding: the wiki is silent about the other files"
+  ],
+  [
+   "R-STMT-TOTAL",
+   56,
+   "B2 sign encoding: the wiki is silent about the other files"
+  ],
+  [
+   "R-STMT-SET",
+   61,
+   "B3 blank lines, duplicates (last wins): the wiki says nothing"
+  ],
+  [
+   "R-STMT-ABEND",
+   76,
+   "C3 missing customer or account skipped; wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   76,
+   "C3 missing customer or account skipped; wiki silent"
+  ],
+  [
+   "R-STMT-TXN",
+   85,
+   "C5 cycle-filter TODO; no filter"
+  ],
+  [
+   "R-STMT-FICO",
+   98,
+   "D1 blank or non-numeric score: the wiki does not cover it; blank"
+  ],
+  [
+   "R-STMT-NAME",
+   105,
+   "D2 name: the wiki only says customer name; legacy followed; uncertain"
+  ],
+  [
+   "R-STMT-ADDR",
+   111,
+   "D3 address line 3: conflicting wiki statements; country kept; uncertain"
+  ],
+  [
+   "R-STMT-ADDR",
+   113,
+   "D4 address lines 1-2: the wiki is silent"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/flags.json",
+   2,
+   "builder flag: name line and HTML name"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/flags.json",
+   3,
+   "builder flag: address line 3, plugin lists only state, zip"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/flags.json",
+   4,
+   "builder flag: HTML paragraph spacing read from the contract rendering"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/flags.json",
+   4,
+   "builder flag: HTML paragraph spacing read from the contract rendering"
+  ],
+  [
+   "R-STMT-SET",
+   "builder/flags.json",
+   5,
+   "builder flag: statement set and order, missing customer/account skipped"
+  ],
+  [
+   "R-STMT-ABEND",
+   "builder/flags.json",
+   5,
+   "builder flag: missing customer/account skipped"
+  ],
+  [
+   "R-STMT-TXN",
+   "builder/flags.json",
+   6,
+   "builder flag: no cycle filter, wiki TODO"
+  ],
+  [
+   "R-STMT-FICO",
+   "builder/flags.json",
+   7,
+   "builder flag: FICO field for blank/non-numeric score"
+  ],
+  [
+   "R-STMT-BAL",
+   "builder/flags.json",
+   8,
+   "builder flag: signed amount decoding"
+  ],
+  [
+   "R-STMT-TXN",
+   "builder/flags.json",
+   8,
+   "builder flag: signed amount decoding"
+  ],
+  [
+   "R-STMT-TOTAL",
+   "builder/flags.json",
+   8,
+   "builder flag: signed amount decoding"
+  ]
+ ],
+ "cr_rule": "D1: FICO field holds the band text (BR-07 / DT-17 / AC-7: <580 Poor ... >=800 Exceptional); flags only the blank/non-numeric case (wiki does not cover it), also in builder flags.json."
+}

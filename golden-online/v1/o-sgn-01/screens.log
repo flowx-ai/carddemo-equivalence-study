@@ -1,0 +1,23 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: PF3
+INPUT aid=PF3
+=== task   2 tran CC00 program COSGN00C aid PF3   calen      160
+SEND TEXT from COSGN00C site 0004 |Thank you for using CardDemo application...
+task end: RETURN without TRANSID (RETURN  ): conversation ended
+END outcome=OK

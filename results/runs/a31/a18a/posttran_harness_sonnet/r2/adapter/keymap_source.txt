@@ -1,0 +1,6 @@
+Read from runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md (and the build's own register) before execution; no output opened.
+- A2 version d9ca6f59 (head of the build branch, plan COMPLETED)
+- START: nine file contents as text; MODE files
+- END: {"result": ${result}}; four lists under names ending _json
+- Register: manifest lines 47-72
+- START also takes processingTimestamp, left at its default (same date contract)

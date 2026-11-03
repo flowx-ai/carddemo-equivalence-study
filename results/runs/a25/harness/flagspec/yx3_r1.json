@@ -1,0 +1,164 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version: 60d9f730 (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Build statements, lines 105-108): input.acctdata, custdata, cardxref, transact = file text, contract names (identity map)\n- END: Finalize outputs (line 234) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); decoder's 'result' unwrapping, no decode map\n- MODE files\n- Register: assumption() entries at lines 50-68 (one per line)",
+ "build": [
+  [
+   "R-STMT-SET",
+   51,
+   "duplicate cross-reference handling unstated"
+  ],
+  [
+   "R-STMT-SET",
+   52,
+   "per card vs per account (p.21); repeated keys deduplicated"
+  ],
+  [
+   "R-STMT-TXN",
+   52,
+   "per card vs per account (p.21); repeated keys deduplicated"
+  ],
+  [
+   "R-STMT-TXN",
+   53,
+   "cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-BAL",
+   54,
+   "copybook layouts not reproduced; offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   54,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-OTHER",
+   55,
+   "identifier presentation unstated"
+  ],
+  [
+   "R-STMT-SET",
+   56,
+   "duplicate lookup records not defined"
+  ],
+  [
+   "R-STMT-BAL",
+   58,
+   "statement input encoding not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   58,
+   "statement input encoding not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   58,
+   "statement input encoding not specified"
+  ],
+  [
+   "R-STMT-NAME",
+   59,
+   "joining unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   60,
+   "assembly unstated"
+  ],
+  [
+   "R-STMT-FICO",
+   61,
+   "missing and malformed score handling unstated"
+  ],
+  [
+   "R-STMT-NAME",
+   62,
+   "truncation beyond the printed lines unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   62,
+   "truncation beyond the printed lines unstated"
+  ],
+  [
+   "R-STMT-BAL",
+   63,
+   "overflow representation unstated"
+  ],
+  [
+   "R-STMT-TXN",
+   63,
+   "overflow representation unstated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   63,
+   "overflow representation unstated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   63,
+   "overflow representation unstated"
+  ],
+  [
+   "R-STMT-NAME",
+   64,
+   "escaping not specified"
+  ],
+  [
+   "R-STMT-ADDR",
+   64,
+   "escaping not specified"
+  ],
+  [
+   "R-STMT-SET",
+   66,
+   "orphan behaviour not specified"
+  ],
+  [
+   "R-STMT-SET",
+   67,
+   "per-card failure handling absent"
+  ],
+  [
+   "R-STMT-ABEND",
+   67,
+   "per-card failure handling absent"
+  ]
+ ],
+ "cr_rule": "line 102: FICO printed as the band (below 580 Poor, 580-669 Fair, 670-739 Good, 740-799 Very Good, 800+ Exceptional), citing pp.2,13. Register line 61 flags only the missing/malformed-score case (R-STMT-FICO). Coarse R-STMT-FICO flag also from 54 (offsets)."
+}

@@ -1,0 +1,34 @@
+{
+ "case": "e2e-o2-aup-01",
+ "outcome": "differs from legacy",
+ "touched_units": 12,
+ "differing": [
+  [
+   "creastmt_statements",
+   "1",
+   "bal"
+  ],
+  [
+   "creastmt_statements_html",
+   "1",
+   "bal"
+  ],
+  [
+   "intcalc_acctdata",
+   "00000000001",
+   "addr_zip"
+  ],
+  [
+   "intcalc_acctdata",
+   "00000000001",
+   "curr_bal"
+  ],
+  [
+   "posttran_acctdata",
+   "00000000001",
+   "addr_zip"
+  ]
+ ],
+ "session_divergences": 412,
+ "baseline_divergences": 6
+}

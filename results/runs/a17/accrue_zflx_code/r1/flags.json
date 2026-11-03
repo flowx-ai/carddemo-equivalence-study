@@ -1,0 +1,16 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_code/r1/builder/assumptions.md",
+  "line": 16,
+  "note": "2 duplicate keys: rests on an absence in the source",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_code/r1/builder/assumptions.md",
+  "line": 73,
+  "note": "15 overflow handling uncertain (GnuCOBOL size-error behaviour)",
+  "origin": "build"
+ }
+]

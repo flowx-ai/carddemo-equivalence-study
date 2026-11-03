@@ -1,0 +1,282 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 61,
+  "note": "[active encoding Y is not explicitly stated] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 61,
+  "note": "[active encoding Y is not explicitly stated] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 62,
+  "note": "[does not specify the exact ownership lookup] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 63,
+  "note": "[gives no precedence] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 64,
+  "note": "[Those sources are not included] exact reject reasons unavailable",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 65,
+  "note": "[does not define duplicate decoded-input handling] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 67,
+  "note": "[does not specify duplicate suppression] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 68,
+  "note": "[exact signed arithmetic is not stated] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 69,
+  "note": "[gives no posting formula] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 70,
+  "note": "[No special negative-amount rule] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 70,
+  "note": "[No special negative-amount rule] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 71,
+  "note": "[no missing-category rule] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 73,
+  "note": "[ignoring leading zero padding] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 73,
+  "note": "[ignoring leading zero padding] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 74,
+  "note": "[specifies no timestamp rewrite] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 77,
+  "note": "[does not define malformed decoded-record handling] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 79,
+  "note": "[No other posting validation is stated] silent; no expiry check",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 79,
+  "note": "[No other posting validation is stated] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r1/exec/workflow_07188283-edc9-47fb-b358-578682e8aa26.md",
+  "line": 82,
+  "note": "[explicitly TODO] repeat-run rule not supplied",
+  "origin": "build"
+ }
+]

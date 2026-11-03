@@ -1,0 +1,8 @@
+[
+ {"rule": "R-INTTRUNC", "source": "assumptions.md:33 (A4: interest = bal*rate/1200 truncated, not rounded)"},
+ {"rule": "ACCRUE-RATE-DEFAULT-FALLBACK", "source": "assumptions.md:49 (A7: DEFAULT disclosure group when no group match)"},
+ {"rule": "ACCRUE-ZERO-RATE-NO-TXN", "source": "assumptions.md:53 (A8)"},
+ {"rule": "ACCRUE-CARD-PICK", "source": "assumptions.md:58 (A9: lowest card number when an account has several)"},
+ {"rule": "ACCRUE-TXN-CONSTANTS", "source": "assumptions.md:73 (A12: type 01 / cat 5 / source / desc / timestamps)"},
+ {"rule": "ACCRUE-LAST-ACCOUNT-UPDATE", "source": "assumptions.md:80 (A13: last account updated; analogue program skips it)"}
+]

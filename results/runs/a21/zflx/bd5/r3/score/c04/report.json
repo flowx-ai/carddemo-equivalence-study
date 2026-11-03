@@ -1,0 +1,249 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 26,
+  "flags_unneeded": 26,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9984
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 57,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 67,
+   "note": "B2 cycle-filter TODO never confirmed; legacy kept (no filter)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 79,
+   "note": "B5 orphan transactions not printed; the wiki has no such output",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 83,
+   "note": "B6 missing customer or account skipped (legacy abends); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 83,
+   "note": "B6 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 117,
+   "note": "C2 name assembly (legacy-derived); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 126,
+   "note": "C3 address line 3 (legacy-derived, country included); AC does not define the format",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 2,
+   "note": "builder flag: customer name, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 3,
+   "note": "builder flag: address line 3, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 4,
+   "note": "builder flag: Total EXP, 'BR-03 carries a TODO'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 5,
+   "note": "builder flag: skipped cards, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 5,
+   "note": "builder flag: skipped cards, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 6,
+   "note": "builder flag: no cycle filter, wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

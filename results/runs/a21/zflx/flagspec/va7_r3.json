@@ -1,0 +1,56 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "posttran_transact": "transactJson",
+  "posttran_dalyrejs": "dalyrejsJson",
+  "posttran_acctdata": "acctdataJson",
+  "posttran_tcatbal": "tcatbalJson"
+ },
+ "source": "- START (README Contract table; script lines 101-104): dailytran, acctdata, cardxref, tcatbal (file contents), businessDate; batchId unset\n- END (README; script lines 251-254): transactJson, dalyrejsJson, acctdataJson, tcatbalJson = JSON strings of the contract lists -> decode.json renaming (the adapter parses a list returned as a string)\n- MODE files",
+ "register": "builder/outputs/assumptions.md",
+ "build": [
+  [
+   "R-POST-COPY",
+   26,
+   "A5 encoding of files other than discgrp not stated"
+  ],
+  [
+   "R-POST-BAL",
+   26,
+   "A5 encoding not stated"
+  ],
+  [
+   "R-POST-BAL",
+   31,
+   "A7 duplicate keys: wiki silent"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   39,
+   "A9 follows the BR-04 DECISION (103 over 102, one reason)"
+  ],
+  [
+   "R-POST-103",
+   43,
+   "A11 blank expiry: the wiki only gives the comparison"
+  ],
+  [
+   "R-POST-BAL",
+   64,
+   "A18 overflow: wiki silent"
+  ],
+  [
+   "R-POST-TCAT",
+   64,
+   "A18 overflow: wiki silent"
+  ]
+ ],
+ "cr_rule": "A12: per card number, only posted purchases (amount > 0) in feed order, tested after BR-01-04 pass, no history from earlier runs, description DAILY PURCHASE LIMIT EXCEEDED. No uncertainty raised on BR-10."
+}

@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[layout-account] offsets inferred, unverified against copybooks (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[layout-category] offsets inferred (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[layout-rate] offsets / six characters vs example (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[numeric-encoding] overpunch alphabet (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[zero-rate] nonzero rate emits even if rounded to 0.00 (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[missing-default] both rates absent: account unchanged (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[transaction-constants] identifier form in desc (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[untouched-accounts] accounts without category balances (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[ordering] processing order (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[transaction-suffix] suffix width/start (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[timestamps] (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[card-choice] (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[merchant-defaults] (absence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md",
+  "line": 46,
+  "note": "[duplicates] duplicate keys (absence)",
+  "origin": "build"
+ }
+]

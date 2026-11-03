@@ -1,0 +1,1 @@
+{"browser":{"screens":{"COMEN1A":{"title":"^main menu$","aids":{"ENTER":"^go$"},"choose":[{"combo":{"open":"^report type","options":{"YEARLY":"^yearly"}},"values":{"YEARLY":"YEARLY"}}]}}}}

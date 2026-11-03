@@ -1,0 +1,12 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 43, "A4 rate example 5 chars vs S9(4)V99; generic overpunch decoding assumed"],
+  ["R-INT-RATE", 54, "A6 DEFAULT missing too: wiki silent"],
+  ["R-INT-TRUNC", 60, "A8 wiki rounding implemented; uncertain whether legacy truncates, flagged"],
+  ["R-INT-TXFORMAT", 69, "A10 desc account-id format is an assumption"],
+  ["R-INT-TXFORMAT", 71, "A10 merchant fields: wiki silent"],
+  ["R-INT-TXFORMAT", 75, "A11 card number: wiki silent"],
+  ["R-INT-TXID", 83, "A13 suffix width not stated"],
+  ["R-INT-RATE", 89, "A15 balances for missing account: wiki silent"],
+  ["R-INT-APPLY", 91, "A16 AC 7 fees DECISION resolved as keep stub"]
+ ]}

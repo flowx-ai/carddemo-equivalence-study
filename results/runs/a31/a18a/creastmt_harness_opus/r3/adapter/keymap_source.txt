@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/creastmt_harness_opus/r3/exec/workflow_c920c48e-8cdd-4294-8db3-b807c32c5073.md (and the build's own register) before execution; no output opened.
+- A2 version fbcb9f3e (head of the build branch, plan COMPLETED)
+- START: transact, acctdata, cardxref, custdata; MODE files
+- END: {"statementBatch": {...}}; contract names inside
+- Register: manifest lines 48-69

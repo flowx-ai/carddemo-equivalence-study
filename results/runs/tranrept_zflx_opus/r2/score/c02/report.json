@@ -1,0 +1,150 @@
+{
+ "summary": {
+  "records_union": 362,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 16,
+  "flags_unneeded": 16,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9669,
+    "page_totals_equal": true,
+    "pages_golden": 17,
+    "pages_candidate": 17
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 362,
+   "candidate": 362,
+   "equal_strict": 362,
+   "equal_business": 362,
+   "union": 362
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 51,
+   "note": "A6 sign encoding a gap",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 58,
+   "note": "A7 processing date chosen from legacy recall",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 62,
+   "note": "A8 order and tie stability a gap",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 65,
+   "note": "A9 account ID from CardXref",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 68,
+   "note": "A10 lookup keys and truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 71,
+   "note": "A11 missing lookup stops the run with no partial report",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 71,
+   "note": "A11 missing lookup stops the run with no partial report",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 84,
+   "note": "A14 account total on card change; grouping undefined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTDUP",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A15 end of file reproduces legacy double add and no last account total",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A15 end of file reproduces legacy double add and no last account total",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 92,
+   "note": "A16 grand total includes the double count",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 93,
+   "note": "A17 zero and overflow editing a gap",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 93,
+   "note": "A17 zero and overflow editing a gap",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 93,
+   "note": "A17 zero and overflow editing a gap",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 97,
+   "note": "A18 empty result prints a header",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/tranrept_zflx_opus/r2/builder/assumptions.md",
+   "line": 97,
+   "note": "A18 empty result prints a header",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

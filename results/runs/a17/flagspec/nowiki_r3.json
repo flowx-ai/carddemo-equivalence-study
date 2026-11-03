@@ -1,0 +1,19 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-TXID", 24, "A-03 processing order: pages state no file organisation"],
+  ["R-INT-RATE", 25, "A-04 sign encoding not stated"],
+  ["R-INT-RATE", 31, "A-05 DEFAULT fallback recalled"],
+  ["R-INT-TXFORMAT", 32, "A-06 card lookup recalled, tie-break by judgement"],
+  ["R-INT-RATE", 33, "A-07 zero-rate rule recalled"],
+  ["R-INT-ZERO", 33, "A-07 0.00 transactions written: recalled"],
+  ["R-INT-RATE", 34, "A-08 formula recalled"],
+  ["R-INT-TRUNC", 34, "A-08 truncation recalled"],
+  ["R-INT-APPLY", 34, "A-08 fees none: recalled"],
+  ["R-INT-CYC", 35, "A-09 account update recalled"],
+  ["R-INT-APPLY", 35, "A-09 account update recalled"],
+  ["R-INT-LAST", 36, "A-10 last account not rewritten (recalled defect), uncertain, flagged"],
+  ["R-INT-TXID", 37, "A-11 id layout recalled"],
+  ["R-INT-TXFORMAT", 38, "A-12 transaction constants recalled"],
+  ["R-INT-RATE", 40, "A-14 missing account/xref/rate handling: no basis"],
+  ["R-INT-APPLY", 41, "A-15 overflow not checked: no basis"]
+ ]}

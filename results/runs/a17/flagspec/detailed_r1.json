@@ -1,0 +1,13 @@
+{"wiki": [["R-INT-TRUNC", "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md", 64, "BR-08 TODO: confirm rounding mode"]],
+ "build": [
+  ["R-INT-RATE", 50, "A5 overpunch applied to every signed field; wiki shows it only for the rate"],
+  ["R-INT-RATE", 57, "A5 rate example 5 chars vs 6-byte field"],
+  ["R-INT-TRUNC", 71, "A8 BR-08 TODO; truncation chosen"],
+  ["R-INT-RATE", 88, "A11 STANDARD row missing too: wiki silent"],
+  ["R-INT-LAST", 93, "A12 final account: wiki does not say; flagged that legacy could skip the final rewrite"],
+  ["R-INT-RATE", 103, "A14 balance without account: wiki silent"],
+  ["R-INT-APPLY", 106, "A15 AC 7 fees DECISION; stub kept"],
+  ["R-INT-TXID", 112, "A16 suffix width and start not given"],
+  ["R-INT-TXFORMAT", 122, "A19 card number: BR-04 does not name one"],
+  ["R-INT-TXFORMAT", 127, "A20 merchant fields: BR-04 silent"]
+ ]}

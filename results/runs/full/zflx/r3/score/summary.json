@@ -1,0 +1,996 @@
+{
+ "cases": {
+  "o-avw-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    42,
+    65
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 32,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    19,
+    47
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 144,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    15,
+    45
+   ],
+   "file": [
+    471,
+    471
+   ],
+   "blank_extras": 36,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    13,
+    32
+   ],
+   "file": [
+    471,
+    471
+   ],
+   "blank_extras": 49,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-avw-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    10,
+    49
+   ],
+   "file": [
+    473,
+    473
+   ],
+   "blank_extras": 32,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-bil-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    19,
+    41
+   ],
+   "file": [
+    474,
+    474
+   ],
+   "blank_extras": 7,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    41,
+    60
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 11,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    23,
+    44
+   ],
+   "file": [
+    474,
+    474
+   ],
+   "blank_extras": 7,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    16,
+    39
+   ],
+   "file": [
+    470,
+    472
+   ],
+   "blank_extras": 7,
+   "rules_silent": [
+    "R-ONL-ACCT",
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o-bil-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    19,
+    39
+   ],
+   "file": [
+    475,
+    475
+   ],
+   "blank_extras": 7,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-bil-07": {
+   "outcome_untagged": "matches legacy",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    3,
+    4
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 1,
+   "rules_silent": [
+    "R-ONL-MSG"
+   ]
+  },
+  "o-mnu-01": {
+   "outcome_untagged": "not reachable",
+   "outcome_tagged": null,
+   "screen": [
+    11,
+    34
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 2,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-UNREACH"
+   ]
+  },
+  "o-mnu-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen": [
+    6,
+    15
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 2,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o-sgn-01": {
+   "outcome_untagged": "matches legacy",
+   "outcome_tagged": null,
+   "screen": [
+    4,
+    4
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 1,
+   "rules_silent": []
+  },
+  "o-sgn-02": {
+   "outcome_untagged": "matches legacy",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    12,
+    12
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 2,
+   "rules_silent": []
+  },
+  "o-sgn-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": null,
+   "screen": [
+    4,
+    5
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 1,
+   "rules_silent": [
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-adm-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    57,
+    133
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-adm-02": {
+   "outcome_untagged": "matches legacy",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    3,
+    4
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 2,
+   "rules_silent": [
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "not reachable",
+   "screen": [
+    197,
+    274
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 216,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG",
+    "R-ONL-UNREACH"
+   ]
+  },
+  "o2-aup-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    322,
+    348
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 51,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    193,
+    261
+   ],
+   "file": [
+    470,
+    472
+   ],
+   "blank_extras": 46,
+   "rules_silent": [
+    "R-ONL-ACCT",
+    "R-ONL-FIELD",
+    "R-ONL-FILE",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    272,
+    304
+   ],
+   "file": [
+    471,
+    472
+   ],
+   "blank_extras": 49,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-FILE",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    1216,
+    1292
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 73,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-06": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    142,
+    168
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 47,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-aup-07": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    847,
+    902
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 49,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-ccl-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    134,
+    156
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 11,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-ccl-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    265,
+    294
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 77,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-ccl-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    86,
+    112
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 89,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-ccl-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    80,
+    101
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 7,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-csl-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    22,
+    45
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-csl-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    23,
+    55
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 21,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-cup-01": {
+   "outcome_untagged": "not reachable",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    50,
+    95
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 17,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG",
+    "R-ONL-UNREACH"
+   ]
+  },
+  "o2-cup-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    46,
+    63
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 8,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-cup-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    57,
+    147
+   ],
+   "file": [
+    471,
+    472
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-FILE",
+    "R-ONL-MSG",
+    "R-ONL-NAV"
+   ]
+  },
+  "o2-cup-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    34,
+    58
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 9,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-cup-05": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    82,
+    130
+   ],
+   "file": [
+    471,
+    472
+   ],
+   "blank_extras": 9,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-FILE",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-rpt-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    69,
+    88
+   ],
+   "file": [
+    473,
+    473
+   ],
+   "blank_extras": 15,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-rpt-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    24,
+    42
+   ],
+   "file": [
+    473,
+    473
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-rpt-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    160,
+    197
+   ],
+   "file": [
+    473,
+    474
+   ],
+   "blank_extras": 26,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-JOB",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-tad-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    43,
+    61
+   ],
+   "file": [
+    474,
+    474
+   ],
+   "blank_extras": 18,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-tad-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    82,
+    100
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 27,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-tad-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    164,
+    182
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 25,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-tad-04": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, flagged",
+   "screen": [
+    68,
+    92
+   ],
+   "file": [
+    475,
+    476
+   ],
+   "blank_extras": 19,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-trl-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    187,
+    234
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-trl-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    196,
+    221
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 12,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-trl-03": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    100,
+    132
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 23,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-trv-01": {
+   "outcome_untagged": "not reachable",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    62,
+    125
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 30,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-UNREACH"
+   ]
+  },
+  "o2-uad-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    67,
+    87
+   ],
+   "file": [
+    473,
+    473
+   ],
+   "blank_extras": 22,
+   "rules_silent": [
+    "R-ONL-FIELD"
+   ]
+  },
+  "o2-udl-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    57,
+    124
+   ],
+   "file": [
+    471,
+    471
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG",
+    "R-ONL-NAV"
+   ]
+  },
+  "o2-udl-02": {
+   "outcome_untagged": "not reachable",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    25,
+    40
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 10,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-UNREACH"
+   ]
+  },
+  "o2-usl-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    157,
+    298
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 36,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG",
+    "R-ONL-NAV"
+   ]
+  },
+  "o2-usl-02": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    259,
+    278
+   ],
+   "file": [
+    474,
+    474
+   ],
+   "blank_extras": 13,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-uup-01": {
+   "outcome_untagged": "differs from legacy, silent",
+   "outcome_tagged": "differs from legacy, silent",
+   "screen": [
+    107,
+    124
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 23,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-MSG"
+   ]
+  },
+  "o2-uup-02": {
+   "outcome_untagged": "not reachable",
+   "outcome_tagged": "matches legacy",
+   "screen": [
+    30,
+    46
+   ],
+   "file": [
+    472,
+    472
+   ],
+   "blank_extras": 11,
+   "rules_silent": [
+    "R-ONL-FIELD",
+    "R-ONL-UNREACH"
+   ]
+  }
+ },
+ "pooled": {
+  "screen_untagged": {
+   "equal": 2102,
+   "units": 3262,
+   "equivalence": 0.6443899448191294
+  },
+  "screen_tagged": {
+   "equal": 4140,
+   "units": 4686,
+   "equivalence": 0.8834827144686299
+  },
+  "file_untagged": {
+   "equal": 25488,
+   "units": 25493,
+   "equivalence": 0.999803867728396
+  },
+  "file_tagged": {
+   "equal": 9,
+   "units": 13,
+   "equivalence": 0.6923076923076923
+  }
+ },
+ "columns": {
+  "pic8": [
+   2770,
+   3045
+  ],
+  "without_pic8": [
+   28969,
+   30409
+  ],
+  "quirk": [
+   1,
+   3
+  ],
+  "blank_extras": 1510
+ },
+ "H_reachable": {
+  "programs_scored": 17,
+  "not_reachable_or_absent": {
+   "COMEN01C": "not reachable",
+   "COACTUPC": "differs from legacy, silent",
+   "COCRDUPC": "not reachable",
+   "COTRN01C": "not reachable"
+  },
+  "holds": false
+ },
+ "H_core_screens": {
+  "programs_scored": 17,
+  "programs_no_silent": 1,
+  "silent_by_program": {
+   "COSGN00C": 0,
+   "COMEN01C": 21,
+   "COADM01C": 72,
+   "COACTVWC": 21,
+   "COACTUPC": 20,
+   "COCRDLIC": 22,
+   "COCRDSLC": 26,
+   "COCRDUPC": 45,
+   "COTRN00C": 47,
+   "COTRN01C": 63,
+   "COTRN02C": 18,
+   "CORPT00C": 19,
+   "COBIL00C": 20,
+   "COUSR00C": 133,
+   "COUSR01C": 20,
+   "COUSR02C": 16,
+   "COUSR03C": 66
+  },
+  "silent_resting_on_pic8": 57,
+  "holds": false
+ },
+ "H_money_files": {
+  "silent_units": 0,
+  "silent_resting_on_pic8": 1,
+  "holds": true
+ },
+ "H_list_paging": {
+  "equal": 336,
+  "units": 348,
+  "steps": 14,
+  "holds": false
+ }
+}

@@ -1,0 +1,114 @@
+[
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 24,
+  "note": "A-03 processing order: pages state no file organisation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 25,
+  "note": "A-04 sign encoding not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 31,
+  "note": "A-05 DEFAULT fallback recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 32,
+  "note": "A-06 card lookup recalled, tie-break by judgement",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 33,
+  "note": "A-07 zero-rate rule recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 33,
+  "note": "A-07 0.00 transactions written: recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 34,
+  "note": "A-08 formula recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 34,
+  "note": "A-08 truncation recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 34,
+  "note": "A-08 fees none: recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 35,
+  "note": "A-09 account update recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 35,
+  "note": "A-09 account update recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 36,
+  "note": "A-10 last account not rewritten (recalled defect), uncertain, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 37,
+  "note": "A-11 id layout recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 38,
+  "note": "A-12 transaction constants recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 40,
+  "note": "A-14 missing account/xref/rate handling: no basis",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r3/builder/assumptions.md",
+  "line": 41,
+  "note": "A-15 overflow not checked: no basis",
+  "origin": "build"
+ }
+]

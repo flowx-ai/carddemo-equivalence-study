@@ -1,0 +1,86 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 52,
+  "note": "A-06 BR-08 TODO; truncation, builder-marked flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 57,
+  "note": "A-07 0.00 transaction on zero balance, builder-marked flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 62,
+  "note": "A-08 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 72,
+  "note": "A-11 STANDARD missing too: not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 76,
+  "note": "A-12 duplicate rate keys: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 81,
+  "note": "A-13 zero-interest accounts reset, builder-marked flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 86,
+  "note": "A-14 orphan balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 101,
+  "note": "A-17 suffix start and counter scope: builder's choice",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 105,
+  "note": "A-18 card number: BR-04 lists none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 116,
+  "note": "A-21 merchant fields: BR-04 silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 129,
+  "note": "A-24 AC 7 fees DECISION open; stub kept",
+  "origin": "build"
+ }
+]

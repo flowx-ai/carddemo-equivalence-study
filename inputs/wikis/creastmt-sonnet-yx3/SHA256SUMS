@@ -1,0 +1,9 @@
+2a819eb858378514da60afe170e64e27c51bea672946e4f637b1cd8e6ee1c8b5  ./01-data-model/project-data-model.md
+046807ce951f3948d1a6873a09a493e1a68f65a4d0712ab6ba58c319832e7e94  ./02-processes/process-end-of-day-batch-chain.md
+770b157b85f986d87583c785c3a3b60f5caf9c43d4de02939b53f045b2e1aa99  ./02-processes/process-statement-generation.md
+5025586467f268846b67cb16674da4383bf2155755bc76e059f98d060bffccee  ./04-integrations/workflow-account-data-access.md
+dff56735721be9a290b7bdf0b60c6775dacb32bf387bd89f0beac01c675dbd59  ./04-integrations/workflow-batch-file-transfer.md
+8ae1ebb714f0d9c8a1af57eb1032ffeed0963efc89b4e33d136652dcc273602f  ./04-integrations/workflow-transaction-data-access.md
+fe5dec229cf9732bdc004a1eeef458c4607f32fb94bac8c9c6bb8af95ba744c7  ./07-plugins/plugin-statement-document.md
+7adfcaba8c51b2c47a08a728358a8f46ba1aa1666b7d9eb2e0439902550e3592  ./10-acceptance-criteria/acceptance-criteria-statement-generation.md
+08b597a64704850390d6aa71cd7a5b0e51a7529e1b647723bf7e8746ec833e5f  ./CONTRACT.md

@@ -1,0 +1,275 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 52,
+  "note": "account offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 53,
+  "note": "xref offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 54,
+  "note": "customer offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 54,
+  "note": "customer offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 54,
+  "note": "customer offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 55,
+  "note": "transaction offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 55,
+  "note": "transaction offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 58,
+  "note": "amount encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 58,
+  "note": "amount encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 58,
+  "note": "amount encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 59,
+  "note": "identifier conversion not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 61,
+  "note": "shared-card semantics unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 61,
+  "note": "shared-card semantics unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 62,
+  "note": "duplicate rows unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 62,
+  "note": "lookup collisions unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 63,
+  "note": "cycle filter TODO; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 64,
+  "note": "name assembly unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 65,
+  "note": "address concatenation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 66,
+  "note": "missing-value rendering unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 68,
+  "note": "signed zero not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 68,
+  "note": "signed zero not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 68,
+  "note": "signed zero not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 69,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 69,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 69,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 69,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 72,
+  "note": "HTML escaping absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 72,
+  "note": "HTML escaping absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 73,
+  "note": "malformed-record rules omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 73,
+  "note": "malformed-record rules omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 74,
+  "note": "missing joins unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md",
+  "line": 74,
+  "note": "missing joins unspecified",
+  "origin": "build"
+ }
+]

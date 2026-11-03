@@ -1,0 +1,14 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 30, "1 formula /1200 inferred, flagged"],
+  ["R-INT-TRUNC", 32, "2 truncation: wiki says nothing, flagged"],
+  ["R-INT-LAST", 36, "5 last account updated; names the recalled CardDemo last-account defect, flagged"],
+  ["R-PASSTHRU", 37, "6 accounts with no balance: wiki only has balance-driven processing"],
+  ["R-INT-RATE", 38, "7 status filter: wiki mentions none"],
+  ["R-INT-TXID", 39, "8 processing order: wiki gives none"],
+  ["R-INT-TXID", 40, "9 transaction id construction, flagged"],
+  ["R-INT-TXFORMAT", 41, "10 source/desc/merchant: wiki gives none, flagged"],
+  ["R-INT-TXFORMAT", 42, "11 card choice, flagged"],
+  ["R-INT-RATE", 44, "13 missing reference data: wiki has no error path"],
+  ["R-INT-APPLY", 46, "15 overflow: wiki says nothing"]
+ ]}

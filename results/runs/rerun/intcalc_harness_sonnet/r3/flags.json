@@ -1,0 +1,107 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 49,
+  "note": "[rounding] truncate versus ROUNDED to confirm",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 50,
+  "note": "[account-layout] offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 51,
+  "note": "[balance-layout] full copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 52,
+  "note": "[rate-layout] complete layout absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 53,
+  "note": "[xref-layout] complete copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 54,
+  "note": "[numeric-encoding] other sign encodings not enumerated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 55,
+  "note": "[balance-order] order not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 56,
+  "note": "[sequence] start, width, reset and exhaustion not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 57,
+  "note": "[card-selection] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 58,
+  "note": "[missing-card] not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 59,
+  "note": "[merchant-values] no interest-specific values",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 60,
+  "note": "[timestamps] no interest timestamp rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 61,
+  "note": "[account-scope] accounts without category balances not discussed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r3/exec/workflow_ec907ca4-fe3e-4e93-917a-7ba7569eb881.md",
+  "line": 64,
+  "note": "[missing-rate] exhausted fallback not specified",
+  "origin": "build"
+ }
+]

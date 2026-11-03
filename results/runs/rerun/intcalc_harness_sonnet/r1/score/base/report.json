@@ -1,0 +1,174 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 14,
+  "flags_unneeded": 14,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 50,
+   "intcalc_systran.proc_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 47,
+   "note": "[LAYOUT-ACCOUNT] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 48,
+   "note": "[LAYOUT-CATEGORY] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 49,
+   "note": "[LAYOUT-RATE] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 50,
+   "note": "[LAYOUT-XREF] offsets unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 52,
+   "note": "[OVERPUNCH] full decoding table not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 53,
+   "note": "[TRUNCATION] golden-file rounding check requested",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 54,
+   "note": "[ORDER] tie ordering not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 57,
+   "note": "[MISSING-DEFAULT] absent DEFAULT row not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 58,
+   "note": "[CARD-SELECTION] card selection not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 59,
+   "note": "[UNTOUCHED-ACCOUNTS] not stated separately",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 60,
+   "note": "[TRANSACTION-SEQUENCE] start, width, overflow, restart not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 61,
+   "note": "[TIMESTAMPS] values not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+   "line": 62,
+   "note": "[MERCHANT-DEFAULTS] merchant fields not initialised by the wiki",
+   "origin": "build"
+  }
+ ]
+}

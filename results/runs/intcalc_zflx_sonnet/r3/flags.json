@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 30,
+  "note": "#4 encoding only stated for the rate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 34,
+  "note": "#5 rate example 5 vs 6 chars",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 37,
+  "note": "#6 comparison rules not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 43,
+  "note": "#7 BR-08 TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 49,
+  "note": "#9 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 52,
+  "note": "#10 DEFAULT missing: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 55,
+  "note": "#11 AC-7 DECISION (fees)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 63,
+  "note": "#13 suffix width and start not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 67,
+  "note": "#14 order not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 72,
+  "note": "#16 merchant fields: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 86,
+  "note": "#20 wiki doesn't say whether there is an end-of-file update",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 92,
+  "note": "#22 orphan balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 94,
+  "note": "#23 overflow: wiki silent",
+  "origin": "build"
+ }
+]

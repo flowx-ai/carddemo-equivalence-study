@@ -1,0 +1,101 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 9,
+  "flags_unneeded": 9,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 50,
+   "intcalc_systran.proc_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 9,
+   "note": "1 truncation, not ROUNDED",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 16,
+   "note": "2 negative balances: negative interest",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 24,
+   "note": "5 fees: AC 7 DECISION open",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-LAST",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 33,
+   "note": "7 last account not rewritten; conflicts with AC 3; switch applyFinalAccountUpdate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 52,
+   "note": "11 no STANDARD row: rate 0",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 56,
+   "note": "12 rate field parse; wiki example one char short",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 72,
+   "note": "15 several cards per account",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_onto/r3/builder/assumptions.md",
+   "line": 87,
+   "note": "19 missing account / card link: skipped",
+   "origin": "build"
+  }
+ ]
+}

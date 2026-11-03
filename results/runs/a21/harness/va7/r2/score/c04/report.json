@@ -1,0 +1,4622 @@
+{
+ "summary": {
+  "records_union": 455,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 455,
+  "silent_records": 455,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-ABSENT"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 2,
+  "flags_unneeded": 2,
+  "volatile_masked": {}
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 231,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 231,
+   "absent": true
+  },
+  "posttran_dalyrejs": {
+   "golden": 73,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 73,
+   "absent": true
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50,
+   "absent": true
+  },
+  "posttran_tcatbal": {
+   "golden": 101,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 101,
+   "absent": true
+  }
+ },
+ "by_rule": {
+  "R-ABSENT/silent": 455
+ },
+ "divergences": [
+  {
+   "output": "posttran_transact",
+   "key": "0000000000683580",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000001774260",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000006292564",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000009101861",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010142252",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000016259484",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000017874199",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000019065428",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000021711604",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000025430891",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000028097268",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000030755266",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000033688127",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000043636099",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000054288996",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000054727064",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000058866561",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000061394789",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000070754800",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000072220498",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000084515950",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000085824369",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000095706092",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000099965527",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000100915314",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109506921",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000115716061",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000130111733",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000132831571",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000137879630",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000139910093",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000142315472",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000143386237",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000152467982",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000166444519",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000169879332",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000174748684",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000184933166",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000187573156",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000189414937",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000191360674",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000192039153",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000194189303",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000196728331",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000198494663",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000201032783",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000202217428",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000202886897",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000203305494",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000204143988",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000218186931",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000223138231",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000226849749",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000232640164",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000238329981",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000241121967",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000246307558",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000246312084",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000246549911",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000248557079",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000250062442",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000253579636",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000253685514",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000263663553",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000263926805",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000265935610",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000272698228",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000274427056",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000274596018",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000283702177",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000292939458",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000298764221",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000298806396",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000307523903",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000312054308",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000312675172",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000313527007",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000325686503",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000328781772",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329724245",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000338128146",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341634875",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000357518499",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000358543876",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000361866674",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000366513257",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000375247552",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000378710702",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000379084859",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000380632461",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000382018782",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000382291356",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000392772234",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000397282953",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000399296572",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000400022505",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000400762013",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000402032668",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000407178785",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000407637739",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000412515011",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000415671623",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000416848414",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000420768809",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000429557611",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000432231260",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000433607101",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000434343718",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000435144487",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000445507761",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000446945803",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000450622695",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000458331136",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000462765346",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000474475283",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000475609951",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000475746885",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000482016448",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000482116790",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000486159054",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000490043047",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000496711357",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000497995808",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000498548061",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000498615524",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000498857207",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000500479019",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000500885895",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000503557384",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000504099546",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000519935575",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000522130011",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000528007115",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000532120892",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000539225404",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000540034453",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000540260014",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000544248006",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000547488622",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000549364593",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000550089732",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000550860982",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000555363230",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000561673599",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000569807281",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000570880433",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000573732499",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000576344938",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000577165878",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000577826814",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000588642606",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000598262041",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000600564499",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000601274842",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000605048564",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000606140907",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000606716618",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000606830191",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000614267358",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000618712102",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000621178666",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000624335286",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000627601011",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000628524597",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000634329004",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000641694180",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000643758597",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000647754915",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000652713581",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000672061881",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000672573296",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000673250360",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000676149118",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000685488982",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000686167627",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000689276136",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000700096853",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000717135758",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000727152111",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000731515153",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000734452614",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000747646163",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000767314476",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000768119840",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000770707563",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000778829157",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781512834",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000784621975",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000793409700",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000796832699",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000802663079",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000803014982",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000806255008",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000812607213",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000821287727",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000822135100",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000828072981",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000835855923",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000838796166",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000840146978",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000841555701",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000855260493",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000858238426",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000858501945",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000865987685",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000869383367",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000884070277",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000900382063",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000909315074",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000925687557",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000934798061",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000934945079",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000946277676",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000971342087",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "C04T000000000001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_transact",
+   "key": "C04T000000000004",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000040455859",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000108402349",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000111054243",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000148803688",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000183226769",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220001505",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000252891459",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000277916619",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000312439873",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000424689871",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000502617711",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000508429766",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000519771423",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000554096178",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000570013846",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000585883106",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000601496057",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000603071214",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000635121182",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000669905307",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000703553020",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000735823935",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000741999667",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000749066680",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000749493129",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000751145919",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000751696292",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000755736377",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000760577632",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000762269241",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000767081090",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000767308626",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000772421231",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000776200014",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000823157599",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000824152956",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000838587312",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000845039454",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000874953803",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000882360848",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000885437581",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000889986293",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000898285002",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000899241176",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000903281896",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000909001545",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000926624843",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000929059536",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000942960329",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000943918566",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000956474921",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000957695517",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000957864065",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000961186055",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000961714986",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000973907278",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000974167587",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000976770816",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000982241353",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000992103545",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000996722787",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "C04T000000000002",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "C04T000000000003",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000002",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000003",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000004",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000005",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000006",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000007",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000008",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000009",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000010",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000011",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000012",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000013",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000015",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000016",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000019",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000020",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000021",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000022",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000023",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000024",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000025",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000027",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000029",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000033",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000034",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000035",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000037",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000038",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000039",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000040",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000041",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000042",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000043",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000044",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000046",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000049",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000050",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000001|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000001|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000002|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000002|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000003|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000003|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000004|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000004|01|0002",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000004|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000005|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000005|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000006|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000006|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000007|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000007|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000008|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000008|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000009|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000009|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000010|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000010|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000011|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000011|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000012|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000012|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000013|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000013|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000015|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000015|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000016|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000016|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000019|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000019|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000020|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000020|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000021|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000021|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000022|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000022|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000023|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000023|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000024|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000024|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000025|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000025|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000027|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000027|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000029|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000029|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000033|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000033|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000034|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000034|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000035|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000035|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000037|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000037|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000038|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000038|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000039|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000039|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000040|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000040|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000041|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000041|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000042|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000042|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000043|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000043|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000044|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000044|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000046|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000046|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000049|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000049|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000050|01|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000050|03|0001",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet-va7/02-processes/process-daily-transaction-posting.md",
+   "line": 63,
+   "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet-va7/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   "line": 63,
+   "note": "DECISION: keep or collect all reject reasons",
+   "origin": "wiki"
+  }
+ ]
+}

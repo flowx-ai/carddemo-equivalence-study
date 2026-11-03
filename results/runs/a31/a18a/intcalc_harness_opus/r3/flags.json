@@ -1,0 +1,156 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 52,
+  "note": "sign representation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 52,
+  "note": "sign representation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 55,
+  "note": "disclosure positions inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 55,
+  "note": "disclosure positions inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 56,
+  "note": "formula and rate unit TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 56,
+  "note": "formula and rate unit TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 57,
+  "note": "category selection and conflicts not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 58,
+  "note": "rounding TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 59,
+  "note": "grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 61,
+  "note": "cycle effects not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 61,
+  "note": "cycle effects not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 61,
+  "note": "cycle effects not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 62,
+  "note": "zero transaction not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 63,
+  "note": "transaction grouping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 63,
+  "note": "transaction grouping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 71,
+  "note": "id rule unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 72,
+  "note": "timestamp rule not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 75,
+  "note": "failure, duplicate, overflow not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r3/exec/workflow_6c88cbb8-0d87-4dd4-b28e-ff41ed88a7e9.md",
+  "line": 75,
+  "note": "failure, duplicate, overflow not supplied",
+  "origin": "build"
+ }
+]

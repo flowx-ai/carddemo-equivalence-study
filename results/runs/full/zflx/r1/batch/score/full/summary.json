@@ -1,0 +1,257 @@
+{
+ "cases": {
+  "f-act-01": {
+   "program": "CBACT01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 601,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-REC"
+   ]
+  },
+  "f-act-02": {
+   "program": "CBACT01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 601,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-REC"
+   ]
+  },
+  "f-act-03": {
+   "program": "CBACT01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-crd-01": {
+   "program": "CBACT02C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 51,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-crd-02": {
+   "program": "CBACT02C",
+   "outcome": "matches legacy",
+   "equal": 1,
+   "units": 1,
+   "rules_silent": []
+  },
+  "f-crd-03": {
+   "program": "CBACT02C",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-cus-01": {
+   "program": "CBCUS01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 101,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-cus-02": {
+   "program": "CBCUS01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-exp-01": {
+   "program": "CBEXPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 483,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-exp-02": {
+   "program": "CBEXPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 521,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-exp-03": {
+   "program": "CBEXPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-exp-04": {
+   "program": "CBEXPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 433,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-imp-01": {
+   "program": "CBIMPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 477,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-REC"
+   ]
+  },
+  "f-imp-02": {
+   "program": "CBIMPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 515,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-REC"
+   ]
+  },
+  "f-imp-03": {
+   "program": "CBIMPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 477,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-REC"
+   ]
+  },
+  "f-imp-04": {
+   "program": "CBIMPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-imp-05": {
+   "program": "CBIMPORT",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 15,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-trn-01": {
+   "program": "CBTRN01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 1806,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-trn-02": {
+   "program": "CBTRN01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 1809,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-trn-03": {
+   "program": "CBTRN01C",
+   "outcome": "differs from legacy, flagged",
+   "equal": 1,
+   "units": 2,
+   "rules_silent": []
+  },
+  "f-trn-04": {
+   "program": "CBTRN01C",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE",
+    "R-BAT-RC"
+   ]
+  },
+  "f-xrf-01": {
+   "program": "CBACT03C",
+   "outcome": "differs from legacy, silent",
+   "equal": 1,
+   "units": 101,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  },
+  "f-xrf-02": {
+   "program": "CBACT03C",
+   "outcome": "differs from legacy, silent",
+   "equal": 0,
+   "units": 4,
+   "rules_silent": [
+    "R-BAT-LINE"
+   ]
+  }
+ },
+ "by_program": {
+  "CBACT01C": {
+   "equal": 2,
+   "units": 1206,
+   "silent": 1199
+  },
+  "CBACT02C": {
+   "equal": 2,
+   "units": 56,
+   "silent": 50
+  },
+  "CBCUS01C": {
+   "equal": 1,
+   "units": 105,
+   "silent": 99
+  },
+  "CBEXPORT": {
+   "equal": 3,
+   "units": 1441,
+   "silent": 37
+  },
+  "CBIMPORT": {
+   "equal": 4,
+   "units": 1488,
+   "silent": 1445
+  },
+  "CBTRN01C": {
+   "equal": 3,
+   "units": 3621,
+   "silent": 3614
+  },
+  "CBACT03C": {
+   "equal": 1,
+   "units": 105,
+   "silent": 99
+  }
+ },
+ "H_round_trip": {
+  "cases": [
+   "f-exp-01",
+   "f-imp-01"
+  ],
+  "holds": false
+ }
+}

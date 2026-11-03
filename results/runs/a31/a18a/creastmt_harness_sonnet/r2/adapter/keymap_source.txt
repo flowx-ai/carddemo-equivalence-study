@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/creastmt_harness_sonnet/r2/exec/workflow_e6e2d6d8-7ced-4ea8-9388-3c5f8d9b637a.md (and the build's own register) before execution; no output opened.
+- A2 version 346f817f (head of the build branch, plan COMPLETED)
+- START: transact, acctdata, cardxref, custdata; MODE files
+- END: top-level creastmt_statements, creastmt_statements_html, assumptions_md
+- Register: manifest lines 51-77

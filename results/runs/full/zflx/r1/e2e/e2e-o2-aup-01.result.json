@@ -1,0 +1,8 @@
+{
+ "case": "e2e-o2-aup-01",
+ "outcome": "absent",
+ "touched_units": 12,
+ "differing": [],
+ "session_divergences": null,
+ "baseline_divergences": null
+}

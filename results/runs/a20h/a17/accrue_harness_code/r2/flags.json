@@ -1,0 +1,16 @@
+[
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_code/r2/exec/workflow_36a223eb-d448-4b36-afab-cfc57e424569.md",
+  "line": 161,
+  "note": "unassigned transaction-text tails assumed space-initialised; initial-storage policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_code/r2/exec/workflow_36a223eb-d448-4b36-afab-cfc57e424569.md",
+  "line": 162,
+  "note": "UTC because the host timezone is absent",
+  "origin": "build"
+ }
+]

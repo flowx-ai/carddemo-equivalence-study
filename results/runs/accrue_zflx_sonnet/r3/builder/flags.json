@@ -1,0 +1,11 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/02_calculate_interest.js:61 (assumptions.md A-07; wiki P-15 BR-08 TODO)"},
+  {"rule": "R-ACCT-LAST-UPDATE", "source": "flowx/02_calculate_interest.js:119 (assumptions.md A-06; wiki P-15 BR-06 vs AC scenario 3)"},
+  {"rule": "R-RATE-NO-STANDARD", "source": "flowx/02_calculate_interest.js:101 (assumptions.md A-09)"},
+  {"rule": "R-BALCAT-ORDER", "source": "flowx/02_calculate_interest.js:38 (assumptions.md A-04)"},
+  {"output": "accrue_systxn", "key": "card_num", "source": "flowx/02_calculate_interest.js:32 (assumptions.md A-16)"},
+  {"output": "accrue_systxn", "key": "desc", "source": "flowx/02_calculate_interest.js:113 (assumptions.md A-15)"},
+  {"output": "accrue_systxn", "key": "tran_id", "source": "flowx/02_calculate_interest.js:111 (assumptions.md A-14)"},
+  {"output": "accrue_systxn", "key": "orig_ts", "source": "flowx/02_calculate_interest.js:50 (assumptions.md A-18)"},
+  {"output": "accrue_systxn", "key": "proc_ts", "source": "flowx/02_calculate_interest.js:50 (assumptions.md A-18)"}
+]

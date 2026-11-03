@@ -1,0 +1,115 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 11,
+  "flags_unneeded": 11,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 32,
+   "note": "5 field offsets derived from wiki attribute order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 40,
+   "note": "6 overpunch for every signed field; wiki states it only for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 49,
+   "note": "8 no STANDARD row either: wiki says nothing; rate 0, warning",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 55,
+   "note": "10 truncation toward zero; BR-08 TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-LAST",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 64,
+   "note": "13 last account not updated; wiki never mentions end-of-file update",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 69,
+   "note": "14 fees DECISION open: stub kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 78,
+   "note": "17 desc id format not given; 11-digit zero padded",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 80,
+   "note": "18 suffix width and start not given; 6 digits from 000001",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 84,
+   "note": "19 card choice / no card: wiki says nothing; lowest card number",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet_thin/r3/builder/outputs/assumptions.md",
+   "line": 87,
+   "note": "20 merchant fields: wiki says nothing; 0 and blank",
+   "origin": "build"
+  }
+ ]
+}

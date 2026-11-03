@@ -1,0 +1,80 @@
+## 1. procedure check (unpatched bin/, same runner) against golden/v1
+  base: all 10 outputs byte-identical to golden/v1
+  c01: all 10 outputs byte-identical to golden/v1
+  c02: all 10 outputs byte-identical to golden/v1
+  c03: all 10 outputs byte-identical to golden/v1
+  c04: all 10 outputs byte-identical to golden/v1
+
+## 2. upstream files kept with the report goldens equal golden/v1
+  cr6: checked
+  cr7: checked
+  cr8: checked
+
+## 3. reference models: golden/<n> (expect PASS) and golden/v1 (negative control, expect FAIL)
+  base  cr3 PASS/FAIL  cr4 PASS/FAIL  cr5 PASS/FAIL  cr6 PASS/FAIL  cr7 PASS/FAIL  cr8 PASS/FAIL
+  c01  cr3 PASS/FAIL  cr4 PASS/FAIL  cr5 PASS/FAIL  cr6 PASS/FAIL  cr7 PASS/FAIL  cr8 PASS/FAIL
+  c02  cr3 PASS/FAIL  cr4 PASS/FAIL  cr5 PASS/FAIL  cr6 PASS/FAIL  cr7 PASS/FAIL  cr8 PASS/FAIL
+  c03  cr3 PASS/FAIL  cr4 PASS/FAIL  cr5 PASS/FAIL  cr6 PASS/FAIL  cr7 PASS/FAIL  cr8 PASS/FAIL
+  c04  cr3 PASS/FAIL  cr4 PASS/FAIL  cr5 PASS/FAIL  cr6 PASS/FAIL  cr7 PASS/FAIL  cr8 PASS/FAIL
+
+## 4. scorer (unchanged): self-score and legacy golden/v1 as the candidate (business, strict, silent rules)
+  cr3 base self:   100.00% strict 100.00% silent rules []
+  cr3 base legacy: 71.00% strict 71.00% silent rules ['R-INT-APPLY', 'R-INT-RATE']
+  cr4 base self:   100.00% strict 100.00% silent rules []
+  cr4 base legacy: 72.67% strict 72.67% silent rules ['R-POST-104', 'R-POST-BAL', 'R-POST-TCAT']
+  cr5 base self:   100.00% strict 100.00% silent rules []
+  cr5 base legacy: 84.42% strict 84.42% silent rules ['R-POST-102', 'R-POST-BAL', 'R-POST-TCAT']
+  cr6 base self:   100.00% strict 100.00% silent rules []
+  cr6 base legacy: 50.00% strict 50.00% silent rules ['R-STMT-TOTAL']
+  cr8 base self:   100.00% strict 100.00% silent rules []
+  cr8 base legacy: 0.00% strict 0.00% silent rules ['R-STMT-FICO']
+  cr7 base self:   100.00% strict 100.00% silent rules []
+  cr7 base legacy: 72.73% strict 72.73% silent rules ['R-REPT-ACCT', 'R-REPT-GRAND', 'R-REPT-SET']
+  cr3 c01 self:   100.00% strict 100.00% silent rules []
+  cr3 c01 legacy: 71.00% strict 71.00% silent rules ['R-INT-APPLY', 'R-INT-RATE']
+  cr4 c01 self:   100.00% strict 100.00% silent rules []
+  cr4 c01 legacy: 72.10% strict 72.10% silent rules ['R-POST-104', 'R-POST-BAL', 'R-POST-TCAT']
+  cr5 c01 self:   100.00% strict 100.00% silent rules []
+  cr5 c01 legacy: 84.65% strict 84.65% silent rules ['R-POST-102', 'R-POST-BAL', 'R-POST-TCAT']
+  cr6 c01 self:   100.00% strict 100.00% silent rules []
+  cr6 c01 legacy: 50.00% strict 50.00% silent rules ['R-STMT-TOTAL']
+  cr8 c01 self:   100.00% strict 100.00% silent rules []
+  cr8 c01 legacy: 0.00% strict 0.00% silent rules ['R-STMT-FICO']
+  cr7 c01 self:   100.00% strict 100.00% silent rules []
+  cr7 c01 legacy: 72.95% strict 72.95% silent rules ['R-REPT-ACCT', 'R-REPT-GRAND', 'R-REPT-SET']
+  cr3 c02 self:   100.00% strict 100.00% silent rules []
+  cr3 c02 legacy: 70.71% strict 70.71% silent rules ['R-INT-APPLY', 'R-INT-RATE']
+  cr4 c02 self:   100.00% strict 100.00% silent rules []
+  cr4 c02 legacy: 72.67% strict 72.67% silent rules ['R-POST-104', 'R-POST-BAL', 'R-POST-TCAT']
+  cr5 c02 self:   100.00% strict 100.00% silent rules []
+  cr5 c02 legacy: 84.42% strict 84.42% silent rules ['R-POST-102', 'R-POST-BAL', 'R-POST-TCAT']
+  cr6 c02 self:   100.00% strict 100.00% silent rules []
+  cr6 c02 legacy: 50.00% strict 50.00% silent rules ['R-STMT-TOTAL']
+  cr8 c02 self:   100.00% strict 100.00% silent rules []
+  cr8 c02 legacy: 0.00% strict 0.00% silent rules ['R-STMT-FICO']
+  cr7 c02 self:   100.00% strict 100.00% silent rules []
+  cr7 c02 legacy: 73.20% strict 73.20% silent rules ['R-REPT-ACCT', 'R-REPT-GRAND', 'R-REPT-SET']
+  cr3 c03 self:   100.00% strict 100.00% silent rules []
+  cr3 c03 legacy: 71.00% strict 71.00% silent rules ['R-INT-APPLY', 'R-INT-RATE']
+  cr4 c03 self:   100.00% strict 100.00% silent rules []
+  cr4 c03 legacy: 72.73% strict 72.73% silent rules ['R-POST-104', 'R-POST-BAL', 'R-POST-TCAT']
+  cr5 c03 self:   100.00% strict 100.00% silent rules []
+  cr5 c03 legacy: 84.45% strict 84.45% silent rules ['R-POST-102', 'R-POST-BAL', 'R-POST-TCAT']
+  cr6 c03 self:   100.00% strict 100.00% silent rules []
+  cr6 c03 legacy: 50.00% strict 50.00% silent rules ['R-STMT-TOTAL']
+  cr8 c03 self:   100.00% strict 100.00% silent rules []
+  cr8 c03 legacy: 0.00% strict 0.00% silent rules ['R-STMT-FICO']
+  cr7 c03 self:   100.00% strict 100.00% silent rules []
+  cr7 c03 legacy: 72.73% strict 72.73% silent rules ['R-REPT-ACCT', 'R-REPT-GRAND', 'R-REPT-SET']
+  cr3 c04 self:   100.00% strict 100.00% silent rules []
+  cr3 c04 legacy: 71.84% strict 71.84% silent rules ['R-INT-APPLY', 'R-INT-RATE']
+  cr4 c04 self:   100.00% strict 100.00% silent rules []
+  cr4 c04 legacy: 71.95% strict 71.95% silent rules ['R-POST-104', 'R-POST-BAL', 'R-POST-TCAT']
+  cr5 c04 self:   100.00% strict 100.00% silent rules []
+  cr5 c04 legacy: 84.65% strict 84.65% silent rules ['R-POST-102', 'R-POST-BAL', 'R-POST-TCAT']
+  cr6 c04 self:   100.00% strict 100.00% silent rules []
+  cr6 c04 legacy: 50.00% strict 50.00% silent rules ['R-STMT-TOTAL']
+  cr8 c04 self:   100.00% strict 100.00% silent rules []
+  cr8 c04 legacy: 0.00% strict 0.00% silent rules ['R-STMT-FICO']
+  cr7 c04 self:   100.00% strict 100.00% silent rules []
+  cr7 c04 legacy: 72.43% strict 72.43% silent rules ['R-REPT-ACCT', 'R-REPT-GRAND', 'R-REPT-SET']

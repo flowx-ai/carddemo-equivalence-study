@@ -1,0 +1,97 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dalytranLines",
+  "acctdata": "acctdataLines",
+  "cardxref": "cardxrefLines",
+  "tcatbal": "tcatbalLines",
+  "business_date": "businessDate",
+  "_lines": [
+   "dailytran",
+   "acctdata",
+   "cardxref",
+   "tcatbal"
+  ]
+ },
+ "decode": null,
+ "source": "- START (README 'Input', script lines 97-157): businessDate, batchId, and dalytranLines/acctdataLines/cardxrefLines/tcatbalLines = 'each line of <file>.dat' as a JSON list of strings. Map: contract file -> build key, with the A21 opt-in '_lines' (adapter_posttran.py files: the same padded records as a list of lines, no value changed; notebook \u00a764 addendum). batchId left unset.\n- END payload {runSummary, posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal} (README 'Output'): contract names, no decode.json\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-POST-WRITE",
+   34,
+   "A3 restart: AC #10 DECISION open"
+  ],
+  [
+   "R-POST-COPY",
+   54,
+   "A6 signed encoding of the daily feed not stated"
+  ],
+  [
+   "R-POST-BAL",
+   54,
+   "A6 signed encoding not stated"
+  ],
+  [
+   "R-POST-BAL",
+   58,
+   "A7 duplicate keys: wiki silent"
+  ],
+  [
+   "R-POST-103",
+   72,
+   "A9 AC #6 does not name the kept reason (card invalid + expired); listed in builder flags.json"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   76,
+   "A10 BR-04 DECISION: one reason, 103 over 102"
+  ],
+  [
+   "R-POST-102",
+   85,
+   "A11 sign interaction of the overlimit formula not discussed by the wiki"
+  ],
+  [
+   "R-POST-103",
+   91,
+   "A12 blank expiry dates: wiki does not say"
+  ],
+  [
+   "R-POST-104",
+   104,
+   "A13 BR-10: wiki does not say whether 'card' could mean account; read literally; listed in builder flags.json"
+  ],
+  [
+   "R-POST-WRITE",
+   111,
+   "A14 tran_id: DT-05 sequence generator vs BR-09 idempotency (wiki conflict); feed id kept"
+  ],
+  [
+   "R-POST-TCAT",
+   120,
+   "A16 upsert keyed on xref account id: listed in builder flags.json"
+  ],
+  [
+   "R-POST-BAL",
+   137,
+   "A19 overflow: wiki silent"
+  ],
+  [
+   "R-POST-TCAT",
+   137,
+   "A19 overflow: wiki silent"
+  ],
+  [
+   "R-POST-101",
+   141,
+   "A20 account status / card checks: no rule mentions them"
+  ],
+  [
+   "R-POST-COPY",
+   153,
+   "A22 DT-12 TODO on the 4 + 76 trailer layout"
+  ]
+ ],
+ "cr_rule": "A13: count per card number in feed order within the run; only posted purchases (amount > 0) count; checked after BR-01-BR-04; 5th and later -> 104; 100-104 rejects not counted; credits/zero never counted. Flags the card-vs-account reading (R-POST-104)."
+}

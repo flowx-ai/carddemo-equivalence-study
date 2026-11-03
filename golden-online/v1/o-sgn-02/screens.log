@@ -1,0 +1,123 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in PASSWD   len   8 mdt=F R-MDT-FSET |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   D |<dark>|
+  ERRMSG   D |Please enter User ID ...|
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER USERID=|ZZZZ0001| PASSWD=<dark>
+=== task   3 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |ZZZZ0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Please enter User ID ...|
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   D |ZZZZ0001|
+  PASSWD   D |<dark>|
+  ERRMSG   D |User not found. Try again ...|
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   4: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=<dark>
+=== task   4 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |User not found. Try again ...|
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   D |USER0001|
+  PASSWD   D |<dark>|
+  ERRMSG   D |Wrong Password. Try again ...|
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   5: PF5
+INPUT aid=PF5
+=== task   5 tran CC00 program COSGN00C aid PF5   calen      160
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D |Invalid key pressed. Please see below...|
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   6: PF3
+INPUT aid=PF3
+=== task   6 tran CC00 program COSGN00C aid PF3   calen      160
+SEND TEXT from COSGN00C site 0004 |Thank you for using CardDemo application...
+task end: RETURN without TRANSID (RETURN  ): conversation ended
+END outcome=OK

@@ -1,0 +1,11 @@
+[
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "assumptions.md A15 (BR-05 'processedTimestamp = now'; format/time zone not specified)"},
+  {"output": "posttran_transact.json", "key": "tran_id", "source": "assumptions.md A14 (DM DT-05 'FlowX: sequence generator' vs BR-09 transactionId idempotency; feed id kept)"},
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "assumptions.md A9 (AC #6 'last failing reason kept' with card invalid + account expired -> 100, account checks skipped)"},
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "assumptions.md A10 (BR-04 DECISION: 103 overwrites 102, single reason)"},
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "assumptions.md A13 (BR-10: per card number, posted purchases only, checked after BR-01..BR-04)"},
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "assumptions.md A12 (BR-04 string date compare; blank expiry rejected)"},
+  {"output": "posttran_acctdata.json", "key": "curr_cyc_debit", "source": "assumptions.md A11/A17 (BR-03 formula with BR-05 negative debit accumulation kept literally)"},
+  {"output": "posttran_tcatbal.json", "key": "bal", "source": "assumptions.md A16 (upsert keyed on xref account id; create with amount)"},
+  {"output": "posttran_acctdata.json", "key": "curr_bal", "source": "assumptions.md A19 (no PIC-size truncation on overflow)"}
+]

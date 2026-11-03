@@ -1,0 +1,5 @@
+Read from runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md (and the build's own README/register) before execution; no output opened.
+- START (Post daily transactions, lines 114-116): input.files.{dailytran_dat, acctdata_dat, cardxref_dat, tcatbal_dat} (file contents as strings), businessDate (default 2022-07-18); postingChunkSize, checkpoint, processingTimestamp, nextTransactionId optional (absent: all records, no checkpoint, runtime UTC timestamp, sequence seed 0000000000000001). Run values the contract does not carry are left unset (§41).
+- END: Assemble assumptions (line 148) writes output={posting:{posttran_transact_json, posttran_dalyrejs_json, posttran_acctdata_json, posttran_tcatbal_json, summary, assumptions_md, ...}}: _root posting, names renamed
+- MODE files; _wrap nests the four files under 'files' (pure renaming)
+- Register: assumption() calls at lines 54-78 (layoutNote lines 54-57 add one entry each)

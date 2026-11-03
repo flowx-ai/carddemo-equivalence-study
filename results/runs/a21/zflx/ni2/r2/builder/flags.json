@@ -1,0 +1,9 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md A-16 (wiki BR-08 TODO: truncate vs ROUNDED)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "assumptions.md A-25 (wiki silent on timestamps)"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "assumptions.md A-25 (wiki silent on timestamps)"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "assumptions.md A-23 (card choice per account not specified)"},
+  {"output": "intcalc_systran.json", "key": "tran_id", "source": "assumptions.md A-20/A-09 (suffix width/start and processing order not specified)"},
+  {"output": "intcalc_acctdata.json", "key": "curr_cyc_credit", "source": "assumptions.md A-12 (reset also when total interest is 0)"},
+  {"output": "intcalc_acctdata.json", "key": "curr_cyc_debit", "source": "assumptions.md A-12 (reset also when total interest is 0)"}
+]

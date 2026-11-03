@@ -1,0 +1,2 @@
+OUTSIDE Glob ~/.local DENIED
+outside accesses: 1

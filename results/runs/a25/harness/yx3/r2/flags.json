@@ -1,0 +1,366 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+  "line": 58,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 51,
+  "note": "account offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 52,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 53,
+  "note": "FICO offset inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 54,
+  "note": "transaction offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 55,
+  "note": "transaction offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 55,
+  "note": "transaction offsets absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 55,
+  "note": "card offset inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 56,
+  "note": "CUSTREC vs CVCUS01Y equivalence unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 56,
+  "note": "layout equivalence unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 56,
+  "note": "layout equivalence unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 60,
+  "note": "positive overpunch inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 60,
+  "note": "positive overpunch inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 60,
+  "note": "positive overpunch inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 61,
+  "note": "negative alphabet and negative zero absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 61,
+  "note": "negative alphabet absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 61,
+  "note": "negative alphabet absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 62,
+  "note": "transport encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 62,
+  "note": "transport encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 62,
+  "note": "transport encoding not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 65,
+  "note": "duplicate resolution unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 66,
+  "note": "duplicate resolution unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 67,
+  "note": "duplicate resolution unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 69,
+  "note": "account wording resolved by maker choice",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 69,
+  "note": "account wording resolved by maker choice",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 70,
+  "note": "equal-key behaviour absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 71,
+  "note": "cycle filter TODO; no filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 72,
+  "note": "unreferenced transactions: no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 74,
+  "note": "assembly rule absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 77,
+  "note": "assembly absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 78,
+  "note": "country omission chosen by the maker",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 79,
+  "note": "no missing/undecodable FICO display rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 81,
+  "note": "statement continuation absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 81,
+  "note": "statement continuation absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 82,
+  "note": "malformed-record handling not specified (TODO)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 82,
+  "note": "malformed-record handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 84,
+  "note": "no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 84,
+  "note": "no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 84,
+  "note": "no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 84,
+  "note": "no overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 85,
+  "note": "overlong-field handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 85,
+  "note": "overlong-field handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 87,
+  "note": "no escaping rule; entities added",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 87,
+  "note": "no escaping rule; entities added",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 88,
+  "note": "unspecified placeholder widths",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md",
+  "line": 88,
+  "note": "unspecified placeholder widths",
+  "origin": "build"
+ }
+]

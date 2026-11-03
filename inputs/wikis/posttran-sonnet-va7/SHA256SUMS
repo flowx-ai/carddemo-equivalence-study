@@ -1,0 +1,9 @@
+7a4e736c4c4189301cd28accc5534a99854d007da04ab12ccd31f1f1e49b124d  ./01-data-model/project-data-model.md
+c99a72a64df0940f6f694bc8194c8acc457df12c1eb9f550a894ac507f85102f  ./02-processes/process-daily-transaction-posting.md
+046807ce951f3948d1a6873a09a493e1a68f65a4d0712ab6ba58c319832e7e94  ./02-processes/process-end-of-day-batch-chain.md
+5025586467f268846b67cb16674da4383bf2155755bc76e059f98d060bffccee  ./04-integrations/workflow-account-data-access.md
+dff56735721be9a290b7bdf0b60c6775dacb32bf387bd89f0beac01c675dbd59  ./04-integrations/workflow-batch-file-transfer.md
+82fad6dd0ec79af7f76f7460d650aa91ccae1b34d63b3d21b020ff0ca7c738d4  ./04-integrations/workflow-reference-data-access.md
+8ae1ebb714f0d9c8a1af57eb1032ffeed0963efc89b4e33d136652dcc273602f  ./04-integrations/workflow-transaction-data-access.md
+1b4dd7f9dccea29e5c59acd84db794e891aa2dba9b5461b73779b047275cc39d  ./10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md
+bfcffd408c58646640a3d394c0c819377d86f296f64c104dfee7a1abd463494e  ./CONTRACT.md

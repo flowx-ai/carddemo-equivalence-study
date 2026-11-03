@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 41,
+  "note": "A6 encoding of other signed fields not in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 64,
+  "note": "A10 BR-08 TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 68,
+  "note": "A10 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 71,
+  "note": "A11 DEFAULT missing: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 78,
+  "note": "A13 no rule for suppressing zero amounts",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 82,
+  "note": "A14 AC 7 fees open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 87,
+  "note": "A15 suffix width not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 97,
+  "note": "A17 merchant fields: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 100,
+  "note": "A18 card number: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 115,
+  "note": "A21 literal reading could exclude the final account",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 126,
+  "note": "A23 orphan balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+  "line": 129,
+  "note": "A24 overflow: wiki silent",
+  "origin": "build"
+ }
+]

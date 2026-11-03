@@ -1,0 +1,14 @@
+[
+  {"rule": "R-INT-MONTHLY-1200", "source": "assumptions.md:14"},
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md:20"},
+  {"rule": "R-INT-BASE-CATEGORY-BALANCE", "source": "assumptions.md:26"},
+  {"rule": "R-RATE-DEFAULT-GROUP-NAME", "source": "assumptions.md:37"},
+  {"rule": "R-RATE-ZERO-SKIP", "source": "assumptions.md:41"},
+  {"rule": "R-POST-RESET-CYCLE", "source": "assumptions.md:49"},
+  {"rule": "R-POST-LAST-ACCOUNT", "source": "assumptions.md:55"},
+  {"rule": "R-TRANID-SUFFIX", "source": "assumptions.md:78"},
+  {"rule": "R-TXN-DESC", "source": "assumptions.md:86"},
+  {"rule": "R-CARD-FIRST-LINK", "source": "assumptions.md:90"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "assumptions.md:95"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "assumptions.md:95"}
+]

@@ -1,0 +1,4 @@
+deleted from script 'ComputeInterest': throw new Error('Card cross-reference refers to a missing account')
+
+-if(!accountMap[k])throw new Error('Card cross-reference refers to a missing account');
++if(!accountMap[k]);

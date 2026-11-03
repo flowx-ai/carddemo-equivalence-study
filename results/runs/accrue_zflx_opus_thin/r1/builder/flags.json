@@ -1,0 +1,13 @@
+[
+  {"rule": "R-INT-MONTHLY-1200", "source": "flowx/scripts/02_compute_interest.js:83 (assumptions.md A1: wiki TODO 'Extract exact interest formula')"},
+  {"rule": "R-INT-TRUNC", "source": "flowx/scripts/02_compute_interest.js:83 (assumptions.md A2: acceptance #2 'TODO: confirm rounding mode')"},
+  {"rule": "R-INT-PER-CATEGORY-BALANCE", "source": "flowx/scripts/02_compute_interest.js:49-83 (assumptions.md A3: wiki says currentBalance x rate(groupId))"},
+  {"rule": "R-RATE-DEFAULT-GROUP", "source": "flowx/scripts/02_compute_interest.js:15,74 (assumptions.md A4: wiki silent on missing group)"},
+  {"rule": "R-ZERO-RATE-NO-TXN", "source": "flowx/scripts/02_compute_interest.js:80 (assumptions.md A5)"},
+  {"rule": "R-CYC-RESET-ON-POST", "source": "flowx/scripts/03_post_interest.js:30-32 (assumptions.md A8: wiki silent)"},
+  {"rule": "R-LAST-ACCOUNT-POSTED", "source": "flowx/scripts/03_post_interest.js:28-34 (assumptions.md A9: legacy end-of-file handling unknown)"},
+  {"rule": "R-INT-TXN-FIELDS", "source": "flowx/scripts/02_compute_interest.js:16-18,90-94 (assumptions.md A11: type/cat/source/desc/tran_id not in wiki)"},
+  {"rule": "R-INT-TXN-TIMESTAMP", "source": "flowx/scripts/02_compute_interest.js:33 (assumptions.md A11: business date used instead of wall clock)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "assumptions.md A11"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "assumptions.md A11"}
+]

@@ -1,0 +1,261 @@
+[
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTDUP",
+  "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "builds/inputs/tranrept-sonnet-ix3/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "builds/inputs/tranrept-sonnet-ix3/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 27,
+  "note": "older generic default dates vs the step contract",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 29,
+  "note": "transaction offsets inferred, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 29,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 29,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 29,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 30,
+  "note": "reference copybooks not reproduced",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 30,
+  "note": "reference copybooks not reproduced",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 31,
+  "note": "no secondary sort",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 32,
+  "note": "no timezone rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 34,
+  "note": "sign encoding not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 34,
+  "note": "sign encoding not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 34,
+  "note": "sign encoding not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 35,
+  "note": "duplicate/malformed reference handling undefined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 35,
+  "note": "duplicate/malformed reference handling undefined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 36,
+  "note": "unknown references: TODO on legacy abend; category/card silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 36,
+  "note": "unknown card reference silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 36,
+  "note": "TODO on legacy abend behaviour",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 37,
+  "note": "no malformed-record policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-HEADER",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 38,
+  "note": "page capacity TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 39,
+  "note": "spanning-page sequencing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 39,
+  "note": "spanning-page sequencing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-HEADER",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 39,
+  "note": "spanning-page sequencing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-HEADER",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 40,
+  "note": "coincident-boundary sequencing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 40,
+  "note": "coincident-boundary sequencing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 43,
+  "note": "zero-value editing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 43,
+  "note": "zero-value editing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 43,
+  "note": "zero-value editing unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 44,
+  "note": "broader input rejection unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 45,
+  "note": "overflow rule absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 45,
+  "note": "overflow rule absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md",
+  "line": 45,
+  "note": "overflow rule absent",
+  "origin": "build"
+ }
+]

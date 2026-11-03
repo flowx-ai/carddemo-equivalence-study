@@ -1,0 +1,115 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran_json",
+  "intcalc_acctdata": "intcalc_acctdata_json"
+ },
+ "source": "- START (ParseInterestFiles, lines 39-80): input.acctdata, tcatbal, discgrp, cardxref (fixed-width file contents as strings), businessDate, interestRunDate\n- END: PrepareInterestOutputs (line 159) writes intcalc_systran_json / intcalc_acctdata_json (JSON strings) at the root; the last node 'Escape text' (line 167) outputs only endText, so the END output is decoded as delivered: JSON strings parsed, names renamed\n- MODE files",
+ "build": [
+  [
+   "R-INT-TRUNC",
+   127,
+   "rounding: BR-08 rounding TODO; truncation chosen"
+  ],
+  [
+   "R-INT-RATE",
+   128,
+   "record layout inferred; copybook parity unverified"
+  ],
+  [
+   "R-INT-APPLY",
+   128,
+   "record layout inferred; copybook parity unverified"
+  ],
+  [
+   "R-INT-RATE",
+   129,
+   "disclosure rate width: the wiki's picture and example conflict"
+  ],
+  [
+   "R-INT-RATE",
+   130,
+   "sign encoding mapping not listed; no alternate encoding specified"
+  ],
+  [
+   "R-INT-APPLY",
+   130,
+   "sign encoding mapping not listed"
+  ],
+  [
+   "R-INT-RATE",
+   131,
+   "line endings and filler validation not specified"
+  ],
+  [
+   "R-INT-RATE",
+   132,
+   "negative balances: no positive-balance-only restriction stated"
+  ],
+  [
+   "R-INT-RATE",
+   133,
+   "tenure: leap-day handling absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   134,
+   "card and merchant details not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   135,
+   "timestamp generation not specified"
+  ],
+  [
+   "R-INT-TXID",
+   136,
+   "ordering, suffix start and exhaustion absent"
+  ],
+  [
+   "R-INT-CYC",
+   137,
+   "accounts absent from the category stream: not specified"
+  ],
+  [
+   "R-INT-APPLY",
+   137,
+   "accounts absent from the category stream: not specified"
+  ],
+  [
+   "R-INT-RATE",
+   138,
+   "failure cases not settled by the wiki"
+  ],
+  [
+   "R-INT-APPLY",
+   138,
+   "failure cases not settled by the wiki"
+  ],
+  [
+   "R-INT-RATE",
+   139,
+   "duplicate keys: no policy"
+  ],
+  [
+   "R-INT-APPLY",
+   139,
+   "duplicate keys: no policy"
+  ],
+  [
+   "R-INT-APPLY",
+   140,
+   "overflow behaviour not specified"
+  ]
+ ],
+ "cr_rule": "rate-rules (132) and tenure-calendar (133): subtract 2.00 for qualifying tenure, floor at zero; accounts opened on or before the same calendar date ten years before the run date (BR-03). Flags the leap-day absence (133) and the absence of a positive-balance-only restriction (132), both R-INT-RATE."
+}

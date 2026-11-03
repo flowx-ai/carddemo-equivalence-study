@@ -1,0 +1,151 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactText",
+  "acctdata": "acctdataText",
+  "cardxref": "cardxrefText",
+  "custdata": "custdataText"
+ },
+ "decode": null,
+ "source": "- A2 version: d8a08ced (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Transform, line 46): input.transactText, acctdataText, cardxrefText, custdataText = file text\n- END: Package outputs (line 52) writes output={result:{creastmt_statements, creastmt_statements_html, assumptions, status, ...}} (line arrays); decoder's 'result' unwrapping, no decode map\n- MODE files\n- Register: fact(id, assumption, decision, source) calls in one script line, line 46",
+ "cr_rule": "line 46 fact EXPENDITURE: sum strictly positive amounts, credits visible, citing BR-03 and scenarios; stated as source-defined, assumption=false.",
+ "register": null,
+ "mode": null,
+ "build": [
+  [
+   "R-STMT-BAL",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-FICO",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "INPUT-COMPATIBILITY and LAYOUT-*: input offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "DISPLAY-AMOUNTS: statement-input sign encoding unsettled"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "DISPLAY-AMOUNTS: statement-input sign encoding unsettled"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "DISPLAY-AMOUNTS: statement-input sign encoding unsettled"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "RECORD-FRAMING: exact compatibility with byte-oriented files unverified"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "CUSTOMER-ASSEMBLY: joins unspecified, maker-selected"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "CUSTOMER-ASSEMBLY: joins unspecified, maker-selected"
+  ],
+  [
+   "R-STMT-FICO",
+   46,
+   "FICO: blank storage and range enforcement silent"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "DUPLICATES: duplicate input records silent"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "FAULT-ISOLATION: per-card recovery, maker-required"
+  ],
+  [
+   "R-STMT-ABEND",
+   46,
+   "FAULT-ISOLATION: per-card recovery, maker-required"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "NUMERIC-OVERFLOW: overflow recovery silent"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "NUMERIC-OVERFLOW: overflow recovery silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "NUMERIC-OVERFLOW: overflow recovery silent"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   46,
+   "NUMERIC-OVERFLOW: overflow recovery silent"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "PRINTED-NUMBERS: negative and zero picture rendering silent"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "PRINTED-NUMBERS: negative and zero picture rendering silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "PRINTED-NUMBERS: negative and zero picture rendering silent"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "HTML-ESCAPING-CLIPPING: escaping and overlong values silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "HTML-ESCAPING-CLIPPING: escaping and overlong values silent"
+  ],
+  [
+   "R-STMT-OTHER",
+   46,
+   "OMITTED-SECTIONS: p.21 sections marked TODO, omitted"
+  ]
+ ]
+}

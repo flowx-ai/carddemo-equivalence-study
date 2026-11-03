@@ -1,0 +1,80 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate",
+  "_wrap": {
+   "fileContents": [
+    "acctdata",
+    "tcatbal",
+    "discgrp",
+    "cardxref"
+   ]
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran_json",
+  "intcalc_acctdata": "intcalc_acctdata_json"
+ },
+ "source": "- A2 version c6835c1c (head of the build branch, plan COMPLETED, no retry)\n- START: fileContents{acctdata,cardxref,tcatbal,discgrp} text, interestRunDate, businessDate; MODE files\n- END: result{intcalc_systran_json,intcalc_acctdata_json,...}\n- Register: assumption table lines 68-121",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-INT-RATE",
+   83,
+   "unreadable rate handling unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   84,
+   "both rates absent: no result documented"
+  ],
+  [
+   "R-INT-TXID",
+   91,
+   "run prefix default"
+  ],
+  [
+   "R-INT-TXID",
+   92,
+   "suffix width and start unspecified"
+  ],
+  [
+   "R-INT-TXID",
+   93,
+   "sequence on rejected accounts undefined"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   94,
+   "business date override unspecified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   95,
+   "generated timestamps unspecified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   97,
+   "missing card undefined"
+  ],
+  [
+   "R-INT-RATE",
+   106,
+   "duplicate keys"
+  ],
+  [
+   "R-INT-TRUNC",
+   108,
+   "overflow not detailed"
+  ]
+ ]
+}

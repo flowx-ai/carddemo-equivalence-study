@@ -1,0 +1,70 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- START (README; register A2): transact, acctdata, cardxref, custdata (raw file content)\n- END (README; script lines 204, 320): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-STMT-BAL",
+   23,
+   "B2 sign encoding of the other files: the wiki says nothing"
+  ],
+  [
+   "R-STMT-TXN",
+   23,
+   "B2 sign encoding of the other files: the wiki says nothing"
+  ],
+  [
+   "R-STMT-TOTAL",
+   23,
+   "B2 sign encoding of the other files: the wiki says nothing"
+  ],
+  [
+   "R-STMT-SET",
+   24,
+   "B3 blank and short lines: not covered by the wiki"
+  ],
+  [
+   "R-STMT-SET",
+   25,
+   "B4 duplicate keys: the data model does not say"
+  ],
+  [
+   "R-STMT-TXN",
+   33,
+   "C3 open TODO on the cycle filter resolved as legacy (no filter)"
+  ],
+  [
+   "R-STMT-ABEND",
+   36,
+   "C6 missing customer or account: card skipped; not covered by the wiki"
+  ],
+  [
+   "R-STMT-SET",
+   36,
+   "C6 missing customer or account: card skipped; not covered by the wiki"
+  ],
+  [
+   "R-STMT-NAME",
+   37,
+   "C7 name assembly: the wiki does not say"
+  ],
+  [
+   "R-STMT-ADDR",
+   38,
+   "C8 address lines (country not printed): acceptance gives no format"
+  ],
+  [
+   "R-STMT-BAL",
+   42,
+   "C12 balance overflow: the wiki says nothing"
+  ]
+ ],
+ "cr_rule": "C4: Total EXP = sum of line amounts strictly above zero; credits and returns listed, not added (BR-03, DT-17, plugin Totals, acceptance #2 and #7 -> 140.00); BR-03's layout TODO 'which the contract settles'. Not flagged. A3 (architecture, quotes the plugin layout TODO) not mapped."
+}

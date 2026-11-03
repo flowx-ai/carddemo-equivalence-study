@@ -1,0 +1,118 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- START (README Contract; register A2): transact, acctdata, cardxref, custdata (whole file content)\n- END (README; script lines 278, 397): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/outputs/assumptions.md",
+ "build": [
+  [
+   "R-STMT-TXN",
+   67,
+   "B2 cycle-filter TODO never confirmed; legacy kept (no filter)"
+  ],
+  [
+   "R-STMT-TXN",
+   79,
+   "B5 orphan transactions not printed; the wiki has no such output"
+  ],
+  [
+   "R-STMT-ABEND",
+   83,
+   "B6 missing customer or account skipped (legacy abends); wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   83,
+   "B6 missing customer or account skipped; wiki silent"
+  ],
+  [
+   "R-STMT-NAME",
+   117,
+   "C2 name assembly (legacy-derived); wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   126,
+   "C3 address line 3 (legacy-derived, country included); AC does not define the format"
+  ],
+  [
+   "R-STMT-BAL",
+   159,
+   "C10 sign encoding not stated by the wiki"
+  ],
+  [
+   "R-STMT-TXN",
+   159,
+   "C10 sign encoding not stated by the wiki"
+  ],
+  [
+   "R-STMT-TOTAL",
+   159,
+   "C10 sign encoding not stated by the wiki"
+  ],
+  [
+   "R-STMT-NAME",
+   181,
+   "D4 no HTML escaping; the wiki does not mention it"
+  ],
+  [
+   "R-STMT-ADDR",
+   181,
+   "D4 no HTML escaping; the wiki does not mention it"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/outputs/flags.json",
+   2,
+   "builder flag: customer name, wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/outputs/flags.json",
+   3,
+   "builder flag: address line 3, wiki silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   "builder/outputs/flags.json",
+   4,
+   "builder flag: Total EXP, 'BR-03 carries a TODO'"
+  ],
+  [
+   "R-STMT-ABEND",
+   "builder/outputs/flags.json",
+   5,
+   "builder flag: skipped cards, wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   "builder/outputs/flags.json",
+   5,
+   "builder flag: skipped cards, wiki silent"
+  ],
+  [
+   "R-STMT-TXN",
+   "builder/outputs/flags.json",
+   6,
+   "builder flag: no cycle filter, wiki TODO"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/outputs/flags.json",
+   7,
+   "builder flag: HTML name/address p lines (D2)"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/outputs/flags.json",
+   7,
+   "builder flag: HTML name/address p lines (D2)"
+  ]
+ ],
+ "cr_rule": "C1: Total EXP = sum of amounts strictly above zero, negatives listed and not subtracted; quotes BR-03 ('sum of the charges listed ... not subtracted'), AC 2, AC 7. Caveat: BR-03's TODO 'is about layout, not about the total rule'. Builder flags.json lists Total EXP ('BR-03 carries a TODO'). A1 (architecture, quotes the plugin layout TODO) not mapped."
+}

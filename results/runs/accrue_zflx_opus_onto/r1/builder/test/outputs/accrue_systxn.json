@@ -1,0 +1,5 @@
+[
+  {"tran_id": "2022071800000001", "type_cd": "07", "cat_cd": 12, "source": "Batch", "desc": "Accrued int 00000000001", "amt": "15.43", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "4000000000000002", "orig_ts": "2026-10-25-17.29.45.670000", "proc_ts": "2026-10-25-17.29.45.670000"},
+  {"tran_id": "2022071800000002", "type_cd": "07", "cat_cd": 12, "source": "Batch", "desc": "Accrued int 00000000002", "amt": "-3.96", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "4222222222222222", "orig_ts": "2026-10-25-17.29.45.670000", "proc_ts": "2026-10-25-17.29.45.670000"},
+  {"tran_id": "2022071800000003", "type_cd": "07", "cat_cd": 12, "source": "Batch", "desc": "Accrued int 00000000004", "amt": "0.00", "merchant_id": 0, "merchant_name": "", "merchant_city": "", "merchant_zip": "", "card_num": "4333333333333333", "orig_ts": "2026-10-25-17.29.45.670000", "proc_ts": "2026-10-25-17.29.45.670000"}
+]

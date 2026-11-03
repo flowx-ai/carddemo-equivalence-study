@@ -1,0 +1,233 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-104",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-105",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 10,
+  "note": "rule choice: wiki rules as written; legacy recalled where the wiki is silent or defers",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 46,
+  "note": "A5 card to account through the cross-reference",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 46,
+  "note": "A5 card to account through the cross-reference",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-104",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-105",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A6 reason codes not in the wiki; 104/105 new; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-104",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 66,
+  "note": "A7 account active check: possible divergence from legacy (flagged)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-105",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 71,
+  "note": "A8 card active check: possible divergence from legacy (flagged)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 77,
+  "note": "A9 wiki credit formula: known conflict with recalled legacy (flagged)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 84,
+  "note": "A10 expiry reject added beyond the wiki (flagged)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 89,
+  "note": "A11 type/category codes not validated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 95,
+  "note": "A12 which account fields change: wiki silent; legacy recalled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 99,
+  "note": "A13 missing TCATBAL created: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 104,
+  "note": "A14 posttran_transact holds this run only",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 112,
+  "note": "A16 reject record",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 121,
+  "note": "A18 parsing and sign encoding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 121,
+  "note": "A18 parsing and sign encoding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 131,
+  "note": "A19 output values",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 136,
+  "note": "A20 duplicate keys: later record wins; duplicate ids each posted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_zflx_opus/r3/builder/output/assumptions.md",
+  "line": 136,
+  "note": "A20 duplicate keys: later record wins; duplicate ids each posted",
+  "origin": "build"
+ }
+]

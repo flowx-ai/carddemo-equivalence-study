@@ -1,0 +1,5 @@
+Read from runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 84f217a8 (head of the build branch, committed; plan COMPLETED on R21, no retry)
+- START: transact, acctdata, cardxref, custdata
+- END: result; contract names inside
+- Register: decision(...) lines 50-97

@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 8,
+  "note": "[rounding] BR-08 leaves rounding confirmation outstanding; truncation chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 10,
+  "note": "[zero-negative] negative balances and rates not further specified; signs retained",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 10,
+  "note": "[zero-negative] zero after truncation not specified; nonzero rate still generates a transaction",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 12,
+  "note": "[order] incoming order unspecified; key order fixes identifier allocation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 14,
+  "note": "[identifiers] suffix width, initial value and rerun policy not specified; 6 digits from 000001",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 16,
+  "note": "[card] which card an interest transaction uses is unstated; lowest card number",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 18,
+  "note": "[merchant] merchant fields required but no values given for system interest; 0 and blank",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 20,
+  "note": "[timestamps] no interest timestamp value or separator documented; business-date midnight",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 22,
+  "note": "[account-boundaries] accounts absent from traversal not discussed; left unchanged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 22,
+  "note": "[account-boundaries] final flush not explicitly discussed; final account rewritten",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 24,
+  "note": "[metadata] account-id padding in the description inferred from 9(11)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 28,
+  "note": "[missing-default] no behaviour given when DEFAULT is also absent; fail",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_sonnet/r1/exec/assumption_catalogue.md",
+  "line": 30,
+  "note": "[representation] canonical decimal formatting not specified",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,64 @@
+{
+ "summary": {
+  "records_union": 363,
+  "equivalence_strict": 0.9945,
+  "equivalence_business": 0.9945,
+  "divergent_records": 2,
+  "silent_records": 2,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 0,
+  "flags_unneeded": 0,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9942,
+    "page_totals_equal": false,
+    "pages_golden": 17,
+    "pages_candidate": 17
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 362,
+   "candidate": 363,
+   "equal_strict": 361,
+   "equal_business": 361,
+   "union": 363
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTACCT/silent": 1,
+  "R-REPT-LASTDUP/silent": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": false
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79233.78",
+   "cand": "79213.35",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [],
+ "excluded": []
+}

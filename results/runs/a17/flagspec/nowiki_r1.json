@@ -1,0 +1,16 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 33, "A4 formula /1200 from recalled analogue; no statement in the pages, flagged"],
+  ["R-INT-TRUNC", 33, "A4 truncation from recalled analogue, flagged"],
+  ["R-INT-TXID", 39, "A5 input order not stated"],
+  ["R-INT-CYC", 43, "A6 cycle reset: pages give no rule"],
+  ["R-INT-APPLY", 43, "A6 account update: pages give no rule"],
+  ["R-INT-RATE", 49, "A7 DEFAULT fallback from recalled analogue, not the pages"],
+  ["R-INT-RATE", 53, "A8 zero/missing rate: from analogue"],
+  ["R-INT-ZERO", 53, "A8 0.00 transactions written: from analogue"],
+  ["R-INT-TXFORMAT", 58, "A9 card choice not stated anywhere"],
+  ["R-INT-TXID", 65, "A10 id construction from analogue"],
+  ["R-INT-RATE", 69, "A11 orphan balances: not addressed"],
+  ["R-INT-TXFORMAT", 73, "A12 constant fields from analogue only"],
+  ["R-INT-LAST", 80, "A13 last account updated; switch to reproduce the recalled defect, flagged"]
+ ]}

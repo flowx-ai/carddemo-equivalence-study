@@ -1,0 +1,114 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 18,
+  "note": "A1 per-category balance, against the wiki's formula",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 26,
+  "note": "A2 rate units: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 31,
+  "note": "A3 AC TODO rounding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 37,
+  "note": "A4 key and fallback not in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 47,
+  "note": "A6 AC 3 doesn't say whether a transaction is written",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 51,
+  "note": "A7 fees: wiki mentions only interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 55,
+  "note": "A8a wiki silent on the transaction record",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 55,
+  "note": "A8a wiki silent on the transaction record",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 73,
+  "note": "A8 cycle reset not in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 78,
+  "note": "A9 oracle may differ for the last account; declared",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 93,
+  "note": "A12 order",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 93,
+  "note": "A12 unknown accounts",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+  "line": 103,
+  "note": "A13 DISCGRP layout not in wiki",
+  "origin": "build"
+ }
+]

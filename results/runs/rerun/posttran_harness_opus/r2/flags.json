@@ -1,0 +1,240 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 50,
+  "note": "[account-layout] copybook itself absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 50,
+  "note": "[account-layout] copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 51,
+  "note": "[transaction-layout] shared prefix unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 52,
+  "note": "[xref-layout] posting lookup mechanism unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 54,
+  "note": "[category-layout] original copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 55,
+  "note": "[numeric-decoding] signed encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 55,
+  "note": "[numeric-decoding] signed encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 57,
+  "note": "[rounding] overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 57,
+  "note": "[rounding] overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 58,
+  "note": "[master-errors] duplicate or malformed-master handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 58,
+  "note": "[master-errors] handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 59,
+  "note": "[transaction-errors] malformed-record policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 60,
+  "note": "[order] ordering/deduplication semantics absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 61,
+  "note": "[validation] Y and treatment by type are assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 61,
+  "note": "[validation] Y assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 61,
+  "note": "[validation] treatment by type assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 62,
+  "note": "[reasons] provisional codes; exact reasons absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 63,
+  "note": "[balances] cycle fields without posting arithmetic",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 64,
+  "note": "[new-category] missing-category policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r2/exec/workflow_6167ef84-0fce-411d-aad2-23ce104c8b67.md",
+  "line": 65,
+  "note": "[dates] GDG semantics TODO",
+  "origin": "build"
+ }
+]

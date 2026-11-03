@@ -1,0 +1,8 @@
+19a08c9a602cf03121f4acf71f9ccce10f628e10dcc7be9e66512d113ac0bd37  ./01-data-model/project-data-model.md
+046807ce951f3948d1a6873a09a493e1a68f65a4d0712ab6ba58c319832e7e94  ./02-processes/process-end-of-day-batch-chain.md
+0357ebd7be1b5aab1189c30a3716ede3d08a1e91a2a0f9b46d818c4b51ad3be6  ./02-processes/process-interest-calculation.md
+5025586467f268846b67cb16674da4383bf2155755bc76e059f98d060bffccee  ./04-integrations/workflow-account-data-access.md
+82fad6dd0ec79af7f76f7460d650aa91ccae1b34d63b3d21b020ff0ca7c738d4  ./04-integrations/workflow-reference-data-access.md
+8ae1ebb714f0d9c8a1af57eb1032ffeed0963efc89b4e33d136652dcc273602f  ./04-integrations/workflow-transaction-data-access.md
+955aca6f81227a905b21f8fd0a80aca6aed667d96ab5e7bfcce5a8389191c7ab  ./10-acceptance-criteria/acceptance-criteria-interest-calculation.md
+bfcffd408c58646640a3d394c0c819377d86f296f64c104dfee7a1abd463494e  ./CONTRACT.md

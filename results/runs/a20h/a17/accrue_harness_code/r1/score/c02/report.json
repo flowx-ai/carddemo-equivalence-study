@@ -1,0 +1,59 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 3,
+  "flags_unneeded": 3,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+   "line": 61,
+   "note": "string-tails: unused transaction string tails as spaces; sourceAbsent true",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+   "line": 62,
+   "note": "parameter-and-counter: parameter padding and counter wrap; sourceAbsent true",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+   "line": 64,
+   "note": "timestamp-zone: UTC as an implementation default; sourceAbsent true",
+   "origin": "build"
+  }
+ ]
+}

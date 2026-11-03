@@ -1,0 +1,247 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 68,
+  "note": "daily layout, no copybook",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 68,
+  "note": "daily layout, no copybook",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 69,
+  "note": "account layout inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 69,
+  "note": "account layout inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 71,
+  "note": "xref layout, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 72,
+  "note": "category layout inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 73,
+  "note": "physical encoding assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 73,
+  "note": "physical encoding assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 73,
+  "note": "physical encoding assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 74,
+  "note": "decimal punctuation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 74,
+  "note": "decimal punctuation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 74,
+  "note": "decimal punctuation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 83,
+  "note": "lookup path not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 84,
+  "note": "precedence not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 85,
+  "note": "reject reason provisional, source absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 86,
+  "note": "reject reason provisional, source absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 90,
+  "note": "reject reason provisional, source absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 91,
+  "note": "order and running balance not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 91,
+  "note": "order and running balance not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 94,
+  "note": "cycle arithmetic not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 95,
+  "note": "cycle arithmetic not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 92,
+  "note": "exact arithmetic not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 96,
+  "note": "absent category not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 97,
+  "note": "duplicate handling not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 98,
+  "note": "timestamp rewrite not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 98,
+  "note": "timestamp rewrite not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 100,
+  "note": "expiry validation not listed, none applied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 104,
+  "note": "no corrupt field policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 106,
+  "note": "trailing space trimming not authorized",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 107,
+  "note": "duplicate snapshot keys not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md",
+  "line": 107,
+  "note": "duplicate snapshot keys not defined",
+  "origin": "build"
+ }
+]

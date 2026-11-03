@@ -1,0 +1,37 @@
+[
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+  "line": 46,
+  "note": "A-12 assumed STOP RUN keeps records written before an abend",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+  "line": 85,
+  "note": "A-04 duplicate keys: assumed load behaviour",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+  "line": 89,
+  "note": "A-05 card choice with several cards: decision where the source is silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+  "line": 101,
+  "note": "A-03 non-digit bytes read as 0",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_code/r3/builder/assumptions.md",
+  "line": 109,
+  "note": "A-11 overflow, environment-dependent",
+  "origin": "build"
+ }
+]

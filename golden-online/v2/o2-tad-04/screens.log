@@ -1,0 +1,343 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|8|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |8|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COTRN02C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COTRN2A  mapset COTRN02  from COTRN02C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CT02|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN02C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACTIDIN  I ||
+  CARDNIN  N ||
+  TTYPCD   I ||
+  TCATCD   I ||
+  TRNSRC   I ||
+  TDESC    I ||
+  TRNAMT   I ||
+  TORIGDT  I ||
+  TPROCDT  I ||
+  MID      I ||
+  MNAME    I ||
+  MCITY    I ||
+  MZIP     I ||
+  CONFIRM  N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   4: ENTER
+INPUT aid=ENTER CARDNIN=|4859452612877065|
+=== task   4 tran CT02 program COTRN02C aid ENTER calen      218
+RECEIVE MAP COTRN2A  into COTRN02C site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT02|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN02C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in ACTIDIN  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in CARDNIN  len  16 mdt=T |4859452612877065|
+  in TTYPCD   len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TCATCD   len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TRNSRC   len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TDESC    len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TRNAMT   len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TORIGDT  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in TPROCDT  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in MID      len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in MNAME    len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in MCITY    len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in MZIP     len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in CONFIRM  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP COTRN2A  mapset COTRN02  from COTRN02C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CT02|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN02C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACTIDIN  D |00000000007|
+  CARDNIN  D |4859452612877065|
+  TTYPCD   D ||
+  TCATCD   D ||
+  TRNSRC   D ||
+  TDESC    D ||
+  TRNAMT   D ||
+  TORIGDT  D ||
+  TPROCDT  D ||
+  MID      D ||
+  MNAME    D ||
+  MCITY    D ||
+  MZIP     D ||
+  CONFIRM  N ||
+  ERRMSG   D |Type CD can NOT be empty...|
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   5: PF5
+INPUT aid=PF5
+=== task   5 tran CT02 program COTRN02C aid PF5   calen      218
+RECEIVE MAP COTRN2A  into COTRN02C site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT02|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN02C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in ACTIDIN  len  11 mdt=F R-MDT-FSET |00000000007|
+  in CARDNIN  len  16 mdt=F R-MDT-FSET |4859452612877065|
+  in TTYPCD   len   2 mdt=F R-MDT-FSET ||
+  in TCATCD   len   4 mdt=F R-MDT-FSET ||
+  in TRNSRC   len  10 mdt=F R-MDT-FSET ||
+  in TDESC    len  60 mdt=F R-MDT-FSET ||
+  in TRNAMT   len  12 mdt=F R-MDT-FSET ||
+  in TORIGDT  len  10 mdt=F R-MDT-FSET ||
+  in TPROCDT  len  10 mdt=F R-MDT-FSET ||
+  in MID      len   9 mdt=F R-MDT-FSET ||
+  in MNAME    len  30 mdt=F R-MDT-FSET ||
+  in MCITY    len  25 mdt=F R-MDT-FSET ||
+  in MZIP     len  10 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Type CD can NOT be empty...|
+SEND MAP COTRN2A  mapset COTRN02  from COTRN02C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CT02|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN02C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACTIDIN  D |00000000007|
+  CARDNIN  D |4859452612877065|
+  TTYPCD   D |01|
+  TCATCD   D |0001|
+  TRNSRC   D |POS TERM|
+  TDESC    D |Purchase at Kilback LLC|
+  TRNAMT   D |+00000603.22|
+  TORIGDT  D |2022-06-10|
+  TPROCDT  D |2022-07-18|
+  MID      D |800000000|
+  MNAME    D |Kilback LLC|
+  MCITY    D |Cummeratamouth|
+  MZIP     D |53200-7529|
+  CONFIRM  N ||
+  ERRMSG   D |Confirm to add this transaction...|
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   6: ENTER
+INPUT aid=ENTER CONFIRM=|Y|
+=== task   6 tran CT02 program COTRN02C aid ENTER calen      218
+RECEIVE MAP COTRN2A  into COTRN02C site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT02|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN02C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in ACTIDIN  len  11 mdt=F R-MDT-FSET |00000000007|
+  in CARDNIN  len  16 mdt=F R-MDT-FSET |4859452612877065|
+  in TTYPCD   len   2 mdt=F R-MDT-FSET |01|
+  in TCATCD   len   4 mdt=F R-MDT-FSET |0001|
+  in TRNSRC   len  10 mdt=F R-MDT-FSET |POS TERM|
+  in TDESC    len  60 mdt=F R-MDT-FSET |Purchase at Kilback LLC|
+  in TRNAMT   len  12 mdt=F R-MDT-FSET |+00000603.22|
+  in TORIGDT  len  10 mdt=F R-MDT-FSET |2022-06-10|
+  in TPROCDT  len  10 mdt=F R-MDT-FSET |2022-07-18|
+  in MID      len   9 mdt=F R-MDT-FSET |800000000|
+  in MNAME    len  30 mdt=F R-MDT-FSET |Kilback LLC|
+  in MCITY    len  25 mdt=F R-MDT-FSET |Cummeratamouth|
+  in MZIP     len  10 mdt=F R-MDT-FSET |53200-7529|
+  in CONFIRM  len   1 mdt=T |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Confirm to add this transaction...|
+SEND MAP COTRN2A  mapset COTRN02  from COTRN02C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CT02|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN02C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACTIDIN  D ||
+  CARDNIN  D ||
+  TTYPCD   D ||
+  TCATCD   D ||
+  TRNSRC   D ||
+  TDESC    D ||
+  TRNAMT   D ||
+  TORIGDT  D ||
+  TPROCDT  D ||
+  MID      D ||
+  MNAME    D ||
+  MCITY    D ||
+  MZIP     D ||
+  CONFIRM  D ||
+  ERRMSG   D |Transaction added successfully.  Your Tran ID is 0000000996722788.|
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   7: ENTER
+INPUT aid=ENTER CARDNIN=|9680294154603697| TTYPCD=|01| TCATCD=|0001| TRNSRC=|POS TERM| TDESC=|ONLINE TEST PURCHASE| TRNAMT=|+00000012.34| TORIGDT=|1500-01-01| TPROCDT=|2022-07-18| MID=|800000001| MNAME=|TEST MERCHANT| MCITY=|TESTVILLE| MZIP
+=== task   7 tran CT02 program COTRN02C aid ENTER calen      218
+RECEIVE MAP COTRN2A  into COTRN02C site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT02|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN02C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in ACTIDIN  len  11 mdt=F R-MDT-FSET ||
+  in CARDNIN  len  16 mdt=T |9680294154603697|
+  in TTYPCD   len   2 mdt=T |01|
+  in TCATCD   len   4 mdt=T |0001|
+  in TRNSRC   len   8 mdt=T R-RCV-PAD-BLANK |POS TERM|
+  in TDESC    len  20 mdt=T R-RCV-PAD-BLANK |ONLINE TEST PURCHASE|
+  in TRNAMT   len  12 mdt=T |+00000012.34|
+  in TORIGDT  len  10 mdt=T |1500-01-01|
+  in TPROCDT  len  10 mdt=T |2022-07-18|
+  in MID      len   9 mdt=T |800000001|
+  in MNAME    len  13 mdt=T R-RCV-PAD-BLANK |TEST MERCHANT|
+  in MCITY    len   9 mdt=T R-RCV-PAD-BLANK |TESTVILLE|
+  in MZIP     len   5 mdt=T R-RCV-PAD-BLANK |12345|
+  in CONFIRM  len   1 mdt=T |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Transaction added successfully.  Your Tran ID is 0000000996722788.|
+SEND MAP COTRN2A  mapset COTRN02  from COTRN02C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CT02|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN02C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACTIDIN  D ||
+  CARDNIN  D ||
+  TTYPCD   D ||
+  TCATCD   D ||
+  TRNSRC   D ||
+  TDESC    D ||
+  TRNAMT   D ||
+  TORIGDT  D ||
+  TPROCDT  D ||
+  MID      D ||
+  MNAME    D ||
+  MCITY    D ||
+  MZIP     D ||
+  CONFIRM  D ||
+  ERRMSG   D |Transaction added successfully.  Your Tran ID is 0000000996722789.|
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   8: PF3
+INPUT aid=PF3
+=== task   8 tran CT02 program COTRN02C aid PF3   calen      218
+RECEIVE MAP COTRN2A  into COTRN02C site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT02|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN02C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in ACTIDIN  len  11 mdt=F R-MDT-FSET ||
+  in CARDNIN  len  16 mdt=F R-MDT-FSET ||
+  in TTYPCD   len   2 mdt=F R-MDT-FSET ||
+  in TCATCD   len   4 mdt=F R-MDT-FSET ||
+  in TRNSRC   len  10 mdt=F R-MDT-FSET ||
+  in TDESC    len  60 mdt=F R-MDT-FSET ||
+  in TRNAMT   len  12 mdt=F R-MDT-FSET ||
+  in TORIGDT  len  10 mdt=F R-MDT-FSET ||
+  in TPROCDT  len  10 mdt=F R-MDT-FSET ||
+  in MID      len   9 mdt=F R-MDT-FSET ||
+  in MNAME    len  30 mdt=F R-MDT-FSET ||
+  in MCITY    len  25 mdt=F R-MDT-FSET ||
+  in MZIP     len  10 mdt=F R-MDT-FSET ||
+  in CONFIRM  len   1 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Transaction added successfully.  Your Tran ID is 0000000996722789.|
+--- XCTL in task   8 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      218
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

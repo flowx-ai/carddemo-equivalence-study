@@ -1,0 +1,759 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|6|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |6|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COTRN00C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D ||
+  SEL0001  I ||
+  TRNID01  D |0000000000683580|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Abshire-Lowe|
+  TAMT001  D |+00000504.77|
+  SEL0002  I ||
+  TRNID02  D |0000000001774260|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Return item at Nitzsche, N|
+  TAMT002  D |-00000919.00|
+  SEL0003  I ||
+  TRNID03  D |0000000006292564|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Ernser, Roob a|
+  TAMT003  D |+00000067.88|
+  SEL0004  I ||
+  TRNID04  D |0000000009101861|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Guann LLC|
+  TAMT004  D |+00000281.77|
+  SEL0005  I ||
+  TRNID05  D |0000000010142252|
+  TDATE05  D |06/10/22|
+  TDESC05  D |Purchase at Kertzmann-Scho|
+  TAMT005  D |+00000454.66|
+  SEL0006  I ||
+  TRNID06  D |0000000010229018|
+  TDATE06  D |06/10/22|
+  TDESC06  D |Purchase at Gislason-Medhu|
+  TAMT006  D |+00000849.99|
+  SEL0007  I ||
+  TRNID07  D |0000000016259484|
+  TDATE07  D |06/10/22|
+  TDESC07  D |Return item at Sipes Inc|
+  TAMT007  D |-00000056.77|
+  SEL0008  I ||
+  TRNID08  D |0000000017874199|
+  TDATE08  D |06/10/22|
+  TDESC08  D |Purchase at Legros Group|
+  TAMT008  D |+00000373.66|
+  SEL0009  I ||
+  TRNID09  D |0000000019065428|
+  TDATE09  D |06/10/22|
+  TDESC09  D |Return item at Turcotte Gr|
+  TAMT009  D |-00000535.88|
+  SEL0010  I ||
+  TRNID10  D |0000000021711604|
+  TDATE10  D |06/10/22|
+  TDESC10  D |Purchase at Gleason, Shana|
+  TAMT010  D |+00000416.11|
+  ERRMSG   D ||
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D ||
+  SEL0001  I ||
+  TRNID01  D |0000000000683580|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Abshire-Lowe|
+  TAMT001  D |+00000504.77|
+  SEL0002  I ||
+  TRNID02  D |0000000001774260|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Return item at Nitzsche, N|
+  TAMT002  D |-00000919.00|
+  SEL0003  I ||
+  TRNID03  D |0000000006292564|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Ernser, Roob a|
+  TAMT003  D |+00000067.88|
+  SEL0004  I ||
+  TRNID04  D |0000000009101861|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Guann LLC|
+  TAMT004  D |+00000281.77|
+  SEL0005  I ||
+  TRNID05  D |0000000010142252|
+  TDATE05  D |06/10/22|
+  TDESC05  D |Purchase at Kertzmann-Scho|
+  TAMT005  D |+00000454.66|
+  SEL0006  I ||
+  TRNID06  D |0000000010229018|
+  TDATE06  D |06/10/22|
+  TDESC06  D |Purchase at Gislason-Medhu|
+  TAMT006  D |+00000849.99|
+  SEL0007  I ||
+  TRNID07  D |0000000016259484|
+  TDATE07  D |06/10/22|
+  TDESC07  D |Return item at Sipes Inc|
+  TAMT007  D |-00000056.77|
+  SEL0008  I ||
+  TRNID08  D |0000000017874199|
+  TDATE08  D |06/10/22|
+  TDESC08  D |Purchase at Legros Group|
+  TAMT008  D |+00000373.66|
+  SEL0009  I ||
+  TRNID09  D |0000000019065428|
+  TDATE09  D |06/10/22|
+  TDESC09  D |Return item at Turcotte Gr|
+  TAMT009  D |-00000535.88|
+  SEL0010  I ||
+  TRNID10  D |0000000021711604|
+  TDATE10  D |06/10/22|
+  TDESC10  D |Purchase at Gleason, Shana|
+  TAMT010  D |+00000416.11|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CT00) commarea length 218
+##### step   4: ENTER
+INPUT aid=ENTER TRNIDIN=|0000000974167587|
+=== task   4 tran CT00 program COTRN00C aid ENTER calen      218
+RECEIVE MAP COTRN0A  into COTRN00C site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in PAGENUM  len   8 mdt=F R-MDT-FSET |00000001|
+  in TRNIDIN  len  16 mdt=T |0000000974167587|
+  in SEL0001  len   1 mdt=F R-MDT-FSET ||
+  in TRNID01  len  16 mdt=F R-MDT-FSET |0000000000683580|
+  in TDATE01  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC01  len  26 mdt=F R-MDT-FSET |Purchase at Abshire-Lowe|
+  in TAMT001  len  12 mdt=F R-MDT-FSET |+00000504.77|
+  in SEL0002  len   1 mdt=F R-MDT-FSET ||
+  in TRNID02  len  16 mdt=F R-MDT-FSET |0000000001774260|
+  in TDATE02  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC02  len  26 mdt=F R-MDT-FSET |Return item at Nitzsche, N|
+  in TAMT002  len  12 mdt=F R-MDT-FSET |-00000919.00|
+  in SEL0003  len   1 mdt=F R-MDT-FSET ||
+  in TRNID03  len  16 mdt=F R-MDT-FSET |0000000006292564|
+  in TDATE03  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC03  len  26 mdt=F R-MDT-FSET |Purchase at Ernser, Roob a|
+  in TAMT003  len  12 mdt=F R-MDT-FSET |+00000067.88|
+  in SEL0004  len   1 mdt=F R-MDT-FSET ||
+  in TRNID04  len  16 mdt=F R-MDT-FSET |0000000009101861|
+  in TDATE04  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC04  len  26 mdt=F R-MDT-FSET |Purchase at Guann LLC|
+  in TAMT004  len  12 mdt=F R-MDT-FSET |+00000281.77|
+  in SEL0005  len   1 mdt=F R-MDT-FSET ||
+  in TRNID05  len  16 mdt=F R-MDT-FSET |0000000010142252|
+  in TDATE05  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC05  len  26 mdt=F R-MDT-FSET |Purchase at Kertzmann-Scho|
+  in TAMT005  len  12 mdt=F R-MDT-FSET |+00000454.66|
+  in SEL0006  len   1 mdt=F R-MDT-FSET ||
+  in TRNID06  len  16 mdt=F R-MDT-FSET |0000000010229018|
+  in TDATE06  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC06  len  26 mdt=F R-MDT-FSET |Purchase at Gislason-Medhu|
+  in TAMT006  len  12 mdt=F R-MDT-FSET |+00000849.99|
+  in SEL0007  len   1 mdt=F R-MDT-FSET ||
+  in TRNID07  len  16 mdt=F R-MDT-FSET |0000000016259484|
+  in TDATE07  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC07  len  26 mdt=F R-MDT-FSET |Return item at Sipes Inc|
+  in TAMT007  len  12 mdt=F R-MDT-FSET |-00000056.77|
+  in SEL0008  len   1 mdt=F R-MDT-FSET ||
+  in TRNID08  len  16 mdt=F R-MDT-FSET |0000000017874199|
+  in TDATE08  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC08  len  26 mdt=F R-MDT-FSET |Purchase at Legros Group|
+  in TAMT008  len  12 mdt=F R-MDT-FSET |+00000373.66|
+  in SEL0009  len   1 mdt=F R-MDT-FSET ||
+  in TRNID09  len  16 mdt=F R-MDT-FSET |0000000019065428|
+  in TDATE09  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC09  len  26 mdt=F R-MDT-FSET |Return item at Turcotte Gr|
+  in TAMT009  len  12 mdt=F R-MDT-FSET |-00000535.88|
+  in SEL0010  len   1 mdt=F R-MDT-FSET ||
+  in TRNID10  len  16 mdt=F R-MDT-FSET |0000000021711604|
+  in TDATE10  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC10  len  26 mdt=F R-MDT-FSET |Purchase at Gleason, Shana|
+  in TAMT010  len  12 mdt=F R-MDT-FSET |+00000416.11|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D |0000000974167587|
+  SEL0001  D ||
+  TRNID01  D |0000000974167587|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Moore and Sons|
+  TAMT001  D |+00000402.22|
+  SEL0002  D ||
+  TRNID02  D |0000000976770816|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Purchase at Corkery-Barton|
+  TAMT002  D |+00000917.44|
+  SEL0003  D ||
+  TRNID03  D |0000000982241353|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Bins, Gorczany|
+  TAMT003  D |+00000765.66|
+  SEL0004  D ||
+  TRNID04  D |0000000996722787|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Kilback LLC|
+  TAMT004  D |+00000603.22|
+  SEL0005  D ||
+  TRNID05  D ||
+  TDATE05  D ||
+  TDESC05  D ||
+  TAMT005  D ||
+  SEL0006  D ||
+  TRNID06  D ||
+  TDATE06  D ||
+  TDESC06  D ||
+  TAMT006  D ||
+  SEL0007  D ||
+  TRNID07  D ||
+  TDATE07  D ||
+  TDESC07  D ||
+  TAMT007  D ||
+  SEL0008  D ||
+  TRNID08  D ||
+  TDATE08  D ||
+  TDESC08  D ||
+  TAMT008  D ||
+  SEL0009  D ||
+  TRNID09  D ||
+  TDATE09  D ||
+  TDESC09  D ||
+  TAMT009  D ||
+  SEL0010  D ||
+  TRNID10  D ||
+  TDATE10  D ||
+  TDESC10  D ||
+  TAMT010  D ||
+  ERRMSG   D |You have reached the bottom of the page...|
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D ||
+  SEL0001  D ||
+  TRNID01  D |0000000974167587|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Moore and Sons|
+  TAMT001  D |+00000402.22|
+  SEL0002  D ||
+  TRNID02  D |0000000976770816|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Purchase at Corkery-Barton|
+  TAMT002  D |+00000917.44|
+  SEL0003  D ||
+  TRNID03  D |0000000982241353|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Bins, Gorczany|
+  TAMT003  D |+00000765.66|
+  SEL0004  D ||
+  TRNID04  D |0000000996722787|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Kilback LLC|
+  TAMT004  D |+00000603.22|
+  SEL0005  D ||
+  TRNID05  D ||
+  TDATE05  D ||
+  TDESC05  D ||
+  TAMT005  D ||
+  SEL0006  D ||
+  TRNID06  D ||
+  TDATE06  D ||
+  TDESC06  D ||
+  TAMT006  D ||
+  SEL0007  D ||
+  TRNID07  D ||
+  TDATE07  D ||
+  TDESC07  D ||
+  TAMT007  D ||
+  SEL0008  D ||
+  TRNID08  D ||
+  TDATE08  D ||
+  TDESC08  D ||
+  TAMT008  D ||
+  SEL0009  D ||
+  TRNID09  D ||
+  TDATE09  D ||
+  TDESC09  D ||
+  TAMT009  D ||
+  SEL0010  D ||
+  TRNID10  D ||
+  TDATE10  D ||
+  TDESC10  D ||
+  TAMT010  D ||
+  ERRMSG   D |You have reached the bottom of the page...|
+task end: RETURN TRANSID(CT00) commarea length 218
+##### step   5: PF8
+INPUT aid=PF8
+=== task   5 tran CT00 program COTRN00C aid PF8   calen      218
+RECEIVE MAP COTRN0A  into COTRN00C site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in PAGENUM  len   8 mdt=F R-MDT-FSET |00000001|
+  in TRNIDIN  len  16 mdt=F R-MDT-FSET ||
+  in SEL0001  len   1 mdt=F R-MDT-FSET ||
+  in TRNID01  len  16 mdt=F R-MDT-FSET |0000000974167587|
+  in TDATE01  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC01  len  26 mdt=F R-MDT-FSET |Purchase at Moore and Sons|
+  in TAMT001  len  12 mdt=F R-MDT-FSET |+00000402.22|
+  in SEL0002  len   1 mdt=F R-MDT-FSET ||
+  in TRNID02  len  16 mdt=F R-MDT-FSET |0000000976770816|
+  in TDATE02  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC02  len  26 mdt=F R-MDT-FSET |Purchase at Corkery-Barton|
+  in TAMT002  len  12 mdt=F R-MDT-FSET |+00000917.44|
+  in SEL0003  len   1 mdt=F R-MDT-FSET ||
+  in TRNID03  len  16 mdt=F R-MDT-FSET |0000000982241353|
+  in TDATE03  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC03  len  26 mdt=F R-MDT-FSET |Purchase at Bins, Gorczany|
+  in TAMT003  len  12 mdt=F R-MDT-FSET |+00000765.66|
+  in SEL0004  len   1 mdt=F R-MDT-FSET ||
+  in TRNID04  len  16 mdt=F R-MDT-FSET |0000000996722787|
+  in TDATE04  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC04  len  26 mdt=F R-MDT-FSET |Purchase at Kilback LLC|
+  in TAMT004  len  12 mdt=F R-MDT-FSET |+00000603.22|
+  in SEL0005  len   1 mdt=F R-MDT-FSET ||
+  in TRNID05  len  16 mdt=F R-MDT-FSET ||
+  in TDATE05  len   8 mdt=F R-MDT-FSET ||
+  in TDESC05  len  26 mdt=F R-MDT-FSET ||
+  in TAMT005  len  12 mdt=F R-MDT-FSET ||
+  in SEL0006  len   1 mdt=F R-MDT-FSET ||
+  in TRNID06  len  16 mdt=F R-MDT-FSET ||
+  in TDATE06  len   8 mdt=F R-MDT-FSET ||
+  in TDESC06  len  26 mdt=F R-MDT-FSET ||
+  in TAMT006  len  12 mdt=F R-MDT-FSET ||
+  in SEL0007  len   1 mdt=F R-MDT-FSET ||
+  in TRNID07  len  16 mdt=F R-MDT-FSET ||
+  in TDATE07  len   8 mdt=F R-MDT-FSET ||
+  in TDESC07  len  26 mdt=F R-MDT-FSET ||
+  in TAMT007  len  12 mdt=F R-MDT-FSET ||
+  in SEL0008  len   1 mdt=F R-MDT-FSET ||
+  in TRNID08  len  16 mdt=F R-MDT-FSET ||
+  in TDATE08  len   8 mdt=F R-MDT-FSET ||
+  in TDESC08  len  26 mdt=F R-MDT-FSET ||
+  in TAMT008  len  12 mdt=F R-MDT-FSET ||
+  in SEL0009  len   1 mdt=F R-MDT-FSET ||
+  in TRNID09  len  16 mdt=F R-MDT-FSET ||
+  in TDATE09  len   8 mdt=F R-MDT-FSET ||
+  in TDESC09  len  26 mdt=F R-MDT-FSET ||
+  in TAMT009  len  12 mdt=F R-MDT-FSET ||
+  in SEL0010  len   1 mdt=F R-MDT-FSET ||
+  in TRNID10  len  16 mdt=F R-MDT-FSET ||
+  in TDATE10  len   8 mdt=F R-MDT-FSET ||
+  in TDESC10  len  26 mdt=F R-MDT-FSET ||
+  in TAMT010  len  12 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |You have reached the bottom of the page...|
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0005 opts CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D ||
+  SEL0001  D ||
+  TRNID01  D |0000000974167587|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Moore and Sons|
+  TAMT001  D |+00000402.22|
+  SEL0002  D ||
+  TRNID02  D |0000000976770816|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Purchase at Corkery-Barton|
+  TAMT002  D |+00000917.44|
+  SEL0003  D ||
+  TRNID03  D |0000000982241353|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Bins, Gorczany|
+  TAMT003  D |+00000765.66|
+  SEL0004  D ||
+  TRNID04  D |0000000996722787|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Kilback LLC|
+  TAMT004  D |+00000603.22|
+  SEL0005  D ||
+  TRNID05  D ||
+  TDATE05  D ||
+  TDESC05  D ||
+  TAMT005  D ||
+  SEL0006  D ||
+  TRNID06  D ||
+  TDATE06  D ||
+  TDESC06  D ||
+  TAMT006  D ||
+  SEL0007  D ||
+  TRNID07  D ||
+  TDATE07  D ||
+  TDESC07  D ||
+  TAMT007  D ||
+  SEL0008  D ||
+  TRNID08  D ||
+  TDATE08  D ||
+  TDESC08  D ||
+  TAMT008  D ||
+  SEL0009  D ||
+  TRNID09  D ||
+  TDATE09  D ||
+  TDESC09  D ||
+  TAMT009  D ||
+  SEL0010  D ||
+  TRNID10  D ||
+  TDATE10  D ||
+  TDESC10  D ||
+  TAMT010  D ||
+  ERRMSG   D |You are already at the bottom of the page...|
+task end: RETURN TRANSID(CT00) commarea length 218
+##### step   6: ENTER
+INPUT aid=ENTER TRNIDIN=|ABC|
+=== task   6 tran CT00 program COTRN00C aid ENTER calen      218
+RECEIVE MAP COTRN0A  into COTRN00C site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in PAGENUM  len   8 mdt=F R-MDT-FSET |00000001|
+  in TRNIDIN  len   3 mdt=T R-RCV-PAD-BLANK |ABC|
+  in SEL0001  len   1 mdt=F R-MDT-FSET ||
+  in TRNID01  len  16 mdt=F R-MDT-FSET |0000000974167587|
+  in TDATE01  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC01  len  26 mdt=F R-MDT-FSET |Purchase at Moore and Sons|
+  in TAMT001  len  12 mdt=F R-MDT-FSET |+00000402.22|
+  in SEL0002  len   1 mdt=F R-MDT-FSET ||
+  in TRNID02  len  16 mdt=F R-MDT-FSET |0000000976770816|
+  in TDATE02  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC02  len  26 mdt=F R-MDT-FSET |Purchase at Corkery-Barton|
+  in TAMT002  len  12 mdt=F R-MDT-FSET |+00000917.44|
+  in SEL0003  len   1 mdt=F R-MDT-FSET ||
+  in TRNID03  len  16 mdt=F R-MDT-FSET |0000000982241353|
+  in TDATE03  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC03  len  26 mdt=F R-MDT-FSET |Purchase at Bins, Gorczany|
+  in TAMT003  len  12 mdt=F R-MDT-FSET |+00000765.66|
+  in SEL0004  len   1 mdt=F R-MDT-FSET ||
+  in TRNID04  len  16 mdt=F R-MDT-FSET |0000000996722787|
+  in TDATE04  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC04  len  26 mdt=F R-MDT-FSET |Purchase at Kilback LLC|
+  in TAMT004  len  12 mdt=F R-MDT-FSET |+00000603.22|
+  in SEL0005  len   1 mdt=F R-MDT-FSET ||
+  in TRNID05  len  16 mdt=F R-MDT-FSET ||
+  in TDATE05  len   8 mdt=F R-MDT-FSET ||
+  in TDESC05  len  26 mdt=F R-MDT-FSET ||
+  in TAMT005  len  12 mdt=F R-MDT-FSET ||
+  in SEL0006  len   1 mdt=F R-MDT-FSET ||
+  in TRNID06  len  16 mdt=F R-MDT-FSET ||
+  in TDATE06  len   8 mdt=F R-MDT-FSET ||
+  in TDESC06  len  26 mdt=F R-MDT-FSET ||
+  in TAMT006  len  12 mdt=F R-MDT-FSET ||
+  in SEL0007  len   1 mdt=F R-MDT-FSET ||
+  in TRNID07  len  16 mdt=F R-MDT-FSET ||
+  in TDATE07  len   8 mdt=F R-MDT-FSET ||
+  in TDESC07  len  26 mdt=F R-MDT-FSET ||
+  in TAMT007  len  12 mdt=F R-MDT-FSET ||
+  in SEL0008  len   1 mdt=F R-MDT-FSET ||
+  in TRNID08  len  16 mdt=F R-MDT-FSET ||
+  in TDATE08  len   8 mdt=F R-MDT-FSET ||
+  in TDESC08  len  26 mdt=F R-MDT-FSET ||
+  in TAMT008  len  12 mdt=F R-MDT-FSET ||
+  in SEL0009  len   1 mdt=F R-MDT-FSET ||
+  in TRNID09  len  16 mdt=F R-MDT-FSET ||
+  in TDATE09  len   8 mdt=F R-MDT-FSET ||
+  in TDESC09  len  26 mdt=F R-MDT-FSET ||
+  in TAMT009  len  12 mdt=F R-MDT-FSET ||
+  in SEL0010  len   1 mdt=F R-MDT-FSET ||
+  in TRNID10  len  16 mdt=F R-MDT-FSET ||
+  in TDATE10  len   8 mdt=F R-MDT-FSET ||
+  in TDESC10  len  26 mdt=F R-MDT-FSET ||
+  in TAMT010  len  12 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |You are already at the bottom of the page...|
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D |ABC|
+  SEL0001  D ||
+  TRNID01  D |0000000974167587|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Moore and Sons|
+  TAMT001  D |+00000402.22|
+  SEL0002  D ||
+  TRNID02  D |0000000976770816|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Purchase at Corkery-Barton|
+  TAMT002  D |+00000917.44|
+  SEL0003  D ||
+  TRNID03  D |0000000982241353|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Bins, Gorczany|
+  TAMT003  D |+00000765.66|
+  SEL0004  D ||
+  TRNID04  D |0000000996722787|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Kilback LLC|
+  TAMT004  D |+00000603.22|
+  SEL0005  D ||
+  TRNID05  D ||
+  TDATE05  D ||
+  TDESC05  D ||
+  TAMT005  D ||
+  SEL0006  D ||
+  TRNID06  D ||
+  TDATE06  D ||
+  TDESC06  D ||
+  TAMT006  D ||
+  SEL0007  D ||
+  TRNID07  D ||
+  TDATE07  D ||
+  TDESC07  D ||
+  TAMT007  D ||
+  SEL0008  D ||
+  TRNID08  D ||
+  TDATE08  D ||
+  TDESC08  D ||
+  TAMT008  D ||
+  SEL0009  D ||
+  TRNID09  D ||
+  TDATE09  D ||
+  TDESC09  D ||
+  TAMT009  D ||
+  SEL0010  D ||
+  TRNID10  D ||
+  TDATE10  D ||
+  TDESC10  D ||
+  TAMT010  D ||
+  ERRMSG   D |Tran ID must be Numeric ...|
+task end: RETURN TRANSID(CT00) commarea length 218
+##### step   7: ENTER
+INPUT aid=ENTER TRNIDIN=|0000000999999999|
+=== task   7 tran CT00 program COTRN00C aid ENTER calen      218
+RECEIVE MAP COTRN0A  into COTRN00C site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CT00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COTRN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in PAGENUM  len   8 mdt=F R-MDT-FSET |00000001|
+  in TRNIDIN  len  16 mdt=T |0000000999999999|
+  in SEL0001  len   1 mdt=F R-MDT-FSET ||
+  in TRNID01  len  16 mdt=F R-MDT-FSET |0000000974167587|
+  in TDATE01  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC01  len  26 mdt=F R-MDT-FSET |Purchase at Moore and Sons|
+  in TAMT001  len  12 mdt=F R-MDT-FSET |+00000402.22|
+  in SEL0002  len   1 mdt=F R-MDT-FSET ||
+  in TRNID02  len  16 mdt=F R-MDT-FSET |0000000976770816|
+  in TDATE02  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC02  len  26 mdt=F R-MDT-FSET |Purchase at Corkery-Barton|
+  in TAMT002  len  12 mdt=F R-MDT-FSET |+00000917.44|
+  in SEL0003  len   1 mdt=F R-MDT-FSET ||
+  in TRNID03  len  16 mdt=F R-MDT-FSET |0000000982241353|
+  in TDATE03  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC03  len  26 mdt=F R-MDT-FSET |Purchase at Bins, Gorczany|
+  in TAMT003  len  12 mdt=F R-MDT-FSET |+00000765.66|
+  in SEL0004  len   1 mdt=F R-MDT-FSET ||
+  in TRNID04  len  16 mdt=F R-MDT-FSET |0000000996722787|
+  in TDATE04  len   8 mdt=F R-MDT-FSET |06/10/22|
+  in TDESC04  len  26 mdt=F R-MDT-FSET |Purchase at Kilback LLC|
+  in TAMT004  len  12 mdt=F R-MDT-FSET |+00000603.22|
+  in SEL0005  len   1 mdt=F R-MDT-FSET ||
+  in TRNID05  len  16 mdt=F R-MDT-FSET ||
+  in TDATE05  len   8 mdt=F R-MDT-FSET ||
+  in TDESC05  len  26 mdt=F R-MDT-FSET ||
+  in TAMT005  len  12 mdt=F R-MDT-FSET ||
+  in SEL0006  len   1 mdt=F R-MDT-FSET ||
+  in TRNID06  len  16 mdt=F R-MDT-FSET ||
+  in TDATE06  len   8 mdt=F R-MDT-FSET ||
+  in TDESC06  len  26 mdt=F R-MDT-FSET ||
+  in TAMT006  len  12 mdt=F R-MDT-FSET ||
+  in SEL0007  len   1 mdt=F R-MDT-FSET ||
+  in TRNID07  len  16 mdt=F R-MDT-FSET ||
+  in TDATE07  len   8 mdt=F R-MDT-FSET ||
+  in TDESC07  len  26 mdt=F R-MDT-FSET ||
+  in TAMT007  len  12 mdt=F R-MDT-FSET ||
+  in SEL0008  len   1 mdt=F R-MDT-FSET ||
+  in TRNID08  len  16 mdt=F R-MDT-FSET ||
+  in TDATE08  len   8 mdt=F R-MDT-FSET ||
+  in TDESC08  len  26 mdt=F R-MDT-FSET ||
+  in TAMT008  len  12 mdt=F R-MDT-FSET ||
+  in SEL0009  len   1 mdt=F R-MDT-FSET ||
+  in TRNID09  len  16 mdt=F R-MDT-FSET ||
+  in TDATE09  len   8 mdt=F R-MDT-FSET ||
+  in TDESC09  len  26 mdt=F R-MDT-FSET ||
+  in TAMT009  len  12 mdt=F R-MDT-FSET ||
+  in SEL0010  len   1 mdt=F R-MDT-FSET ||
+  in TRNID10  len  16 mdt=F R-MDT-FSET ||
+  in TDATE10  len   8 mdt=F R-MDT-FSET ||
+  in TDESC10  len  26 mdt=F R-MDT-FSET ||
+  in TAMT010  len  12 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Tran ID must be Numeric ...|
+SEND MAP COTRN0A  mapset COTRN00  from COTRN00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CT00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COTRN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENUM  D |00000001|
+  TRNIDIN  D |0000000999999999|
+  SEL0001  D ||
+  TRNID01  D |0000000974167587|
+  TDATE01  D |06/10/22|
+  TDESC01  D |Purchase at Moore and Sons|
+  TAMT001  D |+00000402.22|
+  SEL0002  D ||
+  TRNID02  D |0000000976770816|
+  TDATE02  D |06/10/22|
+  TDESC02  D |Purchase at Corkery-Barton|
+  TAMT002  D |+00000917.44|
+  SEL0003  D ||
+  TRNID03  D |0000000982241353|
+  TDATE03  D |06/10/22|
+  TDESC03  D |Purchase at Bins, Gorczany|
+  TAMT003  D |+00000765.66|
+  SEL0004  D ||
+  TRNID04  D |0000000996722787|
+  TDATE04  D |06/10/22|
+  TDESC04  D |Purchase at Kilback LLC|
+  TAMT004  D |+00000603.22|
+  SEL0005  D ||
+  TRNID05  D ||
+  TDATE05  D ||
+  TDESC05  D ||
+  TAMT005  D ||
+  SEL0006  D ||
+  TRNID06  D ||
+  TDATE06  D ||
+  TDESC06  D ||
+  TAMT006  D ||
+  SEL0007  D ||
+  TRNID07  D ||
+  TDATE07  D ||
+  TDESC07  D ||
+  TAMT007  D ||
+  SEL0008  D ||
+  TRNID08  D ||
+  TDATE08  D ||
+  TDESC08  D ||
+  TAMT008  D ||
+  SEL0009  D ||
+  TRNID09  D ||
+  TDATE09  D ||
+  TDESC09  D ||
+  TAMT009  D ||
+  SEL0010  D ||
+  TRNID10  D ||
+  TDATE10  D ||
+  TDESC10  D ||
+  TAMT010  D ||
+  ERRMSG   D |You are at the top of the page...|
+ABEND AEIP (unhandled condition, R-COND-ABEND) in COTRN00C site 0010
+task end: ABEND AEIP
+END outcome=OK

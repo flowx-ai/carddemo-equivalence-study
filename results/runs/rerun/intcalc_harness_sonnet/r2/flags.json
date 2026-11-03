@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 49,
+  "note": "[full copybooks] offsets inferred; full copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 52,
+  "note": "[truncate versus ROUNDED] left unconfirmed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 54,
+  "note": "[untouched accounts] not described",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 57,
+  "note": "[card selection] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 58,
+  "note": "[merchant_id] values not assigned",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 59,
+  "note": "[timestamp contents] not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 60,
+  "note": "[suffix start] start and tie order unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r2/exec/workflow_e343813b-388f-49a7-bd2e-0e284a9d910f.md",
+  "line": 61,
+  "note": "[missing-default] no terminal policy",
+  "origin": "build"
+ }
+]

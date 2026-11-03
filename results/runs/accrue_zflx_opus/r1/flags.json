@@ -1,0 +1,170 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 24,
+  "note": "A-01 per category balance, against the wiki formula (TODO)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 34,
+  "note": "A-02 rate key: no RATEGRP layout in wiki (CardDemo key)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 40,
+  "note": "A-03 DEFAULT fallback: no wiki statement",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 47,
+  "note": "A-04 /1200 not in wiki; presumed legacy CBACT04C",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 52,
+  "note": "A-05 AC TODO rounding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 58,
+  "note": "A-06 zero-amount transaction: wiki does not say; presumed legacy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 63,
+  "note": "A-07 negative balances: no sign rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 67,
+  "note": "A-08 status not mentioned",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 73,
+  "note": "A-09 transaction granularity: wiki never says",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 78,
+  "note": "A-10 tran_id: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 82,
+  "note": "A-11 type/category: no wiki statement",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 87,
+  "note": "A-12 source/desc/merchant: no wiki statement; presumed legacy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 91,
+  "note": "A-13 card number: no wiki statement",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 101,
+  "note": "A-15 processing order: no wiki statement",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 109,
+  "note": "A-16 cycle reset: wiki says nothing; presumed legacy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 119,
+  "note": "A-18 last account posted; names the legacy end-of-file quirk",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 130,
+  "note": "A-20 fees: wiki describes interest only",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 135,
+  "note": "A-21 missing reference data: no error-handling section",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 141,
+  "note": "A-22 duplicates: first wins",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 155,
+  "note": "A-23 rategrp layout not in wiki at all (CardDemo DISCGRP)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r1/builder/out/assumptions.md",
+  "line": 160,
+  "note": "A-24 sign encoding: no SIGN clause",
+  "origin": "build"
+ }
+]

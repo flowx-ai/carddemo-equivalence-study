@@ -1,0 +1,116 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             COCRDUPC resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COCRDUPC (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   3 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   3 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   4: ENTER
+=== task   4 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   4 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   4 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COCRDUPC s0007 READ             CARDDAT  key=4859452612877065 resp=        0 resp2=        0 rules=
+T   4 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   4 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   5: ENTER
+=== task   5 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   5 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   5 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   5 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   5 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   6: ENTER
+=== task   6 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   6 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   6 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   6 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   7: ENTER
+=== task   7 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   7 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   7 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   7 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   7 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   8: ENTER
+=== task   8 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   8 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   8 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   8 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   8 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step   9: ENTER
+=== task   9 tran CCUP program COCRDUPC aid ENTER calen     2000
+T   9 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T   9 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   9 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T   9 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  10: ENTER
+=== task  10 tran CCUP program COCRDUPC aid ENTER calen     2000
+T  10 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  10 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  10 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T  10 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  11: PF12
+=== task  11 tran CCUP program COCRDUPC aid PF12  calen     2000
+T  11 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  11 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  11 COCRDUPC s0007 READ             CARDDAT  key=4859452612877065 resp=        0 resp2=        0 rules=
+T  11 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T  11 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  12: ENTER
+=== task  12 tran CCUP program COCRDUPC aid ENTER calen     2000
+T  12 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  12 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  12 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T  12 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  13: PF5
+=== task  13 tran CCUP program COCRDUPC aid PF5   calen     2000
+T  13 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  13 COCRDUPC s0005 RECEIVE-MAP      CCRDUPA  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T  13 COCRDUPC s0008 READ             CARDDAT  key=4859452612877065 resp=        0 resp2=        0 rules=
+T  13 COCRDUPC s0009 REWRITE          CARDDAT  resp=        0 resp2=        0 rules=
+T  13 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T  13 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  14: ENTER
+=== task  14 tran CCUP program COCRDUPC aid ENTER calen     2000
+T  14 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  14 COCRDUPC s0006 SEND-MAP         CCRDUPA  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,R-ATTR-OVERRIDE,
+T  14 COCRDUPC s0004 RETURN-TRANSID   CCUP     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CCUP) commarea length2000
+##### step  15: PF3
+=== task  15 tran CCUP program COCRDUPC aid PF3   calen     2000
+T  15 COCRDUPC s0001 HANDLE-ABEND     ABEND-RO resp=        0 resp2=        0 rules=
+T  15 COCRDUPC s0002 SYNCPOINT                 resp=        0 resp2=        0 rules=R-SYNC-NONE,
+T  15 COCRDUPC s0003 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task  15 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T  15 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T  15 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

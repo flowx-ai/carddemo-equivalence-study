@@ -1,0 +1,72 @@
+[
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 39,
+  "note": "nonzero rate writes a transaction even if rounded to zero: not separately specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 40,
+  "note": "accounts with no category balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 41,
+  "note": "suffix start, width and ordering not specified together",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 42,
+  "note": "suffix exhaustion and rerun idempotence not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 43,
+  "note": "card selection / missing card not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 44,
+  "note": "merchant field values not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 45,
+  "note": "generated timestamps not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 46,
+  "note": "interest-specific failure outcomes absent (no usable DEFAULT rate etc.)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 48,
+  "note": "fees marked as a DECISION; stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_harness_sonnet/r1/exec/workflow_ace23d42-f1b7-4e55-8637-e8a8a93ba2ee.md",
+  "line": 102,
+  "note": "duplicate/malformed lookup keys unstated",
+  "origin": "build"
+ }
+]

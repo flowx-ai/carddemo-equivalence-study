@@ -1,0 +1,7 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "outputs/assumptions.md #10; workflow accrue_interest_calculation node 'Compute interest per category balance' (BigInt division truncates toward zero); wiki BR-08 TODO truncate vs ROUNDED"},
+  {"rule": "R-LAST-ACCOUNT-NOT-UPDATED", "source": "outputs/assumptions.md #13; node 'Compute interest per category balance' (updateLastAccount default false); wiki BR-06 'At each change of account'"},
+  {"rule": "R-TRANID-SUFFIX", "source": "outputs/assumptions.md #18; tran_id = PARM + 6-digit suffix starting 000001; wiki BR-05"},
+  {"rule": "R-TXN-TIMESTAMP", "source": "outputs/assumptions.md #21; orig_ts/proc_ts = run clock in DB2 format; wiki silent"},
+  {"rule": "R-RATE-MISSING-STANDARD", "source": "outputs/assumptions.md #8; no group and no STANDARD row -> rate 0 + warning; wiki BR-02 silent on second miss"}
+]

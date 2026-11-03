@@ -1,0 +1,10 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:14 (monthlyInterestCents); output/assumptions.md A-06; wiki P-15 BR-08 TODO"},
+  {"rule": "R-INT-ZERO-BAL-TXN", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:100 (rate != 0 is the only gate); output/assumptions.md A-07"},
+  {"rule": "R-ACCT-RESET-NO-INTEREST", "source": "flowx/workflow-accrue_interest_calculation/03_update_accounts.js:25; output/assumptions.md A-13"},
+  {"rule": "R-STANDARD-MISSING", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:90; output/assumptions.md A-11"},
+  {"rule": "R-TRANID-SUFFIX", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:109; output/assumptions.md A-17"},
+  {"rule": "R-CARD-XREF", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:49; output/assumptions.md A-18"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:25; output/assumptions.md A-22"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/workflow-accrue_interest_calculation/02_calculate_interest.js:25; output/assumptions.md A-22"}
+]

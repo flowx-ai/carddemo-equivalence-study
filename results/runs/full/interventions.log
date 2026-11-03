@@ -1,0 +1,52 @@
+2026-11-02T08:27:01Z zflx profile full_ui added (--from dev-env) for the full-application study; no login, no token printed
+2026-11-02T08:28:02Z pilot: operator created config param RUN_TIMESTAMP in cd_full_pilot1 via fxc api (appmanager config-params)
+2026-11-02T09:23:01Z START full zflx build cd_a32_kk7_zflx_r1 (profile full_ui via proxy, claude-opus-5-5)
+2026-11-02T09:23:04Z operator set RUN_TIMESTAMP on cd_a32_kk7_zflx_r1 (config parameter, before the builder)
+2026-11-02T10:32:24Z END full zflx build cd_a32_kk7_zflx_r1
+2026-11-02T11:04:59Z START full zflx build cd_a32_kk7_zflx_r2 (profile full_ui via proxy, claude-opus-5-5)
+2026-11-02T11:05:02Z operator set RUN_TIMESTAMP on cd_a32_kk7_zflx_r2 (config parameter, before the builder)
+2026-11-02T12:20:22Z END full zflx build cd_a32_kk7_zflx_r2
+2026-11-02T21:16:58Z relogin all before r3 (logins from 06:44Z expired; no build or call in flight)
+2026-11-02T21:17:11Z START full zflx build cd_a32_kk7_zflx_r3 (profile full_ui via proxy, claude-opus-5-5)
+2026-11-02T21:17:13Z operator set RUN_TIMESTAMP on cd_a32_kk7_zflx_r3 (config parameter, before the builder)
+2026-11-02T22:30:49Z END full zflx build cd_a32_kk7_zflx_r3
+2026-11-03T00:08:50Z relogin all before A32 execution (infrastructure intervention; no call in flight)
+2026-11-03T00:09:22Z start A32 operator loaders on cd_a32_kk7_zflx_r2 (make-loader; instrument addition, not part of the build)
+2026-11-03T00:09:22Z aborted A32 loader cd_a32_kk7_zflx_r2 rc=1
+2026-11-03T00:09:52Z start A32 operator loaders on cd_a32_kk7_zflx_r2 (make-loader; instrument addition, not part of the build)
+2026-11-03T00:10:22Z end A32 operator loaders on cd_a32_kk7_zflx_r2
+2026-11-03T00:10:23Z start A32 online execution cd_a32_kk7_zflx_r2 (54 cases, workflow level)
+2026-11-03T00:39:07Z end A32 online execution cd_a32_kk7_zflx_r2
+2026-11-03T00:39:07Z start A32 browser cases cd_a32_kk7_zflx_r2 (<dev-environment>)
+2026-11-03T00:47:34Z end A32 browser cases cd_a32_kk7_zflx_r2
+2026-11-03T00:47:36Z start A32 batch execution cd_a32_kk7_zflx_r2 (23 cases, 4 core steps x 5 sets)
+2026-11-03T00:48:22Z end A32 batch execution cd_a32_kk7_zflx_r2
+2026-11-03T00:48:22Z start A32 e2e cd_a32_kk7_zflx_r2 (baseline, then 4 pairs on the online run's session stores)
+2026-11-03T00:49:06Z end A32 e2e cd_a32_kk7_zflx_r2
+2026-11-03T00:49:21Z start A32 operator loaders on cd_a32_kk7_zflx_r3 (make-loader; instrument addition, not part of the build)
+2026-11-03T00:49:50Z end A32 operator loaders on cd_a32_kk7_zflx_r3
+2026-11-03T00:49:51Z start A32 online execution cd_a32_kk7_zflx_r3 (54 cases, workflow level)
+2026-11-03T01:16:55Z end A32 online execution cd_a32_kk7_zflx_r3
+2026-11-03T01:16:56Z start A32 browser cases cd_a32_kk7_zflx_r3 (<dev-environment>)
+2026-11-03T01:25:45Z end A32 browser cases cd_a32_kk7_zflx_r3
+2026-11-03T01:25:47Z start A32 batch execution cd_a32_kk7_zflx_r3 (23 cases, 4 core steps x 5 sets)
+2026-11-03T01:26:33Z end A32 batch execution cd_a32_kk7_zflx_r3
+2026-11-03T01:26:33Z start A32 e2e cd_a32_kk7_zflx_r3 (baseline, then 4 pairs on the online run's session stores)
+2026-11-03T01:27:17Z end A32 e2e cd_a32_kk7_zflx_r3
+2026-11-03T01:27:23Z start A32 operator loaders on cd_a32_kk7_zflx_r1 (make-loader; instrument addition, not part of the build)
+2026-11-03T01:27:53Z end A32 operator loaders on cd_a32_kk7_zflx_r1
+2026-11-03T01:27:54Z start A32 online execution cd_a32_kk7_zflx_r1 (54 cases, workflow level)
+2026-11-03T01:54:32Z end A32 online execution cd_a32_kk7_zflx_r1
+2026-11-03T01:54:33Z start A32 browser cases cd_a32_kk7_zflx_r1 (<dev-environment>)
+2026-11-03T02:02:52Z end A32 browser cases cd_a32_kk7_zflx_r1
+2026-11-03T02:02:54Z start A32 batch execution cd_a32_kk7_zflx_r1 (23 cases, 4 core steps x 5 sets)
+2026-11-03T02:03:39Z end A32 batch execution cd_a32_kk7_zflx_r1
+2026-11-03T02:03:39Z start A32 e2e cd_a32_kk7_zflx_r1 (baseline, then 4 pairs on the online run's session stores)
+2026-11-03T02:03:49Z aborted A32 e2e cd_a32_kk7_zflx_r1 rc=1
+2026-11-03T02:11:43Z start A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r2 (<dev-environment> sensitivity only, replaces nothing)
+2026-11-03T02:20:28Z end A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r2
+2026-11-03T02:20:28Z start A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r3 (<dev-environment> sensitivity only, replaces nothing)
+2026-11-03T02:29:17Z end A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r3
+2026-11-03T02:29:18Z start A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r1 (<dev-environment> sensitivity only, replaces nothing)
+2026-11-03T02:38:00Z end A32 POST-HOC browser cases FIX11=1 cd_a32_kk7_zflx_r1
+2026-11-03T02:38:49Z released runs/PR2127_LOCK (A32 execution and post-hoc browser sensitivity complete)

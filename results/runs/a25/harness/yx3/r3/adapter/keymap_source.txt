@@ -1,0 +1,6 @@
+Read from runs/a25/harness/yx3/r3/exec/workflow_489e5e0e-ad86-4bfe-9a78-3b04aa4ea61c.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 28d6678b (head of the build branch, committed; plan PAUSED goal_at_risk at step 4 of 4, prove-statement-bands, after two A8 retries of harness-attributed item_evidence pauses; classification of the stop recorded in chain.log)
+- START (Read input records, lines 37-40): input.transact, acctdata, cardxref, custdata = file text strings, contract names (identity map)
+- END: Generate statements (line 178) writes creastmt_statements and creastmt_statements_html (newline-joined strings) at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: contract names, no decode map
+- MODE files
+- Register: assumptions_md numbered entries 1-17 at lines 161-177 (one per line)

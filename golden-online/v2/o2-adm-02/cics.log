@@ -1,0 +1,22 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CA00, ENTER
+=== task   1 tran CA00 program COADM01C aid ENTER calen        0
+T   1 COADM01C s0001 HANDLE-CONDITION PGMIDERR resp=        0 resp2=        0 rules=R-HANDLE-COND,
+T   1 COADM01C s0004 XCTL             COSGN00C resp=        0 resp2=        0 rules=
+--- XCTL in task   1 to program COSGN00C (EIBAID kept: R-XCTL-AID) calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: CLEAR, type CR00, ENTER
+=== task   2 tran CR00 program CORPT00C aid ENTER calen        0
+T   2 CORPT00C s0003 XCTL             COSGN00C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COSGN00C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=       36 resp2=        0 rules=R-RCV-UNFORMATTED,
+T   2 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+END outcome=OK

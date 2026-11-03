@@ -1,0 +1,15 @@
+{"wiki": [
+  ["R-POST-PRECEDENCE", "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md", 63, "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"],
+  ["R-POST-PRECEDENCE", "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md", 62, "DECISION: keep or collect all reject reasons"]],
+ "build": [
+  ["R-POST-WRITE", 32, "A4 type/category codes not checked; only rules with lookups applied"],
+  ["R-POST-PRECEDENCE", 45, "A6 103 overwrites 102; FI-06 both-reasons DECISION not implemented"],
+  ["R-POST-102", 56, "A7 tolerance implemented from the wiki; recalled CBTRN02C has none, flagged as uncertainty"],
+  ["R-POST-103", 61, "A8 blank expiry: wiki says nothing"],
+  ["R-POST-WRITE", 73, "A10 tran_id kept from daily record; wiki says nothing about allocating"],
+  ["R-POST-COPY", 95, "A14 reject trailer layout is a wiki TODO"],
+  ["R-POST-WRITE", 113, "A17 duplicate id inside one feed: wiki does not cover"],
+  ["R-POST-COPY", 126, "A19 sign encoding of the ASCII files not stated"],
+  ["R-POST-BAL", 126, "A19 sign encoding of the ASCII files not stated"],
+  ["R-POST-BAL", 133, "A20 duplicate master keys: wiki says nothing"]
+ ]}

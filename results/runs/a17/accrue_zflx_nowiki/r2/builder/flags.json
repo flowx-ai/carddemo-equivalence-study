@@ -1,0 +1,8 @@
+[
+  {"output": "accrue_ledgacc.json", "key": "last account in balcat key order: curr_bal, curr_cyc_credit, curr_cyc_debit not updated", "source": "assumptions.md A-12"},
+  {"output": "accrue_systxn.json", "key": "amt: truncation (not rounding) of bal*rate/1200", "source": "assumptions.md A-04"},
+  {"output": "accrue_systxn.json", "key": "orig_ts, proc_ts: business date midnight instead of wall clock", "source": "assumptions.md A-10"},
+  {"output": "accrue_systxn.json", "key": "tran_id sequence, type_cd/cat_cd/source/desc constants", "source": "assumptions.md A-08, A-09"},
+  {"output": "accrue_systxn.json", "key": "card_num choice when an account has several cards", "source": "assumptions.md A-11"},
+  {"output": "accrue_systxn.json", "key": "DEFAULT disclosure-group fallback", "source": "assumptions.md A-07"}
+]

@@ -1,0 +1,160 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 13,
+  "flags_unneeded": 12,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 50,
+   "intcalc_systran.proc_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 41,
+   "note": "A6 encoding of other signed fields not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 64,
+   "note": "A10 BR-08 TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 68,
+   "note": "A10 negative balances: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 71,
+   "note": "A11 DEFAULT missing: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 78,
+   "note": "A13 no rule for suppressing zero amounts",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 82,
+   "note": "A14 AC 7 fees open",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 87,
+   "note": "A15 suffix width not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 97,
+   "note": "A17 merchant fields: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 100,
+   "note": "A18 card number: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 126,
+   "note": "A23 orphan balances: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_sonnet/r2/builder/output/assumptions.md",
+   "line": 129,
+   "note": "A24 overflow: wiki silent",
+   "origin": "build"
+  }
+ ]
+}

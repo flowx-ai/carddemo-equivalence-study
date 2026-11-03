@@ -1,0 +1,6 @@
+[
+ {"acct_id": 1, "type_cd": "01", "cat_cd": 1, "bal": "170.00"},
+ {"acct_id": 1, "type_cd": "01", "cat_cd": 2, "bal": "25.00"},
+ {"acct_id": 4, "type_cd": "02", "cat_cd": 2, "bal": "-20.00"},
+ {"acct_id": 1, "type_cd": "03", "cat_cd": 1, "bal": "-5.00"}
+]

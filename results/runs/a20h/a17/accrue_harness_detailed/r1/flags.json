@@ -1,0 +1,51 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 71,
+  "note": "[layout] offsets reconstructed, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 72,
+  "note": "[rounding] BR-08 TODO: mode unresolved; truncation chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 74,
+  "note": "[sequence] initial suffix, ordering, restart unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 75,
+  "note": "[metadata] interest-specific population of other fields not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 76,
+  "note": "[accounts] accounts without category balances unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md",
+  "line": 77,
+  "note": "[failures] second-miss outcome, duplicates not specified",
+  "origin": "build"
+ }
+]

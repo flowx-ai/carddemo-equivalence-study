@@ -1,0 +1,3 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md:65 (A-09) — wiki BR-08 says ROUNDED half-away-from-zero and was implemented; legacy CBACT04C may truncate (no ROUNDED), unverified; flowx/intcalc_script.js divRoundHalfAway"}
+]

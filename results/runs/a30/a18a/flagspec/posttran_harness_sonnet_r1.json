@@ -1,0 +1,113 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "custdata": "custdata",
+  "carddata": "carddata",
+  "trantype": "trantype",
+  "trancatg": "trancatg"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version e0283246 (head of the build branch, plan COMPLETED, no retry)\n- START: nine file contents as text; MODE files\n- END: {\"result\": ${result}}; contract names inside\n- Register: manifest lines 46-63",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-POST-WRITE",
+   48,
+   "file encoding and physical layout inferred"
+  ],
+  [
+   "R-POST-COPY",
+   48,
+   "file encoding and physical layout inferred"
+  ],
+  [
+   "R-POST-WRITE",
+   49,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-POST-COPY",
+   49,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-POST-100",
+   50,
+   "account, xref and category offsets inferred"
+  ],
+  [
+   "R-POST-102",
+   50,
+   "account, xref and category offsets inferred"
+  ],
+  [
+   "R-POST-BAL",
+   50,
+   "account, xref and category offsets inferred"
+  ],
+  [
+   "R-POST-TCAT",
+   50,
+   "account, xref and category offsets inferred"
+  ],
+  [
+   "R-POST-WRITE",
+   51,
+   "overpunch conventions not specified"
+  ],
+  [
+   "R-POST-COPY",
+   51,
+   "overpunch conventions not specified"
+  ],
+  [
+   "R-POST-BAL",
+   51,
+   "overpunch conventions not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   51,
+   "overpunch conventions not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   52,
+   "category balance key type not marked"
+  ],
+  [
+   "R-POST-COPY",
+   53,
+   "record id preserved, wiki unresolved"
+  ],
+  [
+   "R-POST-COPY",
+   54,
+   "timestamp format, timezone unstated"
+  ],
+  [
+   "R-POST-WRITE",
+   56,
+   "malformed input, no reason code given"
+  ],
+  [
+   "R-POST-BAL",
+   58,
+   "duplicate master key, not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   58,
+   "duplicate master key, not specified"
+  ]
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version: 82f68808 (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Parse report inputs, lines 55-60): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate (defaults 2022-07-01/31)\n- END: Render transaction report (line 109) writes tranrept_report (line list) at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: contract name, no decode map\n- MODE files\n- Register: fact() entries at lines 84-95 (one per line); per-record warn() texts are run-time diagnostics, not register entries",
+ "build": [
+  [
+   "R-REPT-SET",
+   85,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   85,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   85,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   85,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   86,
+   "reference byte positions not tabulated"
+  ],
+  [
+   "R-REPT-XREF",
+   86,
+   "reference byte positions not tabulated"
+  ],
+  [
+   "R-REPT-AMT",
+   87,
+   "amount encoding detail absent"
+  ],
+  [
+   "R-REPT-ACCT",
+   87,
+   "amount encoding detail absent"
+  ],
+  [
+   "R-REPT-GRAND",
+   87,
+   "amount encoding detail absent"
+  ],
+  [
+   "R-REPT-SET",
+   88,
+   "no timezone policy"
+  ],
+  [
+   "R-REPT-HEADER",
+   89,
+   "lines per page unresolved"
+  ],
+  [
+   "R-REPT-SET",
+   90,
+   "secondary ordering silent"
+  ],
+  [
+   "R-REPT-HEADER",
+   90,
+   "coincident breaks silent"
+  ],
+  [
+   "R-REPT-ACCT",
+   90,
+   "coincident breaks silent"
+  ],
+  [
+   "R-REPT-ACCT",
+   91,
+   "detailed totals layout unconfirmed"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   91,
+   "detailed totals layout unconfirmed"
+  ],
+  [
+   "R-REPT-GRAND",
+   92,
+   "final footer order not fully defined"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   93,
+   "duplicate handling unstated; blank lookups chosen"
+  ],
+  [
+   "R-REPT-XREF",
+   93,
+   "duplicate handling unstated"
+  ],
+  [
+   "R-REPT-SET",
+   93,
+   "omission policy chosen by the maker"
+  ],
+  [
+   "R-REPT-AMT",
+   94,
+   "overflow display unstated"
+  ],
+  [
+   "R-REPT-ACCT",
+   94,
+   "overflow display unstated"
+  ],
+  [
+   "R-REPT-GRAND",
+   94,
+   "overflow display unstated"
+  ]
+ ],
+ "cr_rule": "line 70: type 01 + category 0005 skipped in selection before any detail or total. No register entry on the interest rule. R-REPT-SET carries flags from 85, 88, 90, 93 and the wiki TODO (rubric 5). No entry names end-of-file handling (no R-REPT-LASTDUP flag)."
+}

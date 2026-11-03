@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/ix3/r1/exec/workflow_f2cf32d6-8e61-46b8-ac26-3a93384c7fba.md (and the build's own README/register) before execution; no output opened.
+- START (README Input; register 2; script lines 81-84, 156-163): transact, cardxref, trantype, trancatg (file content), startDate, endDate
+- END (README Output; script line 308): tranrept_report (list of strings), contract name, no decode map
+- MODE files

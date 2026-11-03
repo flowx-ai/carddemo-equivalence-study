@@ -1,0 +1,191 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version dcf09fea (head of the build branch, plan COMPLETED)\n- START: transact, acctdata, cardxref, custdata; MODE files\n- END: top-level creastmt_statements, creastmt_statements_html, assumptions_md\n- Register: manifest lines 124-145",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-SET",
+   125,
+   "aggregation, status filter, duplicate xref unspecified"
+  ],
+  [
+   "R-STMT-TXN",
+   126,
+   "cycle filter TODO, tie handling unstated"
+  ],
+  [
+   "R-STMT-BAL",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-NAME",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-ADDR",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-FICO",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TXN",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-SET",
+   127,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-BAL",
+   128,
+   "account offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   129,
+   "xref offsets absent"
+  ],
+  [
+   "R-STMT-TXN",
+   130,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   131,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   131,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   131,
+   "customer offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   133,
+   "sign encoding assumed"
+  ],
+  [
+   "R-STMT-TXN",
+   133,
+   "sign encoding assumed"
+  ],
+  [
+   "R-STMT-TOTAL",
+   133,
+   "sign encoding assumed"
+  ],
+  [
+   "R-STMT-FICO",
+   134,
+   "conversion rules not stated"
+  ],
+  [
+   "R-STMT-NAME",
+   135,
+   "assembly absent"
+  ],
+  [
+   "R-STMT-ADDR",
+   135,
+   "assembly absent"
+  ],
+  [
+   "R-STMT-FICO",
+   136,
+   "blank defaults not defined"
+  ],
+  [
+   "R-STMT-SET",
+   137,
+   "duplicate resolution not described"
+  ],
+  [
+   "R-STMT-TXN",
+   137,
+   "duplicate resolution not described"
+  ],
+  [
+   "R-STMT-ABEND",
+   138,
+   "recovery not established"
+  ],
+  [
+   "R-STMT-SET",
+   138,
+   "recovery not established"
+  ],
+  [
+   "R-STMT-TOTAL",
+   139,
+   "precision and overflow unstated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   139,
+   "precision and overflow unstated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   140,
+   "overflow assumed"
+  ],
+  [
+   "R-STMT-BAL",
+   140,
+   "overflow assumed"
+  ],
+  [
+   "R-STMT-TOTAL",
+   140,
+   "overflow assumed"
+  ],
+  [
+   "R-STMT-SET",
+   141,
+   "separators and clipping not stated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   141,
+   "separators and clipping not stated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   142,
+   "expansion overflow assumed"
+  ],
+  [
+   "R-STMT-SET",
+   144,
+   "line handling not specified"
+  ]
+ ]
+}

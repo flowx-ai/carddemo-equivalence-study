@@ -1,0 +1,146 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 0.9903,
+  "equivalence_business": 0.9903,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 11,
+  "flags_unneeded": 10,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 53,
+   "intcalc_systran.proc_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 50,
+   "note": "A5 overpunch applied to every signed field; wiki shows it only for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 57,
+   "note": "A5 rate example 5 chars vs 6-byte field",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 71,
+   "note": "A8 BR-08 TODO; truncation chosen",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 88,
+   "note": "A11 STANDARD row missing too: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 103,
+   "note": "A14 balance without account: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 106,
+   "note": "A15 AC 7 fees DECISION; stub kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 112,
+   "note": "A16 suffix width and start not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 122,
+   "note": "A19 card number: BR-04 does not name one",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a17/accrue_zflx_detailed/r1/builder/assumptions.md",
+   "line": 127,
+   "note": "A20 merchant fields: BR-04 silent",
+   "origin": "build"
+  }
+ ]
+}

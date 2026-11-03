@@ -1,0 +1,107 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran",
+  "intcalc_acctdata": "intcalc_acctdata"
+ },
+ "source": "- A2 version 52f9c7ab (head of the build branch, plan COMPLETED, no retry)\n- START: file text, interestRunDate, businessDate; MODE files\n- END: result; contract names inside\n- Flags: entries stating silence or inference, each to the rule a divergence would produce",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-INT-RATE",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-INT-APPLY",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-INT-CYC",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-INT-TRUNC",
+   56,
+   "rounding confirmation left open"
+  ],
+  [
+   "R-INT-TXID",
+   61,
+   "suffix origin not specified"
+  ],
+  [
+   "R-INT-TXID",
+   62,
+   "id split inferred"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   63,
+   "timestamps not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   64,
+   "card selection not defined"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   65,
+   "merchant values not stated"
+  ],
+  [
+   "R-INT-CYC",
+   67,
+   "reset scope inferred"
+  ],
+  [
+   "R-INT-LAST",
+   67,
+   "reset scope inferred"
+  ],
+  [
+   "R-INT-RATE",
+   69,
+   "absent DEFAULT, malformed rate not specified"
+  ],
+  [
+   "R-INT-RATE",
+   70,
+   "duplicate keys not specified"
+  ],
+  [
+   "R-INT-RATE",
+   72,
+   "malformed recovery not specified"
+  ],
+  [
+   "R-INT-RATE",
+   73,
+   "overflow not specified"
+  ],
+  [
+   "R-INT-TXID",
+   73,
+   "overflow not specified"
+  ]
+ ]
+}

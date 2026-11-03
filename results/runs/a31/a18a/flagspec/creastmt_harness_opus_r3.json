@@ -1,0 +1,208 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "statementBatch"
+ },
+ "source": "- A2 version fbcb9f3e (head of the build branch, plan COMPLETED)\n- START: transact, acctdata, cardxref, custdata; MODE files\n- END: {\"statementBatch\": {...}}; contract names inside\n- Register: manifest lines 48-69",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-NAME",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-ADDR",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-FICO",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TXN",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-SET",
+   49,
+   "offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-BAL",
+   50,
+   "account and customer offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   50,
+   "account and customer offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   50,
+   "account and customer offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   50,
+   "account and customer offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   51,
+   "xref and transaction offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   51,
+   "xref and transaction offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   52,
+   "dump encoding not identified"
+  ],
+  [
+   "R-STMT-TXN",
+   52,
+   "dump encoding not identified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   52,
+   "dump encoding not identified"
+  ],
+  [
+   "R-STMT-SET",
+   53,
+   "separator rules assumed"
+  ],
+  [
+   "R-STMT-SET",
+   54,
+   "status filter, order and duplicate keys unspecified"
+  ],
+  [
+   "R-STMT-TXN",
+   55,
+   "selection among cards not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   56,
+   "filter and sort not specified"
+  ],
+  [
+   "R-STMT-SET",
+   56,
+   "filter and sort not specified"
+  ],
+  [
+   "R-STMT-BAL",
+   57,
+   "no recalculation rule"
+  ],
+  [
+   "R-STMT-TOTAL",
+   58,
+   "calculation deferred to absent sources"
+  ],
+  [
+   "R-STMT-TXN",
+   59,
+   "assembly not given"
+  ],
+  [
+   "R-STMT-NAME",
+   60,
+   "join not defined"
+  ],
+  [
+   "R-STMT-ADDR",
+   61,
+   "assembly not specified"
+  ],
+  [
+   "R-STMT-FICO",
+   62,
+   "conversion rules not given"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   63,
+   "overflow and zero display not stated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   63,
+   "overflow and zero display not stated"
+  ],
+  [
+   "R-STMT-BAL",
+   63,
+   "overflow and zero display not stated"
+  ],
+  [
+   "R-STMT-SET",
+   64,
+   "separators not stated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   64,
+   "separators not stated"
+  ],
+  [
+   "R-STMT-NAME",
+   65,
+   "no escaping rule"
+  ],
+  [
+   "R-STMT-ADDR",
+   65,
+   "no escaping rule"
+  ],
+  [
+   "R-STMT-SET",
+   66,
+   "no malformed-record policy"
+  ],
+  [
+   "R-STMT-ABEND",
+   66,
+   "no malformed-record policy"
+  ],
+  [
+   "R-STMT-ABEND",
+   67,
+   "missing and empty not distinguished"
+  ],
+  [
+   "R-STMT-SET",
+   67,
+   "missing and empty not distinguished"
+  ]
+ ]
+}

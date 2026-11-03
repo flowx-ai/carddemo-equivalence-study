@@ -1,0 +1,660 @@
+{
+ "build": "cd_a24_sf6_zflx_r2",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/a24_zflx/zFLX-a24",
+ "notes": [
+  "Written 2026-10-29 from the build's own definitions (runs/a24/zflx/r2/exec: ui_flow_1da3ee26\u2026json.md via tools/a24_map_helper.py, workflow_*.md, system_*.md, data_types.txt) and, for the END payload only, the build's own configure_end_node calls in its transcript (payload ${result} in all four UI workflows). Written before any workflow of the build was run and before any output was opened.",
+  "The builder session was cut off by the account's 7-day usage limit after 363 tool calls (rate_limit_event rejected, seven_day); this is not a builder decision. The build is scored as it stands (A24 \u00a77; coordinator ruling): latest project version, 0 flags (no register was written).",
+  "UI flow: one page (CardDemoPage) whose cards are shown by ${screen}: SIGNON, MAIN_MENU, ADMIN_MENU, ACCOUNT_VIEW, BILL_PAYMENT, GOODBYE. Each workflow's END payload is ${result}, which the page reads at the top level (screen, signon.*, menu.*, acctView.*, bill.*, goodbye.*); the map reads the same paths.",
+  "Start: the page opens on the sign-on card through a UI_EVENT (initState), no workflow; CC00 and CB00 both open on COSGN0A.",
+  "Session: the page keeps session and toggles objects and passes them to ui_menu and ui_account_view; the map carries them from the sign-on (and menu exit) responses. The account view's update of session.accountId (which pre-fills the account field on the next menu entry) is not carried: failure responses carry no session, and the adapter would overwrite it with nothing. Operator limitation, written down here.",
+  "Instrument fix 6 (coordinator ruling before any r2 output): the bill-payment card shows legacy's one message line as three mutually exclusive texts (bill.error, bill.prompt, bill.success); ERRMSG reads 'bill.error|bill.prompt|bill.success'. Sensitivity (B): ERRMSG <- bill.error only, reported beside r2.",
+  "Not shown as separate page elements, so not mapped (missing on the page): ACRCYCR/ACRCYDB (one combined 'Cycle Credit / Debit'), ACSFNAM/ACSMNAM/ACSLNAM (one combined name), ACSADL1/ACSADL2/ACSCITY/ACSSTTE/ACSCTRY/ACSZIPC (one combined address), ACSPHN1/ACSPHN2 (one combined phones), ACSEFTC/ACSPFLG (one combined 'EFT Account / Primary Holder'), ACSGOVT (not on the page), INFOMSG (no info line), OPTN011 (option 11 is hidden while the pending-authorization toggle is false).",
+  "OPTN001-OPTN010: the labels of the page's option buttons.",
+  "ENTER on the account view maps to Search; the page hides Search once an account is shown (the browser subset checks the page).",
+  "Stores: the build's five stores keep the CONTRACT-UI field names and types (data_types.txt): identity field map. The build has no loader workflows (its zz_test_seed workflow loads its own test rows): operator loaders via make-loader.",
+  "Not reachable (no button): PF5 everywhere; PF4 except on bill payment."
+ ],
+ "start": {
+  "CC00": "COSGN0A",
+  "CB00": "COSGN0A"
+ },
+ "screens": {
+  "COSGN0A": {
+   "page": "CardDemoPage / SignonCard",
+   "inputs": {
+    "USERID": "userId",
+    "PASSWD": "password"
+   },
+   "display": [
+    "USERID"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signon",
+      "userId": "form:userId",
+      "password": "form:password"
+     },
+     "session": {
+      "session": "session",
+      "toggles": "toggles"
+     },
+     "form": {
+      "userId": "signon.userId",
+      "password": "signon.password"
+     },
+     "show": {
+      "ERRMSG": "signon.message"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:exit"
+     },
+     "show": {
+      "TEXT": "goodbye.message",
+      "ERRMSG": "signon.message"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "COMEN1A": {
+   "page": "CardDemoPage / MenuCard",
+   "inputs": {
+    "OPTION": "option"
+   },
+   "display": [
+    "OPTION"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "on_load": null,
+   "static": {
+    "OPTN001": "1. Account View",
+    "OPTN002": "2. Account Update",
+    "OPTN003": "3. Credit Card List",
+    "OPTN004": "4. Credit Card View",
+    "OPTN005": "5. Credit Card Update",
+    "OPTN006": "6. Transaction List",
+    "OPTN007": "7. Transaction View",
+    "OPTN008": "8. Transaction Add",
+    "OPTN009": "9. Transaction Reports",
+    "OPTN010": "10. Bill Payment"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "menu": "const:USER",
+      "type": "const:select",
+      "option": "form:option",
+      "toggles": "session:toggles",
+      "session": "session:session"
+     },
+     "form": {
+      "option": "menu.option"
+     },
+     "show": {
+      "ERRMSG": "menu.message",
+      "ACCTSID": "acctView.accountIdInput"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "menu": "const:USER",
+      "type": "const:exit"
+     },
+     "session": {
+      "session": "session",
+      "toggles": "toggles"
+     },
+     "show": {
+      "ERRMSG": "signon.message"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "ADMIN_MENU": {
+   "page": "CardDemoPage / AdminCard (outside the slice)",
+   "inputs": {
+    "OPTION": "option"
+   },
+   "display": [],
+   "messages": [
+    "ERRMSG"
+   ],
+   "aids": {}
+  },
+  "CACTVWA": {
+   "page": "CardDemoPage / AcctCard",
+   "inputs": {
+    "ACCTSID": "acctId"
+   },
+   "display": [
+    "ACCTSID",
+    "ACSTTUS",
+    "ADTOPEN",
+    "AEXPDT",
+    "AREISDT",
+    "ACRDLIM",
+    "ACSHLIM",
+    "ACURBAL",
+    "AADDGRP",
+    "ACSTNUM",
+    "ACSTSSN",
+    "ACSTDOB",
+    "ACSTFCO"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:search",
+      "accountIdInput": "form:acctId",
+      "session": "session:session"
+     },
+     "form": {
+      "acctId": "acctView.accountIdInput"
+     },
+     "show": {
+      "ERRMSG": "acctView.message",
+      "ACSTTUS": "acctView.account.activeStatus",
+      "ADTOPEN": "acctView.account.openDate",
+      "AEXPDT": "acctView.account.expirationDate",
+      "AREISDT": "acctView.account.reissueDate",
+      "ACRDLIM": "acctView.account.creditLimit",
+      "ACSHLIM": "acctView.account.cashCreditLimit",
+      "ACURBAL": "acctView.account.currentBalance",
+      "AADDGRP": "acctView.account.groupId",
+      "ACSTNUM": "acctView.customer.custId",
+      "ACSTSSN": "acctView.customer.ssn",
+      "ACSTDOB": "acctView.customer.dob",
+      "ACSTFCO": "acctView.customer.fico"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back"
+     },
+     "form": {
+      "option": "menu.option"
+     },
+     "show": {
+      "ERRMSG": "menu.message"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "COBIL0A": {
+   "page": "CardDemoPage / BillCard",
+   "inputs": {
+    "ACTIDIN": "billAcct",
+    "CONFIRM": "billConfirm"
+   },
+   "display": [
+    "ACTIDIN",
+    "CURBAL",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:pay",
+      "acctIdInput": "form:billAcct",
+      "confirm": "form:billConfirm"
+     },
+     "form": {
+      "billAcct": "bill.acctIdInput",
+      "billConfirm": "bill.confirm"
+     },
+     "show": {
+      "ERRMSG": "bill.error|bill.prompt|bill.success",
+      "CURBAL": "bill.balance"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:clear"
+     },
+     "form": {
+      "billAcct": "bill.acctIdInput",
+      "billConfirm": "bill.confirm"
+     },
+     "show": {
+      "ERRMSG": "bill.error|bill.prompt|bill.success",
+      "CURBAL": "bill.balance"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back"
+     },
+     "form": {
+      "option": "menu.option"
+     },
+     "show": {
+      "ERRMSG": "menu.message"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MAIN_MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN_MENU",
+       "screen": "ADMIN_MENU"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCOUNT_VIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "BILL_PAYMENT",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "GOODBYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "TEXT": {
+   "page": "CardDemoPage / GoodbyeCard",
+   "static": {},
+   "aids": {}
+  }
+ },
+ "browser": {
+  "screens": {
+   "COSGN0A": {
+    "detect": "^\\s*sign on\\s*$",
+    "inputs": {
+     "USERID": 0,
+     "PASSWD": 1
+    },
+    "aids": {
+     "ENTER": "^\\s*sign on\\s*$",
+     "PF3": "^\\s*exit\\s*$"
+    }
+   },
+   "COMEN1A": {
+    "detect": "^\\s*1\\. account view\\s*$",
+    "inputs": {
+     "OPTION": 0
+    },
+    "aids": {
+     "ENTER": "^\\s*continue\\s*$",
+     "PF3": "^\\s*exit\\s*$"
+    }
+   },
+   "CACTVWA": {
+    "detect": "^\\s*(search|update account)\\s*$",
+    "inputs": {
+     "ACCTSID": 0
+    },
+    "aids": {
+     "ENTER": "^\\s*search\\s*$",
+     "PF3": "^\\s*back\\s*$"
+    }
+   },
+   "COBIL0A": {
+    "detect": "^\\s*pay\\s*$",
+    "inputs": {
+     "ACTIDIN": 1,
+     "CONFIRM": 0
+    },
+    "aids": {
+     "ENTER": "^\\s*pay\\s*$",
+     "PF4": "^\\s*clear\\s*$",
+     "PF3": "^\\s*back\\s*$"
+    }
+   }
+  },
+  "text_detect": "thank you"
+ },
+ "stores": {
+  "USRSEC": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "ACCTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CUSTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CCXREF": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "TRANSACT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  }
+ }
+}

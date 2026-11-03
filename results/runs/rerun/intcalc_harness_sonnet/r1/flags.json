@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 47,
+  "note": "[LAYOUT-ACCOUNT] offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 48,
+  "note": "[LAYOUT-CATEGORY] offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 49,
+  "note": "[LAYOUT-RATE] offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 50,
+  "note": "[LAYOUT-XREF] offsets unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 52,
+  "note": "[OVERPUNCH] full decoding table not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 53,
+  "note": "[TRUNCATION] golden-file rounding check requested",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 54,
+  "note": "[ORDER] tie ordering not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 57,
+  "note": "[MISSING-DEFAULT] absent DEFAULT row not covered",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 58,
+  "note": "[CARD-SELECTION] card selection not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 59,
+  "note": "[UNTOUCHED-ACCOUNTS] not stated separately",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 60,
+  "note": "[TRANSACTION-SEQUENCE] start, width, overflow, restart not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 61,
+  "note": "[TIMESTAMPS] values not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_sonnet/r1/exec/workflow_355575fb-1d94-47e2-9459-2dfdb5794ed8.md",
+  "line": 62,
+  "note": "[MERCHANT-DEFAULTS] merchant fields not initialised by the wiki",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,135 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 62,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] money: arithmetic and rounding unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] money: arithmetic and rounding unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] identity: transaction IDs kept; duplicate handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 8,
+  "note": "[6] processing time unspecified; rejects keep original timestamps",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 9,
+  "note": "[7] expiry uses the original transaction date, equality allowed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] dependent checks; wiki p.4 combination unexplained",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] dependent checks; wiki p.4 combination unexplained",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] negative debit sign: alternatives not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] zero amount: no separate rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] no extra validation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] representation; category JSON type unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] representation; category JSON type unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 15,
+  "note": "[13] optional fields; malformed-input handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 15,
+  "note": "[13] optional fields; malformed-input handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] whole snapshot",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 19,
+  "note": "[17] reason 109 not simulated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] reject image as JSON fields",
+  "origin": "build"
+ }
+]

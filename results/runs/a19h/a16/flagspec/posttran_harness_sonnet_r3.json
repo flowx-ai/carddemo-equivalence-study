@@ -1,0 +1,44 @@
+{
+ "workflow": "<uuid>",
+ "map": null,
+ "decode": {
+  "_root": "result"
+ },
+ "source": "Records mode: Transform reads decoded lists input.dailyTransactions, accounts, cardXrefs, categoryBalances (the adapter's encode names, so no map) and requires input.processingTimestamp (nonblank) and input.nextTransactionId (positive, 16 digits); both are left unset, as every POSTTRAN execution leaves run-time parameters the adapter does not carry (pure renaming, notebook \u00a741), so the build's own context check will stop the run. END: output={result:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, assumptions, assumptions_md, summary...}} -> _root result.",
+ "wiki": [
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+   63,
+   "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   62,
+   "DECISION: keep or collect all reject reasons"
+  ]
+ ],
+ "build": [
+  [
+   "R-POST-COPY",
+   26,
+   "wiki silence: complete byte layouts not specified"
+  ],
+  [
+   "R-POST-BAL",
+   35,
+   "wiki silence: duplicate lookup rows have no tie-breaking rule"
+  ],
+  [
+   "R-POST-103",
+   40,
+   "wiki silence: timestamp syntax and timezone normalisation"
+  ],
+  [
+   "R-POST-WRITE",
+   45,
+   "wiki silence: ID padding and exhaustion"
+  ]
+ ]
+}

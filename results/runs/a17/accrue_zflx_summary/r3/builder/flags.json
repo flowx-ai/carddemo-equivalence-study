@@ -1,0 +1,9 @@
+[
+  {"rule": "R-INTFORMULA", "source": "assumptions.md #1 (wiki: process-interest-calculation.md Purpose, 'computes monthly interest' - formula not given)"},
+  {"rule": "R-INTTRUNC", "source": "assumptions.md #2 (wiki silent on rounding; truncation chosen)"},
+  {"rule": "R-LASTACCT", "source": "assumptions.md #5 (wiki flow 'Account done? -> Update Account'; legacy may skip last account)"},
+  {"rule": "R-TRANID", "source": "assumptions.md #9 (wiki gives only PARM='2022071800')"},
+  {"rule": "R-TXNFIELDS", "source": "assumptions.md #10 (source/desc/merchant fields not in wiki)"},
+  {"rule": "R-CARDXREF", "source": "assumptions.md #11 (LXV024Y listed, lookup rule not described)"},
+  {"rule": "R-TXNTS", "source": "assumptions.md #12 (orig_ts/proc_ts not defined in wiki)"}
+]

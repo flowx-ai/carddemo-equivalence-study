@@ -1,0 +1,12 @@
+[
+  {"rule": "R-TRANREPT-EOF-DOUBLE-ADD", "source": "flowx/03_render_report.js:109 (last amount added twice at EOF; no final Account Total) — assumptions.md T4"},
+  {"rule": "R-TRANREPT-PAGING-LINECOUNTER", "source": "flowx/03_render_report.js:97 (page break when line counter mod 20 = 0, all lines counted) — assumptions.md T2"},
+  {"rule": "R-TRANREPT-ACCT-BREAK-ON-CARD", "source": "flowx/03_render_report.js:87(Account Total breaks on card number change) — assumptions.md O2"},
+  {"rule": "R-TRANREPT-SORT-STABLE", "source": "flowx/02_query_report_data.js:51 (sort by card number, ties keep input order) — assumptions.md O1"},
+  {"rule": "R-TRANREPT-FILTER-PROC-DATE", "source": "flowx/02_query_report_data.js:39 (filter on TRAN-PROC-TS date, inclusive) — assumptions.md P2"},
+  {"rule": "R-TRANREPT-ZERO-EDIT-BLANK", "source": "flowx/03_render_report.js:20 (zero amount/total prints as 15 spaces incl. sign) — assumptions.md F1"},
+  {"rule": "R-TRANREPT-HDR-AMOUNT-ALIGN", "source": "flowx/03_render_report.js:57 ('Amount' left-aligned in X(16)) — assumptions.md F2"},
+  {"rule": "R-TRANREPT-EMPTY-NO-HEADER", "source": "flowx/03_render_report.js:106(empty selection: page/grand total only, no header) — assumptions.md T5"},
+  {"rule": "R-TRANREPT-LOOKUP-ABEND", "source": "flowx/03_render_report.js:90 (missing xref/type/category stops the report) — assumptions.md A1"},
+  {"rule": "R-TRANREPT-AMT-ZONED", "source": "flowx/02_query_report_data.js:17 (zoned/overpunch amount decoding) — assumptions.md F5"}
+]

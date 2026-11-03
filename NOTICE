@@ -1,0 +1,8 @@
+CardDemo batch equivalence study
+Copyright 2026 FlowX.AI
+
+This repository includes software and data from AWS CardDemo
+(https://github.com/aws-samples/aws-mainframe-modernization-carddemo, commit
+59cc6c2fd7ebd7ef7925cad552a01a4b8b6e4d5e), open source under the Apache License 2.0:
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Its license and notice are in src/LICENSE and src/NOTICE.

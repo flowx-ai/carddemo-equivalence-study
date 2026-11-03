@@ -1,0 +1,10 @@
+--- golden/v1
++++ e2e
+@@ -1222 +1222 @@
+-Current Balance    :000001302.66
++Current Balance    :000001108.66
+@@ -1232,0 +1233 @@
++0000000996722788 BILL PAYMENT - ONLINE                            $      194.00
+@@ -1235 +1236 @@
+-Total EXP:                                                        $     1108.66
++Total EXP:                                                        $     1302.66

@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 17,
+  "note": "A1 divisor 1200 inferred; wiki does not state the period",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 25,
+  "note": "A2 rounding TODO; truncation toward zero",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 32,
+  "note": "A3 per category balance chosen over wiki currentBalance",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 44,
+  "note": "A4 missing group falls back to DEFAULT; wiki and ontology say nothing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 51,
+  "note": "A5 zero rate no txn, zero balance 0.00 txn; AC only says zero interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 57,
+  "note": "A6 fees: wiki mentions interest only; none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 66,
+  "note": "A8 cycle credit/debit reset to 0: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 73,
+  "note": "A9 last account posted; flagged, end-of-file alternative named",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 86,
+  "note": "A11 tran id: build's decision (10 + 6-digit sequence)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 86,
+  "note": "A11 type/cat 01/5, source, desc, card: build's decisions, none given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r1/builder/assumptions.md",
+  "line": 110,
+  "note": "A14 balance for account missing from ledgacc: wiki has no error path; skipped",
+  "origin": "build"
+ }
+]

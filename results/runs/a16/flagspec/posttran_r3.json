@@ -1,0 +1,14 @@
+{"wiki": [
+  ["R-POST-PRECEDENCE", "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md", 63, "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"],
+  ["R-POST-PRECEDENCE", "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md", 62, "DECISION: keep or collect all reject reasons"]],
+ "build": [
+  ["R-POST-WRITE", 22, "A2 restart DECISION open; duplicate ids within a run skipped"],
+  ["R-POST-PRECEDENCE", 42, "V1 both wiki DECISIONs cited; one reason kept, FI-06 not implemented"],
+  ["R-POST-WRITE", 68, "P1 wiki conflict on tran_id allocation"],
+  ["R-POST-BAL", 87, "P5 overflow truncation: wiki silent"],
+  ["R-POST-TCAT", 87, "P5 overflow truncation: wiki silent"],
+  ["R-POST-COPY", 94, "R1 reject trailer layout is a wiki TODO"],
+  ["R-POST-COPY", 109, "F1 offsets not in the wiki (taken from standard copybook offsets)"],
+  ["R-POST-COPY", 113, "F2 signed encoding not stated"],
+  ["R-POST-BAL", 113, "F2 signed encoding not stated"]
+ ]}

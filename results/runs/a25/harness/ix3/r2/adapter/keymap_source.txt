@@ -1,0 +1,6 @@
+Read from runs/a25/harness/ix3/r2/exec/workflow_1e430708-a2e7-4e32-9876-054d03d668d2.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 782e7790 (head of the build branch, committed; plan COMPLETED after one A8 retry of a harness-attributed item_evidence pause)
+- START (Transform, lines 56-61, 71): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate
+- END: Transform (line 83) writes output={result:{tranrept_report (lines joined by \n), ...}}; decoder's 'result' unwrapping, contract name, no decode map
+- MODE files
+- Register: assume() entries at lines 26-46 (one per line)

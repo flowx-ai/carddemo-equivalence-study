@@ -1,0 +1,82 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgaccDat",
+  "tcatbal": "balcatDat",
+  "discgrp": "rategrpDat",
+  "cardxref": "cardlinkDat",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn_json",
+  "intcalc_acctdata": "accrue_ledgacc_json"
+ },
+ "source": "Files mode: Calculate interest (lines 103-107) reads input.ledgaccDat, rategrpDat, cardlinkDat, balcatDat as text, input.businessDate and input.interestRunDate (defaults 2022-07-18 / 2022071800). Render outputs (line 128): output={result:{accrue_systxn_json, accrue_ledgacc_json (JSON strings), assumptions, assumptions_md, status, diagnostics}}. Flags: registerRows lines 62-95; a flag when its wikiStatementOrAbsence says the wiki leaves the point open; plus the detailed wiki's BR-08 TODO (as every detailed build).",
+ "wiki": [
+  [
+   "R-INT-TRUNC",
+   "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   64,
+   "BR-08 TODO: confirm rounding mode"
+  ]
+ ],
+ "build": [
+  [
+   "R-INT-RATE",
+   65,
+   "rate-width: conflict in the wiki; six characters assumed, not verified"
+  ],
+  [
+   "R-INT-RATE",
+   73,
+   "duplicate-rates: resolution of duplicate or malformed found rates not specified"
+  ],
+  [
+   "R-INT-RATE",
+   75,
+   "lookup: account-level response to a missing fallback is an implementation choice"
+  ],
+  [
+   "R-INT-TRUNC",
+   76,
+   "rounding: truncation and precision left unsettled"
+  ],
+  [
+   "R-INT-ZERO",
+   78,
+   "zero-postings: sub-cent result for a nonzero rate unspecified"
+  ],
+  [
+   "R-INT-TXID",
+   80,
+   "ordering: deterministic sorting not specified"
+  ],
+  [
+   "R-INT-TXID",
+   81,
+   "suffixes: allocation and overflow unspecified"
+  ],
+  [
+   "R-INT-CYC",
+   85,
+   "without-balances: mutation of accounts without balances not prescribed"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   87,
+   "card-choice: card selection not defined"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   88,
+   "transaction-defaults: details not fully specified by the wiki"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   89,
+   "timestamps: clock selection not defined"
+  ]
+ ]
+}

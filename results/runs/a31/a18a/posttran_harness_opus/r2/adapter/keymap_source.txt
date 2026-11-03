@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/posttran_harness_opus/r2/exec/workflow_4deed147-f712-4e04-9246-1dbb9f0c9fba.md (and the build's own register) before execution; no output opened.
+- A2 version 661c7d2e (head of the build branch, plan COMPLETED)
+- START: nine file contents as text; MODE files
+- END: {"postingResult": ${result}}; contract names inside
+- Register: manifest lines 68-109

@@ -1,0 +1,177 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 30,
+  "note": "grouping TODO; account balance as base",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 31,
+  "note": "rate layout and units absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 32,
+  "note": "period conversion absent, formula TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 33,
+  "note": "rounding unconfirmed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 36,
+  "note": "negative handling not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 36,
+  "note": "negative handling not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 37,
+  "note": "zero-value transaction not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 38,
+  "note": "cycle totals not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 38,
+  "note": "cycle totals not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 39,
+  "note": "duplicate account absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 41,
+  "note": "type value absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 42,
+  "note": "category value absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 43,
+  "note": "source value absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 44,
+  "note": "description wording absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 45,
+  "note": "merchant values absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 46,
+  "note": "id rule absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 48,
+  "note": "timestamp rules absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 49,
+  "note": "card selection absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 50,
+  "note": "missing card absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 51,
+  "note": "group matching absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 52,
+  "note": "missing rate fallback absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r1/exec/workflow_78ee501d-af8a-408e-a286-57ed3044b850.md",
+  "line": 53,
+  "note": "malformed and overflow absent",
+  "origin": "build"
+ }
+]

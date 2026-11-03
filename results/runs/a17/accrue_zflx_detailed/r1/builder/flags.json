@@ -1,0 +1,14 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md A8; workflow interest-calculation / Accrue interest: monthlyInterest()"},
+  {"rule": "R-LAST-ACCOUNT-UPDATE", "source": "assumptions.md A12; workflow interest-calculation / Accrue interest: closeAccount() after loop"},
+  {"rule": "R-ZERO-INTEREST-ACCOUNT-RESET", "source": "assumptions.md A13; workflow interest-calculation / Accrue interest: closeAccount()"},
+  {"rule": "R-ZERO-AMOUNT-TXN", "source": "assumptions.md A9; workflow interest-calculation / Accrue interest: rate === 0 check"},
+  {"rule": "R-STANDARD-MISSING", "source": "assumptions.md A11; workflow interest-calculation / Accrue interest: interestRate()"},
+  {"rule": "R-TRANID-SUFFIX", "source": "assumptions.md A16; workflow interest-calculation / Accrue interest: tran_id"},
+  {"rule": "R-BALANCE-ORDER", "source": "assumptions.md A10; workflow interest-calculation / Accrue interest: balances.sort()"},
+  {"output": "accrue_systxn", "key": "desc", "source": "assumptions.md A17"},
+  {"output": "accrue_systxn", "key": "card_num", "source": "assumptions.md A19"},
+  {"output": "accrue_systxn", "key": "merchant_id", "source": "assumptions.md A20"},
+  {"output": "accrue_systxn", "key": "orig_ts", "source": "assumptions.md A21"},
+  {"output": "accrue_systxn", "key": "proc_ts", "source": "assumptions.md A21"}
+]

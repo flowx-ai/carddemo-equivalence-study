@@ -1,0 +1,205 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 2: layout, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 7: display sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 7: display sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 7: display sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entries 11-12: corrupt or duplicate masters, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entries 11-12: corrupt or duplicate masters, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 13: lookup precedence not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 15: reject codes provisional, source deferred; entry 16 precedence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 15: reject codes provisional, source deferred; entry 16 precedence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 15: reject codes provisional, source deferred; entry 16 precedence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 15: reject codes provisional, source deferred; entry 16 precedence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 16: precedence not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 17: order and duplicate ids, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 17: order and duplicate ids, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 18: sign exceptions, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entries 19-20: negative amounts and cycle totals not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 21: absent category, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 23: malformed transactions, wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 25: timestamp replacement not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_opus/r1/exec/workflow_243925cb-391a-4d3b-9fc2-d9a0df961052.md",
+  "line": 23,
+  "note": "entry 25: timestamp replacement not specified",
+  "origin": "build"
+ }
+]

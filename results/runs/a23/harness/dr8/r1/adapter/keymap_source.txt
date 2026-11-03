@@ -1,0 +1,5 @@
+Read from runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md (and the build's own README/register) before execution; no output opened.
+- START (Post transactions, line 60): input.dailyTransactions, accounts, cardXrefs, categoryBalances = decoded records with the contract field names (the adapter's encode body, no renaming); processingTimestamp optional, left unset (runtime UTC). No businessDate or batchId read.
+- END: Finish results (line 131) writes output={result:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, summary, assumptions, assumptions_md}}; the decoder's own 'result' unwrapping reaches the contract names: no decode.json
+- MODE records (run with MODE=records; no map.json)
+- Register: inventory entries at lines 97-111 (one per line)

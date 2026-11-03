@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 29,
+  "note": "A4 record offsets derived from attribute lists; copybooks not in attachment",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 38,
+  "note": "A5 overpunch for every signed field assumed; wiki states it only for the rate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 51,
+  "note": "A7 key processing order not stated in the wiki; fixes tran id suffixes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 59,
+  "note": "A9 no STANDARD row either: wiki silent; no interest, warning",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 63,
+  "note": "A10 balance for account not in ledgacc: wiki silent; skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 66,
+  "note": "A11 card source not given by wiki; several cards: lowest card number",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 76,
+  "note": "A13 truncation toward zero; BR-08 TODO, flagged uncertain",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 86,
+  "note": "A16 negative balances: wiki has no sign rule; negative interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 89,
+  "note": "A17 fees DECISION open: stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 93,
+  "note": "A18 suffix width not stated; 6 digits from 000001",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 96,
+  "note": "A19 merchant fields: wiki silent; 0 and blank",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_sonnet_thin/r1/builder/output/assumptions.md",
+  "line": 109,
+  "note": "A22 last account rewritten at end of file; wiki silent on end-of-file",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,37 @@
+ok   identity o-avw-01: 100% and matches legacy  [screen (60, 60)+(5, 5) file (422, 422)+(0, 0)]
+ok   identity o-avw-02: 100% and matches legacy  [screen (39, 39)+(8, 8) file (422, 422)+(0, 0)]
+ok   identity o-avw-03: 100% and matches legacy  [screen (41, 41)+(4, 4) file (421, 421)+(0, 0)]
+ok   identity o-avw-04: 100% and matches legacy  [screen (28, 28)+(4, 4) file (421, 421)+(0, 0)]
+ok   identity o-avw-05: 100% and matches legacy  [screen (15, 15)+(7, 7) file (423, 423)+(0, 0)]
+ok   identity o-bil-01: 100% and matches legacy  [screen (30, 30)+(11, 11) file (421, 421)+(2, 2)]
+ok   identity o-bil-02: 100% and matches legacy  [screen (57, 57)+(2, 2) file (422, 422)+(0, 0)]
+ok   identity o-bil-03: 100% and matches legacy  [screen (35, 35)+(9, 9) file (421, 421)+(2, 2)]
+ok   identity o-bil-04: 100% and matches legacy  [screen (30, 30)+(9, 9) file (420, 420)+(2, 2)]
+ok   identity o-bil-05: 100% and matches legacy  [screen (30, 30)+(9, 9) file (422, 422)+(2, 2)]
+ok   identity o-bil-07: 100% and matches legacy  [screen (2, 2)+(2, 2) file (422, 422)+(0, 0)]
+ok   identity o-mnu-01: 100% and matches legacy  [screen (34, 34)+(0, 0) file (422, 422)+(0, 0)]
+ok   identity o-mnu-02: 100% and matches legacy  [screen (15, 15)+(0, 0) file (422, 422)+(0, 0)]
+ok   identity o-sgn-01: 100% and matches legacy  [screen (4, 4)+(0, 0) file (422, 422)+(0, 0)]
+ok   identity o-sgn-02: 100% and matches legacy  [screen (10, 10)+(2, 2) file (422, 422)+(0, 0)]
+ok   identity o-sgn-03: 100% and matches legacy  [screen (5, 5)+(0, 0) file (422, 422)+(0, 0)]
+ok   identity H15 / H16 / H17 hold  [{"H15_payment_files": {"silent_units": 0, "holds": true}, "H17_account_view_fields": {"equal": 29, "units": 29, "holds": true}}]
+ok   identity pooled 100%  [{'screen_untagged': (435, 435), 'screen_tagged': (72, 72), 'file_untagged': (6747, 6747), 'file_tagged': (8, 8)}]
+ok   R-ONL-NAV: 1 unit  [[('R-ONL-NAV', 6, 'NAV')]]
+ok   R-ONL-NAV on a core case breaks H16
+ok   R-ONL-MSG: 1 unit, silent  [[('R-ONL-MSG', 5, 'ERRMSG', True)]]
+ok   flag covers the MSG defect -> flagged
+ok   flag for another rule leaves it silent
+ok   R-ONL-FIELD: 1 unit; H17 fails  [[('R-ONL-FIELD', 4, 'ACURBAL')]]
+ok   extra field: 1 unit R-ONL-FIELD
+ok   R-ONL-ACCT: 1 unit; H15 fails  [[('R-ONL-ACCT', 1)]]
+ok   R-ONL-TRAN: missing session row = 1 unit  [[('R-ONL-TRAN', '0000000996722788')]]
+ok   R-ONL-TRAN: session row type differs = 1 unit, tagged (write step tagged)  [[('R-ONL-TRAN', '0000000996722788', True)]]
+ok   R-ONL-FILE: 1 unit  [[('R-ONL-FILE', 5)]]
+ok   R-ONL-UNREACH: every unit of the step  [5 of 5]
+ok   R-ABSENT: every unit of the case  [456 units]
+ok   masked timestamps, o-bil-04 card, excluded step, $ amount, message whitespace (ends; one space for two): 0 units  [[]]
+ok   a base transaction's timestamp IS scored (R-ONL-FILE)
+ok   batch self-test scorer/selftest.py  [SELFTEST PASS]
+ok   batch self-test scorer/report_selftest.py  [SELFTEST PASS]
+
+35/35 checks passed

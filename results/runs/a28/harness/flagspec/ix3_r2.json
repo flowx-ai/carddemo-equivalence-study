@@ -1,0 +1,193 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactText",
+  "cardxref": "cardxrefText",
+  "trantype": "trantypeText",
+  "trancatg": "trancatgText",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version: 90cdc304 (head of the build branch, committed; plan COMPLETED on R18, no retry)\n- START: transactText, cardxrefText, trantypeText, trancatgText, startDate, endDate\n- END returns tranrept_report (string), assumptions_md, reportStatus: decoder default, contract name, no decode map\n- MODE files\n- Register: assumptions table, lines 123-163",
+ "cr_rule": "line 137: type 01 + category 0005 excluded before decoding date or amount (BR-07). Stated as defined; see the register's source text.",
+ "register": null,
+ "mode": null,
+ "build": [
+  [
+   "R-REPT-SET",
+   125,
+   "date omission handling unstated"
+  ],
+  [
+   "R-REPT-SET",
+   126,
+   "date validation and inverted range choice"
+  ],
+  [
+   "R-REPT-SET",
+   128,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   128,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   128,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   128,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   129,
+   "xref offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   130,
+   "type offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   131,
+   "category offsets inferred"
+  ],
+  [
+   "R-REPT-SET",
+   136,
+   "date prefix and timezone choice"
+  ],
+  [
+   "R-REPT-AMT",
+   138,
+   "sign encoding choice"
+  ],
+  [
+   "R-REPT-ACCT",
+   138,
+   "sign encoding choice"
+  ],
+  [
+   "R-REPT-GRAND",
+   138,
+   "sign encoding choice"
+  ],
+  [
+   "R-REPT-AMT",
+   139,
+   "overflow choice"
+  ],
+  [
+   "R-REPT-ACCT",
+   139,
+   "overflow choice"
+  ],
+  [
+   "R-REPT-GRAND",
+   139,
+   "overflow choice"
+  ],
+  [
+   "R-REPT-SET",
+   140,
+   "tie order"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   141,
+   "duplicate references"
+  ],
+  [
+   "R-REPT-XREF",
+   141,
+   "duplicate references"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   143,
+   "missing type fallback"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   144,
+   "missing category fallback"
+  ],
+  [
+   "R-REPT-XREF",
+   145,
+   "missing xref fallback unstated"
+  ],
+  [
+   "R-REPT-SET",
+   146,
+   "malformed record handling"
+  ],
+  [
+   "R-REPT-HEADER",
+   148,
+   "page capacity TODO; default chosen"
+  ],
+  [
+   "R-REPT-ACCT",
+   150,
+   "account total grouped by card"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   150,
+   "account total grouped by card"
+  ],
+  [
+   "R-REPT-ACCT",
+   151,
+   "card and page boundary order"
+  ],
+  [
+   "R-REPT-HEADER",
+   151,
+   "card and page boundary order"
+  ],
+  [
+   "R-REPT-HEADER",
+   153,
+   "terminal page boundary unstated"
+  ],
+  [
+   "R-REPT-AMT",
+   157,
+   "zero and comma format choice"
+  ],
+  [
+   "R-REPT-ACCT",
+   157,
+   "zero and comma format choice"
+  ],
+  [
+   "R-REPT-GRAND",
+   157,
+   "zero and comma format choice"
+  ],
+  [
+   "R-REPT-AMT",
+   158,
+   "sign position choice"
+  ],
+  [
+   "R-REPT-ACCT",
+   158,
+   "sign position choice"
+  ],
+  [
+   "R-REPT-GRAND",
+   158,
+   "sign position choice"
+  ]
+ ]
+}

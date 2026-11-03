@@ -1,0 +1,198 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 62,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 48,
+  "note": "transaction offsets, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 48,
+  "note": "transaction offsets, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 49,
+  "note": "account offsets, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 49,
+  "note": "account offsets, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 50,
+  "note": "xref offsets, lengths only",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 51,
+  "note": "category offsets, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 52,
+  "note": "input encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 52,
+  "note": "input encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 52,
+  "note": "input encoding unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 53,
+  "note": "amount width, picture conflicts with example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 53,
+  "note": "amount width, picture conflicts with example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 53,
+  "note": "amount width, picture conflicts with example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 55,
+  "note": "category field types not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 56,
+  "note": "invalid card plus expired account example unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 56,
+  "note": "invalid card plus expired account example unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 59,
+  "note": "input id kept, replacement rules not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 59,
+  "note": "input id kept, replacement rules not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 60,
+  "note": "duplicate feed handling not described",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 61,
+  "note": "duplicate master keys not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 61,
+  "note": "duplicate master keys not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 62,
+  "note": "processed timestamp clock and format unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 62,
+  "note": "processed timestamp clock and format unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 66,
+  "note": "malformed master policy not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 66,
+  "note": "malformed master policy not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 66,
+  "note": "malformed master policy not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a31/a18a/posttran_harness_sonnet/r2/exec/workflow_e96199f4-01e7-4124-830f-e0f194431d29.md",
+  "line": 67,
+  "note": "malformed feed record, no reason code",
+  "origin": "build"
+ }
+]

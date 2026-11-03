@@ -1,0 +1,163 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactDat",
+  "acctdata": "acctdataDat",
+  "cardxref": "cardxrefDat",
+  "custdata": "custdataDat"
+ },
+ "decode": {
+  "_root": "statementOutputs"
+ },
+ "source": "- A2 version: 8e306a78 (head of the build branch, committed; plan COMPLETED, no retry; driver lost the network while polling, the plan ended by itself at 13:46:59Z)\n- START lines 77-80: input.transactDat, acctdataDat, cardxrefDat, custdataDat = file text\n- END: line 228 writes output={statementOutputs:{creastmt_statements, creastmt_statements_html, files, assumptions, status, errors}}; decode _root statementOutputs\n- MODE files\n- Register: assumptions array, lines 27-39",
+ "cr_rule": "line 32: total expenditure includes only strictly positive cents, citing BR-03 and scenarios 4 and 7; stated as source-defined.",
+ "register": null,
+ "mode": null,
+ "build": [
+  [
+   "R-STMT-TXN",
+   27,
+   "cycle filter TODO; all transactions, maker-confirmed"
+  ],
+  [
+   "R-STMT-NAME",
+   28,
+   "no concatenation rule; implementation assumption"
+  ],
+  [
+   "R-STMT-ADDR",
+   28,
+   "no concatenation rule; implementation assumption"
+  ],
+  [
+   "R-STMT-NAME",
+   29,
+   "customer offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-ADDR",
+   29,
+   "customer offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-FICO",
+   29,
+   "customer offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-SET",
+   29,
+   "customer offsets inferred, not verified"
+  ],
+  [
+   "R-STMT-BAL",
+   30,
+   "account, xref and transaction offsets are assumptions"
+  ],
+  [
+   "R-STMT-TXN",
+   30,
+   "account, xref and transaction offsets are assumptions"
+  ],
+  [
+   "R-STMT-TOTAL",
+   30,
+   "account, xref and transaction offsets are assumptions"
+  ],
+  [
+   "R-STMT-SET",
+   30,
+   "account, xref and transaction offsets are assumptions"
+  ],
+  [
+   "R-STMT-BAL",
+   31,
+   "statement-input sign encoding not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   31,
+   "statement-input sign encoding not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   31,
+   "statement-input sign encoding not specified"
+  ],
+  [
+   "R-STMT-SET",
+   32,
+   "orphan transaction handling not stated"
+  ],
+  [
+   "R-STMT-FICO",
+   33,
+   "trimming and blank FICO display unspecified"
+  ],
+  [
+   "R-STMT-OTHER",
+   33,
+   "trimming and blank FICO display unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   34,
+   "duplicate and malformed record handling unspecified"
+  ],
+  [
+   "R-STMT-ABEND",
+   34,
+   "duplicate and malformed record handling unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   35,
+   "newline, empty and missing input semantics unspecified"
+  ],
+  [
+   "R-STMT-NAME",
+   36,
+   "overflow behaviour and HTML substitution widths not stated"
+  ],
+  [
+   "R-STMT-ADDR",
+   36,
+   "overflow behaviour and HTML substitution widths not stated"
+  ],
+  [
+   "R-STMT-BAL",
+   37,
+   "numeric overflow handling not specified"
+  ],
+  [
+   "R-STMT-TXN",
+   37,
+   "numeric overflow handling not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   37,
+   "numeric overflow handling not specified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   37,
+   "numeric overflow handling not specified"
+  ],
+  [
+   "R-STMT-NAME",
+   38,
+   "escaping not specified; conceptual content omitted"
+  ],
+  [
+   "R-STMT-ADDR",
+   38,
+   "escaping not specified; conceptual content omitted"
+  ],
+  [
+   "R-STMT-OTHER",
+   38,
+   "escaping not specified; conceptual content omitted"
+  ]
+ ]
+}

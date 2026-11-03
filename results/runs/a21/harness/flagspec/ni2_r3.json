@@ -1,0 +1,128 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdataText",
+  "tcatbal": "tcatbalText",
+  "discgrp": "discgrpText",
+  "cardxref": "cardxrefText",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- START (Calculate interest, lines 99-135): input.acctdataText, discgrpText, cardxrefText, tcatbalText (fixed-width text), interestRunDate, businessDate\n- END (Finalize results, line 209): output={result:{intcalc_systran, intcalc_acctdata, assumptions_md}}: decode _root result, contract names\n- MODE files",
+ "build": [
+  [
+   "R-INT-RATE",
+   74,
+   "R-TEXT-ENCODING: newline handling not specified"
+  ],
+  [
+   "R-INT-RATE",
+   75,
+   "R-LAYOUT: field summaries only, not complete copybooks"
+  ],
+  [
+   "R-INT-APPLY",
+   75,
+   "R-LAYOUT: field summaries only, not complete copybooks"
+  ],
+  [
+   "R-INT-RATE",
+   76,
+   "R-RATE-WIDTH: picture conflicts with the example"
+  ],
+  [
+   "R-INT-RATE",
+   77,
+   "R-NUMERIC-DECODE: alternative sign forms not fully specified"
+  ],
+  [
+   "R-INT-APPLY",
+   77,
+   "R-NUMERIC-DECODE: alternative sign forms not fully specified"
+  ],
+  [
+   "R-INT-TXID",
+   80,
+   "R-DATE-PRECEDENCE: precedence for differing run dates unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   81,
+   "R-LEAP-ANNIVERSARY: BR-03 does not define a non-leap counterpart"
+  ],
+  [
+   "R-INT-TRUNC",
+   82,
+   "R-INT-TRUNC: BR-08 requests golden-file confirmation"
+  ],
+  [
+   "R-INT-ZERO",
+   83,
+   "R-ZERO-AMOUNT: negative and sub-cent outcomes not separately specified"
+  ],
+  [
+   "R-INT-CYC",
+   84,
+   "R-ACCOUNT-COVERAGE: unencountered-account reset unstated"
+  ],
+  [
+   "R-INT-APPLY",
+   84,
+   "R-ACCOUNT-COVERAGE: unencountered-account reset unstated"
+  ],
+  [
+   "R-INT-RATE",
+   85,
+   "R-DUPLICATES: duplicate handling not defined"
+  ],
+  [
+   "R-INT-APPLY",
+   85,
+   "R-DUPLICATES: duplicate handling not defined"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   86,
+   "R-CARD-SELECTION: which linked card is not said"
+  ],
+  [
+   "R-INT-TXID",
+   87,
+   "R-ID-SEQUENCE: suffix initialization and ordering not stated"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   88,
+   "R-MERCHANT-DEFAULTS: merchant values not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   89,
+   "R-TIMESTAMPS: punctuation and clock not provided"
+  ],
+  [
+   "R-INT-RATE",
+   91,
+   "R-PER-RECORD-FAILURE: malformed records and missing DEFAULT not defined"
+  ],
+  [
+   "R-INT-RATE",
+   92,
+   "R-ACCOUNT-ATOMICITY: partial per-account updates not defined"
+  ],
+  [
+   "R-INT-APPLY",
+   92,
+   "R-ACCOUNT-ATOMICITY: partial per-account updates not defined"
+  ],
+  [
+   "R-INT-APPLY",
+   94,
+   "R-REPRESENTATION: overflow not specified"
+  ]
+ ],
+ "cr_rule": "R-LEAP-ANNIVERSARY (81) with the rate code: rate \u2212 2.00 for accounts opened on or before the same calendar date ten years before the PARM date, floored at zero (BR-03); flags that BR-03 does not define a non-leap counterpart (R-INT-RATE)."
+}

@@ -1,0 +1,8 @@
+[
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "assumptions.md#A7 (BR-03 10% over-limit tolerance; legacy may have none)"},
+  {"output": "posttran_transact.json", "key": "tran_id", "source": "assumptions.md#A7 (records between 100% and 110% of the limit are posted)"},
+  {"output": "posttran_acctdata.json", "key": "curr_bal", "source": "assumptions.md#A7 (balance knock-on of the tolerance)"},
+  {"output": "posttran_tcatbal.json", "key": "bal", "source": "assumptions.md#A7 (balance knock-on of the tolerance)"},
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "assumptions.md#A11 (wall-clock 'now', UTC, DB2 26-char layout)"},
+  {"output": "posttran_transact.json", "key": "tran_id", "source": "assumptions.md#A17 (duplicate transactionId in one feed is skipped)"}
+]

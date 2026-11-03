@@ -1,0 +1,2 @@
+OUTSIDE Read ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r2b/memory/MEMORY.md DENIED
+outside accesses: 1

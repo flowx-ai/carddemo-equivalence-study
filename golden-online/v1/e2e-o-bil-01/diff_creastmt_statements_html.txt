@@ -1,0 +1,17 @@
+--- golden/v1
++++ e2e
+@@ -6409 +6409 @@
+-<p>Current Balance    : 000001302.66 </p>
++<p>Current Balance    : 000001108.66 </p>
+@@ -6470,0 +6471,11 @@
++</td>
++</tr>
++<tr>
++<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
++<p>0000000996722788</p>
++</td>
++<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
++<p>BILL PAYMENT - ONLINE                            </p>
++</td>
++<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
++<p>      194.00 </p>

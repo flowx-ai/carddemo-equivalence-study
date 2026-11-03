@@ -1,0 +1,4 @@
+Read from runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md (and the build's own README/register) before execution; no output opened.
+- START (ParseInterestFiles, lines 39-80): input.acctdata, tcatbal, discgrp, cardxref (fixed-width file contents as strings), businessDate, interestRunDate
+- END: PrepareInterestOutputs (line 159) writes intcalc_systran_json / intcalc_acctdata_json (JSON strings) at the root; the last node 'Escape text' (line 167) outputs only endText, so the END output is decoded as delivered: JSON strings parsed, names renamed
+- MODE files

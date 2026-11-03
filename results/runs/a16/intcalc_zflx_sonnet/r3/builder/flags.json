@@ -1,0 +1,7 @@
+[
+  {"rule": "R-INT-ROUND", "source": "assumptions.md A8 / wiki BR-08: interest rounded half away from zero; legacy may truncate instead (amt and curr_bal could differ by 0.01)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "assumptions.md A12: run-time timestamp, cannot equal oracle"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "assumptions.md A12: run-time timestamp, cannot equal oracle"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "assumptions.md A11: first cardxref record of the account (wiki silent)"},
+  {"output": "intcalc_systran.json", "key": "tran_id", "source": "assumptions.md A13: 6-digit suffix width inferred from TRAN-ID X(16)"}
+]

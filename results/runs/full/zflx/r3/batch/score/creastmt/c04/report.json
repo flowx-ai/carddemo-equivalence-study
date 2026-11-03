@@ -1,0 +1,73 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 1,
+  "flags_unneeded": 1,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9984
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/full/zflx/r3/builder/assumptions.md #B7",
+   "note": "statement name built from the first word of each name part, single spaces",
+   "origin": "register"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

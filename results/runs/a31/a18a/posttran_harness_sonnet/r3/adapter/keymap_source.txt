@@ -1,0 +1,6 @@
+Read from runs/a31/a18a/posttran_harness_sonnet/r3/exec/workflow_e1627cd6-8837-4408-845f-2118a77c5cfd.md (and the build's own register) before execution; no output opened.
+- A2 version 56db55a9 (head of the build branch, plan COMPLETED)
+- START: nine file contents as text; MODE files
+- END: {"result": ${result}}; contract names inside
+- Register: manifest lines 49-72
+- START also takes resumeState and nextTransactionId, left at their defaults

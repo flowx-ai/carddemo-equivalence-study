@@ -1,0 +1,58 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r3/exec/assumption_register.md",
+  "line": 5,
+  "note": "[P02] provisional account layout; copybook offsets not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[P03] provisional category layout; copybook offsets not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "[P04] provisional cross-reference layout; copybook offsets not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[P05] disclosure layout invented; no copybook layout in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r3/exec/assumption_register.md",
+  "line": 29,
+  "note": "[P14] transaction metadata defaults not given by the wiki",
+  "origin": "build"
+ }
+]

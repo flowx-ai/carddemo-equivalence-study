@@ -1,0 +1,51 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "CAL02/ERR04: calculation join and fallback rate not specified; missing rates give no charge",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "CAL03: no period, annualization or formula supplied; assumed balance x rate / 1200",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "CAL04: rounding and posting granularity unspecified; truncation assumed per category",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "CAL04/CAL05: zero charges omitted; no rules for zero or negative balances and rates",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "CAL06: posting behaviour not specified; current balance and cycle debit increased",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "TX01/TX03: interest transaction values and timestamp construction not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_nowiki/r1/exec/workflow_ffb9bda5-65e7-4ce1-860d-a131738473e9.md",
+  "line": 46,
+  "note": "TX02: sequencing, parameter composition and exhaustion policy not specified",
+  "origin": "build"
+ }
+]

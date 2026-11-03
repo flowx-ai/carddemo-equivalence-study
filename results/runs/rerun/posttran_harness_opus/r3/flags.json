@@ -1,0 +1,296 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 75,
+  "note": "[Cycle] GDG daily-cycle semantics TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 76,
+  "note": "[Lookup] procedure unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 76,
+  "note": "[Lookup] procedure unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 77,
+  "note": "[Order and duplicates] unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 77,
+  "note": "[Order and duplicates] unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 78,
+  "note": "[Activity] active value not named",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 78,
+  "note": "[Activity] active value not named",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 78,
+  "note": "[Activity] additional checks not named; no expiry check",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 79,
+  "note": "[Credit comparison] refund exceptions unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 79,
+  "note": "[Credit comparison] refund exceptions unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 80,
+  "note": "[Signed posting] no sign rules",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 81,
+  "note": "[Category creation] missing-row behaviour not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 82,
+  "note": "[Missing references] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 82,
+  "note": "[Missing references] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 82,
+  "note": "[Missing references] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 82,
+  "note": "[Missing references] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 82,
+  "note": "[Missing references] silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 83,
+  "note": "[Provisional reject reasons] invented codes; exact reasons not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 84,
+  "note": "[Failure precedence] not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 84,
+  "note": "[Failure precedence] malformed-data handling not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 85,
+  "note": "[Numeric handling] malformed/overflow handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 85,
+  "note": "[Numeric handling] absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 85,
+  "note": "[Numeric handling] absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 87,
+  "note": "[Preservation] timestamp rewriting not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 87,
+  "note": "[Preservation] unrelated field changes not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 88,
+  "note": "[No extra checks] not prescribed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/rerun/posttran_harness_opus/r3/exec/workflow_4c3befe1-78c4-4724-84ed-347dcdff7694.md",
+  "line": 88,
+  "note": "[No extra checks] no expiry/date checks",
+  "origin": "build"
+ }
+]

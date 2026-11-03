@@ -1,0 +1,772 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|3|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |3|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COCRDLIC (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |1|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000050|
+  CRDNUM1  D |0500024453765740|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000027|
+  CRDNUM2  D |0683586198171516|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000002|
+  CRDNUM3  D |0923877193247330|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000020|
+  CRDNUM4  D |0927987108636232|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000012|
+  CRDNUM5  D |0982496213629795|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000044|
+  CRDNUM6  D |1014086565224350|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000037|
+  CRDNUM7  D |1142167692878931|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   4: PF8
+INPUT aid=PF8
+=== task   4 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |2|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000035|
+  CRDNUM1  D |1561409106491600|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000039|
+  CRDNUM2  D |2745303720002090|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000024|
+  CRDNUM3  D |2760836797107565|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000006|
+  CRDNUM4  D |2871968252812490|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000022|
+  CRDNUM5  D |2940139362300449|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000004|
+  CRDNUM6  D |2988091353094312|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000010|
+  CRDNUM7  D |3260763612337560|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   5: PF8
+INPUT aid=PF8
+=== task   5 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |3|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000041|
+  CRDNUM1  D |3766281984155154|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000019|
+  CRDNUM2  D |3940246016141489|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000003|
+  CRDNUM3  D |3999169246375885|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000013|
+  CRDNUM4  D |4011500891777367|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000034|
+  CRDNUM5  D |4385271476627819|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000036|
+  CRDNUM6  D |4534784102713951|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000007|
+  CRDNUM7  D |4859452612877065|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   6: PF8
+INPUT aid=PF8
+=== task   6 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |4|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000021|
+  CRDNUM1  D |5407099850479866|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000046|
+  CRDNUM2  D |5656830544981216|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000018|
+  CRDNUM3  D |5671184478505844|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000047|
+  CRDNUM4  D |5787351228879339|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000042|
+  CRDNUM5  D |5975117516616077|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000005|
+  CRDNUM6  D |6009619150674526|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000015|
+  CRDNUM7  D |6349250331648509|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   7: PF8
+INPUT aid=PF8
+=== task   7 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |5|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000048|
+  CRDNUM1  D |6503535181795992|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000030|
+  CRDNUM2  D |6509230362553816|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000028|
+  CRDNUM3  D |6723000463207764|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000016|
+  CRDNUM4  D |6727055190616014|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000033|
+  CRDNUM5  D |6832676047698087|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000031|
+  CRDNUM6  D |7026637615032277|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000043|
+  CRDNUM7  D |7058267261837752|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   8: PF8
+INPUT aid=PF8
+=== task   8 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |6|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000032|
+  CRDNUM1  D |7094142751055551|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000029|
+  CRDNUM2  D |7251508149188883|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000045|
+  CRDNUM3  D |7379335634661142|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000011|
+  CRDNUM4  D |7427684863423209|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000038|
+  CRDNUM5  D |7443870988897530|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000026|
+  CRDNUM6  D |8040580410348680|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000023|
+  CRDNUM7  D |8112545834239735|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step   9: PF8
+INPUT aid=PF8
+=== task   9 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |7|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000049|
+  CRDNUM1  D |8262593602473076|
+  CRDSTS1  D |Y|
+  CRDSEL2  D ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000014|
+  CRDNUM2  D |8517866958206008|
+  CRDSTS2  D |Y|
+  CRDSEL3  D ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000008|
+  CRDNUM3  D |8931369351894783|
+  CRDSTS3  D |Y|
+  CRDSEL4  D ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000025|
+  CRDNUM4  D |9056297931664011|
+  CRDSTS4  D |Y|
+  CRDSEL5  D ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000017|
+  CRDNUM5  D |9349107475869214|
+  CRDSTS5  D |Y|
+  CRDSEL6  D ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000009|
+  CRDNUM6  D |9501733721429893|
+  CRDSTS6  D |Y|
+  CRDSEL7  D ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000001|
+  CRDNUM7  D |9680294154603697|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step  10: PF8
+INPUT aid=PF8
+=== task  10 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |8|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000040|
+  CRDNUM1  D |9805583408996588|
+  CRDSTS1  D |Y|
+  CRDSEL2  N ||
+  CRDSTP2  N ||
+  ACCTNO2  N ||
+  CRDNUM2  N ||
+  CRDSTS2  N ||
+  CRDSEL3  N ||
+  CRDSTP3  N ||
+  ACCTNO3  N ||
+  CRDNUM3  N ||
+  CRDSTS3  N ||
+  CRDSEL4  N ||
+  CRDSTP4  N ||
+  ACCTNO4  N ||
+  CRDNUM4  N ||
+  CRDSTS4  N ||
+  CRDSEL5  N ||
+  CRDSTP5  N ||
+  ACCTNO5  N ||
+  CRDNUM5  N ||
+  CRDSTS5  N ||
+  CRDSEL6  N ||
+  CRDSTP6  N ||
+  ACCTNO6  N ||
+  CRDNUM6  N ||
+  CRDSTS6  N ||
+  CRDSEL7  N ||
+  CRDSTP7  N ||
+  ACCTNO7  N ||
+  CRDNUM7  N ||
+  CRDSTS7  N ||
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D |NO MORE RECORDS TO SHOW|
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step  11: PF8
+INPUT aid=PF8
+=== task  11 tran CCLI program COCRDLIC aid PF8   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |NO MORE RECORDS TO SHOW|
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |8|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000040|
+  CRDNUM1  D |9805583408996588|
+  CRDSTS1  D |Y|
+  CRDSEL2  N ||
+  CRDSTP2  N ||
+  ACCTNO2  N ||
+  CRDNUM2  N ||
+  CRDSTS2  N ||
+  CRDSEL3  N ||
+  CRDSTP3  N ||
+  ACCTNO3  N ||
+  CRDNUM3  N ||
+  CRDSTS3  N ||
+  CRDSEL4  N ||
+  CRDSTP4  N ||
+  ACCTNO4  N ||
+  CRDNUM4  N ||
+  CRDSTS4  N ||
+  CRDSEL5  N ||
+  CRDSTP5  N ||
+  ACCTNO5  N ||
+  CRDNUM5  N ||
+  CRDSTS5  N ||
+  CRDSEL6  N ||
+  CRDSTP6  N ||
+  ACCTNO6  N ||
+  CRDNUM6  N ||
+  CRDSTS6  N ||
+  CRDSEL7  N ||
+  CRDSTP7  N ||
+  ACCTNO7  N ||
+  CRDNUM7  N ||
+  CRDSTS7  N ||
+  INFOMSG  D ||
+  ERRMSG   D |NO MORE PAGES TO DISPLAY|
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step  12: PF7
+INPUT aid=PF7
+=== task  12 tran CCLI program COCRDLIC aid PF7   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |NO MORE PAGES TO DISPLAY|
+SEND MAP CCRDLIA  mapset COCRDLI  from COCRDLIC site 0005 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CCLI|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COCRDLIC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  PAGENO   D |7|
+  ACCTSID  N ||
+  CARDSID  N ||
+  CRDSEL1  D ||
+  ACCTNO1  D |00000000049|
+  CRDNUM1  D |8262593602473076|
+  CRDSTS1  D |Y|
+  CRDSEL2  N ||
+  CRDSTP2  N ||
+  ACCTNO2  D |00000000014|
+  CRDNUM2  D |8517866958206008|
+  CRDSTS2  D |Y|
+  CRDSEL3  N ||
+  CRDSTP3  N ||
+  ACCTNO3  D |00000000008|
+  CRDNUM3  D |8931369351894783|
+  CRDSTS3  D |Y|
+  CRDSEL4  N ||
+  CRDSTP4  N ||
+  ACCTNO4  D |00000000025|
+  CRDNUM4  D |9056297931664011|
+  CRDSTS4  D |Y|
+  CRDSEL5  N ||
+  CRDSTP5  N ||
+  ACCTNO5  D |00000000017|
+  CRDNUM5  D |9349107475869214|
+  CRDSTS5  D |Y|
+  CRDSEL6  N ||
+  CRDSTP6  N ||
+  ACCTNO6  D |00000000009|
+  CRDNUM6  D |9501733721429893|
+  CRDSTS6  D |Y|
+  CRDSEL7  N ||
+  CRDSTP7  N ||
+  ACCTNO7  D |00000000001|
+  CRDNUM7  D |9680294154603697|
+  CRDSTS7  D |Y|
+  INFOMSG  D |TYPE S FOR DETAIL, U TO UPDATE ANY RECORD|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CCLI) commarea length2000
+##### step  13: PF3
+INPUT aid=PF3
+=== task  13 tran CCLI program COCRDLIC aid PF3   calen     2000
+RECEIVE MAP CCRDLIA  into COCRDLIC site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CCLI|
+  in ACCTSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CARDSID  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL1  len   1 mdt=A R-MDT-ATTR ||
+  in CRDSEL2  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP2  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL3  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP3  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL4  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP4  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL5  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP5  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL6  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP6  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in CRDSEL7  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in CRDSTP7  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task  13 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

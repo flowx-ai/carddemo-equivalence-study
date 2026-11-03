@@ -1,0 +1,135 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact_dat",
+  "cardxref": "cardxref_dat",
+  "trantype": "trantype_dat",
+  "trancatg": "trancatg_dat",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version 687a6faf (head of the build branch, plan COMPLETED, no retry)\n- START: transact_dat, cardxref_dat, trantype_dat, trancatg_dat = file text, startDate, endDate; MODE files\n- END: {\"result\": ${result}}; tranrept_report inside\n- Register: rows lines 46-75",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   48,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   48,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   48,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   49,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   49,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   51,
+   "implied scale and overpunch decode"
+  ],
+  [
+   "R-REPT-ACCT",
+   51,
+   "implied scale and overpunch decode"
+  ],
+  [
+   "R-REPT-GRAND",
+   51,
+   "implied scale and overpunch decode"
+  ],
+  [
+   "R-REPT-SET",
+   53,
+   "selection on processing timestamp, normalisation unstated"
+  ],
+  [
+   "R-REPT-SET",
+   54,
+   "order and stability, no secondary ordering stated"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   56,
+   "duplicate reference key, first wins"
+  ],
+  [
+   "R-REPT-XREF",
+   56,
+   "duplicate reference key, first wins"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   57,
+   "missing type or category: placeholder, detail kept"
+  ],
+  [
+   "R-REPT-SET",
+   57,
+   "missing type or category: placeholder, detail kept"
+  ],
+  [
+   "R-REPT-XREF",
+   58,
+   "missing cross-reference: blank account, detail kept"
+  ],
+  [
+   "R-REPT-SET",
+   58,
+   "missing cross-reference: blank account, detail kept"
+  ],
+  [
+   "R-REPT-SET",
+   59,
+   "undecodable record skipped"
+  ],
+  [
+   "R-REPT-ACCT",
+   62,
+   "break on card, page boundary unstated"
+  ],
+  [
+   "R-REPT-ACCT",
+   63,
+   "account total after each card's last detail, last card included"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   63,
+   "account total after each card's last detail, last card included"
+  ],
+  [
+   "R-REPT-ACCT",
+   66,
+   "sum of signed cents, no rounding algorithm stated"
+  ],
+  [
+   "R-REPT-GRAND",
+   66,
+   "sum of signed cents, no rounding algorithm stated"
+  ],
+  [
+   "R-REPT-AMT",
+   67,
+   "amount picture, negative zero unstated"
+  ]
+ ]
+}

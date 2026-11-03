@@ -1,0 +1,153 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 11,
+  "flags_unneeded": 11,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 49,
+   "intcalc_systran.proc_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 83,
+   "note": "unreadable rate handling unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 84,
+   "note": "both rates absent: no result documented",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 91,
+   "note": "run prefix default",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 92,
+   "note": "suffix width and start unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 93,
+   "note": "sequence on rejected accounts undefined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 94,
+   "note": "business date override unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 95,
+   "note": "generated timestamps unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 97,
+   "note": "missing card undefined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 106,
+   "note": "duplicate keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+   "line": 108,
+   "note": "overflow not detailed",
+   "origin": "build"
+  }
+ ]
+}

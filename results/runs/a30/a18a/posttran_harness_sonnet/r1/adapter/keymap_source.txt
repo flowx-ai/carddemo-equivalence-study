@@ -1,0 +1,5 @@
+Read from runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md (and the build's own register) before execution; no output opened.
+- A2 version e0283246 (head of the build branch, plan COMPLETED, no retry)
+- START: nine file contents as text; MODE files
+- END: {"result": ${result}}; contract names inside
+- Register: manifest lines 46-63

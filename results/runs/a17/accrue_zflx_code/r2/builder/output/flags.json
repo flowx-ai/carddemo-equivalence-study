@@ -1,0 +1,12 @@
+[
+  {"rule": "R-LAST-ACCT-NOT-UPDATED", "source": "flowx/lxb002c_accrue.js:203 (LXB002C main loop: ELSE PERFORM 1050-UPDATE-ACCOUNT unreachable under PERFORM UNTIL)"},
+  {"rule": "R-INT-TRUNC", "source": "flowx/lxb002c_accrue.js:197 (1300-COMPUTE-INTEREST, COMPUTE without ROUNDED)"},
+  {"rule": "R-RATE-STANDARD-FALLBACK", "source": "flowx/lxb002c_accrue.js:188-194 (1200-GET-INTEREST-RATE, status 23 only)"},
+  {"rule": "R-ZERO-AMOUNT-TXN", "source": "flowx/lxb002c_accrue.js:195 (IF RG-INT-RATE NOT = 0 is the only guard)"},
+  {"rule": "R-CYC-ZEROED", "source": "flowx/lxb002c_accrue.js:155-159 (1050-UPDATE-ACCOUNT zeroes cycle credit/debit)"},
+  {"rule": "R-BALCAT-KEY-ORDER", "source": "flowx/lxb002c_accrue.js:127 (BALCAT-FILE indexed, ACCESS SEQUENTIAL)"},
+  {"rule": "R-XREF-FIRST-CARD", "source": "flowx/lxb002c_accrue.js:109 (READ LINK-FILE KEY IS FD-LINK-LACC-ID, alternate key)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/lxb002c_accrue.js:133-139 (FUNCTION CURRENT-DATE, run-time clock)"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/lxb002c_accrue.js:133-139 (FUNCTION CURRENT-DATE, run-time clock)"},
+  {"rule": "R-ABEND-PARTIAL-OUTPUT", "source": "flowx/lxb002c_accrue.js:205-209 (9999-ABEND-PROGRAM -> LXZ009D STOP RUN RETURNING 16)"}
+]

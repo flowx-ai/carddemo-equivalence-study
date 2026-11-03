@@ -1,0 +1,6 @@
+Read from runs/a25/harness/yx3/r2/exec/workflow_70008b04-c625-4968-9672-419282324896.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 24c3250c (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Build statements, lines 46, 120): calculate(input) reads input[file] for the layout keys acctdata, custdata, cardxref, transact = file text, contract names (identity map)
+- END: Package outputs (line 133) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); decoder's 'result' unwrapping, no decode map
+- MODE files
+- Register: assumption() entries at lines 51-96 (one per line)

@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 34,
+  "note": "encoding and whitespace handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 36,
+  "note": "duplicate and ordering policy absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 37,
+  "note": "absent-versus-zero and unusable-rate handling inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 38,
+  "note": "rounding stage not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 38,
+  "note": "formula, annual-percentage interpretation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 38,
+  "note": "zero-cent posting behaviour not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 39,
+  "note": "identifiers undocumented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 39,
+  "note": "source, description, merchant, card, timestamps undocumented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_summary/r1/exec/workflow_a11c6d02-5da7-4d0a-9f43-26be3ee96443.md",
+  "line": 41,
+  "note": "reset boundary and skipped-calculation reset not specified",
+  "origin": "build"
+ }
+]

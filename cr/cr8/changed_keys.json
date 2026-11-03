@@ -1,0 +1,2442 @@
+{
+ "base": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  }
+ ],
+ "c01": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  }
+ ],
+ "c02": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  }
+ ],
+ "c03": [
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  }
+ ],
+ "c04": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "rule": "R-STMT-FICO"
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "rule": "R-STMT-FICO"
+  }
+ ]
+}

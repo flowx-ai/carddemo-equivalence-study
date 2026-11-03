@@ -1,0 +1,156 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 12,
+  "note": "A1 divisor 1200 not stated anywhere; inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 17,
+  "note": "A2 rounding TODO; truncation assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 20,
+  "note": "A3 per category balance; ontology preferred over wiki currentBalance",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 25,
+  "note": "A4 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 27,
+  "note": "A5 zero rate writes no transaction: not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 29,
+  "note": "A6 zero balance writes a 0.00 transaction: AC silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 31,
+  "note": "A7 no overflow emulation: DM silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 38,
+  "note": "A9 standard group literal DEFAULT not in wiki or ontology",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 41,
+  "note": "A10 standard record missing too: abend",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 43,
+  "note": "A11 duplicate rate keys: last wins; wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 50,
+  "note": "A13 cycle credit/debit reset to 0 assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 54,
+  "note": "A14 cycle fields reset even at 0 interest; wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 60,
+  "note": "A17 empty balance input: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 64,
+  "note": "A18 missing account / card link: abend; partial output unknown",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 73,
+  "note": "A20 account id zero-padded in desc assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 75,
+  "note": "A21 suffix width, start and increment assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 79,
+  "note": "A22 several cards: lowest card number assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 86,
+  "note": "A24 fees not implemented: no logic documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r1/builder/outputs/assumptions.md",
+  "line": 90,
+  "note": "A25 sign encoding not documented",
+  "origin": "build"
+ }
+]

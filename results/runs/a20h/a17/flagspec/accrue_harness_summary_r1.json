@@ -1,0 +1,65 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgaccText",
+  "tcatbal": "balcatText",
+  "discgrp": "rategrpText",
+  "cardxref": "cardlinkText",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Files mode: Calculate interest reads input.ledgaccText, balcatText, rategrpText, cardlinkText, and requires also daytxnText, clntrecText, crdrecText, txntypeText, txncatgText as strings (line 50-51, 43: missing contents fail before calculation with empty lists). The adapter passes only its canonical inputs (the four step files and the run parameters), as in every earlier run (notebook \u00a729/A5 note), so this build is expected to return empty lists. END: output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, status, issues}}.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-RATE",
+   34,
+   "encoding and whitespace handling not specified"
+  ],
+  [
+   "R-INT-RATE",
+   36,
+   "duplicate and ordering policy absent"
+  ],
+  [
+   "R-INT-RATE",
+   37,
+   "absent-versus-zero and unusable-rate handling inferred"
+  ],
+  [
+   "R-INT-TRUNC",
+   38,
+   "rounding stage not specified"
+  ],
+  [
+   "R-INT-APPLY",
+   38,
+   "formula, annual-percentage interpretation not specified"
+  ],
+  [
+   "R-INT-ZERO",
+   38,
+   "zero-cent posting behaviour not specified"
+  ],
+  [
+   "R-INT-TXID",
+   39,
+   "identifiers undocumented"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   39,
+   "source, description, merchant, card, timestamps undocumented"
+  ],
+  [
+   "R-INT-CYC",
+   41,
+   "reset boundary and skipped-calculation reset not specified"
+  ]
+ ]
+}

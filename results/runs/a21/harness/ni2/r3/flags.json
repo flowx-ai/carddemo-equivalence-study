@@ -1,0 +1,163 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 74,
+  "note": "R-TEXT-ENCODING: newline handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 75,
+  "note": "R-LAYOUT: field summaries only, not complete copybooks",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 75,
+  "note": "R-LAYOUT: field summaries only, not complete copybooks",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 76,
+  "note": "R-RATE-WIDTH: picture conflicts with the example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 77,
+  "note": "R-NUMERIC-DECODE: alternative sign forms not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 77,
+  "note": "R-NUMERIC-DECODE: alternative sign forms not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 80,
+  "note": "R-DATE-PRECEDENCE: precedence for differing run dates unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 81,
+  "note": "R-LEAP-ANNIVERSARY: BR-03 does not define a non-leap counterpart",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 82,
+  "note": "R-INT-TRUNC: BR-08 requests golden-file confirmation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 83,
+  "note": "R-ZERO-AMOUNT: negative and sub-cent outcomes not separately specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 84,
+  "note": "R-ACCOUNT-COVERAGE: unencountered-account reset unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 84,
+  "note": "R-ACCOUNT-COVERAGE: unencountered-account reset unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 85,
+  "note": "R-DUPLICATES: duplicate handling not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 85,
+  "note": "R-DUPLICATES: duplicate handling not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 86,
+  "note": "R-CARD-SELECTION: which linked card is not said",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 87,
+  "note": "R-ID-SEQUENCE: suffix initialization and ordering not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 88,
+  "note": "R-MERCHANT-DEFAULTS: merchant values not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 89,
+  "note": "R-TIMESTAMPS: punctuation and clock not provided",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 91,
+  "note": "R-PER-RECORD-FAILURE: malformed records and missing DEFAULT not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 92,
+  "note": "R-ACCOUNT-ATOMICITY: partial per-account updates not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 92,
+  "note": "R-ACCOUNT-ATOMICITY: partial per-account updates not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+  "line": 94,
+  "note": "R-REPRESENTATION: overflow not specified",
+  "origin": "build"
+ }
+]

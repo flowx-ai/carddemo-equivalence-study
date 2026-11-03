@@ -1,0 +1,80 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0010 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+T   2 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   2 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+T   3 COMEN01C s0007 RECEIVE-MAP      COMEN1A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COMEN01C s0004 XCTL             COTRN02C resp=        0 resp2=        0 rules=
+--- XCTL in task   3 to program COTRN02C (EIBAID kept: R-XCTL-AID) calen      160
+T   3 COTRN02C s0003 SEND-MAP         COTRN2A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   3 COTRN02C s0004 RETURN-TRANSID   CT02     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   4: ENTER
+=== task   4 tran CT02 program COTRN02C aid ENTER calen      218
+T   4 COTRN02C s0005 RECEIVE-MAP      COTRN2A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COTRN02C s0007 READ             CCXREF   key=4859452612877065 resp=        0 resp2=        0 rules=
+T   4 COTRN02C s0003 SEND-MAP         COTRN2A  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   4 COTRN02C s0004 RETURN-TRANSID   CT02     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   5: PF5
+=== task   5 tran CT02 program COTRN02C aid PF5   calen      218
+T   5 COTRN02C s0005 RECEIVE-MAP      COTRN2A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   5 COTRN02C s0006 READ             CXACAIX  key=00000000007      resp=        0 resp2=        0 rules=R-AIX-READ,
+T   5 COTRN02C s0008 STARTBR          TRANSACT key=HIGH-VALUES      resp=        0 resp2=        0 rules=R-BR-FF,
+T   5 COTRN02C s0009 READPREV         TRANSACT key=0000000996722787 resp=        0 resp2=        0 rules=R-BR-FF-READPREV,
+T   5 COTRN02C s0010 ENDBR            TRANSACT resp=        0 resp2=        0 rules=
+T   5 COTRN02C s0006 READ             CXACAIX  key=00000000007      resp=        0 resp2=        0 rules=R-AIX-READ,
+CEEDAYS date=|2022-06-10| pic=|YYYY-MM-DD| sev=0000 msg=0000 lilian=    160581 rules=R-CEE-OK
+CEEDAYS date=|2022-07-18| pic=|YYYY-MM-DD| sev=0000 msg=0000 lilian=    160619 rules=R-CEE-OK
+T   5 COTRN02C s0003 SEND-MAP         COTRN2A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   5 COTRN02C s0004 RETURN-TRANSID   CT02     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   6: ENTER
+=== task   6 tran CT02 program COTRN02C aid ENTER calen      218
+T   6 COTRN02C s0005 RECEIVE-MAP      COTRN2A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   6 COTRN02C s0006 READ             CXACAIX  key=00000000007      resp=        0 resp2=        0 rules=R-AIX-READ,
+CEEDAYS date=|2022-06-10| pic=|YYYY-MM-DD| sev=0000 msg=0000 lilian=    160581 rules=R-CEE-OK
+CEEDAYS date=|2022-07-18| pic=|YYYY-MM-DD| sev=0000 msg=0000 lilian=    160619 rules=R-CEE-OK
+T   6 COTRN02C s0008 STARTBR          TRANSACT key=HIGH-VALUES      resp=        0 resp2=        0 rules=R-BR-FF,
+T   6 COTRN02C s0009 READPREV         TRANSACT key=0000000996722787 resp=        0 resp2=        0 rules=R-BR-FF-READPREV,
+T   6 COTRN02C s0010 ENDBR            TRANSACT resp=        0 resp2=        0 rules=
+T   6 COTRN02C s0011 WRITE            TRANSACT key=0000000996722788 resp=        0 resp2=        0 rules=
+T   6 COTRN02C s0003 SEND-MAP         COTRN2A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   6 COTRN02C s0004 RETURN-TRANSID   CT02     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   7: ENTER
+=== task   7 tran CT02 program COTRN02C aid ENTER calen      218
+T   7 COTRN02C s0005 RECEIVE-MAP      COTRN2A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   7 COTRN02C s0007 READ             CCXREF   key=9680294154603697 resp=        0 resp2=        0 rules=
+CEEDAYS date=|1500-01-01| pic=|YYYY-MM-DD| sev=0003 msg=2513 lilian=         0 rules=R-CEE-RANGE
+CEEDAYS date=|2022-07-18| pic=|YYYY-MM-DD| sev=0000 msg=0000 lilian=    160619 rules=R-CEE-OK
+T   7 COTRN02C s0008 STARTBR          TRANSACT key=HIGH-VALUES      resp=        0 resp2=        0 rules=R-BR-FF,
+T   7 COTRN02C s0009 READPREV         TRANSACT key=0000000996722788 resp=        0 resp2=        0 rules=R-BR-FF-READPREV,
+T   7 COTRN02C s0010 ENDBR            TRANSACT resp=        0 resp2=        0 rules=
+T   7 COTRN02C s0011 WRITE            TRANSACT key=0000000996722789 resp=        0 resp2=        0 rules=
+T   7 COTRN02C s0003 SEND-MAP         COTRN2A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   7 COTRN02C s0004 RETURN-TRANSID   CT02     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CT02) commarea length 218
+##### step   8: PF3
+=== task   8 tran CT02 program COTRN02C aid PF3   calen      218
+T   8 COTRN02C s0005 RECEIVE-MAP      COTRN2A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   8 COTRN02C s0002 XCTL             COMEN01C resp=        0 resp2=        0 rules=
+--- XCTL in task   8 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      218
+T   8 COMEN01C s0006 SEND-MAP         COMEN1A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   8 COMEN01C s0001 RETURN-TRANSID   CM00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

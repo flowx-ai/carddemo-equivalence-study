@@ -1,0 +1,2 @@
+own appId <uuid>; mcp calls 19; outside-scope calls 1
+  list_projects {} foreign=[] visible_projects=[<10 other workspace projects, names withheld>]

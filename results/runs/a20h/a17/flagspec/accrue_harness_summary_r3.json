@@ -1,0 +1,70 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc_dat",
+  "tcatbal": "balcat_dat",
+  "discgrp": "rategrp_dat",
+  "cardxref": "cardlink_dat",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn_json",
+  "intcalc_acctdata": "accrue_ledgacc_json"
+ },
+ "source": "Files mode: Calculate interest (one-line script, line 46) reads input.ledgacc_dat, balcat_dat, rategrp_dat, cardlink_dat and input.businessDate (default 2022-07-18); accrueParameter is not read (ids from 1). Render results (line 52): output={result:{accrue_systxn_json, accrue_ledgacc_json (arrays), assumptions, assumptions_md, ...}}. Flags: assumption() register inside line 46, cited by number; a flag when its basis says the wiki leaves the point open. A06 (zero-cent) is read from the flow, not called open: not a flag.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-APPLY",
+   46,
+   "A03: annual-rate units and formula absent"
+  ],
+  [
+   "R-INT-TRUNC",
+   46,
+   "A04: no rounding rule stated"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "A08: duplicate-key handling and ordering not stated"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "A15: missing-reference handling not stated"
+  ],
+  [
+   "R-INT-CYC",
+   46,
+   "A09: balance expression not stated"
+  ],
+  [
+   "R-INT-CYC",
+   46,
+   "A10: no-balance-account rule absent"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "A11: no identifier generation rule"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "A12: source, description, merchant values not documented"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "A13: card selection not stated"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "A14: timestamp derivation absent"
+  ]
+ ]
+}

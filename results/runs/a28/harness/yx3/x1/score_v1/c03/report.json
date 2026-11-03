@@ -1,0 +1,1149 @@
+{
+ "summary": {
+  "records_union": 88,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 88,
+  "silent_records": 88,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-ABSENT"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 32,
+  "flags_unneeded": 32,
+  "layout": {},
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 44,
+   "absent": true
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 0,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 44,
+   "absent": true
+  }
+ },
+ "by_rule": {
+  "R-ABSENT/silent": 88
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-ABSENT",
+   "golden": null,
+   "cand": null,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 58,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 47,
+   "note": "A02 offsets inferred, not verified against copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 48,
+   "note": "A03 encoding and framing unsettled",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 48,
+   "note": "A03 encoding and framing unsettled",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 48,
+   "note": "A03 encoding and framing unsettled",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 49,
+   "note": "A04 text encoding and overflow behaviour unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 49,
+   "note": "A04 text encoding and overflow behaviour unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 49,
+   "note": "A04 text encoding and overflow behaviour unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 49,
+   "note": "A04 text encoding and overflow behaviour unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 50,
+   "note": "A05 assembly unspecified, maker-confirmed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 50,
+   "note": "A05 assembly unspecified, maker-confirmed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 51,
+   "note": "A06 cycle filter TODO; no filter",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 52,
+   "note": "A07 duplicate input records: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 53,
+   "note": "A08 per-card recovery unspecified, maker-confirmed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 53,
+   "note": "A08 per-card recovery unspecified, maker-confirmed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 54,
+   "note": "A09 behaviour for absent scores unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OTHER",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 55,
+   "note": "A10 header wording leaves two columns unassigned",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 56,
+   "note": "A11 escaping and overlong values: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 56,
+   "note": "A11 escaping and overlong values: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md",
+   "line": 57,
+   "note": "A12 orphan handling unstated",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

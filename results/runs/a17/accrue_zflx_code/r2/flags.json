@@ -1,0 +1,30 @@
+[
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_code/r2/builder/output/assumptions.md",
+  "line": 82,
+  "note": "A-05 card choice with several cards: decision where the source is silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_code/r2/builder/output/assumptions.md",
+  "line": 88,
+  "note": "A-04 duplicate primary keys: decision",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_code/r2/builder/output/assumptions.md",
+  "line": 104,
+  "note": "A-03 non-numeric fields: source validates nothing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_code/r2/builder/output/assumptions.md",
+  "line": 107,
+  "note": "A-11 overflow: no ON SIZE ERROR, environment-dependent",
+  "origin": "build"
+ }
+]

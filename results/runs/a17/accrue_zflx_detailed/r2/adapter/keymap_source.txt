@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_6af1fb34-...md: START inputs ledgacc, balcat, rategrp, cardlink (raw text), interestRunDate, businessDate; END keys accrue_systxn, accrue_ledgacc, lines 326-327) and register A3, before execution:
+- files mode, VARIANT=d1; CONTRACT run parameters passed (interestRunDate, businessDate)
+- decode.json: accrue names -> canonical (pure renaming)

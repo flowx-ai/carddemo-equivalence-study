@@ -1,0 +1,432 @@
+{
+ "cases": {
+  "o-avw-01": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    60
+   ],
+   "screen_tagged": [
+    0,
+    5
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-avw-02": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    39
+   ],
+   "screen_tagged": [
+    0,
+    8
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-avw-03": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    41
+   ],
+   "screen_tagged": [
+    0,
+    4
+   ],
+   "file_untagged": [
+    0,
+    421
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-avw-04": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    28
+   ],
+   "screen_tagged": [
+    0,
+    4
+   ],
+   "file_untagged": [
+    0,
+    421
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-avw-05": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    15
+   ],
+   "screen_tagged": [
+    0,
+    7
+   ],
+   "file_untagged": [
+    0,
+    423
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-01": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    30
+   ],
+   "screen_tagged": [
+    0,
+    11
+   ],
+   "file_untagged": [
+    0,
+    421
+   ],
+   "file_tagged": [
+    0,
+    2
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-02": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    57
+   ],
+   "screen_tagged": [
+    0,
+    2
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-03": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    35
+   ],
+   "screen_tagged": [
+    0,
+    9
+   ],
+   "file_untagged": [
+    0,
+    421
+   ],
+   "file_tagged": [
+    0,
+    2
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-04": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    30
+   ],
+   "screen_tagged": [
+    0,
+    9
+   ],
+   "file_untagged": [
+    0,
+    420
+   ],
+   "file_tagged": [
+    0,
+    2
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-05": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    30
+   ],
+   "screen_tagged": [
+    0,
+    9
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    2
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-bil-07": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    2
+   ],
+   "screen_tagged": [
+    0,
+    2
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-mnu-01": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    0,
+    34
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-mnu-02": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    0,
+    15
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-sgn-01": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    0,
+    4
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-sgn-02": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": "absent",
+   "screen_untagged": [
+    0,
+    10
+   ],
+   "screen_tagged": [
+    0,
+    2
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  },
+  "o-sgn-03": {
+   "outcome_untagged": "absent",
+   "outcome_tagged": null,
+   "screen_untagged": [
+    0,
+    5
+   ],
+   "screen_tagged": [
+    0,
+    0
+   ],
+   "file_untagged": [
+    0,
+    422
+   ],
+   "file_tagged": [
+    0,
+    0
+   ],
+   "rules_silent": [
+    "R-ABSENT"
+   ],
+   "rules_flagged": []
+  }
+ },
+ "pooled": {
+  "screen_untagged": {
+   "equal": 0,
+   "units": 435,
+   "equivalence": 0.0
+  },
+  "screen_tagged": {
+   "equal": 0,
+   "units": 72,
+   "equivalence": 0.0
+  },
+  "file_untagged": {
+   "equal": 0,
+   "units": 6747,
+   "equivalence": 0.0
+  },
+  "file_tagged": {
+   "equal": 0,
+   "units": 8,
+   "equivalence": 0.0
+  }
+ },
+ "H16_core_no_silent": {
+  "cases": [
+   "o-sgn-01",
+   "o-sgn-02",
+   "o-mnu-01",
+   "o-avw-01",
+   "o-bil-01",
+   "o-bil-02",
+   "o-bil-03"
+  ],
+  "silent_units": 259,
+  "holds": false
+ },
+ "H15_payment_files": {
+  "silent_units": 626,
+  "holds": false
+ },
+ "H17_account_view_fields": {
+  "equal": 0,
+  "units": 29,
+  "holds": false
+ }
+}

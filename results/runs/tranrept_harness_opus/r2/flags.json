@@ -1,0 +1,177 @@
+[
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 5,
+  "note": "A03 account joined by card through CardXref",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 7,
+  "note": "A05 category lookup key unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 11,
+  "note": "A09 sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 13,
+  "note": "A11 which timestamp controls selection not identified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 15,
+  "note": "A13 duplicate identifiers kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 16,
+  "note": "A14 order by account then transaction ID; sorting not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 16,
+  "note": "A14 order by account then transaction ID; sorting not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 18,
+  "note": "A16 conflicting duplicate lookups rejected",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 18,
+  "note": "A16 conflicting duplicate lookups rejected",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 19,
+  "note": "A17 unresolved lookup fails the whole run",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 19,
+  "note": "A17 unresolved lookup fails the whole run",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 21,
+  "note": "A19 account totals per account incl. the last; scope not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 21,
+  "note": "A19 account totals per account incl. the last; scope not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 23,
+  "note": "A21 grand total sums each detail once",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LASTDUP",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 23,
+  "note": "A21 grand total sums each detail once",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 24,
+  "note": "A22 empty-result lines not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-HEADER",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 24,
+  "note": "A22 empty-result lines not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 26,
+  "note": "A24 zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 26,
+  "note": "A24 zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 26,
+  "note": "A24 zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 27,
+  "note": "A25 overflow rejected; not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 27,
+  "note": "A25 overflow rejected; not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 27,
+  "note": "A25 overflow rejected; not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 28,
+  "note": "A26 truncation of longer reference text unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_opus/r2/exec/assumption_register.md",
+  "line": 30,
+  "note": "A28 failure returns no report lines",
+  "origin": "build"
+ }
+]

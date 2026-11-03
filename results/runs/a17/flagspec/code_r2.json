@@ -1,0 +1,7 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-TXFORMAT", 82, "A-05 card choice with several cards: decision where the source is silent"],
+  ["R-INT-RATE", 88, "A-04 duplicate primary keys: decision"],
+  ["R-INT-RATE", 104, "A-03 non-numeric fields: source validates nothing"],
+  ["R-INT-APPLY", 107, "A-11 overflow: no ON SIZE ERROR, environment-dependent"]
+ ]}

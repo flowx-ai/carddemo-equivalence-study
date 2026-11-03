@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md (and the build's own register) before execution; no output opened.
+- A2 version 4ce816b8 (head of the build branch, plan COMPLETED, no retry)
+- START: decoded accounts, disclosureRates, cardXrefs, categoryBalances; rate renamed from interest_rate; MODE records
+- END: result; contract names inside
+- Flags: entries stating silence or inference, each to the rule a divergence would produce

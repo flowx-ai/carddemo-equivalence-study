@@ -1,0 +1,12 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md #11 (P-15 BR-08 TODO: truncate vs ROUNDED); workflow intcalc_batch, node 'Compute interest (CBACT04C)'"},
+  {"rule": "R-LAST-ACCOUNT-UPDATE", "source": "assumptions.md #20 (P-15 BR-06 'at each change of account' vs Purpose/flow 'update per account')"},
+  {"rule": "R-TENYEAR-BOUNDARY", "source": "assumptions.md #8 (P-15 BR-03 'on or before'; clamp and DEFAULT-rate scope)"},
+  {"rule": "R-TRANID-SUFFIX", "source": "assumptions.md #14 (P-15 BR-05 'running suffix': width/start not stated)"},
+  {"rule": "R-ZERO-BALANCE-TXN", "source": "assumptions.md #10 (P-15 BR-03/BR-04 condition is on the rate only)"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "assumptions.md #16 (BR-04 does not name the card; lowest card by account from cardxref)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "assumptions.md #18 (wiki silent; run timestamp, DB2 format)"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "assumptions.md #18 (wiki silent; run timestamp, DB2 format)"},
+  {"output": "intcalc_systran.json", "key": "desc", "source": "assumptions.md #15 ('Int. for a/c <accountId>': account id rendered as 11 zero-padded digits)"},
+  {"output": "intcalc_systran.json", "key": "merchant_id", "source": "assumptions.md #17 (wiki silent; 0 and blank merchant fields)"}
+]

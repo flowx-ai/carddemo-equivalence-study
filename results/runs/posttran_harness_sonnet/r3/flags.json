@@ -1,0 +1,121 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 62,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] field layout: parity unverified without full copybooks",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 5,
+  "note": "[3] signed amount encoding; inconsistent wiki example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 5,
+  "note": "[3] signed amount encoding; inconsistent wiki example",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] check order, 103 overwrites 102, equality passes; AC example cannot be evaluated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] check order, 103 overwrites 102, equality passes; AC example cannot be evaluated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] check order, 103 overwrites 102, equality passes; AC example cannot be evaluated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] check order, 103 overwrites 102, equality passes; AC example cannot be evaluated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 8,
+  "note": "[6] feed ids kept, duplicates fatal, no sequence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "[7] processing timestamp; rejects keep original",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] no reason 109",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] no extra validation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] representation; category-output key types not typed by the contract",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] representation; category-output key types not typed by the contract",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] representation; category-output key types not typed by the contract",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_sonnet/r3/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] empty feed and malformed input handling not prescribed",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,3 @@
+OUTSIDE Glob ~/Dev/_tests/ll-builds/a17 DENIED
+OUTSIDE Glob ~/.local/bin DENIED
+outside accesses: 2

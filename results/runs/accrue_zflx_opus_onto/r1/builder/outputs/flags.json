@@ -1,0 +1,21 @@
+[
+  {"rule": "R-INT-FORMULA", "source": "outputs/assumptions.md:12"},
+  {"rule": "R-INT-TRUNC", "source": "outputs/assumptions.md:17"},
+  {"rule": "R-INT-BASIS", "source": "outputs/assumptions.md:20"},
+  {"rule": "R-INT-NEG", "source": "outputs/assumptions.md:25"},
+  {"rule": "R-INT-ZERO-RATE", "source": "outputs/assumptions.md:27"},
+  {"rule": "R-INT-ZERO-BAL", "source": "outputs/assumptions.md:29"},
+  {"rule": "R-RATE-DEFAULT", "source": "outputs/assumptions.md:38"},
+  {"rule": "R-ABEND", "source": "outputs/assumptions.md:64"},
+  {"rule": "R-ORDER", "source": "outputs/assumptions.md:47"},
+  {"rule": "R-ACCT-POST", "source": "outputs/assumptions.md:50"},
+  {"rule": "R-BALCAT-NOT-UPDATED", "source": "outputs/assumptions.md:57"},
+  {"rule": "R-TXN-DESC", "source": "outputs/assumptions.md:73"},
+  {"rule": "R-TXN-ID", "source": "outputs/assumptions.md:75"},
+  {"rule": "R-CARD-PICK", "source": "outputs/assumptions.md:79"},
+  {"rule": "R-FEES", "source": "outputs/assumptions.md:86"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "outputs/assumptions.md:82"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "outputs/assumptions.md:82"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_credit", "source": "outputs/assumptions.md:50"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_debit", "source": "outputs/assumptions.md:50"}
+]

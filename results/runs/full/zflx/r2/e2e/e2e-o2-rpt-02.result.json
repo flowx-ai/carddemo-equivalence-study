@@ -1,0 +1,14 @@
+{
+ "case": "e2e-o2-rpt-02",
+ "outcome": "differs from legacy",
+ "touched_units": 2,
+ "differing": [
+  [
+   "tranrept_report",
+   "header",
+   "range"
+  ]
+ ],
+ "session_divergences": 7,
+ "baseline_divergences": 6
+}

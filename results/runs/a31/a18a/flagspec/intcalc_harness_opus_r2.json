@@ -1,0 +1,62 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "_lists": {
+   "disclosureGroups": "disclosureRates"
+  },
+  "disclosureGroups": {
+   "interest_rate": "rate"
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran",
+  "intcalc_acctdata": "intcalc_acctdata"
+ },
+ "source": "- A2 version 4ce816b8 (head of the build branch, plan COMPLETED, no retry)\n- START: decoded accounts, disclosureRates, cardXrefs, categoryBalances; rate renamed from interest_rate; MODE records\n- END: result; contract names inside\n- Flags: entries stating silence or inference, each to the rule a divergence would produce",
+ "cr_rule": null,
+ "register": null,
+ "mode": "records",
+ "build": [
+  [
+   "R-INT-RATE",
+   74,
+   "formula default: formula and grouping TODO, rate units not specified"
+  ],
+  [
+   "R-INT-TRUNC",
+   74,
+   "rounding TODO, maker chose"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   74,
+   "transaction constants not specified"
+  ],
+  [
+   "R-INT-TXID",
+   74,
+   "id generation not specified"
+  ],
+  [
+   "R-INT-CYC",
+   74,
+   "cycle convention not specified"
+  ],
+  [
+   "R-INT-LAST",
+   74,
+   "cycle convention not specified"
+  ],
+  [
+   "R-INT-APPLY",
+   74,
+   "signed balance default"
+  ],
+  [
+   "R-INT-ZERO",
+   74,
+   "emission rules not specified"
+  ]
+ ]
+}

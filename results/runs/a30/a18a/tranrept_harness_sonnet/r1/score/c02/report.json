@@ -1,0 +1,247 @@
+{
+ "summary": {
+  "records_union": 363,
+  "equivalence_strict": 0.9917,
+  "equivalence_business": 0.9945,
+  "divergent_records": 2,
+  "silent_records": 0,
+  "flagged_records": 2,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 29,
+  "flags_unneeded": 26,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.8533,
+    "page_totals_equal": false,
+    "pages_golden": 17,
+    "pages_candidate": 7
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 362,
+   "candidate": 363,
+   "equal_strict": 360,
+   "equal_business": 361,
+   "union": 363
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79233.78",
+   "cand": "79213.35",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 48,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 48,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 48,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 49,
+   "note": "reference offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 49,
+   "note": "reference offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 51,
+   "note": "implied scale and overpunch decode",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 51,
+   "note": "implied scale and overpunch decode",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 51,
+   "note": "implied scale and overpunch decode",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 53,
+   "note": "selection on processing timestamp, normalisation unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 54,
+   "note": "order and stability, no secondary ordering stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 56,
+   "note": "duplicate reference key, first wins",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 56,
+   "note": "duplicate reference key, first wins",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 57,
+   "note": "missing type or category: placeholder, detail kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 57,
+   "note": "missing type or category: placeholder, detail kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 58,
+   "note": "missing cross-reference: blank account, detail kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 58,
+   "note": "missing cross-reference: blank account, detail kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 59,
+   "note": "undecodable record skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 62,
+   "note": "break on card, page boundary unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 63,
+   "note": "account total after each card's last detail, last card included",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 66,
+   "note": "sum of signed cents, no rounding algorithm stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 66,
+   "note": "sum of signed cents, no rounding algorithm stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md",
+   "line": 67,
+   "note": "amount picture, negative zero unstated",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

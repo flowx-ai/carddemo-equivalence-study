@@ -1,0 +1,139 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 9,
+  "flags_unneeded": 9,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 50,
+   "intcalc_systran.orig_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 28,
+   "note": "A-04 overpunch assumed for every S9 field; wiki states it for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 35,
+   "note": "A-05 DEFAULT row missing too: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 39,
+   "note": "A-06 fields BR-04 does not name (card, merchant)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 46,
+   "note": "A-07 balance for unknown account: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 53,
+   "note": "A-09 suffix width and start not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 65,
+   "note": "A-12 wiki rounding implemented; legacy may truncate, flagged",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 71,
+   "note": "A-13 zero-rate accounts still updated; scenario 5 only says no transaction",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 79,
+   "note": "A-15 account status: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a16/intcalc_zflx_sonnet/r2/builder/outputs/assumptions.md",
+   "line": 82,
+   "note": "A-16 AC 7 fees DECISION open; stub kept",
+   "origin": "build"
+  }
+ ]
+}

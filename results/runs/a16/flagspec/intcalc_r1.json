@@ -1,0 +1,17 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 25, "A-03 overpunch for all signed fields: wiki gives no rule beyond DT-07"],
+  ["R-INT-RATE", 33, "A-03 rate example 5 chars vs 6-byte field"],
+  ["R-INT-TXID", 41, "A-05 processing order never stated"],
+  ["R-INT-RATE", 55, "A-07 neither group nor DEFAULT row: wiki silent"],
+  ["R-INT-RATE", 59, "A-08 balance without account: wiki silent"],
+  ["R-INT-TRUNC", 65, "A-09 wiki rounding implemented; conflict with recalled CBACT04C truncation noted, unverified"],
+  ["R-INT-ZERO", 72, "A-10 zero-amount transactions: wiki does not exclude"],
+  ["R-INT-RATE", 72, "A-10 negative balances: wiki does not exclude"],
+  ["R-INT-APPLY", 76, "A-11 AC 7 fees DECISION open; stub kept"],
+  ["R-INT-TXID", 82, "A-12 suffix width/start/scope not stated"],
+  ["R-INT-TXFORMAT", 91, "A-14 card number: step pages never say"],
+  ["R-INT-TXFORMAT", 98, "A-15 merchant fields: BR-04 silent"],
+  ["R-INT-CYC", 112, "A-18 zero-total accounts updated: BR-06 does not exclude"],
+  ["R-PASSTHRU", 119, "A-19 accounts with no balance: wiki only describes balance-triggered updates"]
+ ]}

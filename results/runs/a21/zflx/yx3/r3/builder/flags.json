@@ -1,0 +1,9 @@
+[
+  {"output": "creastmt_statements.txt", "key": "customer name line (line 1) and HTML name paragraph", "source": "flowx/scripts/02_build_statement_data.js:19 (assumptions.md D2: legacy STRING DELIMITED BY ' ' — multi-word parts truncated, empty middle name gives a double space)"},
+  {"output": "creastmt_statements.txt", "key": "address line 3 (line 4) and HTML address line 3", "source": "flowx/scripts/02_build_statement_data.js:99 (assumptions.md D3: country included although plugin-statement-document lists only 'state, zip'; parts truncated at first space)"},
+  {"output": "creastmt_statements_html.txt", "key": "name/address paragraph spacing before </p>", "source": "flowx/scripts/04_render_statement_html.js:63 (assumptions.md E2: right-trimmed value + two spaces, read from the contract rendering)"},
+  {"output": "creastmt_statements.txt", "key": "statement set and order", "source": "flowx/scripts/02_build_statement_data.js:57 (assumptions.md C1/C3: one statement per xref card in card-number order; cards with missing customer/account skipped)"},
+  {"output": "creastmt_statements.txt", "key": "transactions printed per statement", "source": "flowx/scripts/02_build_statement_data.js:79 (assumptions.md C4/C5: all transactions of the card, no cycle filter — wiki TODO)"},
+  {"output": "creastmt_statements.txt", "key": "FICO Score field for blank/non-numeric score", "source": "flowx/scripts/02_build_statement_data.js:29 (assumptions.md D1: printed blank)"},
+  {"output": "creastmt_statements.txt", "key": "signed amount decoding", "source": "flowx/scripts/01_parse_input_files.js:39 (assumptions.md B2: zoned overpunch / ASCII zoned / explicit sign)"}
+]

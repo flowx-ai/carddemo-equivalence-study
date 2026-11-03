@@ -1,0 +1,88 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "Files mode: Calculate interest reads input.acctdata/tcatbal/discgrp/cardxref as file text (other five files optional), input.businessDate, input.interestRunDate. END: Validate assumptions writes output={result:{intcalc_systran, intcalc_acctdata, assumptions, assumptions_md, diagnostics, status}} -> _root result.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-RATE",
+   61,
+   "complete copybooks absent; printed tables used"
+  ],
+  [
+   "R-INT-RATE",
+   63,
+   "rate width vs 5-char example: conflict unresolved"
+  ],
+  [
+   "R-INT-RATE",
+   64,
+   "overpunch alphabet omitted by the wiki"
+  ],
+  [
+   "R-INT-TXID",
+   65,
+   "category/account processing order: ties and input order not specified"
+  ],
+  [
+   "R-INT-TXID",
+   66,
+   "suffix width, initial value, reset not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   67,
+   "card selection / missing card not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   68,
+   "merchant details not populated by BR-04"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   69,
+   "no time-of-day rule for timestamps"
+  ],
+  [
+   "R-INT-CYC",
+   70,
+   "accounts absent from balance input not addressed"
+  ],
+  [
+   "R-INT-ZERO",
+   71,
+   "no rounded-zero suppression rule stated"
+  ],
+  [
+   "R-INT-APPLY",
+   72,
+   "aggregation order of rounded amounts not explicit"
+  ],
+  [
+   "R-INT-APPLY",
+   73,
+   "fee scenario DECISION unresolved; stub kept"
+  ],
+  [
+   "R-INT-RATE",
+   74,
+   "missing DEFAULT recovery not specified"
+  ],
+  [
+   "R-INT-RATE",
+   75,
+   "duplicate/malformed record recovery not defined"
+  ]
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "build": "fix11",
+ "started": "2026-11-03T02:09:59.782Z",
+ "cases": [
+  {
+   "case": "t",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COMEN1A",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {},
+     "fields": {
+      "OPTN001": true,
+      "OPTN002": true
+     },
+     "rows": 0,
+     "rows_missing": [],
+     "rows_ok": true,
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COMEN1A",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {},
+     "fields": {
+      "R": true
+     },
+     "rows": 0,
+     "rows_missing": [],
+     "rows_ok": true,
+     "u2011": false,
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "cases_all_steps_ok": {
+  "t": true
+ },
+ "steps_ok": "2/2"
+}

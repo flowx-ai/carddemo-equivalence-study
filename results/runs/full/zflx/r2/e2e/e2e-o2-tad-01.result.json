@@ -1,0 +1,14 @@
+{
+ "case": "e2e-o2-tad-01",
+ "outcome": "carried through except inherited",
+ "touched_units": 7,
+ "differing": [
+  [
+   "tranrept_report",
+   "grand",
+   "total"
+  ]
+ ],
+ "session_divergences": 6,
+ "baseline_divergences": 6
+}

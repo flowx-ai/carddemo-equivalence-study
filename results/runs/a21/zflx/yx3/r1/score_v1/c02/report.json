@@ -1,0 +1,1169 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 100,
+  "silent_records": 0,
+  "flagged_records": 100,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-FICO"
+  ],
+  "flags_raised": 18,
+  "flags_unneeded": 17,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9604
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9924
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-FICO/flagged": 100
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "fico",
+   "golden": "274",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "fico",
+   "golden": "054",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "fico",
+   "golden": "355",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "fico",
+   "golden": "284",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "fico",
+   "golden": "051",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "fico",
+   "golden": "699",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "field",
+   "field": "fico",
+   "golden": "274",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "fico",
+   "golden": "054",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "fico",
+   "golden": "355",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "fico",
+   "golden": "284",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "fico",
+   "golden": "051",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "fico",
+   "golden": "699",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 58,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 40,
+   "note": "B2 whether one account's cards are merged: the wiki does not say",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 40,
+   "note": "B2 whether one account's cards are merged: the wiki does not say",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 43,
+   "note": "B3 cycle-filter TODO; no filter",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 49,
+   "note": "B5 missing customer or account: wiki silent; card skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 49,
+   "note": "B5 missing customer or account: wiki silent; card skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 54,
+   "note": "C1 name: the wiki says only customer name; legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 54,
+   "note": "C1/C2 address formatting not defined by the acceptance criteria; legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 70,
+   "note": "C4 HTML name has no field width; cut at the first double space",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 70,
+   "note": "C4 HTML address has no field width; cut at the first double space",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/yx3/r1/builder/assumptions.md",
+   "line": 76,
+   "note": "C6 balance overflow: wiki silent",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

@@ -1,0 +1,6 @@
+Read from runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 8e306a78 (head of the build branch, committed; plan COMPLETED, no retry; driver lost the network while polling, the plan ended by itself at 13:46:59Z)
+- START lines 77-80: input.transactDat, acctdataDat, cardxrefDat, custdataDat = file text
+- END: line 228 writes output={statementOutputs:{creastmt_statements, creastmt_statements_html, files, assumptions, status, errors}}; decode _root statementOutputs
+- MODE files
+- Register: assumptions array, lines 27-39

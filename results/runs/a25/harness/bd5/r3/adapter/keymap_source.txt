@@ -1,0 +1,6 @@
+Read from runs/a25/harness/bd5/r3/exec/workflow_8d54bead-92ef-4d7c-a1f9-1f8baf7b6618.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 006bc8cb (head of the build branch, committed; plan PAUSED goal_at_risk after 5 of 8 steps, the build's own stop under A18, after two A8 retries of harness-attributed item_evidence pauses)
+- START (Build statements, lines 126-137): input.transact, acctdata, cardxref, custdata = file text strings, contract names (identity map)
+- END: Package outputs (line 236) writes output={result:{creastmt_statements, creastmt_statements_html, ...}} (line arrays); the decoder's own 'result' unwrapping reaches the contract names: no decode map
+- MODE files
+- Register: assume() entries at lines 51-77 (one per line)

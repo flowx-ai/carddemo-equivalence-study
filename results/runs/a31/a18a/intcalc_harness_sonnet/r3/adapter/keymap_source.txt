@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md (and the build's own register) before execution; no output opened.
+- A2 version 52f9c7ab (head of the build branch, plan COMPLETED, no retry)
+- START: file text, interestRunDate, businessDate; MODE files
+- END: result; contract names inside
+- Flags: entries stating silence or inference, each to the rule a divergence would produce

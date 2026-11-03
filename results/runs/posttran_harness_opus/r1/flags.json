@@ -1,0 +1,233 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 4,
+  "note": "[2] physical layouts provisional and unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] sign encoding and numeric blanks not established",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 6,
+  "note": "[4] sign encoding and numeric blanks not established",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] overflow behaviour not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] overflow behaviour not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] daily-cycle semantics TODO; no timestamp selection",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] ordering not specified; wiki credit formula creditLimit - currentBalance",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] ownership lookup precedence not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] ownership lookup precedence not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] ownership lookup precedence not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] active values incomplete; no expiration check added",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] active values incomplete; no expiration check added",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] provisional reason codes 1-7, not recovered legacy codes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 15,
+  "note": "[13] reason precedence unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] cycle credit/debit update formulas not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] missing-key handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 18,
+  "note": "[16] duplicate/rerun policy not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] preservation and types",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_opus/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] preservation and types",
+  "origin": "build"
+ }
+]

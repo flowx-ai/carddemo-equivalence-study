@@ -1,0 +1,200 @@
+{
+ "summary": {
+  "records_union": 370,
+  "equivalence_strict": 0.9973,
+  "equivalence_business": 0.9973,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 23,
+  "flags_unneeded": 21,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9606,
+    "page_totals_equal": false,
+    "pages_golden": 19,
+    "pages_candidate": 19
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 370,
+   "candidate": 370,
+   "equal_strict": 369,
+   "equal_business": 369,
+   "union": 370
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79636.18",
+   "cand": "79615.75",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 37,
+   "note": "A-04 date filter on the processed-date part",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 43,
+   "note": "A-05 stable sort; tie order not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 50,
+   "note": "A-06 account ID from CardXref",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 55,
+   "note": "A-07 lookup keys, truncation, duplicate keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 62,
+   "note": "A-08 missing reference flagged and run continues (legacy may abend; wiki TODO)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 62,
+   "note": "A-08 missing reference flagged and run continues (legacy may abend; wiki TODO)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 73,
+   "note": "A-09 account total breaks on card number",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 78,
+   "note": "A-10 no account total after the last card",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 96,
+   "note": "A-12 legacy end-of-file double add not reproduced",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 111,
+   "note": "A-14 empty range",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 118,
+   "note": "A-15 zero amounts print blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 118,
+   "note": "A-15 zero amounts print blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 118,
+   "note": "A-15 zero amounts print blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 125,
+   "note": "A-16 overflow drops high-order digits; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 125,
+   "note": "A-16 overflow drops high-order digits; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 141,
+   "note": "A-20 amount sign encoding not given",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

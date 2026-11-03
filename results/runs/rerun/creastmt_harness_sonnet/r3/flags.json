@@ -1,0 +1,226 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 48,
+  "note": "[Original CVACT01Y is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 49,
+  "note": "[CVACT03Y itself is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 50,
+  "note": "[CUSTREC itself is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 50,
+  "note": "[CUSTREC itself is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 50,
+  "note": "[CUSTREC itself is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 51,
+  "note": "[CVTRA05Y itself is absent] offsets assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 52,
+  "note": "[not explicitly specified] monetary encoding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 52,
+  "note": "[not explicitly specified] monetary encoding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 52,
+  "note": "[not explicitly specified] monetary encoding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 53,
+  "note": "[otherwise silent] printed conversion rules",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 54,
+  "note": "[Duplicate cross-reference behaviour is not specified] duplicates",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 55,
+  "note": "[resolves that ambiguity] per-card vs account-wide",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 55,
+  "note": "[resolves that ambiguity] per-card vs account-wide",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 56,
+  "note": "[confirm cycle filter requirement] cycle filter TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 57,
+  "note": "[not assembly punctuation] name assembly",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 57,
+  "note": "[not assembly punctuation] address assembly",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 59,
+  "note": "[do not define statement-specific duplicate or join-error recovery] recovery",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 59,
+  "note": "[do not define statement-specific duplicate or join-error recovery] recovery",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 61,
+  "note": "[no statement-specific rejection rule] unused-field validation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 63,
+  "note": "[negative zero and overflow presentation are not defined] numeric presentation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 63,
+  "note": "[negative zero and overflow presentation are not defined] numeric presentation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 64,
+  "note": "[are silent about escaping] escaping and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 64,
+  "note": "[are silent about escaping] escaping and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 64,
+  "note": "[are silent about escaping] escaping and padding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/rerun/creastmt_harness_sonnet/r3/exec/workflow_70e6fa0a-76af-4177-90e4-7c6a16284323.md",
+  "line": 66,
+  "note": "[does not define totals exceeding] overflow",
+  "origin": "build"
+ }
+]

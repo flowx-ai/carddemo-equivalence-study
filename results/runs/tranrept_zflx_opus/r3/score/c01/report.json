@@ -1,0 +1,171 @@
+{
+ "summary": {
+  "records_union": 366,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 19,
+  "flags_unneeded": 19,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9612,
+    "page_totals_equal": true,
+    "pages_golden": 21,
+    "pages_candidate": 21
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 366,
+   "candidate": 366,
+   "equal_strict": 366,
+   "equal_business": 366,
+   "union": 366
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 24,
+   "note": "P2 processing date chosen from legacy; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 30,
+   "note": "O1 order and stability; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 31,
+   "note": "O2 account total breaks on card; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 32,
+   "note": "O3 account ID from CardXref",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 33,
+   "note": "O4 lookup keys and truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 41,
+   "note": "T3 grand total = sum of page totals; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTDUP",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 42,
+   "note": "T4 end of file reproduces legacy double add, no last account total",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 42,
+   "note": "T4 end of file reproduces legacy double add, no last account total",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 42,
+   "note": "T4 end of file reproduces legacy double add, no last account total",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 43,
+   "note": "T5 empty selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 43,
+   "note": "T5 empty selection",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 44,
+   "note": "T6 accumulator overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 44,
+   "note": "T6 accumulator overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 50,
+   "note": "F1 zero editing not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 50,
+   "note": "F1 zero editing not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 50,
+   "note": "F1 zero editing not covered",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 54,
+   "note": "F5 sign encoding not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 61,
+   "note": "A1 lookup failure stops with the lines so far (legacy abend); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r3/builder/assumptions.md",
+   "line": 61,
+   "note": "A1 lookup failure stops with the lines so far (legacy abend); wiki silent",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

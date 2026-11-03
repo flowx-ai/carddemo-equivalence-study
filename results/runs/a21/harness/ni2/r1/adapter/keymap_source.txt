@@ -1,0 +1,4 @@
+Read from runs/a21/harness/ni2/r1/exec/workflow_626e8a44-3776-4671-9fe2-e6840f2225a1.md (and the build's own README/register) before execution; no output opened.
+- START (script lines 72-73, 91-92): decoded record lists accounts, categoryBalances, disclosureGroups, cardXrefs with the canonical field names (acct_id, group_id, open_date, curr_bal, type_cd, cat_cd, bal, interest_rate, card_num); businessDate/interestRunDate default to the contract values 2022-07-18 / 2022071800 when absent
+- END (Finalize result, line 120): output={result:{intcalc_systran, intcalc_acctdata, ...}}: decode _root result, contract names
+- MODE records (the adapter's encode, no renaming)

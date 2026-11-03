@@ -1,0 +1,5 @@
+OUTSIDE Read ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-bd5-zflx-r2/memory/MEMORY.md DENIED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-bd5-zflx-r2/memory/creastmt-build-state.md DENIED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-bd5-zflx-r2/memory/MEMORY.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a21-bd5-zflx-r2/memory/creastmt-build-state.md ALLOWED
+outside accesses: 4

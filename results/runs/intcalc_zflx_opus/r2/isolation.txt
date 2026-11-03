@@ -1,0 +1,5 @@
+OUTSIDE Glob ~/Dev/_tests DENIED
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-opus-r2/memory ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-opus-r2/memory/intcalc-build-state.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-intcalc-zflx-opus-r2/memory/MEMORY.md ALLOWED
+outside accesses: 4

@@ -1,0 +1,141 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "finalStatementBatch"
+ },
+ "source": "- A2 version: 17acaf06 (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Build statements, lines 79-82): input.acctdata, custdata, cardxref, transact = file text, contract names (identity map)\n- END: Finalize outputs (line 101) writes output={finalStatementBatch:{creastmt_statements, creastmt_statements_html, assumptions_md, status, errors}} (line arrays); decode _root finalStatementBatch\n- MODE files\n- Register: assumption ledger entries A01-A13 at lines 46-58 (one per line)",
+ "build": [
+  [
+   "R-STMT-BAL",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-NAME",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-ADDR",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-FICO",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-TXN",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-TOTAL",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-SET",
+   47,
+   "A02 offsets inferred, not verified against copybooks"
+  ],
+  [
+   "R-STMT-BAL",
+   48,
+   "A03 encoding and framing unsettled"
+  ],
+  [
+   "R-STMT-TXN",
+   48,
+   "A03 encoding and framing unsettled"
+  ],
+  [
+   "R-STMT-TOTAL",
+   48,
+   "A03 encoding and framing unsettled"
+  ],
+  [
+   "R-STMT-BAL",
+   49,
+   "A04 text encoding and overflow behaviour unspecified"
+  ],
+  [
+   "R-STMT-TXN",
+   49,
+   "A04 text encoding and overflow behaviour unspecified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   49,
+   "A04 text encoding and overflow behaviour unspecified"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   49,
+   "A04 text encoding and overflow behaviour unspecified"
+  ],
+  [
+   "R-STMT-NAME",
+   50,
+   "A05 assembly unspecified, maker-confirmed"
+  ],
+  [
+   "R-STMT-ADDR",
+   50,
+   "A05 assembly unspecified, maker-confirmed"
+  ],
+  [
+   "R-STMT-TXN",
+   51,
+   "A06 cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-SET",
+   52,
+   "A07 duplicate input records: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   53,
+   "A08 per-card recovery unspecified, maker-confirmed"
+  ],
+  [
+   "R-STMT-ABEND",
+   53,
+   "A08 per-card recovery unspecified, maker-confirmed"
+  ],
+  [
+   "R-STMT-FICO",
+   54,
+   "A09 behaviour for absent scores unspecified"
+  ],
+  [
+   "R-STMT-OTHER",
+   55,
+   "A10 header wording leaves two columns unassigned"
+  ],
+  [
+   "R-STMT-NAME",
+   56,
+   "A11 escaping and overlong values: wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   56,
+   "A11 escaping and overlong values: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   57,
+   "A12 orphan handling unstated"
+  ]
+ ],
+ "cr_rule": "line 72: FICO printed as the band (below 580 Poor, 580-669 Fair, 670-739 Good, 740-799 Very Good, 800+ Exceptional). Register line 54 (A09) cites BR-07 p.2 and flags only absent scores. Coarse R-STMT-FICO flag also from 47 (offsets)."
+}

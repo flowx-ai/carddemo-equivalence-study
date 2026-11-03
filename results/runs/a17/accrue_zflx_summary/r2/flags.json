@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 17,
+  "note": "A4 sign encoding not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 18,
+  "note": "A5 rate as annual percentage is an assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 24,
+  "note": "B1 keyed read order assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 27,
+  "note": "B4 STANDARD row missing too: wiki does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 29,
+  "note": "C1 formula not written in the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 30,
+  "note": "C2 truncation: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 31,
+  "note": "C3 negative balances: no sign rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 34,
+  "note": "E2 last account updated; names the control-break defect it chose not to replicate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 36,
+  "note": "E4 balance for unknown account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 38,
+  "note": "E6 overflow not emulated: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 44,
+  "note": "D1 tran_id: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 46,
+  "note": "D3 source: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 47,
+  "note": "D4 desc: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_summary/r2/builder/assumptions.md",
+  "line": 48,
+  "note": "D5 merchant fields: wiki silent",
+  "origin": "build"
+ }
+]

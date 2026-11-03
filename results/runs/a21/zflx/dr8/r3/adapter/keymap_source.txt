@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/dr8/r3/exec/workflow_08f7a091-041f-49ef-a9ea-a35e22d1f356.md (and the build's own README/register) before execution; no output opened.
+- START (register A2; script lines 82-138, 329-330): dailytranFile, acctdataFile, cardxrefFile, tcatbalFile (text), businessDate; batchId unset
+- END payload ${posttranOutput} (README line 11; script lines 328-341) holding posttran_transact/_dalyrejs/_acctdata/_tcatbal: decode _root posttranOutput (merged when present), contract names
+- MODE files

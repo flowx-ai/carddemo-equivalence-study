@@ -1,0 +1,184 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|9|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |9|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program CORPT00C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP CORPT0A  mapset CORPT00  from CORPT00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CR00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |CORPT00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  MONTHLY  I ||
+  YEARLY   I ||
+  CUSTOM   I ||
+  SDTMM    I ||
+  SDTDD    I ||
+  SDTYYYY  I ||
+  EDTMM    I ||
+  EDTDD    I ||
+  EDTYYYY  I ||
+  CONFIRM  N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   4: ENTER
+INPUT aid=ENTER YEARLY=|X| CONFIRM=|y|
+=== task   4 tran CR00 program CORPT00C aid ENTER calen      160
+RECEIVE MAP CORPT0A  into CORPT00C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CR00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |CORPT00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in MONTHLY  len   1 mdt=F R-MDT-FSET ||
+  in YEARLY   len   1 mdt=T |X|
+  in CUSTOM   len   1 mdt=F R-MDT-FSET ||
+  in SDTMM    len   2 mdt=F R-MDT-FSET ||
+  in SDTDD    len   2 mdt=F R-MDT-FSET ||
+  in SDTYYYY  len   4 mdt=F R-MDT-FSET ||
+  in EDTMM    len   2 mdt=F R-MDT-FSET ||
+  in EDTDD    len   2 mdt=F R-MDT-FSET ||
+  in EDTYYYY  len   4 mdt=F R-MDT-FSET ||
+  in CONFIRM  len   1 mdt=T |y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CORPT0A  mapset CORPT00  from CORPT00C site 0004 opts ERASE CURSOR
+  TRNNAME  D |CR00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |CORPT00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  MONTHLY  D ||
+  YEARLY   D ||
+  CUSTOM   D ||
+  SDTMM    D ||
+  SDTDD    D ||
+  SDTYYYY  D ||
+  EDTMM    D ||
+  EDTDD    D ||
+  EDTYYYY  D ||
+  CONFIRM  D ||
+  ERRMSG   D |Yearly report submitted for printing ...|
+task end: RETURN TRANSID(CR00) commarea length 160
+##### step   5: PF3
+INPUT aid=PF3
+=== task   5 tran CR00 program CORPT00C aid PF3   calen      160
+RECEIVE MAP CORPT0A  into CORPT00C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CR00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |CORPT00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in MONTHLY  len   1 mdt=F R-MDT-FSET ||
+  in YEARLY   len   1 mdt=F R-MDT-FSET ||
+  in CUSTOM   len   1 mdt=F R-MDT-FSET ||
+  in SDTMM    len   2 mdt=F R-MDT-FSET ||
+  in SDTDD    len   2 mdt=F R-MDT-FSET ||
+  in SDTYYYY  len   4 mdt=F R-MDT-FSET ||
+  in EDTMM    len   2 mdt=F R-MDT-FSET ||
+  in EDTDD    len   2 mdt=F R-MDT-FSET ||
+  in EDTYYYY  len   4 mdt=F R-MDT-FSET ||
+  in CONFIRM  len   1 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Yearly report submitted for printing ...|
+--- XCTL in task   5 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

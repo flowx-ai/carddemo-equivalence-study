@@ -1,0 +1,1862 @@
+{
+ "base": [
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  }
+ ],
+ "c01": [
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  }
+ ],
+ "c02": [
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  }
+ ],
+ "c03": [
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  }
+ ],
+ "c04": [
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000014",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000017",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000018",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000026",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000028",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000030",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000031",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000032",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000036",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000045",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000047",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_acctdata",
+   "key": "00000000048",
+   "rule": "R-POST-BAL"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_dalyrejs",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000014|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000017|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000018|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000026|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000028|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000030|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000031|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000032|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000036|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000045|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000047|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_tcatbal",
+   "key": "00000000048|01|0001",
+   "rule": "R-POST-TCAT"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000010229018",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000032979555",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000051205286",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000060921254",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000107748365",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000109340521",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000160469204",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000173069364",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000211219588",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000220745261",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000224060323",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000273137276",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000329446511",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000341155503",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000373973344",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000499424514",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000523110055",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000564257675",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000575834812",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000667157384",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000742447110",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000781205695",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000873232405",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000887771179",
+   "rule": "R-POST-102"
+  },
+  {
+   "output": "posttran_transact",
+   "key": "0000000910081354",
+   "rule": "R-POST-102"
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- START (register A2; script lines 82-101): transact, acctdata, cardxref, custdata (file contents)\n- END (register A2; script lines 265, 388): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-STMT-SET",
+   24,
+   "B2 blank and short lines: silent"
+  ],
+  [
+   "R-STMT-BAL",
+   25,
+   "B3 sign encoding not stated for transact/acctdata"
+  ],
+  [
+   "R-STMT-TXN",
+   25,
+   "B3 sign encoding not stated for transact/acctdata"
+  ],
+  [
+   "R-STMT-TOTAL",
+   25,
+   "B3 sign encoding not stated for transact/acctdata"
+  ],
+  [
+   "R-STMT-SET",
+   26,
+   "B4 duplicate keys not addressed"
+  ],
+  [
+   "R-STMT-TXN",
+   34,
+   "C3 cycle-filter TODO; no filter"
+  ],
+  [
+   "R-STMT-TXN",
+   35,
+   "C4 orphan transactions: silent"
+  ],
+  [
+   "R-STMT-ABEND",
+   37,
+   "C6 missing customer or account: silent; card skipped (legacy abends, recollection)"
+  ],
+  [
+   "R-STMT-SET",
+   37,
+   "C6 missing customer or account: silent; card skipped"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   38,
+   "C7 no limit per card; the wiki gives no size; legacy table overflow not reproduced"
+  ],
+  [
+   "R-STMT-NAME",
+   44,
+   "D1 name: silent; follows CBSTM03A (recollection)"
+  ],
+  [
+   "R-STMT-ADDR",
+   45,
+   "D2 address line 3: no build rule in the wiki; follows CBSTM03A (recollection)"
+  ],
+  [
+   "R-STMT-FICO",
+   48,
+   "D5 missing score not covered; prints blank"
+  ],
+  [
+   "R-STMT-NAME",
+   58,
+   "E2 HTML name: no width in the contract; legacy delimiter reading"
+  ],
+  [
+   "R-STMT-ADDR",
+   58,
+   "E2 HTML address: no width in the contract; legacy delimiter reading"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/flags.json",
+   2,
+   "builder flag: name construction, the wiki does not define it"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/flags.json",
+   2,
+   "builder flag: address line 3 construction, the wiki does not define it"
+  ],
+  [
+   "R-STMT-NAME",
+   "builder/flags.json",
+   3,
+   "builder flag: HTML name"
+  ],
+  [
+   "R-STMT-ADDR",
+   "builder/flags.json",
+   3,
+   "builder flag: HTML address lines"
+  ],
+  [
+   "R-STMT-ABEND",
+   "builder/flags.json",
+   4,
+   "builder flag: missing customer or account skipped, legacy abends"
+  ],
+  [
+   "R-STMT-SET",
+   "builder/flags.json",
+   4,
+   "builder flag: missing customer or account skipped"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   "builder/flags.json",
+   5,
+   "builder flag: legacy 51x10 table limit not reproduced"
+  ],
+  [
+   "R-STMT-FICO",
+   "builder/flags.json",
+   6,
+   "builder flag: FICO field when score blank"
+  ],
+  [
+   "R-STMT-TXN",
+   "builder/flags.json",
+   7,
+   "builder flag: no statement-period filter (wiki TODO)"
+  ]
+ ],
+ "cr_rule": "D5: FICO field = band text X(20) per BR-07 / DT-17 (<580 Poor ... >=800 Exceptional); flags only the missing-score case (blank), also in builder flags.json."
+}

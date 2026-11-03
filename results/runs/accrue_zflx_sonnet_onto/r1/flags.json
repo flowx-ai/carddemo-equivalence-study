@@ -1,0 +1,72 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 41,
+  "note": "6 overpunch sign encoding for every S9 field assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 51,
+  "note": "8 BR-08 TODO; truncation chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 59,
+  "note": "10 rate missing for group and STANDARD: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 62,
+  "note": "11 rate != 0 only condition; negative balances accrue",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 77,
+  "note": "15 several cards per account: choice recorded",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 90,
+  "note": "18 balance for account missing from ledgacc: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 93,
+  "note": "19 duplicate keys: first record wins",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 94,
+  "note": "20 fees: AC-7 DECISION open, none computed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_onto/r1/builder/assumptions.md",
+  "line": 96,
+  "note": "21 overflow not modelled; wiki silent",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,142 @@
+{
+ "summary": {
+  "records_union": 451,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 13,
+  "flags_unneeded": 13,
+  "volatile_masked": {
+   "posttran_transact.proc_ts": 257
+  }
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 257,
+   "candidate": 257,
+   "equal_strict": 257,
+   "equal_business": 257,
+   "union": 257
+  },
+  "posttran_dalyrejs": {
+   "golden": 44,
+   "candidate": 44,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 44
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "posttran_tcatbal": {
+   "golden": 100,
+   "candidate": 100,
+   "equal_strict": 100,
+   "equal_business": 100,
+   "union": 100
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet-dr8/02-processes/process-daily-transaction-posting.md",
+   "line": 63,
+   "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet-dr8/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   "line": 63,
+   "note": "DECISION: keep or collect all reject reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-102",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 98,
+   "note": "posting order: malformed-amount ordering unstated; unreadable amounts isolated as failures (narrow: the order of valid amounts is stated as BR-10)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 99,
+   "note": "scenario 6 (missing card plus expiry) not explained; one reason kept, 103 over 102",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 101,
+   "note": "rounding and overflow behaviour unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 101,
+   "note": "rounding and overflow behaviour unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 105,
+   "note": "BR-09 vs pp.9,23 sequences; input id kept, duplicate handling an implementation choice",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 107,
+   "note": "identifier normalization not otherwise specified; numeric account keys compared by digit value",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 107,
+   "note": "identifier normalization not otherwise specified; category keys compared by digit value",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 108,
+   "note": "category-balance key types listed by name only; aligned as integers",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 109,
+   "note": "input-error codes and ambiguous-key policy unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 109,
+   "note": "input-error codes and ambiguous-key policy unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a23/harness/dr8/r1/exec/workflow_08fb7578-31d8-4f3a-aefb-48bfa0a96e0a.md",
+   "line": 109,
+   "note": "input-error codes and ambiguous-key policy unstated",
+   "origin": "build"
+  }
+ ]
+}

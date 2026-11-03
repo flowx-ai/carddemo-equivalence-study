@@ -1,0 +1,6 @@
+Read from runs/a28/harness/bd5/r1/exec/workflow_7042addf-c49e-4f65-9979-61e69aea0913.md (and the build's own README/register) before execution; no output opened.
+- A2 version: d8a08ced (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Transform, line 46): input.transactText, acctdataText, cardxrefText, custdataText = file text
+- END: Package outputs (line 52) writes output={result:{creastmt_statements, creastmt_statements_html, assumptions, status, ...}} (line arrays); decoder's 'result' unwrapping, no decode map
+- MODE files
+- Register: fact(id, assumption, decision, source) calls in one script line, line 46

@@ -1,0 +1,96 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate"
+ },
+ "decode": null,
+ "source": "- START inputs acctdata, tcatbal, discgrp, cardxref (file text) and interestRunDate (optional, default 2022071800; CONTRACT run parameter passed as intcalc_parm) (register lines 8-9; script line 165)\n- END: output.result = {intcalc_systran, intcalc_acctdata, runSummary, warnings} (script lines 373-378): contract names, adapter reads 'result'; no decode.json\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-INT-RATE",
+   32,
+   "A-04 offsets: the wiki gives no byte offsets"
+  ],
+  [
+   "R-INT-RATE",
+   35,
+   "A-05 overpunch set not listed"
+  ],
+  [
+   "R-INT-RATE",
+   37,
+   "A-06 blank/short/non-numeric records: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   40,
+   "A-08 duplicate disclosure key: silent"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "A-09 processing order: wiki does not say whether the file is pre-sorted"
+  ],
+  [
+   "R-INT-RATE",
+   48,
+   "A-10 balance without account: wiki silent"
+  ],
+  [
+   "R-INT-CYC",
+   51,
+   "A-12 update with zero interest, cycle reset: listed in builder flags.json"
+  ],
+  [
+   "R-INT-RATE",
+   59,
+   "A-13 no DEFAULT row: BR-02 does not cover it"
+  ],
+  [
+   "R-INT-RATE",
+   63,
+   "A-14 ten-year rule: leap-day and invalid dates not covered"
+  ],
+  [
+   "R-INT-RATE",
+   66,
+   "A-15 negative rates not discussed"
+  ],
+  [
+   "R-INT-TRUNC",
+   69,
+   "A-16 BR-08 TODO: truncation"
+  ],
+  [
+   "R-INT-APPLY",
+   72,
+   "A-18 AC 7 DECISION left as keep stub"
+  ],
+  [
+   "R-INT-APPLY",
+   73,
+   "A-19 balance overflow: silent"
+  ],
+  [
+   "R-INT-TXID",
+   79,
+   "A-20 suffix width/start not given"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   85,
+   "A-23 card choice not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   87,
+   "A-24 merchant fields not mentioned"
+  ]
+ ],
+ "cr_rule": "A-14/A-15: reduction when openDate <= run date - 10 years (cutoff 2012-07-18 from interestRunDate), max(rate-2.00,0), applied before the rate != 0 test. Raises leap-day/invalid dates as not covered (R-INT-RATE flagged); builder flags.json does not list the ten-year rule."
+}

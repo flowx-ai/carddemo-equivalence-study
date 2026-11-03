@@ -1,0 +1,12 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 28, "A-04 overpunch assumed for every S9 field; wiki states it for the rate"],
+  ["R-INT-RATE", 35, "A-05 DEFAULT row missing too: wiki silent"],
+  ["R-INT-TXFORMAT", 39, "A-06 fields BR-04 does not name (card, merchant)"],
+  ["R-INT-RATE", 46, "A-07 balance for unknown account: wiki silent"],
+  ["R-INT-TXID", 53, "A-09 suffix width and start not given"],
+  ["R-INT-TRUNC", 65, "A-12 wiki rounding implemented; legacy may truncate, flagged"],
+  ["R-INT-CYC", 71, "A-13 zero-rate accounts still updated; scenario 5 only says no transaction"],
+  ["R-INT-RATE", 79, "A-15 account status: wiki silent"],
+  ["R-INT-APPLY", 82, "A-16 AC 7 fees DECISION open; stub kept"]
+ ]}

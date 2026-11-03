@@ -1,0 +1,88 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdataText",
+  "tcatbal": "tcatbalText",
+  "discgrp": "discgrpText",
+  "cardxref": "cardxrefText",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "Files mode: Calculate interest reads input.acctdataText/tcatbalText/discgrpText/cardxrefText, input.businessDate, input.interestRunDate. END: Assemble results writes output={result:{intcalc_systran, intcalc_acctdata, assumptions_md, assumptionsEntries, errors, status}} -> _root result. Register: assumption(...) calls on line 46, each with an absence flag; entries with absence=true and a scored rule are mapped.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-RATE",
+   46,
+   "[layout-account] offsets inferred, unverified against copybooks (absence)"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[layout-category] offsets inferred (absence)"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[layout-rate] offsets / six characters vs example (absence)"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[numeric-encoding] overpunch alphabet (absence)"
+  ],
+  [
+   "R-INT-ZERO",
+   46,
+   "[zero-rate] nonzero rate emits even if rounded to 0.00 (absence)"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[missing-default] both rates absent: account unchanged (absence)"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[transaction-constants] identifier form in desc (absence)"
+  ],
+  [
+   "R-INT-CYC",
+   46,
+   "[untouched-accounts] accounts without category balances (absence)"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[ordering] processing order (absence)"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[transaction-suffix] suffix width/start (absence)"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[timestamps] (absence)"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[card-choice] (absence)"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[merchant-defaults] (absence)"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[duplicates] duplicate keys (absence)"
+  ]
+ ]
+}

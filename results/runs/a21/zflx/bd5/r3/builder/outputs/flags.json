@@ -1,0 +1,8 @@
+[
+  {"output": "creastmt_statements.txt", "key": "line 1 customer name", "source": "flowx/scripts/01_build_statement_data.js:153 (assumptions.md C2: word-by-word assembly, wiki silent)"},
+  {"output": "creastmt_statements.txt", "key": "line 4 address line 3", "source": "flowx/scripts/01_build_statement_data.js:154 (assumptions.md C3: city+state+country+zip, wiki silent)"},
+  {"output": "creastmt_statements.txt", "key": "line 14A Total EXP", "source": "flowx/scripts/01_build_statement_data.js:161 (assumptions.md C1: BR-03 carries a TODO)"},
+  {"output": "creastmt_statements.txt", "key": "statement set (skipped cards)", "source": "flowx/scripts/01_build_statement_data.js:148 (assumptions.md B6: missing customer/account skipped, wiki silent)"},
+  {"output": "creastmt_statements.txt", "key": "transaction selection (no cycle filter)", "source": "flowx/scripts/01_build_statement_data.js:86 (assumptions.md B2: wiki TODO on cycle filter)"},
+  {"output": "creastmt_statements_html.txt", "key": "customer name / address <p> lines", "source": "flowx/scripts/03_render_html_statements.js:56-59 (assumptions.md D2)"}
+]

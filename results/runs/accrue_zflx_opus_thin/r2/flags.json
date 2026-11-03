@@ -1,0 +1,128 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 33,
+  "note": "A1c sign encoding not stated by DM; overpunch decoded",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A3 category balance chosen over wiki currentBalance (TODO)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 54,
+  "note": "A4 rate scale /1200: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 58,
+  "note": "A5 rounding TODO; truncation toward zero",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 62,
+  "note": "A6 missing rate falls back to DEFAULT: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 66,
+  "note": "A7 no DEFAULT record either: wiki silent; rate 0",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 70,
+  "note": "A8 zero balance writes 0.00 txn: AC does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 74,
+  "note": "A9 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 78,
+  "note": "A17 fees: wiki mentions only interest; none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 83,
+  "note": "A10 cycle fields reset to 0: P does not mention them",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 95,
+  "note": "A16 last account posted; flagged, end-of-file defect alternative named",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 98,
+  "note": "A13 unknown account: wiki silent; skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 106,
+  "note": "A11 card choice: wiki defines none, lineage decision",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 110,
+  "note": "A12a tran id 10 + 6-digit sequence: wiki defines none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_thin/r2/builder/output/assumptions.md",
+  "line": 114,
+  "note": "A12b type/cat/source/desc/merchant values: wiki defines none",
+  "origin": "build"
+ }
+]

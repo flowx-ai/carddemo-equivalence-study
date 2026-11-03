@@ -1,0 +1,128 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version 27842c87 (head of the build branch, plan COMPLETED, no retry)\n- START: four file texts plus startDate, endDate; MODE files\n- END: top-level tranrept_report, assumptions_md, assumptions\n- Register: lines 136-155",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   136,
+   "offsets from field order"
+  ],
+  [
+   "R-REPT-AMT",
+   136,
+   "offsets from field order"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   136,
+   "offsets from field order"
+  ],
+  [
+   "R-REPT-XREF",
+   137,
+   "layout absent"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   138,
+   "no copybook or offsets"
+  ],
+  [
+   "R-REPT-AMT",
+   139,
+   "sign convention not provided"
+  ],
+  [
+   "R-REPT-ACCT",
+   139,
+   "sign convention not provided"
+  ],
+  [
+   "R-REPT-GRAND",
+   139,
+   "sign convention not provided"
+  ],
+  [
+   "R-REPT-SET",
+   141,
+   "timestamp choice not stated, origination used"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   143,
+   "duplicate and lookup rules absent"
+  ],
+  [
+   "R-REPT-XREF",
+   143,
+   "duplicate and lookup rules absent"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   144,
+   "no missing-lookup policy"
+  ],
+  [
+   "R-REPT-XREF",
+   144,
+   "no missing-lookup policy"
+  ],
+  [
+   "R-REPT-SET",
+   145,
+   "sort and tie-break not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   145,
+   "sort and tie-break not specified"
+  ],
+  [
+   "R-REPT-HEADER",
+   146,
+   "no page capacity"
+  ],
+  [
+   "R-REPT-ACCT",
+   147,
+   "computation not fixed"
+  ],
+  [
+   "R-REPT-GRAND",
+   147,
+   "computation not fixed"
+  ],
+  [
+   "R-REPT-ACCT",
+   148,
+   "order at boundaries, final account total"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   148,
+   "order at boundaries, final account total"
+  ],
+  [
+   "R-REPT-AMT",
+   151,
+   "overflow not stated"
+  ],
+  [
+   "R-REPT-SET",
+   153,
+   "no record-error policy"
+  ]
+ ]
+}

@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 49,
+  "note": "[calculation] exact formula and grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 50,
+  "note": "[rate-units] units, day-count and sign not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 51,
+  "note": "[group-match] whitespace, duplicate and missing-rate behaviour not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 52,
+  "note": "[rounding] rounding mode TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 54,
+  "note": "[account-posting] cycle-counter changes not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 57,
+  "note": "[zero-interest] zero-value transaction not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 58,
+  "note": "[transaction-fields] no interest-specific metadata",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 59,
+  "note": "[transaction-id] construction and sequencing absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 60,
+  "note": "[card-selection] selection and missing-card behaviour absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r2/exec/workflow_f207e65f-e4a1-4223-86a4-13f58fd681d2.md",
+  "line": 61,
+  "note": "[timestamps] no interest-specific rule",
+  "origin": "build"
+ }
+]

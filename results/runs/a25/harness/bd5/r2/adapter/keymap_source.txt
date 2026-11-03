@@ -1,0 +1,6 @@
+Read from runs/a25/harness/bd5/r2/exec/workflow_d7fea677-926a-41f1-90d5-bb54d8818430.md (and the build's own README/register) before execution; no output opened.
+- A2 version: e7322864 (WIP on the run branch; the project's latest version when the session ended; plan FAILED behaviour_failed at item 1 of 3, the build's own check, A18). The tool's pick (main snapshot, no workflow) discarded as notebook §52; tools/a25_reextract.sh
+- START (Parse statement inputs, lines 53-56): input.acctdata, custdata, cardxref, transact = fixed-width file text, contract names (identity map)
+- END: Render statement outputs (line 113) writes creastmt_statements and creastmt_statements_html (line arrays) at the root; the last node Finalize assumptions adds assumption keys only: contract names, no decode map
+- MODE files
+- Register: rows at lines 86-110 (one per line)

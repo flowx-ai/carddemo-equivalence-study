@@ -1,0 +1,6 @@
+Read from runs/a28/harness/bd5/r3/exec/workflow_0e3feff1-f36f-4851-bc84-d1ef564145ac.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 13f6d29d (head of the build branch, committed; plan COMPLETED, no retry)
+- START: transact, acctdata, cardxref, custdata = file text, contract names
+- END returns statementOutputs (plan's end node and the run's output_keys); decode _root statementOutputs
+- MODE files
+- Register: assume(id, what, source) lines 47-66

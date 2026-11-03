@@ -1,0 +1,10 @@
+[
+  {"rule": "R-OVERLIMIT-TOLERANCE-110PCT", "source": "flowx/02_validate_and_post.js:9 (wiki BR-03; acceptance scenario 4 omits the x1.10)"},
+  {"rule": "R-OVERLIMIT-STRICT-GT", "source": "flowx/02_validate_and_post.js:47"},
+  {"rule": "R-EXPIRY-DATE-STRING-COMPARE", "source": "flowx/02_validate_and_post.js:51"},
+  {"rule": "R-XREF-FAIL-SHORT-CIRCUITS (acceptance scenario 6 unreachable)", "source": "flowx/02_validate_and_post.js:39"},
+  {"rule": "R-TRAN-ID-KEPT-FROM-DAILY-RECORD", "source": "flowx/02_validate_and_post.js:65"},
+  {"rule": "R-DUPLICATE-TRAN-ID-SKIPPED", "source": "flowx/02_validate_and_post.js:65"},
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "flowx/02_validate_and_post.js:19 (run time, UTC, DB2 format)"},
+  {"output": "posttran_tcatbal.json", "key": "new rows", "source": "flowx/02_validate_and_post.js:73"}
+]

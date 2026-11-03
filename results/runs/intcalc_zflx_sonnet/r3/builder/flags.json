@@ -1,0 +1,11 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/intcalc_calculate.js:60 (BR-08 TODO truncate vs ROUNDED; assumptions.md #7)"},
+  {"rule": "R-LAST-ACCOUNT-UPDATE", "source": "flowx/intcalc_calculate.js:194 (BR-06 'at each change of account' vs AC-3; assumptions.md #20)"},
+  {"rule": "R-TRANID-SUFFIX", "source": "flowx/intcalc_calculate.js:178 (BR-05 suffix width/start unspecified; assumptions.md #13)"},
+  {"rule": "R-PROCESSING-ORDER", "source": "flowx/intcalc_calculate.js:124 (tcatbal key order; assumptions.md #14)"},
+  {"output": "intcalc_systran.json", "key": "card_num", "source": "flowx/intcalc_calculate.js:188 (not in BR-04; first cardxref of account; assumptions.md #12)"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "flowx/intcalc_calculate.js:189 (run wall-clock time; assumptions.md #17)"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "flowx/intcalc_calculate.js:189 (run wall-clock time; assumptions.md #17)"},
+  {"output": "intcalc_systran.json", "key": "merchant_id", "source": "flowx/intcalc_calculate.js:184 (wiki silent; 0 / blanks; assumptions.md #16)"},
+  {"rule": "R-MISSING-DEFAULT-RATE", "source": "flowx/intcalc_calculate.js:147 (no rate in group nor DEFAULT -> 0; assumptions.md #10)"}
+]

@@ -1,0 +1,151 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- START (README Input; register 2; script lines 81-84, 156-163): transact, cardxref, trantype, trancatg (file content), startDate, endDate\n- END (README Output; script line 308): tranrept_report (list of strings), contract name, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-REPT-SET",
+   42,
+   "8 sort secondary key: the wiki does not give one"
+  ],
+  [
+   "R-REPT-XREF",
+   48,
+   "9 duplicate xref cards: the wiki does not cover duplicates"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   52,
+   "11 unknown reference, AC-5 TODO: no abend, blank description"
+  ],
+  [
+   "R-REPT-SET",
+   52,
+   "11 unknown reference, AC-5 TODO: line still printed"
+  ],
+  [
+   "R-REPT-SET",
+   61,
+   "12 page size TODO; wiki silent; 20 from CBTRN03C"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   65,
+   "13 no final account total; plugin wording could imply one (highest-risk decision)"
+  ],
+  [
+   "R-REPT-ACCT",
+   68,
+   "14 account total before the page-break check; wiki silent"
+  ],
+  [
+   "R-REPT-SET",
+   68,
+   "14 account total before the page-break check; wiki silent"
+  ],
+  [
+   "R-REPT-GRAND",
+   74,
+   "16 totals layout TODO"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   77,
+   "17 legacy end-of-file re-add not documented by the wiki, not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   77,
+   "17 legacy end-of-file re-add not documented by the wiki, not reproduced"
+  ],
+  [
+   "R-REPT-ACCT",
+   77,
+   "17 legacy end-of-file re-add not documented by the wiki, not reproduced"
+  ],
+  [
+   "R-REPT-AMT",
+   88,
+   "20 overflow: wiki silent"
+  ],
+  [
+   "R-REPT-HEADER",
+   92,
+   "22 Amount column-header spacing not fully clear"
+  ],
+  [
+   "R-REPT-AMT",
+   99,
+   "24 sign encoding: the wiki does not describe it"
+  ],
+  [
+   "R-REPT-SET",
+   102,
+   "25 blank and short lines: wiki silent"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   "builder/flags.json",
+   2,
+   "builder flag: no account total for the last card"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   3,
+   "builder flag: page size TODO"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   "builder/flags.json",
+   4,
+   "builder flag: unknown type/category/xref, AC-5 TODO"
+  ],
+  [
+   "R-REPT-XREF",
+   "builder/flags.json",
+   4,
+   "builder flag: unknown xref, AC-5 TODO"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   4,
+   "builder flag: unknown reference, run continues"
+  ],
+  [
+   "R-REPT-AMT",
+   "builder/flags.json",
+   5,
+   "builder flag: zero amounts print as spaces"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   6,
+   "builder flag: empty range layout"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   "builder/flags.json",
+   7,
+   "builder flag: end-of-file re-add not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   "builder/flags.json",
+   7,
+   "builder flag: end-of-file re-add not reproduced"
+  ]
+ ],
+ "cr_rule": "7: interest postings (type 01, category 5) excluded: no detail line, in no page, card or grand total; rests on BR-07, AC-7. The change itself is not flagged; R-REPT-SET is flagged by other entries (12, 14, 25, builder flags 3, 4, 6)."
+}

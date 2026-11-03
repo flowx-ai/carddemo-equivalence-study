@@ -1,0 +1,1 @@
+../../../../golden/d1/cases/c04/out/intcalc_acctdata.txt

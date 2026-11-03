@@ -1,0 +1,126 @@
+== cr3 (intcalc, ni2) candidate: golden/cr3
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr3 R-INT-RATE: followed the change (build flags only: followed the change; build flags R-INT-RATE: no) | changed records F 145 K 0 (with a silent R-INT-RATE divergence 0, without 0) X 0 | R-INT-RATE divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr3 (intcalc, ni2) candidate: golden/v1
+  base strict 71.00% business 71.00% div 29 silent 29 flagged 0 silent: R-INT-APPLY,R-INT-RATE flagged: -
+  c01 strict 71.00% business 71.00% div 29 silent 29 flagged 0 silent: R-INT-APPLY,R-INT-RATE flagged: -
+  c02 strict 70.71% business 70.71% div 29 silent 29 flagged 0 silent: R-INT-APPLY,R-INT-RATE flagged: -
+  c03 strict 71.00% business 71.00% div 29 silent 29 flagged 0 silent: R-INT-APPLY,R-INT-RATE flagged: -
+  c04 strict 71.84% business 71.84% div 29 silent 29 flagged 0 silent: R-INT-APPLY,R-INT-RATE flagged: -
+  outcome cr3 R-INT-RATE: kept legacy, silent (build flags only: kept legacy, silent; build flags R-INT-RATE: no) | changed records F 0 K 145 (with a silent R-INT-RATE divergence 75, without 70) X 0 | R-INT-RATE divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr3 (intcalc, ni2) candidate: golden/v1, one flag on R-INT-RATE
+  base strict 71.00% business 71.00% div 29 silent 14 flagged 15 silent: R-INT-APPLY flagged: R-INT-RATE
+  c01 strict 71.00% business 71.00% div 29 silent 14 flagged 15 silent: R-INT-APPLY flagged: R-INT-RATE
+  c02 strict 70.71% business 70.71% div 29 silent 14 flagged 15 silent: R-INT-APPLY flagged: R-INT-RATE
+  c03 strict 71.00% business 71.00% div 29 silent 14 flagged 15 silent: R-INT-APPLY flagged: R-INT-RATE
+  c04 strict 71.84% business 71.84% div 29 silent 14 flagged 15 silent: R-INT-APPLY flagged: R-INT-RATE
+  outcome cr3 R-INT-RATE: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-INT-RATE: no) | changed records F 0 K 145 (with a silent R-INT-RATE divergence 0, without 145) X 0 | R-INT-RATE divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr4 (posttran, va7) candidate: golden/cr4
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr4 R-POST-104: followed the change (build flags only: followed the change; build flags R-POST-104: no) | changed records F 671 K 0 (with a silent R-POST-104 divergence 0, without 0) X 0 | R-POST-104 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr4 (posttran, va7) candidate: golden/v1
+  base strict 72.67% business 72.67% div 132 silent 132 flagged 0 silent: R-POST-104,R-POST-BAL,R-POST-TCAT flagged: -
+  c01 strict 72.10% business 72.10% div 137 silent 137 flagged 0 silent: R-POST-104,R-POST-BAL,R-POST-TCAT flagged: -
+  c02 strict 72.67% business 72.67% div 132 silent 132 flagged 0 silent: R-POST-104,R-POST-BAL,R-POST-TCAT flagged: -
+  c03 strict 72.73% business 72.73% div 132 silent 132 flagged 0 silent: R-POST-104,R-POST-BAL,R-POST-TCAT flagged: -
+  c04 strict 71.95% business 71.95% div 138 silent 138 flagged 0 silent: R-POST-104,R-POST-BAL,R-POST-TCAT flagged: -
+  outcome cr4 R-POST-104: kept legacy, silent (build flags only: kept legacy, silent; build flags R-POST-104: no) | changed records F 0 K 671 (with a silent R-POST-104 divergence 337, without 334) X 0 | R-POST-104 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr4 (posttran, va7) candidate: golden/v1, one flag on R-POST-104
+  base strict 72.67% business 72.67% div 132 silent 66 flagged 66 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-104
+  c01 strict 72.10% business 72.10% div 137 silent 68 flagged 69 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-104
+  c02 strict 72.67% business 72.67% div 132 silent 66 flagged 66 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-104
+  c03 strict 72.73% business 72.73% div 132 silent 66 flagged 66 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-104
+  c04 strict 71.95% business 71.95% div 138 silent 68 flagged 70 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-104
+  outcome cr4 R-POST-104: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-POST-104: no) | changed records F 0 K 671 (with a silent R-POST-104 divergence 0, without 671) X 0 | R-POST-104 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr5 (posttran, dr8) candidate: golden/cr5
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr5 R-POST-102: followed the change (build flags only: followed the change; build flags R-POST-102: no) | changed records F 370 K 0 (with a silent R-POST-102 divergence 0, without 0) X 0 | R-POST-102 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr5 (posttran, dr8) candidate: golden/v1
+  base strict 84.42% business 84.42% div 74 silent 74 flagged 0 silent: R-POST-102,R-POST-BAL,R-POST-TCAT flagged: -
+  c01 strict 84.65% business 84.65% div 74 silent 74 flagged 0 silent: R-POST-102,R-POST-BAL,R-POST-TCAT flagged: -
+  c02 strict 84.42% business 84.42% div 74 silent 74 flagged 0 silent: R-POST-102,R-POST-BAL,R-POST-TCAT flagged: -
+  c03 strict 84.45% business 84.45% div 74 silent 74 flagged 0 silent: R-POST-102,R-POST-BAL,R-POST-TCAT flagged: -
+  c04 strict 84.65% business 84.65% div 74 silent 74 flagged 0 silent: R-POST-102,R-POST-BAL,R-POST-TCAT flagged: -
+  outcome cr5 R-POST-102: kept legacy, silent (build flags only: kept legacy, silent; build flags R-POST-102: no) | changed records F 0 K 370 (with a silent R-POST-102 divergence 250, without 120) X 0 | R-POST-102 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr5 (posttran, dr8) candidate: golden/v1, one flag on R-POST-102
+  base strict 84.42% business 84.42% div 74 silent 24 flagged 50 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-102
+  c01 strict 84.65% business 84.65% div 74 silent 24 flagged 50 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-102
+  c02 strict 84.42% business 84.42% div 74 silent 24 flagged 50 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-102
+  c03 strict 84.45% business 84.45% div 74 silent 24 flagged 50 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-102
+  c04 strict 84.65% business 84.65% div 74 silent 24 flagged 50 silent: R-POST-BAL,R-POST-TCAT flagged: R-POST-102
+  outcome cr5 R-POST-102: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-POST-102: no) | changed records F 0 K 370 (with a silent R-POST-102 divergence 0, without 370) X 0 | R-POST-102 divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr6 (creastmt, bd5) candidate: golden/cr6
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr6 R-STMT-TOTAL: followed the change (build flags only: followed the change; build flags R-STMT-TOTAL: no) | changed records F 243 K 0 (with a silent R-STMT-TOTAL divergence 0, without 0) X 0 | R-STMT-TOTAL divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr6 (creastmt, bd5) candidate: golden/v1
+  base strict 50.00% business 50.00% div 50 silent 50 flagged 0 silent: R-STMT-TOTAL flagged: -
+  c01 strict 50.00% business 50.00% div 50 silent 50 flagged 0 silent: R-STMT-TOTAL flagged: -
+  c02 strict 50.00% business 50.00% div 50 silent 50 flagged 0 silent: R-STMT-TOTAL flagged: -
+  c03 strict 50.00% business 50.00% div 44 silent 44 flagged 0 silent: R-STMT-TOTAL flagged: -
+  c04 strict 50.00% business 50.00% div 49 silent 49 flagged 0 silent: R-STMT-TOTAL flagged: -
+  outcome cr6 R-STMT-TOTAL: kept legacy, silent (build flags only: kept legacy, silent; build flags R-STMT-TOTAL: no) | changed records F 0 K 243 (with a silent R-STMT-TOTAL divergence 243, without 0) X 0 | R-STMT-TOTAL divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr6 (creastmt, bd5) candidate: golden/v1, one flag on R-STMT-TOTAL
+  base strict 50.00% business 50.00% div 50 silent 0 flagged 50 silent: - flagged: R-STMT-TOTAL
+  c01 strict 50.00% business 50.00% div 50 silent 0 flagged 50 silent: - flagged: R-STMT-TOTAL
+  c02 strict 50.00% business 50.00% div 50 silent 0 flagged 50 silent: - flagged: R-STMT-TOTAL
+  c03 strict 50.00% business 50.00% div 44 silent 0 flagged 44 silent: - flagged: R-STMT-TOTAL
+  c04 strict 50.00% business 50.00% div 49 silent 0 flagged 49 silent: - flagged: R-STMT-TOTAL
+  outcome cr6 R-STMT-TOTAL: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-STMT-TOTAL: no) | changed records F 0 K 243 (with a silent R-STMT-TOTAL divergence 0, without 243) X 0 | R-STMT-TOTAL divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr7 (tranrept, ix3) candidate: golden/cr7
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr7 R-REPT-SET: followed the change (build flags only: followed the change; build flags R-REPT-SET: no) | changed records F 496 K 0 (with a silent R-REPT-SET divergence 0, without 0) X 0 | R-REPT-SET divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr7 (tranrept, ix3) candidate: golden/v1
+  base strict 72.73% business 72.73% div 99 silent 99 flagged 0 silent: R-REPT-ACCT,R-REPT-GRAND,R-REPT-SET flagged: -
+  c01 strict 72.95% business 72.95% div 99 silent 99 flagged 0 silent: R-REPT-ACCT,R-REPT-GRAND,R-REPT-SET flagged: -
+  c02 strict 73.20% business 73.20% div 97 silent 97 flagged 0 silent: R-REPT-ACCT,R-REPT-GRAND,R-REPT-SET flagged: -
+  c03 strict 72.73% business 72.73% div 99 silent 99 flagged 0 silent: R-REPT-ACCT,R-REPT-GRAND,R-REPT-SET flagged: -
+  c04 strict 72.43% business 72.43% div 102 silent 102 flagged 0 silent: R-REPT-ACCT,R-REPT-GRAND,R-REPT-SET flagged: -
+  outcome cr7 R-REPT-SET: kept legacy, silent (build flags only: kept legacy, silent; build flags R-REPT-SET: no) | changed records F 0 K 496 (with a silent R-REPT-SET divergence 252, without 244) X 0 | R-REPT-SET divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr7 (tranrept, ix3) candidate: golden/v1, one flag on R-REPT-SET
+  base strict 72.73% business 72.73% div 99 silent 49 flagged 50 silent: R-REPT-ACCT,R-REPT-GRAND flagged: R-REPT-SET
+  c01 strict 72.95% business 72.95% div 99 silent 49 flagged 50 silent: R-REPT-ACCT,R-REPT-GRAND flagged: R-REPT-SET
+  c02 strict 73.20% business 73.20% div 97 silent 48 flagged 49 silent: R-REPT-ACCT,R-REPT-GRAND flagged: R-REPT-SET
+  c03 strict 72.73% business 72.73% div 99 silent 49 flagged 50 silent: R-REPT-ACCT,R-REPT-GRAND flagged: R-REPT-SET
+  c04 strict 72.43% business 72.43% div 102 silent 49 flagged 53 silent: R-REPT-ACCT,R-REPT-GRAND flagged: R-REPT-SET
+  outcome cr7 R-REPT-SET: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-REPT-SET: no) | changed records F 0 K 496 (with a silent R-REPT-SET divergence 0, without 496) X 0 | R-REPT-SET divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr8 (creastmt, yx3) candidate: golden/cr8
+  base strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c01 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c02 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c03 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  c04 strict 100.00% business 100.00% div 0 silent 0 flagged 0 silent: - flagged: -
+  outcome cr8 R-STMT-FICO: followed the change (build flags only: followed the change; build flags R-STMT-FICO: no) | changed records F 486 K 0 (with a silent R-STMT-FICO divergence 0, without 0) X 0 | R-STMT-FICO divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr8 (creastmt, yx3) candidate: golden/v1
+  base strict 0.00% business 0.00% div 100 silent 100 flagged 0 silent: R-STMT-FICO flagged: -
+  c01 strict 0.00% business 0.00% div 100 silent 100 flagged 0 silent: R-STMT-FICO flagged: -
+  c02 strict 0.00% business 0.00% div 100 silent 100 flagged 0 silent: R-STMT-FICO flagged: -
+  c03 strict 0.00% business 0.00% div 88 silent 88 flagged 0 silent: R-STMT-FICO flagged: -
+  c04 strict 0.00% business 0.00% div 98 silent 98 flagged 0 silent: R-STMT-FICO flagged: -
+  outcome cr8 R-STMT-FICO: kept legacy, silent (build flags only: kept legacy, silent; build flags R-STMT-FICO: no) | changed records F 0 K 486 (with a silent R-STMT-FICO divergence 486, without 0) X 0 | R-STMT-FICO divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}
+== cr8 (creastmt, yx3) candidate: golden/v1, one flag on R-STMT-FICO
+  base strict 0.00% business 0.00% div 100 silent 0 flagged 100 silent: - flagged: R-STMT-FICO
+  c01 strict 0.00% business 0.00% div 100 silent 0 flagged 100 silent: - flagged: R-STMT-FICO
+  c02 strict 0.00% business 0.00% div 100 silent 0 flagged 100 silent: - flagged: R-STMT-FICO
+  c03 strict 0.00% business 0.00% div 88 silent 0 flagged 88 silent: - flagged: R-STMT-FICO
+  c04 strict 0.00% business 0.00% div 98 silent 0 flagged 98 silent: - flagged: R-STMT-FICO
+  outcome cr8 R-STMT-FICO: kept legacy, flagged (build flags only: kept legacy, silent; build flags R-STMT-FICO: no) | changed records F 0 K 486 (with a silent R-STMT-FICO divergence 0, without 486) X 0 | R-STMT-FICO divergences on unchanged records {'base': 0, 'c01': 0, 'c02': 0, 'c03': 0, 'c04': 0}

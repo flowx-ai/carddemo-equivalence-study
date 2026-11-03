@@ -1,0 +1,65 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc.dat",
+  "tcatbal": "balcat.dat",
+  "discgrp": "rategrp.dat",
+  "cardxref": "cardlink.dat",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate",
+  "_wrap": {
+   "files": [
+    "acctdata",
+    "tcatbal",
+    "discgrp",
+    "cardxref"
+   ]
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn_json",
+  "intcalc_acctdata": "accrue_ledgacc_json"
+ },
+ "source": "Files mode: DecodeInputs reads input.files['ledgacc.dat'|'balcat.dat'|'rategrp.dat'|'cardlink.dat'] as text, input.businessDate, input.interestRunDate. END: AssembleOutputs writes output={result:{accrue_systxn_json, accrue_ledgacc_json, assumptions_md, diagnostics, status}}. Register: decisions lines 71-82.",
+ "wiki": [
+  [
+   "R-INT-TRUNC",
+   "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   64,
+   "BR-08 TODO: confirm rounding mode"
+  ]
+ ],
+ "build": [
+  [
+   "R-INT-RATE",
+   71,
+   "[layout] offsets reconstructed, not verified"
+  ],
+  [
+   "R-INT-TRUNC",
+   72,
+   "[rounding] BR-08 TODO: mode unresolved; truncation chosen"
+  ],
+  [
+   "R-INT-TXID",
+   74,
+   "[sequence] initial suffix, ordering, restart unstated"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   75,
+   "[metadata] interest-specific population of other fields not given"
+  ],
+  [
+   "R-INT-CYC",
+   76,
+   "[accounts] accounts without category balances unstated"
+  ],
+  [
+   "R-INT-RATE",
+   77,
+   "[failures] second-miss outcome, duplicates not specified"
+  ]
+ ]
+}

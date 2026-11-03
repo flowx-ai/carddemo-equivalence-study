@@ -1,0 +1,81 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate"
+ },
+ "decode": null,
+ "source": "- START inputs acctdata, tcatbal, discgrp, cardxref (raw file text) and interestRunDate (register A-02/A-04; script lines 75-136); runTimestamp optional, unset\n- END payload ${result} = {intcalc_systran, intcalc_acctdata, summary} (register line 6; script line 310): contract names, adapter reads 'result'; no decode.json\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-INT-RATE",
+   32,
+   "A-06 offsets not given by the wiki"
+  ],
+  [
+   "R-INT-RATE",
+   36,
+   "A-08 blank/short lines, blank numerics: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   38,
+   "A-09 duplicate keys: behaviour not stated"
+  ],
+  [
+   "R-INT-RATE",
+   51,
+   "A-13 balance without account: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   60,
+   "A-16 no group and no DEFAULT row: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   70,
+   "A-19 29 February run date: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   71,
+   "A-20 malformed openDate: wiki silent"
+  ],
+  [
+   "R-INT-RATE",
+   77,
+   "A-23 recalled public CBACT04C has no age-based reduction ('as far as I know'); BR-03 implemented as the wiki states"
+  ],
+  [
+   "R-INT-TRUNC",
+   84,
+   "A-24 BR-08 TODO left open"
+  ],
+  [
+   "R-INT-APPLY",
+   89,
+   "A-27 AC 7 DECISION left as keep stub"
+  ],
+  [
+   "R-INT-TXID",
+   95,
+   "A-28 suffix start value and scope not stated"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   98,
+   "A-30 merchant fields: wiki silent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   102,
+   "A-31 which card to pick not stated"
+  ]
+ ],
+ "cr_rule": "A-17/A-18/A-21/A-22: reduction on the rate found (also DEFAULT), cutoff = same date ten years before the PARM date, openDate <= cutoff, floor on the reduced rate, effective-rate != 0 test. A-23 cites recalled CBACT04C (no age reduction) and keeps the wiki rule."
+}

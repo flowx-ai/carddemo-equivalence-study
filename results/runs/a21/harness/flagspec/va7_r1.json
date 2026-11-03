@@ -1,0 +1,66 @@
+{
+ "workflow": "<uuid>",
+ "map": null,
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- START (Post daily transactions, lines 24, 64): decoded lists input.dailyTransactions, accounts, categoryBalances, cardXrefs with the contract field names (the adapter's encode names, so no map); it also requires input.processingTimestamp for any posting (line 82). Left unset, as every POSTTRAN execution leaves run-time parameters the adapter does not carry (pure renaming, notebook \u00a741): every row that passes the checks becomes a record error\n- END: Post daily transactions (line 107) writes posttran_transact/_dalyrejs/_acctdata/_tcatbal at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered (contract names; _root result merged when present)\n- MODE records",
+ "build": [
+  [
+   "R-POST-COPY",
+   30,
+   "no decoded input API is specified"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   31,
+   "scenario 6 combines invalid card with expired account without defining how that account is found"
+  ],
+  [
+   "R-POST-WRITE",
+   32,
+   "sequence generation without an allocation contract; daily id kept"
+  ],
+  [
+   "R-POST-WRITE",
+   35,
+   "duplicate payload conflicts not defined"
+  ],
+  [
+   "R-POST-BAL",
+   36,
+   "rounding and malformed consumed values not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   36,
+   "rounding and malformed consumed values not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   40,
+   "no malformed decoded-record reason"
+  ],
+  [
+   "R-POST-TCAT",
+   42,
+   "category-balance key types not separately typed"
+  ],
+  [
+   "R-POST-BAL",
+   45,
+   "duplicate master keys not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   45,
+   "duplicate master keys not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   45,
+   "duplicate master keys not defined"
+  ]
+ ],
+ "cr_rule": "line 38: only successfully posted amounts > 0 consume the four-purchase allowance, per card in feed order; quotes BR-10. Not flagged. 104 is checked after 100-103 (line 31: 'purchase limit is last')."
+}

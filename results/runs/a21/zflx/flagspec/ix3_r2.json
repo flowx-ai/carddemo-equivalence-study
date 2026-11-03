@@ -1,0 +1,158 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactDat",
+  "cardxref": "cardxrefDat",
+  "trantype": "trantypeDat",
+  "trancatg": "trancatgDat",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- START (BUILD.md Contract; script lines 66-71, 129-143): transactDat, cardxrefDat, trantypeDat, trancatgDat (file contents), startDate, endDate\n- END (BUILD.md; script line 303): tranrept_report (lines joined by \\n), contract name, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-REPT-SET",
+   24,
+   "3 tie order: the wiki is silent; stable sort assumed"
+  ],
+  [
+   "R-REPT-SET",
+   31,
+   "4 interest postings and card-change detection: the wiki is silent; removed entirely"
+  ],
+  [
+   "R-REPT-ACCT",
+   31,
+   "4 interest postings and card-change detection: the wiki is silent"
+  ],
+  [
+   "R-REPT-SET",
+   37,
+   "5 blank and short lines: silent"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   54,
+   "8 unknown reference: AC-5 carries a TODO about the legacy abend"
+  ],
+  [
+   "R-REPT-XREF",
+   54,
+   "8 unknown xref: AC-5 TODO"
+  ],
+  [
+   "R-REPT-SET",
+   54,
+   "8 unknown reference: run continues, line printed"
+  ],
+  [
+   "R-REPT-SET",
+   64,
+   "9 page size TODO; 20 and counting from the legacy program"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   76,
+   "11 no account total for the last card; wiki silent on end of file"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   84,
+   "12 legacy double add not described by the wiki, not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   84,
+   "12 legacy double add not described by the wiki, not reproduced"
+  ],
+  [
+   "R-REPT-SET",
+   90,
+   "13 empty range layout: the wiki gives none; legacy flow"
+  ],
+  [
+   "R-REPT-HEADER",
+   97,
+   "14 Amount header spacing not legible in the contract"
+  ],
+  [
+   "R-REPT-AMT",
+   108,
+   "15 zero-value rule not spelled out; COBOL assumed"
+  ],
+  [
+   "R-REPT-AMT",
+   115,
+   "16 sign encoding not stated"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   "builder/flags.json",
+   2,
+   "builder flag: final account total"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   "builder/flags.json",
+   3,
+   "builder flag: legacy double add not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   "builder/flags.json",
+   3,
+   "builder flag: last page total / grand total"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   4,
+   "builder flag: pagination, page size TODO"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   "builder/flags.json",
+   5,
+   "builder flag: unknown reference, AC-5 TODO"
+  ],
+  [
+   "R-REPT-XREF",
+   "builder/flags.json",
+   5,
+   "builder flag: unknown xref, AC-5 TODO"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   5,
+   "builder flag: unknown reference, run continues"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   6,
+   "builder flag: interest exclusion before card-break detection"
+  ],
+  [
+   "R-REPT-ACCT",
+   "builder/flags.json",
+   6,
+   "builder flag: interest exclusion before card-break detection"
+  ],
+  [
+   "R-REPT-AMT",
+   "builder/flags.json",
+   7,
+   "builder flag: zero amounts as blanks"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   7,
+   "builder flag: empty range layout"
+  ]
+ ],
+ "cr_rule": "4: type 01 / category 0005 removed before anything else, no line, in no total, no account break (BR-07, AC-7); flags that the wiki is silent on card-change detection for these records (R-REPT-SET, also in builder flags.json)."
+}

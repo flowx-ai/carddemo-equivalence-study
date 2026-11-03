@@ -1,0 +1,9 @@
+[
+  {"output": "tranrept_report.txt", "key": "final Account Total", "source": "assumptions.md #7 - no account total after the last card (BR-04 'on card change'); plugin page could imply one"},
+  {"output": "tranrept_report.txt", "key": "last Page Total / Grand Total", "source": "assumptions.md #8 - legacy end-of-file re-adds the last TRAN-AMT; not reproduced (wiki: grand total = sum for the report)"},
+  {"output": "tranrept_report.txt", "key": "page breaks", "source": "assumptions.md #9 - page size 20 assumed; wiki says {{TODO: lines per page in CBTRN03C}}"},
+  {"output": "tranrept_report.txt", "key": "empty-range report", "source": "assumptions.md #11 - no header block when no detail lines"},
+  {"output": "tranrept_report.txt", "key": "zero amounts", "source": "assumptions.md #12 - all-Z edited picture prints a zero value as spaces"},
+  {"output": "tranrept_report.txt", "key": "column header Amount", "source": "assumptions.md #13 - 10 leading spaces in the 16-char Amount heading read from the contract image"},
+  {"output": "tranrept_report.txt", "key": "detail lines with missing reference data", "source": "assumptions.md #6 - unknown type/category/xref prints blanks and the run continues (wiki TODO on legacy abend)"}
+]

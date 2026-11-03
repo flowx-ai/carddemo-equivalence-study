@@ -1,0 +1,142 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 14,
+  "note": "A-01 /1200 interpretation of literal formula (TODO)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 15,
+  "note": "A-02 rounding TODO, silent on mode; truncation",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 16,
+  "note": "A-03 per category balance; grouping TODO leaves it open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 17,
+  "note": "A-04 key processing order: wiki silent; drives tran id numbering",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 18,
+  "note": "A-05 fallback to DEFAULT: silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 19,
+  "note": "A-06 no rate under group nor DEFAULT: silent; no interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 20,
+  "note": "A-07 tran id 10 + 6-digit sequence: silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 21,
+  "note": "A-08 txn field values: silent on all",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 22,
+  "note": "A-09 zero balance writes 0.00 txn: not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 23,
+  "note": "A-10 several cards: which card not stated; lowest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 24,
+  "note": "A-11 account not in ledgacc: silent; skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 25,
+  "note": "A-12 last account posted; flagged for end-of-file defect alternative",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 26,
+  "note": "A-13 cycle totals reset: silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 28,
+  "note": "A-15 negative balances, inactive accounts: silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 29,
+  "note": "A-16 fees: silent; none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 30,
+  "note": "A-17 overpunch encoding not stated anywhere",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+  "line": 33,
+  "note": "Record layouts: copybook not in attachment; offsets from data model",
+  "origin": "build"
+ }
+]

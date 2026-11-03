@@ -1,0 +1,16 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 25, "A-03 sign encoding not stated anywhere"],
+  ["R-INT-RATE", 32, "A-04 formula from CardDemo recall; pages silent"],
+  ["R-INT-TRUNC", 32, "A-04 truncation from CardDemo recall; pages silent"],
+  ["R-INT-RATE", 40, "A-06 zero rate rule from recall"],
+  ["R-INT-RATE", 42, "A-07 DEFAULT fallback from recall"],
+  ["R-INT-TXID", 46, "A-08 id layout from recall"],
+  ["R-INT-TXFORMAT", 50, "A-09 transaction constants from recall; none in the pages"],
+  ["R-INT-TXFORMAT", 58, "A-11 card number from layout plus recall"],
+  ["R-INT-CYC", 65, "A-14 account update from recall"],
+  ["R-INT-APPLY", 65, "A-14 account update from recall"],
+  ["R-INT-LAST", 70, "A-12 last account not updated (recalled defect replicated), riskiest assumption"],
+  ["R-INT-RATE", 76, "A-13 duplicate/missing keys handled by choice"],
+  ["R-INT-APPLY", 86, "A-16 fees: pages silent, recall"]
+ ]}

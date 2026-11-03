@@ -1,0 +1,199 @@
+{
+ "summary": {
+  "records_union": 88,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 22,
+  "flags_unneeded": 22,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 1.0
+   },
+   "creastmt_statements_html": {
+    "line_match": 1.0
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 44,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 44
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 44,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 44
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+   "line": 57,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 30,
+   "note": "A5 missing customer or account stops the run, statements so far kept; wiki silent for the batch",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 30,
+   "note": "A5 missing customer or account stops the run; wiki silent for the batch",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 37,
+   "note": "B1 one statement per xref card in card order; duplicate card keeps the first record",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 42,
+   "note": "B2 every transaction on file printed, no cycle filter; rests on the wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 45,
+   "note": "B3 matching by card, transaction-id order, duplicates and orphan cards decided by the build",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 54,
+   "note": "B5 total kept in cents and truncated to S9(9)V99, a choice the wiki does not state",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 64,
+   "note": "C1 name = first word of each name part; wiki only says 'customer name'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 69,
+   "note": "C2 address line 3 assembly (first word of line 3 + state + country + ZIP); no rule in the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 73,
+   "note": "C3 HTML name cut at the first double space, a judgement call",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 73,
+   "note": "C3 HTML address fields cut at the first double space, a judgement call",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 77,
+   "note": "C4 a tenth integer digit of the balance dropped as a COBOL MOVE would",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 101,
+   "note": "D2 sign convention of amounts outside the seed file not given by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 101,
+   "note": "D2 sign convention of amounts outside the seed file not given by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 101,
+   "note": "D2 sign convention of amounts outside the seed file not given by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/creastmt_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 110,
+   "note": "D4 the legacy table limits are not reproduced; no cap on transactions per card",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

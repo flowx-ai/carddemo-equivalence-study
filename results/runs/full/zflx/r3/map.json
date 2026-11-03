@@ -1,0 +1,7662 @@
+{
+ "build": "cd_a32_kk7_zflx_r3",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/full_zflx/zFLX-full",
+ "notes": [
+  "Written 2026-11-03 from the build's own definitions only (runs/full/zflx/r3/exec: ui_flow_83e21daf...json.md and map_helper.txt, workflow_45143f53... (ui_carddemo), systems.txt, data_types.txt; builder/assumptions.md; the END-node payloads from transcript tool-call inputs), before any workflow of the build was run and before any output was opened. No FlowX call was made.",
+  "UI flow: one UI flow (CardDemo), one page (CardDemoPage) whose cards are shown by the state key `screen`: SIGNON, MENU, ADMIN, ACCTVIEW, ACCTUPD, CARDLIST, CARDVIEW, CARDUPD, TRANLIST, TRANVIEW, TRANADD, REPORT, BILLPAY, USERLIST, USERADD, USERUPD, USERDEL, BYE. Each legacy map is one card; BYE is the TEXT screen. Navigation is the `screen` value in the response (nav rules on every workflow action) or the target of a UI event (workflow null).",
+  "Every workflow button sends START_WORKFLOW ui_carddemo (<uuid>) with startParams {type, sess, f}; `f` is the card's own state object (so, mn, am, av, au, cl, cv, cu, tl, tv, ta, rp, bp, ul, ua, uu, ud). The END node returns ${view}: the state keys to overwrite (err, msg, screen when it changes, sess when it changes, and the card states). Response paths are read from the dispatcher's last pass only (the pass with no DB operations), as that is the only pass whose `view` is output.",
+  "Body: `type` is the button's action type; sess.uid/utype/fname/lname/acct/card come from the adapter session; f.<key> comes from the form for keys bound to inputs, and from the session for state the card keeps but does not show as an input (list paging keys first/last/page and row objects r0..rN, au.step/au.o/au.rv/au.e.cid, cu.step/cu.o/cu.from, cv.from, tv.from, uu.loaded/uu.from, ud.fname/lname/utype/loaded/from). Back buttons on CARDVIEW/CARDUPD/TRANVIEW/USERUPD/USERDEL send f.to (the card's `from`) and the list state (f.cl/f.tl/f.ul) from the session.",
+  "Session keys are written only from responses of actions whose last pass returns that state key; on a path that does not return it the adapter writes empty, while the page keeps its earlier value (for sess.acct/sess.card after a failed account view, card view or card-list Enter: the next menu prefill of ACCTSID/CARDSID is empty in the adapter, the earlier value on the page).",
+  "Messages: the page shows err and msg in the header. Screens whose legacy map has INFOMSG (CACTVWA, CACTUPA, CCRDLIA, CCRDSLA, CCRDUPA): ERRMSG = err, INFOMSG = msg. Other screens: ERRMSG = err|msg (fix 6: exactly one of the two is non-empty on every path of these actions; both filled gives the ambiguity marker).",
+  "Instrument fix 7 (compose): CACTUPA's date boxes au.e.open/exp/reiss/dob, label '... (YYYY-MM-DD)', templates {OPNYEAR}-{OPNMON}-{OPNDAY}, {EXPYEAR}-{EXPMON}-{EXPDAY}, {RISYEAR}-{RISMON}-{RISDAY}, {DOBYEAR}-{DOBMON}-{DOBDAY}; CORPT0A's rp.sd/rp.ed, placeholder 'YYYY-MM-DD', templates {SDTYYYY}-{SDTMM}-{SDTDD}, {EDTYYYY}-{EDTMM}-{EDTDD}.",
+  "Instrument fix 7 (split): CACTVWA texts avd.* are 'Label: value' strings built by the dispatcher's acctDisplay (labels 'Active Y/N: ', 'Opened: ', 'Expiry: ', 'Reissue: ', 'Credit Limit: ', 'Cash credit Limit: ', 'Current Balance: ', 'Current Cycle Credit: ', 'Current Cycle Debit: ', 'Account Group: ', 'Customer id: ', 'SSN: ', 'Date of birth: ', 'FICO Score: ', 'First Name: ', 'Middle Name: ', 'Last Name: ', 'Address: ', 'Address line 2: ', 'City: ', 'State: ', 'Zip: ', 'Country: ', 'Phone 1: ', 'Phone 2: ', 'Government Issued Id Ref: ', 'EFT Account Id: ', 'Primary Card Holder Y/N: '); CCRDSLA texts cvd.name 'Name on card: {CRDNAME}', cvd.active 'Card Active Y/N: {CRDSTCD}', cvd.exp 'Expiry Date: {EXPMON}/{EXPYEAR}'; COTRN1A texts tvd.* ('Transaction ID: ', 'Card Number: ', 'Type CD: ', 'Category CD: ', 'Source: ', 'Description: ', 'Amount: ', 'Orig Date: ', 'Proc Date: ', 'Merchant ID: ', 'Merchant Name: ', 'Merchant City: ', 'Merchant Zip: '). avd.acct ('Account Number: ...') repeats the ACCTSID input and is not split.",
+  "ENTER on CACTUPA and CCRDUPA (coordinator ruling, fix 9 conditional AID): while au.step / cu.step is SEARCH (or empty) ENTER is 'Fetch account' / 'Fetch card' (auget / cuget), because the build hides 'Enter=Validate' in that step and Fetch is the only button a person's ENTER can mean; in EDIT or CONFIRM it is 'Enter=Validate' (auval / cuval), as the label states (assumption A5). Same correspondence for the other mode-dependent keys, from the hide rules: PF5 'F5=Save' only in CONFIRM, PF12 'F12=Cancel' only in EDIT or CONFIRM (CACTUPA, CCRDUPA); COUSR2A PF5 'F5=Save' only when uu.loaded is 'Y'; COUSR3A PF5 'F5=Delete' only when ud.loaded is 'Y'. In any other step the key is not reachable (no visible button). The step is the session key au_step / cu_step / uu_loaded / ud_loaded, written from every response that returns that state (menu, admin, list Enter, and the card's own actions).",
+  "COUSR2A/COUSR3A ENTER is 'Enter=Fetch' (uuget/udget); PF5 is 'F5=Save'/'F5=Delete'.",
+  "Not reachable (no button carries the key): CACTVWA PF5, CCRDUPA PF9, COTRN1A PF5 and PF9, COTRN2A PF9, CORPT0A PF5, COBIL0A PF5, COUSR1A PF9, COUSR2A PF12, COUSR3A PF12, COSGN0A PF5, COMEN1A PF5, COADM1A PF5. Legacy fields with no page element: COMEN1A OPTN012, COADM1A OPTN007-OPTN012, CCRDUPA EXPDAY, CCRDLIA CRDSTP2-7. CORPT0A MONTHLY/YEARLY/CUSTOM are mapped since fix 8 by 'choose' onto the SELECT rp.type (Report type; options 'Monthly (Current Month)' MONTHLY, 'Yearly (Current Year)' YEARLY, 'Custom (Date Range)' CUSTOM): a non-blank legacy mark puts that code in rp.type.",
+  "PF3 on COSGN0A, COMEN1A and COADM1A is a UI event of the page that sets screen BYE (TEXT); PF3 on CACTVWA, CACTUPA, CCRDLIA, COTRN0A, COTRN2A, CORPT0A, COBIL0A is a UI event to MENU; on COUSR0A and COUSR1A to ADMIN. PF4 on COTRN1A is a UI event that clears the detail texts and keeps the typed Tran ID (no clear_form); PF4 on COTRN2A, COBIL0A, COUSR1A, COUSR2A, COUSR3A clears the card's state (clear_form). The PF4 events on COUSR2A/COUSR3A also reset uu.from/ud.from to ADMIN on the page; a workflow-null action cannot write the adapter session, so the adapter keeps the earlier from.",
+  "Instrument limits that this map cannot avoid (for the coordinator): (a) resolved by fix 8 carry: every navigating action now maps the target cards' input boxes through 'form' (menu, admin, signon, list Enter, Back to a list), so a prefilled or selected value is displayed and sent by the next action; (b) hide rules are modelled for the mode-dependent keys through fix 9 conditional AIDs (note 8); (c) 'split' runs after 'show' and is not target-aware: on card-list Enter the CCRDSLA texts are split from cvd.*, so a U selection that lands on CCRDUPA shows CRDNAME/CRDSTCD/EXPMON/EXPYEAR blank at arrival; (d) resolved with (a): input boxes are no longer shown through 'cv.acct|cu.acct|cl.acct'-style alternations, each screen reads its own box, so no ambiguity marker; (e) the page shows 'Page N' only when N > 0: the adapter shows PAGENO/PAGENUM as the number, also 0.",
+  "Browser: each screen carries its card title (fix 9 'title', anchored to the ui_flow card title: 'Signon to CardDemo', 'Main Menu', 'Admin Menu', 'View Account', 'Update Account', 'List Credit Cards', 'View Credit Card Detail', 'Update Credit Card Details', 'List Transactions', 'View Transaction', 'Add Transaction', 'Transaction Reports', 'Bill Payment', 'List Users', 'Add User', 'Update User', 'Delete User'); detect is kept where the button is always visible (COSGN0A 'Sign on (Enter)', CACTUPA 'Fetch account', CCRDUPA 'Fetch card', COTRN2A 'F5=Copy Last Tran.'), dropped on COUSR3A ('F5=Delete' is visible only after a fetch). TEXT is the BYE card by text. CORPT0A report type: combo 'Report type' with options ^monthly/^yearly/^custom. Limit: on CACTUPA/CCRDUPA the browser ENTER stays '^enter=validate$': 'Fetch account'/'Fetch card' are never hidden and come before 'Enter=Validate' in the DOM, so an alternation would click Fetch in every step; a search-step ENTER in the browser therefore finds no visible button (not reached), while the adapter replay maps it to Fetch. Input indexes count visible inputs with every hidden form shown (CACTUPA in EDIT, CCRDUPA in EDIT, COUSR2A loaded); CORPT0A assumes the SELECT is not an <input> (unverified).",
+  "Stores: one NOSQL system per contract store; field names and types follow CONTRACT-UI-FULL exactly (data_types.txt: ints INTEGER, amounts FLOAT, dates and timestamps strings), so fields are identity and no as_text. JOBS = job_requests {start_date, end_date}. No loader in this map (assumption D4: the build has no load/unload jobs)."
+ ],
+ "start": {
+  "CC00": "COSGN0A",
+  "CB00": "COSGN0A",
+  "CA00": "COSGN0A",
+  "CR00": "COSGN0A"
+ },
+ "screens": {
+  "COSGN0A": {
+   "page": "CardDemoPage / SignonCard",
+   "inputs": {
+    "USERID": "so.uid",
+    "PASSWD": "so.pwd"
+   },
+   "display": [
+    "USERID"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signon",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:so.uid",
+      "f.pwd": "form:so.pwd"
+     },
+     "form": {
+      "so.uid": "so.uid",
+      "mn.opt": "mn.opt",
+      "am.opt": "am.opt"
+     },
+     "session": {
+      "uid": "sess.uid",
+      "utype": "sess.utype",
+      "fname": "sess.fname",
+      "lname": "sess.lname",
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "TEXT"
+    }
+   }
+  },
+  "COMEN1A": {
+   "page": "CardDemoPage / MenuCard",
+   "inputs": {
+    "OPTION": "mn.opt"
+   },
+   "display": [
+    "OPTION"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {
+    "OPTN001": "1. Account View",
+    "OPTN002": "2. Account Update",
+    "OPTN003": "3. Credit Card List",
+    "OPTN004": "4. Credit Card View",
+    "OPTN005": "5. Credit Card Update",
+    "OPTN006": "6. Transaction List",
+    "OPTN007": "7. Transaction View",
+    "OPTN008": "8. Transaction Add",
+    "OPTN009": "9. Transaction Reports",
+    "OPTN010": "10. Bill Payment",
+    "OPTN011": "11. Pending Authorization View"
+   },
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:menu",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.opt": "form:mn.opt"
+     },
+     "form": {
+      "mn.opt": "mn.opt",
+      "av.acct": "av.acct",
+      "au.acct": "au.acct",
+      "au.e.status": "au.e.status",
+      "au.e.climit": "au.e.climit",
+      "au.e.cashlim": "au.e.cashlim",
+      "au.e.bal": "au.e.bal",
+      "au.e.cycc": "au.e.cycc",
+      "au.e.cycd": "au.e.cycd",
+      "au.e.group": "au.e.group",
+      "au.e.ssn1": "au.e.ssn1",
+      "au.e.ssn2": "au.e.ssn2",
+      "au.e.ssn3": "au.e.ssn3",
+      "au.e.fico": "au.e.fico",
+      "au.e.fname": "au.e.fname",
+      "au.e.mname": "au.e.mname",
+      "au.e.lname": "au.e.lname",
+      "au.e.a1": "au.e.a1",
+      "au.e.a2": "au.e.a2",
+      "au.e.a3": "au.e.a3",
+      "au.e.state": "au.e.state",
+      "au.e.zip": "au.e.zip",
+      "au.e.country": "au.e.country",
+      "au.e.ph1a": "au.e.ph1a",
+      "au.e.ph1b": "au.e.ph1b",
+      "au.e.ph1c": "au.e.ph1c",
+      "au.e.ph2a": "au.e.ph2a",
+      "au.e.ph2b": "au.e.ph2b",
+      "au.e.ph2c": "au.e.ph2c",
+      "au.e.govt": "au.e.govt",
+      "au.e.eft": "au.e.eft",
+      "au.e.pri": "au.e.pri",
+      "au.e.open": "au.e.open",
+      "au.e.exp": "au.e.exp",
+      "au.e.reiss": "au.e.reiss",
+      "au.e.dob": "au.e.dob",
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6",
+      "cv.acct": "cv.acct",
+      "cv.card": "cv.card",
+      "cu.acct": "cu.acct",
+      "cu.card": "cu.card",
+      "cu.name": "cu.name",
+      "cu.active": "cu.active",
+      "cu.mon": "cu.mon",
+      "cu.yr": "cu.yr",
+      "tl.tid": "tl.tid",
+      "tl.s0": "tl.s0",
+      "tl.s1": "tl.s1",
+      "tl.s2": "tl.s2",
+      "tl.s3": "tl.s3",
+      "tl.s4": "tl.s4",
+      "tl.s5": "tl.s5",
+      "tl.s6": "tl.s6",
+      "tl.s7": "tl.s7",
+      "tl.s8": "tl.s8",
+      "tl.s9": "tl.s9",
+      "tv.tid": "tv.tid",
+      "ta.acct": "ta.acct",
+      "ta.card": "ta.card",
+      "ta.type": "ta.type",
+      "ta.cat": "ta.cat",
+      "ta.src": "ta.src",
+      "ta.desc": "ta.desc",
+      "ta.amt": "ta.amt",
+      "ta.od": "ta.od",
+      "ta.pd": "ta.pd",
+      "ta.mid": "ta.mid",
+      "ta.mname": "ta.mname",
+      "ta.mcity": "ta.mcity",
+      "ta.mzip": "ta.mzip",
+      "ta.conf": "ta.conf",
+      "rp.type": "rp.type",
+      "rp.sd": "rp.sd",
+      "rp.ed": "rp.ed",
+      "rp.conf": "rp.conf",
+      "bp.acct": "bp.acct",
+      "bp.conf": "bp.conf"
+     },
+     "session": {
+      "au_step": "au.step",
+      "au_o": "au.o",
+      "au_rv": "au.rv",
+      "au_cid": "au.e.cid",
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6",
+      "cv_from": "cv.from",
+      "cu_step": "cu.step",
+      "cu_o": "cu.o",
+      "cu_from": "cu.from",
+      "tl_tid": "tl.tid",
+      "tl_first": "tl.first",
+      "tl_last": "tl.last",
+      "tl_page": "tl.page",
+      "tl_r0": "tl.r0",
+      "tl_r1": "tl.r1",
+      "tl_r2": "tl.r2",
+      "tl_r3": "tl.r3",
+      "tl_r4": "tl.r4",
+      "tl_r5": "tl.r5",
+      "tl_r6": "tl.r6",
+      "tl_r7": "tl.r7",
+      "tl_r8": "tl.r8",
+      "tl_r9": "tl.r9",
+      "tv_from": "tv.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "INFOMSG": "msg",
+      "ACSTNUM": "au.e.cid",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page",
+      "TRNID01": "tl.r0.tid",
+      "TRNID02": "tl.r1.tid",
+      "TRNID03": "tl.r2.tid",
+      "TRNID04": "tl.r3.tid",
+      "TRNID05": "tl.r4.tid",
+      "TRNID06": "tl.r5.tid",
+      "TRNID07": "tl.r6.tid",
+      "TRNID08": "tl.r7.tid",
+      "TRNID09": "tl.r8.tid",
+      "TRNID10": "tl.r9.tid",
+      "TDATE01": "tl.r0.date",
+      "TDATE02": "tl.r1.date",
+      "TDATE03": "tl.r2.date",
+      "TDATE04": "tl.r3.date",
+      "TDATE05": "tl.r4.date",
+      "TDATE06": "tl.r5.date",
+      "TDATE07": "tl.r6.date",
+      "TDATE08": "tl.r7.date",
+      "TDATE09": "tl.r8.date",
+      "TDATE10": "tl.r9.date",
+      "TDESC01": "tl.r0.desc",
+      "TDESC02": "tl.r1.desc",
+      "TDESC03": "tl.r2.desc",
+      "TDESC04": "tl.r3.desc",
+      "TDESC05": "tl.r4.desc",
+      "TDESC06": "tl.r5.desc",
+      "TDESC07": "tl.r6.desc",
+      "TDESC08": "tl.r7.desc",
+      "TDESC09": "tl.r8.desc",
+      "TDESC10": "tl.r9.desc",
+      "TAMT001": "tl.r0.amt",
+      "TAMT002": "tl.r1.amt",
+      "TAMT003": "tl.r2.amt",
+      "TAMT004": "tl.r3.amt",
+      "TAMT005": "tl.r4.amt",
+      "TAMT006": "tl.r5.amt",
+      "TAMT007": "tl.r6.amt",
+      "TAMT008": "tl.r7.amt",
+      "TAMT009": "tl.r8.amt",
+      "TAMT010": "tl.r9.amt",
+      "PAGENUM": "tl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "TEXT"
+    }
+   }
+  },
+  "COADM1A": {
+   "page": "CardDemoPage / AdminCard",
+   "inputs": {
+    "OPTION": "am.opt"
+   },
+   "display": [
+    "OPTION"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {
+    "OPTN001": "1. User List (Security)",
+    "OPTN002": "2. User Add (Security)",
+    "OPTN003": "3. User Update (Security)",
+    "OPTN004": "4. User Delete (Security)",
+    "OPTN005": "5. Transaction Type List/Update",
+    "OPTN006": "6. Transaction Type Maintenance"
+   },
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:admin",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.opt": "form:am.opt"
+     },
+     "form": {
+      "am.opt": "am.opt",
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9",
+      "ua.fname": "ua.fname",
+      "ua.lname": "ua.lname",
+      "ua.uid": "ua.uid",
+      "ua.pwd": "ua.pwd",
+      "ua.utype": "ua.utype",
+      "uu.uid": "uu.uid",
+      "uu.fname": "uu.fname",
+      "uu.lname": "uu.lname",
+      "uu.pwd": "uu.pwd",
+      "uu.utype": "uu.utype",
+      "ud.uid": "ud.uid"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9",
+      "uu_loaded": "uu.loaded",
+      "uu_from": "uu.from",
+      "ud_fname": "ud.fname",
+      "ud_lname": "ud.lname",
+      "ud_utype": "ud.utype",
+      "ud_loaded": "ud.loaded",
+      "ud_from": "ud.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "TEXT"
+    }
+   }
+  },
+  "CACTVWA": {
+   "page": "CardDemoPage / AcctViewCard",
+   "inputs": {
+    "ACCTSID": "av.acct"
+   },
+   "display": [
+    "ACCTSID",
+    "ACSTTUS",
+    "ADTOPEN",
+    "AEXPDT",
+    "AREISDT",
+    "ACRDLIM",
+    "ACSHLIM",
+    "ACURBAL",
+    "ACRCYCR",
+    "ACRCYDB",
+    "AADDGRP",
+    "ACSTNUM",
+    "ACSTSSN",
+    "ACSTDOB",
+    "ACSTFCO",
+    "ACSFNAM",
+    "ACSMNAM",
+    "ACSLNAM",
+    "ACSADL1",
+    "ACSADL2",
+    "ACSCITY",
+    "ACSSTTE",
+    "ACSZIPC",
+    "ACSCTRY",
+    "ACSPHN1",
+    "ACSPHN2",
+    "ACSGOVT",
+    "ACSEFTC",
+    "ACSPFLG"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:acctview",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:av.acct"
+     },
+     "session": {
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg"
+     },
+     "split": [
+      {
+       "path": "avd.status",
+       "template": "Active Y/N: {ACSTTUS}"
+      },
+      {
+       "path": "avd.open",
+       "template": "Opened: {ADTOPEN}"
+      },
+      {
+       "path": "avd.exp",
+       "template": "Expiry: {AEXPDT}"
+      },
+      {
+       "path": "avd.reiss",
+       "template": "Reissue: {AREISDT}"
+      },
+      {
+       "path": "avd.climit",
+       "template": "Credit Limit: {ACRDLIM}"
+      },
+      {
+       "path": "avd.cashlim",
+       "template": "Cash credit Limit: {ACSHLIM}"
+      },
+      {
+       "path": "avd.bal",
+       "template": "Current Balance: {ACURBAL}"
+      },
+      {
+       "path": "avd.cycc",
+       "template": "Current Cycle Credit: {ACRCYCR}"
+      },
+      {
+       "path": "avd.cycd",
+       "template": "Current Cycle Debit: {ACRCYDB}"
+      },
+      {
+       "path": "avd.group",
+       "template": "Account Group: {AADDGRP}"
+      },
+      {
+       "path": "avd.cid",
+       "template": "Customer id: {ACSTNUM}"
+      },
+      {
+       "path": "avd.ssn",
+       "template": "SSN: {ACSTSSN}"
+      },
+      {
+       "path": "avd.dob",
+       "template": "Date of birth: {ACSTDOB}"
+      },
+      {
+       "path": "avd.fico",
+       "template": "FICO Score: {ACSTFCO}"
+      },
+      {
+       "path": "avd.fname",
+       "template": "First Name: {ACSFNAM}"
+      },
+      {
+       "path": "avd.mname",
+       "template": "Middle Name: {ACSMNAM}"
+      },
+      {
+       "path": "avd.lname",
+       "template": "Last Name: {ACSLNAM}"
+      },
+      {
+       "path": "avd.a1",
+       "template": "Address: {ACSADL1}"
+      },
+      {
+       "path": "avd.a2",
+       "template": "Address line 2: {ACSADL2}"
+      },
+      {
+       "path": "avd.a3",
+       "template": "City: {ACSCITY}"
+      },
+      {
+       "path": "avd.state",
+       "template": "State: {ACSSTTE}"
+      },
+      {
+       "path": "avd.zip",
+       "template": "Zip: {ACSZIPC}"
+      },
+      {
+       "path": "avd.country",
+       "template": "Country: {ACSCTRY}"
+      },
+      {
+       "path": "avd.ph1",
+       "template": "Phone 1: {ACSPHN1}"
+      },
+      {
+       "path": "avd.ph2",
+       "template": "Phone 2: {ACSPHN2}"
+      },
+      {
+       "path": "avd.govt",
+       "template": "Government Issued Id Ref: {ACSGOVT}"
+      },
+      {
+       "path": "avd.eft",
+       "template": "EFT Account Id: {ACSEFTC}"
+      },
+      {
+       "path": "avd.pri",
+       "template": "Primary Card Holder Y/N: {ACSPFLG}"
+      }
+     ],
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CACTUPA": {
+   "page": "CardDemoPage / AcctUpdCard",
+   "inputs": {
+    "ACCTSID": "au.acct",
+    "ACSTTUS": "au.e.status",
+    "ACRDLIM": "au.e.climit",
+    "ACSHLIM": "au.e.cashlim",
+    "ACURBAL": "au.e.bal",
+    "ACRCYCR": "au.e.cycc",
+    "ACRCYDB": "au.e.cycd",
+    "AADDGRP": "au.e.group",
+    "ACTSSN1": "au.e.ssn1",
+    "ACTSSN2": "au.e.ssn2",
+    "ACTSSN3": "au.e.ssn3",
+    "ACSTFCO": "au.e.fico",
+    "ACSFNAM": "au.e.fname",
+    "ACSMNAM": "au.e.mname",
+    "ACSLNAM": "au.e.lname",
+    "ACSADL1": "au.e.a1",
+    "ACSADL2": "au.e.a2",
+    "ACSCITY": "au.e.a3",
+    "ACSSTTE": "au.e.state",
+    "ACSZIPC": "au.e.zip",
+    "ACSCTRY": "au.e.country",
+    "ACSPH1A": "au.e.ph1a",
+    "ACSPH1B": "au.e.ph1b",
+    "ACSPH1C": "au.e.ph1c",
+    "ACSPH2A": "au.e.ph2a",
+    "ACSPH2B": "au.e.ph2b",
+    "ACSPH2C": "au.e.ph2c",
+    "ACSGOVT": "au.e.govt",
+    "ACSEFTC": "au.e.eft",
+    "ACSPFLG": "au.e.pri"
+   },
+   "compose": [
+    {
+     "key": "au.e.open",
+     "template": "{OPNYEAR}-{OPNMON}-{OPNDAY}"
+    },
+    {
+     "key": "au.e.exp",
+     "template": "{EXPYEAR}-{EXPMON}-{EXPDAY}"
+    },
+    {
+     "key": "au.e.reiss",
+     "template": "{RISYEAR}-{RISMON}-{RISDAY}"
+    },
+    {
+     "key": "au.e.dob",
+     "template": "{DOBYEAR}-{DOBMON}-{DOBDAY}"
+    }
+   ],
+   "display": [
+    "ACCTSID",
+    "ACSTNUM",
+    "ACSTTUS",
+    "ACRDLIM",
+    "ACSHLIM",
+    "ACURBAL",
+    "ACRCYCR",
+    "ACRCYDB",
+    "AADDGRP",
+    "ACTSSN1",
+    "ACTSSN2",
+    "ACTSSN3",
+    "ACSTFCO",
+    "ACSFNAM",
+    "ACSMNAM",
+    "ACSLNAM",
+    "ACSADL1",
+    "ACSADL2",
+    "ACSCITY",
+    "ACSSTTE",
+    "ACSZIPC",
+    "ACSCTRY",
+    "ACSPH1A",
+    "ACSPH1B",
+    "ACSPH1C",
+    "ACSPH2A",
+    "ACSPH2B",
+    "ACSPH2C",
+    "ACSGOVT",
+    "ACSEFTC",
+    "ACSPFLG",
+    "OPNYEAR",
+    "OPNMON",
+    "OPNDAY",
+    "EXPYEAR",
+    "EXPMON",
+    "EXPDAY",
+    "RISYEAR",
+    "RISMON",
+    "RISDAY",
+    "DOBYEAR",
+    "DOBMON",
+    "DOBDAY"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "when": [
+      {
+       "session": "au_step",
+       "in": [
+        "SEARCH",
+        ""
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:auget",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:au.acct",
+         "f.step": "session:au_step",
+         "f.o": "session:au_o",
+         "f.rv": "session:au_rv",
+         "f.e.cid": "session:au_cid",
+         "f.e.status": "form:au.e.status",
+         "f.e.climit": "form:au.e.climit",
+         "f.e.cashlim": "form:au.e.cashlim",
+         "f.e.bal": "form:au.e.bal",
+         "f.e.cycc": "form:au.e.cycc",
+         "f.e.cycd": "form:au.e.cycd",
+         "f.e.group": "form:au.e.group",
+         "f.e.ssn1": "form:au.e.ssn1",
+         "f.e.ssn2": "form:au.e.ssn2",
+         "f.e.ssn3": "form:au.e.ssn3",
+         "f.e.fico": "form:au.e.fico",
+         "f.e.fname": "form:au.e.fname",
+         "f.e.mname": "form:au.e.mname",
+         "f.e.lname": "form:au.e.lname",
+         "f.e.a1": "form:au.e.a1",
+         "f.e.a2": "form:au.e.a2",
+         "f.e.a3": "form:au.e.a3",
+         "f.e.state": "form:au.e.state",
+         "f.e.zip": "form:au.e.zip",
+         "f.e.country": "form:au.e.country",
+         "f.e.ph1a": "form:au.e.ph1a",
+         "f.e.ph1b": "form:au.e.ph1b",
+         "f.e.ph1c": "form:au.e.ph1c",
+         "f.e.ph2a": "form:au.e.ph2a",
+         "f.e.ph2b": "form:au.e.ph2b",
+         "f.e.ph2c": "form:au.e.ph2c",
+         "f.e.govt": "form:au.e.govt",
+         "f.e.eft": "form:au.e.eft",
+         "f.e.pri": "form:au.e.pri",
+         "f.e.open": "form:au.e.open",
+         "f.e.exp": "form:au.e.exp",
+         "f.e.reiss": "form:au.e.reiss",
+         "f.e.dob": "form:au.e.dob"
+        },
+        "form": {
+         "au.acct": "au.acct",
+         "au.e.status": "au.e.status",
+         "au.e.climit": "au.e.climit",
+         "au.e.cashlim": "au.e.cashlim",
+         "au.e.bal": "au.e.bal",
+         "au.e.cycc": "au.e.cycc",
+         "au.e.cycd": "au.e.cycd",
+         "au.e.group": "au.e.group",
+         "au.e.ssn1": "au.e.ssn1",
+         "au.e.ssn2": "au.e.ssn2",
+         "au.e.ssn3": "au.e.ssn3",
+         "au.e.fico": "au.e.fico",
+         "au.e.fname": "au.e.fname",
+         "au.e.mname": "au.e.mname",
+         "au.e.lname": "au.e.lname",
+         "au.e.a1": "au.e.a1",
+         "au.e.a2": "au.e.a2",
+         "au.e.a3": "au.e.a3",
+         "au.e.state": "au.e.state",
+         "au.e.zip": "au.e.zip",
+         "au.e.country": "au.e.country",
+         "au.e.ph1a": "au.e.ph1a",
+         "au.e.ph1b": "au.e.ph1b",
+         "au.e.ph1c": "au.e.ph1c",
+         "au.e.ph2a": "au.e.ph2a",
+         "au.e.ph2b": "au.e.ph2b",
+         "au.e.ph2c": "au.e.ph2c",
+         "au.e.govt": "au.e.govt",
+         "au.e.eft": "au.e.eft",
+         "au.e.pri": "au.e.pri",
+         "au.e.open": "au.e.open",
+         "au.e.exp": "au.e.exp",
+         "au.e.reiss": "au.e.reiss",
+         "au.e.dob": "au.e.dob"
+        },
+        "session": {
+         "au_step": "au.step",
+         "au_o": "au.o",
+         "au_rv": "au.rv",
+         "au_cid": "au.e.cid"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg",
+         "ACSTNUM": "au.e.cid"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      },
+      {
+       "session": "au_step",
+       "in": [
+        "EDIT",
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:auval",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:au.acct",
+         "f.step": "session:au_step",
+         "f.o": "session:au_o",
+         "f.rv": "session:au_rv",
+         "f.e.cid": "session:au_cid",
+         "f.e.status": "form:au.e.status",
+         "f.e.climit": "form:au.e.climit",
+         "f.e.cashlim": "form:au.e.cashlim",
+         "f.e.bal": "form:au.e.bal",
+         "f.e.cycc": "form:au.e.cycc",
+         "f.e.cycd": "form:au.e.cycd",
+         "f.e.group": "form:au.e.group",
+         "f.e.ssn1": "form:au.e.ssn1",
+         "f.e.ssn2": "form:au.e.ssn2",
+         "f.e.ssn3": "form:au.e.ssn3",
+         "f.e.fico": "form:au.e.fico",
+         "f.e.fname": "form:au.e.fname",
+         "f.e.mname": "form:au.e.mname",
+         "f.e.lname": "form:au.e.lname",
+         "f.e.a1": "form:au.e.a1",
+         "f.e.a2": "form:au.e.a2",
+         "f.e.a3": "form:au.e.a3",
+         "f.e.state": "form:au.e.state",
+         "f.e.zip": "form:au.e.zip",
+         "f.e.country": "form:au.e.country",
+         "f.e.ph1a": "form:au.e.ph1a",
+         "f.e.ph1b": "form:au.e.ph1b",
+         "f.e.ph1c": "form:au.e.ph1c",
+         "f.e.ph2a": "form:au.e.ph2a",
+         "f.e.ph2b": "form:au.e.ph2b",
+         "f.e.ph2c": "form:au.e.ph2c",
+         "f.e.govt": "form:au.e.govt",
+         "f.e.eft": "form:au.e.eft",
+         "f.e.pri": "form:au.e.pri",
+         "f.e.open": "form:au.e.open",
+         "f.e.exp": "form:au.e.exp",
+         "f.e.reiss": "form:au.e.reiss",
+         "f.e.dob": "form:au.e.dob"
+        },
+        "form": {
+         "au.acct": "au.acct",
+         "au.e.status": "au.e.status",
+         "au.e.climit": "au.e.climit",
+         "au.e.cashlim": "au.e.cashlim",
+         "au.e.bal": "au.e.bal",
+         "au.e.cycc": "au.e.cycc",
+         "au.e.cycd": "au.e.cycd",
+         "au.e.group": "au.e.group",
+         "au.e.ssn1": "au.e.ssn1",
+         "au.e.ssn2": "au.e.ssn2",
+         "au.e.ssn3": "au.e.ssn3",
+         "au.e.fico": "au.e.fico",
+         "au.e.fname": "au.e.fname",
+         "au.e.mname": "au.e.mname",
+         "au.e.lname": "au.e.lname",
+         "au.e.a1": "au.e.a1",
+         "au.e.a2": "au.e.a2",
+         "au.e.a3": "au.e.a3",
+         "au.e.state": "au.e.state",
+         "au.e.zip": "au.e.zip",
+         "au.e.country": "au.e.country",
+         "au.e.ph1a": "au.e.ph1a",
+         "au.e.ph1b": "au.e.ph1b",
+         "au.e.ph1c": "au.e.ph1c",
+         "au.e.ph2a": "au.e.ph2a",
+         "au.e.ph2b": "au.e.ph2b",
+         "au.e.ph2c": "au.e.ph2c",
+         "au.e.govt": "au.e.govt",
+         "au.e.eft": "au.e.eft",
+         "au.e.pri": "au.e.pri",
+         "au.e.open": "au.e.open",
+         "au.e.exp": "au.e.exp",
+         "au.e.reiss": "au.e.reiss",
+         "au.e.dob": "au.e.dob"
+        },
+        "session": {
+         "au_step": "au.step",
+         "au_o": "au.o",
+         "au_rv": "au.rv",
+         "au_cid": "au.e.cid"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg",
+         "ACSTNUM": "au.e.cid"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "au_step",
+       "in": [
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:ausave",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:au.acct",
+         "f.step": "session:au_step",
+         "f.o": "session:au_o",
+         "f.rv": "session:au_rv",
+         "f.e.cid": "session:au_cid",
+         "f.e.status": "form:au.e.status",
+         "f.e.climit": "form:au.e.climit",
+         "f.e.cashlim": "form:au.e.cashlim",
+         "f.e.bal": "form:au.e.bal",
+         "f.e.cycc": "form:au.e.cycc",
+         "f.e.cycd": "form:au.e.cycd",
+         "f.e.group": "form:au.e.group",
+         "f.e.ssn1": "form:au.e.ssn1",
+         "f.e.ssn2": "form:au.e.ssn2",
+         "f.e.ssn3": "form:au.e.ssn3",
+         "f.e.fico": "form:au.e.fico",
+         "f.e.fname": "form:au.e.fname",
+         "f.e.mname": "form:au.e.mname",
+         "f.e.lname": "form:au.e.lname",
+         "f.e.a1": "form:au.e.a1",
+         "f.e.a2": "form:au.e.a2",
+         "f.e.a3": "form:au.e.a3",
+         "f.e.state": "form:au.e.state",
+         "f.e.zip": "form:au.e.zip",
+         "f.e.country": "form:au.e.country",
+         "f.e.ph1a": "form:au.e.ph1a",
+         "f.e.ph1b": "form:au.e.ph1b",
+         "f.e.ph1c": "form:au.e.ph1c",
+         "f.e.ph2a": "form:au.e.ph2a",
+         "f.e.ph2b": "form:au.e.ph2b",
+         "f.e.ph2c": "form:au.e.ph2c",
+         "f.e.govt": "form:au.e.govt",
+         "f.e.eft": "form:au.e.eft",
+         "f.e.pri": "form:au.e.pri",
+         "f.e.open": "form:au.e.open",
+         "f.e.exp": "form:au.e.exp",
+         "f.e.reiss": "form:au.e.reiss",
+         "f.e.dob": "form:au.e.dob"
+        },
+        "form": {
+         "au.acct": "au.acct",
+         "au.e.status": "au.e.status",
+         "au.e.climit": "au.e.climit",
+         "au.e.cashlim": "au.e.cashlim",
+         "au.e.bal": "au.e.bal",
+         "au.e.cycc": "au.e.cycc",
+         "au.e.cycd": "au.e.cycd",
+         "au.e.group": "au.e.group",
+         "au.e.ssn1": "au.e.ssn1",
+         "au.e.ssn2": "au.e.ssn2",
+         "au.e.ssn3": "au.e.ssn3",
+         "au.e.fico": "au.e.fico",
+         "au.e.fname": "au.e.fname",
+         "au.e.mname": "au.e.mname",
+         "au.e.lname": "au.e.lname",
+         "au.e.a1": "au.e.a1",
+         "au.e.a2": "au.e.a2",
+         "au.e.a3": "au.e.a3",
+         "au.e.state": "au.e.state",
+         "au.e.zip": "au.e.zip",
+         "au.e.country": "au.e.country",
+         "au.e.ph1a": "au.e.ph1a",
+         "au.e.ph1b": "au.e.ph1b",
+         "au.e.ph1c": "au.e.ph1c",
+         "au.e.ph2a": "au.e.ph2a",
+         "au.e.ph2b": "au.e.ph2b",
+         "au.e.ph2c": "au.e.ph2c",
+         "au.e.govt": "au.e.govt",
+         "au.e.eft": "au.e.eft",
+         "au.e.pri": "au.e.pri",
+         "au.e.open": "au.e.open",
+         "au.e.exp": "au.e.exp",
+         "au.e.reiss": "au.e.reiss",
+         "au.e.dob": "au.e.dob"
+        },
+        "session": {
+         "au_step": "au.step",
+         "au_o": "au.o",
+         "au_rv": "au.rv",
+         "au_cid": "au.e.cid"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg",
+         "ACSTNUM": "au.e.cid"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF12": {
+     "when": [
+      {
+       "session": "au_step",
+       "in": [
+        "EDIT",
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:aucancel",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:au.acct",
+         "f.step": "session:au_step",
+         "f.o": "session:au_o",
+         "f.rv": "session:au_rv",
+         "f.e.cid": "session:au_cid",
+         "f.e.status": "form:au.e.status",
+         "f.e.climit": "form:au.e.climit",
+         "f.e.cashlim": "form:au.e.cashlim",
+         "f.e.bal": "form:au.e.bal",
+         "f.e.cycc": "form:au.e.cycc",
+         "f.e.cycd": "form:au.e.cycd",
+         "f.e.group": "form:au.e.group",
+         "f.e.ssn1": "form:au.e.ssn1",
+         "f.e.ssn2": "form:au.e.ssn2",
+         "f.e.ssn3": "form:au.e.ssn3",
+         "f.e.fico": "form:au.e.fico",
+         "f.e.fname": "form:au.e.fname",
+         "f.e.mname": "form:au.e.mname",
+         "f.e.lname": "form:au.e.lname",
+         "f.e.a1": "form:au.e.a1",
+         "f.e.a2": "form:au.e.a2",
+         "f.e.a3": "form:au.e.a3",
+         "f.e.state": "form:au.e.state",
+         "f.e.zip": "form:au.e.zip",
+         "f.e.country": "form:au.e.country",
+         "f.e.ph1a": "form:au.e.ph1a",
+         "f.e.ph1b": "form:au.e.ph1b",
+         "f.e.ph1c": "form:au.e.ph1c",
+         "f.e.ph2a": "form:au.e.ph2a",
+         "f.e.ph2b": "form:au.e.ph2b",
+         "f.e.ph2c": "form:au.e.ph2c",
+         "f.e.govt": "form:au.e.govt",
+         "f.e.eft": "form:au.e.eft",
+         "f.e.pri": "form:au.e.pri",
+         "f.e.open": "form:au.e.open",
+         "f.e.exp": "form:au.e.exp",
+         "f.e.reiss": "form:au.e.reiss",
+         "f.e.dob": "form:au.e.dob"
+        },
+        "form": {
+         "au.acct": "au.acct",
+         "au.e.status": "au.e.status",
+         "au.e.climit": "au.e.climit",
+         "au.e.cashlim": "au.e.cashlim",
+         "au.e.bal": "au.e.bal",
+         "au.e.cycc": "au.e.cycc",
+         "au.e.cycd": "au.e.cycd",
+         "au.e.group": "au.e.group",
+         "au.e.ssn1": "au.e.ssn1",
+         "au.e.ssn2": "au.e.ssn2",
+         "au.e.ssn3": "au.e.ssn3",
+         "au.e.fico": "au.e.fico",
+         "au.e.fname": "au.e.fname",
+         "au.e.mname": "au.e.mname",
+         "au.e.lname": "au.e.lname",
+         "au.e.a1": "au.e.a1",
+         "au.e.a2": "au.e.a2",
+         "au.e.a3": "au.e.a3",
+         "au.e.state": "au.e.state",
+         "au.e.zip": "au.e.zip",
+         "au.e.country": "au.e.country",
+         "au.e.ph1a": "au.e.ph1a",
+         "au.e.ph1b": "au.e.ph1b",
+         "au.e.ph1c": "au.e.ph1c",
+         "au.e.ph2a": "au.e.ph2a",
+         "au.e.ph2b": "au.e.ph2b",
+         "au.e.ph2c": "au.e.ph2c",
+         "au.e.govt": "au.e.govt",
+         "au.e.eft": "au.e.eft",
+         "au.e.pri": "au.e.pri",
+         "au.e.open": "au.e.open",
+         "au.e.exp": "au.e.exp",
+         "au.e.reiss": "au.e.reiss",
+         "au.e.dob": "au.e.dob"
+        },
+        "session": {
+         "au_step": "au.step",
+         "au_o": "au.o",
+         "au_rv": "au.rv",
+         "au_cid": "au.e.cid"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg",
+         "ACSTNUM": "au.e.cid"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CCRDLIA": {
+   "page": "CardDemoPage / CardListCard",
+   "inputs": {
+    "ACCTSID": "cl.acct",
+    "CARDSID": "cl.card",
+    "CRDSEL1": "cl.s0",
+    "CRDSEL2": "cl.s1",
+    "CRDSEL3": "cl.s2",
+    "CRDSEL4": "cl.s3",
+    "CRDSEL5": "cl.s4",
+    "CRDSEL6": "cl.s5",
+    "CRDSEL7": "cl.s6"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "CRDSEL1",
+    "CRDSEL2",
+    "CRDSEL3",
+    "CRDSEL4",
+    "CRDSEL5",
+    "CRDSEL6",
+    "CRDSEL7",
+    "ACCTNO1",
+    "ACCTNO2",
+    "ACCTNO3",
+    "ACCTNO4",
+    "ACCTNO5",
+    "ACCTNO6",
+    "ACCTNO7",
+    "CRDNUM1",
+    "CRDNUM2",
+    "CRDNUM3",
+    "CRDNUM4",
+    "CRDNUM5",
+    "CRDNUM6",
+    "CRDNUM7",
+    "CRDSTS1",
+    "CRDSTS2",
+    "CRDSTS3",
+    "CRDSTS4",
+    "CRDSTS5",
+    "CRDSTS6",
+    "CRDSTS7",
+    "PAGENO"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:clenter",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:cl.acct",
+      "f.card": "form:cl.card",
+      "f.first": "session:cl_first",
+      "f.last": "session:cl_last",
+      "f.page": "session:cl_page",
+      "f.s0": "form:cl.s0",
+      "f.s1": "form:cl.s1",
+      "f.s2": "form:cl.s2",
+      "f.s3": "form:cl.s3",
+      "f.s4": "form:cl.s4",
+      "f.s5": "form:cl.s5",
+      "f.s6": "form:cl.s6",
+      "f.r0": "session:cl_r0",
+      "f.r1": "session:cl_r1",
+      "f.r2": "session:cl_r2",
+      "f.r3": "session:cl_r3",
+      "f.r4": "session:cl_r4",
+      "f.r5": "session:cl_r5",
+      "f.r6": "session:cl_r6"
+     },
+     "form": {
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6",
+      "cv.acct": "cv.acct",
+      "cv.card": "cv.card",
+      "cu.acct": "cu.acct",
+      "cu.card": "cu.card",
+      "cu.name": "cu.name",
+      "cu.active": "cu.active",
+      "cu.mon": "cu.mon",
+      "cu.yr": "cu.yr"
+     },
+     "session": {
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6",
+      "cv_from": "cv.from",
+      "cu_step": "cu.step",
+      "cu_o": "cu.o",
+      "cu_from": "cu.from",
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page"
+     },
+     "split": [
+      {
+       "path": "cvd.name",
+       "template": "Name on card: {CRDNAME}"
+      },
+      {
+       "path": "cvd.active",
+       "template": "Card Active Y/N: {CRDSTCD}"
+      },
+      {
+       "path": "cvd.exp",
+       "template": "Expiry Date: {EXPMON}/{EXPYEAR}"
+      }
+     ],
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:clprev",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:cl.acct",
+      "f.card": "form:cl.card",
+      "f.first": "session:cl_first",
+      "f.last": "session:cl_last",
+      "f.page": "session:cl_page",
+      "f.s0": "form:cl.s0",
+      "f.s1": "form:cl.s1",
+      "f.s2": "form:cl.s2",
+      "f.s3": "form:cl.s3",
+      "f.s4": "form:cl.s4",
+      "f.s5": "form:cl.s5",
+      "f.s6": "form:cl.s6",
+      "f.r0": "session:cl_r0",
+      "f.r1": "session:cl_r1",
+      "f.r2": "session:cl_r2",
+      "f.r3": "session:cl_r3",
+      "f.r4": "session:cl_r4",
+      "f.r5": "session:cl_r5",
+      "f.r6": "session:cl_r6"
+     },
+     "form": {
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6",
+      "cv.acct": "cv.acct",
+      "cv.card": "cv.card",
+      "cu.acct": "cu.acct",
+      "cu.card": "cu.card",
+      "cu.name": "cu.name",
+      "cu.active": "cu.active",
+      "cu.mon": "cu.mon",
+      "cu.yr": "cu.yr"
+     },
+     "session": {
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6",
+      "cv_from": "cv.from",
+      "cu_step": "cu.step",
+      "cu_o": "cu.o",
+      "cu_from": "cu.from",
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:clnext",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:cl.acct",
+      "f.card": "form:cl.card",
+      "f.first": "session:cl_first",
+      "f.last": "session:cl_last",
+      "f.page": "session:cl_page",
+      "f.s0": "form:cl.s0",
+      "f.s1": "form:cl.s1",
+      "f.s2": "form:cl.s2",
+      "f.s3": "form:cl.s3",
+      "f.s4": "form:cl.s4",
+      "f.s5": "form:cl.s5",
+      "f.s6": "form:cl.s6",
+      "f.r0": "session:cl_r0",
+      "f.r1": "session:cl_r1",
+      "f.r2": "session:cl_r2",
+      "f.r3": "session:cl_r3",
+      "f.r4": "session:cl_r4",
+      "f.r5": "session:cl_r5",
+      "f.r6": "session:cl_r6"
+     },
+     "form": {
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6",
+      "cv.acct": "cv.acct",
+      "cv.card": "cv.card",
+      "cu.acct": "cu.acct",
+      "cu.card": "cu.card",
+      "cu.name": "cu.name",
+      "cu.active": "cu.active",
+      "cu.mon": "cu.mon",
+      "cu.yr": "cu.yr"
+     },
+     "session": {
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6",
+      "cv_from": "cv.from",
+      "cu_step": "cu.step",
+      "cu_o": "cu.o",
+      "cu_from": "cu.from",
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CCRDSLA": {
+   "page": "CardDemoPage / CardViewCard",
+   "inputs": {
+    "ACCTSID": "cv.acct",
+    "CARDSID": "cv.card"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "CRDNAME",
+    "CRDSTCD",
+    "EXPMON",
+    "EXPYEAR"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:cardview",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:cv.acct",
+      "f.card": "form:cv.card",
+      "f.from": "session:cv_from"
+     },
+     "form": {
+      "cv.acct": "cv.acct",
+      "cv.card": "cv.card"
+     },
+     "session": {
+      "cv_from": "cv.from",
+      "acct": "sess.acct",
+      "card": "sess.card"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg"
+     },
+     "split": [
+      {
+       "path": "cvd.name",
+       "template": "Name on card: {CRDNAME}"
+      },
+      {
+       "path": "cvd.active",
+       "template": "Card Active Y/N: {CRDSTCD}"
+      },
+      {
+       "path": "cvd.exp",
+       "template": "Expiry Date: {EXPMON}/{EXPYEAR}"
+      }
+     ],
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.to": "session:cv_from",
+      "f.cl.acct": "session:cl_acct",
+      "f.cl.card": "session:cl_card",
+      "f.cl.first": "session:cl_first",
+      "f.cl.last": "session:cl_last",
+      "f.cl.page": "session:cl_page",
+      "f.cl.r0": "session:cl_r0",
+      "f.cl.r1": "session:cl_r1",
+      "f.cl.r2": "session:cl_r2",
+      "f.cl.r3": "session:cl_r3",
+      "f.cl.r4": "session:cl_r4",
+      "f.cl.r5": "session:cl_r5",
+      "f.cl.r6": "session:cl_r6"
+     },
+     "form": {
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6"
+     },
+     "session": {
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "CCRDUPA": {
+   "page": "CardDemoPage / CardUpdCard",
+   "inputs": {
+    "ACCTSID": "cu.acct",
+    "CARDSID": "cu.card",
+    "CRDNAME": "cu.name",
+    "CRDSTCD": "cu.active",
+    "EXPMON": "cu.mon",
+    "EXPYEAR": "cu.yr"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "CRDNAME",
+    "CRDSTCD",
+    "EXPMON",
+    "EXPYEAR"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "when": [
+      {
+       "session": "cu_step",
+       "in": [
+        "SEARCH",
+        ""
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:cuget",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:cu.acct",
+         "f.card": "form:cu.card",
+         "f.name": "form:cu.name",
+         "f.active": "form:cu.active",
+         "f.mon": "form:cu.mon",
+         "f.yr": "form:cu.yr",
+         "f.step": "session:cu_step",
+         "f.o": "session:cu_o",
+         "f.from": "session:cu_from"
+        },
+        "form": {
+         "cu.acct": "cu.acct",
+         "cu.card": "cu.card",
+         "cu.name": "cu.name",
+         "cu.active": "cu.active",
+         "cu.mon": "cu.mon",
+         "cu.yr": "cu.yr"
+        },
+        "session": {
+         "cu_step": "cu.step",
+         "cu_o": "cu.o",
+         "cu_from": "cu.from"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      },
+      {
+       "session": "cu_step",
+       "in": [
+        "EDIT",
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:cuval",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:cu.acct",
+         "f.card": "form:cu.card",
+         "f.name": "form:cu.name",
+         "f.active": "form:cu.active",
+         "f.mon": "form:cu.mon",
+         "f.yr": "form:cu.yr",
+         "f.step": "session:cu_step",
+         "f.o": "session:cu_o",
+         "f.from": "session:cu_from"
+        },
+        "form": {
+         "cu.acct": "cu.acct",
+         "cu.card": "cu.card",
+         "cu.name": "cu.name",
+         "cu.active": "cu.active",
+         "cu.mon": "cu.mon",
+         "cu.yr": "cu.yr"
+        },
+        "session": {
+         "cu_step": "cu.step",
+         "cu_o": "cu.o",
+         "cu_from": "cu.from"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "cu_step",
+       "in": [
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:cusave",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:cu.acct",
+         "f.card": "form:cu.card",
+         "f.name": "form:cu.name",
+         "f.active": "form:cu.active",
+         "f.mon": "form:cu.mon",
+         "f.yr": "form:cu.yr",
+         "f.step": "session:cu_step",
+         "f.o": "session:cu_o",
+         "f.from": "session:cu_from"
+        },
+        "form": {
+         "cu.acct": "cu.acct",
+         "cu.card": "cu.card",
+         "cu.name": "cu.name",
+         "cu.active": "cu.active",
+         "cu.mon": "cu.mon",
+         "cu.yr": "cu.yr"
+        },
+        "session": {
+         "cu_step": "cu.step",
+         "cu_o": "cu.o",
+         "cu_from": "cu.from"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF12": {
+     "when": [
+      {
+       "session": "cu_step",
+       "in": [
+        "EDIT",
+        "CONFIRM"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:cucancel",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.acct": "form:cu.acct",
+         "f.card": "form:cu.card",
+         "f.name": "form:cu.name",
+         "f.active": "form:cu.active",
+         "f.mon": "form:cu.mon",
+         "f.yr": "form:cu.yr",
+         "f.step": "session:cu_step",
+         "f.o": "session:cu_o",
+         "f.from": "session:cu_from"
+        },
+        "form": {
+         "cu.acct": "cu.acct",
+         "cu.card": "cu.card",
+         "cu.name": "cu.name",
+         "cu.active": "cu.active",
+         "cu.mon": "cu.mon",
+         "cu.yr": "cu.yr"
+        },
+        "session": {
+         "cu_step": "cu.step",
+         "cu_o": "cu.o",
+         "cu_from": "cu.from"
+        },
+        "show": {
+         "ERRMSG": "err",
+         "INFOMSG": "msg"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.to": "session:cu_from",
+      "f.cl.acct": "session:cl_acct",
+      "f.cl.card": "session:cl_card",
+      "f.cl.first": "session:cl_first",
+      "f.cl.last": "session:cl_last",
+      "f.cl.page": "session:cl_page",
+      "f.cl.r0": "session:cl_r0",
+      "f.cl.r1": "session:cl_r1",
+      "f.cl.r2": "session:cl_r2",
+      "f.cl.r3": "session:cl_r3",
+      "f.cl.r4": "session:cl_r4",
+      "f.cl.r5": "session:cl_r5",
+      "f.cl.r6": "session:cl_r6"
+     },
+     "form": {
+      "cl.acct": "cl.acct",
+      "cl.card": "cl.card",
+      "cl.s0": "cl.s0",
+      "cl.s1": "cl.s1",
+      "cl.s2": "cl.s2",
+      "cl.s3": "cl.s3",
+      "cl.s4": "cl.s4",
+      "cl.s5": "cl.s5",
+      "cl.s6": "cl.s6"
+     },
+     "session": {
+      "cl_acct": "cl.acct",
+      "cl_card": "cl.card",
+      "cl_first": "cl.first",
+      "cl_last": "cl.last",
+      "cl_page": "cl.page",
+      "cl_r0": "cl.r0",
+      "cl_r1": "cl.r1",
+      "cl_r2": "cl.r2",
+      "cl_r3": "cl.r3",
+      "cl_r4": "cl.r4",
+      "cl_r5": "cl.r5",
+      "cl_r6": "cl.r6"
+     },
+     "show": {
+      "ERRMSG": "err",
+      "INFOMSG": "msg",
+      "ACCTNO1": "cl.r0.acct",
+      "ACCTNO2": "cl.r1.acct",
+      "ACCTNO3": "cl.r2.acct",
+      "ACCTNO4": "cl.r3.acct",
+      "ACCTNO5": "cl.r4.acct",
+      "ACCTNO6": "cl.r5.acct",
+      "ACCTNO7": "cl.r6.acct",
+      "CRDNUM1": "cl.r0.card",
+      "CRDNUM2": "cl.r1.card",
+      "CRDNUM3": "cl.r2.card",
+      "CRDNUM4": "cl.r3.card",
+      "CRDNUM5": "cl.r4.card",
+      "CRDNUM6": "cl.r5.card",
+      "CRDNUM7": "cl.r6.card",
+      "CRDSTS1": "cl.r0.act",
+      "CRDSTS2": "cl.r1.act",
+      "CRDSTS3": "cl.r2.act",
+      "CRDSTS4": "cl.r3.act",
+      "CRDSTS5": "cl.r4.act",
+      "CRDSTS6": "cl.r5.act",
+      "CRDSTS7": "cl.r6.act",
+      "PAGENO": "cl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "COTRN0A": {
+   "page": "CardDemoPage / TranListCard",
+   "inputs": {
+    "TRNIDIN": "tl.tid",
+    "SEL0001": "tl.s0",
+    "SEL0002": "tl.s1",
+    "SEL0003": "tl.s2",
+    "SEL0004": "tl.s3",
+    "SEL0005": "tl.s4",
+    "SEL0006": "tl.s5",
+    "SEL0007": "tl.s6",
+    "SEL0008": "tl.s7",
+    "SEL0009": "tl.s8",
+    "SEL0010": "tl.s9"
+   },
+   "display": [
+    "TRNIDIN",
+    "SEL0001",
+    "SEL0002",
+    "SEL0003",
+    "SEL0004",
+    "SEL0005",
+    "SEL0006",
+    "SEL0007",
+    "SEL0008",
+    "SEL0009",
+    "SEL0010",
+    "TRNID01",
+    "TRNID02",
+    "TRNID03",
+    "TRNID04",
+    "TRNID05",
+    "TRNID06",
+    "TRNID07",
+    "TRNID08",
+    "TRNID09",
+    "TRNID10",
+    "TDATE01",
+    "TDATE02",
+    "TDATE03",
+    "TDATE04",
+    "TDATE05",
+    "TDATE06",
+    "TDATE07",
+    "TDATE08",
+    "TDATE09",
+    "TDATE10",
+    "TDESC01",
+    "TDESC02",
+    "TDESC03",
+    "TDESC04",
+    "TDESC05",
+    "TDESC06",
+    "TDESC07",
+    "TDESC08",
+    "TDESC09",
+    "TDESC10",
+    "TAMT001",
+    "TAMT002",
+    "TAMT003",
+    "TAMT004",
+    "TAMT005",
+    "TAMT006",
+    "TAMT007",
+    "TAMT008",
+    "TAMT009",
+    "TAMT010",
+    "PAGENUM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tlenter",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.tid": "form:tl.tid",
+      "f.first": "session:tl_first",
+      "f.last": "session:tl_last",
+      "f.page": "session:tl_page",
+      "f.s0": "form:tl.s0",
+      "f.s1": "form:tl.s1",
+      "f.s2": "form:tl.s2",
+      "f.s3": "form:tl.s3",
+      "f.s4": "form:tl.s4",
+      "f.s5": "form:tl.s5",
+      "f.s6": "form:tl.s6",
+      "f.s7": "form:tl.s7",
+      "f.s8": "form:tl.s8",
+      "f.s9": "form:tl.s9",
+      "f.r0": "session:tl_r0",
+      "f.r1": "session:tl_r1",
+      "f.r2": "session:tl_r2",
+      "f.r3": "session:tl_r3",
+      "f.r4": "session:tl_r4",
+      "f.r5": "session:tl_r5",
+      "f.r6": "session:tl_r6",
+      "f.r7": "session:tl_r7",
+      "f.r8": "session:tl_r8",
+      "f.r9": "session:tl_r9"
+     },
+     "form": {
+      "tl.tid": "tl.tid",
+      "tl.s0": "tl.s0",
+      "tl.s1": "tl.s1",
+      "tl.s2": "tl.s2",
+      "tl.s3": "tl.s3",
+      "tl.s4": "tl.s4",
+      "tl.s5": "tl.s5",
+      "tl.s6": "tl.s6",
+      "tl.s7": "tl.s7",
+      "tl.s8": "tl.s8",
+      "tl.s9": "tl.s9",
+      "tv.tid": "tv.tid"
+     },
+     "session": {
+      "tl_tid": "tl.tid",
+      "tl_first": "tl.first",
+      "tl_last": "tl.last",
+      "tl_page": "tl.page",
+      "tl_r0": "tl.r0",
+      "tl_r1": "tl.r1",
+      "tl_r2": "tl.r2",
+      "tl_r3": "tl.r3",
+      "tl_r4": "tl.r4",
+      "tl_r5": "tl.r5",
+      "tl_r6": "tl.r6",
+      "tl_r7": "tl.r7",
+      "tl_r8": "tl.r8",
+      "tl_r9": "tl.r9",
+      "tv_from": "tv.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "TRNID01": "tl.r0.tid",
+      "TRNID02": "tl.r1.tid",
+      "TRNID03": "tl.r2.tid",
+      "TRNID04": "tl.r3.tid",
+      "TRNID05": "tl.r4.tid",
+      "TRNID06": "tl.r5.tid",
+      "TRNID07": "tl.r6.tid",
+      "TRNID08": "tl.r7.tid",
+      "TRNID09": "tl.r8.tid",
+      "TRNID10": "tl.r9.tid",
+      "TDATE01": "tl.r0.date",
+      "TDATE02": "tl.r1.date",
+      "TDATE03": "tl.r2.date",
+      "TDATE04": "tl.r3.date",
+      "TDATE05": "tl.r4.date",
+      "TDATE06": "tl.r5.date",
+      "TDATE07": "tl.r6.date",
+      "TDATE08": "tl.r7.date",
+      "TDATE09": "tl.r8.date",
+      "TDATE10": "tl.r9.date",
+      "TDESC01": "tl.r0.desc",
+      "TDESC02": "tl.r1.desc",
+      "TDESC03": "tl.r2.desc",
+      "TDESC04": "tl.r3.desc",
+      "TDESC05": "tl.r4.desc",
+      "TDESC06": "tl.r5.desc",
+      "TDESC07": "tl.r6.desc",
+      "TDESC08": "tl.r7.desc",
+      "TDESC09": "tl.r8.desc",
+      "TDESC10": "tl.r9.desc",
+      "TAMT001": "tl.r0.amt",
+      "TAMT002": "tl.r1.amt",
+      "TAMT003": "tl.r2.amt",
+      "TAMT004": "tl.r3.amt",
+      "TAMT005": "tl.r4.amt",
+      "TAMT006": "tl.r5.amt",
+      "TAMT007": "tl.r6.amt",
+      "TAMT008": "tl.r7.amt",
+      "TAMT009": "tl.r8.amt",
+      "TAMT010": "tl.r9.amt",
+      "PAGENUM": "tl.page"
+     },
+     "split": [
+      {
+       "path": "tvd.tid",
+       "template": "Transaction ID: {TRNID}"
+      },
+      {
+       "path": "tvd.card",
+       "template": "Card Number: {CARDNUM}"
+      },
+      {
+       "path": "tvd.type",
+       "template": "Type CD: {TTYPCD}"
+      },
+      {
+       "path": "tvd.cat",
+       "template": "Category CD: {TCATCD}"
+      },
+      {
+       "path": "tvd.src",
+       "template": "Source: {TRNSRC}"
+      },
+      {
+       "path": "tvd.desc",
+       "template": "Description: {TDESC}"
+      },
+      {
+       "path": "tvd.amt",
+       "template": "Amount: {TRNAMT}"
+      },
+      {
+       "path": "tvd.od",
+       "template": "Orig Date: {TORIGDT}"
+      },
+      {
+       "path": "tvd.pd",
+       "template": "Proc Date: {TPROCDT}"
+      },
+      {
+       "path": "tvd.mid",
+       "template": "Merchant ID: {MID}"
+      },
+      {
+       "path": "tvd.mname",
+       "template": "Merchant Name: {MNAME}"
+      },
+      {
+       "path": "tvd.mcity",
+       "template": "Merchant City: {MCITY}"
+      },
+      {
+       "path": "tvd.mzip",
+       "template": "Merchant Zip: {MZIP}"
+      }
+     ],
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tlprev",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.tid": "form:tl.tid",
+      "f.first": "session:tl_first",
+      "f.last": "session:tl_last",
+      "f.page": "session:tl_page",
+      "f.s0": "form:tl.s0",
+      "f.s1": "form:tl.s1",
+      "f.s2": "form:tl.s2",
+      "f.s3": "form:tl.s3",
+      "f.s4": "form:tl.s4",
+      "f.s5": "form:tl.s5",
+      "f.s6": "form:tl.s6",
+      "f.s7": "form:tl.s7",
+      "f.s8": "form:tl.s8",
+      "f.s9": "form:tl.s9",
+      "f.r0": "session:tl_r0",
+      "f.r1": "session:tl_r1",
+      "f.r2": "session:tl_r2",
+      "f.r3": "session:tl_r3",
+      "f.r4": "session:tl_r4",
+      "f.r5": "session:tl_r5",
+      "f.r6": "session:tl_r6",
+      "f.r7": "session:tl_r7",
+      "f.r8": "session:tl_r8",
+      "f.r9": "session:tl_r9"
+     },
+     "form": {
+      "tl.tid": "tl.tid",
+      "tl.s0": "tl.s0",
+      "tl.s1": "tl.s1",
+      "tl.s2": "tl.s2",
+      "tl.s3": "tl.s3",
+      "tl.s4": "tl.s4",
+      "tl.s5": "tl.s5",
+      "tl.s6": "tl.s6",
+      "tl.s7": "tl.s7",
+      "tl.s8": "tl.s8",
+      "tl.s9": "tl.s9",
+      "tv.tid": "tv.tid"
+     },
+     "session": {
+      "tl_tid": "tl.tid",
+      "tl_first": "tl.first",
+      "tl_last": "tl.last",
+      "tl_page": "tl.page",
+      "tl_r0": "tl.r0",
+      "tl_r1": "tl.r1",
+      "tl_r2": "tl.r2",
+      "tl_r3": "tl.r3",
+      "tl_r4": "tl.r4",
+      "tl_r5": "tl.r5",
+      "tl_r6": "tl.r6",
+      "tl_r7": "tl.r7",
+      "tl_r8": "tl.r8",
+      "tl_r9": "tl.r9",
+      "tv_from": "tv.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "TRNID01": "tl.r0.tid",
+      "TRNID02": "tl.r1.tid",
+      "TRNID03": "tl.r2.tid",
+      "TRNID04": "tl.r3.tid",
+      "TRNID05": "tl.r4.tid",
+      "TRNID06": "tl.r5.tid",
+      "TRNID07": "tl.r6.tid",
+      "TRNID08": "tl.r7.tid",
+      "TRNID09": "tl.r8.tid",
+      "TRNID10": "tl.r9.tid",
+      "TDATE01": "tl.r0.date",
+      "TDATE02": "tl.r1.date",
+      "TDATE03": "tl.r2.date",
+      "TDATE04": "tl.r3.date",
+      "TDATE05": "tl.r4.date",
+      "TDATE06": "tl.r5.date",
+      "TDATE07": "tl.r6.date",
+      "TDATE08": "tl.r7.date",
+      "TDATE09": "tl.r8.date",
+      "TDATE10": "tl.r9.date",
+      "TDESC01": "tl.r0.desc",
+      "TDESC02": "tl.r1.desc",
+      "TDESC03": "tl.r2.desc",
+      "TDESC04": "tl.r3.desc",
+      "TDESC05": "tl.r4.desc",
+      "TDESC06": "tl.r5.desc",
+      "TDESC07": "tl.r6.desc",
+      "TDESC08": "tl.r7.desc",
+      "TDESC09": "tl.r8.desc",
+      "TDESC10": "tl.r9.desc",
+      "TAMT001": "tl.r0.amt",
+      "TAMT002": "tl.r1.amt",
+      "TAMT003": "tl.r2.amt",
+      "TAMT004": "tl.r3.amt",
+      "TAMT005": "tl.r4.amt",
+      "TAMT006": "tl.r5.amt",
+      "TAMT007": "tl.r6.amt",
+      "TAMT008": "tl.r7.amt",
+      "TAMT009": "tl.r8.amt",
+      "TAMT010": "tl.r9.amt",
+      "PAGENUM": "tl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tlnext",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.tid": "form:tl.tid",
+      "f.first": "session:tl_first",
+      "f.last": "session:tl_last",
+      "f.page": "session:tl_page",
+      "f.s0": "form:tl.s0",
+      "f.s1": "form:tl.s1",
+      "f.s2": "form:tl.s2",
+      "f.s3": "form:tl.s3",
+      "f.s4": "form:tl.s4",
+      "f.s5": "form:tl.s5",
+      "f.s6": "form:tl.s6",
+      "f.s7": "form:tl.s7",
+      "f.s8": "form:tl.s8",
+      "f.s9": "form:tl.s9",
+      "f.r0": "session:tl_r0",
+      "f.r1": "session:tl_r1",
+      "f.r2": "session:tl_r2",
+      "f.r3": "session:tl_r3",
+      "f.r4": "session:tl_r4",
+      "f.r5": "session:tl_r5",
+      "f.r6": "session:tl_r6",
+      "f.r7": "session:tl_r7",
+      "f.r8": "session:tl_r8",
+      "f.r9": "session:tl_r9"
+     },
+     "form": {
+      "tl.tid": "tl.tid",
+      "tl.s0": "tl.s0",
+      "tl.s1": "tl.s1",
+      "tl.s2": "tl.s2",
+      "tl.s3": "tl.s3",
+      "tl.s4": "tl.s4",
+      "tl.s5": "tl.s5",
+      "tl.s6": "tl.s6",
+      "tl.s7": "tl.s7",
+      "tl.s8": "tl.s8",
+      "tl.s9": "tl.s9",
+      "tv.tid": "tv.tid"
+     },
+     "session": {
+      "tl_tid": "tl.tid",
+      "tl_first": "tl.first",
+      "tl_last": "tl.last",
+      "tl_page": "tl.page",
+      "tl_r0": "tl.r0",
+      "tl_r1": "tl.r1",
+      "tl_r2": "tl.r2",
+      "tl_r3": "tl.r3",
+      "tl_r4": "tl.r4",
+      "tl_r5": "tl.r5",
+      "tl_r6": "tl.r6",
+      "tl_r7": "tl.r7",
+      "tl_r8": "tl.r8",
+      "tl_r9": "tl.r9",
+      "tv_from": "tv.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "TRNID01": "tl.r0.tid",
+      "TRNID02": "tl.r1.tid",
+      "TRNID03": "tl.r2.tid",
+      "TRNID04": "tl.r3.tid",
+      "TRNID05": "tl.r4.tid",
+      "TRNID06": "tl.r5.tid",
+      "TRNID07": "tl.r6.tid",
+      "TRNID08": "tl.r7.tid",
+      "TRNID09": "tl.r8.tid",
+      "TRNID10": "tl.r9.tid",
+      "TDATE01": "tl.r0.date",
+      "TDATE02": "tl.r1.date",
+      "TDATE03": "tl.r2.date",
+      "TDATE04": "tl.r3.date",
+      "TDATE05": "tl.r4.date",
+      "TDATE06": "tl.r5.date",
+      "TDATE07": "tl.r6.date",
+      "TDATE08": "tl.r7.date",
+      "TDATE09": "tl.r8.date",
+      "TDATE10": "tl.r9.date",
+      "TDESC01": "tl.r0.desc",
+      "TDESC02": "tl.r1.desc",
+      "TDESC03": "tl.r2.desc",
+      "TDESC04": "tl.r3.desc",
+      "TDESC05": "tl.r4.desc",
+      "TDESC06": "tl.r5.desc",
+      "TDESC07": "tl.r6.desc",
+      "TDESC08": "tl.r7.desc",
+      "TDESC09": "tl.r8.desc",
+      "TDESC10": "tl.r9.desc",
+      "TAMT001": "tl.r0.amt",
+      "TAMT002": "tl.r1.amt",
+      "TAMT003": "tl.r2.amt",
+      "TAMT004": "tl.r3.amt",
+      "TAMT005": "tl.r4.amt",
+      "TAMT006": "tl.r5.amt",
+      "TAMT007": "tl.r6.amt",
+      "TAMT008": "tl.r7.amt",
+      "TAMT009": "tl.r8.amt",
+      "TAMT010": "tl.r9.amt",
+      "PAGENUM": "tl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COTRN1A": {
+   "page": "CardDemoPage / TranViewCard",
+   "inputs": {
+    "TRNIDIN": "tv.tid"
+   },
+   "display": [
+    "TRNIDIN",
+    "TRNID",
+    "CARDNUM",
+    "TTYPCD",
+    "TCATCD",
+    "TRNSRC",
+    "TDESC",
+    "TRNAMT",
+    "TORIGDT",
+    "TPROCDT",
+    "MID",
+    "MNAME",
+    "MCITY",
+    "MZIP"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tranview",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.tid": "form:tv.tid",
+      "f.from": "session:tv_from"
+     },
+     "form": {
+      "tv.tid": "tv.tid"
+     },
+     "session": {
+      "tv_from": "tv.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "split": [
+      {
+       "path": "tvd.tid",
+       "template": "Transaction ID: {TRNID}"
+      },
+      {
+       "path": "tvd.card",
+       "template": "Card Number: {CARDNUM}"
+      },
+      {
+       "path": "tvd.type",
+       "template": "Type CD: {TTYPCD}"
+      },
+      {
+       "path": "tvd.cat",
+       "template": "Category CD: {TCATCD}"
+      },
+      {
+       "path": "tvd.src",
+       "template": "Source: {TRNSRC}"
+      },
+      {
+       "path": "tvd.desc",
+       "template": "Description: {TDESC}"
+      },
+      {
+       "path": "tvd.amt",
+       "template": "Amount: {TRNAMT}"
+      },
+      {
+       "path": "tvd.od",
+       "template": "Orig Date: {TORIGDT}"
+      },
+      {
+       "path": "tvd.pd",
+       "template": "Proc Date: {TPROCDT}"
+      },
+      {
+       "path": "tvd.mid",
+       "template": "Merchant ID: {MID}"
+      },
+      {
+       "path": "tvd.mname",
+       "template": "Merchant Name: {MNAME}"
+      },
+      {
+       "path": "tvd.mcity",
+       "template": "Merchant City: {MCITY}"
+      },
+      {
+       "path": "tvd.mzip",
+       "template": "Merchant Zip: {MZIP}"
+      }
+     ],
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.to": "session:tv_from",
+      "f.tl.tid": "session:tl_tid",
+      "f.tl.first": "session:tl_first",
+      "f.tl.last": "session:tl_last",
+      "f.tl.page": "session:tl_page",
+      "f.tl.r0": "session:tl_r0",
+      "f.tl.r1": "session:tl_r1",
+      "f.tl.r2": "session:tl_r2",
+      "f.tl.r3": "session:tl_r3",
+      "f.tl.r4": "session:tl_r4",
+      "f.tl.r5": "session:tl_r5",
+      "f.tl.r6": "session:tl_r6",
+      "f.tl.r7": "session:tl_r7",
+      "f.tl.r8": "session:tl_r8",
+      "f.tl.r9": "session:tl_r9"
+     },
+     "form": {
+      "tl.tid": "tl.tid",
+      "tl.s0": "tl.s0",
+      "tl.s1": "tl.s1",
+      "tl.s2": "tl.s2",
+      "tl.s3": "tl.s3",
+      "tl.s4": "tl.s4",
+      "tl.s5": "tl.s5",
+      "tl.s6": "tl.s6",
+      "tl.s7": "tl.s7",
+      "tl.s8": "tl.s8",
+      "tl.s9": "tl.s9"
+     },
+     "session": {
+      "tl_tid": "tl.tid",
+      "tl_first": "tl.first",
+      "tl_last": "tl.last",
+      "tl_page": "tl.page",
+      "tl_r0": "tl.r0",
+      "tl_r1": "tl.r1",
+      "tl_r2": "tl.r2",
+      "tl_r3": "tl.r3",
+      "tl_r4": "tl.r4",
+      "tl_r5": "tl.r5",
+      "tl_r6": "tl.r6",
+      "tl_r7": "tl.r7",
+      "tl_r8": "tl.r8",
+      "tl_r9": "tl.r9"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "TRNID01": "tl.r0.tid",
+      "TRNID02": "tl.r1.tid",
+      "TRNID03": "tl.r2.tid",
+      "TRNID04": "tl.r3.tid",
+      "TRNID05": "tl.r4.tid",
+      "TRNID06": "tl.r5.tid",
+      "TRNID07": "tl.r6.tid",
+      "TRNID08": "tl.r7.tid",
+      "TRNID09": "tl.r8.tid",
+      "TRNID10": "tl.r9.tid",
+      "TDATE01": "tl.r0.date",
+      "TDATE02": "tl.r1.date",
+      "TDATE03": "tl.r2.date",
+      "TDATE04": "tl.r3.date",
+      "TDATE05": "tl.r4.date",
+      "TDATE06": "tl.r5.date",
+      "TDATE07": "tl.r6.date",
+      "TDATE08": "tl.r7.date",
+      "TDATE09": "tl.r8.date",
+      "TDATE10": "tl.r9.date",
+      "TDESC01": "tl.r0.desc",
+      "TDESC02": "tl.r1.desc",
+      "TDESC03": "tl.r2.desc",
+      "TDESC04": "tl.r3.desc",
+      "TDESC05": "tl.r4.desc",
+      "TDESC06": "tl.r5.desc",
+      "TDESC07": "tl.r6.desc",
+      "TDESC08": "tl.r7.desc",
+      "TDESC09": "tl.r8.desc",
+      "TDESC10": "tl.r9.desc",
+      "TAMT001": "tl.r0.amt",
+      "TAMT002": "tl.r1.amt",
+      "TAMT003": "tl.r2.amt",
+      "TAMT004": "tl.r3.amt",
+      "TAMT005": "tl.r4.amt",
+      "TAMT006": "tl.r5.amt",
+      "TAMT007": "tl.r6.amt",
+      "TAMT008": "tl.r7.amt",
+      "TAMT009": "tl.r8.amt",
+      "TAMT010": "tl.r9.amt",
+      "PAGENUM": "tl.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "COTRN2A": {
+   "page": "CardDemoPage / TranAddCard",
+   "inputs": {
+    "ACTIDIN": "ta.acct",
+    "CARDNIN": "ta.card",
+    "TTYPCD": "ta.type",
+    "TCATCD": "ta.cat",
+    "TRNSRC": "ta.src",
+    "TDESC": "ta.desc",
+    "TRNAMT": "ta.amt",
+    "TORIGDT": "ta.od",
+    "TPROCDT": "ta.pd",
+    "MID": "ta.mid",
+    "MNAME": "ta.mname",
+    "MCITY": "ta.mcity",
+    "MZIP": "ta.mzip",
+    "CONFIRM": "ta.conf"
+   },
+   "display": [
+    "ACTIDIN",
+    "CARDNIN",
+    "TTYPCD",
+    "TCATCD",
+    "TRNSRC",
+    "TDESC",
+    "TRNAMT",
+    "TORIGDT",
+    "TPROCDT",
+    "MID",
+    "MNAME",
+    "MCITY",
+    "MZIP",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:taadd",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:ta.acct",
+      "f.card": "form:ta.card",
+      "f.type": "form:ta.type",
+      "f.cat": "form:ta.cat",
+      "f.src": "form:ta.src",
+      "f.desc": "form:ta.desc",
+      "f.amt": "form:ta.amt",
+      "f.od": "form:ta.od",
+      "f.pd": "form:ta.pd",
+      "f.mid": "form:ta.mid",
+      "f.mname": "form:ta.mname",
+      "f.mcity": "form:ta.mcity",
+      "f.mzip": "form:ta.mzip",
+      "f.conf": "form:ta.conf"
+     },
+     "form": {
+      "ta.acct": "ta.acct",
+      "ta.card": "ta.card",
+      "ta.type": "ta.type",
+      "ta.cat": "ta.cat",
+      "ta.src": "ta.src",
+      "ta.desc": "ta.desc",
+      "ta.amt": "ta.amt",
+      "ta.od": "ta.od",
+      "ta.pd": "ta.pd",
+      "ta.mid": "ta.mid",
+      "ta.mname": "ta.mname",
+      "ta.mcity": "ta.mcity",
+      "ta.mzip": "ta.mzip",
+      "ta.conf": "ta.conf"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF5": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tacopy",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:ta.acct",
+      "f.card": "form:ta.card",
+      "f.type": "form:ta.type",
+      "f.cat": "form:ta.cat",
+      "f.src": "form:ta.src",
+      "f.desc": "form:ta.desc",
+      "f.amt": "form:ta.amt",
+      "f.od": "form:ta.od",
+      "f.pd": "form:ta.pd",
+      "f.mid": "form:ta.mid",
+      "f.mname": "form:ta.mname",
+      "f.mcity": "form:ta.mcity",
+      "f.mzip": "form:ta.mzip",
+      "f.conf": "form:ta.conf"
+     },
+     "form": {
+      "ta.acct": "ta.acct",
+      "ta.card": "ta.card",
+      "ta.type": "ta.type",
+      "ta.cat": "ta.cat",
+      "ta.src": "ta.src",
+      "ta.desc": "ta.desc",
+      "ta.amt": "ta.amt",
+      "ta.od": "ta.od",
+      "ta.pd": "ta.pd",
+      "ta.mid": "ta.mid",
+      "ta.mname": "ta.mname",
+      "ta.mcity": "ta.mcity",
+      "ta.mzip": "ta.mzip",
+      "ta.conf": "ta.conf"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null,
+     "clear_form": true
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CORPT0A": {
+   "page": "CardDemoPage / ReportCard",
+   "inputs": {
+    "CONFIRM": "rp.conf"
+   },
+   "choose": [
+    {
+     "key": "rp.type",
+     "values": {
+      "MONTHLY": "MONTHLY",
+      "YEARLY": "YEARLY",
+      "CUSTOM": "CUSTOM"
+     }
+    }
+   ],
+   "compose": [
+    {
+     "key": "rp.sd",
+     "template": "{SDTYYYY}-{SDTMM}-{SDTDD}"
+    },
+    {
+     "key": "rp.ed",
+     "template": "{EDTYYYY}-{EDTMM}-{EDTDD}"
+    }
+   ],
+   "display": [
+    "MONTHLY",
+    "YEARLY",
+    "CUSTOM",
+    "CONFIRM",
+    "SDTYYYY",
+    "SDTMM",
+    "SDTDD",
+    "EDTYYYY",
+    "EDTMM",
+    "EDTDD"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:report",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.type": "form:rp.type",
+      "f.sd": "form:rp.sd",
+      "f.ed": "form:rp.ed",
+      "f.conf": "form:rp.conf"
+     },
+     "form": {
+      "rp.type": "rp.type",
+      "rp.sd": "rp.sd",
+      "rp.ed": "rp.ed",
+      "rp.conf": "rp.conf"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COBIL0A": {
+   "page": "CardDemoPage / BillPayCard",
+   "inputs": {
+    "ACTIDIN": "bp.acct",
+    "CONFIRM": "bp.conf"
+   },
+   "display": [
+    "ACTIDIN",
+    "CURBAL",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:billpay",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.acct": "form:bp.acct",
+      "f.conf": "form:bp.conf"
+     },
+     "form": {
+      "bp.acct": "bp.acct",
+      "bp.conf": "bp.conf"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "CURBAL": "bp.bal"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null,
+     "clear_form": true
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COUSR0A": {
+   "page": "CardDemoPage / UserListCard",
+   "inputs": {
+    "USRIDIN": "ul.uid",
+    "SEL0001": "ul.s0",
+    "SEL0002": "ul.s1",
+    "SEL0003": "ul.s2",
+    "SEL0004": "ul.s3",
+    "SEL0005": "ul.s4",
+    "SEL0006": "ul.s5",
+    "SEL0007": "ul.s6",
+    "SEL0008": "ul.s7",
+    "SEL0009": "ul.s8",
+    "SEL0010": "ul.s9"
+   },
+   "display": [
+    "USRIDIN",
+    "SEL0001",
+    "SEL0002",
+    "SEL0003",
+    "SEL0004",
+    "SEL0005",
+    "SEL0006",
+    "SEL0007",
+    "SEL0008",
+    "SEL0009",
+    "SEL0010",
+    "USRID01",
+    "USRID02",
+    "USRID03",
+    "USRID04",
+    "USRID05",
+    "USRID06",
+    "USRID07",
+    "USRID08",
+    "USRID09",
+    "USRID10",
+    "FNAME01",
+    "FNAME02",
+    "FNAME03",
+    "FNAME04",
+    "FNAME05",
+    "FNAME06",
+    "FNAME07",
+    "FNAME08",
+    "FNAME09",
+    "FNAME10",
+    "LNAME01",
+    "LNAME02",
+    "LNAME03",
+    "LNAME04",
+    "LNAME05",
+    "LNAME06",
+    "LNAME07",
+    "LNAME08",
+    "LNAME09",
+    "LNAME10",
+    "UTYPE01",
+    "UTYPE02",
+    "UTYPE03",
+    "UTYPE04",
+    "UTYPE05",
+    "UTYPE06",
+    "UTYPE07",
+    "UTYPE08",
+    "UTYPE09",
+    "UTYPE10",
+    "PAGENUM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:ulenter",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:ul.uid",
+      "f.first": "session:ul_first",
+      "f.last": "session:ul_last",
+      "f.page": "session:ul_page",
+      "f.s0": "form:ul.s0",
+      "f.s1": "form:ul.s1",
+      "f.s2": "form:ul.s2",
+      "f.s3": "form:ul.s3",
+      "f.s4": "form:ul.s4",
+      "f.s5": "form:ul.s5",
+      "f.s6": "form:ul.s6",
+      "f.s7": "form:ul.s7",
+      "f.s8": "form:ul.s8",
+      "f.s9": "form:ul.s9",
+      "f.r0": "session:ul_r0",
+      "f.r1": "session:ul_r1",
+      "f.r2": "session:ul_r2",
+      "f.r3": "session:ul_r3",
+      "f.r4": "session:ul_r4",
+      "f.r5": "session:ul_r5",
+      "f.r6": "session:ul_r6",
+      "f.r7": "session:ul_r7",
+      "f.r8": "session:ul_r8",
+      "f.r9": "session:ul_r9"
+     },
+     "form": {
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9",
+      "uu.uid": "uu.uid",
+      "uu.fname": "uu.fname",
+      "uu.lname": "uu.lname",
+      "uu.pwd": "uu.pwd",
+      "uu.utype": "uu.utype",
+      "ud.uid": "ud.uid"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9",
+      "uu_loaded": "uu.loaded",
+      "uu_from": "uu.from",
+      "ud_fname": "ud.fname",
+      "ud_lname": "ud.lname",
+      "ud_utype": "ud.utype",
+      "ud_loaded": "ud.loaded",
+      "ud_from": "ud.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page",
+      "FNAME": "uu.fname|ud.fname",
+      "LNAME": "uu.lname|ud.lname",
+      "USRTYPE": "uu.utype|ud.utype"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:ulprev",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:ul.uid",
+      "f.first": "session:ul_first",
+      "f.last": "session:ul_last",
+      "f.page": "session:ul_page",
+      "f.s0": "form:ul.s0",
+      "f.s1": "form:ul.s1",
+      "f.s2": "form:ul.s2",
+      "f.s3": "form:ul.s3",
+      "f.s4": "form:ul.s4",
+      "f.s5": "form:ul.s5",
+      "f.s6": "form:ul.s6",
+      "f.s7": "form:ul.s7",
+      "f.s8": "form:ul.s8",
+      "f.s9": "form:ul.s9",
+      "f.r0": "session:ul_r0",
+      "f.r1": "session:ul_r1",
+      "f.r2": "session:ul_r2",
+      "f.r3": "session:ul_r3",
+      "f.r4": "session:ul_r4",
+      "f.r5": "session:ul_r5",
+      "f.r6": "session:ul_r6",
+      "f.r7": "session:ul_r7",
+      "f.r8": "session:ul_r8",
+      "f.r9": "session:ul_r9"
+     },
+     "form": {
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9",
+      "uu.uid": "uu.uid",
+      "uu.fname": "uu.fname",
+      "uu.lname": "uu.lname",
+      "uu.pwd": "uu.pwd",
+      "uu.utype": "uu.utype",
+      "ud.uid": "ud.uid"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9",
+      "uu_loaded": "uu.loaded",
+      "uu_from": "uu.from",
+      "ud_fname": "ud.fname",
+      "ud_lname": "ud.lname",
+      "ud_utype": "ud.utype",
+      "ud_loaded": "ud.loaded",
+      "ud_from": "ud.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page",
+      "FNAME": "uu.fname|ud.fname",
+      "LNAME": "uu.lname|ud.lname",
+      "USRTYPE": "uu.utype|ud.utype"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:ulnext",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:ul.uid",
+      "f.first": "session:ul_first",
+      "f.last": "session:ul_last",
+      "f.page": "session:ul_page",
+      "f.s0": "form:ul.s0",
+      "f.s1": "form:ul.s1",
+      "f.s2": "form:ul.s2",
+      "f.s3": "form:ul.s3",
+      "f.s4": "form:ul.s4",
+      "f.s5": "form:ul.s5",
+      "f.s6": "form:ul.s6",
+      "f.s7": "form:ul.s7",
+      "f.s8": "form:ul.s8",
+      "f.s9": "form:ul.s9",
+      "f.r0": "session:ul_r0",
+      "f.r1": "session:ul_r1",
+      "f.r2": "session:ul_r2",
+      "f.r3": "session:ul_r3",
+      "f.r4": "session:ul_r4",
+      "f.r5": "session:ul_r5",
+      "f.r6": "session:ul_r6",
+      "f.r7": "session:ul_r7",
+      "f.r8": "session:ul_r8",
+      "f.r9": "session:ul_r9"
+     },
+     "form": {
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9",
+      "uu.uid": "uu.uid",
+      "uu.fname": "uu.fname",
+      "uu.lname": "uu.lname",
+      "uu.pwd": "uu.pwd",
+      "uu.utype": "uu.utype",
+      "ud.uid": "ud.uid"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9",
+      "uu_loaded": "uu.loaded",
+      "uu_from": "uu.from",
+      "ud_fname": "ud.fname",
+      "ud_lname": "ud.lname",
+      "ud_utype": "ud.utype",
+      "ud_loaded": "ud.loaded",
+      "ud_from": "ud.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page",
+      "FNAME": "uu.fname|ud.fname",
+      "LNAME": "uu.lname|ud.lname",
+      "USRTYPE": "uu.utype|ud.utype"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  },
+  "COUSR1A": {
+   "page": "CardDemoPage / UserAddCard",
+   "inputs": {
+    "FNAME": "ua.fname",
+    "LNAME": "ua.lname",
+    "USERID": "ua.uid",
+    "PASSWD": "ua.pwd",
+    "USRTYPE": "ua.utype"
+   },
+   "display": [
+    "FNAME",
+    "LNAME",
+    "USERID",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:uaadd",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.fname": "form:ua.fname",
+      "f.lname": "form:ua.lname",
+      "f.uid": "form:ua.uid",
+      "f.pwd": "form:ua.pwd",
+      "f.utype": "form:ua.utype"
+     },
+     "form": {
+      "ua.fname": "ua.fname",
+      "ua.lname": "ua.lname",
+      "ua.uid": "ua.uid",
+      "ua.pwd": "ua.pwd",
+      "ua.utype": "ua.utype"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null,
+     "clear_form": true
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  },
+  "COUSR2A": {
+   "page": "CardDemoPage / UserUpdCard",
+   "inputs": {
+    "USRIDIN": "uu.uid",
+    "FNAME": "uu.fname",
+    "LNAME": "uu.lname",
+    "PASSWD": "uu.pwd",
+    "USRTYPE": "uu.utype"
+   },
+   "display": [
+    "USRIDIN",
+    "FNAME",
+    "LNAME",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:uuget",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:uu.uid",
+      "f.fname": "form:uu.fname",
+      "f.lname": "form:uu.lname",
+      "f.pwd": "form:uu.pwd",
+      "f.utype": "form:uu.utype",
+      "f.loaded": "session:uu_loaded",
+      "f.from": "session:uu_from"
+     },
+     "form": {
+      "uu.uid": "uu.uid",
+      "uu.fname": "uu.fname",
+      "uu.lname": "uu.lname",
+      "uu.pwd": "uu.pwd",
+      "uu.utype": "uu.utype"
+     },
+     "session": {
+      "uu_loaded": "uu.loaded",
+      "uu_from": "uu.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "uu_loaded",
+       "in": [
+        "Y"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:uusave",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.uid": "form:uu.uid",
+         "f.fname": "form:uu.fname",
+         "f.lname": "form:uu.lname",
+         "f.pwd": "form:uu.pwd",
+         "f.utype": "form:uu.utype",
+         "f.loaded": "session:uu_loaded",
+         "f.from": "session:uu_from"
+        },
+        "form": {
+         "uu.uid": "uu.uid",
+         "uu.fname": "uu.fname",
+         "uu.lname": "uu.lname",
+         "uu.pwd": "uu.pwd",
+         "uu.utype": "uu.utype"
+        },
+        "session": {
+         "uu_loaded": "uu.loaded",
+         "uu_from": "uu.from"
+        },
+        "show": {
+         "ERRMSG": "err|msg"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null,
+     "clear_form": true
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.to": "session:uu_from",
+      "f.ul.uid": "session:ul_uid",
+      "f.ul.first": "session:ul_first",
+      "f.ul.last": "session:ul_last",
+      "f.ul.page": "session:ul_page",
+      "f.ul.r0": "session:ul_r0",
+      "f.ul.r1": "session:ul_r1",
+      "f.ul.r2": "session:ul_r2",
+      "f.ul.r3": "session:ul_r3",
+      "f.ul.r4": "session:ul_r4",
+      "f.ul.r5": "session:ul_r5",
+      "f.ul.r6": "session:ul_r6",
+      "f.ul.r7": "session:ul_r7",
+      "f.ul.r8": "session:ul_r8",
+      "f.ul.r9": "session:ul_r9"
+     },
+     "form": {
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "COUSR3A": {
+   "page": "CardDemoPage / UserDelCard",
+   "inputs": {
+    "USRIDIN": "ud.uid"
+   },
+   "display": [
+    "USRIDIN",
+    "FNAME",
+    "LNAME",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:udget",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.uid": "form:ud.uid",
+      "f.fname": "session:ud_fname",
+      "f.lname": "session:ud_lname",
+      "f.utype": "session:ud_utype",
+      "f.loaded": "session:ud_loaded",
+      "f.from": "session:ud_from"
+     },
+     "form": {
+      "ud.uid": "ud.uid"
+     },
+     "session": {
+      "ud_fname": "ud.fname",
+      "ud_lname": "ud.lname",
+      "ud_utype": "ud.utype",
+      "ud_loaded": "ud.loaded",
+      "ud_from": "ud.from"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "FNAME": "ud.fname",
+      "LNAME": "ud.lname",
+      "USRTYPE": "ud.utype"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "ud_loaded",
+       "in": [
+        "Y"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:uddel",
+         "sess.uid": "session:uid",
+         "sess.utype": "session:utype",
+         "sess.fname": "session:fname",
+         "sess.lname": "session:lname",
+         "sess.acct": "session:acct",
+         "sess.card": "session:card",
+         "f.uid": "form:ud.uid",
+         "f.fname": "session:ud_fname",
+         "f.lname": "session:ud_lname",
+         "f.utype": "session:ud_utype",
+         "f.loaded": "session:ud_loaded",
+         "f.from": "session:ud_from"
+        },
+        "form": {
+         "ud.uid": "ud.uid"
+        },
+        "session": {
+         "ud_fname": "ud.fname",
+         "ud_lname": "ud.lname",
+         "ud_utype": "ud.utype",
+         "ud_loaded": "ud.loaded",
+         "ud_from": "ud.from"
+        },
+        "show": {
+         "ERRMSG": "err|msg",
+         "FNAME": "ud.fname",
+         "LNAME": "ud.lname",
+         "USRTYPE": "ud.utype"
+        },
+        "nav": [
+         {
+          "path": "screen",
+          "equals": "SIGNON",
+          "screen": "COSGN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "MENU",
+          "screen": "COMEN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ADMIN",
+          "screen": "COADM1A"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTVIEW",
+          "screen": "CACTVWA"
+         },
+         {
+          "path": "screen",
+          "equals": "ACCTUPD",
+          "screen": "CACTUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDLIST",
+          "screen": "CCRDLIA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDVIEW",
+          "screen": "CCRDSLA"
+         },
+         {
+          "path": "screen",
+          "equals": "CARDUPD",
+          "screen": "CCRDUPA"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANLIST",
+          "screen": "COTRN0A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANVIEW",
+          "screen": "COTRN1A"
+         },
+         {
+          "path": "screen",
+          "equals": "TRANADD",
+          "screen": "COTRN2A"
+         },
+         {
+          "path": "screen",
+          "equals": "REPORT",
+          "screen": "CORPT0A"
+         },
+         {
+          "path": "screen",
+          "equals": "BILLPAY",
+          "screen": "COBIL0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERLIST",
+          "screen": "COUSR0A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERADD",
+          "screen": "COUSR1A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERUPD",
+          "screen": "COUSR2A"
+         },
+         {
+          "path": "screen",
+          "equals": "USERDEL",
+          "screen": "COUSR3A"
+         },
+         {
+          "path": "screen",
+          "equals": "BYE",
+          "screen": "TEXT"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "PF4": {
+     "workflow": null,
+     "clear_form": true
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:back",
+      "sess.uid": "session:uid",
+      "sess.utype": "session:utype",
+      "sess.fname": "session:fname",
+      "sess.lname": "session:lname",
+      "sess.acct": "session:acct",
+      "sess.card": "session:card",
+      "f.to": "session:ud_from",
+      "f.ul.uid": "session:ul_uid",
+      "f.ul.first": "session:ul_first",
+      "f.ul.last": "session:ul_last",
+      "f.ul.page": "session:ul_page",
+      "f.ul.r0": "session:ul_r0",
+      "f.ul.r1": "session:ul_r1",
+      "f.ul.r2": "session:ul_r2",
+      "f.ul.r3": "session:ul_r3",
+      "f.ul.r4": "session:ul_r4",
+      "f.ul.r5": "session:ul_r5",
+      "f.ul.r6": "session:ul_r6",
+      "f.ul.r7": "session:ul_r7",
+      "f.ul.r8": "session:ul_r8",
+      "f.ul.r9": "session:ul_r9"
+     },
+     "form": {
+      "ul.uid": "ul.uid",
+      "ul.s0": "ul.s0",
+      "ul.s1": "ul.s1",
+      "ul.s2": "ul.s2",
+      "ul.s3": "ul.s3",
+      "ul.s4": "ul.s4",
+      "ul.s5": "ul.s5",
+      "ul.s6": "ul.s6",
+      "ul.s7": "ul.s7",
+      "ul.s8": "ul.s8",
+      "ul.s9": "ul.s9"
+     },
+     "session": {
+      "ul_uid": "ul.uid",
+      "ul_first": "ul.first",
+      "ul_last": "ul.last",
+      "ul_page": "ul.page",
+      "ul_r0": "ul.r0",
+      "ul_r1": "ul.r1",
+      "ul_r2": "ul.r2",
+      "ul_r3": "ul.r3",
+      "ul_r4": "ul.r4",
+      "ul_r5": "ul.r5",
+      "ul_r6": "ul.r6",
+      "ul_r7": "ul.r7",
+      "ul_r8": "ul.r8",
+      "ul_r9": "ul.r9"
+     },
+     "show": {
+      "ERRMSG": "err|msg",
+      "USRID01": "ul.r0.uid",
+      "USRID02": "ul.r1.uid",
+      "USRID03": "ul.r2.uid",
+      "USRID04": "ul.r3.uid",
+      "USRID05": "ul.r4.uid",
+      "USRID06": "ul.r5.uid",
+      "USRID07": "ul.r6.uid",
+      "USRID08": "ul.r7.uid",
+      "USRID09": "ul.r8.uid",
+      "USRID10": "ul.r9.uid",
+      "FNAME01": "ul.r0.fname",
+      "FNAME02": "ul.r1.fname",
+      "FNAME03": "ul.r2.fname",
+      "FNAME04": "ul.r3.fname",
+      "FNAME05": "ul.r4.fname",
+      "FNAME06": "ul.r5.fname",
+      "FNAME07": "ul.r6.fname",
+      "FNAME08": "ul.r7.fname",
+      "FNAME09": "ul.r8.fname",
+      "FNAME10": "ul.r9.fname",
+      "LNAME01": "ul.r0.lname",
+      "LNAME02": "ul.r1.lname",
+      "LNAME03": "ul.r2.lname",
+      "LNAME04": "ul.r3.lname",
+      "LNAME05": "ul.r4.lname",
+      "LNAME06": "ul.r5.lname",
+      "LNAME07": "ul.r6.lname",
+      "LNAME08": "ul.r7.lname",
+      "LNAME09": "ul.r8.lname",
+      "LNAME10": "ul.r9.lname",
+      "UTYPE01": "ul.r0.utype",
+      "UTYPE02": "ul.r1.utype",
+      "UTYPE03": "ul.r2.utype",
+      "UTYPE04": "ul.r3.utype",
+      "UTYPE05": "ul.r4.utype",
+      "UTYPE06": "ul.r5.utype",
+      "UTYPE07": "ul.r6.utype",
+      "UTYPE08": "ul.r7.utype",
+      "UTYPE09": "ul.r8.utype",
+      "UTYPE10": "ul.r9.utype",
+      "PAGENUM": "ul.page"
+     },
+     "nav": [
+      {
+       "path": "screen",
+       "equals": "SIGNON",
+       "screen": "COSGN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "MENU",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ADMIN",
+       "screen": "COADM1A"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTVIEW",
+       "screen": "CACTVWA"
+      },
+      {
+       "path": "screen",
+       "equals": "ACCTUPD",
+       "screen": "CACTUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDLIST",
+       "screen": "CCRDLIA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDVIEW",
+       "screen": "CCRDSLA"
+      },
+      {
+       "path": "screen",
+       "equals": "CARDUPD",
+       "screen": "CCRDUPA"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANLIST",
+       "screen": "COTRN0A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANVIEW",
+       "screen": "COTRN1A"
+      },
+      {
+       "path": "screen",
+       "equals": "TRANADD",
+       "screen": "COTRN2A"
+      },
+      {
+       "path": "screen",
+       "equals": "REPORT",
+       "screen": "CORPT0A"
+      },
+      {
+       "path": "screen",
+       "equals": "BILLPAY",
+       "screen": "COBIL0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERLIST",
+       "screen": "COUSR0A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERADD",
+       "screen": "COUSR1A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERUPD",
+       "screen": "COUSR2A"
+      },
+      {
+       "path": "screen",
+       "equals": "USERDEL",
+       "screen": "COUSR3A"
+      },
+      {
+       "path": "screen",
+       "equals": "BYE",
+       "screen": "TEXT"
+      }
+     ]
+    }
+   }
+  },
+  "TEXT": {
+   "page": "CardDemoPage / ByeCard",
+   "inputs": {},
+   "display": [],
+   "messages": [
+    "TEXT"
+   ],
+   "static": {
+    "TEXT": "Thank you for using CardDemo application..."
+   },
+   "on_load": null,
+   "aids": {}
+  }
+ },
+ "browser": {
+  "screens": {
+   "COSGN0A": {
+    "title": "^Signon to CardDemo$",
+    "detect": "^sign on \\(enter\\)$",
+    "inputs": {
+     "USERID": 0,
+     "PASSWD": 1
+    },
+    "aids": {
+     "ENTER": "^sign on \\(enter\\)$",
+     "PF3": "^f3=exit$"
+    }
+   },
+   "CACTUPA": {
+    "title": "^Update Account$",
+    "detect": "^fetch account$",
+    "inputs": {
+     "ACCTSID": 0,
+     "ACSTTUS": 1,
+     "ACRDLIM": 5,
+     "ACSHLIM": 6,
+     "ACURBAL": 7,
+     "ACRCYCR": 8,
+     "ACRCYDB": 9,
+     "AADDGRP": 10,
+     "ACTSSN1": 11,
+     "ACTSSN2": 12,
+     "ACTSSN3": 13,
+     "ACSTFCO": 15,
+     "ACSFNAM": 16,
+     "ACSMNAM": 17,
+     "ACSLNAM": 18,
+     "ACSADL1": 19,
+     "ACSADL2": 20,
+     "ACSCITY": 21,
+     "ACSSTTE": 22,
+     "ACSZIPC": 23,
+     "ACSCTRY": 24,
+     "ACSPH1A": 25,
+     "ACSPH1B": 26,
+     "ACSPH1C": 27,
+     "ACSPH2A": 28,
+     "ACSPH2B": 29,
+     "ACSPH2C": 30,
+     "ACSGOVT": 31,
+     "ACSEFTC": 32,
+     "ACSPFLG": 33
+    },
+    "compose": [
+     {
+      "input": 2,
+      "template": "{OPNYEAR}-{OPNMON}-{OPNDAY}"
+     },
+     {
+      "input": 3,
+      "template": "{EXPYEAR}-{EXPMON}-{EXPDAY}"
+     },
+     {
+      "input": 4,
+      "template": "{RISYEAR}-{RISMON}-{RISDAY}"
+     },
+     {
+      "input": 14,
+      "template": "{DOBYEAR}-{DOBMON}-{DOBDAY}"
+     }
+    ],
+    "aids": {
+     "ENTER": "^enter=validate$",
+     "PF5": "^f5=save$",
+     "PF12": "^f12=cancel$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "CCRDUPA": {
+    "title": "^Update Credit Card Details$",
+    "detect": "^fetch card$",
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1,
+     "CRDNAME": 2,
+     "CRDSTCD": 3,
+     "EXPMON": 4,
+     "EXPYEAR": 5
+    },
+    "aids": {
+     "ENTER": "^enter=validate$",
+     "PF5": "^f5=save$",
+     "PF12": "^f12=cancel$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COTRN2A": {
+    "title": "^Add Transaction$",
+    "detect": "^f5=copy last tran\\.$",
+    "inputs": {
+     "ACTIDIN": 0,
+     "CARDNIN": 1,
+     "TTYPCD": 2,
+     "TCATCD": 3,
+     "TRNSRC": 4,
+     "TDESC": 5,
+     "TRNAMT": 6,
+     "TORIGDT": 7,
+     "TPROCDT": 8,
+     "MID": 9,
+     "MNAME": 10,
+     "MCITY": 11,
+     "MZIP": 12,
+     "CONFIRM": 13
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF5": "^f5=copy last tran\\.$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COUSR3A": {
+    "title": "^Delete User$",
+    "detect": null,
+    "inputs": {
+     "USRIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^enter=fetch$",
+     "PF5": "^f5=delete$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COMEN1A": {
+    "title": "^Main Menu$",
+    "detect": null,
+    "inputs": {
+     "OPTION": 0
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF3": "^f3=exit$"
+    }
+   },
+   "COADM1A": {
+    "title": "^Admin Menu$",
+    "detect": null,
+    "inputs": {
+     "OPTION": 0
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF3": "^f3=exit$"
+    }
+   },
+   "CACTVWA": {
+    "title": "^View Account$",
+    "detect": null,
+    "inputs": {
+     "ACCTSID": 0
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "CCRDLIA": {
+    "title": "^List Credit Cards$",
+    "detect": null,
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1,
+     "CRDSEL1": 2,
+     "CRDSEL2": 3,
+     "CRDSEL3": 4,
+     "CRDSEL4": 5,
+     "CRDSEL5": 6,
+     "CRDSEL6": 7,
+     "CRDSEL7": 8
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF7": "^f7=backward$",
+     "PF8": "^f8=forward$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "CCRDSLA": {
+    "title": "^View Credit Card Detail$",
+    "detect": null,
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COTRN0A": {
+    "title": "^List Transactions$",
+    "detect": null,
+    "inputs": {
+     "TRNIDIN": 0,
+     "SEL0001": 1,
+     "SEL0002": 2,
+     "SEL0003": 3,
+     "SEL0004": 4,
+     "SEL0005": 5,
+     "SEL0006": 6,
+     "SEL0007": 7,
+     "SEL0008": 8,
+     "SEL0009": 9,
+     "SEL0010": 10
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF7": "^f7=backward$",
+     "PF8": "^f8=forward$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COTRN1A": {
+    "title": "^View Transaction$",
+    "detect": null,
+    "inputs": {
+     "TRNIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "CORPT0A": {
+    "title": "^Transaction Reports$",
+    "detect": null,
+    "inputs": {
+     "CONFIRM": 2
+    },
+    "choose": [
+     {
+      "combo": {
+       "open": "^report type",
+       "options": {
+        "MONTHLY": "^monthly",
+        "YEARLY": "^yearly",
+        "CUSTOM": "^custom"
+       }
+      },
+      "values": {
+       "MONTHLY": "MONTHLY",
+       "YEARLY": "YEARLY",
+       "CUSTOM": "CUSTOM"
+      }
+     }
+    ],
+    "compose": [
+     {
+      "input": 0,
+      "template": "{SDTYYYY}-{SDTMM}-{SDTDD}"
+     },
+     {
+      "input": 1,
+      "template": "{EDTYYYY}-{EDTMM}-{EDTDD}"
+     }
+    ],
+    "aids": {
+     "ENTER": "^enter$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COBIL0A": {
+    "title": "^Bill Payment$",
+    "detect": null,
+    "inputs": {
+     "ACTIDIN": 0,
+     "CONFIRM": 1
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COUSR0A": {
+    "title": "^List Users$",
+    "detect": null,
+    "inputs": {
+     "USRIDIN": 0,
+     "SEL0001": 1,
+     "SEL0002": 2,
+     "SEL0003": 3,
+     "SEL0004": 4,
+     "SEL0005": 5,
+     "SEL0006": 6,
+     "SEL0007": 7,
+     "SEL0008": 8,
+     "SEL0009": 9,
+     "SEL0010": 10
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF7": "^f7=backward$",
+     "PF8": "^f8=forward$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COUSR1A": {
+    "title": "^Add User$",
+    "detect": null,
+    "inputs": {
+     "FNAME": 0,
+     "LNAME": 1,
+     "USERID": 2,
+     "PASSWD": 3,
+     "USRTYPE": 4
+    },
+    "aids": {
+     "ENTER": "^enter$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   },
+   "COUSR2A": {
+    "title": "^Update User$",
+    "detect": null,
+    "inputs": {
+     "USRIDIN": 0,
+     "FNAME": 1,
+     "LNAME": 2,
+     "PASSWD": 3,
+     "USRTYPE": 4
+    },
+    "aids": {
+     "ENTER": "^enter=fetch$",
+     "PF5": "^f5=save$",
+     "PF4": "^f4=clear$",
+     "PF3": "^f3=back$"
+    }
+   }
+  },
+  "text_detect": "thank you for using carddemo"
+ },
+ "stores": {
+  "USRSEC": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "ACCTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CUSTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CCXREF": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CARDDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "TRANSACT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "JOBS": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  }
+ }
+}

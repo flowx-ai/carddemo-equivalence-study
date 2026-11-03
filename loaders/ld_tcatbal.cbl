@@ -1,0 +1,36 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LDTCATBA.
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT IN-FILE ASSIGN TO INFILE
+               ORGANIZATION IS LINE SEQUENTIAL.
+           SELECT OUT-FILE ASSIGN TO OUTFILE
+               ORGANIZATION IS INDEXED
+               ACCESS MODE IS RANDOM
+               RECORD KEY IS OUT-KEY.
+       DATA DIVISION.
+       FILE SECTION.
+       FD IN-FILE.
+       01 IN-REC PIC X(50).
+       FD OUT-FILE.
+       01 OUT-REC.
+           05 OUT-KEY PIC X(17).
+           05 FILLER PIC X(33).
+       WORKING-STORAGE SECTION.
+       01 WS-EOF PIC X VALUE 'N'.
+       01 WS-N   PIC 9(7) VALUE 0.
+       PROCEDURE DIVISION.
+           OPEN INPUT IN-FILE OUTPUT OUT-FILE
+           PERFORM UNTIL WS-EOF = 'Y'
+              READ IN-FILE AT END MOVE 'Y' TO WS-EOF
+                NOT AT END
+                  MOVE IN-REC TO OUT-REC
+                  WRITE OUT-REC INVALID KEY
+                     DISPLAY 'DUPLICATE KEY ' OUT-KEY
+                  NOT INVALID KEY ADD 1 TO WS-N END-WRITE
+              END-READ
+           END-PERFORM
+           CLOSE IN-FILE OUT-FILE
+           DISPLAY 'tcatbal loaded ' WS-N
+           STOP RUN.

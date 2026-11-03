@@ -1,0 +1,3 @@
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-ll-builds-a17-accrue-zflx-code-r2/memory/accrue-flowx-build.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-ll-builds-a17-accrue-zflx-code-r2/memory/MEMORY.md ALLOWED
+outside accesses: 2

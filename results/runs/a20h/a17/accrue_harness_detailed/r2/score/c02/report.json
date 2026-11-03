@@ -1,0 +1,664 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.4949,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 9,
+  "flags_unneeded": 7,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 49,
+   "intcalc_systran.proc_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 0,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000050",
+   "cand": "Accrued int 50",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0683586198171516#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000027",
+   "cand": "Accrued int 27",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0927987108636232#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000020",
+   "cand": "Accrued int 20",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000012",
+   "cand": "Accrued int 12",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1014086565224350#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000044",
+   "cand": "Accrued int 44",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1142167692878931#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000037",
+   "cand": "Accrued int 37",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1561409106491600#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000035",
+   "cand": "Accrued int 35",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2745303720002090#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000039",
+   "cand": "Accrued int 39",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2760836797107565#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000024",
+   "cand": "Accrued int 24",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2871968252812490#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000006",
+   "cand": "Accrued int 6",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2940139362300449#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000022",
+   "cand": "Accrued int 22",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2988091353094312#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000004",
+   "cand": "Accrued int 4",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3260763612337560#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000010",
+   "cand": "Accrued int 10",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3766281984155154#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000041",
+   "cand": "Accrued int 41",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000019",
+   "cand": "Accrued int 19",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3999169246375885#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000003",
+   "cand": "Accrued int 3",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4011500891777367#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000013",
+   "cand": "Accrued int 13",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000034",
+   "cand": "Accrued int 34",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4534784102713951#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000036",
+   "cand": "Accrued int 36",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4859452612877065#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000007",
+   "cand": "Accrued int 7",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000021",
+   "cand": "Accrued int 21",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5656830544981216#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000046",
+   "cand": "Accrued int 46",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5671184478505844#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000018",
+   "cand": "Accrued int 18",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5787351228879339#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000047",
+   "cand": "Accrued int 47",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5975117516616077#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000042",
+   "cand": "Accrued int 42",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6009619150674526#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000005",
+   "cand": "Accrued int 5",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000015",
+   "cand": "Accrued int 15",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6503535181795992#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000048",
+   "cand": "Accrued int 48",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000030",
+   "cand": "Accrued int 30",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6723000463207764#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000028",
+   "cand": "Accrued int 28",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6727055190616014#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000016",
+   "cand": "Accrued int 16",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6832676047698087#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000033",
+   "cand": "Accrued int 33",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7026637615032277#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000031",
+   "cand": "Accrued int 31",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000043",
+   "cand": "Accrued int 43",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7094142751055551#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000032",
+   "cand": "Accrued int 32",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7251508149188883#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000029",
+   "cand": "Accrued int 29",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000045",
+   "cand": "Accrued int 45",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7427684863423209#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000011",
+   "cand": "Accrued int 11",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000038",
+   "cand": "Accrued int 38",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000026",
+   "cand": "Accrued int 26",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000023",
+   "cand": "Accrued int 23",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8262593602473076#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000049",
+   "cand": "Accrued int 49",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000014",
+   "cand": "Accrued int 14",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000008",
+   "cand": "Accrued int 8",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9056297931664011#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000025",
+   "cand": "Accrued int 25",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9349107475869214#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000017",
+   "cand": "Accrued int 17",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9501733721429893#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000009",
+   "cand": "Accrued int 9",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000001",
+   "cand": "Accrued int 1",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000040",
+   "cand": "Accrued int 40",
+   "presentation": true,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode (cited by the precision entry)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "precision: BR-08 leaves confirmation open; per-category truncation chosen",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "zeroCent: source does not separately discuss zero-cent results",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "accountBoundary: absent-account handling not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "duplicateRows: duplicate behaviour not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "accountFailure: missing rate after STANDARD fallback not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a20h/a17/accrue_harness_detailed/r2/exec/workflow_151557fc-d6f5-42f1-adc1-b7a5cbbdfe92.md",
+   "line": 45,
+   "note": "transactionSequence/processingOrder: initialization and allocation order not specified",
+   "origin": "build"
+  }
+ ]
+}

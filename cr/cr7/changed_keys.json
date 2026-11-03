@@ -1,0 +1,2492 @@
+{
+ "base": [
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000001",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000002",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000003",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000004",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000005",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000006",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000007",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000008",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000009",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000010",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000011",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000012",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000013",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000014",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000015",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000016",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000017",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000018",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000019",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000020",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000021",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000022",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000023",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000024",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000025",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000026",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000027",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000028",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000029",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000030",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000031",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000032",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000033",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000034",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000035",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000036",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000037",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000038",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000039",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000040",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000041",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000042",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000043",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000044",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000045",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000046",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000047",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000048",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000049",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000050",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000002",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "rule": "R-REPT-GRAND"
+  }
+ ],
+ "c01": [
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000001",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000002",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000003",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000004",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000005",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000006",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000007",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000008",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000009",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000010",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000011",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000012",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000013",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000014",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000015",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000016",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000017",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000018",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000019",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000020",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000021",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000022",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000023",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000024",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000025",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000026",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000027",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000028",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000029",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000030",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000031",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000032",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000033",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000034",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000035",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000036",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000037",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000038",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000039",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000040",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000041",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000042",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000043",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000044",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000045",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000046",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000047",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000048",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000049",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000050",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000002",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "rule": "R-REPT-GRAND"
+  }
+ ],
+ "c02": [
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000001",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000002",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000003",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000004",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000005",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000006",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000007",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000008",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000009",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000010",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000011",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000012",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000013",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000014",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000015",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000016",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000017",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000018",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000019",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000020",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000021",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000022",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000023",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000024",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000025",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000026",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000027",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000028",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000029",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000030",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000031",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000032",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000033",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000034",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000035",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000036",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000037",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000038",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000039",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000040",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000041",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000042",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000043",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000044",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000045",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000046",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000047",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000048",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000049",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "rule": "R-REPT-GRAND"
+  }
+ ],
+ "c03": [
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000001",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000002",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000003",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000004",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000005",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000006",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000007",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000008",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000009",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000010",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000011",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000012",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000013",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000014",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000015",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000016",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000017",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000018",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000019",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000020",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000021",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000022",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000023",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000024",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000025",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000026",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000027",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000028",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000029",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000030",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000031",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000032",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000033",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000034",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000035",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000036",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000037",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000038",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000039",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000040",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000041",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000042",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000043",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000044",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000045",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000046",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000047",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000048",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000049",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000050",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000002",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "rule": "R-REPT-GRAND"
+  }
+ ],
+ "c04": [
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000001",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000002",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000003",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000004",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000005",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000006",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000007",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000008",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000009",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000010",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000011",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000012",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000013",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000014",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000015",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000016",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000017",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000018",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000019",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000020",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000021",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000022",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000023",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000024",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000025",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000026",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000027",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000028",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000029",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000030",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000031",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000032",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000033",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000034",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000035",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000036",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000037",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000038",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000039",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000040",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000041",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000042",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000043",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000044",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000045",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000046",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000047",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000048",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000049",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000050",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000051",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000052",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "2022071800000053",
+   "rule": "R-REPT-SET"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000001",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000002",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000003",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000004",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000005",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000006",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000007",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000008",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000009",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000010",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000011",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000012",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000013",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000014",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000015",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000016",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000017",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000018",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000019",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000020",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000021",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000022",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000023",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000024",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000025",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000026",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000027",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000028",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000029",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000030",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000031",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000032",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000033",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000034",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000035",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000036",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000038",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000039",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000041",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000042",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000043",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000044",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000045",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000046",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000047",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000048",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000049",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000050",
+   "rule": "R-REPT-ACCT"
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "rule": "R-REPT-GRAND"
+  }
+ ]
+}

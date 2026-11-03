@@ -1,0 +1,1150 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.0303,
+  "equivalence_business": 0.0303,
+  "divergent_records": 96,
+  "silent_records": 0,
+  "flagged_records": 96,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-APPLY",
+   "R-INT-LAST",
+   "R-INT-RATE",
+   "R-INT-TXFORMAT"
+  ],
+  "flags_raised": 20,
+  "flags_unneeded": 7,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 1,
+   "intcalc_systran.orig_ts": 1
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 1,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 3,
+   "equal_business": 3,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-APPLY/flagged": 46,
+  "R-INT-LAST/flagged": 2,
+  "R-INT-RATE/flagged": 48,
+  "R-INT-TXFORMAT/flagged": 2
+ },
+ "divergences": [
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0683586198171516#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0927987108636232#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1014086565224350#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1142167692878931#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "1561409106491600#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2745303720002090#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2760836797107565#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2871968252812490#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2940139362300449#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "2988091353094312#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3260763612337560#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3766281984155154#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3999169246375885#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4011500891777367#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4534784102713951#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4859452612877065#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5656830544981216#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5671184478505844#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5787351228879339#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5975117516616077#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6009619150674526#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6503535181795992#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6723000463207764#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6727055190616014#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6832676047698087#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7026637615032277#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7094142751055551#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7251508149188883#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7427684863423209#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8262593602473076#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9056297931664011#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9349107475869214#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9501733721429893#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "field",
+   "field": "type_cd",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "07",
+   "cand": "01",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "field",
+   "field": "cat_cd",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "12",
+   "cand": "5",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "field",
+   "field": "source",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Batch",
+   "cand": "System",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9680294154603697#1",
+   "kind": "field",
+   "field": "desc",
+   "rule": "R-INT-TXFORMAT",
+   "golden": "Accrued int 00000000001",
+   "cand": "Int. for a/c 00000000001",
+   "presentation": true,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "kind": "missing",
+   "field": null,
+   "rule": "R-INT-RATE",
+   "golden": null,
+   "cand": null,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000003",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1890.03",
+   "cand": "1857.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000004",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1686.98",
+   "cand": "1662.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000005",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1198.69",
+   "cand": "1182.86",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000006",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2606.57",
+   "cand": "2572.19",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000007",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "916.29",
+   "cand": "900.21",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2167.68",
+   "cand": "2138.08",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000009",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3243.89",
+   "cand": "3207.55",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000010",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1169.87",
+   "cand": "1150.76",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000011",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1565.89",
+   "cand": "1539.99",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1800.11",
+   "cand": "1770.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000013",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2896.04",
+   "cand": "2860.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1503.13",
+   "cand": "1475.99",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "4263.56",
+   "cand": "4212.54",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000016",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1825.71",
+   "cand": "1808.88",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000017",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "-617.27",
+   "cand": "-621.56",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000018",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2725.92",
+   "cand": "2692.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3080.51",
+   "cand": "3047.53",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000020",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1933.76",
+   "cand": "1903.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "969.98",
+   "cand": "958.88",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000022",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2479.81",
+   "cand": "2438.20",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1173.49",
+   "cand": "1149.98",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000024",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1949.14",
+   "cand": "1922.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000025",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "763.63",
+   "cand": "743.76",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1212.86",
+   "cand": "1193.87",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000027",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3540.45",
+   "cand": "3495.65",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000028",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "811.89",
+   "cand": "801.78",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000029",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2697.27",
+   "cand": "2657.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "-898.53",
+   "cand": "-898.89",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000031",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "341.4",
+   "cand": "333.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000032",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "475.22",
+   "cand": "460.56",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000033",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3396.8",
+   "cand": "3354.43",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2401.49",
+   "cand": "2369.32",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000035",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1021.95",
+   "cand": "1005.21",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000036",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2009.3",
+   "cand": "1980.43",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3098.87",
+   "cand": "3061.53",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000039",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2848.51",
+   "cand": "2822.88",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1672.53",
+   "cand": "1652.10",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000041",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2047.86",
+   "cand": "2017.87",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000042",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1992.36",
+   "cand": "1965.31",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3341.91",
+   "cand": "3305.19",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000044",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2085.02",
+   "cand": "2059.87",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "2278.86",
+   "cand": "2248.77",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000046",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "3583.12",
+   "cand": "3538.41",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000047",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1064.63",
+   "cand": "1044.66",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000048",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1221.79",
+   "cand": "1202.89",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000049",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-APPLY",
+   "golden": "1158.26",
+   "cand": "1133.31",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: rounding",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+   "line": 18,
+   "note": "AC 2 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+   "line": 15,
+   "note": "A-02 rounding TODO, silent on mode; truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+   "line": 17,
+   "note": "A-04 key processing order: wiki silent; drives tran id numbering",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+   "line": 20,
+   "note": "A-07 tran id 10 + 6-digit sequence: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+   "line": 22,
+   "note": "A-09 zero balance writes 0.00 txn: not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/accrue_zflx_opus_thin/r3/builder/assumptions.md",
+   "line": 26,
+   "note": "A-13 cycle totals reset: silent",
+   "origin": "build"
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 19,
+  "note": "A1 per category, conflicts with wiki formula (TODO)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 29,
+  "note": "A2 rate unit and period: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 34,
+  "note": "A3 rategrp layout: no page documents it",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 40,
+  "note": "A4 fallback: wiki silent (DEFAULT)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 48,
+  "note": "A5 AC TODO rounding",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 54,
+  "note": "A6 0.00 transaction because legacy tests only the rate (legacy basis)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 60,
+  "note": "A7 cycle reset: wiki silent; legacy behaviour",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 73,
+  "note": "A9 transactions not mentioned in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 73,
+  "note": "A9 transactions not mentioned in wiki; legacy constants",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 88,
+  "note": "A10 order: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 94,
+  "note": "A11 several cards: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 100,
+  "note": "A12 orphan balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 105,
+  "note": "A13 status: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus/r3/builder/out/assumptions.md",
+  "line": 109,
+  "note": "A14 overflow not emulated",
+  "origin": "build"
+ }
+]

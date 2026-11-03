@@ -1,0 +1,252 @@
+{
+ "summary": {
+  "records_union": 367,
+  "equivalence_strict": 0.9891,
+  "equivalence_business": 0.9918,
+  "divergent_records": 3,
+  "silent_records": 0,
+  "flagged_records": 3,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-HEADER",
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 29,
+  "flags_unneeded": 25,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.832,
+    "page_totals_equal": false,
+    "pages_golden": 21,
+    "pages_candidate": 7
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 366,
+   "candidate": 367,
+   "equal_strict": 363,
+   "equal_business": 364,
+   "union": 367
+  }
+ },
+ "by_rule": {
+  "R-REPT-HEADER/flagged": 1,
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79543.22",
+   "cand": "79522.79",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "header",
+   "kind": "field",
+   "field": "range",
+   "golden": "('2022-07-01', '2022-07-31')",
+   "cand": "None",
+   "rule": "R-REPT-HEADER",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 7,
+   "note": "[5] transaction file encoding not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 10,
+   "note": "[8] date comparison policy not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 11,
+   "note": "[9] tie ordering and deduplication not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 12,
+   "note": "[10] account ID from CardXref as text",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 13,
+   "note": "[11] lookup keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 13,
+   "note": "[11] lookup keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 14,
+   "note": "[12] account total at each card break",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 16,
+   "note": "[14] ordering of totals at boundaries not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 16,
+   "note": "[14] ordering of totals at boundaries not given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 17,
+   "note": "[15] empty-report layout not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 19,
+   "note": "[17] overflow fails the run; unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 19,
+   "note": "[17] overflow fails the run; unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 19,
+   "note": "[17] overflow fails the run; unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 20,
+   "note": "[18] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 20,
+   "note": "[18] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 20,
+   "note": "[18] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 21,
+   "note": "[19] truncation handling not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 22,
+   "note": "[20] missing lookups continue with UNKNOWN / blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 22,
+   "note": "[20] missing lookups continue with UNKNOWN / blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 22,
+   "note": "[20] missing lookups continue with UNKNOWN / blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+   "line": 23,
+   "note": "[21] bad input fails the run, no partial report",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

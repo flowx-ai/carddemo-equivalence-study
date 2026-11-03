@@ -1,0 +1,158 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactionText",
+  "cardxref": "cardXrefText",
+  "trantype": "transactionTypesText",
+  "trancatg": "transactionCategoriesText",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version d499afb7 (head of the build branch, plan COMPLETED, no retry)\n- START: four file texts plus startDate, endDate; MODE files\n- END: top-level tranrept_report, assumptions_md, assumptions\n- Register: lines 53-74",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-REPT-SET",
+   54,
+   "encoding and newline not specified"
+  ],
+  [
+   "R-REPT-SET",
+   55,
+   "provisional layout"
+  ],
+  [
+   "R-REPT-AMT",
+   55,
+   "provisional layout"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   55,
+   "provisional layout"
+  ],
+  [
+   "R-REPT-XREF",
+   56,
+   "CVACT03Y not reproduced"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   57,
+   "layout not reproduced"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   58,
+   "composite key and offsets"
+  ],
+  [
+   "R-REPT-AMT",
+   59,
+   "dump encoding not stated"
+  ],
+  [
+   "R-REPT-ACCT",
+   59,
+   "dump encoding not stated"
+  ],
+  [
+   "R-REPT-GRAND",
+   59,
+   "dump encoding not stated"
+  ],
+  [
+   "R-REPT-SET",
+   61,
+   "timestamp, endpoints and timezone not stated"
+  ],
+  [
+   "R-REPT-XREF",
+   62,
+   "join and unmatched card unstated"
+  ],
+  [
+   "R-REPT-SET",
+   62,
+   "join and unmatched card unstated"
+  ],
+  [
+   "R-REPT-XREF",
+   63,
+   "duplicate and missing not specified"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   63,
+   "duplicate and missing not specified"
+  ],
+  [
+   "R-REPT-SET",
+   64,
+   "no order or dedupe specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   64,
+   "no order or dedupe specified"
+  ],
+  [
+   "R-REPT-HEADER",
+   65,
+   "no page capacity"
+  ],
+  [
+   "R-REPT-ACCT",
+   66,
+   "scope not given"
+  ],
+  [
+   "R-REPT-GRAND",
+   66,
+   "scope not given"
+  ],
+  [
+   "R-REPT-ACCT",
+   67,
+   "coincident order unstated, final account total"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   67,
+   "coincident order unstated, final account total"
+  ],
+  [
+   "R-REPT-AMT",
+   70,
+   "zero display not specified"
+  ],
+  [
+   "R-REPT-SET",
+   71,
+   "silent on corrupt records"
+  ],
+  [
+   "R-REPT-AMT",
+   71,
+   "silent on corrupt records"
+  ],
+  [
+   "R-REPT-SET",
+   72,
+   "no record-level policy"
+  ],
+  [
+   "R-REPT-GRAND",
+   73,
+   "overflow not stated"
+  ],
+  [
+   "R-REPT-AMT",
+   73,
+   "overflow not stated"
+  ]
+ ]
+}

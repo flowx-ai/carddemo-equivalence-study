@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_f08495d9-...md: inputs ledgaccFile, balcatFile, rategrpFile, cardlinkFile, accrueParm, runTimestamp; END keys accrueSystxnJson, accrueLedgaccJson as JSON strings, lines 263-264) and builder/README.md lines 14-15, before execution:
+- files mode, VARIANT=d1; runTimestamp left unset (A4)
+- decode.json: string outputs -> canonical names; the adapter parses a list returned as a string (pure renaming)

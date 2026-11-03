@@ -1,0 +1,13 @@
+A18(b) post-hoc, TRANREPT harness Sonnet r2, first-attempt version <uuid> (WIP, branch
+ai/build-the-carddemo-daily-trans-df2354). Written and committed before execution; no output of this version opened.
+
+Workflow: GenerateDailyTransactionReport, resourceId <uuid> (the version's only
+workflow, exec/workflows.txt).
+
+Input map (adapter/map.json): ParseInputs reads root.files['transact.dat'|'cardxref.dat'|'trantype.dat'|
+'trancatg.dat'], root.startDate, root.endDate (exec/workflow_b52377b8...md). Same as the scored map (file mode).
+
+Output keymap (adapter/decode.json) {"_root":"outputs"}: PackageOutputs sets output={assumptionsMarkdown,
+reportFiles:{tranrept_report,'assumptions.md'}} and an "Escape text" script runs before END. The definition text
+equals the scored version cdf2a955's once node/resource ids are removed (def_compare.txt: 0 differing lines), and the
+scored version's END returned the bundle under "outputs" (LAB_NOTEBOOK §50). The same root is used here.

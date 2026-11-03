@@ -1,0 +1,79 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 30,
+  "note": "1 formula /1200 inferred, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 32,
+  "note": "2 truncation: wiki says nothing, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 36,
+  "note": "5 last account updated; names the recalled CardDemo last-account defect, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 37,
+  "note": "6 accounts with no balance: wiki only has balance-driven processing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 38,
+  "note": "7 status filter: wiki mentions none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 39,
+  "note": "8 processing order: wiki gives none",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 40,
+  "note": "9 transaction id construction, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 41,
+  "note": "10 source/desc/merchant: wiki gives none, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 42,
+  "note": "11 card choice, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 44,
+  "note": "13 missing reference data: wiki has no error path",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_summary/r3/builder/assumptions.md",
+  "line": 46,
+  "note": "15 overflow: wiki says nothing",
+  "origin": "build"
+ }
+]

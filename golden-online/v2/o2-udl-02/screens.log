@@ -1,0 +1,253 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|ADMIN001| PASSWD=@data:USRSEC.ADMIN001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |ADMIN001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COADM01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COADM1A  mapset COADM01  from COADM01C site 0005 opts ERASE
+  TRNNAME  D |CA00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COADM01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. User List (Security)|
+  OPTN002  D |02. User Add (Security)|
+  OPTN003  D |03. User Update (Security)|
+  OPTN004  D |04. User Delete (Security)|
+  OPTN005  D |05. Transaction Type List/Update (Db2)|
+  OPTN006  D |06. Transaction Type Maintenance (Db2)|
+  OPTN007  I ||
+  OPTN008  I ||
+  OPTN009  I ||
+  OPTN010  I ||
+  OPTN011  I ||
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CA00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|4|
+=== task   3 tran CA00 program COADM01C aid ENTER calen      160
+RECEIVE MAP COADM1A  into COADM01C site 0006 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CA00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COADM01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. User List (Security)|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. User Add (Security)|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. User Update (Security)|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. User Delete (Security)|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Transaction Type List/Update (Db2)|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction Type Maintenance (Db2)|
+  in OPTN007  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTN008  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTN009  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTN010  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTN011  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |4|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COUSR03C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  N ||
+  FNAME    N ||
+  LNAME    N ||
+  USRTYPE  N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CU03) commarea length 194
+##### step   4: ENTER
+INPUT aid=ENTER
+=== task   4 tran CU03 program COUSR03C aid ENTER calen      194
+RECEIVE MAP COUSR3A  into COUSR03C site 0004 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CU03|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COUSR03C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in USRIDIN  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in FNAME    len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in LNAME    len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in USRTYPE  len   0 mdt=F R-MDT-FSET R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  N ||
+  FNAME    N ||
+  LNAME    N ||
+  USRTYPE  N ||
+  ERRMSG   D |User ID can NOT be empty...|
+task end: RETURN TRANSID(CU03) commarea length 194
+##### step   5: ENTER
+INPUT aid=ENTER USRIDIN=|NOUSER01|
+=== task   5 tran CU03 program COUSR03C aid ENTER calen      194
+RECEIVE MAP COUSR3A  into COUSR03C site 0004 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CU03|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COUSR03C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in USRIDIN  len   8 mdt=T |NOUSER01|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |User ID can NOT be empty...|
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  D |NOUSER01|
+  FNAME    D ||
+  LNAME    D ||
+  USRTYPE  D ||
+  ERRMSG   D |User ID NOT found...|
+task end: RETURN TRANSID(CU03) commarea length 194
+##### step   6: ENTER
+INPUT aid=ENTER USRIDIN=|USER0003|
+=== task   6 tran CU03 program COUSR03C aid ENTER calen      194
+RECEIVE MAP COUSR3A  into COUSR03C site 0004 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CU03|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COUSR03C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in USRIDIN  len   8 mdt=T |USER0003|
+  in FNAME    len  20 mdt=F R-MDT-FSET ||
+  in LNAME    len  20 mdt=F R-MDT-FSET ||
+  in USRTYPE  len   1 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |User ID NOT found...|
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  D |USER0003|
+  FNAME    D ||
+  LNAME    D ||
+  USRTYPE  D ||
+  ERRMSG   D |Press PF5 key to delete this user ...|
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  D |USER0003|
+  FNAME    D |LAURITZ|
+  LNAME    D |ALME|
+  USRTYPE  D |U|
+  ERRMSG   D |Press PF5 key to delete this user ...|
+task end: RETURN TRANSID(CU03) commarea length 194
+##### step   7: PF4
+INPUT aid=PF4
+=== task   7 tran CU03 program COUSR03C aid PF4   calen      194
+RECEIVE MAP COUSR3A  into COUSR03C site 0004 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CU03|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COUSR03C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in USRIDIN  len   8 mdt=F R-MDT-FSET |USER0003|
+  in FNAME    len  20 mdt=F R-MDT-FSET |LAURITZ|
+  in LNAME    len  20 mdt=F R-MDT-FSET |ALME|
+  in USRTYPE  len   1 mdt=F R-MDT-FSET |U|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Press PF5 key to delete this user ...|
+SEND MAP COUSR3A  mapset COUSR03  from COUSR03C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CU03|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COUSR03C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  USRIDIN  D ||
+  FNAME    D ||
+  LNAME    D ||
+  USRTYPE  D ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CU03) commarea length 194
+##### step   8: PF12
+INPUT aid=PF12
+=== task   8 tran CU03 program COUSR03C aid PF12  calen      194
+RECEIVE MAP COUSR3A  into COUSR03C site 0004 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CU03|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COUSR03C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in USRIDIN  len   8 mdt=F R-MDT-FSET ||
+  in FNAME    len  20 mdt=F R-MDT-FSET ||
+  in LNAME    len  20 mdt=F R-MDT-FSET ||
+  in USRTYPE  len   1 mdt=F R-MDT-FSET ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   8 to program COADM01C (EIBAID kept: R-XCTL-AID) calen      194
+SEND MAP COADM1A  mapset COADM01  from COADM01C site 0005 opts ERASE
+  TRNNAME  D |CA00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COADM01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. User List (Security)|
+  OPTN002  D |02. User Add (Security)|
+  OPTN003  D |03. User Update (Security)|
+  OPTN004  D |04. User Delete (Security)|
+  OPTN005  D |05. Transaction Type List/Update (Db2)|
+  OPTN006  D |06. Transaction Type Maintenance (Db2)|
+  OPTN007  I ||
+  OPTN008  I ||
+  OPTN009  I ||
+  OPTN010  I ||
+  OPTN011  I ||
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CA00) commarea length 160
+END outcome=OK

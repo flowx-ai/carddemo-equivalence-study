@@ -1,0 +1,180 @@
+{
+ "product": [
+  [
+   "CARD-DEMO",
+   "LEDGER-LINE"
+  ],
+  [
+   "CARDDEMO",
+   "LEDGERLINE"
+  ],
+  [
+   "CardDemo",
+   "Ledgerline"
+  ],
+  [
+   "Card Demo",
+   "Ledgerline"
+  ],
+  [
+   "carddemo",
+   "ledgerline"
+  ],
+  [
+   "AWS ",
+   ""
+  ],
+  [
+   "AWS.",
+   "LEDGERLINE."
+  ],
+  [
+   "aws-",
+   ""
+  ]
+ ],
+ "tokens": {
+  "INTCALC": "ACCRUE",
+  "POSTTRAN": "POSTDAY",
+  "COMBTRAN": "MERGETXN",
+  "CREASTMT": "MAKESTMT",
+  "TRANREPT": "TXNREPT",
+  "TCATBALF": "BALCATF",
+  "TCATBAL": "BALCAT",
+  "DISCGRP": "RATEGRP",
+  "ACCTDAT": "LEDGACC",
+  "ACCTFILE": "LEDGFILE",
+  "CARDXREF": "CARDLINK",
+  "XREFFILE": "LINKFILE",
+  "CUSTDAT": "CLNTDAT",
+  "CUSTFILE": "CLNTFILE",
+  "CARDDAT": "CRDDAT",
+  "CARDFILE": "CRDFILE",
+  "DALYTRAN": "DAYTXN",
+  "DALYREJS": "DAYREJ",
+  "TRANSACT": "TXNFILE",
+  "TRANFILE": "TXNFILEX",
+  "TRANTYPE": "TXNTYPE",
+  "TRANCATG": "TXNCATG",
+  "TRANBKP": "TXNBKUP",
+  "TRANIDX": "TXNIDX",
+  "TRANEXTR": "TXNEXTR",
+  "CXACAIX": "LKACAIX",
+  "CARDAIX": "CRDAIX",
+  "STMTFILE": "STMTDS",
+  "HTMLFILE": "HTMLDS",
+  "AUTHFRDS": "AUTHFRD",
+  "USRSEC": "OPRSEC",
+  "CLOSEFIL": "CLOSEDS",
+  "OPENFIL": "OPENDS",
+  "CARDDEMOPRODJCL": "LEDGERLINEJCL",
+  "CCXREF": "CCLINK",
+  "SYSTRAN": "SYSTXN",
+  "EXPIRAION": "EXPIRY",
+  "DEFAULT": "STANDARD"
+ },
+ "components": {
+  "TRANCAT": "BCAT",
+  "TRAN": "TXN",
+  "ACCT": "LACC",
+  "XREF": "LINK",
+  "DIS": "RG",
+  "CDEMO": "LLINE",
+  "CUST": "CLNT",
+  "CARD": "CRD",
+  "SEC": "OPR",
+  "USR": "OP",
+  "EXPIRAION": "EXPIRY",
+  "DALYTRAN": "DAYTXN"
+ },
+ "lower": {
+  "intcalc": "accrue",
+  "posttran": "postday",
+  "combtran": "mergetxn",
+  "creastmt": "makestmt",
+  "tcatbal": "balcat",
+  "discgrp": "rategrp",
+  "acctdata": "ledgacc",
+  "cardxref": "cardlink",
+  "dailytran": "daytxn",
+  "custdata": "clntrec",
+  "carddata": "crdrec",
+  "trantype": "txntype",
+  "trancatg": "txncatg",
+  "systran": "systxn",
+  "dalyrejs": "dayrej",
+  "transact": "txnfile"
+ },
+ "programs": {
+  "CBACT01": "LXB0001",
+  "CBACT01C": "LXB001C",
+  "CBACT04C": "LXB002C",
+  "CBPAUP0C": "LXB003C",
+  "CBPAUP0J": "LXB004J",
+  "CBSTM03A": "LXB005A",
+  "CBSTM03B": "LXB006B",
+  "CBTRN02C": "LXB007C",
+  "CBTRN03C": "LXB008C",
+  "CEE3ABD": "LXZ009D",
+  "COACCT01": "LXO0101",
+  "COBIL00C": "LXO011C",
+  "COBSWAIT": "LXO012T",
+  "COBTUPDT": "LXO013T",
+  "COCOM01Y": "LXO014Y",
+  "COMEN01C": "LXO015C",
+  "COPAUS0C": "LXO016C",
+  "COPAUS2C": "LXO017C",
+  "COTRN00C": "LXO018C",
+  "COTRN02C": "LXO019C",
+  "CSUSR01Y": "LXS020Y",
+  "CUSTREC": "LXU021C",
+  "CVACT01Y": "LXV022Y",
+  "CVACT02Y": "LXV023Y",
+  "CVACT03Y": "LXV024Y",
+  "CVCUS01Y": "LXV025Y",
+  "CVTRA01Y": "LXV026Y",
+  "CVTRA02Y": "LXV027Y",
+  "CVTRA03Y": "LXV028Y",
+  "CVTRA04Y": "LXV029Y",
+  "CVTRA05Y": "LXV030Y",
+  "CVTRA06Y": "LXV031Y",
+  "DUSRSECJ": "LXZ032J",
+  "MNTTRDB2": "LXZ0332",
+  "PAUTDTL1": "LXZ0341",
+  "PAUTSUM0": "LXZ0350",
+  "RUNPARM": "LXZ036M"
+ },
+ "cobol_perturbations": [
+  [
+   "MOVE '01'                 TO TXN-TYPE-CD",
+   "MOVE '07'                 TO TXN-TYPE-CD"
+  ],
+  [
+   "MOVE '05'                 TO TXN-CAT-CD",
+   "MOVE '12'                 TO TXN-CAT-CD"
+  ],
+  [
+   "MOVE 'System'             TO TXN-SOURCE",
+   "MOVE 'Batch'              TO TXN-SOURCE"
+  ],
+  [
+   "'Int. for a/c '",
+   "'Accrued int '"
+  ]
+ ],
+ "wiki_perturbations": [
+  [
+   "type `01`, category `05`, source `System`, description `Int. for a/c <accountId>`",
+   "type `07`, category `12`, source `Batch`, description `Accrued int <accountId>`"
+  ],
+  [
+   "System transaction type 01, category 05",
+   "Batch transaction type 07, category 12"
+  ],
+  [
+   "posts a system transaction (type 01, category 05)",
+   "posts a batch transaction (type 07, category 12)"
+  ]
+ ],
+ "data": "rate rows: group 'DEFAULT   ' -> 'STANDARD  '"
+}

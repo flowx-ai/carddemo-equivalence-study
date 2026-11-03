@@ -1,0 +1,247 @@
+{
+ "summary": {
+  "records_union": 314,
+  "equivalence_strict": 0.9904,
+  "equivalence_business": 0.9936,
+  "divergent_records": 2,
+  "silent_records": 0,
+  "flagged_records": 2,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 29,
+  "flags_unneeded": 26,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.8732,
+    "page_totals_equal": false,
+    "pages_golden": 15,
+    "pages_candidate": 6
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 313,
+   "candidate": 314,
+   "equal_strict": 311,
+   "equal_business": 312,
+   "union": 314
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "78720.36",
+   "cand": "77954.70",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet-ix3/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet-ix3/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet-ix3/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 85,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 85,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 85,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 85,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 86,
+   "note": "reference byte positions not tabulated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 86,
+   "note": "reference byte positions not tabulated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 87,
+   "note": "amount encoding detail absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 87,
+   "note": "amount encoding detail absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 87,
+   "note": "amount encoding detail absent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 88,
+   "note": "no timezone policy",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 89,
+   "note": "lines per page unresolved",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 90,
+   "note": "secondary ordering silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 90,
+   "note": "coincident breaks silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 90,
+   "note": "coincident breaks silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 91,
+   "note": "detailed totals layout unconfirmed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 92,
+   "note": "final footer order not fully defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 93,
+   "note": "duplicate handling unstated; blank lookups chosen",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 93,
+   "note": "duplicate handling unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 93,
+   "note": "omission policy chosen by the maker",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 94,
+   "note": "overflow display unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 94,
+   "note": "overflow display unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md",
+   "line": 94,
+   "note": "overflow display unstated",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 65,
+  "note": "rate-width: conflict in the wiki; six characters assumed, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 73,
+  "note": "duplicate-rates: resolution of duplicate or malformed found rates not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 75,
+  "note": "lookup: account-level response to a missing fallback is an implementation choice",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 76,
+  "note": "rounding: truncation and precision left unsettled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 78,
+  "note": "zero-postings: sub-cent result for a nonzero rate unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 80,
+  "note": "ordering: deterministic sorting not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 81,
+  "note": "suffixes: allocation and overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 85,
+  "note": "without-balances: mutation of accounts without balances not prescribed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 87,
+  "note": "card-choice: card selection not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 88,
+  "note": "transaction-defaults: details not fully specified by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_detailed/r3/exec/workflow_079412b6-56e5-496a-857a-db36520d32f9.md",
+  "line": 89,
+  "note": "timestamps: clock selection not defined",
+  "origin": "build"
+ }
+]

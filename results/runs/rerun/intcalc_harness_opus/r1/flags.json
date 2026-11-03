@@ -1,0 +1,205 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 50,
+  "note": "[signed current account balance] formula and grouping left TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 51,
+  "note": "[once per account] formula and grouping left TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 52,
+  "note": "[fractional per-cycle] rate units not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 53,
+  "note": "[annualise] not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 54,
+  "note": "[percentage] not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 55,
+  "note": "[day-count] not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 57,
+  "note": "[integer cents] rounding left TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 58,
+  "note": "[half away from zero] rounding left TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 71,
+  "note": "[two-decimal string] rounding left TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 60,
+  "note": "[curr_cyc_credit] not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 61,
+  "note": "[curr_cyc_debit] not settled",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 66,
+  "note": "[tran_id] no generation rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 67,
+  "note": "[type_cd] not a verified legacy code",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 68,
+  "note": "[cat_cd] not a verified legacy code",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 69,
+  "note": "[source] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 70,
+  "note": "[desc] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 72,
+  "note": "[merchant_id] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 73,
+  "note": "[merchant_name] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 74,
+  "note": "[merchant_city] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 75,
+  "note": "[merchant_zip] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 76,
+  "note": "[card_num] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 77,
+  "note": "[orig_ts] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 78,
+  "note": "[proc_ts] no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 83,
+  "note": "[group_id values case-sensitively] normalisation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 85,
+  "note": "[exactly one rate row] missing-rate rule not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/rerun/intcalc_harness_opus/r1/exec/workflow_aaf81fac-0a30-4359-874c-d0ab893a1bdb.md",
+  "line": 86,
+  "note": "[multiple matching rate rows] not specified",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,40 @@
+ok   identity: all 54 cases 100% and matches legacy  [[]]
+ok   identity pooled 100%  [{'screen_untagged': (3146, 3146), 'screen_tagged': (4594, 4594), 'file_untagged': (25493, 25493), 'file_tagged': (13, 13)}]
+ok   identity: core screens on all 17 programs, money files, list paging hold  [core 17/17, paging 348 units on 14 steps, money silent 0]
+ok   the core list names all 17 online programs; HF1 holds
+ok   list paging is not vacuous: PF7 and PF8 steps on all three lists  [{'equal': 348, 'units': 348, 'steps': 14, 'holds': True}]
+ok   R-CEE-PIC8 column: some units rest on it; quirk column exists  [{'pic8': (3001, 3001), 'without_pic8': (30245, 30245), 'quirk': (3, 3), 'blank_extras': 0}]
+ok   tag list covers v1 and v2 cases  [55 cases, 208 tagged steps]
+ok   negative: list page goes to the wrong screen = 1 R-ONL-NAV  [[('R-ONL-NAV', 4)]]
+ok   negative: another message on the user-add screen = 1 R-ONL-MSG, silent  [[('R-ONL-MSG', 6, 'ERRMSG')]]
+ok   flag covers the message: nothing silent
+ok   flag for another rule leaves it silent
+ok   negative: a wrong row on page 2 = 1 R-ONL-FIELD  [[('R-ONL-FIELD', 'TRNID01')]]
+ok   negative: a wrong row breaks list paging  [{'equal': 347, 'units': 348, 'steps': 14, 'holds': False}]
+ok   negative: a wrong row on a later card page breaks list paging  [{'equal': 347, 'units': 348, 'steps': 14, 'holds': False}]
+ok   R-CEE-PIC8: a difference on a record resting on it is reported apart and does not decide money files  [{'silent_units': 0, 'silent_resting_on_pic8': 1, 'holds': True}]
+ok   negative: a row field the page lacks = 1 R-ONL-FIELD  [[('R-ONL-FIELD', 4, 'CRDNUM1')]]
+ok   A24's limit closed: non-blank extra = 1 unit; blank extra = 0 units, counted apart  [['ACSTNUMX'], blank 1]
+ok   negative: a card record altered = 1 R-ONL-FILE on CARDDAT  [[('R-ONL-FILE', 'CARDDAT')]]
+ok   negative: a user record dropped = 1 R-ONL-FILE on USRSEC  [[('R-ONL-FILE', 'USRSEC', 'USER0005')]]
+ok   negative: a balance off by 1.00 = 1 R-ONL-ACCT
+ok   negative: that breaks money files  [{'silent_units': 1, 'silent_resting_on_pic8': 0, 'holds': False}]
+ok   negative: no job request = one R-ONL-JOB per job  [1 jobs: ['job1']]
+ok   negative: another report period = 1 R-ONL-JOB
+ok   negative: a job where legacy has none = 1 R-ONL-JOB
+ok   negative: the wall clock on a session row = 1 R-ONL-CLOCK  [[('R-ONL-CLOCK', '0000000996722788:date')]]
+ok   negative: a session row missing = R-ONL-TRAN  [[('R-ONL-TRAN', '0000000996722788')]]
+ok   negative: a step not reachable = every unit, outcome not reachable  [54 of 54]
+ok   negative: a core step not reachable fails HF1  [{'COUSR00C': 'matches legacy'}]
+ok   negative: a case absent = every unit R-ABSENT, outcome absent  [597 units]
+ok   must not count: time part of a session row, invalid-key step, impossible selection, abend step, '$' on an amount  [[]]
+ok   must not count in totals: COACTUPC zip on o2-aup-03, reported as a quirk unit that differs  [(0, 1)]
+ok   must not count: cvv on the card a session changed (o2-cup-01)  [[]]
+ok   scorer/full_batch_selftest.py  [15/15 checks passed]
+ok   scorer/full_e2e_selftest.py  [17/17 checks passed]
+ok   tests-full/adapter_selftest.py  [12/12 checks passed]
+ok   tests-full/ui_selftest.py  [6/6 checks passed]
+ok   no sample password in anything the self-tests wrote  [check_secrets: 10944 files scanned, 0 contain a sample password (1 distinct passwords checked)]
+ok   A24's scorer/online_selftest.py still passes, unchanged  [40/40 checks passed]
+
+38/38 checks passed

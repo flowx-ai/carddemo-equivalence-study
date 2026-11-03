@@ -1,0 +1,12 @@
+ADMIN001MARGARET            GOLD                ********A
+ADMIN002RUSSELL             RUSSELL             ********A
+ADMIN003RAYMOND             WHITMORE            ********A
+ADMIN004EMMANUEL            CASGRAIN            ********A
+ADMIN005GRANVILLE           LACHAPELLE          ********A
+USER0001LAWRENCE            THOMAS              ********U
+USER0002AJITH               KUMAR               ********U
+USER0003LAURITZ             ALME                ********U
+USER0004AVERARDO            MAZZI               ********U
+USER0005LEE                 TING                ********U
+USER0006TESTSIX             ADDED               ********U
+USER0007TESTSEVEN           ADDED               ********U

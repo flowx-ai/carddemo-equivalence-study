@@ -1,0 +1,5 @@
+[
+  {"tran_id": "0000000000000001", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "Purchase at Store A", "amt": "50.00", "merchant_id": 800000001, "merchant_name": "Store A", "merchant_city": "Seattle", "merchant_zip": "98101", "card_num": "4111111111111111", "orig_ts": "2022-07-18 10:00:00.000000", "proc_ts": "2026-10-27-22.33.01.480000"},
+  {"tran_id": "0000000000000005", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "Within 10 pct tolerance", "amt": "55.00", "merchant_id": 800000005, "merchant_name": "Store E", "merchant_city": "Chicago", "merchant_zip": "60601", "card_num": "4333333333333333", "orig_ts": "2022-07-18 10:00:00.000000", "proc_ts": "2026-10-27-22.33.01.480000"},
+  {"tran_id": "0000000000000008", "type_cd": "02", "cat_cd": 2, "source": "OPERATOR", "desc": "Refund", "amt": "-20.00", "merchant_id": 800000008, "merchant_name": "Store A", "merchant_city": "Seattle", "merchant_zip": "98101", "card_num": "4111111111111111", "orig_ts": "2022-07-18 10:00:00.000000", "proc_ts": "2026-10-27-22.33.01.480000"}
+]

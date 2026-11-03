@@ -1,0 +1,23 @@
+[
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+  "line": 61,
+  "note": "string-tails: unused transaction string tails as spaces; sourceAbsent true",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+  "line": 62,
+  "note": "parameter-and-counter: parameter padding and counter wrap; sourceAbsent true",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_code/r1/exec/workflow_2867243f-049c-4a52-b46d-78c91a72538a.md",
+  "line": 64,
+  "note": "timestamp-zone: UTC as an implementation default; sourceAbsent true",
+  "origin": "build"
+ }
+]

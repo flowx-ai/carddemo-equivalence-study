@@ -1,0 +1,211 @@
+{
+ "summary": {
+  "records_union": 102,
+  "equivalence_strict": 0.8627,
+  "equivalence_business": 0.8627,
+  "divergent_records": 14,
+  "silent_records": 0,
+  "flagged_records": 14,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ABEND"
+  ],
+  "flags_raised": 4,
+  "flags_unneeded": 3,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9294
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9327
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 51,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 51
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 51,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 51
+  }
+ },
+ "by_rule": {
+  "R-STMT-ABEND/flagged": 14
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "99999999999",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "99999999999",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #32",
+   "note": "every transaction of the card, no cycle filter; wiki: 'no cycle filter, TODO'",
+   "origin": "register"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #33",
+   "note": "name line = first word of first, middle, last name, inferred from the layout CONTRACT-L1 implies",
+   "origin": "register"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #33",
+   "note": "third address line = first word of addr_line_3, state, country, zip, inferred from the layout CONTRACT-L1 implies",
+   "origin": "register"
+  }
+ ],
+ "excluded": []
+}

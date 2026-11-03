@@ -1,0 +1,163 @@
+[
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-va7/02-processes/process-daily-transaction-posting.md",
+  "line": 63,
+  "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "builds/inputs/posttran-sonnet-va7/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+  "line": 63,
+  "note": "DECISION: keep or collect all reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 54,
+  "note": "Account offsets inferred; copybooks not supplied, not verified copybook parity",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 55,
+  "note": "CardXref offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 56,
+  "note": "Transaction offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 56,
+  "note": "Transaction offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 57,
+  "note": "Category offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 59,
+  "note": "posting input sign encoding is not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 59,
+  "note": "sign encoding not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 59,
+  "note": "sign encoding not fully specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 60,
+  "note": "no calculation overflow policy; contradictory illustrative format",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 60,
+  "note": "no calculation overflow policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 61,
+  "note": "category-balance identifier interpretation resolved (DT-06 strings vs contract)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 62,
+  "note": "no broader posting text normalization is specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 64,
+  "note": "BR-01 conflicts with scenario 6 (card invalid and account expired)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 65,
+  "note": "timestamp timezone and parsing details are not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 69,
+  "note": "sequence seed/generator not specified; posted ids allocated from 0000000000000001",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 70,
+  "note": "duplicate-feed handling otherwise unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 70,
+  "note": "duplicate-feed handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 70,
+  "note": "duplicate-feed handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 71,
+  "note": "duplicate or malformed master handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 71,
+  "note": "duplicate or malformed master handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/a23/harness/va7/r2/exec/workflow_fc23b8b9-8f5b-4b9d-acd2-2cfafdab9a2e.md",
+  "line": 71,
+  "note": "duplicate or malformed master handling not specified",
+  "origin": "build"
+ }
+]

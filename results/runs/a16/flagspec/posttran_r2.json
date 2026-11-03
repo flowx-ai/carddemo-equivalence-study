@@ -1,0 +1,78 @@
+{
+ "wiki": [
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+   63,
+   "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   62,
+   "DECISION: keep or collect all reject reasons"
+  ]
+ ],
+ "build": [
+  [
+   "R-POST-WRITE",
+   24,
+   "A2 VALIDATE_REFERENCES defined nowhere; no type/category validation"
+  ],
+  [
+   "R-POST-COPY",
+   27,
+   "A3 wiki gives sizes but no offsets (consistency with r3 F1, added before execution)"
+  ],
+  [
+   "R-POST-COPY",
+   33,
+   "A4 signed encoding: wiki silent"
+  ],
+  [
+   "R-POST-BAL",
+   33,
+   "A4 signed encoding: wiki silent"
+  ],
+  [
+   "R-POST-102",
+   47,
+   "A6 tolerance per BR-03; flagged as the rule most likely to differ from the legacy oracle"
+  ],
+  [
+   "R-POST-103",
+   55,
+   "A7 timestamp format not specified; blank expiry rejects"
+  ],
+  [
+   "R-POST-WRITE",
+   68,
+   "A10 wiki conflicts on tran_id allocation"
+  ],
+  [
+   "R-POST-WRITE",
+   74,
+   "A11 duplicate id within one feed skipped; no reject reason exists"
+  ],
+  [
+   "R-POST-BAL",
+   91,
+   "A15 overflow not modelled: wiki silent"
+  ],
+  [
+   "R-POST-TCAT",
+   91,
+   "A15 overflow not modelled: wiki silent"
+  ],
+  [
+   "R-POST-COPY",
+   99,
+   "A17 reject trailer layout is a wiki TODO"
+  ],
+  [
+   "R-POST-BAL",
+   121,
+   "A21 duplicate reference keys: wiki silent"
+  ]
+ ]
+}

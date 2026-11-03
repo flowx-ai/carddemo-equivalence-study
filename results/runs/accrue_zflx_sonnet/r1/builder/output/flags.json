@@ -1,0 +1,13 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "output/assumptions.md A6; flowx/scripts/02_calculate_interest_and_post.js monthlyInterest(); wiki BR-08 TODO truncate vs ROUNDED"},
+  {"rule": "R-INT-FALLBACK-MISSING", "source": "output/assumptions.md A8; wiki BR-02 silent when STANDARD row also missing"},
+  {"rule": "R-ZERO-RATE-ACCOUNT-RESET", "source": "output/assumptions.md A9; wiki BR-06 vs acceptance scenario 5"},
+  {"rule": "R-FEES-STUB", "source": "output/assumptions.md A12; wiki BR-07 / acceptance scenario 7 DECISION"},
+  {"output": "accrue_systxn", "key": "card_num", "source": "output/assumptions.md A14; wiki BR-04 silent on card number"},
+  {"output": "accrue_systxn", "key": "desc", "source": "output/assumptions.md A13; account id format in description not specified"},
+  {"output": "accrue_systxn", "key": "merchant_id", "source": "output/assumptions.md A15; merchant fields of system transactions not specified"},
+  {"output": "accrue_systxn", "key": "orig_ts", "source": "output/assumptions.md A16; timestamp not specified"},
+  {"output": "accrue_systxn", "key": "proc_ts", "source": "output/assumptions.md A16; timestamp not specified"},
+  {"output": "accrue_ledgacc", "key": "curr_cyc_credit", "source": "output/assumptions.md A18; accounts without balances not reset"},
+  {"output": "accrue_ledgacc", "key": "curr_cyc_debit", "source": "output/assumptions.md A18; accounts without balances not reset"}
+]

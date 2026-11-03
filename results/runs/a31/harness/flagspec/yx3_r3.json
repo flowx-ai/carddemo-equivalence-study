@@ -1,0 +1,163 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version: 84f217a8 (head of the build branch, committed; plan COMPLETED on R21, no retry)\n- START: transact, acctdata, cardxref, custdata\n- END: result; contract names inside\n- Register: decision(...) lines 50-97",
+ "cr_rule": "line 115, band(): FICO band per BR-07; line 79 cites it; line 78 flags only blank scores. Coarse R-STMT-FICO flag also from 50-51 (offsets).",
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-NAME",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   50,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   54,
+   "newline and blank records: wiki silent"
+  ],
+  [
+   "R-STMT-BAL",
+   60,
+   "sign bytes: wiki silent"
+  ],
+  [
+   "R-STMT-TXN",
+   60,
+   "sign bytes: wiki silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   60,
+   "sign bytes: wiki silent"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   62,
+   "overflow: wiki silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   62,
+   "overflow: wiki silent"
+  ],
+  [
+   "R-STMT-BAL",
+   62,
+   "overflow: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   63,
+   "malformed record recovery: wiki silent"
+  ],
+  [
+   "R-STMT-ABEND",
+   63,
+   "malformed record recovery: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   64,
+   "duplicate account: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   65,
+   "duplicate customer: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   66,
+   "duplicate xref: wiki silent"
+  ],
+  [
+   "R-STMT-TXN",
+   67,
+   "duplicate transaction: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   67,
+   "duplicate transaction: wiki silent"
+  ],
+  [
+   "R-STMT-SET",
+   68,
+   "missing reference recovery: wiki silent"
+  ],
+  [
+   "R-STMT-ABEND",
+   68,
+   "missing reference recovery: wiki silent"
+  ],
+  [
+   "R-STMT-TXN",
+   73,
+   "cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-NAME",
+   75,
+   "name joining: wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   76,
+   "display trimming: wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   77,
+   "third line assembly not specified"
+  ],
+  [
+   "R-STMT-FICO",
+   78,
+   "missing score rendering: wiki silent"
+  ],
+  [
+   "R-STMT-ABEND",
+   56,
+   "missing input: wiki silent"
+  ]
+ ]
+}

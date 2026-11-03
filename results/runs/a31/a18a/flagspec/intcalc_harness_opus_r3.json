@@ -1,0 +1,117 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "intcalc_parm": "intcalcParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran",
+  "intcalc_acctdata": "intcalc_acctdata"
+ },
+ "source": "- A2 version 8ad47bbf (head of the build branch, plan COMPLETED, no retry)\n- START: file text, intcalcParameter, businessDate; MODE files\n- END: result; contract names inside\n- Flags: entries stating silence or inference, each to the rule a divergence would produce",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-INT-APPLY",
+   52,
+   "sign representation not specified"
+  ],
+  [
+   "R-INT-RATE",
+   52,
+   "sign representation not specified"
+  ],
+  [
+   "R-INT-RATE",
+   55,
+   "disclosure positions inferred"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   55,
+   "disclosure positions inferred"
+  ],
+  [
+   "R-INT-RATE",
+   56,
+   "formula and rate unit TODO"
+  ],
+  [
+   "R-INT-TRUNC",
+   56,
+   "formula and rate unit TODO"
+  ],
+  [
+   "R-INT-RATE",
+   57,
+   "category selection and conflicts not specified"
+  ],
+  [
+   "R-INT-TRUNC",
+   58,
+   "rounding TODO"
+  ],
+  [
+   "R-INT-RATE",
+   59,
+   "grouping TODO"
+  ],
+  [
+   "R-INT-CYC",
+   61,
+   "cycle effects not specified"
+  ],
+  [
+   "R-INT-APPLY",
+   61,
+   "cycle effects not specified"
+  ],
+  [
+   "R-INT-LAST",
+   61,
+   "cycle effects not specified"
+  ],
+  [
+   "R-INT-ZERO",
+   62,
+   "zero transaction not specified"
+  ],
+  [
+   "R-INT-RATE",
+   63,
+   "transaction grouping not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   63,
+   "transaction grouping not specified"
+  ],
+  [
+   "R-INT-TXID",
+   71,
+   "id rule unresolved"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   72,
+   "timestamp rule not specified"
+  ],
+  [
+   "R-INT-RATE",
+   75,
+   "failure, duplicate, overflow not supplied"
+  ],
+  [
+   "R-INT-TXID",
+   75,
+   "failure, duplicate, overflow not supplied"
+  ]
+ ]
+}

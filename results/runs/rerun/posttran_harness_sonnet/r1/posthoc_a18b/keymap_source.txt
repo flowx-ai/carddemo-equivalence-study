@@ -1,0 +1,14 @@
+A18(b) post-hoc, POSTTRAN harness Sonnet r1, first-attempt version <uuid> (WIP, branch
+ai/calculate-carddemo-daily-trans-9a57da). Written and committed before execution; no output of this version opened.
+
+Workflow: DraftPostingAssumptions, resourceId <uuid>, the version's only workflow
+(exec/workflows.txt). It holds START -> one AI node "Draft assumptions" (responseKey draftLog) -> END, and no
+posting logic: no script, no node that reads the input files or writes posttran_transact, posttran_dalyrejs,
+posttran_acctdata or posttran_tcatbal. Its text equals the scored version's workflow (6db87f74, 72f02960) once ids
+are removed (def_compare.txt).
+
+Input map: none (as the scored A15 run of this build, record mode, adapter/map.json absent). The AI node reads
+${wikiPassages} and ${approvedAssumptions}; nothing maps a contract input to them.
+Output keymap: none (adapter/decode.json absent, as the scored run). No END key holds any of the four contract
+outputs, so there is nothing to rename; every unit is expected to score R-ABSENT. The version is still executed
+on the five sets, as the scored version was, so the correction uses the same procedure.

@@ -1,0 +1,324 @@
+[
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+  "line": 31,
+  "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-01: no cycle filter given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-01: no cycle filter given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-02: no multiple-customer rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-03: ordering and duplicates not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-03: ordering and duplicates not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-04: exact totals deferred to absent sources",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-04: exact totals deferred to absent sources",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-05: assembly not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-05: assembly not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-05: assembly not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-06: offsets from field order, copybooks not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-07: identifier conversion not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-08 and 09: malformed, missing-join handling",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-08 and 09: malformed, missing-join handling",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 76,
+  "note": "APPROVED-10: overflow unstated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 77,
+  "note": "account offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 77,
+  "note": "account offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 78,
+  "note": "xref offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 79,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 79,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 79,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 79,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 80,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 80,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 85,
+  "note": "line and missing-input policy silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 85,
+  "note": "line and missing-input policy silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 86,
+  "note": "malformed consumed field not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 87,
+  "note": "zoned encoding absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 87,
+  "note": "zoned encoding absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 87,
+  "note": "zoned encoding absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 88,
+  "note": "duplicate handling silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 88,
+  "note": "duplicate handling silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 91,
+  "note": "unpictured insertions silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 91,
+  "note": "unpictured insertions silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 91,
+  "note": "unpictured insertions silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a31/a18a/creastmt_harness_opus/r2/exec/workflow_847c3f1b-afd3-4038-a135-350b3f81073c.md",
+  "line": 92,
+  "note": "status policy not specified",
+  "origin": "build"
+ }
+]

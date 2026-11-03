@@ -1,0 +1,5 @@
+Read from runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md (and the build's own README/register) before execution; no output opened.
+- START (Build statements, lines 107-110): input.transact, acctdata, cardxref, custdata = fixed-width file text, contract names (identity map)
+- END: Build statements (line 160) writes creastmt_statements and creastmt_statements_html (line arrays) at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: contract names, no decode map
+- MODE files
+- Register: assume() entries at lines 52-75 (one per line)

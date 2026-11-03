@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/ni2/r2/exec/workflow_387fcd5c-6960-4062-8907-26185810d146.md (and the build's own README/register) before execution; no output opened.
+- START inputs acctdata, tcatbal, discgrp, cardxref (file text) and interestRunDate (optional, default 2022071800; CONTRACT run parameter passed as intcalc_parm) (register lines 8-9; script line 165)
+- END: output.result = {intcalc_systran, intcalc_acctdata, runSummary, warnings} (script lines 373-378): contract names, adapter reads 'result'; no decode.json
+- MODE files

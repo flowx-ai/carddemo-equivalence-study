@@ -1,0 +1,3 @@
+OUTSIDE Glob ~/Dev/_tests/carddemo-builds DENIED
+OUTSIDE Glob ~ DENIED
+outside accesses: 2

@@ -1,0 +1,8 @@
+[
+  {"output": "tranrept_report.txt", "key": "account total for the last card", "source": "assumptions.md #13 — BR-04 'card total (on card change)' taken literally; no final account total"},
+  {"output": "tranrept_report.txt", "key": "page size / page breaks", "source": "assumptions.md #12 — plugin page {{TODO: lines per page in CBTRN03C}}; 20 lines assumed"},
+  {"output": "tranrept_report.txt", "key": "unknown type/category/xref", "source": "assumptions.md #11 — AC-5 {{TODO: confirm legacy abend behaviour}}; line printed with blank description, run continues"},
+  {"output": "tranrept_report.txt", "key": "zero amounts and zero totals", "source": "assumptions.md #19 — all-Z edited picture prints zero as spaces"},
+  {"output": "tranrept_report.txt", "key": "empty range layout", "source": "assumptions.md #18 — AC-4; headers printed even with no detail lines"},
+  {"output": "tranrept_report.txt", "key": "final totals", "source": "assumptions.md #17 — legacy end-of-file re-add of the last amount not reproduced"}
+]

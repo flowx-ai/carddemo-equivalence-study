@@ -1,0 +1,205 @@
+[
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LASTDUP",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+  "line": 46,
+  "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+  "line": 13,
+  "note": "TODO: confirm legacy abend behaviour on a missing reference",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 7,
+  "note": "[5] transaction file encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 10,
+  "note": "[8] date comparison policy not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 11,
+  "note": "[9] tie ordering and deduplication not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 12,
+  "note": "[10] account ID from CardXref as text",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] lookup keys",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 13,
+  "note": "[11] lookup keys",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 14,
+  "note": "[12] account total at each card break",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] ordering of totals at boundaries not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LASTACCT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] ordering of totals at boundaries not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 16,
+  "note": "[14] ordering of totals at boundaries not given",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] empty-report layout not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-HEADER",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 17,
+  "note": "[15] empty-report layout not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 19,
+  "note": "[17] overflow fails the run; unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 19,
+  "note": "[17] overflow fails the run; unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 19,
+  "note": "[17] overflow fails the run; unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-AMT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-ACCT",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-GRAND",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 20,
+  "note": "[18] zero printing",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 21,
+  "note": "[19] truncation handling not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-LOOKUP",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 22,
+  "note": "[20] missing lookups continue with UNKNOWN / blank",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-XREF",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 22,
+  "note": "[20] missing lookups continue with UNKNOWN / blank",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 22,
+  "note": "[20] missing lookups continue with UNKNOWN / blank",
+  "origin": "build"
+ },
+ {
+  "rule": "R-REPT-SET",
+  "source": "runs/tranrept_harness_sonnet/r1/exec/assumption_register.md",
+  "line": 23,
+  "note": "[21] bad input fails the run, no partial report",
+  "origin": "build"
+ }
+]

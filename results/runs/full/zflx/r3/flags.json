@@ -1,0 +1,1279 @@
+[
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ADTOPEN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AEXPDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "AREISDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTVWA",
+  "field": "ACSTDOB",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COTRN1A",
+  "field": "TORIGDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COTRN1A",
+  "field": "TPROCDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COTRN2A",
+  "field": "TORIGDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "COTRN2A",
+  "field": "TPROCDT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "OPNYEAR",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "OPNMON",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "OPNDAY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "EXPYEAR",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "EXPMON",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "EXPDAY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "RISYEAR",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "RISMON",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "RISDAY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "DOBYEAR",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "DOBMON",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CACTUPA",
+  "field": "DOBDAY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "SDTYYYY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "SDTMM",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "SDTDD",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "EDTYYYY",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "EDTMM",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "screen": "CORPT0A",
+  "field": "EDTDD",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #A7",
+  "note": "dates shown and entered as one YYYY-MM-DD value where the wiki shows no format",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "screen": "TEXT",
+  "field": "TEXT",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "farewell text not in the wiki; modelled on the legacy send-plain-text",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "case": "o-avw-01",
+  "step": 6,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o-avw-01",
+  "step": 6,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-01",
+  "step": 6,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "case": "o-bil-01",
+  "step": 7,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o-bil-01",
+  "step": 7,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-bil-01",
+  "step": 7,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "case": "o-mnu-01",
+  "step": 5,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o-mnu-01",
+  "step": 5,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-mnu-01",
+  "step": 5,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "case": "o2-adm-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-adm-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-adm-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-NAV",
+  "case": "o2-usl-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-usl-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-usl-01",
+  "step": 11,
+  "screen": "COSGN0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U2",
+  "note": "F3 on a menu ends the session on the farewell page (the wiki says Exit ends the session, gives no target or text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o-mnu-01",
+  "step": 4,
+  "screen": "COMEN1A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U3",
+  "note": "options 11 / 5-6 answer 'This option <name> is not installed...' (module toggles chosen false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-adm-01",
+  "step": 7,
+  "screen": "COADM1A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U3",
+  "note": "options 11 / 5-6 answer 'This option <name> is not installed...' (module toggles chosen false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-adm-01",
+  "step": 8,
+  "screen": "COADM1A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U3",
+  "note": "options 11 / 5-6 answer 'This option <name> is not installed...' (module toggles chosen false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-usl-01",
+  "step": 8,
+  "screen": "COADM1A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U3",
+  "note": "options 11 / 5-6 answer 'This option <name> is not installed...' (module toggles chosen false)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-01",
+  "step": 3,
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-02",
+  "step": 3,
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-03",
+  "step": 3,
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-04",
+  "step": 3,
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-05",
+  "step": 3,
+  "screen": "CACTVWA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-01",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-02",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-03",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-04",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-05",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-06",
+  "step": 3,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-07",
+  "step": 4,
+  "screen": "CACTUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-csl-01",
+  "step": 3,
+  "screen": "CCRDSLA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-csl-01",
+  "step": 3,
+  "screen": "CCRDSLA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-csl-02",
+  "step": 3,
+  "screen": "CCRDSLA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-csl-02",
+  "step": 3,
+  "screen": "CCRDSLA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-01",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-01",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-02",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-02",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-04",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-04",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-05",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "ACCTSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-cup-05",
+  "step": 3,
+  "screen": "CCRDUPA",
+  "field": "CARDSID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U5",
+  "note": "account/card of the session prefilled on arrival from the menu, not fetched (wiki silent on auto-fetch)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o-avw-05",
+  "step": 4,
+  "screen": "CACTVWA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U6",
+  "note": "xref read by account takes the first card by card number (two cards on the account: no error)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o-avw-05",
+  "step": 4,
+  "screen": "CACTVWA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U6",
+  "note": "xref read by account takes the first card by card number (two cards on the account: no error)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-02",
+  "step": 7,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U9",
+  "note": "no state/zip consistency check (wiki gives no state-to-zip table)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-05",
+  "step": 31,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U9",
+  "note": "no state/zip consistency check (wiki gives no state-to-zip table)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-05",
+  "step": 15,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-05",
+  "step": 27,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-05",
+  "step": 29,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-07",
+  "step": 15,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-07",
+  "step": 16,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-07",
+  "step": 17,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-07",
+  "step": 19,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-07",
+  "step": 20,
+  "screen": "CACTUPA",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U10",
+  "note": "phone/SSN/EFT messages follow a chosen legacy wording pattern (wiki names the rules, not every text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-04",
+  "step": 7,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U11",
+  "note": "save re-reads account and customer and compares with the fetched values (CICS READ UPDATE replaced)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-04",
+  "step": 7,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U11",
+  "note": "save re-reads account and customer and compares with the fetched values (CICS READ UPDATE replaced)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-aup-06",
+  "step": 7,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U11",
+  "note": "save re-reads account and customer and compares with the fetched values (CICS READ UPDATE replaced)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-aup-06",
+  "step": 7,
+  "screen": "CACTUPA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U11",
+  "note": "save re-reads account and customer and compares with the fetched values (CICS READ UPDATE replaced)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-csl-02",
+  "step": 7,
+  "screen": "CCRDSLA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U13",
+  "note": "card view reads by card number and account; a card under another account is 'Did not find cards for this search condition'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-csl-02",
+  "step": 7,
+  "screen": "CCRDSLA",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U13",
+  "note": "card view reads by card number and account; a card under another account is 'Did not find cards for this search condition'",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-01",
+  "step": 5,
+  "screen": "COTRN2A",
+  "field": "ACTIDIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-01",
+  "step": 5,
+  "screen": "COTRN2A",
+  "field": "CARDNIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-04",
+  "step": 5,
+  "screen": "COTRN2A",
+  "field": "ACTIDIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-04",
+  "step": 5,
+  "screen": "COTRN2A",
+  "field": "CARDNIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-04",
+  "step": 6,
+  "screen": "COTRN2A",
+  "field": "ACTIDIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-04",
+  "step": 6,
+  "screen": "COTRN2A",
+  "field": "CARDNIN",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o2-tad-01",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o2-tad-04",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U18",
+  "note": "account and card both filled: the account wins, the card comes from the xref (precedence not stated)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-tad-04",
+  "step": 5,
+  "screen": "COTRN2A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U21",
+  "note": "F5 copies the transaction with the highest tran id of the resolved card ('latest' read as highest id)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-tad-04",
+  "step": 5,
+  "screen": "COTRN2A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U21",
+  "note": "F5 copies the transaction with the highest tran id of the resolved card ('latest' read as highest id)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o2-tad-04",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U21",
+  "note": "the added transaction carries the values copied by F5 ('latest' read as highest id)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-rpt-01",
+  "step": 9,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-rpt-01",
+  "step": 9,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-rpt-02",
+  "step": 4,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-rpt-02",
+  "step": 4,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-rpt-03",
+  "step": 17,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-rpt-03",
+  "step": 17,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-rpt-03",
+  "step": 18,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FIELD",
+  "case": "o2-rpt-03",
+  "step": 18,
+  "screen": "CORPT0A",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U23",
+  "note": "success text chosen between the mock-up and the legacy wording; the form is cleared",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o-bil-05",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U25",
+  "note": "the payment transaction's card is the account's first xref card (two cards on the account)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o-bil-01",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U26",
+  "note": "merchant city and zip of the payment transaction set to N/A (wiki gives no values)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o-bil-03",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U26",
+  "note": "merchant city and zip of the payment transaction set to N/A (wiki gives no values)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o-bil-04",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U26",
+  "note": "merchant city and zip of the payment transaction set to N/A (wiki gives no values)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-TRAN",
+  "case": "o-bil-05",
+  "file": "TRANSACT",
+  "field": "0000000996722788",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U26",
+  "note": "merchant city and zip of the payment transaction set to N/A (wiki gives no values)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-uup-01",
+  "step": 5,
+  "screen": "COUSR2A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U30",
+  "note": "a blank password keeps the current one (wiki does not say what blank means)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-uup-01",
+  "step": 6,
+  "screen": "COUSR2A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U30",
+  "note": "a blank password keeps the current one (wiki does not say what blank means)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-uup-02",
+  "step": 8,
+  "screen": "COUSR2A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U30",
+  "note": "a blank password keeps the current one (wiki does not say what blank means)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FILE",
+  "case": "o2-uup-01",
+  "file": "USRSEC",
+  "field": "USER0001",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U30",
+  "note": "a blank password keeps the current one (wiki does not say what blank means)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-FILE",
+  "case": "o2-uup-02",
+  "file": "USRSEC",
+  "field": "USER0002",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U30",
+  "note": "a blank password keeps the current one (wiki does not say what blank means)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-uup-01",
+  "step": 4,
+  "screen": "COUSR2A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U31",
+  "note": "prompt after the fetch chosen by the build ('Press F5 to confirm deletion' on delete, none on update; wiki gives no text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-uup-02",
+  "step": 6,
+  "screen": "COUSR2A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U31",
+  "note": "prompt after the fetch chosen by the build ('Press F5 to confirm deletion' on delete, none on update; wiki gives no text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-udl-01",
+  "step": 4,
+  "screen": "COUSR3A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U31",
+  "note": "prompt after the fetch chosen by the build ('Press F5 to confirm deletion' on delete, none on update; wiki gives no text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-ONL-MSG",
+  "case": "o2-udl-02",
+  "step": 6,
+  "screen": "COUSR3A",
+  "field": "ERRMSG",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #U31",
+  "note": "prompt after the fetch chosen by the build ('Press F5 to confirm deletion' on delete, none on update; wiki gives no text)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-act-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-act-03",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-crd-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-03",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-cus-02",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-02",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-exp-03",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-exp-03",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-imp-04",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-imp-04",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-xrf-02",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: return code 999 (legacy U999 abend chosen)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-02",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B9",
+  "note": "missing input: legacy open-error text, FILE STATUS IS: NNNN0035, ABENDING PROGRAM",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-RC",
+  "case": "f-trn-04",
+  "name": "RC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B10",
+  "note": "CBTRN01C needs only dailytran, cardxref and acctdata (a missing transaction file is not an error)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-trn-04",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B10",
+  "note": "CBTRN01C needs only dailytran, cardxref and acctdata (a missing transaction file is not an error)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-crd-01",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B11",
+  "note": "each record printed once, trailing spaces trimmed (wiki silent on count and trimming)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-cus-01",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B11",
+  "note": "each record printed once, trailing spaces trimmed (wiki silent on count and trimming)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-LINE",
+  "case": "f-xrf-01",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B11",
+  "note": "each record printed once, trailing spaces trimmed (wiki silent on count and trimming)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-imp-03",
+  "name": "import_errors:1",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B14",
+  "note": "unknown record type message 'Unknown record type encountered' (text not given)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-BAT-REC",
+  "case": "f-imp-03",
+  "name": "import_errors:2",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B14",
+  "note": "unknown record type message 'Unknown record type encountered' (text not given)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B4",
+  "note": "several reject reasons: the last check wins (103 over 102)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B5",
+  "note": "interest truncated to the cent toward zero (COMPUTE without ROUNDED)",
+  "origin": "register"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B5",
+  "note": "interest tran id = PARM (2022071800) + 6-digit running suffix",
+  "origin": "register"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/full/zflx/r3/builder/assumptions.md #B7",
+  "note": "statement name built from the first word of each name part, single spaces",
+  "origin": "register"
+ }
+]

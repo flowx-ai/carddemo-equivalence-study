@@ -1,0 +1,120 @@
+{
+ "workflow": "<uuid>",
+ "map": {},
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "intcalc_systran",
+  "intcalc_acctdata": "intcalc_acctdata"
+ },
+ "source": "- A2 version 9dfd87f0 (head of the build branch, plan COMPLETED, no retry)\n- START: decoded accounts, categoryBalances, disclosureGroups, cardXrefs; contract field names; MODE records\n- END: result; contract names inside\n- Flags: entries stating silence or inference, each to the rule a divergence would produce",
+ "cr_rule": null,
+ "register": null,
+ "mode": "records",
+ "build": [
+  [
+   "R-INT-TRUNC",
+   102,
+   "rounding TODO; truncate per transaction"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   106,
+   "type and category normalisation unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   107,
+   "group normalisation unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   109,
+   "malformed or duplicate rate rows unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   112,
+   "missing DEFAULT unspecified"
+  ],
+  [
+   "R-INT-RATE",
+   114,
+   "duplicate rows not defined"
+  ],
+  [
+   "R-INT-RATE",
+   115,
+   "duplicate balance rows absent"
+  ],
+  [
+   "R-INT-CYC",
+   117,
+   "cycle reset coverage not explicit"
+  ],
+  [
+   "R-INT-LAST",
+   117,
+   "cycle reset coverage not explicit"
+  ],
+  [
+   "R-INT-CYC",
+   118,
+   "untouched account unstated"
+  ],
+  [
+   "R-INT-LAST",
+   118,
+   "untouched account unstated"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   127,
+   "identifier format unspecified"
+  ],
+  [
+   "R-INT-TXID",
+   128,
+   "suffix width and order absent"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   129,
+   "card selection, missing card"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   131,
+   "timestamp population not supplied"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   132,
+   "merchant id not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   133,
+   "merchant name not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   134,
+   "merchant city not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   135,
+   "merchant zip not specified"
+  ],
+  [
+   "R-INT-RATE",
+   136,
+   "overflow unspecified"
+  ],
+  [
+   "R-INT-TXID",
+   137,
+   "overflow absent"
+  ]
+ ]
+}

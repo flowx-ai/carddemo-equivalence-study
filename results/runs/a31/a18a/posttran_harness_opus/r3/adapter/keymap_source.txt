@@ -1,0 +1,6 @@
+Read from runs/a31/a18a/posttran_harness_opus/r3/exec/workflow_9c7193a9-4657-4302-8575-dae2820ea027.md (and the build's own register) before execution; no output opened.
+- A2 version 80196b16 (head of the build branch, plan PAUSED)
+- START: nine file contents as text; MODE files
+- END: {"postingOutput": {...}}; contract names inside
+- Register: manifest lines 50-76
+- plan PAUSED item_evidence 8/10, own stop under A18, scored as it ended

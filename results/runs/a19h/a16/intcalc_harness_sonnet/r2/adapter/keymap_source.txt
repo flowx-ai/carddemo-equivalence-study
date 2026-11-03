@@ -1,0 +1,2 @@
+Read from runs/a19h/a16/intcalc_harness_sonnet/r2/exec/workflow_1c7646c9-54a5-455f-a012-9e852653ec8a.md before execution; no output opened.
+Files mode: Calculate interest reads input.acctdataText/tcatbalText/discgrpText/cardxrefText, input.businessDate, input.interestRunDate. END: Assemble results writes output={result:{intcalc_systran, intcalc_acctdata, assumptions_md, assumptionsEntries, errors, status}} -> _root result. Register: assumption(...) calls on line 46, each with an absence flag; entries with absence=true and a scored rule are mapped.

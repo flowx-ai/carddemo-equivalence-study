@@ -1,0 +1,5 @@
+Read from runs/a31/a18a/intcalc_harness_sonnet/r2/exec/workflow_c1d8742a-16c0-46a2-b6c1-ad3140bb5995.md (and the build's own register) before execution; no output opened.
+- A2 version 9dfd87f0 (head of the build branch, plan COMPLETED, no retry)
+- START: decoded accounts, categoryBalances, disclosureGroups, cardXrefs; contract field names; MODE records
+- END: result; contract names inside
+- Flags: entries stating silence or inference, each to the rule a divergence would produce

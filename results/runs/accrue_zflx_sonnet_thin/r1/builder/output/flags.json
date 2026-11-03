@@ -1,0 +1,12 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/accrue_script.js:186 (BR-08 TODO truncate vs ROUNDED; assumptions.md A13)"},
+  {"rule": "R-INT-PER-CATEGORY-TRUNC", "source": "flowx/accrue_script.js:186-187 (assumptions.md A14)"},
+  {"rule": "R-RATE-FALLBACK-MISSING", "source": "flowx/accrue_script.js:181 (no STANDARD row: wiki silent; assumptions.md A9)"},
+  {"rule": "R-ZERO-INTEREST-TXN", "source": "flowx/accrue_script.js:185 (rate != 0 but interest 0.00 still written; assumptions.md A15)"},
+  {"rule": "R-LAST-ACCOUNT-UPDATE", "source": "flowx/accrue_script.js:200 (end-of-file rewrite; assumptions.md A22)"},
+  {"rule": "R-TRANID-SUFFIX", "source": "flowx/accrue_script.js:190 (6-digit suffix; assumptions.md A18)"},
+  {"rule": "R-TXN-CARD-NUM", "source": "flowx/accrue_script.js:131 (card via cardlink, lowest number; assumptions.md A11)"},
+  {"rule": "R-TXN-TIMESTAMP", "source": "flowx/accrue_script.js:149 (run time, DB2 format; assumptions.md A20)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/accrue_script.js:149 (non-deterministic run timestamp)"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/accrue_script.js:149 (non-deterministic run timestamp)"}
+]

@@ -1,0 +1,181 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 16,
+  "flags_unneeded": 15,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: exact interest formula and grouping",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: rounding",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+   "line": 18,
+   "note": "AC 2 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 14,
+   "note": "A1 monthly /1200 inferred; wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 20,
+   "note": "A2 truncation; nothing names the mode",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 26,
+   "note": "A3 per category balance; deviates from wiki formula text",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 37,
+   "note": "A5 standard group name not in any source: DEFAULT then STANDARD",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 41,
+   "note": "A6 zero rate: no transaction; silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 46,
+   "note": "A7 negative balances: silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 49,
+   "note": "A8 cycle credit/debit reset assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 60,
+   "note": "A10 accounts without balances unchanged; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 67,
+   "note": "A12 fees: no logic; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 78,
+   "note": "A14 suffix width 6 and start 1 assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 90,
+   "note": "A17 several cards: first in file order; nothing says",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+   "line": 109,
+   "note": "A20 no error path in wiki: log and continue",
+   "origin": "build"
+  }
+ ]
+}

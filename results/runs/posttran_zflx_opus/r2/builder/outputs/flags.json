@@ -1,0 +1,9 @@
+[
+  {"rule": "R-POST-VALIDATION-RULESET", "source": "outputs/assumptions.md A1-A2; 02-processes/process-transaction-posting.md Rule PostingValidation vs TODO 'See CBTRN01-03C source for exact reject reasons'"},
+  {"rule": "R-POST-OVERLIMIT-FORMULA", "source": "outputs/assumptions.md A2, A8; 02-processes/process-transaction-posting.md Rule PostingValidation 'creditLimit - currentBalance'"},
+  {"rule": "R-POST-ACCT-EXPIRY-CHECK", "source": "outputs/assumptions.md A2 (applied only with ruleProfile=LEGACY; wiki silent)"},
+  {"rule": "R-POST-REJECT-CODES", "source": "outputs/assumptions.md A4-A5; wiki gives no codes"},
+  {"rule": "R-POST-CYCLE-CREDIT-DEBIT", "source": "outputs/assumptions.md B2; wiki silent on cycle credit/debit split"},
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "outputs/assumptions.md B4; run-time clock value"},
+  {"output": "posttran_dalyrejs.json", "key": "reason", "source": "outputs/assumptions.md A4"}
+]

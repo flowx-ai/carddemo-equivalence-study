@@ -1,0 +1,79 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "formula default: formula and grouping TODO, rate units not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "rounding TODO, maker chose",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "transaction constants not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "id generation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "cycle convention not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "cycle convention not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "signed balance default",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a31/a18a/intcalc_harness_opus/r2/exec/workflow_48c02e8e-7e95-4873-96ca-c5c2f6be6c94.md",
+  "line": 74,
+  "note": "emission rules not specified",
+  "origin": "build"
+ }
+]

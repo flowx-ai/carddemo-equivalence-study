@@ -1,0 +1,1 @@
+No workflow in the A2 version (main WIP 36de97c3, plan PAUSED goal_at_risk before any write): nothing to execute; every set scored with absent outputs (R-ABSENT), as D4. Flags: the wiki flags only (rubric item 5), written before scoring.

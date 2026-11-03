@@ -1,0 +1,160 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 0.9903,
+  "equivalence_business": 0.9903,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 13,
+  "flags_unneeded": 12,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 53,
+   "intcalc_systran.proc_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1962.13",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 38,
+   "note": "#7 no DEFAULT row: wiki silent; balance earns no interest",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 39,
+   "note": "#8 ten-year rule (BR-03): builder's own flags.json lists #8 as uncertain (R-TENYEAR-BOUNDARY: boundary, clamp, DEFAULT scope)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 43,
+   "note": "#8 open date not 8 digits: wiki does not cover bad dates",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 50,
+   "note": "#10 zero balance with non-zero rate: nothing in the wiki tests the balance; 0.00 transaction written (builder flags it)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 52,
+   "note": "#11 BR-08 TODO: truncation chosen, golden-file test asked",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 56,
+   "note": "#13 AC 7 fees DECISION resolved as keep the stub",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 62,
+   "note": "#14 BR-05 running suffix: width and start not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 63,
+   "note": "#15 description account rendering, listed in builder flags.json",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 66,
+   "note": "#16 card number: BR-04 does not name the card",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 67,
+   "note": "#17 merchant fields: BR-04 lists none",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/zflx/ni2/r1/builder/assumptions.md",
+   "line": 82,
+   "note": "#23 balance for an account missing from acctdata: wiki silent",
+   "origin": "build"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+{"intcalc_systran":"transactions","intcalc_acctdata":"accounts",
+ "_fields":{"transactionId":"tran_id","typeCode":"type_cd","categoryCode":"cat_cd","source":"source","description":"desc","amount":"amt","merchantId":"merchant_id","merchantName":"merchant_name","merchantCity":"merchant_city","merchantZip":"merchant_zip","cardNumber":"card_num","originalTimestamp":"orig_ts","processedTimestamp":"proc_ts",
+  "accountId":"acct_id","activeStatus":"active_status","currentBalance":"curr_bal","creditLimit":"credit_limit","cashCreditLimit":"cash_credit_limit","openDate":"open_date","expiryDate":"expiration_date","reissueDate":"reissue_date","currentCycleCredit":"curr_cyc_credit","currentCycleDebit":"curr_cyc_debit","addressZip":"addr_zip","groupId":"group_id"}}

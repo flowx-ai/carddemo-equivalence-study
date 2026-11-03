@@ -1,0 +1,2 @@
+Read from runs/a20h/a17/accrue_harness_nowiki/r2/exec/workflow_d5b9525c-d6a1-4a31-b76f-eb1720899ba3.md before execution; no output opened.
+Files mode: Transform (lines 95-97) reads input.files['ledgacc.dat','balcat.dat','rategrp.dat','cardlink.dat'] as text (required) and input.businessDate / input.accrueParameter (defaults 2022-07-18 / 2022071800). CheckAssumptions (line 163): output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, status, diagnostics}}. Flags: assume() register lines 47-72; a flag when its basis says the source leaves the point open.

@@ -1,0 +1,133 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version: 33fdcd71 (head of the build branch, committed; plan COMPLETED on R21, no retry)\n- START: transact, acctdata, cardxref, custdata\n- END: {\"result\": ${result}}; contract names inside",
+ "cr_rule": "FICO printed as the band per BR-07; register line 94 cites it and flags only blank or malformed scores. Coarse R-STMT-FICO flag also from 82 (offsets).",
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-NAME",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-ADDR",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-FICO",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-TXN",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-TOTAL",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-SET",
+   82,
+   "offsets derived, copybooks not attached"
+  ],
+  [
+   "R-STMT-BAL",
+   87,
+   "sign encoding not separately stated"
+  ],
+  [
+   "R-STMT-TXN",
+   87,
+   "sign encoding not separately stated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   87,
+   "sign encoding not separately stated"
+  ],
+  [
+   "R-STMT-NAME",
+   89,
+   "name concatenation rules omitted"
+  ],
+  [
+   "R-STMT-ADDR",
+   90,
+   "address assembly not stated"
+  ],
+  [
+   "R-STMT-TXN",
+   92,
+   "cycle filter: wiki says confirm; no filter"
+  ],
+  [
+   "R-STMT-FICO",
+   94,
+   "missing or malformed score unstated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   95,
+   "overflow and padding not stated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   96,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   96,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-BAL",
+   96,
+   "overflow not specified"
+  ],
+  [
+   "R-STMT-SET",
+   97,
+   "duplicate input not stated"
+  ],
+  [
+   "R-STMT-SET",
+   98,
+   "malformed record and missing master recovery omitted"
+  ],
+  [
+   "R-STMT-ABEND",
+   98,
+   "malformed record and missing master recovery omitted"
+  ],
+  [
+   "R-STMT-SET",
+   99,
+   "record delimiter handling not specified"
+  ],
+  [
+   "R-STMT-ABEND",
+   100,
+   "missing file completion not distinguished"
+  ]
+ ]
+}

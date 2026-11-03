@@ -1,0 +1,5 @@
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-creastmt-zflx-sonnet-r2/<uuid>/tool-results/toolu_01FStLmcA5RdR7BDyf6yGWs7.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-creastmt-zflx-sonnet-r2/<uuid>/tool-results/toolu_01FStLmcA5RdR7BDyf6yGWs7.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-creastmt-zflx-sonnet-r2/<uuid>/tool-results/toolu_01FStLmcA5RdR7BDyf6yGWs7.json ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-creastmt-zflx-sonnet-r2/<uuid>/tool-results/toolu_01FStLmcA5RdR7BDyf6yGWs7.json ALLOWED
+outside accesses: 4

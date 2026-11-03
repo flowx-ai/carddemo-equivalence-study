@@ -1,0 +1,4 @@
+[
+  {"tran_id": "0000000000000001", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "Purchase", "amt": "25.50", "merchant_id": 1, "merchant_name": "Shop A", "merchant_city": "Springfield", "merchant_zip": "11111", "card_num": "4111111111111111", "orig_ts": "2022-07-18-10.00.00.000000", "proc_ts": "2026-10-26-09.39.11.940000"},
+  {"tran_id": "0000000000000002", "type_cd": "02", "cat_cd": 2, "source": "POS TERM", "desc": "Refund", "amt": "-10.00", "merchant_id": 1, "merchant_name": "Shop A", "merchant_city": "Springfield", "merchant_zip": "11111", "card_num": "4111111111111111", "orig_ts": "2022-07-18-10.00.00.000000", "proc_ts": "2026-10-26-09.39.11.940000"}
+]

@@ -1,0 +1,152 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- START (register lines 9-10; script lines 66-69, 131-135): transact, cardxref, trantype, trancatg (file contents), startDate, endDate\n- END (register line 11; script line 193): tranrept_report (lines joined by \\n), contract name, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-REPT-SET",
+   27,
+   "2 tie order: the wiki does not say"
+  ],
+  [
+   "R-REPT-SET",
+   34,
+   "4 excluded records and the card break: the wiki does not say"
+  ],
+  [
+   "R-REPT-ACCT",
+   34,
+   "4 excluded records and the card break: the wiki does not say"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   47,
+   "6 unknown reference, AC-5 TODO; blanks are our choice"
+  ],
+  [
+   "R-REPT-XREF",
+   47,
+   "6 unknown xref, AC-5 TODO"
+  ],
+  [
+   "R-REPT-SET",
+   47,
+   "6 unknown reference, AC-5 TODO; run continues"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   57,
+   "7 no final account total; plugin page could be read otherwise"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   62,
+   "8 legacy double add never mentioned by the wiki; not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   62,
+   "8 legacy double add never mentioned by the wiki; not reproduced"
+  ],
+  [
+   "R-REPT-SET",
+   70,
+   "9 page size TODO; 20 from the legacy program"
+  ],
+  [
+   "R-REPT-SET",
+   74,
+   "10 empty report header: the wiki is silent"
+  ],
+  [
+   "R-REPT-SET",
+   78,
+   "11 empty range: header not stated; legacy followed"
+  ],
+  [
+   "R-REPT-AMT",
+   91,
+   "12 amount editing: the wiki only says verify formatting"
+  ],
+  [
+   "R-REPT-HEADER",
+   95,
+   "13 Amount heading spaces read approximately from the contract"
+  ],
+  [
+   "R-REPT-AMT",
+   108,
+   "16 sign encoding not described by the wiki"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   "builder/flags.json",
+   2,
+   "builder flag: final account total"
+  ],
+  [
+   "R-REPT-LASTDUP",
+   "builder/flags.json",
+   3,
+   "builder flag: legacy re-add not reproduced"
+  ],
+  [
+   "R-REPT-GRAND",
+   "builder/flags.json",
+   3,
+   "builder flag: last page total / grand total"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   4,
+   "builder flag: page breaks, page size TODO"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   5,
+   "builder flag: empty-range report"
+  ],
+  [
+   "R-REPT-AMT",
+   "builder/flags.json",
+   6,
+   "builder flag: zero amounts"
+  ],
+  [
+   "R-REPT-HEADER",
+   "builder/flags.json",
+   7,
+   "builder flag: column header Amount"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   "builder/flags.json",
+   8,
+   "builder flag: missing reference data, wiki TODO"
+  ],
+  [
+   "R-REPT-XREF",
+   "builder/flags.json",
+   8,
+   "builder flag: missing xref, wiki TODO"
+  ],
+  [
+   "R-REPT-SET",
+   "builder/flags.json",
+   8,
+   "builder flag: missing reference data, run continues"
+  ]
+ ],
+ "cr_rule": "4: type 01 / category 0005 excluded: no line, in no total, no card break; dropped before the break logic (BR-07, acceptance 7). States 'The wiki does not say how an excluded record relates to the card break' (R-REPT-SET). Not in builder flags.json."
+}

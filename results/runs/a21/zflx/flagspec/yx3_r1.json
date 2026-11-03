@@ -1,0 +1,70 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transactDat",
+  "acctdata": "acctdataDat",
+  "cardxref": "cardxrefDat",
+  "custdata": "custdataDat"
+ },
+ "decode": null,
+ "source": "- START (register lines 9-14, 128; script lines 69-109): transactDat, acctdataDat, cardxrefDat, custdataDat (file contents)\n- END (register lines 12-13; script lines 349-350): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-STMT-SET",
+   40,
+   "B2 whether one account's cards are merged: the wiki does not say"
+  ],
+  [
+   "R-STMT-TXN",
+   40,
+   "B2 whether one account's cards are merged: the wiki does not say"
+  ],
+  [
+   "R-STMT-TXN",
+   43,
+   "B3 cycle-filter TODO; no filter"
+  ],
+  [
+   "R-STMT-ABEND",
+   49,
+   "B5 missing customer or account: wiki silent; card skipped"
+  ],
+  [
+   "R-STMT-SET",
+   49,
+   "B5 missing customer or account: wiki silent; card skipped"
+  ],
+  [
+   "R-STMT-NAME",
+   54,
+   "C1 name: the wiki says only customer name; legacy followed"
+  ],
+  [
+   "R-STMT-ADDR",
+   54,
+   "C1/C2 address formatting not defined by the acceptance criteria; legacy followed"
+  ],
+  [
+   "R-STMT-NAME",
+   70,
+   "C4 HTML name has no field width; cut at the first double space"
+  ],
+  [
+   "R-STMT-ADDR",
+   70,
+   "C4 HTML address has no field width; cut at the first double space"
+  ],
+  [
+   "R-STMT-BAL",
+   76,
+   "C6 balance overflow: wiki silent"
+  ],
+  [
+   "R-STMT-FICO",
+   85,
+   "C7 blank or non-numeric score: the wiki does not say what to print; treated as 0 (Poor)"
+  ]
+ ],
+ "cr_rule": "C7: FICO field prints the BR-07 band (below 580 Poor, 580-669 Fair, 670-739 Good, 740-799 Very Good, 800+ Exceptional). Flags only the missing-score case (wiki silent; R-STMT-FICO)."
+}

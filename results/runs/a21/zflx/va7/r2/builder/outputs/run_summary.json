@@ -1,0 +1,13 @@
+{
+  "source": "FlowX workflow posttran_daily_transaction_posting (app cd_a21_va7_zflx_r2, resourceId <uuid>), run 6ae1dbec3695c563ea50ab27 on ../test-inputs/*.dat (SYNTHETIC test feed, not the CardDemo data files)",
+  "batchId": "POSTTRAN-TEST-01",
+  "businessDate": "2022-07-18",
+  "transactionsProcessed": 13,
+  "transactionsPosted": 7,
+  "transactionsRejected": 6,
+  "newCategoryBalances": 2,
+  "countsBalanced": true,
+  "status": "WARNING",
+  "returnCode": 4,
+  "processedTimestamp": "2026-10-28-11.26.37.030000"
+}

@@ -1,0 +1,5 @@
+Read from runs/a30/a18a/tranrept_harness_sonnet/r1/exec/workflow_074d1bab-b259-4095-9d9e-11a102d94cf7.md (and the build's own register) before execution; no output opened.
+- A2 version 687a6faf (head of the build branch, plan COMPLETED, no retry)
+- START: transact_dat, cardxref_dat, trantype_dat, trancatg_dat = file text, startDate, endDate; MODE files
+- END: {"result": ${result}}; tranrept_report inside
+- Register: rows lines 46-75

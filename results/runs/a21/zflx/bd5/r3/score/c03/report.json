@@ -1,0 +1,338 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.88,
+  "equivalence_business": 0.88,
+  "divergent_records": 12,
+  "silent_records": 0,
+  "flagged_records": 12,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ABEND"
+  ],
+  "flags_raised": 26,
+  "flags_unneeded": 24,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9369
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9375
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 44,
+   "candidate": 50,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 44,
+   "candidate": 50,
+   "equal_strict": 44,
+   "equal_business": 44,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-ABEND/flagged": 12
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-STMT-ABEND",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 57,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 67,
+   "note": "B2 cycle-filter TODO never confirmed; legacy kept (no filter)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 79,
+   "note": "B5 orphan transactions not printed; the wiki has no such output",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 83,
+   "note": "B6 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 117,
+   "note": "C2 name assembly (legacy-derived); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 126,
+   "note": "C3 address line 3 (legacy-derived, country included); AC does not define the format",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 2,
+   "note": "builder flag: customer name, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 3,
+   "note": "builder flag: address line 3, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 4,
+   "note": "builder flag: Total EXP, 'BR-03 carries a TODO'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 5,
+   "note": "builder flag: skipped cards, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 6,
+   "note": "builder flag: no cycle filter, wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

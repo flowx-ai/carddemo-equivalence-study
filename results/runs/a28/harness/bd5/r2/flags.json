@@ -1,0 +1,254 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 27,
+  "note": "cycle filter TODO; all transactions, maker-confirmed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 28,
+  "note": "no concatenation rule; implementation assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 28,
+  "note": "no concatenation rule; implementation assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 29,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 29,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 29,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 29,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 30,
+  "note": "account, xref and transaction offsets are assumptions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 30,
+  "note": "account, xref and transaction offsets are assumptions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 30,
+  "note": "account, xref and transaction offsets are assumptions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 30,
+  "note": "account, xref and transaction offsets are assumptions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 31,
+  "note": "statement-input sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 31,
+  "note": "statement-input sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 31,
+  "note": "statement-input sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 32,
+  "note": "orphan transaction handling not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 33,
+  "note": "trimming and blank FICO display unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 33,
+  "note": "trimming and blank FICO display unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 34,
+  "note": "duplicate and malformed record handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 34,
+  "note": "duplicate and malformed record handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 35,
+  "note": "newline, empty and missing input semantics unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 36,
+  "note": "overflow behaviour and HTML substitution widths not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 36,
+  "note": "overflow behaviour and HTML substitution widths not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 37,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 37,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 37,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 37,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 38,
+  "note": "escaping not specified; conceptual content omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 38,
+  "note": "escaping not specified; conceptual content omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a28/harness/bd5/r2/exec/workflow_0d397d2e-465b-4aee-aad1-8fec85180332.md",
+  "line": 38,
+  "note": "escaping not specified; conceptual content omitted",
+  "origin": "build"
+ }
+]

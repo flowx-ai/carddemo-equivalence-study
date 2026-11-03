@@ -1,0 +1,13 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md #12 (wiki BR-08 TODO truncate vs ROUNDED; chose truncation toward zero)"},
+  {"rule": "ACCRUE-LAST-ACCOUNT-UPDATE", "source": "assumptions.md #17 (wiki BR-06 'at each change of account'; last account also updated)"},
+  {"rule": "ACCRUE-ZERO-AMOUNT-TXN", "source": "assumptions.md #11 (non-zero rate with 0.00 interest still writes a transaction)"},
+  {"rule": "ACCRUE-STANDARD-MISSING", "source": "assumptions.md #10 (no STANDARD row -> rate 0, no interest)"},
+  {"rule": "ACCRUE-UNKNOWN-ACCOUNT", "source": "assumptions.md #20 (category balance for missing account skipped)"},
+  {"output": "accrue_systxn.json", "key": "card_num", "source": "assumptions.md #15 (lowest card for the account from cardlink; wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "assumptions.md #16 (run timestamp; wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "assumptions.md #16 (run timestamp; wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "desc", "source": "assumptions.md #13 (account id rendered as 11-digit zero-padded)"},
+  {"output": "accrue_systxn.json", "key": "tran_id", "source": "assumptions.md #14 (6-digit suffix from 000001, one counter per run)"},
+  {"output": "accrue_systxn.json", "key": "merchant_id", "source": "assumptions.md #13 (merchant fields default 0 / empty; wiki silent)"}
+]

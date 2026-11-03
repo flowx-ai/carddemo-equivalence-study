@@ -1,0 +1,5 @@
+Read from runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md (and the build's own register) before execution; no output opened.
+- A2 version c6835c1c (head of the build branch, plan COMPLETED, no retry)
+- START: fileContents{acctdata,cardxref,tcatbal,discgrp} text, interestRunDate, businessDate; MODE files
+- END: result{intcalc_systran_json,intcalc_acctdata_json,...}
+- Register: assumption table lines 68-121

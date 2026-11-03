@@ -1,0 +1,171 @@
+{
+ "build": "cd_a32_kk7_zflx_r3",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/full_zflx/zFLX-full",
+ "context": {
+  "workspaceId": "<uuid>",
+  "appId": "<uuid>",
+  "appVersionId": "<uuid>"
+ },
+ "steps": {
+  "acctext": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "acctdata.dat": "acctdata"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "acctext_out.json": "acctext_out",
+    "acctext_array.json": "acctext_array",
+    "acctext_vb.json": "acctext_vb",
+    "acctext_sysout.txt": "acctext_sysout"
+   },
+   "rc": "acctext_rc",
+   "fields": {}
+  },
+  "cardprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "carddata.dat": "carddata"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "cardprint_sysout.txt": "cardprint_sysout"
+   },
+   "rc": "cardprint_rc",
+   "fields": {}
+  },
+  "xrefprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "cardxref.dat": "cardxref"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "xrefprint_sysout.txt": "xrefprint_sysout"
+   },
+   "rc": "xrefprint_rc",
+   "fields": {}
+  },
+  "custprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "custprint_sysout.txt": "custprint_sysout"
+   },
+   "rc": "custprint_rc",
+   "fields": {}
+  },
+  "dailycheck": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "dailytran.dat": "dailytran",
+    "cardxref.dat": "cardxref",
+    "acctdata.dat": "acctdata",
+    "custdata.dat": "custdata",
+    "carddata.dat": "carddata",
+    "transact.dat": "transact"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "dailycheck_sysout.txt": "dailycheck_sysout"
+   },
+   "rc": "dailycheck_rc",
+   "fields": {}
+  },
+  "export": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata",
+    "acctdata.dat": "acctdata",
+    "cardxref.dat": "cardxref",
+    "transact.dat": "transact",
+    "carddata.dat": "carddata"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "export.json": "export",
+    "export_sysout.txt": "export_sysout"
+   },
+   "rc": "export_rc",
+   "fields": {}
+  },
+  "import": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "export.json": "export"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "import_customers.json": "import_customers",
+    "import_accounts.json": "import_accounts",
+    "import_card_xref.json": "import_card_xref",
+    "import_transactions.json": "import_transactions",
+    "import_cards.json": "import_cards",
+    "import_errors.json": "import_errors",
+    "import_sysout.txt": "import_sysout"
+   },
+   "rc": "import_rc",
+   "fields": {}
+  },
+  "posttran": {
+   "workflow": "<uuid>",
+   "map": {
+    "dailytran": "dailytran",
+    "acctdata": "acctdata",
+    "cardxref": "cardxref",
+    "tcatbal": "tcatbal"
+   },
+   "decode": null
+  },
+  "intcalc": {
+   "workflow": "<uuid>",
+   "map": {
+    "acctdata": "acctdata",
+    "tcatbal": "tcatbal",
+    "discgrp": "discgrp",
+    "cardxref": "cardxref",
+    "intcalc_parm": "parm"
+   },
+   "decode": null
+  },
+  "creastmt": {
+   "workflow": "<uuid>",
+   "map": {
+    "transact": "transact",
+    "acctdata": "acctdata",
+    "cardxref": "cardxref",
+    "custdata": "custdata"
+   },
+   "decode": null
+  },
+  "tranrept": {
+   "workflow": "<uuid>",
+   "map": {
+    "transact": "transact",
+    "cardxref": "cardxref",
+    "trantype": "trantype",
+    "trancatg": "trancatg",
+    "start_date": "start_date",
+    "end_date": "end_date"
+   },
+   "decode": null
+  }
+ }
+}

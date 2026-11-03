@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 61,
+  "note": "complete copybooks absent; printed tables used",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 63,
+  "note": "rate width vs 5-char example: conflict unresolved",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 64,
+  "note": "overpunch alphabet omitted by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 65,
+  "note": "category/account processing order: ties and input order not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 66,
+  "note": "suffix width, initial value, reset not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 67,
+  "note": "card selection / missing card not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 68,
+  "note": "merchant details not populated by BR-04",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 69,
+  "note": "no time-of-day rule for timestamps",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 70,
+  "note": "accounts absent from balance input not addressed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 71,
+  "note": "no rounded-zero suppression rule stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 72,
+  "note": "aggregation order of rounded amounts not explicit",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 73,
+  "note": "fee scenario DECISION unresolved; stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 74,
+  "note": "missing DEFAULT recovery not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a19h/a16/intcalc_harness_sonnet/r1/exec/workflow_fd3cebf0-e124-49be-895b-37127af02677.md",
+  "line": 75,
+  "note": "duplicate/malformed record recovery not defined",
+  "origin": "build"
+ }
+]

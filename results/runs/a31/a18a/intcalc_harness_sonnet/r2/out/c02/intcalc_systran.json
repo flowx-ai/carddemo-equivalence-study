@@ -1,0 +1,32 @@
+[
+ {
+  "tran_id": "2022071800000001",
+  "type_cd": "01",
+  "cat_cd": 5,
+  "source": "System",
+  "desc": "Int. for a/c 00000000001",
+  "amt": "23.29",
+  "merchant_id": 0,
+  "merchant_name": "",
+  "merchant_city": "",
+  "merchant_zip": "",
+  "card_num": "9680294154603697",
+  "orig_ts": "2022-07-18 00:00:00.000000",
+  "proc_ts": "2022-07-18 00:00:00.000000"
+ },
+ {
+  "tran_id": "2022071800000002",
+  "type_cd": "01",
+  "cat_cd": 5,
+  "source": "System",
+  "desc": "Int. for a/c 00000000003",
+  "amt": "32.38",
+  "merchant_id": 0,
+  "merchant_name": "",
+  "merchant_city": "",
+  "merchant_zip": "",
+  "card_num": "3999169246375885",
+  "orig_ts": "2022-07-18 00:00:00.000000",
+  "proc_ts": "2022-07-18 00:00:00.000000"
+ }
+]

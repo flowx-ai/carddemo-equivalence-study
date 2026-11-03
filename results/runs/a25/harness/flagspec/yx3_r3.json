@@ -1,0 +1,154 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version: 28d6678b (head of the build branch, committed; plan PAUSED goal_at_risk at step 4 of 4, prove-statement-bands, after two A8 retries of harness-attributed item_evidence pauses; classification of the stop recorded in chain.log)\n- START (Read input records, lines 37-40): input.transact, acctdata, cardxref, custdata = file text strings, contract names (identity map)\n- END: Generate statements (line 178) writes creastmt_statements and creastmt_statements_html (newline-joined strings) at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: contract names, no decode map\n- MODE files\n- Register: assumptions_md numbered entries 1-17 at lines 161-177 (one per line)",
+ "build": [
+  [
+   "R-STMT-NAME",
+   162,
+   "CUSTREC vs CVCUS01Y equivalence unverified; positions inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   162,
+   "positions inferred; equivalence unverified"
+  ],
+  [
+   "R-STMT-FICO",
+   162,
+   "positions inferred; equivalence unverified"
+  ],
+  [
+   "R-STMT-BAL",
+   162,
+   "copybooks absent; positions inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   162,
+   "copybooks absent; positions inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   162,
+   "copybooks absent; positions inferred"
+  ],
+  [
+   "R-STMT-SET",
+   162,
+   "copybooks absent; key positions inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   164,
+   "encoding rules incomplete"
+  ],
+  [
+   "R-STMT-TXN",
+   164,
+   "encoding rules incomplete"
+  ],
+  [
+   "R-STMT-TOTAL",
+   164,
+   "encoding rules incomplete"
+  ],
+  [
+   "R-STMT-NAME",
+   166,
+   "assembly expression absent; maker choice"
+  ],
+  [
+   "R-STMT-ADDR",
+   167,
+   "assembly expression absent; country excluded, maker choice"
+  ],
+  [
+   "R-STMT-SET",
+   168,
+   "account wording on p.21 resolved"
+  ],
+  [
+   "R-STMT-TXN",
+   168,
+   "account wording on p.21 resolved"
+  ],
+  [
+   "R-STMT-TXN",
+   169,
+   "cycle filtering TODO; no filter"
+  ],
+  [
+   "R-STMT-SET",
+   170,
+   "duplicates and statement-level continuation not specified"
+  ],
+  [
+   "R-STMT-ABEND",
+   170,
+   "continuation not specified"
+  ],
+  [
+   "R-STMT-SET",
+   171,
+   "malformed handling TODO"
+  ],
+  [
+   "R-STMT-TXN",
+   171,
+   "malformed handling TODO"
+  ],
+  [
+   "R-STMT-FICO",
+   172,
+   "missing/invalid score rendering unstated"
+  ],
+  [
+   "R-STMT-BAL",
+   173,
+   "overflow and zero suppression not stated"
+  ],
+  [
+   "R-STMT-TXN",
+   173,
+   "overflow and zero suppression not stated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   173,
+   "overflow and zero suppression not stated"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   173,
+   "overflow not stated"
+  ],
+  [
+   "R-STMT-NAME",
+   174,
+   "no escaping rule"
+  ],
+  [
+   "R-STMT-ADDR",
+   174,
+   "no escaping rule"
+  ],
+  [
+   "R-STMT-TOTAL",
+   175,
+   "HTML total row: p.21 vs pp.27-29"
+  ],
+  [
+   "R-STMT-OTHER",
+   175,
+   "repeated separator entries interpreted"
+  ]
+ ],
+ "cr_rule": "line 77 fico(): five BR-07 thresholds applied literally to any decoded score of 1-3 digits; register entry 12 (line 172) states the bands as behaviour and flags only blank/non-numeric FICO (R-STMT-FICO); coarse R-STMT-FICO flag from positions (line 162)."
+}

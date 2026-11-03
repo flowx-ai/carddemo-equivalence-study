@@ -1,0 +1,136 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 14,
+  "flags_unneeded": 14,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 50,
+   "intcalc_systran.orig_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 28,
+   "note": "A-02 overpunch beyond the rate is an assumption",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 41,
+   "note": "A-05 duplicates: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-LAST",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 45,
+   "note": "A-06 final account NOT rewritten (literal BR-06), conflicts with AC 3",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 52,
+   "note": "A-07 BR-08 TODO open",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 57,
+   "note": "A-08 credit balances: wiki says nothing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 61,
+   "note": "A-09 STANDARD missing too: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 71,
+   "note": "A-12 fees DECISION resolved as keep stub",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 73,
+   "note": "A-13 orphan balances: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 80,
+   "note": "A-14 suffix width and start not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 84,
+   "note": "A-15 desc padding not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 85,
+   "note": "A-16 card number: BR-04 does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 88,
+   "note": "A-17 merchant fields: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/accrue_zflx_sonnet/r3/builder/assumptions.md",
+   "line": 100,
+   "note": "A-21 overflow: wiki silent",
+   "origin": "build"
+  }
+ ]
+}

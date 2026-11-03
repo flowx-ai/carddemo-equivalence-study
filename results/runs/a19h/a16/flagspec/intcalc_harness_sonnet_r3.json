@@ -1,0 +1,153 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "acctdata",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "cardxref": "cardxref",
+  "intcalc_parm": "interestRunDate",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "Files mode: Calculate interest reads input[acctdata|tcatbal|discgrp|cardxref] as text, input.businessDate, input.interestRunDate. END: Render report writes output={result:{intcalc_systran, intcalc_acctdata, assumptions, assumptions_md, status, errors}} -> _root result. Register: fact(id, assumption, basis, pages) calls on line 46; an entry is a flag if its basis says the pages do not specify the point.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-RATE",
+   46,
+   "[account-offsets] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[xref-offsets] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[balance-offsets] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[rate-offsets] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[implied-decimals] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[overpunch] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[rate-width] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[balance-order] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[duplicate-balances] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[suffix-initial] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[suffix-width] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXID",
+   46,
+   "[suffix-order] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[card-selection] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[card-absence] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[merchant-id] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[merchant-name] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[merchant-city] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[merchant-zip] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[original-time] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   46,
+   "[processed-time] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[missing-default] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[missing-account] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-RATE",
+   46,
+   "[duplicate-rates] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-CYC",
+   46,
+   "[zero-rate-reset] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-CYC",
+   46,
+   "[no-balance-account] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-LAST",
+   46,
+   "[final-account] basis: not specified in the supplied pages"
+  ],
+  [
+   "R-INT-ZERO",
+   46,
+   "[nonzero-rounded-zero] basis: not specified in the supplied pages"
+  ]
+ ]
+}

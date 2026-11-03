@@ -1,0 +1,80 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "postingResult"
+ },
+ "source": "Files mode: Read and post reads input[dailytran|acctdata|cardxref|tcatbal|discgrp|custdata|carddata|trantype|trancatg] (absent = empty; only the first four decoded), input.businessDate, input.processingTimestamp (optional: absent -> UTC now captured once; left unset, as every POSTTRAN execution). END: Finalize result writes output={postingResult:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, assumptions, assumptions_md, summary, errors}} -> _root postingResult. Register: assumption(a, basis, consequence) calls on line 45 (28 entries).",
+ "wiki": [
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+   63,
+   "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   "builds/inputs/cr2-posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   62,
+   "DECISION: keep or collect all reject reasons"
+  ]
+ ],
+ "build": [
+  [
+   "R-POST-COPY",
+   45,
+   "[entry 1] transaction slices inferred: copybook offsets absent"
+  ],
+  [
+   "R-POST-BAL",
+   45,
+   "[entry 2] account slices inferred: copybook offsets absent"
+  ],
+  [
+   "R-POST-COPY",
+   45,
+   "[entry 3] cross-reference slices inferred: copybook offsets absent"
+  ],
+  [
+   "R-POST-TCAT",
+   45,
+   "[entry 4] category-balance slices inferred: copybook offsets absent"
+  ],
+  [
+   "R-POST-BAL",
+   45,
+   "[entry 6] external sign encoding not specified"
+  ],
+  [
+   "R-POST-COPY",
+   45,
+   "[entry 6] external sign encoding not specified"
+  ],
+  [
+   "R-POST-103",
+   45,
+   "[entry 13] timestamp parsing and malformed-date handling not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   45,
+   "[entry 16] replacement IDs not expressly required"
+  ],
+  [
+   "R-POST-WRITE",
+   45,
+   "[entry 17] duplicate transaction-ID policy not specified"
+  ],
+  [
+   "R-POST-BAL",
+   45,
+   "[entry 21] duplicate master-key resolution not specified"
+  ]
+ ]
+}

@@ -1,0 +1,5 @@
+A17 harness arm on the A20 image: COMPLETE, 12 of 12 builds scored (2026-10-28).
+Summary r2 retried once under A22 (first attempt D3 kept, not scored). Code r3 ended on harness defect D4 (plan PAUSED
+goal_at_risk, no workflow), scored R-ABSENT; it was the last build, so no build was left unrun.
+Results: runs/a20h/a17/SUMMARY.md; defects: runs/a20h/HARNESS_DEFECTS.md; notebook §68.
+dev-env is free: no harness build or execution of this arm is in flight.

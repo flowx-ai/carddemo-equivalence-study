@@ -1,0 +1,2 @@
+106d105
+< if(row.group_id==='')throw new Error('Empty group_id')

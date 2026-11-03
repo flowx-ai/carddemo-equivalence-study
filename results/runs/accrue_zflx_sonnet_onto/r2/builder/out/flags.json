@@ -1,0 +1,15 @@
+[
+ {"rule": "R-LAST-ACCOUNT-REWRITE", "source": "out/assumptions.md:11"},
+ {"rule": "R-INT-TRUNC", "source": "out/assumptions.md:24"},
+ {"rule": "R-NEGATIVE-BALANCE-INTEREST", "source": "out/assumptions.md:33"},
+ {"rule": "R-ZERO-AMOUNT-TXN", "source": "out/assumptions.md:39"},
+ {"rule": "R-TRANID-SUFFIX", "source": "out/assumptions.md:45"},
+ {"rule": "R-XREF-CARD-CHOICE", "source": "out/assumptions.md:58"},
+ {"rule": "R-STANDARD-MISSING", "source": "out/assumptions.md:78"},
+ {"rule": "R-ACCOUNT-MISSING", "source": "out/assumptions.md:86"},
+ {"rule": "R-ZERO-RATE-ACCOUNT-REWRITE", "source": "out/assumptions.md:92"},
+ {"rule": "R-FEES", "source": "out/assumptions.md:109"},
+ {"rule": "R-OVERFLOW", "source": "out/assumptions.md:129"},
+ {"output": "accrue_systxn.json", "key": "orig_ts", "source": "out/assumptions.md:71"},
+ {"output": "accrue_systxn.json", "key": "proc_ts", "source": "out/assumptions.md:71"}
+]

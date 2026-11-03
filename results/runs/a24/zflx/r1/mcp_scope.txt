@@ -1,0 +1,1 @@
+own appId <uuid>; mcp calls 316; outside-scope calls 0

@@ -1,0 +1,237 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 0.9903,
+  "equivalence_business": 0.9903,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 23,
+  "flags_unneeded": 23,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 53,
+   "intcalc_systran.orig_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1962.13",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 74,
+   "note": "R-TEXT-ENCODING: newline handling not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 75,
+   "note": "R-LAYOUT: field summaries only, not complete copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 75,
+   "note": "R-LAYOUT: field summaries only, not complete copybooks",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 76,
+   "note": "R-RATE-WIDTH: picture conflicts with the example",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 77,
+   "note": "R-NUMERIC-DECODE: alternative sign forms not fully specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 77,
+   "note": "R-NUMERIC-DECODE: alternative sign forms not fully specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 80,
+   "note": "R-DATE-PRECEDENCE: precedence for differing run dates unspecified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 81,
+   "note": "R-LEAP-ANNIVERSARY: BR-03 does not define a non-leap counterpart",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 82,
+   "note": "R-INT-TRUNC: BR-08 requests golden-file confirmation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 83,
+   "note": "R-ZERO-AMOUNT: negative and sub-cent outcomes not separately specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 84,
+   "note": "R-ACCOUNT-COVERAGE: unencountered-account reset unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 84,
+   "note": "R-ACCOUNT-COVERAGE: unencountered-account reset unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 85,
+   "note": "R-DUPLICATES: duplicate handling not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 85,
+   "note": "R-DUPLICATES: duplicate handling not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 86,
+   "note": "R-CARD-SELECTION: which linked card is not said",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 87,
+   "note": "R-ID-SEQUENCE: suffix initialization and ordering not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 88,
+   "note": "R-MERCHANT-DEFAULTS: merchant values not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 89,
+   "note": "R-TIMESTAMPS: punctuation and clock not provided",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 91,
+   "note": "R-PER-RECORD-FAILURE: malformed records and missing DEFAULT not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 92,
+   "note": "R-ACCOUNT-ATOMICITY: partial per-account updates not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 92,
+   "note": "R-ACCOUNT-ATOMICITY: partial per-account updates not defined",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a21/harness/ni2/r3/exec/workflow_1f0fe62b-cb4e-4942-bd3d-0a84bf0bdfde.md",
+   "line": 94,
+   "note": "R-REPRESENTATION: overflow not specified",
+   "origin": "build"
+  }
+ ]
+}

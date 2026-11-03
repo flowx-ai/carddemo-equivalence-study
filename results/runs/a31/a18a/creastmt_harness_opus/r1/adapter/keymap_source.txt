@@ -1,0 +1,6 @@
+Read from runs/a31/a18a/creastmt_harness_opus/r1/exec/workflow_2a72075f-cc14-4752-96b3-5964e770c497.md (and the build's own register) before execution; no output opened.
+- A2 version 88b17fd2 (head of the build branch, plan COMPLETED)
+- START: transact, acctdata, cardxref, custdata; MODE files
+- END: {"result": {...}}; contract names inside
+- Register: manifest lines line 46 (add entries)
+- A2 retry 1 after a platform HTTP 500, plan COMPLETED

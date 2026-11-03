@@ -1,0 +1,107 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 15,
+  "note": "A1 divisor 1200 inferred; no source states it",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 26,
+  "note": "A2 truncation; AC TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 34,
+  "note": "A3 driver: ontology over process page 'for each account'",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 50,
+  "note": "A5 standard group literal not given: STANDARD then DEFAULT; none: no interest",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 67,
+  "note": "A7 cycle reset: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 76,
+  "note": "A8 account missing from ledgacc: wiki silent; skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 81,
+  "note": "A9 several cards: ontology silent; first in file order",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 88,
+  "note": "A10 zero rate: no transaction; zero balance: 0.00 transaction",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 100,
+  "note": "A11 suffix width inferred, start not documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 117,
+  "note": "A13 sign encoding not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 127,
+  "note": "A14 no overflow emulation: silence",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r3/builder/output/assumptions.md",
+  "line": 132,
+  "note": "A15 fees: no behaviour documented",
+  "origin": "build"
+ }
+]

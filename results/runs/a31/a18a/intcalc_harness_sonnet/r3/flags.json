@@ -1,0 +1,128 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 50,
+  "note": "offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 56,
+  "note": "rounding confirmation left open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 61,
+  "note": "suffix origin not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 62,
+  "note": "id split inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 63,
+  "note": "timestamps not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 64,
+  "note": "card selection not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 65,
+  "note": "merchant values not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 67,
+  "note": "reset scope inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 67,
+  "note": "reset scope inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 69,
+  "note": "absent DEFAULT, malformed rate not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 70,
+  "note": "duplicate keys not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 72,
+  "note": "malformed recovery not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 73,
+  "note": "overflow not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a31/a18a/intcalc_harness_sonnet/r3/exec/workflow_6a2aaf96-6f91-44b2-b0c5-34fa7c083b21.md",
+  "line": 73,
+  "note": "overflow not specified",
+  "origin": "build"
+ }
+]

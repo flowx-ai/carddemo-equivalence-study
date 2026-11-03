@@ -1,0 +1,69 @@
+{
+ "cr": "cr7",
+ "rule": "R-REPT-SET",
+ "outcome": "followed the change",
+ "outcome_build_flags_only": "followed the change",
+ "cr_rule_flagged_by_build": true,
+ "total": {
+  "F": 491,
+  "K": 0,
+  "X": 5,
+  "K_silent": 0,
+  "K_rule_not_silent": 0,
+  "K_silent_build_flags_only": 0
+ },
+ "per_set": {
+  "base": {
+   "changed": 99,
+   "F": 98,
+   "K": 0,
+   "X": 1,
+   "K_silent": 0,
+   "K_rule_not_silent": 0,
+   "K_silent_build_flags_only": 0
+  },
+  "c01": {
+   "changed": 99,
+   "F": 98,
+   "K": 0,
+   "X": 1,
+   "K_silent": 0,
+   "K_rule_not_silent": 0,
+   "K_silent_build_flags_only": 0
+  },
+  "c02": {
+   "changed": 97,
+   "F": 96,
+   "K": 0,
+   "X": 1,
+   "K_silent": 0,
+   "K_rule_not_silent": 0,
+   "K_silent_build_flags_only": 0
+  },
+  "c03": {
+   "changed": 99,
+   "F": 98,
+   "K": 0,
+   "X": 1,
+   "K_silent": 0,
+   "K_rule_not_silent": 0,
+   "K_silent_build_flags_only": 0
+  },
+  "c04": {
+   "changed": 102,
+   "F": 101,
+   "K": 0,
+   "X": 1,
+   "K_silent": 0,
+   "K_rule_not_silent": 0,
+   "K_silent_build_flags_only": 0
+  }
+ },
+ "cr_rule_divergences_on_unchanged_records": {
+  "base": 0,
+  "c01": 0,
+  "c02": 0,
+  "c03": 0,
+  "c04": 0
+ }
+}

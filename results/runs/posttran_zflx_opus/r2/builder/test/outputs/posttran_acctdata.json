@@ -1,0 +1,5 @@
+[
+  {"acct_id": 1, "active_status": "Y", "curr_bal": "1000.00", "credit_limit": "5000.00", "cash_credit_limit": "1500.00", "open_date": "2014-11-20", "expiration_date": "2025-05-20", "reissue_date": "2025-05-20", "curr_cyc_credit": "50.00", "curr_cyc_debit": "-50.00", "addr_zip": "A000000000", "group_id": "A000000000"},
+  {"acct_id": 2, "active_status": "N", "curr_bal": "0.00", "credit_limit": "1000.00", "cash_credit_limit": "500.00", "open_date": "2014-11-20", "expiration_date": "2025-05-20", "reissue_date": "2025-05-20", "curr_cyc_credit": "0.00", "curr_cyc_debit": "0.00", "addr_zip": "A000000001", "group_id": "A000000000"},
+  {"acct_id": 3, "active_status": "Y", "curr_bal": "5000.00", "credit_limit": "5000.00", "cash_credit_limit": "1500.00", "open_date": "2014-11-20", "expiration_date": "2025-05-20", "reissue_date": "2025-05-20", "curr_cyc_credit": "200.00", "curr_cyc_debit": "-50.00", "addr_zip": "A000000002", "group_id": "A000000000"}
+]

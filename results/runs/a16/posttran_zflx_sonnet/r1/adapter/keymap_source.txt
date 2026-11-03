@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_57446f92-...md, script lines 77-133, 164, 274-305) and builder/README.md, before execution:
+- START inputs dailytran, acctdata, cardxref, tcatbal (raw fixed-width text); businessDate optional (CONTRACT run parameter passed, as A11); processedTimestamp and batchId left unset (A4)
+- END keys posttran_transact/dalyrejs/acctdata/tcatbal, each a JSON string of the contract list -> decode.json identity names (the adapter parses a list returned as a string; pure renaming)

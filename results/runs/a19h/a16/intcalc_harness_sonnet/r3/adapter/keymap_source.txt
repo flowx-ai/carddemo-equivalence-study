@@ -1,0 +1,2 @@
+Read from runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md before execution; no output opened.
+Files mode: Calculate interest reads input[acctdata|tcatbal|discgrp|cardxref] as text, input.businessDate, input.interestRunDate. END: Render report writes output={result:{intcalc_systran, intcalc_acctdata, assumptions, assumptions_md, status, errors}} -> _root result. Register: fact(id, assumption, basis, pages) calls on line 46; an entry is a flag if its basis says the pages do not specify the point.

@@ -1,0 +1,64 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "_lists": {
+   "cardXrefs": "cardLinks"
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Records mode: Calculate interest (line 45) reads input.accounts, categoryBalances, disclosureGroups, cardLinks as arrays of records with contract field names (acct_id, group_id, curr_bal, curr_cyc_credit, curr_cyc_debit; acct_id/type_cd/cat_cd/bal; group_id/type_cd/cat_cd/interest_rate; acct_id/card_num), so the only renaming is the list cardXrefs -> cardLinks. businessDate and interestRunDate default to 2022-07-18 and 2022071800 when absent (records mode supplies no parameters, as in every records-mode run). Package results (line 51): output={result:{accrue_systxn, accrue_ledgacc, assumptions, assumptions_md, status, errors}}. Flags: assumptionFacts register on line 45; an entry is a flag when its wikiBasis says the wiki leaves the point open.",
+ "wiki": [
+  [
+   "R-INT-TRUNC",
+   "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   64,
+   "BR-08 TODO: confirm rounding mode (cited by the precision entry)"
+  ]
+ ],
+ "build": [
+  [
+   "R-INT-TRUNC",
+   45,
+   "precision: BR-08 leaves confirmation open; per-category truncation chosen"
+  ],
+  [
+   "R-INT-ZERO",
+   45,
+   "zeroCent: source does not separately discuss zero-cent results"
+  ],
+  [
+   "R-INT-LAST",
+   45,
+   "accountBoundary: end-of-file handling not specified; final account flushed"
+  ],
+  [
+   "R-INT-CYC",
+   45,
+   "accountBoundary: absent-account handling not specified"
+  ],
+  [
+   "R-INT-RATE",
+   45,
+   "duplicateRows: duplicate behaviour not defined"
+  ],
+  [
+   "R-INT-RATE",
+   45,
+   "accountFailure: missing rate after STANDARD fallback not defined"
+  ],
+  [
+   "R-INT-TXID",
+   45,
+   "transactionSequence/processingOrder: initialization and allocation order not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   45,
+   "cardSelection/merchantDetails/timestamps: not specified for interest transactions"
+  ]
+ ]
+}

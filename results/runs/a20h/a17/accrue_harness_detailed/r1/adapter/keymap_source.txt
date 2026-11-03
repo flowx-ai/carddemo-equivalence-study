@@ -1,0 +1,2 @@
+Read from runs/a20h/a17/accrue_harness_detailed/r1/exec/workflow_5105c1f1-74dc-411c-bb4e-5908e301c90f.md before execution; no output opened.
+Files mode: DecodeInputs reads input.files['ledgacc.dat'|'balcat.dat'|'rategrp.dat'|'cardlink.dat'] as text, input.businessDate, input.interestRunDate. END: AssembleOutputs writes output={result:{accrue_systxn_json, accrue_ledgacc_json, assumptions_md, diagnostics, status}}. Register: decisions lines 71-82.

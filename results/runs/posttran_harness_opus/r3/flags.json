@@ -1,0 +1,240 @@
+[
+ {
+  "rule": "R-POST-100",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "builds/inputs/posttran-opus/02-processes/process-transaction-posting.md",
+  "line": 77,
+  "note": "TODO: see CBTRN01-03C source for exact reject reasons",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 5,
+  "note": "A03 order and repeated ids: no rule provided",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 5,
+  "note": "A03 order and repeated ids: no rule provided",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 6,
+  "note": "A04 missing-link handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 6,
+  "note": "A04 missing-link handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 7,
+  "note": "A05 active codes not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 8,
+  "note": "A06 missing card / owner mismatch handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-100",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-101",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-1",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-2",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-3",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-4",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-5",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-6",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-7",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-PRECEDENCE",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 9,
+  "note": "A07 provisional reject codes, not legacy; precedence chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-102",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 10,
+  "note": "A08 credit formula applied to negative amounts too: no exception stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "A09 missing-category creation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 11,
+  "note": "A09 missing-category creation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 12,
+  "note": "A10 cycle credit/debit sign rules absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-103",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 13,
+  "note": "A11 no expiration check added",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-WRITE",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 14,
+  "note": "A12 business date context only",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-BAL",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 15,
+  "note": "A13 rounding and overflow not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-TCAT",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 15,
+  "note": "A13 rounding and overflow not supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 17,
+  "note": "A15 widths and opaque dates",
+  "origin": "build"
+ },
+ {
+  "rule": "R-POST-COPY",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 18,
+  "note": "A16 defaults for optional fields not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 18,
+  "note": "A16 defaults for optional fields not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/posttran_harness_opus/r3/exec/assumption_register.md",
+  "line": 19,
+  "note": "A17 output contents",
+  "origin": "build"
+ }
+]

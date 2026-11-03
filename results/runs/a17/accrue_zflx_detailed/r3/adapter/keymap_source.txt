@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_7252af8f-...md: inputs ledgacc, balcat, rategrp, cardlink, interestRunDate, runTimestamp; END payload ${result} = {accrue_systxn, accrue_ledgacc, summary}, line 289) and register line 6, before execution:
+- files mode, VARIANT=d1; runTimestamp left unset (A4)
+- decode.json: _root=result, accrue names -> canonical (pure renaming)

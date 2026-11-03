@@ -1,0 +1,114 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 14,
+  "note": "A1 monthly /1200 inferred; wiki TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 20,
+  "note": "A2 truncation; nothing names the mode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 26,
+  "note": "A3 per category balance; deviates from wiki formula text",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 37,
+  "note": "A5 standard group name not in any source: DEFAULT then STANDARD",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 41,
+  "note": "A6 zero rate: no transaction; silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 46,
+  "note": "A7 negative balances: silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 49,
+  "note": "A8 cycle credit/debit reset assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 55,
+  "note": "A9 last account posted; end-of-file handling not in any source; followed wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 60,
+  "note": "A10 accounts without balances unchanged; wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 67,
+  "note": "A12 fees: no logic; wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 78,
+  "note": "A14 suffix width 6 and start 1 assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 90,
+  "note": "A17 several cards: first in file order; nothing says",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_opus_onto/r2/builder/assumptions.md",
+  "line": 109,
+  "note": "A20 no error path in wiki: log and continue",
+  "origin": "build"
+ }
+]

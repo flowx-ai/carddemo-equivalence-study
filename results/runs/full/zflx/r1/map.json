@@ -1,0 +1,3008 @@
+{
+ "build": "cd_a32_kk7_zflx_r1",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/full_zflx/zFLX-full",
+ "notes": [
+  "Written 2026-11-03 from the build's own definitions only: runs/full/zflx/r1/exec (ui_flow_df9e2df5\u2026 via map_helper.txt, workflow_*.md, systems.txt, data_types.txt), runs/full/zflx/r1/builder/assumptions.md, and the inputs of definition tool calls in transcript.jsonl (configure_end_node of ui_carddemo: END payload ${vm}). No workflow of the build was run and no run output was opened.",
+  "UI flow carddemo: one page per screen (U1). Every START_WORKFLOW action starts the dispatcher ui_carddemo (5bb875e6\u2026) with startParams {type, op, params: ${<page object>}, session: ${session}, sel}; the END payload is the view model vm, whose top-level keys are page objects (sg, av, au, cl, cv, cu, tl, tv, ta, rr, bp, ul, ua, uu, ud) and, on sign-on/sign-off/exit, session. Response paths are therefore '<page>.<key>'.",
+  "Page state: the build sends the whole page object as params. The map sends every key the dispatcher reads: page inputs from the form (form key = the build's own binding key, e.g. au.f.open_date) and the page's non-input state (list rows/pageNum/hasNext/firstKey/lastKey, au/cu mode/snap/acctDisp, uu/ud mode and names) from the adapter session, stored raw from the previous response (the form would turn numbers and booleans into text). ud.password is not carried: the dispatcher never reads it for user_delete and the page does not show it.",
+  "Start: CC00, CB00, CA00 and CR00 all open the UI flow on HomePage, whose SignonCard shows while session.userId is null (the flow has no other entry; U4: no page query parameters).",
+  "Sign-on: Sign on -> nav by the returned session.userType (U -> COMEN1A, A -> COADM1A), else stays COSGN0A. Exit (PF3) and Sign off (menu PF3) return the sign-on card with sg.info 'Thank you for using CardDemo application...'; the build has no separate exit page, so PF3 on COSGN0A stays on COSGN0A (legacy goes to TEXT): NAV and the TEXT message differ by construction of the build.",
+  "Messages: pages with sg/ta/bp/rr/ua/uu/ud show a msg text and an info text; legacy has one ERRMSG line, so ERRMSG reads 'x.msg|x.info' (instrument fix 6). CACTUPA and CCRDUPA have ERRMSG+INFOMSG on both sides (au.msg/au.info, cu.msg/cu.info). CACTVWA, CCRDLIA, CCRDSLA have one message text (ERRMSG); their legacy INFOMSG has no page element (missing). The menu cards have no message element: messages [] (legacy ERRMSG missing).",
+  "Menus (U3): the options are buttons '1. Account View' \u2026 '10. Bill Payment' and '1. User List (Security)' \u2026 '4. User Delete (Security)', NAVIGATE_TO the pages. The legacy OPTION field is mapped as a selection field (rows.select on field OPTION): typed '1'..'10' / '1'..'4' presses the button with that number. Options 11, admin 0, 5, 6, 7, 99 have no button: not reachable (U3 says so). OPTN001-OPTN010 / OPTN001-OPTN004 are the button labels (static); OPTN011 (main) and OPTN005-OPTN006 (admin) are not on the page; blank OPTN slots and OPTION are not page elements and are not mapped (as A24).",
+  "AID correspondence from the build's button labels and U2 (Enter = primary action, F3 = Back/Exit, F4 = Clear, F5 = Save/Copy, F7/F8 = Previous/Next): PF3 = 'Back to menu' (COMEN1A for user pages, COADM1A for admin pages) except COTRN1A PF5 = 'Back to transaction list' (legacy F5=Browse Tran.), COUSR3A PF3 = 'Back to user list' with PF12 = 'Back to menu' (legacy PF12 returns to the admin menu), COUSR2A PF12 = 'Back to menu' and COUSR2A PF3 (legacy Save&Exit) unmapped. PF5 on COSGN0A/menus/CACTVWA/COBIL0A/CORPT0A, PF9 everywhere: no button, not reachable.",
+  "CACTUPA and CCRDUPA (instrument fix 9): ENTER, PF5 and PF12 depend on the page mode, read from the adapter session (au.mode / cu.mode, the last response's): ENTER = 'Fetch account'/'Fetch card' (op load) in search mode, before any response (\"\") and in done mode, 'Validate changes' (op validate) in edit and review mode; PF5 = 'Save (F5)' only in review mode; PF12 = 'Cancel (F12)' in edit, review and done mode (hidden in search). Any other mode: no button, not reachable. Done -> Fetch is a judgment call (legacy ENTER after a commit starts a new search; MAP_NOTES section 8).",
+  "Row selection (instrument fix 9): the row buttons are NAVIGATE_TO with collectionItemSaveKey; select.actions S/U (CCRDLIA -> CCRDSLA cvSel / CCRDUPA cuSel), S (COTRN0A -> COTRN1A tvSel), U/D (COUSR0A -> COUSR2A uuSel / COUSR3A udSel) keep the selected row in the adapter session (row_session); the target's on_load sends sel = session:<key> and selKey, as the build's init does, and stores the response's <key> (null) back, so a later visit from the menu sends sel null. Codes other than S, U, D and several rows at once have no button: not reachable.",
+  "CORPT0A (instrument fix 8): the report type is a RADIO rr.reportType; choose maps a non-blank MONTHLY/YEARLY/CUSTOM to its option value monthly/yearly/custom (labels 'Monthly (Current Month)', 'Yearly (Current Year)', 'Custom (Date Range)'); ENTER = 'Submit' (op submit); PF3 = 'Back to menu'.",
+  "Instrument fix 7 (compose, CACTUPA): au.f.open_date '{OPNYEAR}-{OPNMON}-{OPNDAY}' (label 'Opened (YYYY-MM-DD)'), au.f.expiration_date '{EXPYEAR}-{EXPMON}-{EXPDAY}' ('Expiry (YYYY-MM-DD)'), au.f.reissue_date '{RISYEAR}-{RISMON}-{RISDAY}' ('Reissue (YYYY-MM-DD)'), au.f.ssn '{ACTSSN1}-{ACTSSN2}-{ACTSSN3}' ('SSN (999-99-9999)'), au.f.dob '{DOBYEAR}-{DOBMON}-{DOBDAY}' ('Date of birth (YYYY-MM-DD)'), au.f.phone_num_1 '({ACSPH1A}){ACSPH1B}-{ACSPH1C}' ('Phone 1 ((999)999-9999)'), au.f.phone_num_2 '({ACSPH2A}){ACSPH2B}-{ACSPH2C}' ('Phone 2 ((999)999-9999)'). Split (CCRDSLA View): cv.card.expiry '{EXPMON}/{EXPYEAR}' ('Expiry Date (MM/YYYY)'). CCRDUPA needs no fix 7: expiry month and year are separate inputs.",
+  "Displayed values are the page's own texts without their label prefix (e.g. 'Account Number: ${av.acct.acct_id}' -> the value). Elements the build hides by a condition (detail containers, edit forms) are read from the response as is; the adapter has no visibility rule. Values hidden by the build's own null (av.acct, cv.card, tv.t) read blank.",
+  "Stores: the six CONTRACT-UI-FULL stores and job_requests keep the contract field names and types (data_types.txt; integers INTEGER, amounts FLOAT, ids and dates STRING): identity field map, no as_text. job_requests adds report_type, requested_by, requested_ts, status (U16), not read. No loader in the build: operator loaders via make-loader.",
+  "Browser (full_ui_check.cjs, fix 9): every screen carries its card title ('title'); detect is kept only where the button is always shown (list pages use 'Search', COUSR3A 'Fetch user'). Menus press the option buttons ('options' on OPTION). CACTUPA/CCRDUPA: PF5 'Save (F5)' and PF12 'Cancel (F12)' (visible only in their modes); ENTER is not mapped there, because 'Fetch' is always visible and first, so a mode alternation would always press Fetch. CORPT0A: the report type radio by label, Submit, and input indices that assume the three radio options count as visible inputs (unverified). Row selection has no browser mapping."
+ ],
+ "start": {
+  "CC00": "COSGN0A",
+  "CB00": "COSGN0A",
+  "CA00": "COSGN0A",
+  "CR00": "COSGN0A"
+ },
+ "screens": {
+  "COSGN0A": {
+   "page": "HomePage / SignonCard (shown while session.userId is null)",
+   "inputs": {
+    "USERID": "sg.userId",
+    "PASSWD": "sg.password"
+   },
+   "display": [
+    "USERID"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": null,
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signon",
+      "op": "const:signon",
+      "params.userId": "form:sg.userId",
+      "params.password": "form:sg.password",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "session": "session"
+     },
+     "form": {
+      "sg.userId": "sg.userId",
+      "sg.password": "sg.password"
+     },
+     "show": {
+      "ERRMSG": "sg.msg|sg.info"
+     },
+     "nav": [
+      {
+       "path": "session.userType",
+       "equals": "U",
+       "screen": "COMEN1A"
+      },
+      {
+       "path": "session.userType",
+       "equals": "A",
+       "screen": "COADM1A"
+      }
+     ],
+     "screen": "COSGN0A"
+    },
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signon",
+      "op": "const:exit",
+      "params": "json:{}",
+      "session": "json:null",
+      "sel": "json:null"
+     },
+     "session": {
+      "session": "session"
+     },
+     "form": {
+      "sg.userId": "sg.userId",
+      "sg.password": "sg.password"
+     },
+     "show": {
+      "ERRMSG": "sg.msg|sg.info"
+     },
+     "screen": "COSGN0A"
+    }
+   }
+  },
+  "COMEN1A": {
+   "page": "HomePage / MainMenuCard (session.userType == U)",
+   "inputs": {},
+   "display": [],
+   "messages": [],
+   "static": {
+    "OPTN001": "1. Account View",
+    "OPTN002": "2. Account Update",
+    "OPTN003": "3. Credit Card List",
+    "OPTN004": "4. Credit Card View",
+    "OPTN005": "5. Credit Card Update",
+    "OPTN006": "6. Transaction List",
+    "OPTN007": "7. Transaction View",
+    "OPTN008": "8. Transaction Add",
+    "OPTN009": "9. Transaction Reports",
+    "OPTN010": "10. Bill Payment"
+   },
+   "on_load": null,
+   "rows": {
+    "path": "_no_rows",
+    "n": 1,
+    "columns": {},
+    "select": {
+     "field": "OPTION",
+     "key": "_none",
+     "form_key": "_option",
+     "actions": {
+      "1": {
+       "workflow": null,
+       "screen": "CACTVWA"
+      },
+      "2": {
+       "workflow": null,
+       "screen": "CACTUPA"
+      },
+      "3": {
+       "workflow": null,
+       "screen": "CCRDLIA"
+      },
+      "4": {
+       "workflow": null,
+       "screen": "CCRDSLA"
+      },
+      "5": {
+       "workflow": null,
+       "screen": "CCRDUPA"
+      },
+      "6": {
+       "workflow": null,
+       "screen": "COTRN0A"
+      },
+      "7": {
+       "workflow": null,
+       "screen": "COTRN1A"
+      },
+      "8": {
+       "workflow": null,
+       "screen": "COTRN2A"
+      },
+      "9": {
+       "workflow": null,
+       "screen": "CORPT0A"
+      },
+      "10": {
+       "workflow": null,
+       "screen": "COBIL0A"
+      }
+     }
+    }
+   },
+   "aids": {
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signoff",
+      "op": "const:signoff",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "session": "session"
+     },
+     "show": {
+      "ERRMSG": "sg.msg|sg.info"
+     },
+     "screen": "COSGN0A"
+    }
+   }
+  },
+  "COADM1A": {
+   "page": "HomePage / AdminMenuCard (session.userType == A)",
+   "inputs": {},
+   "display": [],
+   "messages": [],
+   "static": {
+    "OPTN001": "1. User List (Security)",
+    "OPTN002": "2. User Add (Security)",
+    "OPTN003": "3. User Update (Security)",
+    "OPTN004": "4. User Delete (Security)"
+   },
+   "on_load": null,
+   "rows": {
+    "path": "_no_rows",
+    "n": 1,
+    "columns": {},
+    "select": {
+     "field": "OPTION",
+     "key": "_none",
+     "form_key": "_option",
+     "actions": {
+      "1": {
+       "workflow": null,
+       "screen": "COUSR0A"
+      },
+      "2": {
+       "workflow": null,
+       "screen": "COUSR1A"
+      },
+      "3": {
+       "workflow": null,
+       "screen": "COUSR2A"
+      },
+      "4": {
+       "workflow": null,
+       "screen": "COUSR3A"
+      }
+     }
+    }
+   },
+   "aids": {
+    "PF3": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:signoff",
+      "op": "const:signoff",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "session": "session"
+     },
+     "show": {
+      "ERRMSG": "sg.msg|sg.info"
+     },
+     "screen": "COSGN0A"
+    }
+   }
+  },
+  "CACTVWA": {
+   "page": "AcctViewPage",
+   "inputs": {
+    "ACCTSID": "av.acctId"
+   },
+   "display": [
+    "ACCTSID",
+    "ACSTTUS",
+    "ADTOPEN",
+    "AEXPDT",
+    "AREISDT",
+    "ACRDLIM",
+    "ACSHLIM",
+    "ACURBAL",
+    "ACRCYCR",
+    "ACRCYDB",
+    "AADDGRP",
+    "ACSTNUM",
+    "ACSTSSN",
+    "ACSTDOB",
+    "ACSTFCO",
+    "ACSFNAM",
+    "ACSMNAM",
+    "ACSLNAM",
+    "ACSADL1",
+    "ACSADL2",
+    "ACSCITY",
+    "ACSSTTE",
+    "ACSZIPC",
+    "ACSCTRY",
+    "ACSPHN1",
+    "ACSPHN2",
+    "ACSGOVT",
+    "ACSEFTC",
+    "ACSPFLG"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:acct_view",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "form": {
+     "av.acctId": "av.acctId"
+    },
+    "show": {
+     "ERRMSG": "av.msg",
+     "ACSTTUS": "av.acct.active_status",
+     "ADTOPEN": "av.acct.open_date",
+     "AEXPDT": "av.acct.expiration_date",
+     "AREISDT": "av.acct.reissue_date",
+     "ACRDLIM": "av.acct.credit_limit",
+     "ACSHLIM": "av.acct.cash_credit_limit",
+     "ACURBAL": "av.acct.curr_bal",
+     "ACRCYCR": "av.acct.curr_cyc_credit",
+     "ACRCYDB": "av.acct.curr_cyc_debit",
+     "AADDGRP": "av.acct.group_id",
+     "ACSTNUM": "av.cust.cust_id",
+     "ACSTSSN": "av.cust.ssn",
+     "ACSTDOB": "av.cust.dob",
+     "ACSTFCO": "av.cust.fico",
+     "ACSFNAM": "av.cust.first_name",
+     "ACSMNAM": "av.cust.middle_name",
+     "ACSLNAM": "av.cust.last_name",
+     "ACSADL1": "av.cust.addr_line_1",
+     "ACSADL2": "av.cust.addr_line_2",
+     "ACSCITY": "av.cust.addr_line_3",
+     "ACSSTTE": "av.cust.addr_state_cd",
+     "ACSZIPC": "av.cust.addr_zip",
+     "ACSCTRY": "av.cust.addr_country_cd",
+     "ACSPHN1": "av.cust.phone_num_1",
+     "ACSPHN2": "av.cust.phone_num_2",
+     "ACSGOVT": "av.cust.govt_issued_id",
+     "ACSEFTC": "av.cust.eft_account_id",
+     "ACSPFLG": "av.cust.pri_card_holder_ind"
+    },
+    "screen": "CACTVWA"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:acct_view",
+      "op": "const:view",
+      "params.acctId": "form:av.acctId",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "av.acctId": "av.acctId"
+     },
+     "show": {
+      "ERRMSG": "av.msg",
+      "ACSTTUS": "av.acct.active_status",
+      "ADTOPEN": "av.acct.open_date",
+      "AEXPDT": "av.acct.expiration_date",
+      "AREISDT": "av.acct.reissue_date",
+      "ACRDLIM": "av.acct.credit_limit",
+      "ACSHLIM": "av.acct.cash_credit_limit",
+      "ACURBAL": "av.acct.curr_bal",
+      "ACRCYCR": "av.acct.curr_cyc_credit",
+      "ACRCYDB": "av.acct.curr_cyc_debit",
+      "AADDGRP": "av.acct.group_id",
+      "ACSTNUM": "av.cust.cust_id",
+      "ACSTSSN": "av.cust.ssn",
+      "ACSTDOB": "av.cust.dob",
+      "ACSTFCO": "av.cust.fico",
+      "ACSFNAM": "av.cust.first_name",
+      "ACSMNAM": "av.cust.middle_name",
+      "ACSLNAM": "av.cust.last_name",
+      "ACSADL1": "av.cust.addr_line_1",
+      "ACSADL2": "av.cust.addr_line_2",
+      "ACSCITY": "av.cust.addr_line_3",
+      "ACSSTTE": "av.cust.addr_state_cd",
+      "ACSZIPC": "av.cust.addr_zip",
+      "ACSCTRY": "av.cust.addr_country_cd",
+      "ACSPHN1": "av.cust.phone_num_1",
+      "ACSPHN2": "av.cust.phone_num_2",
+      "ACSGOVT": "av.cust.govt_issued_id",
+      "ACSEFTC": "av.cust.eft_account_id",
+      "ACSPFLG": "av.cust.pri_card_holder_ind"
+     },
+     "screen": "CACTVWA"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CACTUPA": {
+   "page": "AcctUpdatePage",
+   "inputs": {
+    "ACCTSID": "au.acctId",
+    "ACSTTUS": "au.f.active_status",
+    "ACRDLIM": "au.f.credit_limit",
+    "ACSHLIM": "au.f.cash_credit_limit",
+    "ACURBAL": "au.f.curr_bal",
+    "ACRCYCR": "au.f.curr_cyc_credit",
+    "ACRCYDB": "au.f.curr_cyc_debit",
+    "AADDGRP": "au.f.group_id",
+    "ACSTFCO": "au.f.fico_credit_score",
+    "ACSFNAM": "au.f.first_name",
+    "ACSMNAM": "au.f.middle_name",
+    "ACSLNAM": "au.f.last_name",
+    "ACSADL1": "au.f.addr_line_1",
+    "ACSADL2": "au.f.addr_line_2",
+    "ACSCITY": "au.f.addr_line_3",
+    "ACSSTTE": "au.f.addr_state_cd",
+    "ACSZIPC": "au.f.addr_zip",
+    "ACSCTRY": "au.f.addr_country_cd",
+    "ACSGOVT": "au.f.govt_issued_id",
+    "ACSEFTC": "au.f.eft_account_id",
+    "ACSPFLG": "au.f.pri_card_holder_ind"
+   },
+   "compose": [
+    {
+     "key": "au.f.open_date",
+     "template": "{OPNYEAR}-{OPNMON}-{OPNDAY}"
+    },
+    {
+     "key": "au.f.expiration_date",
+     "template": "{EXPYEAR}-{EXPMON}-{EXPDAY}"
+    },
+    {
+     "key": "au.f.reissue_date",
+     "template": "{RISYEAR}-{RISMON}-{RISDAY}"
+    },
+    {
+     "key": "au.f.ssn",
+     "template": "{ACTSSN1}-{ACTSSN2}-{ACTSSN3}"
+    },
+    {
+     "key": "au.f.dob",
+     "template": "{DOBYEAR}-{DOBMON}-{DOBDAY}"
+    },
+    {
+     "key": "au.f.phone_num_1",
+     "template": "({ACSPH1A}){ACSPH1B}-{ACSPH1C}"
+    },
+    {
+     "key": "au.f.phone_num_2",
+     "template": "({ACSPH2A}){ACSPH2B}-{ACSPH2C}"
+    }
+   ],
+   "display": [
+    "ACCTSID",
+    "ACSTTUS",
+    "OPNYEAR",
+    "OPNMON",
+    "OPNDAY",
+    "ACRDLIM",
+    "EXPYEAR",
+    "EXPMON",
+    "EXPDAY",
+    "ACSHLIM",
+    "RISYEAR",
+    "RISMON",
+    "RISDAY",
+    "ACURBAL",
+    "ACRCYCR",
+    "AADDGRP",
+    "ACRCYDB",
+    "ACSTNUM",
+    "ACTSSN1",
+    "ACTSSN2",
+    "ACTSSN3",
+    "DOBYEAR",
+    "DOBMON",
+    "DOBDAY",
+    "ACSTFCO",
+    "ACSFNAM",
+    "ACSMNAM",
+    "ACSLNAM",
+    "ACSADL1",
+    "ACSSTTE",
+    "ACSADL2",
+    "ACSZIPC",
+    "ACSCITY",
+    "ACSCTRY",
+    "ACSPH1A",
+    "ACSPH1B",
+    "ACSPH1C",
+    "ACSGOVT",
+    "ACSPH2A",
+    "ACSPH2B",
+    "ACSPH2C",
+    "ACSEFTC",
+    "ACSPFLG"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:acct_update",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "session": {
+     "au.mode": "au.mode",
+     "au.snap": "au.snap",
+     "au.acctDisp": "au.acctDisp"
+    },
+    "form": {
+     "au.acctId": "au.acctId",
+     "au.f.active_status": "au.f.active_status",
+     "au.f.open_date": "au.f.open_date",
+     "au.f.expiration_date": "au.f.expiration_date",
+     "au.f.reissue_date": "au.f.reissue_date",
+     "au.f.credit_limit": "au.f.credit_limit",
+     "au.f.cash_credit_limit": "au.f.cash_credit_limit",
+     "au.f.curr_bal": "au.f.curr_bal",
+     "au.f.curr_cyc_credit": "au.f.curr_cyc_credit",
+     "au.f.curr_cyc_debit": "au.f.curr_cyc_debit",
+     "au.f.group_id": "au.f.group_id",
+     "au.f.ssn": "au.f.ssn",
+     "au.f.dob": "au.f.dob",
+     "au.f.fico_credit_score": "au.f.fico_credit_score",
+     "au.f.first_name": "au.f.first_name",
+     "au.f.middle_name": "au.f.middle_name",
+     "au.f.last_name": "au.f.last_name",
+     "au.f.addr_line_1": "au.f.addr_line_1",
+     "au.f.addr_line_2": "au.f.addr_line_2",
+     "au.f.addr_line_3": "au.f.addr_line_3",
+     "au.f.addr_state_cd": "au.f.addr_state_cd",
+     "au.f.addr_zip": "au.f.addr_zip",
+     "au.f.addr_country_cd": "au.f.addr_country_cd",
+     "au.f.phone_num_1": "au.f.phone_num_1",
+     "au.f.phone_num_2": "au.f.phone_num_2",
+     "au.f.govt_issued_id": "au.f.govt_issued_id",
+     "au.f.eft_account_id": "au.f.eft_account_id",
+     "au.f.pri_card_holder_ind": "au.f.pri_card_holder_ind"
+    },
+    "show": {
+     "ERRMSG": "au.msg",
+     "INFOMSG": "au.info",
+     "ACSTNUM": "au.acctDisp.cust_id"
+    },
+    "screen": "CACTUPA"
+   },
+   "aids": {
+    "ENTER": {
+     "when": [
+      {
+       "session": "au.mode",
+       "in": [
+        "search",
+        "",
+        "done"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:acct_update",
+         "op": "const:load",
+         "params.acctId": "form:au.acctId",
+         "params.f.active_status": "form:au.f.active_status",
+         "params.f.open_date": "form:au.f.open_date",
+         "params.f.expiration_date": "form:au.f.expiration_date",
+         "params.f.reissue_date": "form:au.f.reissue_date",
+         "params.f.credit_limit": "form:au.f.credit_limit",
+         "params.f.cash_credit_limit": "form:au.f.cash_credit_limit",
+         "params.f.curr_bal": "form:au.f.curr_bal",
+         "params.f.curr_cyc_credit": "form:au.f.curr_cyc_credit",
+         "params.f.curr_cyc_debit": "form:au.f.curr_cyc_debit",
+         "params.f.group_id": "form:au.f.group_id",
+         "params.f.ssn": "form:au.f.ssn",
+         "params.f.dob": "form:au.f.dob",
+         "params.f.fico_credit_score": "form:au.f.fico_credit_score",
+         "params.f.first_name": "form:au.f.first_name",
+         "params.f.middle_name": "form:au.f.middle_name",
+         "params.f.last_name": "form:au.f.last_name",
+         "params.f.addr_line_1": "form:au.f.addr_line_1",
+         "params.f.addr_line_2": "form:au.f.addr_line_2",
+         "params.f.addr_line_3": "form:au.f.addr_line_3",
+         "params.f.addr_state_cd": "form:au.f.addr_state_cd",
+         "params.f.addr_zip": "form:au.f.addr_zip",
+         "params.f.addr_country_cd": "form:au.f.addr_country_cd",
+         "params.f.phone_num_1": "form:au.f.phone_num_1",
+         "params.f.phone_num_2": "form:au.f.phone_num_2",
+         "params.f.govt_issued_id": "form:au.f.govt_issued_id",
+         "params.f.eft_account_id": "form:au.f.eft_account_id",
+         "params.f.pri_card_holder_ind": "form:au.f.pri_card_holder_ind",
+         "params.mode": "session:au.mode",
+         "params.snap": "session:au.snap",
+         "params.acctDisp": "session:au.acctDisp",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "au.mode": "au.mode",
+         "au.snap": "au.snap",
+         "au.acctDisp": "au.acctDisp"
+        },
+        "form": {
+         "au.acctId": "au.acctId",
+         "au.f.active_status": "au.f.active_status",
+         "au.f.open_date": "au.f.open_date",
+         "au.f.expiration_date": "au.f.expiration_date",
+         "au.f.reissue_date": "au.f.reissue_date",
+         "au.f.credit_limit": "au.f.credit_limit",
+         "au.f.cash_credit_limit": "au.f.cash_credit_limit",
+         "au.f.curr_bal": "au.f.curr_bal",
+         "au.f.curr_cyc_credit": "au.f.curr_cyc_credit",
+         "au.f.curr_cyc_debit": "au.f.curr_cyc_debit",
+         "au.f.group_id": "au.f.group_id",
+         "au.f.ssn": "au.f.ssn",
+         "au.f.dob": "au.f.dob",
+         "au.f.fico_credit_score": "au.f.fico_credit_score",
+         "au.f.first_name": "au.f.first_name",
+         "au.f.middle_name": "au.f.middle_name",
+         "au.f.last_name": "au.f.last_name",
+         "au.f.addr_line_1": "au.f.addr_line_1",
+         "au.f.addr_line_2": "au.f.addr_line_2",
+         "au.f.addr_line_3": "au.f.addr_line_3",
+         "au.f.addr_state_cd": "au.f.addr_state_cd",
+         "au.f.addr_zip": "au.f.addr_zip",
+         "au.f.addr_country_cd": "au.f.addr_country_cd",
+         "au.f.phone_num_1": "au.f.phone_num_1",
+         "au.f.phone_num_2": "au.f.phone_num_2",
+         "au.f.govt_issued_id": "au.f.govt_issued_id",
+         "au.f.eft_account_id": "au.f.eft_account_id",
+         "au.f.pri_card_holder_ind": "au.f.pri_card_holder_ind"
+        },
+        "show": {
+         "ERRMSG": "au.msg",
+         "INFOMSG": "au.info",
+         "ACSTNUM": "au.acctDisp.cust_id"
+        },
+        "screen": "CACTUPA"
+       }
+      },
+      {
+       "session": "au.mode",
+       "in": [
+        "edit",
+        "review"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:acct_update",
+         "op": "const:validate",
+         "params.acctId": "form:au.acctId",
+         "params.f.active_status": "form:au.f.active_status",
+         "params.f.open_date": "form:au.f.open_date",
+         "params.f.expiration_date": "form:au.f.expiration_date",
+         "params.f.reissue_date": "form:au.f.reissue_date",
+         "params.f.credit_limit": "form:au.f.credit_limit",
+         "params.f.cash_credit_limit": "form:au.f.cash_credit_limit",
+         "params.f.curr_bal": "form:au.f.curr_bal",
+         "params.f.curr_cyc_credit": "form:au.f.curr_cyc_credit",
+         "params.f.curr_cyc_debit": "form:au.f.curr_cyc_debit",
+         "params.f.group_id": "form:au.f.group_id",
+         "params.f.ssn": "form:au.f.ssn",
+         "params.f.dob": "form:au.f.dob",
+         "params.f.fico_credit_score": "form:au.f.fico_credit_score",
+         "params.f.first_name": "form:au.f.first_name",
+         "params.f.middle_name": "form:au.f.middle_name",
+         "params.f.last_name": "form:au.f.last_name",
+         "params.f.addr_line_1": "form:au.f.addr_line_1",
+         "params.f.addr_line_2": "form:au.f.addr_line_2",
+         "params.f.addr_line_3": "form:au.f.addr_line_3",
+         "params.f.addr_state_cd": "form:au.f.addr_state_cd",
+         "params.f.addr_zip": "form:au.f.addr_zip",
+         "params.f.addr_country_cd": "form:au.f.addr_country_cd",
+         "params.f.phone_num_1": "form:au.f.phone_num_1",
+         "params.f.phone_num_2": "form:au.f.phone_num_2",
+         "params.f.govt_issued_id": "form:au.f.govt_issued_id",
+         "params.f.eft_account_id": "form:au.f.eft_account_id",
+         "params.f.pri_card_holder_ind": "form:au.f.pri_card_holder_ind",
+         "params.mode": "session:au.mode",
+         "params.snap": "session:au.snap",
+         "params.acctDisp": "session:au.acctDisp",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "au.mode": "au.mode",
+         "au.snap": "au.snap",
+         "au.acctDisp": "au.acctDisp"
+        },
+        "form": {
+         "au.acctId": "au.acctId",
+         "au.f.active_status": "au.f.active_status",
+         "au.f.open_date": "au.f.open_date",
+         "au.f.expiration_date": "au.f.expiration_date",
+         "au.f.reissue_date": "au.f.reissue_date",
+         "au.f.credit_limit": "au.f.credit_limit",
+         "au.f.cash_credit_limit": "au.f.cash_credit_limit",
+         "au.f.curr_bal": "au.f.curr_bal",
+         "au.f.curr_cyc_credit": "au.f.curr_cyc_credit",
+         "au.f.curr_cyc_debit": "au.f.curr_cyc_debit",
+         "au.f.group_id": "au.f.group_id",
+         "au.f.ssn": "au.f.ssn",
+         "au.f.dob": "au.f.dob",
+         "au.f.fico_credit_score": "au.f.fico_credit_score",
+         "au.f.first_name": "au.f.first_name",
+         "au.f.middle_name": "au.f.middle_name",
+         "au.f.last_name": "au.f.last_name",
+         "au.f.addr_line_1": "au.f.addr_line_1",
+         "au.f.addr_line_2": "au.f.addr_line_2",
+         "au.f.addr_line_3": "au.f.addr_line_3",
+         "au.f.addr_state_cd": "au.f.addr_state_cd",
+         "au.f.addr_zip": "au.f.addr_zip",
+         "au.f.addr_country_cd": "au.f.addr_country_cd",
+         "au.f.phone_num_1": "au.f.phone_num_1",
+         "au.f.phone_num_2": "au.f.phone_num_2",
+         "au.f.govt_issued_id": "au.f.govt_issued_id",
+         "au.f.eft_account_id": "au.f.eft_account_id",
+         "au.f.pri_card_holder_ind": "au.f.pri_card_holder_ind"
+        },
+        "show": {
+         "ERRMSG": "au.msg",
+         "INFOMSG": "au.info",
+         "ACSTNUM": "au.acctDisp.cust_id"
+        },
+        "screen": "CACTUPA"
+       }
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "au.mode",
+       "in": [
+        "review"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:acct_update",
+         "op": "const:save",
+         "params.acctId": "form:au.acctId",
+         "params.f.active_status": "form:au.f.active_status",
+         "params.f.open_date": "form:au.f.open_date",
+         "params.f.expiration_date": "form:au.f.expiration_date",
+         "params.f.reissue_date": "form:au.f.reissue_date",
+         "params.f.credit_limit": "form:au.f.credit_limit",
+         "params.f.cash_credit_limit": "form:au.f.cash_credit_limit",
+         "params.f.curr_bal": "form:au.f.curr_bal",
+         "params.f.curr_cyc_credit": "form:au.f.curr_cyc_credit",
+         "params.f.curr_cyc_debit": "form:au.f.curr_cyc_debit",
+         "params.f.group_id": "form:au.f.group_id",
+         "params.f.ssn": "form:au.f.ssn",
+         "params.f.dob": "form:au.f.dob",
+         "params.f.fico_credit_score": "form:au.f.fico_credit_score",
+         "params.f.first_name": "form:au.f.first_name",
+         "params.f.middle_name": "form:au.f.middle_name",
+         "params.f.last_name": "form:au.f.last_name",
+         "params.f.addr_line_1": "form:au.f.addr_line_1",
+         "params.f.addr_line_2": "form:au.f.addr_line_2",
+         "params.f.addr_line_3": "form:au.f.addr_line_3",
+         "params.f.addr_state_cd": "form:au.f.addr_state_cd",
+         "params.f.addr_zip": "form:au.f.addr_zip",
+         "params.f.addr_country_cd": "form:au.f.addr_country_cd",
+         "params.f.phone_num_1": "form:au.f.phone_num_1",
+         "params.f.phone_num_2": "form:au.f.phone_num_2",
+         "params.f.govt_issued_id": "form:au.f.govt_issued_id",
+         "params.f.eft_account_id": "form:au.f.eft_account_id",
+         "params.f.pri_card_holder_ind": "form:au.f.pri_card_holder_ind",
+         "params.mode": "session:au.mode",
+         "params.snap": "session:au.snap",
+         "params.acctDisp": "session:au.acctDisp",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "au.mode": "au.mode",
+         "au.snap": "au.snap",
+         "au.acctDisp": "au.acctDisp"
+        },
+        "form": {
+         "au.acctId": "au.acctId",
+         "au.f.active_status": "au.f.active_status",
+         "au.f.open_date": "au.f.open_date",
+         "au.f.expiration_date": "au.f.expiration_date",
+         "au.f.reissue_date": "au.f.reissue_date",
+         "au.f.credit_limit": "au.f.credit_limit",
+         "au.f.cash_credit_limit": "au.f.cash_credit_limit",
+         "au.f.curr_bal": "au.f.curr_bal",
+         "au.f.curr_cyc_credit": "au.f.curr_cyc_credit",
+         "au.f.curr_cyc_debit": "au.f.curr_cyc_debit",
+         "au.f.group_id": "au.f.group_id",
+         "au.f.ssn": "au.f.ssn",
+         "au.f.dob": "au.f.dob",
+         "au.f.fico_credit_score": "au.f.fico_credit_score",
+         "au.f.first_name": "au.f.first_name",
+         "au.f.middle_name": "au.f.middle_name",
+         "au.f.last_name": "au.f.last_name",
+         "au.f.addr_line_1": "au.f.addr_line_1",
+         "au.f.addr_line_2": "au.f.addr_line_2",
+         "au.f.addr_line_3": "au.f.addr_line_3",
+         "au.f.addr_state_cd": "au.f.addr_state_cd",
+         "au.f.addr_zip": "au.f.addr_zip",
+         "au.f.addr_country_cd": "au.f.addr_country_cd",
+         "au.f.phone_num_1": "au.f.phone_num_1",
+         "au.f.phone_num_2": "au.f.phone_num_2",
+         "au.f.govt_issued_id": "au.f.govt_issued_id",
+         "au.f.eft_account_id": "au.f.eft_account_id",
+         "au.f.pri_card_holder_ind": "au.f.pri_card_holder_ind"
+        },
+        "show": {
+         "ERRMSG": "au.msg",
+         "INFOMSG": "au.info",
+         "ACSTNUM": "au.acctDisp.cust_id"
+        },
+        "screen": "CACTUPA"
+       }
+      }
+     ]
+    },
+    "PF12": {
+     "when": [
+      {
+       "session": "au.mode",
+       "in": [
+        "edit",
+        "review",
+        "done"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:acct_update",
+         "op": "const:cancel",
+         "params.acctId": "form:au.acctId",
+         "params.f.active_status": "form:au.f.active_status",
+         "params.f.open_date": "form:au.f.open_date",
+         "params.f.expiration_date": "form:au.f.expiration_date",
+         "params.f.reissue_date": "form:au.f.reissue_date",
+         "params.f.credit_limit": "form:au.f.credit_limit",
+         "params.f.cash_credit_limit": "form:au.f.cash_credit_limit",
+         "params.f.curr_bal": "form:au.f.curr_bal",
+         "params.f.curr_cyc_credit": "form:au.f.curr_cyc_credit",
+         "params.f.curr_cyc_debit": "form:au.f.curr_cyc_debit",
+         "params.f.group_id": "form:au.f.group_id",
+         "params.f.ssn": "form:au.f.ssn",
+         "params.f.dob": "form:au.f.dob",
+         "params.f.fico_credit_score": "form:au.f.fico_credit_score",
+         "params.f.first_name": "form:au.f.first_name",
+         "params.f.middle_name": "form:au.f.middle_name",
+         "params.f.last_name": "form:au.f.last_name",
+         "params.f.addr_line_1": "form:au.f.addr_line_1",
+         "params.f.addr_line_2": "form:au.f.addr_line_2",
+         "params.f.addr_line_3": "form:au.f.addr_line_3",
+         "params.f.addr_state_cd": "form:au.f.addr_state_cd",
+         "params.f.addr_zip": "form:au.f.addr_zip",
+         "params.f.addr_country_cd": "form:au.f.addr_country_cd",
+         "params.f.phone_num_1": "form:au.f.phone_num_1",
+         "params.f.phone_num_2": "form:au.f.phone_num_2",
+         "params.f.govt_issued_id": "form:au.f.govt_issued_id",
+         "params.f.eft_account_id": "form:au.f.eft_account_id",
+         "params.f.pri_card_holder_ind": "form:au.f.pri_card_holder_ind",
+         "params.mode": "session:au.mode",
+         "params.snap": "session:au.snap",
+         "params.acctDisp": "session:au.acctDisp",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "au.mode": "au.mode",
+         "au.snap": "au.snap",
+         "au.acctDisp": "au.acctDisp"
+        },
+        "form": {
+         "au.acctId": "au.acctId",
+         "au.f.active_status": "au.f.active_status",
+         "au.f.open_date": "au.f.open_date",
+         "au.f.expiration_date": "au.f.expiration_date",
+         "au.f.reissue_date": "au.f.reissue_date",
+         "au.f.credit_limit": "au.f.credit_limit",
+         "au.f.cash_credit_limit": "au.f.cash_credit_limit",
+         "au.f.curr_bal": "au.f.curr_bal",
+         "au.f.curr_cyc_credit": "au.f.curr_cyc_credit",
+         "au.f.curr_cyc_debit": "au.f.curr_cyc_debit",
+         "au.f.group_id": "au.f.group_id",
+         "au.f.ssn": "au.f.ssn",
+         "au.f.dob": "au.f.dob",
+         "au.f.fico_credit_score": "au.f.fico_credit_score",
+         "au.f.first_name": "au.f.first_name",
+         "au.f.middle_name": "au.f.middle_name",
+         "au.f.last_name": "au.f.last_name",
+         "au.f.addr_line_1": "au.f.addr_line_1",
+         "au.f.addr_line_2": "au.f.addr_line_2",
+         "au.f.addr_line_3": "au.f.addr_line_3",
+         "au.f.addr_state_cd": "au.f.addr_state_cd",
+         "au.f.addr_zip": "au.f.addr_zip",
+         "au.f.addr_country_cd": "au.f.addr_country_cd",
+         "au.f.phone_num_1": "au.f.phone_num_1",
+         "au.f.phone_num_2": "au.f.phone_num_2",
+         "au.f.govt_issued_id": "au.f.govt_issued_id",
+         "au.f.eft_account_id": "au.f.eft_account_id",
+         "au.f.pri_card_holder_ind": "au.f.pri_card_holder_ind"
+        },
+        "show": {
+         "ERRMSG": "au.msg",
+         "INFOMSG": "au.info",
+         "ACSTNUM": "au.acctDisp.cust_id"
+        },
+        "screen": "CACTUPA"
+       }
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   },
+   "fix7_labels": {
+    "au.f.open_date": "Opened (YYYY-MM-DD)",
+    "au.f.expiration_date": "Expiry (YYYY-MM-DD)",
+    "au.f.reissue_date": "Reissue (YYYY-MM-DD)",
+    "au.f.ssn": "SSN (999-99-9999)",
+    "au.f.dob": "Date of birth (YYYY-MM-DD)",
+    "au.f.phone_num_1": "Phone 1 ((999)999-9999)",
+    "au.f.phone_num_2": "Phone 2 ((999)999-9999)"
+   }
+  },
+  "CCRDLIA": {
+   "page": "CardListPage",
+   "inputs": {
+    "ACCTSID": "cl.acctId",
+    "CARDSID": "cl.cardNum"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "PAGENO"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "rows": {
+    "path": "cl.rows",
+    "n": 7,
+    "columns": {
+     "CRDNUM{n}": "card_num",
+     "ACCTNO{n}": "acct_id",
+     "CRDSTS{n}": "active_status"
+    },
+    "select": {
+     "field": "CRDSEL{n}",
+     "key": "card_num",
+     "form_key": "_selected_card",
+     "actions": {
+      "S": {
+       "workflow": null,
+       "screen": "CCRDSLA",
+       "row_session": "cvSel"
+      },
+      "U": {
+       "workflow": null,
+       "screen": "CCRDUPA",
+       "row_session": "cuSel"
+      }
+     }
+    }
+   },
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:card_list",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "session": {
+     "cl.rows": "cl.rows",
+     "cl.pageNum": "cl.pageNum",
+     "cl.hasNext": "cl.hasNext",
+     "cl.firstKey": "cl.firstKey",
+     "cl.lastKey": "cl.lastKey"
+    },
+    "form": {
+     "cl.acctId": "cl.acctId",
+     "cl.cardNum": "cl.cardNum"
+    },
+    "show": {
+     "ERRMSG": "cl.msg",
+     "PAGENO": "cl.pageNum"
+    },
+    "screen": "CCRDLIA"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:card_list",
+      "op": "const:search",
+      "params.acctId": "form:cl.acctId",
+      "params.cardNum": "form:cl.cardNum",
+      "params.rows": "session:cl.rows",
+      "params.pageNum": "session:cl.pageNum",
+      "params.hasNext": "session:cl.hasNext",
+      "params.firstKey": "session:cl.firstKey",
+      "params.lastKey": "session:cl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "cl.rows": "cl.rows",
+      "cl.pageNum": "cl.pageNum",
+      "cl.hasNext": "cl.hasNext",
+      "cl.firstKey": "cl.firstKey",
+      "cl.lastKey": "cl.lastKey"
+     },
+     "form": {
+      "cl.acctId": "cl.acctId",
+      "cl.cardNum": "cl.cardNum"
+     },
+     "show": {
+      "ERRMSG": "cl.msg",
+      "PAGENO": "cl.pageNum"
+     },
+     "screen": "CCRDLIA"
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:card_list",
+      "op": "const:prev",
+      "params.acctId": "form:cl.acctId",
+      "params.cardNum": "form:cl.cardNum",
+      "params.rows": "session:cl.rows",
+      "params.pageNum": "session:cl.pageNum",
+      "params.hasNext": "session:cl.hasNext",
+      "params.firstKey": "session:cl.firstKey",
+      "params.lastKey": "session:cl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "cl.rows": "cl.rows",
+      "cl.pageNum": "cl.pageNum",
+      "cl.hasNext": "cl.hasNext",
+      "cl.firstKey": "cl.firstKey",
+      "cl.lastKey": "cl.lastKey"
+     },
+     "form": {
+      "cl.acctId": "cl.acctId",
+      "cl.cardNum": "cl.cardNum"
+     },
+     "show": {
+      "ERRMSG": "cl.msg",
+      "PAGENO": "cl.pageNum"
+     },
+     "screen": "CCRDLIA"
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:card_list",
+      "op": "const:next",
+      "params.acctId": "form:cl.acctId",
+      "params.cardNum": "form:cl.cardNum",
+      "params.rows": "session:cl.rows",
+      "params.pageNum": "session:cl.pageNum",
+      "params.hasNext": "session:cl.hasNext",
+      "params.firstKey": "session:cl.firstKey",
+      "params.lastKey": "session:cl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "cl.rows": "cl.rows",
+      "cl.pageNum": "cl.pageNum",
+      "cl.hasNext": "cl.hasNext",
+      "cl.firstKey": "cl.firstKey",
+      "cl.lastKey": "cl.lastKey"
+     },
+     "form": {
+      "cl.acctId": "cl.acctId",
+      "cl.cardNum": "cl.cardNum"
+     },
+     "show": {
+      "ERRMSG": "cl.msg",
+      "PAGENO": "cl.pageNum"
+     },
+     "screen": "CCRDLIA"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CCRDSLA": {
+   "page": "CardViewPage",
+   "inputs": {
+    "ACCTSID": "cv.acctId",
+    "CARDSID": "cv.cardNum"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "CRDNAME",
+    "CRDSTCD",
+    "EXPMON",
+    "EXPYEAR"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:card_view",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "session:cvSel",
+     "selKey": "const:cvSel"
+    },
+    "form": {
+     "cv.acctId": "cv.acctId",
+     "cv.cardNum": "cv.cardNum"
+    },
+    "show": {
+     "ERRMSG": "cv.msg",
+     "CRDNAME": "cv.card.embossed_name",
+     "CRDSTCD": "cv.card.active_status"
+    },
+    "screen": "CCRDSLA",
+    "session": {
+     "cvSel": "cvSel"
+    },
+    "split": [
+     {
+      "path": "cv.card.expiry",
+      "template": "{EXPMON}/{EXPYEAR}"
+     }
+    ]
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:card_view",
+      "op": "const:view",
+      "params.acctId": "form:cv.acctId",
+      "params.cardNum": "form:cv.cardNum",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "cv.acctId": "cv.acctId",
+      "cv.cardNum": "cv.cardNum"
+     },
+     "show": {
+      "ERRMSG": "cv.msg",
+      "CRDNAME": "cv.card.embossed_name",
+      "CRDSTCD": "cv.card.active_status"
+     },
+     "split": [
+      {
+       "path": "cv.card.expiry",
+       "template": "{EXPMON}/{EXPYEAR}"
+      }
+     ],
+     "screen": "CCRDSLA"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CCRDUPA": {
+   "page": "CardUpdatePage",
+   "inputs": {
+    "ACCTSID": "cu.acctId",
+    "CARDSID": "cu.cardNum",
+    "CRDNAME": "cu.f.embossed_name",
+    "CRDSTCD": "cu.f.active_status",
+    "EXPMON": "cu.f.exp_month",
+    "EXPYEAR": "cu.f.exp_year"
+   },
+   "display": [
+    "ACCTSID",
+    "CARDSID",
+    "CRDNAME",
+    "CRDSTCD",
+    "EXPMON",
+    "EXPYEAR"
+   ],
+   "messages": [
+    "ERRMSG",
+    "INFOMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:card_update",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "session:cuSel",
+     "selKey": "const:cuSel"
+    },
+    "session": {
+     "cu.mode": "cu.mode",
+     "cu.snap": "cu.snap",
+     "cuSel": "cuSel"
+    },
+    "form": {
+     "cu.acctId": "cu.acctId",
+     "cu.cardNum": "cu.cardNum",
+     "cu.f.embossed_name": "cu.f.embossed_name",
+     "cu.f.active_status": "cu.f.active_status",
+     "cu.f.exp_month": "cu.f.exp_month",
+     "cu.f.exp_year": "cu.f.exp_year"
+    },
+    "show": {
+     "ERRMSG": "cu.msg",
+     "INFOMSG": "cu.info"
+    },
+    "screen": "CCRDUPA"
+   },
+   "aids": {
+    "ENTER": {
+     "when": [
+      {
+       "session": "cu.mode",
+       "in": [
+        "search",
+        "",
+        "done"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:card_update",
+         "op": "const:load",
+         "params.acctId": "form:cu.acctId",
+         "params.cardNum": "form:cu.cardNum",
+         "params.f.embossed_name": "form:cu.f.embossed_name",
+         "params.f.active_status": "form:cu.f.active_status",
+         "params.f.exp_month": "form:cu.f.exp_month",
+         "params.f.exp_year": "form:cu.f.exp_year",
+         "params.mode": "session:cu.mode",
+         "params.snap": "session:cu.snap",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "cu.mode": "cu.mode",
+         "cu.snap": "cu.snap"
+        },
+        "form": {
+         "cu.acctId": "cu.acctId",
+         "cu.cardNum": "cu.cardNum",
+         "cu.f.embossed_name": "cu.f.embossed_name",
+         "cu.f.active_status": "cu.f.active_status",
+         "cu.f.exp_month": "cu.f.exp_month",
+         "cu.f.exp_year": "cu.f.exp_year"
+        },
+        "show": {
+         "ERRMSG": "cu.msg",
+         "INFOMSG": "cu.info"
+        },
+        "screen": "CCRDUPA"
+       }
+      },
+      {
+       "session": "cu.mode",
+       "in": [
+        "edit",
+        "review"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:card_update",
+         "op": "const:validate",
+         "params.acctId": "form:cu.acctId",
+         "params.cardNum": "form:cu.cardNum",
+         "params.f.embossed_name": "form:cu.f.embossed_name",
+         "params.f.active_status": "form:cu.f.active_status",
+         "params.f.exp_month": "form:cu.f.exp_month",
+         "params.f.exp_year": "form:cu.f.exp_year",
+         "params.mode": "session:cu.mode",
+         "params.snap": "session:cu.snap",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "cu.mode": "cu.mode",
+         "cu.snap": "cu.snap"
+        },
+        "form": {
+         "cu.acctId": "cu.acctId",
+         "cu.cardNum": "cu.cardNum",
+         "cu.f.embossed_name": "cu.f.embossed_name",
+         "cu.f.active_status": "cu.f.active_status",
+         "cu.f.exp_month": "cu.f.exp_month",
+         "cu.f.exp_year": "cu.f.exp_year"
+        },
+        "show": {
+         "ERRMSG": "cu.msg",
+         "INFOMSG": "cu.info"
+        },
+        "screen": "CCRDUPA"
+       }
+      }
+     ]
+    },
+    "PF5": {
+     "when": [
+      {
+       "session": "cu.mode",
+       "in": [
+        "review"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:card_update",
+         "op": "const:save",
+         "params.acctId": "form:cu.acctId",
+         "params.cardNum": "form:cu.cardNum",
+         "params.f.embossed_name": "form:cu.f.embossed_name",
+         "params.f.active_status": "form:cu.f.active_status",
+         "params.f.exp_month": "form:cu.f.exp_month",
+         "params.f.exp_year": "form:cu.f.exp_year",
+         "params.mode": "session:cu.mode",
+         "params.snap": "session:cu.snap",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "cu.mode": "cu.mode",
+         "cu.snap": "cu.snap"
+        },
+        "form": {
+         "cu.acctId": "cu.acctId",
+         "cu.cardNum": "cu.cardNum",
+         "cu.f.embossed_name": "cu.f.embossed_name",
+         "cu.f.active_status": "cu.f.active_status",
+         "cu.f.exp_month": "cu.f.exp_month",
+         "cu.f.exp_year": "cu.f.exp_year"
+        },
+        "show": {
+         "ERRMSG": "cu.msg",
+         "INFOMSG": "cu.info"
+        },
+        "screen": "CCRDUPA"
+       }
+      }
+     ]
+    },
+    "PF12": {
+     "when": [
+      {
+       "session": "cu.mode",
+       "in": [
+        "edit",
+        "review",
+        "done"
+       ],
+       "action": {
+        "workflow": "<uuid>",
+        "body": {
+         "type": "const:card_update",
+         "op": "const:cancel",
+         "params.acctId": "form:cu.acctId",
+         "params.cardNum": "form:cu.cardNum",
+         "params.f.embossed_name": "form:cu.f.embossed_name",
+         "params.f.active_status": "form:cu.f.active_status",
+         "params.f.exp_month": "form:cu.f.exp_month",
+         "params.f.exp_year": "form:cu.f.exp_year",
+         "params.mode": "session:cu.mode",
+         "params.snap": "session:cu.snap",
+         "session": "session:session",
+         "sel": "json:null"
+        },
+        "session": {
+         "cu.mode": "cu.mode",
+         "cu.snap": "cu.snap"
+        },
+        "form": {
+         "cu.acctId": "cu.acctId",
+         "cu.cardNum": "cu.cardNum",
+         "cu.f.embossed_name": "cu.f.embossed_name",
+         "cu.f.active_status": "cu.f.active_status",
+         "cu.f.exp_month": "cu.f.exp_month",
+         "cu.f.exp_year": "cu.f.exp_year"
+        },
+        "show": {
+         "ERRMSG": "cu.msg",
+         "INFOMSG": "cu.info"
+        },
+        "screen": "CCRDUPA"
+       }
+      }
+     ]
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COTRN0A": {
+   "page": "TranListPage",
+   "inputs": {
+    "TRNIDIN": "tl.startTranId"
+   },
+   "display": [
+    "TRNIDIN",
+    "PAGENUM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "rows": {
+    "path": "tl.rows",
+    "n": 10,
+    "columns": {
+     "TRNID{n:02d}": "tran_id",
+     "TDATE{n:02d}": "date",
+     "TDESC{n:02d}": "desc",
+     "TAMT{n:03d}": "amount"
+    },
+    "select": {
+     "field": "SEL{n:04d}",
+     "key": "tran_id",
+     "form_key": "_selected_tran",
+     "actions": {
+      "S": {
+       "workflow": null,
+       "screen": "COTRN1A",
+       "row_session": "tvSel"
+      }
+     }
+    }
+   },
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:tran_list",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "session": {
+     "tl.rows": "tl.rows",
+     "tl.pageNum": "tl.pageNum",
+     "tl.hasNext": "tl.hasNext",
+     "tl.firstKey": "tl.firstKey",
+     "tl.lastKey": "tl.lastKey"
+    },
+    "form": {
+     "tl.startTranId": "tl.startTranId"
+    },
+    "show": {
+     "ERRMSG": "tl.msg",
+     "PAGENUM": "tl.pageNum"
+    },
+    "screen": "COTRN0A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_list",
+      "op": "const:search",
+      "params.startTranId": "form:tl.startTranId",
+      "params.rows": "session:tl.rows",
+      "params.pageNum": "session:tl.pageNum",
+      "params.hasNext": "session:tl.hasNext",
+      "params.firstKey": "session:tl.firstKey",
+      "params.lastKey": "session:tl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "tl.rows": "tl.rows",
+      "tl.pageNum": "tl.pageNum",
+      "tl.hasNext": "tl.hasNext",
+      "tl.firstKey": "tl.firstKey",
+      "tl.lastKey": "tl.lastKey"
+     },
+     "form": {
+      "tl.startTranId": "tl.startTranId"
+     },
+     "show": {
+      "ERRMSG": "tl.msg",
+      "PAGENUM": "tl.pageNum"
+     },
+     "screen": "COTRN0A"
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_list",
+      "op": "const:prev",
+      "params.startTranId": "form:tl.startTranId",
+      "params.rows": "session:tl.rows",
+      "params.pageNum": "session:tl.pageNum",
+      "params.hasNext": "session:tl.hasNext",
+      "params.firstKey": "session:tl.firstKey",
+      "params.lastKey": "session:tl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "tl.rows": "tl.rows",
+      "tl.pageNum": "tl.pageNum",
+      "tl.hasNext": "tl.hasNext",
+      "tl.firstKey": "tl.firstKey",
+      "tl.lastKey": "tl.lastKey"
+     },
+     "form": {
+      "tl.startTranId": "tl.startTranId"
+     },
+     "show": {
+      "ERRMSG": "tl.msg",
+      "PAGENUM": "tl.pageNum"
+     },
+     "screen": "COTRN0A"
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_list",
+      "op": "const:next",
+      "params.startTranId": "form:tl.startTranId",
+      "params.rows": "session:tl.rows",
+      "params.pageNum": "session:tl.pageNum",
+      "params.hasNext": "session:tl.hasNext",
+      "params.firstKey": "session:tl.firstKey",
+      "params.lastKey": "session:tl.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "tl.rows": "tl.rows",
+      "tl.pageNum": "tl.pageNum",
+      "tl.hasNext": "tl.hasNext",
+      "tl.firstKey": "tl.firstKey",
+      "tl.lastKey": "tl.lastKey"
+     },
+     "form": {
+      "tl.startTranId": "tl.startTranId"
+     },
+     "show": {
+      "ERRMSG": "tl.msg",
+      "PAGENUM": "tl.pageNum"
+     },
+     "screen": "COTRN0A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COTRN1A": {
+   "page": "TranViewPage",
+   "inputs": {
+    "TRNIDIN": "tv.tranId"
+   },
+   "display": [
+    "TRNIDIN",
+    "TRNID",
+    "CARDNUM",
+    "TTYPCD",
+    "TCATCD",
+    "TRNSRC",
+    "TDESC",
+    "TRNAMT",
+    "TORIGDT",
+    "TPROCDT",
+    "MID",
+    "MNAME",
+    "MCITY",
+    "MZIP"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:tran_view",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "session:tvSel",
+     "selKey": "const:tvSel"
+    },
+    "form": {
+     "tv.tranId": "tv.tranId"
+    },
+    "show": {
+     "ERRMSG": "tv.msg",
+     "TRNID": "tv.t.tran_id",
+     "CARDNUM": "tv.t.card_num",
+     "TTYPCD": "tv.t.type_cd",
+     "TCATCD": "tv.t.cat_cd",
+     "TRNSRC": "tv.t.source",
+     "TDESC": "tv.t.desc",
+     "TRNAMT": "tv.t.amount",
+     "TORIGDT": "tv.t.orig_ts",
+     "TPROCDT": "tv.t.proc_ts",
+     "MID": "tv.t.merchant_id",
+     "MNAME": "tv.t.merchant_name",
+     "MCITY": "tv.t.merchant_city",
+     "MZIP": "tv.t.merchant_zip"
+    },
+    "screen": "COTRN1A",
+    "session": {
+     "tvSel": "tvSel"
+    }
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_view",
+      "op": "const:view",
+      "params.tranId": "form:tv.tranId",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "tv.tranId": "tv.tranId"
+     },
+     "show": {
+      "ERRMSG": "tv.msg",
+      "TRNID": "tv.t.tran_id",
+      "CARDNUM": "tv.t.card_num",
+      "TTYPCD": "tv.t.type_cd",
+      "TCATCD": "tv.t.cat_cd",
+      "TRNSRC": "tv.t.source",
+      "TDESC": "tv.t.desc",
+      "TRNAMT": "tv.t.amount",
+      "TORIGDT": "tv.t.orig_ts",
+      "TPROCDT": "tv.t.proc_ts",
+      "MID": "tv.t.merchant_id",
+      "MNAME": "tv.t.merchant_name",
+      "MCITY": "tv.t.merchant_city",
+      "MZIP": "tv.t.merchant_zip"
+     },
+     "screen": "COTRN1A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_view",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "tv.tranId": "tv.tranId"
+     },
+     "show": {
+      "ERRMSG": "tv.msg",
+      "TRNID": "tv.t.tran_id",
+      "CARDNUM": "tv.t.card_num",
+      "TTYPCD": "tv.t.type_cd",
+      "TCATCD": "tv.t.cat_cd",
+      "TRNSRC": "tv.t.source",
+      "TDESC": "tv.t.desc",
+      "TRNAMT": "tv.t.amount",
+      "TORIGDT": "tv.t.orig_ts",
+      "TPROCDT": "tv.t.proc_ts",
+      "MID": "tv.t.merchant_id",
+      "MNAME": "tv.t.merchant_name",
+      "MCITY": "tv.t.merchant_city",
+      "MZIP": "tv.t.merchant_zip"
+     },
+     "screen": "COTRN1A"
+    },
+    "PF5": {
+     "workflow": null,
+     "screen": "COTRN0A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COTRN2A": {
+   "page": "TranAddPage",
+   "inputs": {
+    "ACTIDIN": "ta.acctId",
+    "CARDNIN": "ta.cardNum",
+    "TTYPCD": "ta.typeCd",
+    "TCATCD": "ta.catCd",
+    "TRNSRC": "ta.source",
+    "TDESC": "ta.desc",
+    "TRNAMT": "ta.amount",
+    "TORIGDT": "ta.origDate",
+    "TPROCDT": "ta.procDate",
+    "MID": "ta.merchantId",
+    "MNAME": "ta.merchantName",
+    "MCITY": "ta.merchantCity",
+    "MZIP": "ta.merchantZip",
+    "CONFIRM": "ta.confirm"
+   },
+   "display": [
+    "ACTIDIN",
+    "CARDNIN",
+    "TTYPCD",
+    "TCATCD",
+    "TRNSRC",
+    "TDESC",
+    "TRNAMT",
+    "TORIGDT",
+    "TPROCDT",
+    "MID",
+    "MNAME",
+    "MCITY",
+    "MZIP",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:tran_add",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "form": {
+     "ta.acctId": "ta.acctId",
+     "ta.cardNum": "ta.cardNum",
+     "ta.typeCd": "ta.typeCd",
+     "ta.catCd": "ta.catCd",
+     "ta.source": "ta.source",
+     "ta.desc": "ta.desc",
+     "ta.amount": "ta.amount",
+     "ta.origDate": "ta.origDate",
+     "ta.procDate": "ta.procDate",
+     "ta.merchantId": "ta.merchantId",
+     "ta.merchantName": "ta.merchantName",
+     "ta.merchantCity": "ta.merchantCity",
+     "ta.merchantZip": "ta.merchantZip",
+     "ta.confirm": "ta.confirm"
+    },
+    "show": {
+     "ERRMSG": "ta.msg|ta.info"
+    },
+    "screen": "COTRN2A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_add",
+      "op": "const:add",
+      "params.acctId": "form:ta.acctId",
+      "params.cardNum": "form:ta.cardNum",
+      "params.typeCd": "form:ta.typeCd",
+      "params.catCd": "form:ta.catCd",
+      "params.source": "form:ta.source",
+      "params.desc": "form:ta.desc",
+      "params.amount": "form:ta.amount",
+      "params.origDate": "form:ta.origDate",
+      "params.procDate": "form:ta.procDate",
+      "params.merchantId": "form:ta.merchantId",
+      "params.merchantName": "form:ta.merchantName",
+      "params.merchantCity": "form:ta.merchantCity",
+      "params.merchantZip": "form:ta.merchantZip",
+      "params.confirm": "form:ta.confirm",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "ta.acctId": "ta.acctId",
+      "ta.cardNum": "ta.cardNum",
+      "ta.typeCd": "ta.typeCd",
+      "ta.catCd": "ta.catCd",
+      "ta.source": "ta.source",
+      "ta.desc": "ta.desc",
+      "ta.amount": "ta.amount",
+      "ta.origDate": "ta.origDate",
+      "ta.procDate": "ta.procDate",
+      "ta.merchantId": "ta.merchantId",
+      "ta.merchantName": "ta.merchantName",
+      "ta.merchantCity": "ta.merchantCity",
+      "ta.merchantZip": "ta.merchantZip",
+      "ta.confirm": "ta.confirm"
+     },
+     "show": {
+      "ERRMSG": "ta.msg|ta.info"
+     },
+     "screen": "COTRN2A"
+    },
+    "PF5": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_add",
+      "op": "const:copy",
+      "params.acctId": "form:ta.acctId",
+      "params.cardNum": "form:ta.cardNum",
+      "params.typeCd": "form:ta.typeCd",
+      "params.catCd": "form:ta.catCd",
+      "params.source": "form:ta.source",
+      "params.desc": "form:ta.desc",
+      "params.amount": "form:ta.amount",
+      "params.origDate": "form:ta.origDate",
+      "params.procDate": "form:ta.procDate",
+      "params.merchantId": "form:ta.merchantId",
+      "params.merchantName": "form:ta.merchantName",
+      "params.merchantCity": "form:ta.merchantCity",
+      "params.merchantZip": "form:ta.merchantZip",
+      "params.confirm": "form:ta.confirm",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "ta.acctId": "ta.acctId",
+      "ta.cardNum": "ta.cardNum",
+      "ta.typeCd": "ta.typeCd",
+      "ta.catCd": "ta.catCd",
+      "ta.source": "ta.source",
+      "ta.desc": "ta.desc",
+      "ta.amount": "ta.amount",
+      "ta.origDate": "ta.origDate",
+      "ta.procDate": "ta.procDate",
+      "ta.merchantId": "ta.merchantId",
+      "ta.merchantName": "ta.merchantName",
+      "ta.merchantCity": "ta.merchantCity",
+      "ta.merchantZip": "ta.merchantZip",
+      "ta.confirm": "ta.confirm"
+     },
+     "show": {
+      "ERRMSG": "ta.msg|ta.info"
+     },
+     "screen": "COTRN2A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:tran_add",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "ta.acctId": "ta.acctId",
+      "ta.cardNum": "ta.cardNum",
+      "ta.typeCd": "ta.typeCd",
+      "ta.catCd": "ta.catCd",
+      "ta.source": "ta.source",
+      "ta.desc": "ta.desc",
+      "ta.amount": "ta.amount",
+      "ta.origDate": "ta.origDate",
+      "ta.procDate": "ta.procDate",
+      "ta.merchantId": "ta.merchantId",
+      "ta.merchantName": "ta.merchantName",
+      "ta.merchantCity": "ta.merchantCity",
+      "ta.merchantZip": "ta.merchantZip",
+      "ta.confirm": "ta.confirm"
+     },
+     "show": {
+      "ERRMSG": "ta.msg|ta.info"
+     },
+     "screen": "COTRN2A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "CORPT0A": {
+   "page": "ReportPage",
+   "inputs": {
+    "SDTMM": "rr.sm",
+    "SDTDD": "rr.sd",
+    "SDTYYYY": "rr.sy",
+    "EDTMM": "rr.em",
+    "EDTDD": "rr.ed",
+    "EDTYYYY": "rr.ey",
+    "CONFIRM": "rr.confirm"
+   },
+   "display": [
+    "MONTHLY",
+    "YEARLY",
+    "CUSTOM",
+    "SDTMM",
+    "SDTDD",
+    "SDTYYYY",
+    "EDTMM",
+    "EDTDD",
+    "EDTYYYY",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:report",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "form": {
+     "rr.sm": "rr.sm",
+     "rr.sd": "rr.sd",
+     "rr.sy": "rr.sy",
+     "rr.em": "rr.em",
+     "rr.ed": "rr.ed",
+     "rr.ey": "rr.ey",
+     "rr.confirm": "rr.confirm",
+     "rr.reportType": "rr.reportType"
+    },
+    "show": {
+     "ERRMSG": "rr.msg|rr.info"
+    },
+    "screen": "CORPT0A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:report",
+      "op": "const:submit",
+      "params.sm": "form:rr.sm",
+      "params.sd": "form:rr.sd",
+      "params.sy": "form:rr.sy",
+      "params.em": "form:rr.em",
+      "params.ed": "form:rr.ed",
+      "params.ey": "form:rr.ey",
+      "params.confirm": "form:rr.confirm",
+      "params.reportType": "form:rr.reportType",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "rr.sm": "rr.sm",
+      "rr.sd": "rr.sd",
+      "rr.sy": "rr.sy",
+      "rr.em": "rr.em",
+      "rr.ed": "rr.ed",
+      "rr.ey": "rr.ey",
+      "rr.confirm": "rr.confirm",
+      "rr.reportType": "rr.reportType"
+     },
+     "show": {
+      "ERRMSG": "rr.msg|rr.info"
+     },
+     "screen": "CORPT0A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   },
+   "choose": [
+    {
+     "key": "rr.reportType",
+     "values": {
+      "MONTHLY": "monthly",
+      "YEARLY": "yearly",
+      "CUSTOM": "custom"
+     }
+    }
+   ]
+  },
+  "COBIL0A": {
+   "page": "BillPayPage",
+   "inputs": {
+    "ACTIDIN": "bp.acctId",
+    "CONFIRM": "bp.confirm"
+   },
+   "display": [
+    "ACTIDIN",
+    "CURBAL",
+    "CONFIRM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:bill_pay",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "form": {
+     "bp.acctId": "bp.acctId",
+     "bp.confirm": "bp.confirm"
+    },
+    "show": {
+     "ERRMSG": "bp.msg|bp.info",
+     "CURBAL": "bp.balance"
+    },
+    "screen": "COBIL0A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:bill_pay",
+      "op": "const:pay",
+      "params.acctId": "form:bp.acctId",
+      "params.confirm": "form:bp.confirm",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "bp.acctId": "bp.acctId",
+      "bp.confirm": "bp.confirm"
+     },
+     "show": {
+      "ERRMSG": "bp.msg|bp.info",
+      "CURBAL": "bp.balance"
+     },
+     "screen": "COBIL0A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:bill_pay",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "bp.acctId": "bp.acctId",
+      "bp.confirm": "bp.confirm"
+     },
+     "show": {
+      "ERRMSG": "bp.msg|bp.info",
+      "CURBAL": "bp.balance"
+     },
+     "screen": "COBIL0A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COMEN1A"
+    }
+   }
+  },
+  "COUSR0A": {
+   "page": "UserListPage",
+   "inputs": {
+    "USRIDIN": "ul.startUserId"
+   },
+   "display": [
+    "USRIDIN",
+    "PAGENUM"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "rows": {
+    "path": "ul.rows",
+    "n": 10,
+    "columns": {
+     "USRID{n:02d}": "usr_id",
+     "FNAME{n:02d}": "first_name",
+     "LNAME{n:02d}": "last_name",
+     "UTYPE{n:02d}": "usr_type"
+    },
+    "select": {
+     "field": "SEL{n:04d}",
+     "key": "usr_id",
+     "form_key": "_selected_user",
+     "actions": {
+      "U": {
+       "workflow": null,
+       "screen": "COUSR2A",
+       "row_session": "uuSel"
+      },
+      "D": {
+       "workflow": null,
+       "screen": "COUSR3A",
+       "row_session": "udSel"
+      }
+     }
+    }
+   },
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:user_list",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "session": {
+     "ul.rows": "ul.rows",
+     "ul.pageNum": "ul.pageNum",
+     "ul.hasNext": "ul.hasNext",
+     "ul.firstKey": "ul.firstKey",
+     "ul.lastKey": "ul.lastKey"
+    },
+    "form": {
+     "ul.startUserId": "ul.startUserId"
+    },
+    "show": {
+     "ERRMSG": "ul.msg",
+     "PAGENUM": "ul.pageNum"
+    },
+    "screen": "COUSR0A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_list",
+      "op": "const:search",
+      "params.startUserId": "form:ul.startUserId",
+      "params.rows": "session:ul.rows",
+      "params.pageNum": "session:ul.pageNum",
+      "params.hasNext": "session:ul.hasNext",
+      "params.firstKey": "session:ul.firstKey",
+      "params.lastKey": "session:ul.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ul.rows": "ul.rows",
+      "ul.pageNum": "ul.pageNum",
+      "ul.hasNext": "ul.hasNext",
+      "ul.firstKey": "ul.firstKey",
+      "ul.lastKey": "ul.lastKey"
+     },
+     "form": {
+      "ul.startUserId": "ul.startUserId"
+     },
+     "show": {
+      "ERRMSG": "ul.msg",
+      "PAGENUM": "ul.pageNum"
+     },
+     "screen": "COUSR0A"
+    },
+    "PF7": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_list",
+      "op": "const:prev",
+      "params.startUserId": "form:ul.startUserId",
+      "params.rows": "session:ul.rows",
+      "params.pageNum": "session:ul.pageNum",
+      "params.hasNext": "session:ul.hasNext",
+      "params.firstKey": "session:ul.firstKey",
+      "params.lastKey": "session:ul.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ul.rows": "ul.rows",
+      "ul.pageNum": "ul.pageNum",
+      "ul.hasNext": "ul.hasNext",
+      "ul.firstKey": "ul.firstKey",
+      "ul.lastKey": "ul.lastKey"
+     },
+     "form": {
+      "ul.startUserId": "ul.startUserId"
+     },
+     "show": {
+      "ERRMSG": "ul.msg",
+      "PAGENUM": "ul.pageNum"
+     },
+     "screen": "COUSR0A"
+    },
+    "PF8": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_list",
+      "op": "const:next",
+      "params.startUserId": "form:ul.startUserId",
+      "params.rows": "session:ul.rows",
+      "params.pageNum": "session:ul.pageNum",
+      "params.hasNext": "session:ul.hasNext",
+      "params.firstKey": "session:ul.firstKey",
+      "params.lastKey": "session:ul.lastKey",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ul.rows": "ul.rows",
+      "ul.pageNum": "ul.pageNum",
+      "ul.hasNext": "ul.hasNext",
+      "ul.firstKey": "ul.firstKey",
+      "ul.lastKey": "ul.lastKey"
+     },
+     "form": {
+      "ul.startUserId": "ul.startUserId"
+     },
+     "show": {
+      "ERRMSG": "ul.msg",
+      "PAGENUM": "ul.pageNum"
+     },
+     "screen": "COUSR0A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  },
+  "COUSR1A": {
+   "page": "UserAddPage",
+   "inputs": {
+    "FNAME": "ua.firstName",
+    "LNAME": "ua.lastName",
+    "USERID": "ua.userId",
+    "PASSWD": "ua.password",
+    "USRTYPE": "ua.userType"
+   },
+   "display": [
+    "FNAME",
+    "LNAME",
+    "USERID",
+    "PASSWD",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:user_add",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "json:null"
+    },
+    "form": {
+     "ua.firstName": "ua.firstName",
+     "ua.lastName": "ua.lastName",
+     "ua.userId": "ua.userId",
+     "ua.password": "ua.password",
+     "ua.userType": "ua.userType"
+    },
+    "show": {
+     "ERRMSG": "ua.msg|ua.info"
+    },
+    "screen": "COUSR1A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_add",
+      "op": "const:add",
+      "params.firstName": "form:ua.firstName",
+      "params.lastName": "form:ua.lastName",
+      "params.userId": "form:ua.userId",
+      "params.password": "form:ua.password",
+      "params.userType": "form:ua.userType",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "ua.firstName": "ua.firstName",
+      "ua.lastName": "ua.lastName",
+      "ua.userId": "ua.userId",
+      "ua.password": "ua.password",
+      "ua.userType": "ua.userType"
+     },
+     "show": {
+      "ERRMSG": "ua.msg|ua.info"
+     },
+     "screen": "COUSR1A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_add",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "form": {
+      "ua.firstName": "ua.firstName",
+      "ua.lastName": "ua.lastName",
+      "ua.userId": "ua.userId",
+      "ua.password": "ua.password",
+      "ua.userType": "ua.userType"
+     },
+     "show": {
+      "ERRMSG": "ua.msg|ua.info"
+     },
+     "screen": "COUSR1A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  },
+  "COUSR2A": {
+   "page": "UserUpdatePage",
+   "inputs": {
+    "USRIDIN": "uu.userId",
+    "FNAME": "uu.firstName",
+    "LNAME": "uu.lastName",
+    "PASSWD": "uu.password",
+    "USRTYPE": "uu.userType"
+   },
+   "display": [
+    "USRIDIN",
+    "FNAME",
+    "LNAME",
+    "PASSWD",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:user_update",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "session:uuSel",
+     "selKey": "const:uuSel"
+    },
+    "session": {
+     "uu.mode": "uu.mode",
+     "uuSel": "uuSel"
+    },
+    "form": {
+     "uu.userId": "uu.userId",
+     "uu.firstName": "uu.firstName",
+     "uu.lastName": "uu.lastName",
+     "uu.password": "uu.password",
+     "uu.userType": "uu.userType"
+    },
+    "show": {
+     "ERRMSG": "uu.msg|uu.info"
+    },
+    "screen": "COUSR2A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_update",
+      "op": "const:load",
+      "params.userId": "form:uu.userId",
+      "params.firstName": "form:uu.firstName",
+      "params.lastName": "form:uu.lastName",
+      "params.password": "form:uu.password",
+      "params.userType": "form:uu.userType",
+      "params.mode": "session:uu.mode",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "uu.mode": "uu.mode"
+     },
+     "form": {
+      "uu.userId": "uu.userId",
+      "uu.firstName": "uu.firstName",
+      "uu.lastName": "uu.lastName",
+      "uu.password": "uu.password",
+      "uu.userType": "uu.userType"
+     },
+     "show": {
+      "ERRMSG": "uu.msg|uu.info"
+     },
+     "screen": "COUSR2A"
+    },
+    "PF5": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_update",
+      "op": "const:save",
+      "params.userId": "form:uu.userId",
+      "params.firstName": "form:uu.firstName",
+      "params.lastName": "form:uu.lastName",
+      "params.password": "form:uu.password",
+      "params.userType": "form:uu.userType",
+      "params.mode": "session:uu.mode",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "uu.mode": "uu.mode"
+     },
+     "form": {
+      "uu.userId": "uu.userId",
+      "uu.firstName": "uu.firstName",
+      "uu.lastName": "uu.lastName",
+      "uu.password": "uu.password",
+      "uu.userType": "uu.userType"
+     },
+     "show": {
+      "ERRMSG": "uu.msg|uu.info"
+     },
+     "screen": "COUSR2A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_update",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "uu.mode": "uu.mode"
+     },
+     "form": {
+      "uu.userId": "uu.userId",
+      "uu.firstName": "uu.firstName",
+      "uu.lastName": "uu.lastName",
+      "uu.password": "uu.password",
+      "uu.userType": "uu.userType"
+     },
+     "show": {
+      "ERRMSG": "uu.msg|uu.info"
+     },
+     "screen": "COUSR2A"
+    },
+    "PF12": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  },
+  "COUSR3A": {
+   "page": "UserDeletePage",
+   "inputs": {
+    "USRIDIN": "ud.userId"
+   },
+   "display": [
+    "USRIDIN",
+    "FNAME",
+    "LNAME",
+    "USRTYPE"
+   ],
+   "messages": [
+    "ERRMSG"
+   ],
+   "static": {},
+   "on_load": {
+    "workflow": "<uuid>",
+    "body": {
+     "type": "const:user_delete",
+     "op": "const:init",
+     "params": "json:{}",
+     "session": "session:session",
+     "sel": "session:udSel",
+     "selKey": "const:udSel"
+    },
+    "session": {
+     "ud.firstName": "ud.firstName",
+     "ud.lastName": "ud.lastName",
+     "ud.userType": "ud.userType",
+     "ud.mode": "ud.mode",
+     "udSel": "udSel"
+    },
+    "form": {
+     "ud.userId": "ud.userId"
+    },
+    "show": {
+     "ERRMSG": "ud.msg|ud.info",
+     "FNAME": "ud.firstName",
+     "LNAME": "ud.lastName",
+     "USRTYPE": "ud.userType"
+    },
+    "screen": "COUSR3A"
+   },
+   "aids": {
+    "ENTER": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_delete",
+      "op": "const:load",
+      "params.userId": "form:ud.userId",
+      "params.firstName": "session:ud.firstName",
+      "params.lastName": "session:ud.lastName",
+      "params.userType": "session:ud.userType",
+      "params.mode": "session:ud.mode",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ud.firstName": "ud.firstName",
+      "ud.lastName": "ud.lastName",
+      "ud.userType": "ud.userType",
+      "ud.mode": "ud.mode"
+     },
+     "form": {
+      "ud.userId": "ud.userId"
+     },
+     "show": {
+      "ERRMSG": "ud.msg|ud.info",
+      "FNAME": "ud.firstName",
+      "LNAME": "ud.lastName",
+      "USRTYPE": "ud.userType"
+     },
+     "screen": "COUSR3A"
+    },
+    "PF5": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_delete",
+      "op": "const:delete",
+      "params.userId": "form:ud.userId",
+      "params.firstName": "session:ud.firstName",
+      "params.lastName": "session:ud.lastName",
+      "params.userType": "session:ud.userType",
+      "params.mode": "session:ud.mode",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ud.firstName": "ud.firstName",
+      "ud.lastName": "ud.lastName",
+      "ud.userType": "ud.userType",
+      "ud.mode": "ud.mode"
+     },
+     "form": {
+      "ud.userId": "ud.userId"
+     },
+     "show": {
+      "ERRMSG": "ud.msg|ud.info",
+      "FNAME": "ud.firstName",
+      "LNAME": "ud.lastName",
+      "USRTYPE": "ud.userType"
+     },
+     "screen": "COUSR3A"
+    },
+    "PF4": {
+     "workflow": "<uuid>",
+     "body": {
+      "type": "const:user_delete",
+      "op": "const:clear",
+      "params": "json:{}",
+      "session": "session:session",
+      "sel": "json:null"
+     },
+     "session": {
+      "ud.firstName": "ud.firstName",
+      "ud.lastName": "ud.lastName",
+      "ud.userType": "ud.userType",
+      "ud.mode": "ud.mode"
+     },
+     "form": {
+      "ud.userId": "ud.userId"
+     },
+     "show": {
+      "ERRMSG": "ud.msg|ud.info",
+      "FNAME": "ud.firstName",
+      "LNAME": "ud.lastName",
+      "USRTYPE": "ud.userType"
+     },
+     "screen": "COUSR3A"
+    },
+    "PF3": {
+     "workflow": null,
+     "screen": "COUSR0A"
+    },
+    "PF12": {
+     "workflow": null,
+     "screen": "COADM1A"
+    }
+   }
+  }
+ },
+ "browser": {
+  "screens": {
+   "COSGN0A": {
+    "detect": "^sign on$",
+    "inputs": {
+     "USERID": 0,
+     "PASSWD": 1
+    },
+    "aids": {
+     "ENTER": "^sign on$",
+     "PF3": "^exit$"
+    },
+    "title": "^carddemo - sign on$"
+   },
+   "COMEN1A": {
+    "detect": "^10\\. bill payment$",
+    "inputs": {},
+    "aids": {
+     "PF3": "^sign off$"
+    },
+    "title": "^main menu$",
+    "options": {
+     "field": "OPTION",
+     "buttons": {
+      "1": "^1\\. account view$",
+      "2": "^2\\. account update$",
+      "3": "^3\\. credit card list$",
+      "4": "^4\\. credit card view$",
+      "5": "^5\\. credit card update$",
+      "6": "^6\\. transaction list$",
+      "7": "^7\\. transaction view$",
+      "8": "^8\\. transaction add$",
+      "9": "^9\\. transaction reports$",
+      "10": "^10\\. bill payment$"
+     }
+    }
+   },
+   "COADM1A": {
+    "detect": "^4\\. user delete \\(security\\)$",
+    "inputs": {},
+    "aids": {
+     "PF3": "^sign off$"
+    },
+    "title": "^admin menu$",
+    "options": {
+     "field": "OPTION",
+     "buttons": {
+      "1": "^1\\. user list \\(security\\)$",
+      "2": "^2\\. user add \\(security\\)$",
+      "3": "^3\\. user update \\(security\\)$",
+      "4": "^4\\. user delete \\(security\\)$"
+     }
+    }
+   },
+   "CACTUPA": {
+    "detect": "^fetch account$",
+    "inputs": {
+     "ACCTSID": 0,
+     "ACSTTUS": 1,
+     "ACRDLIM": 5,
+     "ACSHLIM": 6,
+     "ACURBAL": 7,
+     "ACRCYCR": 8,
+     "ACRCYDB": 9,
+     "AADDGRP": 10,
+     "ACSTFCO": 13,
+     "ACSFNAM": 14,
+     "ACSMNAM": 15,
+     "ACSLNAM": 16,
+     "ACSADL1": 17,
+     "ACSADL2": 18,
+     "ACSCITY": 19,
+     "ACSSTTE": 20,
+     "ACSZIPC": 21,
+     "ACSCTRY": 22,
+     "ACSGOVT": 25,
+     "ACSEFTC": 26,
+     "ACSPFLG": 27
+    },
+    "compose": [
+     {
+      "input": 2,
+      "template": "{OPNYEAR}-{OPNMON}-{OPNDAY}"
+     },
+     {
+      "input": 3,
+      "template": "{EXPYEAR}-{EXPMON}-{EXPDAY}"
+     },
+     {
+      "input": 4,
+      "template": "{RISYEAR}-{RISMON}-{RISDAY}"
+     },
+     {
+      "input": 11,
+      "template": "{ACTSSN1}-{ACTSSN2}-{ACTSSN3}"
+     },
+     {
+      "input": 12,
+      "template": "{DOBYEAR}-{DOBMON}-{DOBDAY}"
+     },
+     {
+      "input": 23,
+      "template": "({ACSPH1A}){ACSPH1B}-{ACSPH1C}"
+     },
+     {
+      "input": 24,
+      "template": "({ACSPH2A}){ACSPH2B}-{ACSPH2C}"
+     }
+    ],
+    "aids": {
+     "PF5": "^save \\(f5\\)$",
+     "PF12": "^cancel \\(f12\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^update account$"
+   },
+   "CCRDUPA": {
+    "detect": "^fetch card$",
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1,
+     "CRDNAME": 2,
+     "CRDSTCD": 3,
+     "EXPMON": 4,
+     "EXPYEAR": 5
+    },
+    "aids": {
+     "PF5": "^save \\(f5\\)$",
+     "PF12": "^cancel \\(f12\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^update credit card details$"
+   },
+   "CCRDSLA": {
+    "detect": "^back to card list$",
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1
+    },
+    "aids": {
+     "ENTER": "^view$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^view credit card detail$"
+   },
+   "CACTVWA": {
+    "detect": "^view$",
+    "inputs": {
+     "ACCTSID": 0
+    },
+    "aids": {
+     "ENTER": "^view$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^view account$"
+   },
+   "COUSR0A": {
+    "detect": "^search$",
+    "inputs": {
+     "USRIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^search$",
+     "PF7": "^previous page \\(f7\\)$",
+     "PF8": "^next page \\(f8\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^list users$"
+   },
+   "CCRDLIA": {
+    "detect": "^search$",
+    "inputs": {
+     "ACCTSID": 0,
+     "CARDSID": 1
+    },
+    "aids": {
+     "ENTER": "^search$",
+     "PF7": "^previous page \\(f7\\)$",
+     "PF8": "^next page \\(f8\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^list credit cards$"
+   },
+   "COTRN0A": {
+    "detect": "^search$",
+    "inputs": {
+     "TRNIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^search$",
+     "PF7": "^previous page \\(f7\\)$",
+     "PF8": "^next page \\(f8\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^list transactions$"
+   },
+   "COTRN1A": {
+    "detect": "^back to transaction list$",
+    "inputs": {
+     "TRNIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^fetch$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF5": "^back to transaction list$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^view transaction$"
+   },
+   "COTRN2A": {
+    "detect": "^add transaction$",
+    "inputs": {
+     "ACTIDIN": 0,
+     "CARDNIN": 1,
+     "TTYPCD": 2,
+     "TCATCD": 3,
+     "TRNSRC": 4,
+     "TDESC": 5,
+     "TRNAMT": 6,
+     "TORIGDT": 7,
+     "TPROCDT": 8,
+     "MID": 9,
+     "MNAME": 10,
+     "MCITY": 11,
+     "MZIP": 12,
+     "CONFIRM": 13
+    },
+    "aids": {
+     "ENTER": "^add transaction$",
+     "PF5": "^copy last tran \\(f5\\)$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^add transaction$"
+   },
+   "CORPT0A": {
+    "detect": "^submit$",
+    "inputs": {
+     "SDTMM": 3,
+     "SDTDD": 4,
+     "SDTYYYY": 5,
+     "EDTMM": 6,
+     "EDTDD": 7,
+     "EDTYYYY": 8,
+     "CONFIRM": 9
+    },
+    "aids": {
+     "ENTER": "^submit$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^transaction reports$",
+    "choose": [
+     {
+      "radio": {
+       "MONTHLY": "^monthly \\(current month\\)$",
+       "YEARLY": "^yearly \\(current year\\)$",
+       "CUSTOM": "^custom \\(date range\\)$"
+      },
+      "values": {
+       "MONTHLY": "monthly",
+       "YEARLY": "yearly",
+       "CUSTOM": "custom"
+      }
+     }
+    ]
+   },
+   "COBIL0A": {
+    "detect": "^continue$",
+    "inputs": {
+     "ACTIDIN": 0,
+     "CONFIRM": 1
+    },
+    "aids": {
+     "ENTER": "^continue$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^bill payment$"
+   },
+   "COUSR1A": {
+    "detect": "^add user$",
+    "inputs": {
+     "FNAME": 0,
+     "LNAME": 1,
+     "USERID": 2,
+     "PASSWD": 3,
+     "USRTYPE": 4
+    },
+    "aids": {
+     "ENTER": "^add user$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF3": "^back to menu$"
+    },
+    "title": "^add user$"
+   },
+   "COUSR3A": {
+    "detect": "^fetch user$",
+    "inputs": {
+     "USRIDIN": 0
+    },
+    "aids": {
+     "ENTER": "^fetch user$",
+     "PF5": "^delete \\(f5\\)$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF3": "^back to user list$",
+     "PF12": "^back to menu$"
+    },
+    "title": "^delete user$"
+   },
+   "COUSR2A": {
+    "detect": "^fetch user$",
+    "inputs": {
+     "USRIDIN": 0,
+     "FNAME": 1,
+     "LNAME": 2,
+     "PASSWD": 3,
+     "USRTYPE": 4
+    },
+    "aids": {
+     "ENTER": "^fetch user$",
+     "PF5": "^save \\(f5\\)$",
+     "PF4": "^clear \\(f4\\)$",
+     "PF12": "^back to menu$"
+    },
+    "title": "^update user$"
+   }
+  }
+ },
+ "stores": {
+  "USRSEC": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "ACCTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CUSTDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CCXREF": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "CARDDAT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "TRANSACT": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  },
+  "JOBS": {
+   "system": "<uuid>",
+   "fields": {},
+   "loader": {
+    "clear": "<uuid>",
+    "insert": "<uuid>",
+    "key": "records",
+    "chunk": 50,
+    "operator": true
+   }
+  }
+ }
+}

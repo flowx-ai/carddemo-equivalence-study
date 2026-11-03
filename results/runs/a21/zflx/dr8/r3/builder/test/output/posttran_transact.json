@@ -1,0 +1,5 @@
+[
+ {"tran_id": "TST0000000000003", "type_cd": "02", "cat_cd": 2, "source": "OPERATOR", "desc": "Credit -50 EBCDIC overpunch", "amt": "-50.00", "merchant_id": 103, "merchant_name": "MERCHANT 3", "merchant_city": "CITY", "merchant_zip": "10001", "card_num": "4000000000000001", "orig_ts": "2022-07-18-10.00.00.000000", "proc_ts": "2026-10-28-12.00.07.150000"},
+ {"tran_id": "TST0000000000008", "type_cd": "02", "cat_cd": 2, "source": "OPERATOR", "desc": "Credit -50 GnuCOBOL overpunch", "amt": "-50.00", "merchant_id": 108, "merchant_name": "MERCHANT 8", "merchant_city": "CITY", "merchant_zip": "10001", "card_num": "4000000000000001", "orig_ts": "2022-07-18-10.00.00.000000", "proc_ts": "2026-10-28-12.00.07.150000"},
+ {"tran_id": "TST0000000000002", "type_cd": "01", "cat_cd": 1, "source": "POS TERM", "desc": "Purchase 120", "amt": "120.00", "merchant_id": 102, "merchant_name": "MERCHANT 2", "merchant_city": "CITY", "merchant_zip": "10001", "card_num": "4000000000000001", "orig_ts": "2022-07-18-10.00.00.000000", "proc_ts": "2026-10-28-12.00.07.160000"}
+]

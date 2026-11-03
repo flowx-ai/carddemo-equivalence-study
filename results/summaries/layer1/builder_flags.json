@@ -1,0 +1,2129 @@
+{
+ "creastmt_zflx_sonnet/r1": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-ABEND",
+    30,
+    "A5 missing customer or account stops the run, statements so far kept; wiki silent for the batch"
+   ],
+   [
+    "R-STMT-SET",
+    30,
+    "A5 missing customer or account stops the run; wiki silent for the batch"
+   ],
+   [
+    "R-STMT-SET",
+    37,
+    "B1 one statement per xref card in card order; duplicate card keeps the first record"
+   ],
+   [
+    "R-STMT-TXN",
+    42,
+    "B2 every transaction on file printed, no cycle filter; rests on the wiki TODO"
+   ],
+   [
+    "R-STMT-TXN",
+    45,
+    "B3 matching by card, transaction-id order, duplicates and orphan cards decided by the build"
+   ],
+   [
+    "R-STMT-TOTAL",
+    54,
+    "B5 total kept in cents and truncated to S9(9)V99, a choice the wiki does not state"
+   ],
+   [
+    "R-STMT-NAME",
+    64,
+    "C1 name = first word of each name part; wiki only says 'customer name'"
+   ],
+   [
+    "R-STMT-ADDR",
+    69,
+    "C2 address line 3 assembly (first word of line 3 + state + country + ZIP); no rule in the wiki"
+   ],
+   [
+    "R-STMT-NAME",
+    73,
+    "C3 HTML name cut at the first double space, a judgement call"
+   ],
+   [
+    "R-STMT-ADDR",
+    73,
+    "C3 HTML address fields cut at the first double space, a judgement call"
+   ],
+   [
+    "R-STMT-BAL",
+    77,
+    "C4 a tenth integer digit of the balance dropped as a COBOL MOVE would"
+   ],
+   [
+    "R-STMT-BAL",
+    101,
+    "D2 sign convention of amounts outside the seed file not given by the wiki"
+   ],
+   [
+    "R-STMT-TXN",
+    101,
+    "D2 sign convention of amounts outside the seed file not given by the wiki"
+   ],
+   [
+    "R-STMT-TOTAL",
+    101,
+    "D2 sign convention of amounts outside the seed file not given by the wiki"
+   ],
+   [
+    "R-STMT-OVERFLOW",
+    110,
+    "D4 the legacy table limits are not reproduced; no cap on transactions per card"
+   ]
+  ]
+ },
+ "creastmt_zflx_sonnet/r2": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-SET",
+    22,
+    "B1 duplicate card numbers keep file order"
+   ],
+   [
+    "R-STMT-SET",
+    23,
+    "B2 no account or card status filter; wiki silent"
+   ],
+   [
+    "R-STMT-TXN",
+    24,
+    "B3 every transaction on file, no cycle filter; rests on the wiki TODO"
+   ],
+   [
+    "R-STMT-OVERFLOW",
+    26,
+    "B5 no limit on transactions per card; legacy bounds not reproduced"
+   ],
+   [
+    "R-STMT-TOTAL",
+    27,
+    "B6 accumulator overflow behaviour not in the wiki"
+   ],
+   [
+    "R-STMT-ABEND",
+    28,
+    "B7 missing customer or account stops the run; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    28,
+    "B7 missing customer or account stops the run; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    29,
+    "B8 numeric key matching, first duplicate wins; wiki silent"
+   ],
+   [
+    "R-STMT-NAME",
+    35,
+    "C1 name composition (first word of each part); wiki only says 'customer name'"
+   ],
+   [
+    "R-STMT-ADDR",
+    36,
+    "C2 address line 3 composition (incl. country code); wiki does not give it"
+   ],
+   [
+    "R-STMT-FICO",
+    38,
+    "C4 FICO display rule not defined by the wiki"
+   ],
+   [
+    "R-STMT-BAL",
+    39,
+    "C5 balance at or above 1,000,000,000.00 loses its high-order digit"
+   ],
+   [
+    "R-STMT-NAME",
+    41,
+    "C7 HTML name with trailing spaces removed; contract gives no width"
+   ],
+   [
+    "R-STMT-ADDR",
+    41,
+    "C7 HTML address lines with trailing spaces removed; contract gives no width"
+   ],
+   [
+    "R-STMT-BAL",
+    42,
+    "C8 sign convention of the other signed fields assumed equal to the seed file's"
+   ],
+   [
+    "R-STMT-TXN",
+    42,
+    "C8 sign convention of the other signed fields assumed equal to the seed file's"
+   ],
+   [
+    "R-STMT-TOTAL",
+    42,
+    "C8 sign convention of the other signed fields assumed equal to the seed file's"
+   ]
+  ]
+ },
+ "creastmt_zflx_sonnet/r3": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-OVERFLOW",
+    19,
+    "A2 legacy table limits (51 cards x 10 transactions) do not apply; every transaction printed"
+   ],
+   [
+    "R-STMT-BAL",
+    36,
+    "B8 sign convention of signed amounts; wiki notes overpunch only for discgrp"
+   ],
+   [
+    "R-STMT-TXN",
+    36,
+    "B8 sign convention of signed amounts; wiki notes overpunch only for discgrp"
+   ],
+   [
+    "R-STMT-TOTAL",
+    36,
+    "B8 sign convention of signed amounts; wiki notes overpunch only for discgrp"
+   ],
+   [
+    "R-STMT-SET",
+    37,
+    "B9 duplicate keys, first record wins; wiki does not cover duplicates"
+   ],
+   [
+    "R-STMT-TXN",
+    42,
+    "C11 all transactions on file, no period filter; rests on the wiki TODO"
+   ],
+   [
+    "R-STMT-ABEND",
+    45,
+    "C14 missing customer or account: card skipped with a warning, run continues (legacy abends); wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    45,
+    "C14 missing customer or account: card skipped with a warning; wiki silent"
+   ],
+   [
+    "R-STMT-NAME",
+    50,
+    "D16 name rule from recalled CBSTM03A (L); wiki only says 'customer name'"
+   ],
+   [
+    "R-STMT-ADDR",
+    53,
+    "D17 address line 3 rule from recall (L); 'the most uncertain content rule'"
+   ],
+   [
+    "R-STMT-NAME",
+    54,
+    "D18 HTML name cut at the first double space (L)"
+   ],
+   [
+    "R-STMT-ADDR",
+    54,
+    "D18 HTML address cut at the first double space (L)"
+   ],
+   [
+    "R-STMT-BAL",
+    56,
+    "D20 a 10th integer digit of the balance would be lost"
+   ]
+  ]
+ },
+ "creastmt_zflx_opus/r1": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-TXN",
+    42,
+    "A4 no cycle/date filter; the wiki never defines a cycle"
+   ],
+   [
+    "R-STMT-SET",
+    56,
+    "B1 one statement per xref card although the wiki says per account"
+   ],
+   [
+    "R-STMT-ABEND",
+    65,
+    "B2 missing customer or account skipped (legacy abends); wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    65,
+    "B2 missing customer or account skipped; wiki silent"
+   ],
+   [
+    "R-STMT-TXN",
+    74,
+    "B4 transaction order; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    78,
+    "B5 duplicates and orphan cards; wiki silent"
+   ],
+   [
+    "R-STMT-TXN",
+    78,
+    "B5 duplicates and orphan cards; wiki silent"
+   ],
+   [
+    "R-STMT-OVERFLOW",
+    84,
+    "B6 no limit per card; states it will differ from legacy on a table overflow"
+   ],
+   [
+    "R-STMT-NAME",
+    92,
+    "C1 name assembly; wiki silent, legacy followed"
+   ],
+   [
+    "R-STMT-ADDR",
+    99,
+    "C2 address layout; wiki silent, legacy followed"
+   ],
+   [
+    "R-STMT-FICO",
+    105,
+    "C3 account ID and FICO formatting; the wiki gives none"
+   ],
+   [
+    "R-STMT-TXN",
+    116,
+    "C5 which transaction detail is shown; wiki does not say"
+   ],
+   [
+    "R-STMT-TOTAL",
+    121,
+    "C6 total; the wiki says only 'totals'"
+   ],
+   [
+    "R-STMT-BAL",
+    126,
+    "C7 physical sign encoding not stated anywhere"
+   ],
+   [
+    "R-STMT-TXN",
+    126,
+    "C7 physical sign encoding not stated anywhere"
+   ],
+   [
+    "R-STMT-TOTAL",
+    126,
+    "C7 physical sign encoding not stated anywhere"
+   ],
+   [
+    "R-STMT-NAME",
+    144,
+    "D2 HTML name cut at the first double space, 'the least certain decision'"
+   ],
+   [
+    "R-STMT-ADDR",
+    144,
+    "D2 HTML address cut at the first double space, 'the least certain decision'"
+   ]
+  ]
+ },
+ "creastmt_zflx_opus/r2": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-TXN",
+    41,
+    "A4 no cycle/date filter; the wiki never defines a cycle"
+   ],
+   [
+    "R-STMT-SET",
+    47,
+    "A5 one statement per account; legacy writes one per card; wiki silent on order and multi-card accounts"
+   ],
+   [
+    "R-STMT-TXN",
+    57,
+    "A6 transaction order; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    61,
+    "A7 unmatched records produce nothing; wiki silent"
+   ],
+   [
+    "R-STMT-TXN",
+    61,
+    "A7 unmatched transactions not printed; wiki silent"
+   ],
+   [
+    "R-STMT-ABEND",
+    61,
+    "A7 missing account or customer skipped (legacy abends); wiki silent"
+   ],
+   [
+    "R-STMT-BAL",
+    75,
+    "A9 balance mapped to ACCT-CURR-BAL; wiki lists other figures"
+   ],
+   [
+    "R-STMT-TOTAL",
+    75,
+    "A9 Total EXP formula; wiki says only 'totals'"
+   ],
+   [
+    "R-STMT-BAL",
+    82,
+    "A10 picture overflow truncated as a MOVE"
+   ],
+   [
+    "R-STMT-TOTAL",
+    82,
+    "A10 picture overflow truncated as a MOVE"
+   ],
+   [
+    "R-STMT-TXN",
+    82,
+    "A10 picture overflow truncated as a MOVE"
+   ],
+   [
+    "R-STMT-BAL",
+    87,
+    "A11 sign encoding; data model only says signed"
+   ],
+   [
+    "R-STMT-TXN",
+    87,
+    "A11 sign encoding; data model only says signed"
+   ],
+   [
+    "R-STMT-TOTAL",
+    87,
+    "A11 sign encoding; data model only says signed"
+   ],
+   [
+    "R-STMT-NAME",
+    97,
+    "A12 name assembly; wiki silent, legacy followed"
+   ],
+   [
+    "R-STMT-ADDR",
+    102,
+    "A13 address line 3 composition; wiki silent, legacy followed"
+   ],
+   [
+    "R-STMT-FICO",
+    109,
+    "A14 account ID and FICO formatting; wiki gives none"
+   ],
+   [
+    "R-STMT-TXN",
+    112,
+    "A15 which field is the transaction detail; wiki does not say"
+   ],
+   [
+    "R-STMT-NAME",
+    119,
+    "A17 HTML name value; contract gives no width"
+   ],
+   [
+    "R-STMT-ADDR",
+    119,
+    "A17 HTML address values; contract gives no width"
+   ],
+   [
+    "R-STMT-OVERFLOW",
+    135,
+    "A19 no capacity limit; legacy table limit not reproduced"
+   ]
+  ]
+ },
+ "creastmt_zflx_opus/r3": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-STMT-TXN",
+    22,
+    "A5 no cycle filter; the wiki never defines a cycle"
+   ],
+   [
+    "R-STMT-SET",
+    28,
+    "B1 one statement per xref card; wiki says per account"
+   ],
+   [
+    "R-STMT-TXN",
+    29,
+    "B2 transaction selection and order; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    30,
+    "B3 inactive accounts not skipped; wiki silent"
+   ],
+   [
+    "R-STMT-OVERFLOW",
+    32,
+    "B5 emulates the legacy 51x10 table overflow from recollection; flagged"
+   ],
+   [
+    "R-STMT-SET",
+    33,
+    "B6 duplicate keys keep the first; wiki silent"
+   ],
+   [
+    "R-STMT-TXN",
+    33,
+    "B6 duplicate transactions keep the first; wiki silent"
+   ],
+   [
+    "R-STMT-ABEND",
+    34,
+    "B7 stops on a missing account or customer, as legacy abends; wiki silent"
+   ],
+   [
+    "R-STMT-SET",
+    34,
+    "B7 statements before the stop are returned; wiki silent"
+   ],
+   [
+    "R-STMT-NAME",
+    40,
+    "C1 name assembly; wiki silent"
+   ],
+   [
+    "R-STMT-ADDR",
+    41,
+    "C2 address lines 1-2; wiki silent"
+   ],
+   [
+    "R-STMT-ADDR",
+    42,
+    "C3 address line 3 composition; wiki silent"
+   ],
+   [
+    "R-STMT-FICO",
+    43,
+    "C4 account ID formatting"
+   ],
+   [
+    "R-STMT-BAL",
+    44,
+    "C5 balance mapped to ACCT-CURR-BAL; wiki lists other figures"
+   ],
+   [
+    "R-STMT-FICO",
+    45,
+    "C6 FICO formatting"
+   ],
+   [
+    "R-STMT-TXN",
+    46,
+    "C7 which field is the transaction detail; wiki silent"
+   ],
+   [
+    "R-STMT-TOTAL",
+    47,
+    "C8 Total EXP formula not given"
+   ],
+   [
+    "R-STMT-BAL",
+    49,
+    "C10 sign encoding not stated"
+   ],
+   [
+    "R-STMT-TXN",
+    49,
+    "C10 sign encoding not stated"
+   ],
+   [
+    "R-STMT-TOTAL",
+    49,
+    "C10 sign encoding not stated"
+   ],
+   [
+    "R-STMT-NAME",
+    55,
+    "D1 HTML name cut at first double space; wiki silent"
+   ],
+   [
+    "R-STMT-ADDR",
+    55,
+    "D1 HTML address cut at first double space; wiki silent"
+   ]
+  ]
+ },
+ "creastmt_harness_sonnet/r1": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-STMT-BAL",
+    4,
+    "[2] signed numeric encoding; physical encoding omitted by the wiki"
+   ],
+   [
+    "R-STMT-TXN",
+    4,
+    "[2] signed numeric encoding; physical encoding omitted by the wiki"
+   ],
+   [
+    "R-STMT-TOTAL",
+    4,
+    "[2] signed numeric encoding; physical encoding omitted by the wiki"
+   ],
+   [
+    "R-STMT-SET",
+    6,
+    "[4] one statement per xref card, card-only transactions, no date filter; cycle filter TODO"
+   ],
+   [
+    "R-STMT-TXN",
+    6,
+    "[4] one statement per xref card, card-only transactions, no date filter; cycle filter TODO"
+   ],
+   [
+    "R-STMT-NAME",
+    7,
+    "[5] name: trim parts, omit blanks, single spaces; concatenation undefined"
+   ],
+   [
+    "R-STMT-ADDR",
+    8,
+    "[6] address line 3 = line3 + state + ZIP, no country; no assembly rule"
+   ],
+   [
+    "R-STMT-FICO",
+    9,
+    "[7] account ID and FICO display; no conversion rules"
+   ],
+   [
+    "R-STMT-NAME",
+    10,
+    "[8] text truncation policy; no overflow policy"
+   ],
+   [
+    "R-STMT-ADDR",
+    10,
+    "[8] text truncation policy; no overflow policy"
+   ],
+   [
+    "R-STMT-TXN",
+    10,
+    "[8] text truncation policy; no overflow policy"
+   ],
+   [
+    "R-STMT-NAME",
+    11,
+    "[9] HTML escaping of inserted text; escaping omitted"
+   ],
+   [
+    "R-STMT-ADDR",
+    11,
+    "[9] HTML escaping of inserted text; escaping omitted"
+   ],
+   [
+    "R-STMT-SET",
+    12,
+    "[10] duplicates rejected; duplicate handling unspecified"
+   ],
+   [
+    "R-STMT-ABEND",
+    12,
+    "[10] duplicates rejected; duplicate handling unspecified"
+   ],
+   [
+    "R-STMT-ABEND",
+    13,
+    "[11] missing account or customer fails the batch; orphan transactions ignored"
+   ],
+   [
+    "R-STMT-SET",
+    13,
+    "[11] missing account or customer fails the batch; orphan transactions ignored"
+   ],
+   [
+    "R-STMT-TXN",
+    13,
+    "[11] missing account or customer fails the batch; orphan transactions ignored"
+   ],
+   [
+    "R-STMT-TOTAL",
+    14,
+    "[12] arithmetic and numeric overflow fail the batch; overflow handling unspecified"
+   ],
+   [
+    "R-STMT-BAL",
+    14,
+    "[12] arithmetic and numeric overflow fail the batch; overflow handling unspecified"
+   ],
+   [
+    "R-STMT-ABEND",
+    16,
+    "[14] batch failure without partial statements; no statement-specific policy"
+   ]
+  ]
+ },
+ "creastmt_harness_sonnet/r2": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-STMT-BAL",
+    9,
+    "[7] money decoding; input sign encoding not defined by the wiki"
+   ],
+   [
+    "R-STMT-TXN",
+    9,
+    "[7] money decoding; input sign encoding not defined by the wiki"
+   ],
+   [
+    "R-STMT-TOTAL",
+    9,
+    "[7] money decoding; input sign encoding not defined by the wiki"
+   ],
+   [
+    "R-STMT-FICO",
+    10,
+    "[8] identifier and FICO display; no de-zeroing or validation rule"
+   ],
+   [
+    "R-STMT-SET",
+    11,
+    "[9] selection per xref card, no date filter; cycle filtering still TODO"
+   ],
+   [
+    "R-STMT-TXN",
+    11,
+    "[9] selection per xref card, no date filter; cycle filtering still TODO"
+   ],
+   [
+    "R-STMT-SET",
+    12,
+    "[10] cards sharing an account get separate statements; wiki wording conflicts"
+   ],
+   [
+    "R-STMT-TXN",
+    12,
+    "[10] cards sharing an account get separate statements; wiki wording conflicts"
+   ],
+   [
+    "R-STMT-ABEND",
+    13,
+    "[11] duplicates or missing account/customer fail the whole run, no partial statements"
+   ],
+   [
+    "R-STMT-SET",
+    13,
+    "[11] duplicates or missing account/customer fail the whole run, no partial statements"
+   ],
+   [
+    "R-STMT-NAME",
+    14,
+    "[12] name joining rule not given"
+   ],
+   [
+    "R-STMT-ADDR",
+    15,
+    "[13] address assembly not given; country omitted"
+   ],
+   [
+    "R-STMT-BAL",
+    16,
+    "[14] picture overflow rejected; overflow handling not stated"
+   ],
+   [
+    "R-STMT-TOTAL",
+    16,
+    "[14] picture overflow rejected; overflow handling not stated"
+   ],
+   [
+    "R-STMT-TXN",
+    16,
+    "[14] picture overflow rejected; overflow handling not stated"
+   ],
+   [
+    "R-STMT-TXN",
+    17,
+    "[15] description truncation and separators not specified"
+   ],
+   [
+    "R-STMT-NAME",
+    18,
+    "[16] HTML escaping and insertion widths not specified"
+   ],
+   [
+    "R-STMT-ADDR",
+    18,
+    "[16] HTML escaping and insertion widths not specified"
+   ]
+  ]
+ },
+ "creastmt_harness_sonnet/r3": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-STMT-BAL",
+    3,
+    "[1] sign encoding; copybook sign details absent"
+   ],
+   [
+    "R-STMT-TXN",
+    3,
+    "[1] sign encoding; copybook sign details absent"
+   ],
+   [
+    "R-STMT-TOTAL",
+    3,
+    "[1] sign encoding; copybook sign details absent"
+   ],
+   [
+    "R-STMT-SET",
+    6,
+    "[4] one statement per xref card, not per account"
+   ],
+   [
+    "R-STMT-TXN",
+    7,
+    "[5] card-only transactions; orphan treatment not specified"
+   ],
+   [
+    "R-STMT-SET",
+    7,
+    "[5] card-only transactions; orphan treatment not specified"
+   ],
+   [
+    "R-STMT-TXN",
+    8,
+    "[6] no cycle or status filter; cycle filter TODO"
+   ],
+   [
+    "R-STMT-SET",
+    8,
+    "[6] no cycle or status filter; cycle filter TODO"
+   ],
+   [
+    "R-STMT-NAME",
+    9,
+    "[7] name concatenation unspecified"
+   ],
+   [
+    "R-STMT-ADDR",
+    10,
+    "[8] address concatenation not defined; country omitted"
+   ],
+   [
+    "R-STMT-FICO",
+    11,
+    "[9] blank FICO as 0; blank formatting unspecified"
+   ],
+   [
+    "R-STMT-TOTAL",
+    12,
+    "[10] total; overflow treatment unspecified"
+   ],
+   [
+    "R-STMT-NAME",
+    16,
+    "[14] text truncation and padding"
+   ],
+   [
+    "R-STMT-ADDR",
+    16,
+    "[14] text truncation and padding"
+   ],
+   [
+    "R-STMT-TXN",
+    16,
+    "[14] text truncation and padding"
+   ],
+   [
+    "R-STMT-NAME",
+    17,
+    "[15] HTML escaping and overlength unspecified"
+   ],
+   [
+    "R-STMT-ADDR",
+    17,
+    "[15] HTML escaping and overlength unspecified"
+   ],
+   [
+    "R-STMT-ABEND",
+    18,
+    "[16] missing reference or duplicates fail the whole batch, no partial statements"
+   ],
+   [
+    "R-STMT-SET",
+    18,
+    "[16] missing reference or duplicates fail the whole batch, no partial statements"
+   ]
+  ]
+ },
+ "creastmt_harness_opus/r1": {
+  "source": "session.json",
+  "entries": []
+ },
+ "creastmt_harness_opus/r2": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-STMT-BAL",
+    5,
+    "[3] sign representation absent"
+   ],
+   [
+    "R-STMT-TXN",
+    5,
+    "[3] sign representation absent"
+   ],
+   [
+    "R-STMT-TOTAL",
+    5,
+    "[3] sign representation absent"
+   ],
+   [
+    "R-STMT-SET",
+    7,
+    "[5] one statement per account, ordered by account ID; ordering absent"
+   ],
+   [
+    "R-STMT-TXN",
+    8,
+    "[6] no date filter, file order within account; ordering rule not given"
+   ],
+   [
+    "R-STMT-SET",
+    9,
+    "[7] statement holder = lowest customer ID on the account; primary customer undefined"
+   ],
+   [
+    "R-STMT-NAME",
+    9,
+    "[7] statement holder = lowest customer ID on the account; primary customer undefined"
+   ],
+   [
+    "R-STMT-ADDR",
+    9,
+    "[7] statement holder = lowest customer ID on the account; primary customer undefined"
+   ],
+   [
+    "R-STMT-ABEND",
+    10,
+    "[8] duplicates or unresolved joins rejected, no partial statements"
+   ],
+   [
+    "R-STMT-SET",
+    10,
+    "[8] duplicates or unresolved joins rejected, no partial statements"
+   ],
+   [
+    "R-STMT-NAME",
+    11,
+    "[9] name joining; address lines unchanged, no state/country/ZIP; no assembly rule"
+   ],
+   [
+    "R-STMT-ADDR",
+    11,
+    "[9] name joining; address lines unchanged, no state/country/ZIP; no assembly rule"
+   ],
+   [
+    "R-STMT-FICO",
+    12,
+    "[10] account ID, FICO, balance; conversion unspecified"
+   ],
+   [
+    "R-STMT-BAL",
+    12,
+    "[10] account ID, FICO, balance; conversion unspecified"
+   ],
+   [
+    "R-STMT-TXN",
+    13,
+    "[11] details field, truncation, Total EXP rule not given"
+   ],
+   [
+    "R-STMT-TOTAL",
+    13,
+    "[11] details field, truncation, Total EXP rule not given"
+   ],
+   [
+    "R-STMT-NAME",
+    13,
+    "[11] details field, truncation, Total EXP rule not given"
+   ],
+   [
+    "R-STMT-NAME",
+    15,
+    "[13] HTML escaping and numeric overflow unspecified"
+   ],
+   [
+    "R-STMT-ADDR",
+    15,
+    "[13] HTML escaping and numeric overflow unspecified"
+   ],
+   [
+    "R-STMT-BAL",
+    15,
+    "[13] HTML escaping and numeric overflow unspecified"
+   ],
+   [
+    "R-STMT-TOTAL",
+    15,
+    "[13] HTML escaping and numeric overflow unspecified"
+   ],
+   [
+    "R-STMT-TXN",
+    15,
+    "[13] HTML escaping and numeric overflow unspecified"
+   ],
+   [
+    "R-STMT-BAL",
+    16,
+    "[14] wiki's extra figures not printed"
+   ]
+  ]
+ },
+ "creastmt_harness_opus/r3": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-STMT-TXN",
+    4,
+    "[2] no date filter"
+   ],
+   [
+    "R-STMT-BAL",
+    7,
+    "[5] textual sign encoding not defined"
+   ],
+   [
+    "R-STMT-TXN",
+    7,
+    "[5] textual sign encoding not defined"
+   ],
+   [
+    "R-STMT-TOTAL",
+    7,
+    "[5] textual sign encoding not defined"
+   ],
+   [
+    "R-STMT-FICO",
+    9,
+    "[7] numeric-to-X display conversion not defined"
+   ],
+   [
+    "R-STMT-SET",
+    10,
+    "[8] duplicates rejected; unstated"
+   ],
+   [
+    "R-STMT-ABEND",
+    10,
+    "[8] duplicates rejected; unstated"
+   ],
+   [
+    "R-STMT-ABEND",
+    11,
+    "[9] unresolved links fail the batch; unstated"
+   ],
+   [
+    "R-STMT-SET",
+    11,
+    "[9] unresolved links fail the batch; unstated"
+   ],
+   [
+    "R-STMT-TXN",
+    11,
+    "[9] unresolved links fail the batch; unstated"
+   ],
+   [
+    "R-STMT-SET",
+    12,
+    "[10] addressee = smallest linked customer ID"
+   ],
+   [
+    "R-STMT-NAME",
+    12,
+    "[10] addressee = smallest linked customer ID"
+   ],
+   [
+    "R-STMT-ADDR",
+    12,
+    "[10] addressee = smallest linked customer ID"
+   ],
+   [
+    "R-STMT-SET",
+    13,
+    "[11] one statement per account incl. inactive"
+   ],
+   [
+    "R-STMT-SET",
+    14,
+    "[12] accounts numeric, transactions by ID; sort keys not defined"
+   ],
+   [
+    "R-STMT-TXN",
+    14,
+    "[12] accounts numeric, transactions by ID; sort keys not defined"
+   ],
+   [
+    "R-STMT-BAL",
+    15,
+    "[13] current balance only; wiki's other figures not printed"
+   ],
+   [
+    "R-STMT-TOTAL",
+    16,
+    "[14] Total EXP formula not given"
+   ],
+   [
+    "R-STMT-BAL",
+    17,
+    "[15] overflow policy absent"
+   ],
+   [
+    "R-STMT-TOTAL",
+    17,
+    "[15] overflow policy absent"
+   ],
+   [
+    "R-STMT-TXN",
+    17,
+    "[15] overflow policy absent"
+   ],
+   [
+    "R-STMT-NAME",
+    18,
+    "[16] name assembly unspecified"
+   ],
+   [
+    "R-STMT-ADDR",
+    19,
+    "[17] address assembly unspecified"
+   ],
+   [
+    "R-STMT-TXN",
+    20,
+    "[18] Tran Details assembly not defined"
+   ],
+   [
+    "R-STMT-NAME",
+    24,
+    "[22] HTML escaping not specified"
+   ],
+   [
+    "R-STMT-ADDR",
+    24,
+    "[22] HTML escaping not specified"
+   ],
+   [
+    "R-STMT-NAME",
+    25,
+    "[23] overlong-substitution policy not given"
+   ],
+   [
+    "R-STMT-ADDR",
+    25,
+    "[23] overlong-substitution policy not given"
+   ],
+   [
+    "R-STMT-TXN",
+    25,
+    "[23] overlong-substitution policy not given"
+   ],
+   [
+    "R-STMT-ABEND",
+    26,
+    "[24] atomic failure, no partial statements"
+   ]
+  ]
+ },
+ "tranrept_zflx_sonnet/r1": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-SET",
+    37,
+    "A-04 date filter on the processed-date part"
+   ],
+   [
+    "R-REPT-SET",
+    43,
+    "A-05 stable sort; tie order not given"
+   ],
+   [
+    "R-REPT-XREF",
+    50,
+    "A-06 account ID from CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    55,
+    "A-07 lookup keys, truncation, duplicate keys"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    62,
+    "A-08 missing reference flagged and run continues (legacy may abend; wiki TODO)"
+   ],
+   [
+    "R-REPT-SET",
+    62,
+    "A-08 missing reference flagged and run continues (legacy may abend; wiki TODO)"
+   ],
+   [
+    "R-REPT-ACCT",
+    73,
+    "A-09 account total breaks on card number"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    78,
+    "A-10 no account total after the last card"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    96,
+    "A-12 legacy end-of-file double add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    96,
+    "A-12 legacy end-of-file double add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    111,
+    "A-14 empty range"
+   ],
+   [
+    "R-REPT-AMT",
+    118,
+    "A-15 zero amounts print blank"
+   ],
+   [
+    "R-REPT-ACCT",
+    118,
+    "A-15 zero amounts print blank"
+   ],
+   [
+    "R-REPT-GRAND",
+    118,
+    "A-15 zero amounts print blank"
+   ],
+   [
+    "R-REPT-ACCT",
+    125,
+    "A-16 overflow drops high-order digits; wiki silent"
+   ],
+   [
+    "R-REPT-GRAND",
+    125,
+    "A-16 overflow drops high-order digits; wiki silent"
+   ],
+   [
+    "R-REPT-AMT",
+    141,
+    "A-20 amount sign encoding not given"
+   ]
+  ]
+ },
+ "tranrept_zflx_sonnet/r2": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-SET",
+    47,
+    "A5 date filter on the date part; time of day not stated"
+   ],
+   [
+    "R-REPT-SET",
+    54,
+    "A6 stable sort; no secondary key given"
+   ],
+   [
+    "R-REPT-XREF",
+    61,
+    "A7 account ID from CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    68,
+    "A8 description lookup and truncation"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    74,
+    "A9 unknown references flagged, run continues; legacy may abend (wiki TODO)"
+   ],
+   [
+    "R-REPT-SET",
+    74,
+    "A9 unknown references flagged, run continues; legacy may abend (wiki TODO)"
+   ],
+   [
+    "R-REPT-ACCT",
+    84,
+    "A10 account total on card change only, none for the last card"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    84,
+    "A10 account total on card change only, none for the last card"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    102,
+    "A12 plain sums; legacy end-of-file double add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    102,
+    "A12 plain sums; legacy end-of-file double add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    109,
+    "A13 empty range: no header; wiki silent"
+   ],
+   [
+    "R-REPT-HEADER",
+    109,
+    "A13 empty range: no header; wiki silent"
+   ],
+   [
+    "R-REPT-AMT",
+    122,
+    "A15 zero and overflow editing; wiki silent"
+   ],
+   [
+    "R-REPT-ACCT",
+    122,
+    "A15 zero and overflow editing; wiki silent"
+   ],
+   [
+    "R-REPT-GRAND",
+    122,
+    "A15 zero and overflow editing; wiki silent"
+   ],
+   [
+    "R-REPT-AMT",
+    132,
+    "A16 TRANSACT text encoding not described"
+   ]
+  ]
+ },
+ "tranrept_zflx_sonnet/r3": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-SET",
+    33,
+    "A-05 timestamp vs date comparison not stated"
+   ],
+   [
+    "R-REPT-SET",
+    37,
+    "A-06 tie order not stated; stable sort"
+   ],
+   [
+    "R-REPT-XREF",
+    43,
+    "A-07 account ID from CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    47,
+    "A-08 lookup keys, numeric category match, truncation"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    58,
+    "A-10 missing reference continues; legacy may abend (wiki TODO)"
+   ],
+   [
+    "R-REPT-SET",
+    58,
+    "A-10 missing reference continues; legacy may abend (wiki TODO)"
+   ],
+   [
+    "R-REPT-ACCT",
+    68,
+    "A-11 account total on card change only, none for the last card"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    68,
+    "A-11 account total on card change only, none for the last card"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    72,
+    "A-12 plain sums; legacy end-of-file add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    72,
+    "A-12 plain sums; legacy end-of-file add not reproduced"
+   ],
+   [
+    "R-REPT-GRAND",
+    89,
+    "A-14 empty range: no header"
+   ],
+   [
+    "R-REPT-HEADER",
+    89,
+    "A-14 empty range: no header"
+   ],
+   [
+    "R-REPT-AMT",
+    95,
+    "A-15 zero editing; wiki silent"
+   ],
+   [
+    "R-REPT-ACCT",
+    95,
+    "A-15 zero editing; wiki silent"
+   ],
+   [
+    "R-REPT-GRAND",
+    95,
+    "A-15 zero editing; wiki silent"
+   ],
+   [
+    "R-REPT-AMT",
+    117,
+    "A-19 sign encoding not given"
+   ]
+  ]
+ },
+ "tranrept_zflx_opus/r1": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-SET",
+    44,
+    "1 selection on processing date; wiki never says which timestamp; legacy followed"
+   ],
+   [
+    "R-REPT-SET",
+    49,
+    "2 order and stability; wiki silent"
+   ],
+   [
+    "R-REPT-ACCT",
+    52,
+    "3 grouping on card, account ID from CardXref; wiki silent, legacy followed"
+   ],
+   [
+    "R-REPT-XREF",
+    52,
+    "3 grouping on card, account ID from CardXref; wiki silent, legacy followed"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    63,
+    "6 end of file reproduced as legacy (double add, no last account total); wiki silent"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    63,
+    "6 end of file reproduced as legacy (double add, no last account total); wiki silent"
+   ],
+   [
+    "R-REPT-GRAND",
+    63,
+    "6 end of file reproduced as legacy (double add, no last account total); wiki silent"
+   ],
+   [
+    "R-REPT-GRAND",
+    72,
+    "7 grand total = sum of page totals incl. duplicate"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    74,
+    "8 lookup failure aborts and returns the lines so far; wiki silent"
+   ],
+   [
+    "R-REPT-SET",
+    74,
+    "8 lookup failure aborts and returns the lines so far; wiki silent"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    78,
+    "9 description truncation and lookup keys"
+   ],
+   [
+    "R-REPT-AMT",
+    81,
+    "10 zero editing not stated"
+   ],
+   [
+    "R-REPT-ACCT",
+    81,
+    "10 zero editing not stated"
+   ],
+   [
+    "R-REPT-GRAND",
+    81,
+    "10 zero editing not stated"
+   ],
+   [
+    "R-REPT-AMT",
+    89,
+    "11 sign encoding not stated"
+   ],
+   [
+    "R-REPT-ACCT",
+    93,
+    "12 overflow truncation"
+   ],
+   [
+    "R-REPT-GRAND",
+    93,
+    "12 overflow truncation"
+   ],
+   [
+    "R-REPT-GRAND",
+    103,
+    "15 empty result, no header"
+   ],
+   [
+    "R-REPT-HEADER",
+    103,
+    "15 empty result, no header"
+   ]
+  ]
+ },
+ "tranrept_zflx_opus/r2": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-AMT",
+    51,
+    "A6 sign encoding a gap"
+   ],
+   [
+    "R-REPT-SET",
+    58,
+    "A7 processing date chosen from legacy recall"
+   ],
+   [
+    "R-REPT-SET",
+    62,
+    "A8 order and tie stability a gap"
+   ],
+   [
+    "R-REPT-XREF",
+    65,
+    "A9 account ID from CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    68,
+    "A10 lookup keys and truncation"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    71,
+    "A11 missing lookup stops the run with no partial report"
+   ],
+   [
+    "R-REPT-SET",
+    71,
+    "A11 missing lookup stops the run with no partial report"
+   ],
+   [
+    "R-REPT-ACCT",
+    84,
+    "A14 account total on card change; grouping undefined"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    87,
+    "A15 end of file reproduces legacy double add and no last account total"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    87,
+    "A15 end of file reproduces legacy double add and no last account total"
+   ],
+   [
+    "R-REPT-GRAND",
+    92,
+    "A16 grand total includes the double count"
+   ],
+   [
+    "R-REPT-AMT",
+    93,
+    "A17 zero and overflow editing a gap"
+   ],
+   [
+    "R-REPT-ACCT",
+    93,
+    "A17 zero and overflow editing a gap"
+   ],
+   [
+    "R-REPT-GRAND",
+    93,
+    "A17 zero and overflow editing a gap"
+   ],
+   [
+    "R-REPT-GRAND",
+    97,
+    "A18 empty result prints a header"
+   ],
+   [
+    "R-REPT-HEADER",
+    97,
+    "A18 empty result prints a header"
+   ]
+  ]
+ },
+ "tranrept_zflx_opus/r3": {
+  "source": "builder/assumptions.md",
+  "entries": [
+   [
+    "R-REPT-SET",
+    24,
+    "P2 processing date chosen from legacy; wiki silent"
+   ],
+   [
+    "R-REPT-SET",
+    30,
+    "O1 order and stability; wiki silent"
+   ],
+   [
+    "R-REPT-ACCT",
+    31,
+    "O2 account total breaks on card; wiki silent"
+   ],
+   [
+    "R-REPT-XREF",
+    32,
+    "O3 account ID from CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    33,
+    "O4 lookup keys and truncation"
+   ],
+   [
+    "R-REPT-GRAND",
+    41,
+    "T3 grand total = sum of page totals; wiki silent"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    42,
+    "T4 end of file reproduces legacy double add, no last account total"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    42,
+    "T4 end of file reproduces legacy double add, no last account total"
+   ],
+   [
+    "R-REPT-GRAND",
+    42,
+    "T4 end of file reproduces legacy double add, no last account total"
+   ],
+   [
+    "R-REPT-GRAND",
+    43,
+    "T5 empty selection"
+   ],
+   [
+    "R-REPT-HEADER",
+    43,
+    "T5 empty selection"
+   ],
+   [
+    "R-REPT-ACCT",
+    44,
+    "T6 accumulator overflow"
+   ],
+   [
+    "R-REPT-GRAND",
+    44,
+    "T6 accumulator overflow"
+   ],
+   [
+    "R-REPT-AMT",
+    50,
+    "F1 zero editing not covered"
+   ],
+   [
+    "R-REPT-ACCT",
+    50,
+    "F1 zero editing not covered"
+   ],
+   [
+    "R-REPT-GRAND",
+    50,
+    "F1 zero editing not covered"
+   ],
+   [
+    "R-REPT-AMT",
+    54,
+    "F5 sign encoding not specified"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    61,
+    "A1 lookup failure stops with the lines so far (legacy abend); wiki silent"
+   ],
+   [
+    "R-REPT-SET",
+    61,
+    "A1 lookup failure stops with the lines so far (legacy abend); wiki silent"
+   ]
+  ]
+ },
+ "tranrept_harness_sonnet/r1": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-REPT-AMT",
+    7,
+    "[5] transaction file encoding not specified"
+   ],
+   [
+    "R-REPT-SET",
+    10,
+    "[8] date comparison policy not stated"
+   ],
+   [
+    "R-REPT-SET",
+    11,
+    "[9] tie ordering and deduplication not specified"
+   ],
+   [
+    "R-REPT-XREF",
+    12,
+    "[10] account ID from CardXref as text"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    13,
+    "[11] lookup keys"
+   ],
+   [
+    "R-REPT-XREF",
+    13,
+    "[11] lookup keys"
+   ],
+   [
+    "R-REPT-ACCT",
+    14,
+    "[12] account total at each card break"
+   ],
+   [
+    "R-REPT-ACCT",
+    16,
+    "[14] ordering of totals at boundaries not given"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    16,
+    "[14] ordering of totals at boundaries not given"
+   ],
+   [
+    "R-REPT-GRAND",
+    16,
+    "[14] ordering of totals at boundaries not given"
+   ],
+   [
+    "R-REPT-GRAND",
+    17,
+    "[15] empty-report layout not stated"
+   ],
+   [
+    "R-REPT-HEADER",
+    17,
+    "[15] empty-report layout not stated"
+   ],
+   [
+    "R-REPT-AMT",
+    19,
+    "[17] overflow fails the run; unspecified"
+   ],
+   [
+    "R-REPT-ACCT",
+    19,
+    "[17] overflow fails the run; unspecified"
+   ],
+   [
+    "R-REPT-GRAND",
+    19,
+    "[17] overflow fails the run; unspecified"
+   ],
+   [
+    "R-REPT-AMT",
+    20,
+    "[18] zero printing"
+   ],
+   [
+    "R-REPT-ACCT",
+    20,
+    "[18] zero printing"
+   ],
+   [
+    "R-REPT-GRAND",
+    20,
+    "[18] zero printing"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    21,
+    "[19] truncation handling not stated"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    22,
+    "[20] missing lookups continue with UNKNOWN / blank"
+   ],
+   [
+    "R-REPT-XREF",
+    22,
+    "[20] missing lookups continue with UNKNOWN / blank"
+   ],
+   [
+    "R-REPT-SET",
+    22,
+    "[20] missing lookups continue with UNKNOWN / blank"
+   ],
+   [
+    "R-REPT-SET",
+    23,
+    "[21] bad input fails the run, no partial report"
+   ]
+  ]
+ },
+ "tranrept_harness_sonnet/r2": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-REPT-AMT",
+    5,
+    "3 amount encoding not stated"
+   ],
+   [
+    "R-REPT-SET",
+    6,
+    "4 record validation incl. printable filler; malformed handling unspecified"
+   ],
+   [
+    "R-REPT-SET",
+    9,
+    "7 timestamp interpretation"
+   ],
+   [
+    "R-REPT-SET",
+    10,
+    "8 no secondary sort defined"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    11,
+    "9 lookup keys"
+   ],
+   [
+    "R-REPT-XREF",
+    11,
+    "9 lookup keys"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    12,
+    "10 unknown references continue (legacy abend TODO)"
+   ],
+   [
+    "R-REPT-XREF",
+    12,
+    "10 unknown references continue (legacy abend TODO)"
+   ],
+   [
+    "R-REPT-SET",
+    12,
+    "10 unknown references continue (legacy abend TODO)"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    13,
+    "11 truncation"
+   ],
+   [
+    "R-REPT-AMT",
+    14,
+    "12 overflow and zero totals print +0.00; not defined"
+   ],
+   [
+    "R-REPT-ACCT",
+    14,
+    "12 overflow and zero totals print +0.00; not defined"
+   ],
+   [
+    "R-REPT-GRAND",
+    14,
+    "12 overflow and zero totals print +0.00; not defined"
+   ],
+   [
+    "R-REPT-ACCT",
+    18,
+    "16 total scope and ordering; final card closed"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    18,
+    "16 total scope and ordering; final card closed"
+   ],
+   [
+    "R-REPT-GRAND",
+    18,
+    "16 total scope and ordering; final card closed"
+   ],
+   [
+    "R-REPT-GRAND",
+    19,
+    "17 empty selection lines not specified"
+   ],
+   [
+    "R-REPT-HEADER",
+    19,
+    "17 empty selection lines not specified"
+   ],
+   [
+    "R-REPT-SET",
+    20,
+    "18 fail-closed on malformed input, no partial report"
+   ]
+  ]
+ },
+ "tranrept_harness_sonnet/r3": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-REPT-AMT",
+    6,
+    "A04 transaction input encoding not stated"
+   ],
+   [
+    "R-REPT-SET",
+    8,
+    "A06 no secondary sort or dedup specified"
+   ],
+   [
+    "R-REPT-ACCT",
+    10,
+    "A08 account total = card-break total; boundary ordering absent"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    11,
+    "A09 final/empty ordering not fully specified"
+   ],
+   [
+    "R-REPT-GRAND",
+    11,
+    "A09 final/empty ordering not fully specified"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    12,
+    "A10 missing lookups continue with UNKNOWN / zero account"
+   ],
+   [
+    "R-REPT-XREF",
+    12,
+    "A10 missing lookups continue with UNKNOWN / zero account"
+   ],
+   [
+    "R-REPT-SET",
+    12,
+    "A10 missing lookups continue with UNKNOWN / zero account"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    13,
+    "A11 conflicting duplicate lookups rejected"
+   ],
+   [
+    "R-REPT-SET",
+    13,
+    "A11 conflicting duplicate lookups rejected"
+   ],
+   [
+    "R-REPT-SET",
+    14,
+    "A12 fail without partial report on invalid input or overflow"
+   ],
+   [
+    "R-REPT-AMT",
+    15,
+    "A13 zero prints .00 with sign; zero edge case not specified"
+   ],
+   [
+    "R-REPT-ACCT",
+    15,
+    "A13 zero prints .00 with sign; zero edge case not specified"
+   ],
+   [
+    "R-REPT-GRAND",
+    15,
+    "A13 zero prints .00 with sign; zero edge case not specified"
+   ],
+   [
+    "R-REPT-SET",
+    18,
+    "A16 timestamp grammar not specified"
+   ]
+  ]
+ },
+ "tranrept_harness_opus/r1": {
+  "source": "session.json",
+  "entries": []
+ },
+ "tranrept_harness_opus/r2": {
+  "source": "exec/assumption_register.md",
+  "entries": [
+   [
+    "R-REPT-XREF",
+    5,
+    "A03 account joined by card through CardXref"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    7,
+    "A05 category lookup key unstated"
+   ],
+   [
+    "R-REPT-AMT",
+    11,
+    "A09 sign encoding not specified"
+   ],
+   [
+    "R-REPT-SET",
+    13,
+    "A11 which timestamp controls selection not identified"
+   ],
+   [
+    "R-REPT-SET",
+    15,
+    "A13 duplicate identifiers kept"
+   ],
+   [
+    "R-REPT-SET",
+    16,
+    "A14 order by account then transaction ID; sorting not specified"
+   ],
+   [
+    "R-REPT-ACCT",
+    16,
+    "A14 order by account then transaction ID; sorting not specified"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    18,
+    "A16 conflicting duplicate lookups rejected"
+   ],
+   [
+    "R-REPT-SET",
+    18,
+    "A16 conflicting duplicate lookups rejected"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    19,
+    "A17 unresolved lookup fails the whole run"
+   ],
+   [
+    "R-REPT-SET",
+    19,
+    "A17 unresolved lookup fails the whole run"
+   ],
+   [
+    "R-REPT-ACCT",
+    21,
+    "A19 account totals per account incl. the last; scope not defined"
+   ],
+   [
+    "R-REPT-LASTACCT",
+    21,
+    "A19 account totals per account incl. the last; scope not defined"
+   ],
+   [
+    "R-REPT-GRAND",
+    23,
+    "A21 grand total sums each detail once"
+   ],
+   [
+    "R-REPT-LASTDUP",
+    23,
+    "A21 grand total sums each detail once"
+   ],
+   [
+    "R-REPT-GRAND",
+    24,
+    "A22 empty-result lines not specified"
+   ],
+   [
+    "R-REPT-HEADER",
+    24,
+    "A22 empty-result lines not specified"
+   ],
+   [
+    "R-REPT-AMT",
+    26,
+    "A24 zero printing"
+   ],
+   [
+    "R-REPT-ACCT",
+    26,
+    "A24 zero printing"
+   ],
+   [
+    "R-REPT-GRAND",
+    26,
+    "A24 zero printing"
+   ],
+   [
+    "R-REPT-AMT",
+    27,
+    "A25 overflow rejected; not documented"
+   ],
+   [
+    "R-REPT-ACCT",
+    27,
+    "A25 overflow rejected; not documented"
+   ],
+   [
+    "R-REPT-GRAND",
+    27,
+    "A25 overflow rejected; not documented"
+   ],
+   [
+    "R-REPT-LOOKUP",
+    28,
+    "A26 truncation of longer reference text unstated"
+   ],
+   [
+    "R-REPT-SET",
+    30,
+    "A28 failure returns no report lines"
+   ]
+  ]
+ },
+ "tranrept_harness_opus/r3": {
+  "source": "session.json",
+  "entries": []
+ }
+}

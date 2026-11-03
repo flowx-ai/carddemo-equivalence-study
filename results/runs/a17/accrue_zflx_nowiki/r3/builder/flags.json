@@ -1,0 +1,8 @@
+[
+  {"rule": "R-LASTACCT", "source": "assumptions.md A-10; flowx/accrue_script.js rewrite() / updateLastAccount"},
+  {"rule": "R-INTTRUNC", "source": "assumptions.md A-08; flowx/accrue_script.js interest = (c.bal * rate) / DIVISOR"},
+  {"rule": "R-DEFAULTGRP", "source": "assumptions.md A-05; flowx/accrue_script.js rates['DEFAULT   ' + ...]"},
+  {"rule": "R-CYCRESET", "source": "assumptions.md A-09; flowx/accrue_script.js rewrite()"},
+  {"output": "accrue_systxn.json", "key": "orig_ts/proc_ts", "source": "assumptions.md A-13 (legacy uses wall clock)"},
+  {"output": "accrue_systxn.json", "key": "card_num", "source": "assumptions.md A-06 tie-break, A-14 missing xref"}
+]

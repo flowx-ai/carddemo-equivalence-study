@@ -1,0 +1,166 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "cardxref": "cardxref",
+  "trantype": "trantype",
+  "trancatg": "trancatg",
+  "start_date": "startDate",
+  "end_date": "endDate"
+ },
+ "decode": null,
+ "source": "- A2 version: b4751cd5 (head of the build branch, committed; plan COMPLETED, no retry)\n- START (Calculate report, lines 82-87, 92-95): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate\n- END: Finalize outputs (line 141) writes output={result:{tranrept_report (line list), ...}}; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: decoder's 'result' unwrapping, contract name, no decode map\n- MODE files\n- Register: assumption() entries at lines 50-73 (one per line)",
+ "build": [
+  [
+   "R-REPT-SET",
+   51,
+   "older wiki default dates vs the step contract; contract chosen"
+  ],
+  [
+   "R-REPT-SET",
+   52,
+   "timestamp timezone and sub-day treatment not defined"
+  ],
+  [
+   "R-REPT-SET",
+   53,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   53,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   53,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   53,
+   "transaction offsets inferred"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   54,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-XREF",
+   54,
+   "reference offsets inferred"
+  ],
+  [
+   "R-REPT-AMT",
+   57,
+   "amount sign encoding not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   57,
+   "amount sign encoding not specified"
+  ],
+  [
+   "R-REPT-GRAND",
+   57,
+   "amount sign encoding not specified"
+  ],
+  [
+   "R-REPT-XREF",
+   58,
+   "account leading zeros not stated"
+  ],
+  [
+   "R-REPT-SET",
+   59,
+   "no secondary sort or dedup rule"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   60,
+   "duplicate reference handling undefined"
+  ],
+  [
+   "R-REPT-XREF",
+   60,
+   "duplicate reference handling undefined"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   61,
+   "missing lookups: blank fallback unstated"
+  ],
+  [
+   "R-REPT-XREF",
+   61,
+   "missing cross-reference handling unstated"
+  ],
+  [
+   "R-REPT-SET",
+   62,
+   "malformed-input behaviour not defined"
+  ],
+  [
+   "R-REPT-ACCT",
+   64,
+   "account/card wording ambiguous"
+  ],
+  [
+   "R-REPT-LASTACCT",
+   64,
+   "account/card wording ambiguous"
+  ],
+  [
+   "R-REPT-HEADER",
+   65,
+   "page capacity TODO"
+  ],
+  [
+   "R-REPT-HEADER",
+   66,
+   "line ordering not fully defined; totals layout TODO"
+  ],
+  [
+   "R-REPT-ACCT",
+   66,
+   "line ordering not fully defined; totals layout TODO"
+  ],
+  [
+   "R-REPT-LOOKUP",
+   69,
+   "truncation of over-width descriptions unspecified"
+  ],
+  [
+   "R-REPT-AMT",
+   70,
+   "zero suppression details not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   70,
+   "zero suppression details not specified"
+  ],
+  [
+   "R-REPT-GRAND",
+   70,
+   "zero suppression details not specified"
+  ],
+  [
+   "R-REPT-AMT",
+   71,
+   "overflow not specified"
+  ],
+  [
+   "R-REPT-ACCT",
+   71,
+   "overflow not specified"
+  ],
+  [
+   "R-REPT-GRAND",
+   71,
+   "overflow not specified"
+  ]
+ ],
+ "cr_rule": "line 100: type 01 + category 0005 records skipped before any detail, subtotal or total; register 'page-sums' (line 67) states the grand total sums 'selected non-interest details' as behaviour (not a flag). R-REPT-SET carries flags from 51, 52, 53, 59, 62 (date and selection gaps) and the wiki AC 5 TODO (rubric 5). The page-sums entry does not name end-of-file handling (no R-REPT-LASTDUP flag)."
+}

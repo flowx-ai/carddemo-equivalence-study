@@ -1,0 +1,153 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 12,
+  "flags_unneeded": 11,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+   "line": 64,
+   "note": "BR-08 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 36,
+   "note": "6 overpunch applied to every signed field; wiki states it for the rate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 43,
+   "note": "8 duplicate keys: wiki says nothing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 51,
+   "note": "10 STANDARD row missing too: wiki does not cover",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 55,
+   "note": "11 zero-amount transactions: wiki never mentions suppressing them",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 58,
+   "note": "12 BR-08 TODO; truncation chosen",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 64,
+   "note": "13 merchant fields not mentioned",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 68,
+   "note": "14 DT-05 sequence generator vs BR-05: conflict resolved for BR-05",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 69,
+   "note": "15 card number: P-15 does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 83,
+   "note": "20 balance for unknown account: wiki does not cover",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a17/accrue_zflx_detailed/r3/builder/assumptions.md",
+   "line": 84,
+   "note": "21 AC 7 fees DECISION; stub kept",
+   "origin": "build"
+  }
+ ]
+}

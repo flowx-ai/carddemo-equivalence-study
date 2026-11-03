@@ -1,0 +1,8 @@
+[
+  {"output": "tranrept_report.txt", "key": "final account total", "source": "assumptions.md #11: no Account Total line for the last card (BR-04 'on card change'; wiki silent on end of file)"},
+  {"output": "tranrept_report.txt", "key": "last Page Total / Grand Total", "source": "assumptions.md #12: totals are plain sums; legacy end-of-file double-add of the last TRAN-AMT not reproduced"},
+  {"output": "tranrept_report.txt", "key": "pagination", "source": "assumptions.md #9: page size 20 lines, legacy line counting (wiki: page size TODO)"},
+  {"output": "tranrept_report.txt", "key": "unknown reference", "source": "assumptions.md #8: missing xref/type/category is flagged, run continues, blank field printed (AC-5 TODO: legacy abend)"},
+  {"output": "tranrept_report.txt", "key": "interest exclusion", "source": "assumptions.md #4: type 01 / category 0005 removed before card-break detection (BR-07)"},
+  {"output": "tranrept_report.txt", "key": "zero amount", "source": "assumptions.md #13/#15: zero totals print as blanks (all-Z picture); empty range prints Page Total, rule, Grand Total only"}
+]

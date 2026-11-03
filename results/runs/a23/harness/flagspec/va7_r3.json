@@ -1,0 +1,102 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "postingResult"
+ },
+ "source": "- START (Calculate posting, run() lines 100-111 of the split script; all on definition line 46): input.dailytran, acctdata, cardxref, tcatbal (file contents as strings), batchId (required: a nonempty string, else a configuration diagnostic and run() returns before any record), businessDate (default 2022-07-18), chunkSize, processingTimestamp, checkpoint optional. CONTRACT.md carries no batch identifier: batchId is a run value the contract does not carry and is left unset (\u00a741, as A21 CR4 r1 processingTimestamp); processingTimestamp, chunkSize, checkpoint unset.\n- END: Package results (line 52) writes output={postingResult:{posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal, summary, errors, checkpoint, assumptions, assumptions_md}}: _root postingResult, contract names already used (no renaming)\n- MODE files\n- Register: the ledger array (14 entries, assumption + source) at the start of definition line 46 (Calculate posting script, one line)\n- Build status: plan PAUSED goal_at_risk at step 4 of 4 (verification of resume and fallback); A18: the build's own stop ends the run, the latest version (A2 pick 1a34a5c1) is scored",
+ "build": [
+  [
+   "R-POST-COPY",
+   46,
+   "1 transaction layout assumed, not verified copybooks"
+  ],
+  [
+   "R-POST-WRITE",
+   46,
+   "1 transaction layout assumed, not verified copybooks"
+  ],
+  [
+   "R-POST-BAL",
+   46,
+   "1 account layout assumed, not verified"
+  ],
+  [
+   "R-POST-100",
+   46,
+   "1 cross-reference layout assumed, not verified"
+  ],
+  [
+   "R-POST-TCAT",
+   46,
+   "1 category layout assumed, not verified"
+  ],
+  [
+   "R-POST-COPY",
+   46,
+   "2 encoding, separators and padding normalization omitted"
+  ],
+  [
+   "R-POST-WRITE",
+   46,
+   "2 record separator convention omitted"
+  ],
+  [
+   "R-POST-BAL",
+   46,
+   "3 money encoding and overflow omitted"
+  ],
+  [
+   "R-POST-TCAT",
+   46,
+   "3 money encoding and overflow omitted"
+  ],
+  [
+   "R-POST-COPY",
+   46,
+   "3 money encoding omitted"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   46,
+   "5 invalid-card-plus-expired-account example on p.4 does not explain the order; lookup order selected"
+  ],
+  [
+   "R-POST-103",
+   46,
+   "6 full timestamp syntax and timezone not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   46,
+   "8 BR-09 vs pp.9,23 contradict on transaction numbers; input number retained, duplicate comparison omitted"
+  ],
+  [
+   "R-POST-WRITE",
+   46,
+   "9 conflicting-payload and malformed-record policy omitted"
+  ],
+  [
+   "R-POST-BAL",
+   46,
+   "11 duplicate-master policy not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   46,
+   "11 duplicate-master policy not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   46,
+   "11 duplicate-master policy not defined"
+  ]
+ ],
+ "cr_rule": "ledger entry 7 (line 46) and code line 227 of the split script: only successfully posted positive amounts consume the four per-card purchase slots in feed order; 104 only after the 100-103 checks; zero and negative never counted; no type-based purchase test. Stated from BR-10 as source-defined; no unsettled wording (CR flag: no)."
+}

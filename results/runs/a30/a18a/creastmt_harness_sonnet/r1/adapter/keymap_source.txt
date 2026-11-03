@@ -1,0 +1,5 @@
+Read from runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md (and the build's own register) before execution; no output opened.
+- A2 version f9920c3c (head of the build branch, plan COMPLETED, no retry)
+- START: transact, acctdata, cardxref, custdata = file text, MODE files
+- END: {"result": ${result}}; contract names inside
+- Register: assume() lines 25-68

@@ -1,0 +1,81 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "posttran_transact": "transactJson",
+  "posttran_dalyrejs": "dalyrejsJson",
+  "posttran_acctdata": "acctdataJson",
+  "posttran_tcatbal": "tcatbalJson"
+ },
+ "source": "- START (register A-02, A-04; script lines 62-158): dailytran, acctdata, cardxref, tcatbal as raw text, one string per file; businessDate accepted (unused); batchId unset\n- END (script lines 317-320): transactJson, dalyrejsJson, acctdataJson, tcatbalJson = JSON strings of the contract lists -> decode.json renaming\n- MODE files",
+ "register": "builder/output/assumptions.md",
+ "build": [
+  [
+   "R-POST-102",
+   32,
+   "A-05 BR-10 order vs 'replaces the legacy sequential read loop' / CBTRN02C source: noted conflict, BR-10 wins"
+  ],
+  [
+   "R-POST-103",
+   51,
+   "A-08 AC-6 gives no expected code; resolves to 100"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   54,
+   "A-09 BR-04 and AC DECISIONs resolved as keep (103 over 102)"
+  ],
+  [
+   "R-POST-101",
+   66,
+   "A-12 no rule mentions activeStatus"
+  ],
+  [
+   "R-POST-COPY",
+   69,
+   "A-13 DT-12 TODO on the trailer layout left open"
+  ],
+  [
+   "R-POST-BAL",
+   92,
+   "A-20 overflow: wiki silent"
+  ],
+  [
+   "R-POST-TCAT",
+   92,
+   "A-20 overflow: wiki silent"
+  ],
+  [
+   "R-POST-WRITE",
+   98,
+   "A-21 AC-10 restart DECISION unresolved"
+  ],
+  [
+   "R-POST-COPY",
+   111,
+   "A-23 ASCII encoding not given"
+  ],
+  [
+   "R-POST-BAL",
+   111,
+   "A-23 ASCII encoding not given"
+  ],
+  [
+   "R-POST-BAL",
+   115,
+   "A-24 duplicate keys: wiki silent"
+  ],
+  [
+   "R-POST-WRITE",
+   115,
+   "A-24 blank/short lines: wiki silent"
+  ]
+ ],
+ "cr_rule": "A-05: BR-10 as written, stable sort by amount (feed position tie-break), every check and posting in that order; notes the conflict with the legacy sequential read and that BR-10 wins. A-10: formula kept with the negative cycle debit (no sign change)."
+}

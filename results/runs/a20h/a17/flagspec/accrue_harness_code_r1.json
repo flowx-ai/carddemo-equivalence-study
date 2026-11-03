@@ -1,0 +1,35 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc",
+  "tcatbal": "balcat",
+  "discgrp": "rategrp",
+  "cardxref": "cardlink",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrue_systxn",
+  "intcalc_acctdata": "accrue_ledgacc"
+ },
+ "source": "Files mode: Calculate accrual (lines 42-106) requires input.ledgacc, balcat, cardlink, rategrp as strings (line 83) and reads accrueParameter (default 2022071800, line 84); businessDate is not read. Package results (line 138): output={result:{accrue_systxn, accrue_ledgacc, assumptions_md, assumptions, returnCode, diagnostics...}}. Flags: decision entries whose sourceAbsent is true and whose point maps to a rule; entries marked sourceAbsent false are taken from the source and are not flags.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-TXFORMAT",
+   61,
+   "string-tails: unused transaction string tails as spaces; sourceAbsent true"
+  ],
+  [
+   "R-INT-TXID",
+   62,
+   "parameter-and-counter: parameter padding and counter wrap; sourceAbsent true"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   64,
+   "timestamp-zone: UTC as an implementation default; sourceAbsent true"
+  ]
+ ]
+}

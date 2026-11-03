@@ -1,0 +1,17 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 17, "A4 sign encoding not documented"],
+  ["R-INT-RATE", 18, "A5 rate as annual percentage is an assumption"],
+  ["R-INT-TXID", 24, "B1 keyed read order assumed"],
+  ["R-INT-RATE", 27, "B4 STANDARD row missing too: wiki does not say"],
+  ["R-INT-RATE", 29, "C1 formula not written in the wiki"],
+  ["R-INT-TRUNC", 30, "C2 truncation: wiki silent"],
+  ["R-INT-RATE", 31, "C3 negative balances: no sign rule"],
+  ["R-INT-LAST", 34, "E2 last account updated; names the control-break defect it chose not to replicate"],
+  ["R-INT-RATE", 36, "E4 balance for unknown account: wiki silent"],
+  ["R-INT-APPLY", 38, "E6 overflow not emulated: wiki silent"],
+  ["R-INT-TXID", 44, "D1 tran_id: wiki silent"],
+  ["R-INT-TXFORMAT", 46, "D3 source: wiki silent"],
+  ["R-INT-TXFORMAT", 47, "D4 desc: wiki silent"],
+  ["R-INT-TXFORMAT", 48, "D5 merchant fields: wiki silent"]
+ ]}

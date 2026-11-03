@@ -1,0 +1,86 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 37,
+  "note": "A3 overpunch for balances assumed; wiki states it only for the rate",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 51,
+  "note": "A6 BR-08 TODO; truncation chosen, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 62,
+  "note": "A8 STANDARD row missing too: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 74,
+  "note": "A10 negative balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 82,
+  "note": "A12 AC 7 fees DECISION open; stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 87,
+  "note": "A13 account id format in desc: wiki does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 91,
+  "note": "A14 card number: BR-04 does not mention it",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 96,
+  "note": "A15 merchant fields: wiki does not say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 114,
+  "note": "A19 status: neither BRs nor AC mention it",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 117,
+  "note": "A20 orphan balances: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 121,
+  "note": "A21 duplicates: wiki has no rule",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,6 @@
+Read from runs/a25/harness/ix3/r3/exec/workflow_bbc83947-646a-401b-a729-30b7b3a898a0.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 82f68808 (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Parse report inputs, lines 55-60): input.transact, cardxref, trantype, trancatg (file text), startDate, endDate (defaults 2022-07-01/31)
+- END: Render transaction report (line 109) writes tranrept_report (line list) at the root; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: contract name, no decode map
+- MODE files
+- Register: fact() entries at lines 84-95 (one per line); per-record warn() texts are run-time diagnostics, not register entries

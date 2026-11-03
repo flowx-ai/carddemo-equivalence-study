@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 25,
+  "note": "A-04 BR-08 left open",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 32,
+  "note": "A-06 wiki silent on credit balances",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 34,
+  "note": "A-07 wiki doesn't say to skip zero-interest accounts",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 40,
+  "note": "A-08 AC-7 DECISION unresolved (fees)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 48,
+  "note": "A-11 DEFAULT row missing: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 52,
+  "note": "A-12 duplicate keys: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 57,
+  "note": "A-13 suffix width/start/scope not in wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 63,
+  "note": "A-14 posting order: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 66,
+  "note": "A-15 fields BR-04 doesn't name",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 70,
+  "note": "A-16 card number: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 82,
+  "note": "A-19 orphan balance rows: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 84,
+  "note": "A-20 rate example ambiguous (5 vs 6 chars)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_sonnet/r1/builder/output/assumptions.md",
+  "line": 96,
+  "note": "A-23 overflow: wiki doesn't describe size errors",
+  "origin": "build"
+ }
+]

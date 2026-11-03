@@ -1,0 +1,47 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+T   1 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   1 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   1 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+T   2 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   2 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   2 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,R-ATTR-OVERRIDE,
+T   2 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   3: ENTER
+=== task   3 tran CC00 program COSGN00C aid ENTER calen      160
+T   3 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   3 COSGN00C s0008 READ             USRSEC   key=ZZZZ0001         resp=       13 resp2=       80 rules=
+T   3 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   3 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   3 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   3 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   4: ENTER
+=== task   4 tran CC00 program COSGN00C aid ENTER calen      160
+T   4 COSGN00C s0002 RECEIVE-MAP      COSGN0A  resp=        0 resp2=        0 rules=R-RCV-NULLFILL,
+T   4 COSGN00C s0008 READ             USRSEC   key=USER0001         resp=        0 resp2=        0 rules=
+T   4 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   4 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   4 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   4 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   5: PF5
+=== task   5 tran CC00 program COSGN00C aid PF5   calen      160
+T   5 COSGN00C s0006 ASSIGN           APPLID   resp=        0 resp2=        0 rules=
+T   5 COSGN00C s0007 ASSIGN           SYSID    resp=        0 resp2=        0 rules=
+T   5 COSGN00C s0003 SEND-MAP         COSGN0A  resp=        0 resp2=        0 rules=R-SEND-ERASE,
+T   5 COSGN00C s0001 RETURN-TRANSID   CC00     resp=        0 resp2=        0 rules=
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   6: PF3
+=== task   6 tran CC00 program COSGN00C aid PF3   calen      160
+T   6 COSGN00C s0004 SEND-TEXT                 resp=        0 resp2=        0 rules=
+T   6 COSGN00C s0005 RETURN                    resp=        0 resp2=        0 rules=
+task end: RETURN without TRANSID (RETURN  ): conversation ended
+END outcome=OK

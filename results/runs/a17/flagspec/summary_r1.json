@@ -1,0 +1,17 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-RATE", 27, "P2 sign encoding in the .dat files never stated"],
+  ["R-INT-TXID", 34, "B1 sort order not stated; file order used"],
+  ["R-INT-RATE", 37, "B4 STANDARD row missing too: wiki silent"],
+  ["R-INT-RATE", 39, "B6 /1200 and percent scale inferred; high uncertainty"],
+  ["R-INT-TRUNC", 39, "B6 truncation inferred; high uncertainty"],
+  ["R-INT-APPLY", 40, "B7 fees: wiki does not mention"],
+  ["R-INT-LAST", 41, "B8 last account flushed; flagged that a legacy EOF quirk could skip it"],
+  ["R-INT-RATE", 42, "B9 status/expiry/limit filters: wiki mentions none"],
+  ["R-INT-RATE", 43, "B10 balance without account: wiki silent"],
+  ["R-INT-TXID", 49, "T1 id generation: wiki silent, flagged"],
+  ["R-INT-TXFORMAT", 51, "T3 source: wiki silent, flagged"],
+  ["R-INT-TXFORMAT", 52, "T4 desc: wiki silent, flagged"],
+  ["R-INT-TXFORMAT", 54, "T6 merchant fields: wiki silent"],
+  ["R-INT-TXFORMAT", 55, "T7 card choice: wiki does not say"]
+ ]}

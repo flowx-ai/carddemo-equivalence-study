@@ -1,0 +1,174 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.99,
+  "equivalence_business": 0.99,
+  "divergent_records": 1,
+  "silent_records": 1,
+  "flagged_records": 0,
+  "rules_silent": [
+   "R-INT-LAST"
+  ],
+  "rules_flagged": [],
+  "flags_raised": 14,
+  "flags_unneeded": 14,
+  "volatile_masked": {
+   "intcalc_systran.orig_ts": 50,
+   "intcalc_systran.proc_ts": 50
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/silent": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": false
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 25,
+   "note": "A-03 overpunch for all signed fields: wiki gives no rule beyond DT-07",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 33,
+   "note": "A-03 rate example 5 chars vs 6-byte field",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 41,
+   "note": "A-05 processing order never stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 55,
+   "note": "A-07 neither group nor DEFAULT row: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 59,
+   "note": "A-08 balance without account: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 65,
+   "note": "A-09 wiki rounding implemented; conflict with recalled CBACT04C truncation noted, unverified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 72,
+   "note": "A-10 zero-amount transactions: wiki does not exclude",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 72,
+   "note": "A-10 negative balances: wiki does not exclude",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 76,
+   "note": "A-11 AC 7 fees DECISION open; stub kept",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 82,
+   "note": "A-12 suffix width/start/scope not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 91,
+   "note": "A-14 card number: step pages never say",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 98,
+   "note": "A-15 merchant fields: BR-04 silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 112,
+   "note": "A-18 zero-total accounts updated: BR-06 does not exclude",
+   "origin": "build"
+  },
+  {
+   "rule": "R-PASSTHRU",
+   "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+   "line": 119,
+   "note": "A-19 accounts with no balance: wiki only describes balance-triggered updates",
+   "origin": "build"
+  }
+ ]
+}

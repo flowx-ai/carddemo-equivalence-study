@@ -1,0 +1,10 @@
+[
+  {"output": "accrue_systxn.json", "key": "amt", "source": "assumptions.md A8 (BR-08 TODO: truncate vs ROUNDED)"},
+  {"output": "accrue_ledgacc.json", "key": "curr_bal", "source": "assumptions.md A8 (BR-08 TODO: truncate vs ROUNDED)"},
+  {"output": "accrue_systxn.json", "key": "desc", "source": "assumptions.md A16 (BR-04 'Accrued int <accountId>' padding)"},
+  {"output": "accrue_systxn.json", "key": "card_num", "source": "assumptions.md A17 (wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "assumptions.md A19 (wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "assumptions.md A19 (wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "tran_id", "source": "assumptions.md A10/A15 (processing order, suffix width)"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_credit", "source": "assumptions.md A11 (reset for accounts with zero interest)"}
+]

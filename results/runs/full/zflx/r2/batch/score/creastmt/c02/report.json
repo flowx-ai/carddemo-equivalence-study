@@ -1,0 +1,73 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 4,
+  "flags_unneeded": 4,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 1.0
+   },
+   "creastmt_statements_html": {
+    "line_match": 1.0
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #32",
+   "note": "every transaction of the card, no cycle filter; wiki: 'no cycle filter, TODO'",
+   "origin": "register"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #33",
+   "note": "name line = first word of first, middle, last name, inferred from the layout CONTRACT-L1 implies",
+   "origin": "register"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #33",
+   "note": "third address line = first word of addr_line_3, state, country, zip, inferred from the layout CONTRACT-L1 implies",
+   "origin": "register"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "step": "creastmt",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #34",
+   "note": "missing customer or account: logged, statement printed with blank or zero fields; the wiki does not cover the case",
+   "origin": "register"
+  }
+ ],
+ "excluded": []
+}

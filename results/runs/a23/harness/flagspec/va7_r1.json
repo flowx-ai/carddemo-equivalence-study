@@ -1,0 +1,131 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "business_date": "businessDate"
+ },
+ "decode": {
+  "_root": "result.postingOutput",
+  "posttran_transact": "posttranTransact",
+  "posttran_dalyrejs": "posttranDalyrejs",
+  "posttran_acctdata": "posttranAcctdata",
+  "posttran_tcatbal": "posttranTcatbal"
+ },
+ "source": "- START (ParsePostingInputs, lines 37-43): input.dailytran, acctdata, cardxref, tcatbal (file contents as strings), businessDate; processingTimestamp, chunkSize, resumeState optional (absent: runtime UTC timestamp, all records, no checkpoint)\n- END: BuildPostingOutputs (line 103) writes postingOutput{posttranTransact, posttranDalyrejs, posttranAcctdata, posttranTcatbal, ...}; the last node 'Escape text' outputs only endText, so the END output is decoded as delivered: _root (result.)postingOutput, names renamed (register item 26 names the same mapping)\n- MODE files\n- Register: the assumptions text at line 99 (items 1-26, all on that line)",
+ "build": [
+  [
+   "R-POST-COPY",
+   99,
+   "1 transaction layout inferred, copybook offsets not supplied"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "1 transaction layout inferred, copybook offsets not supplied"
+  ],
+  [
+   "R-POST-BAL",
+   99,
+   "2 account layout: absence of copybook offsets"
+  ],
+  [
+   "R-POST-100",
+   99,
+   "3 card-reference layout: absence of a physical copybook"
+  ],
+  [
+   "R-POST-TCAT",
+   99,
+   "4 category layout: absence of copybook offsets"
+  ],
+  [
+   "R-POST-BAL",
+   99,
+   "5 encoding: the material does not settle the signed-display mapping"
+  ],
+  [
+   "R-POST-TCAT",
+   99,
+   "5 encoding: not settled"
+  ],
+  [
+   "R-POST-COPY",
+   99,
+   "5 encoding: not settled"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "6 record delimiter convention not specified"
+  ],
+  [
+   "R-POST-COPY",
+   99,
+   "7 filler and padding normalization unspecified"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   99,
+   "8 the invalid-card/expiry example is contradictory"
+  ],
+  [
+   "R-POST-104",
+   99,
+   "10 purchase classification and quota treatment not fully settled"
+  ],
+  [
+   "R-POST-103",
+   99,
+   "11 date extraction and timezone details absent"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "14 tran_id precedence unspecified; feed id kept"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "15 duplicate/conflict outcomes not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "16 malformed-record recovery not specified"
+  ],
+  [
+   "R-POST-BAL",
+   99,
+   "18 duplicate-master resolution absent"
+  ],
+  [
+   "R-POST-TCAT",
+   99,
+   "18 duplicate-master resolution absent"
+  ],
+  [
+   "R-POST-WRITE",
+   99,
+   "18 duplicate-master resolution absent"
+  ],
+  [
+   "R-POST-BAL",
+   99,
+   "19 overflow recovery unspecified"
+  ],
+  [
+   "R-POST-TCAT",
+   99,
+   "19 overflow recovery unspecified"
+  ],
+  [
+   "R-POST-COPY",
+   99,
+   "20 internal representation and formatting not specified"
+  ]
+ ],
+ "cr_rule": "10: a purchase is type_cd 01 with amount > 0; only successfully posted purchases count, per card; the fifth gets 104 after the reference, limit and expiry checks. Flags that the specification 'does not fully settle catalogue-driven purchase classification ... or quota treatment of rejected and zero rows' (R-POST-104). Note: adds a type_cd 01 condition that CR4 does not state."
+}

@@ -1,0 +1,192 @@
+{
+ "build": "cd_a32_kk7_zflx_r2",
+ "zflx": "~/Dev/_tests/carddemo-oracle/tools/full_zflx/zFLX-full",
+ "context": {
+  "workspaceId": "<uuid>",
+  "appId": "<uuid>",
+  "appVersionId": "<uuid>"
+ },
+ "notes": [
+  "Written 2026-11-03 from the build's own definitions only: runs/full/zflx/r2/exec/workflow_*.md (the SCRIPT of each batch workflow: the input keys it reads through inp([...]) and the keys of output.result), the END payloads from the transcript's configure_end_node inputs (every batch workflow: payload ${result}), builder/assumptions.md #1 (input files as top-level keys named by file name, value = text or list of lines; outputs under their contract names; a missing input is an absent key) and builder/notes/build-ids.md. No workflow was run.",
+  "Context: workspaceId <uuid>, appId and appVersionId from runs/full/zflx/r2/log.txt line 'project:' (version bb63b5da-..., also in exec/version.txt).",
+  "Added steps: each input file goes under its own file name (the scripts read inp(['<name>.dat', '<name>']) and take the first). missing = omit (assumptions.md #1). Outputs and the return code are read under the contract names the scripts write ('<step>_rc.txt' is written only on the abend path, value '999'; a normal end omits it, read as 0). wrap and root null: the END payload is ${result}, and the executor reads out['result'] if present, else the payload itself.",
+  "dailycheck: the cases also give custdata.dat, carddata.dat and transact.dat; the script reads only dailytran, cardxref and acctdata (assumptions.md #44). They are sent under their file names and are not read by the build.",
+  "Core steps: map = the adapters' canonical names -> the START keys the scripts read. posttran: dailytran, acctdata, cardxref, tcatbal (business_date not sent: the script takes the date from RUN_TIMESTAMP, assumptions.md #2). intcalc: tcatbal, acctdata, cardxref, discgrp, and intcalc_parm -> 'parm' (the script reads inp(['parm','PARM','interestRunDate']), assumptions.md #31). creastmt: transact, acctdata, cardxref, custdata. tranrept: transact, cardxref, trantype, trancatg, start_date -> startDate, end_date -> endDate (the script reads inp(['startDate','start_date','reportStartDate']) and the same for the end; assumptions.md #35). decode = contract output name -> the END key the script writes ('posttran_transact.json', ..., 'tranrept_report.txt').",
+  "No COMBTRAN step in the build (assumptions.md #5); none is needed by the executor (step isolation)."
+ ],
+ "steps": {
+  "acctext": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "acctdata.dat": "acctdata.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "acctext_out.json": "acctext_out.json",
+    "acctext_array.json": "acctext_array.json",
+    "acctext_vb.json": "acctext_vb.json",
+    "acctext_sysout.txt": "acctext_sysout.txt"
+   },
+   "rc": "acctext_rc.txt",
+   "fields": {}
+  },
+  "cardprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "carddata.dat": "carddata.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "cardprint_sysout.txt": "cardprint_sysout.txt"
+   },
+   "rc": "cardprint_rc.txt",
+   "fields": {}
+  },
+  "xrefprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "cardxref.dat": "cardxref.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "xrefprint_sysout.txt": "xrefprint_sysout.txt"
+   },
+   "rc": "xrefprint_rc.txt",
+   "fields": {}
+  },
+  "custprint": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "custprint_sysout.txt": "custprint_sysout.txt"
+   },
+   "rc": "custprint_rc.txt",
+   "fields": {}
+  },
+  "dailycheck": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "dailytran.dat": "dailytran.dat",
+    "cardxref.dat": "cardxref.dat",
+    "acctdata.dat": "acctdata.dat",
+    "custdata.dat": "custdata.dat",
+    "carddata.dat": "carddata.dat",
+    "transact.dat": "transact.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "dailycheck_sysout.txt": "dailycheck_sysout.txt"
+   },
+   "rc": "dailycheck_rc.txt",
+   "fields": {}
+  },
+  "export": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "custdata.dat": "custdata.dat",
+    "acctdata.dat": "acctdata.dat",
+    "cardxref.dat": "cardxref.dat",
+    "transact.dat": "transact.dat",
+    "carddata.dat": "carddata.dat"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "export.json": "export.json",
+    "export_sysout.txt": "export_sysout.txt"
+   },
+   "rc": "export_rc.txt",
+   "fields": {}
+  },
+  "import": {
+   "workflow": "<uuid>",
+   "inputs": {
+    "export.json": "export.json"
+   },
+   "wrap": null,
+   "missing": "omit",
+   "root": null,
+   "outputs": {
+    "import_customers.json": "import_customers.json",
+    "import_accounts.json": "import_accounts.json",
+    "import_card_xref.json": "import_card_xref.json",
+    "import_transactions.json": "import_transactions.json",
+    "import_cards.json": "import_cards.json",
+    "import_errors.json": "import_errors.json",
+    "import_sysout.txt": "import_sysout.txt"
+   },
+   "rc": "import_rc.txt",
+   "fields": {}
+  },
+  "posttran": {
+   "workflow": "<uuid>",
+   "map": {
+    "dailytran": "dailytran.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "tcatbal": "tcatbal.dat"
+   },
+   "decode": {
+    "posttran_transact": "posttran_transact.json",
+    "posttran_dalyrejs": "posttran_dalyrejs.json",
+    "posttran_acctdata": "posttran_acctdata.json",
+    "posttran_tcatbal": "posttran_tcatbal.json"
+   }
+  },
+  "intcalc": {
+   "workflow": "<uuid>",
+   "map": {
+    "acctdata": "acctdata.dat",
+    "tcatbal": "tcatbal.dat",
+    "discgrp": "discgrp.dat",
+    "cardxref": "cardxref.dat",
+    "intcalc_parm": "parm"
+   },
+   "decode": {
+    "intcalc_systran": "intcalc_systran.json",
+    "intcalc_acctdata": "intcalc_acctdata.json"
+   }
+  },
+  "creastmt": {
+   "workflow": "<uuid>",
+   "map": {
+    "transact": "transact.dat",
+    "acctdata": "acctdata.dat",
+    "cardxref": "cardxref.dat",
+    "custdata": "custdata.dat"
+   },
+   "decode": {
+    "creastmt_statements": "creastmt_statements.txt",
+    "creastmt_statements_html": "creastmt_statements_html.txt"
+   }
+  },
+  "tranrept": {
+   "workflow": "<uuid>",
+   "map": {
+    "transact": "transact.dat",
+    "cardxref": "cardxref.dat",
+    "trantype": "trantype.dat",
+    "trancatg": "trancatg.dat",
+    "start_date": "startDate",
+    "end_date": "endDate"
+   },
+   "decode": {
+    "tranrept_report": "tranrept_report.txt"
+   }
+  }
+ }
+}

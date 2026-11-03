@@ -1,0 +1,5 @@
+Read from runs/a23/harness/dr8/r3/exec/workflow_c888747d-0a84-4866-ae59-0dcf4b8fb4d8.md (and the build's own README/register) before execution; no output opened.
+- START (Calculate postings, calculate(bag) lines 78-90, called at line 143 with input): bag.dailyTransactions, accounts, cardXrefs, categoryBalances = decoded records with the contract field names (the adapter's encode body, no renaming); processedTimestamp optional, left unset (runtime UTC).
+- END: Package results (line 171) writes output={result:{posttranTransact, posttranDalyrejs, posttranAcctdata, posttranTcatbal, summary, assumptionEntries, assumptionsMarkdown, ...}}; the decoder's own 'result' unwrapping, then names renamed (no _root)
+- MODE records (run with MODE=records; no map.json)
+- Register: evidence entries A01-A15 at lines 46-60 (one per line)

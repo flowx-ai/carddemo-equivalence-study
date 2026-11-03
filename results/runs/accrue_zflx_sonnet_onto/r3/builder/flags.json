@@ -1,0 +1,9 @@
+[
+  {"rule": "R-INT-TRUNC", "source": "flowx/02_accrue_interest.js:82 — monthly interest truncated toward zero to 0.01 (BR-08 TODO: truncate vs ROUNDED unconfirmed)"},
+  {"rule": "R-LAST-ACCT-NOT-UPDATED", "source": "flowx/02_accrue_interest.js:70,100 — account rewritten only on change of account (BR-06); the last account in balcat is not rewritten unless applyFinalAccountUpdate=true (conflicts with acceptance scenario 3)"},
+  {"rule": "R-STANDARD-MISSING", "source": "flowx/02_accrue_interest.js:48-50 — no STANDARD row either: rate treated as 0 and reported; legacy abends (wiki silent)"},
+  {"rule": "R-XREF-DUPLICATE", "source": "flowx/01_load_input_files.js:114 — several cards on one account: lowest card number used as card_num (wiki silent)"},
+  {"rule": "R-MISSING-ACCOUNT-XREF", "source": "flowx/02_accrue_interest.js:74-75 — balance for unknown account skipped; account without xref gets blank card_num; legacy abends (wiki silent)"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "flowx/02_accrue_interest.js:26 — DB2-format timestamp of the run time; cannot equal the oracle's run time"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "flowx/02_accrue_interest.js:26 — DB2-format timestamp of the run time; cannot equal the oracle's run time"}
+]

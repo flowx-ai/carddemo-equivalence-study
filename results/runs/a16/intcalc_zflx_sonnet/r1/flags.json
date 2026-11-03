@@ -1,0 +1,100 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 25,
+  "note": "A-03 overpunch for all signed fields: wiki gives no rule beyond DT-07",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 33,
+  "note": "A-03 rate example 5 chars vs 6-byte field",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 41,
+  "note": "A-05 processing order never stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 55,
+  "note": "A-07 neither group nor DEFAULT row: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 59,
+  "note": "A-08 balance without account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 65,
+  "note": "A-09 wiki rounding implemented; conflict with recalled CBACT04C truncation noted, unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 72,
+  "note": "A-10 zero-amount transactions: wiki does not exclude",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 72,
+  "note": "A-10 negative balances: wiki does not exclude",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 76,
+  "note": "A-11 AC 7 fees DECISION open; stub kept",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 82,
+  "note": "A-12 suffix width/start/scope not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 91,
+  "note": "A-14 card number: step pages never say",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 98,
+  "note": "A-15 merchant fields: BR-04 silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 112,
+  "note": "A-18 zero-total accounts updated: BR-06 does not exclude",
+  "origin": "build"
+ },
+ {
+  "rule": "R-PASSTHRU",
+  "source": "runs/a16/intcalc_zflx_sonnet/r1/builder/assumptions.md",
+  "line": 119,
+  "note": "A-19 accounts with no balance: wiki only describes balance-triggered updates",
+  "origin": "build"
+ }
+]

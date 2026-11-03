@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 4,
+  "note": "[A01] no units, precision, sign restriction or accrual interval",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 6,
+  "note": "[A02] exact formula TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 6,
+  "note": "[A02] rounding TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 8,
+  "note": "[A03] zero-transaction creation unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 10,
+  "note": "[A04] detailed grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 12,
+  "note": "[A05] category and cycle-field updates not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 14,
+  "note": "[A06] no interest-specific transaction values",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 16,
+  "note": "[A07] transaction numbering unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 16,
+  "note": "[A07] card selection unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_harness_opus/r2/exec/assumption_register.md",
+  "line": 18,
+  "note": "[A08] timestamp construction not given",
+  "origin": "build"
+ }
+]

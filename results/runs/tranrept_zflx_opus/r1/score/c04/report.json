@@ -1,0 +1,171 @@
+{
+ "summary": {
+  "records_union": 370,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 19,
+  "flags_unneeded": 19,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.9644,
+    "page_totals_equal": true,
+    "pages_golden": 19,
+    "pages_candidate": 19
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 370,
+   "candidate": 370,
+   "equal_strict": 370,
+   "equal_business": 370,
+   "union": 370
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 44,
+   "note": "1 selection on processing date; wiki never says which timestamp; legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 49,
+   "note": "2 order and stability; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 52,
+   "note": "3 grouping on card, account ID from CardXref; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 52,
+   "note": "3 grouping on card, account ID from CardXref; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTDUP",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 63,
+   "note": "6 end of file reproduced as legacy (double add, no last account total); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LASTACCT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 63,
+   "note": "6 end of file reproduced as legacy (double add, no last account total); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 63,
+   "note": "6 end of file reproduced as legacy (double add, no last account total); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 72,
+   "note": "7 grand total = sum of page totals incl. duplicate",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 74,
+   "note": "8 lookup failure aborts and returns the lines so far; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 74,
+   "note": "8 lookup failure aborts and returns the lines so far; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 78,
+   "note": "9 description truncation and lookup keys",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 81,
+   "note": "10 zero editing not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 81,
+   "note": "10 zero editing not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 81,
+   "note": "10 zero editing not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 89,
+   "note": "11 sign encoding not stated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 93,
+   "note": "12 overflow truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 93,
+   "note": "12 overflow truncation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 103,
+   "note": "15 empty result, no header",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/tranrept_zflx_opus/r1/builder/assumptions.md",
+   "line": 103,
+   "note": "15 empty result, no header",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

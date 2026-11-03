@@ -1,0 +1,134 @@
+{
+ "f-act-01": {
+  "acctext_out.json": 50,
+  "acctext_array.json": 50,
+  "acctext_vb.json": 100,
+  "acctext_sysout.txt": 652
+ },
+ "f-act-02": {
+  "acctext_out.json": 50,
+  "acctext_array.json": 50,
+  "acctext_vb.json": 100,
+  "acctext_sysout.txt": 652
+ },
+ "f-act-03": {
+  "acctext_out.json": 0,
+  "acctext_array.json": 0,
+  "acctext_vb.json": 0,
+  "acctext_sysout.txt": 4
+ },
+ "f-crd-01": {
+  "cardprint_sysout.txt": 52
+ },
+ "f-crd-02": {
+  "cardprint_sysout.txt": 2
+ },
+ "f-crd-03": {
+  "cardprint_sysout.txt": 4
+ },
+ "f-cus-01": {
+  "custprint_sysout.txt": 52
+ },
+ "f-cus-02": {
+  "custprint_sysout.txt": 4
+ },
+ "f-exp-01": {
+  "export.json": 462,
+  "export_sysout.txt": 10
+ },
+ "f-exp-02": {
+  "export.json": 500,
+  "export_sysout.txt": 10
+ },
+ "f-exp-03": {
+  "export.json": 0,
+  "export_sysout.txt": 4
+ },
+ "f-exp-04": {
+  "export.json": 412,
+  "export_sysout.txt": 10
+ },
+ "f-imp-01": {
+  "import_customers.json": 50,
+  "import_accounts.json": 50,
+  "import_card_xref.json": 50,
+  "import_transactions.json": 262,
+  "import_cards.json": 50,
+  "import_errors.json": 0,
+  "import_sysout.txt": 9
+ },
+ "f-imp-02": {
+  "import_customers.json": 50,
+  "import_accounts.json": 50,
+  "import_card_xref.json": 50,
+  "import_transactions.json": 300,
+  "import_cards.json": 50,
+  "import_errors.json": 0,
+  "import_sysout.txt": 9
+ },
+ "f-imp-03": {
+  "import_customers.json": 49,
+  "import_accounts.json": 49,
+  "import_card_xref.json": 50,
+  "import_transactions.json": 262,
+  "import_cards.json": 50,
+  "import_errors.json": 2,
+  "import_sysout.txt": 9
+ },
+ "f-imp-04": {
+  "import_customers.json": 0,
+  "import_accounts.json": 0,
+  "import_card_xref.json": 0,
+  "import_transactions.json": 0,
+  "import_cards.json": 0,
+  "import_errors.json": 0,
+  "import_sysout.txt": 4
+ },
+ "f-imp-05": {
+  "import_customers.json": 0,
+  "import_accounts.json": 0,
+  "import_card_xref.json": 0,
+  "import_transactions.json": 0,
+  "import_cards.json": 0,
+  "import_errors.json": 0,
+  "import_sysout.txt": 9
+ },
+ "f-trn-01": {
+  "dailycheck_sysout.txt": 1802
+ },
+ "f-trn-02": {
+  "dailycheck_sysout.txt": 1805
+ },
+ "f-trn-03": {
+  "dailycheck_sysout.txt": 2
+ },
+ "f-trn-04": {
+  "dailycheck_sysout.txt": 1802
+ },
+ "f-xrf-01": {
+  "xrefprint_sysout.txt": 52
+ },
+ "f-xrf-02": {
+  "xrefprint_sysout.txt": 4
+ },
+ "posttran:base": "runs/full/zflx/r3/batch/core/posttran/resp-base.json status None   {'posttran_transact': 262, 'posttran_dalyrejs': 38, 'posttran_acctdata': 50, 'posttran_tcatbal': 100}",
+ "posttran:c01": "runs/full/zflx/r3/batch/core/posttran/resp-c01.json status None   {'posttran_transact': 265, 'posttran_dalyrejs': 42, 'posttran_acctdata': 50, 'posttran_tcatbal': 100}",
+ "posttran:c02": "runs/full/zflx/r3/batch/core/posttran/resp-c02.json status None   {'posttran_transact': 262, 'posttran_dalyrejs': 38, 'posttran_acctdata': 50, 'posttran_tcatbal': 100}",
+ "posttran:c03": "runs/full/zflx/r3/batch/core/posttran/resp-c03.json status None   {'posttran_transact': 262, 'posttran_dalyrejs': 39, 'posttran_acctdata': 50, 'posttran_tcatbal': 100}",
+ "posttran:c04": "runs/full/zflx/r3/batch/core/posttran/resp-c04.json status None   {'posttran_transact': 266, 'posttran_dalyrejs': 38, 'posttran_acctdata': 50, 'posttran_tcatbal': 103}",
+ "intcalc:base": "runs/full/zflx/r3/batch/core/intcalc/resp-base.json status None   {'intcalc_systran': 50, 'intcalc_acctdata': 50}",
+ "intcalc:c01": "runs/full/zflx/r3/batch/core/intcalc/resp-c01.json status None   {'intcalc_systran': 50, 'intcalc_acctdata': 50}",
+ "intcalc:c02": "runs/full/zflx/r3/batch/core/intcalc/resp-c02.json status None   {'intcalc_systran': 49, 'intcalc_acctdata': 50}",
+ "intcalc:c03": "runs/full/zflx/r3/batch/core/intcalc/resp-c03.json status None   {'intcalc_systran': 50, 'intcalc_acctdata': 50}",
+ "intcalc:c04": "runs/full/zflx/r3/batch/core/intcalc/resp-c04.json status None   {'intcalc_systran': 53, 'intcalc_acctdata': 50}",
+ "creastmt:base": "runs/full/zflx/r3/batch/core/creastmt/resp-base.json status None   {'creastmt_statements': 1262, 'creastmt_statements_html': 6632}",
+ "creastmt:c01": "runs/full/zflx/r3/batch/core/creastmt/resp-c01.json status None   {'creastmt_statements': 1265, 'creastmt_statements_html': 6665}",
+ "creastmt:c02": "runs/full/zflx/r3/batch/core/creastmt/resp-c02.json status None   {'creastmt_statements': 1261, 'creastmt_statements_html': 6621}",
+ "creastmt:c03": "runs/full/zflx/r3/batch/core/creastmt/resp-c03.json status None   {'creastmt_statements': 1281, 'creastmt_statements_html': 6696}",
+ "creastmt:c04": "runs/full/zflx/r3/batch/core/creastmt/resp-c04.json status None   {'creastmt_statements': 1269, 'creastmt_statements_html': 6709}",
+ "tranrept:base": "runs/full/zflx/r3/batch/core/tranrept/resp-base.json status None   {'tranrept_report': 521}",
+ "tranrept:c01": "runs/full/zflx/r3/batch/core/tranrept/resp-c01.json status None   {'tranrept_report': 542}",
+ "tranrept:c02": "runs/full/zflx/r3/batch/core/tranrept/resp-c02.json status None   {'tranrept_report': 514}",
+ "tranrept:c03": "runs/full/zflx/r3/batch/core/tranrept/resp-c03.json status None   {'tranrept_report': 521}",
+ "tranrept:c04": "runs/full/zflx/r3/batch/core/tranrept/resp-c04.json status None   {'tranrept_report': 534}"
+}

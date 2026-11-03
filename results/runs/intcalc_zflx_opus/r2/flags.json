@@ -1,0 +1,121 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: exact interest formula and grouping",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+  "line": 50,
+  "note": "TODO: rounding",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+  "line": 18,
+  "note": "AC 2 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 24,
+  "note": "A1 rate unit not in wiki; legacy recollection",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 32,
+  "note": "A2 grouping TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 40,
+  "note": "A3 lookup key and fallback; legacy recollection",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 50,
+  "note": "A4 rounding TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 56,
+  "note": "A5 zero balance vs zero rate; legacy recollection",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 62,
+  "note": "A6 wiki silent on transactions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 62,
+  "note": "A6 wiki silent on transactions",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 83,
+  "note": "A8 wiki silent on cycle fields",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 89,
+  "note": "A9 may differ from the oracle for the last account; flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 110,
+  "note": "A12 order: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 116,
+  "note": "A13 missing reference data: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 123,
+  "note": "A14 several cards: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 127,
+  "note": "A15 fees: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/intcalc_zflx_opus/r2/builder/assumptions.md",
+  "line": 131,
+  "note": "A16 status: wiki silent",
+  "origin": "build"
+ }
+]

@@ -1,0 +1,6 @@
+Read from runs/a28/harness/yx3/x1/exec/workflow_a20d9759-cd55-4a4a-be02-4fdd0fc72a46.md (and the build's own README/register) before execution; no output opened.
+- A2 version: 17acaf06 (head of the build branch, committed; plan COMPLETED, no retry)
+- START (Build statements, lines 79-82): input.acctdata, custdata, cardxref, transact = file text, contract names (identity map)
+- END: Finalize outputs (line 101) writes output={finalStatementBatch:{creastmt_statements, creastmt_statements_html, assumptions_md, status, errors}} (line arrays); decode _root finalStatementBatch
+- MODE files
+- Register: assumption ledger entries A01-A13 at lines 46-58 (one per line)

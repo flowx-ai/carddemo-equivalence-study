@@ -1,0 +1,258 @@
+{
+ "summary": {
+  "records_union": 99,
+  "equivalence_strict": 0.9899,
+  "equivalence_business": 0.9899,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 27,
+  "flags_unneeded": 26,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 49,
+   "intcalc_systran.orig_ts": 49
+  }
+ },
+ "outputs": {
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  },
+  "intcalc_systran": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[account-offsets] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[xref-offsets] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[balance-offsets] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[rate-offsets] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[implied-decimals] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[overpunch] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[rate-width] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[balance-order] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[duplicate-balances] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[suffix-initial] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[suffix-width] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[suffix-order] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[card-selection] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[card-absence] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[merchant-id] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[merchant-name] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[merchant-city] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[merchant-zip] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[original-time] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[processed-time] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[missing-default] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[missing-account] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[duplicate-rates] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[zero-rate-reset] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[no-balance-account] basis: not specified in the supplied pages",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/a19h/a16/intcalc_harness_sonnet/r3/exec/workflow_33a0821d-7761-4c14-8a4f-ecbf3827d0b2.md",
+   "line": 46,
+   "note": "[nonzero-rounded-zero] basis: not specified in the supplied pages",
+   "origin": "build"
+  }
+ ]
+}

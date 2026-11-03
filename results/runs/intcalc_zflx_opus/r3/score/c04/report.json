@@ -1,0 +1,181 @@
+{
+ "summary": {
+  "records_union": 103,
+  "equivalence_strict": 0.9903,
+  "equivalence_business": 0.9903,
+  "divergent_records": 1,
+  "silent_records": 0,
+  "flagged_records": 1,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-INT-LAST"
+  ],
+  "flags_raised": 16,
+  "flags_unneeded": 15,
+  "volatile_masked": {
+   "intcalc_systran.proc_ts": 53,
+   "intcalc_systran.orig_ts": 53
+  }
+ },
+ "outputs": {
+  "intcalc_systran": {
+   "golden": 53,
+   "candidate": 53,
+   "equal_strict": 53,
+   "equal_business": 53,
+   "union": 53
+  },
+  "intcalc_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-INT-LAST/flagged": 3
+ },
+ "divergences": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_bal",
+   "rule": "R-INT-LAST",
+   "golden": "1945.87",
+   "cand": "1964.64",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_credit",
+   "rule": "R-INT-LAST",
+   "golden": "1501.75",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000050",
+   "kind": "field",
+   "field": "curr_cyc_debit",
+   "rule": "R-INT-LAST",
+   "golden": "-47.88",
+   "cand": "0.00",
+   "presentation": false,
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-INT-RATE",
+   "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: exact interest formula and grouping",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-opus/02-processes/process-interest-calculation.md",
+   "line": 50,
+   "note": "TODO: rounding",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "builds/inputs/intcalc-opus/10-acceptance-criteria/acceptance-criteria-interest-calculation.md",
+   "line": 18,
+   "note": "AC 2 TODO: confirm rounding mode",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 18,
+   "note": "A1 per-category balance, against the wiki's formula",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 26,
+   "note": "A2 rate units: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TRUNC",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 31,
+   "note": "A3 AC TODO rounding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 37,
+   "note": "A4 key and fallback not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-ZERO",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 47,
+   "note": "A6 AC 3 doesn't say whether a transaction is written",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-APPLY",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 51,
+   "note": "A7 fees: wiki mentions only interest",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 55,
+   "note": "A8a wiki silent on the transaction record",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXFORMAT",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 55,
+   "note": "A8a wiki silent on the transaction record",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-CYC",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 73,
+   "note": "A8 cycle reset not in wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-TXID",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 93,
+   "note": "A12 order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 93,
+   "note": "A12 unknown accounts",
+   "origin": "build"
+  },
+  {
+   "rule": "R-INT-RATE",
+   "source": "runs/intcalc_zflx_opus/r3/builder/assumptions.md",
+   "line": 103,
+   "note": "A13 DISCGRP layout not in wiki",
+   "origin": "build"
+  }
+ ]
+}

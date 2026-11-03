@@ -1,0 +1,270 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 29,
+  "flags_unneeded": 29,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9984
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/02-processes/process-statement-generation.md",
+   "line": 58,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 56,
+   "note": "B2 sign encoding: the wiki is silent about the other files",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 56,
+   "note": "B2 sign encoding: the wiki is silent about the other files",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 56,
+   "note": "B2 sign encoding: the wiki is silent about the other files",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 61,
+   "note": "B3 blank lines, duplicates (last wins): the wiki says nothing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 76,
+   "note": "C3 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 76,
+   "note": "C3 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 85,
+   "note": "C5 cycle-filter TODO; no filter",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 98,
+   "note": "D1 blank or non-numeric score: the wiki does not cover it; blank",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 105,
+   "note": "D2 name: the wiki only says customer name; legacy followed; uncertain",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 111,
+   "note": "D3 address line 3: conflicting wiki statements; country kept; uncertain",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r3/builder/assumptions.md",
+   "line": 113,
+   "note": "D4 address lines 1-2: the wiki is silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 2,
+   "note": "builder flag: name line and HTML name",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 3,
+   "note": "builder flag: address line 3, plugin lists only state, zip",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 4,
+   "note": "builder flag: HTML paragraph spacing read from the contract rendering",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 4,
+   "note": "builder flag: HTML paragraph spacing read from the contract rendering",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 5,
+   "note": "builder flag: statement set and order, missing customer/account skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 5,
+   "note": "builder flag: missing customer/account skipped",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 6,
+   "note": "builder flag: no cycle filter, wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 7,
+   "note": "builder flag: FICO field for blank/non-numeric score",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 8,
+   "note": "builder flag: signed amount decoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 8,
+   "note": "builder flag: signed amount decoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/a21/zflx/yx3/r3/builder/flags.json",
+   "line": 8,
+   "note": "builder flag: signed amount decoding",
+   "origin": "build"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

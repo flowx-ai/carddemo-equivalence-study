@@ -1,0 +1,75 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- START (README Contract; register 3): transact, acctdata, cardxref, custdata (full file text)\n- END (README; script lines 255, 372): creastmt_statements, creastmt_statements_html (lines joined by \\n), contract names, no decode map\n- MODE files",
+ "register": "builder/assumptions.md",
+ "build": [
+  [
+   "R-STMT-TXN",
+   40,
+   "7 no statement-period filter; rests on the wiki TODO, nothing defines a filter"
+  ],
+  [
+   "R-STMT-SET",
+   42,
+   "8 no account/card status filter; the wiki defines none"
+  ],
+  [
+   "R-STMT-ABEND",
+   44,
+   "9 missing customer or account still produces a statement; wiki silent for batch"
+  ],
+  [
+   "R-STMT-SET",
+   44,
+   "9 missing customer or account still produces a statement; wiki silent for batch"
+  ],
+  [
+   "R-STMT-NAME",
+   55,
+   "11 name assembly; wiki silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   61,
+   "12 address lines; AC gives no format"
+  ],
+  [
+   "R-STMT-FICO",
+   69,
+   "15 FICO printed as stored (3 digits); wiki silent on its print form"
+  ],
+  [
+   "R-STMT-BAL",
+   82,
+   "18 sign encoding not stated"
+  ],
+  [
+   "R-STMT-TXN",
+   82,
+   "18 sign encoding not stated"
+  ],
+  [
+   "R-STMT-TOTAL",
+   82,
+   "18 sign encoding not stated"
+  ],
+  [
+   "R-STMT-NAME",
+   93,
+   "21 no HTML escaping; wiki otherwise silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   93,
+   "21 no HTML escaping; wiki otherwise silent"
+  ]
+ ],
+ "cr_rule": "10: Total EXP = sum of amounts above zero, credits and returns listed and not subtracted (BR-03, DT-17, plugin Totals, AC-2, AC-7 100+40-30 -> 140.00); 'BR-03's TODO concerns only the line layout'. Not flagged. Entry 2 (architecture, quotes the plugin layout TODO) not mapped, as architecture."
+}

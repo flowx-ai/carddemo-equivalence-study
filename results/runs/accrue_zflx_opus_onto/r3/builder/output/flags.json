@@ -1,0 +1,17 @@
+[
+  {"rule": "R-INT-FORMULA", "source": "output/assumptions.md:15"},
+  {"rule": "R-INT-TRUNC", "source": "output/assumptions.md:26"},
+  {"rule": "R-INT-DRIVER-BALCAT-ORDER", "source": "output/assumptions.md:34"},
+  {"rule": "R-INT-RATE-KEY", "source": "output/assumptions.md:43"},
+  {"rule": "R-INT-STANDARD-GROUP-FALLBACK", "source": "output/assumptions.md:50"},
+  {"rule": "R-INT-POST-BALANCE-ONLY", "source": "output/assumptions.md:59"},
+  {"rule": "R-INT-CYCLE-RESET", "source": "output/assumptions.md:67"},
+  {"rule": "R-INT-MISSING-ACCOUNT", "source": "output/assumptions.md:76"},
+  {"rule": "R-INT-CARD-XREF", "source": "output/assumptions.md:81"},
+  {"rule": "R-INT-ZERO-RATE-SKIP", "source": "output/assumptions.md:88"},
+  {"output": "accrue_systxn.json", "key": "tran_id", "source": "output/assumptions.md:100"},
+  {"output": "accrue_systxn.json", "key": "orig_ts", "source": "output/assumptions.md:109"},
+  {"output": "accrue_systxn.json", "key": "proc_ts", "source": "output/assumptions.md:109"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_credit", "source": "output/assumptions.md:67"},
+  {"output": "accrue_ledgacc.json", "key": "curr_cyc_debit", "source": "output/assumptions.md:67"}
+]

@@ -1,0 +1,93 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 33,
+  "note": "A4 formula /1200 from recalled analogue; no statement in the pages, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 33,
+  "note": "A4 truncation from recalled analogue, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 39,
+  "note": "A5 input order not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 43,
+  "note": "A6 cycle reset: pages give no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 43,
+  "note": "A6 account update: pages give no rule",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 49,
+  "note": "A7 DEFAULT fallback from recalled analogue, not the pages",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 53,
+  "note": "A8 zero/missing rate: from analogue",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 53,
+  "note": "A8 0.00 transactions written: from analogue",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 58,
+  "note": "A9 card choice not stated anywhere",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 65,
+  "note": "A10 id construction from analogue",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 69,
+  "note": "A11 orphan balances: not addressed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 73,
+  "note": "A12 constant fields from analogue only",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/a17/accrue_zflx_nowiki/r1/builder/assumptions.md",
+  "line": 80,
+  "note": "A13 last account updated; switch to reproduce the recalled defect, flagged",
+  "origin": "build"
+ }
+]

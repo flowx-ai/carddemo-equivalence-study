@@ -1,0 +1,3103 @@
+SESSION clock=20220718 100000 (fixed: R-CLOCK-FIXED)
+##### step   1: CLEAR, type CC00, ENTER
+INPUT aid=CLEAR
+=== task   1 tran CC00 program COSGN00C aid ENTER calen        0
+SEND MAP COSGN0A  mapset COSGN00  from COSGN00C site 0003 opts ERASE CURSOR
+  TRNNAME  D |CC00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COSGN00C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  APPLID   D |CARDDEMO|
+  SYSID    D |CICS|
+  USERID   N ||
+  PASSWD   I |<dark>|
+  ERRMSG   D ||
+task end: RETURN TRANSID(CC00) commarea length 160
+##### step   2: ENTER
+INPUT aid=ENTER USERID=|USER0001| PASSWD=@data:USRSEC.USER0001.pwd
+=== task   2 tran CC00 program COSGN00C aid ENTER calen      160
+RECEIVE MAP COSGN0A  into COSGN00C site 0002 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CC00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COSGN00C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   9 mdt=F R-MDT-FSET |10:00:00|
+  in APPLID   len   8 mdt=F R-MDT-FSET |CARDDEMO|
+  in SYSID    len   8 mdt=F R-MDT-FSET |CICS|
+  in USERID   len   8 mdt=T |USER0001|
+  in PASSWD   len   8 mdt=T |<dark>|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   2 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+##### step   3: ENTER
+INPUT aid=ENTER OPTION=|2|
+=== task   3 tran CM00 program COMEN01C aid ENTER calen      160
+RECEIVE MAP COMEN1A  into COMEN01C site 0007 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CM00|
+  in TITLE01  len  40 mdt=F R-MDT-FSET |      AWS Mainframe Modernization|
+  in CURDATE  len   8 mdt=F R-MDT-FSET |07/18/22|
+  in PGMNAME  len   8 mdt=F R-MDT-FSET |COMEN01C|
+  in TITLE02  len  40 mdt=F R-MDT-FSET |              CardDemo|
+  in CURTIME  len   8 mdt=F R-MDT-FSET |10:00:00|
+  in OPTN001  len  40 mdt=F R-MDT-FSET |01. Account View|
+  in OPTN002  len  40 mdt=F R-MDT-FSET |02. Account Update|
+  in OPTN003  len  40 mdt=F R-MDT-FSET |03. Credit Card List|
+  in OPTN004  len  40 mdt=F R-MDT-FSET |04. Credit Card View|
+  in OPTN005  len  40 mdt=F R-MDT-FSET |05. Credit Card Update|
+  in OPTN006  len  40 mdt=F R-MDT-FSET |06. Transaction List|
+  in OPTN007  len  40 mdt=F R-MDT-FSET |07. Transaction View|
+  in OPTN008  len  40 mdt=F R-MDT-FSET |08. Transaction Add|
+  in OPTN009  len  40 mdt=F R-MDT-FSET |09. Transaction Reports|
+  in OPTN010  len  40 mdt=F R-MDT-FSET |10. Bill Payment|
+  in OPTN011  len  40 mdt=F R-MDT-FSET |11. Pending Authorization View|
+  in OPTN012  len   1 mdt=F R-MDT-FSET R-RCV-PAD-BLANK ||
+  in OPTION   len   1 mdt=T R-RCV-PAD-RIGHT-Z |2|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+--- XCTL in task   3 to program COACTUPC (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  N ||
+  ACSTTUS  N ||
+  OPNYEAR  N ||
+  OPNMON   N ||
+  OPNDAY   N ||
+  ACRDLIM  N ||
+  EXPYEAR  N ||
+  EXPMON   N ||
+  EXPDAY   N ||
+  ACSHLIM  N ||
+  RISYEAR  N ||
+  RISMON   N ||
+  RISDAY   N ||
+  ACURBAL  N ||
+  ACRCYCR  N ||
+  AADDGRP  N ||
+  ACRCYDB  N ||
+  ACSTNUM  N ||
+  ACTSSN1  I |999|
+  ACTSSN2  I |99|
+  ACTSSN3  I |9999|
+  DOBYEAR  N ||
+  DOBMON   N ||
+  DOBDAY   N ||
+  ACSTFCO  N ||
+  ACSFNAM  N ||
+  ACSMNAM  N ||
+  ACSLNAM  N ||
+  ACSADL1  N ||
+  ACSSTTE  N ||
+  ACSADL2  N ||
+  ACSZIPC  N ||
+  ACSCITY  N ||
+  ACSCTRY  N ||
+  ACSPH1A  N ||
+  ACSPH1B  N ||
+  ACSPH1C  N ||
+  ACSGOVT  N ||
+  ACSPH2A  N ||
+  ACSPH2B  N ||
+  ACSPH2C  N ||
+  ACSEFTC  N ||
+  ACSPFLG  N ||
+  INFOMSG  D |Enter or update id of account to update|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |<dark>|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   4: ENTER
+INPUT aid=ENTER ACCTSID=|00000000001|
+=== task   4 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=T |00000000001|
+  in ACSTTUS  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in OPNYEAR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in OPNMON   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in OPNDAY   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRDLIM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPYEAR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPMON   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in EXPDAY   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSHLIM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in RISYEAR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in RISMON   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in RISDAY   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACURBAL  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYCR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSTNUM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |999|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |99|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |9999|
+  in DOBYEAR  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in DOBMON   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in DOBDAY   len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSTFCO  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSFNAM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSMNAM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSLNAM  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSADL1  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSSTTE  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSADL2  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSZIPC  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSCITY  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSCTRY  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH1A  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH1B  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH1C  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSGOVT  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH2A  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH2B  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPH2C  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSEFTC  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACSPFLG  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  D ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D ||
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |<dark>|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   5: ENTER
+INPUT aid=ENTER ACSTTUS=|X|
+=== task   5 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=T |X|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len  10 mdt=A R-MDT-ATTR ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET ||
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |X|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Account Status must be Y or N.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   6: ENTER
+INPUT aid=ENTER ACSTTUS=|Y| OPNYEAR=|ABCD|
+=== task   6 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=T |Y|
+  in OPNYEAR  len   4 mdt=T |ABCD|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Account Status must be Y or N.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |ABCD|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date must be 4 digit number.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   7: ENTER
+INPUT aid=ENTER OPNYEAR=|1850|
+=== task   7 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=T |1850|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date must be 4 digit number.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |1850|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date : Century is not valid.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   8: ENTER
+INPUT aid=ENTER OPNYEAR=|2014| OPNMON=|13|
+=== task   8 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=T |2014|
+  in OPNMON   len   2 mdt=T |13|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date : Century is not valid.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |13|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date: Month must be a number between 1 and 12.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step   9: ENTER
+INPUT aid=ENTER OPNMON=|11| OPNDAY=|31|
+=== task   9 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=T |11|
+  in OPNDAY   len   2 mdt=T |31|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date: Month must be a number between 1 and 12.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |31|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date:Cannot have 31 days in this month.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  10: ENTER
+INPUT aid=ENTER OPNMON=|02| OPNDAY=|30|
+=== task  10 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=T |02|
+  in OPNDAY   len   2 mdt=T |30|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date:Cannot have 31 days in this month.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |02|
+  OPNDAY   D |30|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date:Cannot have 30 days in this month.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  11: ENTER
+INPUT aid=ENTER OPNDAY=|29|
+=== task  11 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |02|
+  in OPNDAY   len   2 mdt=T |29|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date:Cannot have 30 days in this month.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |02|
+  OPNDAY   D |29|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Open Date:Not a leap year.Cannot have 29 days in this month.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  12: ENTER
+INPUT aid=ENTER OPNMON=|11| OPNDAY=|20| ACRDLIM=|ABC|
+=== task  12 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=T |11|
+  in OPNDAY   len   2 mdt=T |20|
+  in ACRDLIM  len   3 mdt=T R-RCV-PAD-BLANK |ABC|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Open Date:Not a leap year.Cannot have 29 days in this month.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |ABC|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Credit Limit is not valid|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  13: ENTER
+INPUT aid=ENTER ACRDLIM=|2020.00| EXPDAY=|AB|
+=== task  13 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len   7 mdt=T R-RCV-PAD-BLANK |2020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=T |AB|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Credit Limit is not valid|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |AB|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Expiry Date:day must be a number between 1 and 31.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  14: ENTER
+INPUT aid=ENTER EXPDAY=|20| ACSHLIM=@eof
+=== task  14 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=T |20|
+  in ACSHLIM  len   0 mdt=T R-RCV-EMPTY-EOF ||
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Expiry Date:day must be a number between 1 and 31.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |*|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Cash Credit Limit must be supplied.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  15: ENTER
+INPUT aid=ENTER ACSHLIM=|1020.00| ACTSSN1=|000|
+=== task  15 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len   7 mdt=T R-RCV-PAD-BLANK |1020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=T |000|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Cash Credit Limit must be supplied.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |000|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |SSN: First 3 chars must not be zero.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  16: ENTER
+INPUT aid=ENTER ACTSSN1=|020| DOBYEAR=|2030|
+=== task  16 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=T |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=T |2030|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |274|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |SSN: First 3 chars must not be zero.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |2030|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |274|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Date of Birth:cannot be in the future|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  17: ENTER
+INPUT aid=ENTER DOBYEAR=|1961| ACSTFCO=|ABC|
+=== task  17 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=T |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=T |ABC|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Date of Birth:cannot be in the future|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |ABC|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |FICO Score must be all numeric.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  18: ENTER
+INPUT aid=ENTER ACSTFCO=|000|
+=== task  18 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=T |000|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Immanuel|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |FICO Score must be all numeric.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |000|
+  ACSFNAM  D |Immanuel|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |FICO Score must not be zero.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  19: ENTER
+INPUT aid=ENTER ACSTFCO=|700| ACSFNAM=|J0HN|
+=== task  19 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=T |700|
+  in ACSFNAM  len   4 mdt=T R-RCV-PAD-BLANK |J0HN|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |FICO Score must not be zero.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |J0HN|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |First Name can have alphabets only.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  20: ENTER
+INPUT aid=ENTER ACSFNAM=|Zoe| ACSMNAM=|M1|
+=== task  20 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len   3 mdt=T R-RCV-PAD-BLANK |Zoe|
+  in ACSMNAM  len   2 mdt=T R-RCV-PAD-BLANK |M1|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |First Name can have alphabets only.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |M1|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Middle Name can have alphabets only.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  21: ENTER
+INPUT aid=ENTER ACSMNAM=|Madeline| ACSLNAM=@eof
+=== task  21 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len   8 mdt=T R-RCV-PAD-BLANK |Madeline|
+  in ACSLNAM  len   0 mdt=T R-RCV-EMPTY-EOF ||
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Middle Name can have alphabets only.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |*|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Last Name must be supplied.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  22: ENTER
+INPUT aid=ENTER ACSLNAM=|Kessler| ACSADL1=@eof
+=== task  22 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len   7 mdt=T R-RCV-PAD-BLANK |Kessler|
+  in ACSADL1  len   0 mdt=T R-RCV-EMPTY-EOF ||
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Last Name must be supplied.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |*|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Address Line 1 must be supplied.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  23: ENTER
+INPUT aid=ENTER ACSADL1=|618 Deshaun Route| ACSSTTE=|ZZ|
+=== task  23 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  17 mdt=T R-RCV-PAD-BLANK |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=T |ZZ|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Address Line 1 must be supplied.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |ZZ|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |State: is not a valid state code|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  24: ENTER
+INPUT aid=ENTER ACSSTTE=|NC| ACSZIPC=|ABCDE|
+=== task  24 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=T |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=T |ABCDE|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |State: is not a valid state code|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |ABCDE|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Zip must be all numeric.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  25: ENTER
+INPUT aid=ENTER ACSZIPC=|27601| ACSCITY=|C1|
+=== task  25 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=T |27601|
+  in ACSCITY  len   2 mdt=T R-RCV-PAD-BLANK |C1|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Zip must be all numeric.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |C1|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |City can have alphabets only.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  26: ENTER
+INPUT aid=ENTER ACSCITY=|Altenwerthshire| ACSPH1B=|000|
+=== task  26 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |27601|
+  in ACSCITY  len  15 mdt=T R-RCV-PAD-BLANK |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=T |000|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |City can have alphabets only.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |000|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Phone Number 1: Prefix code cannot be zero|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  27: ENTER
+INPUT aid=ENTER ACSPH1B=|119| ACSPH1C=|AB|
+=== task  27 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |27601|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=T |119|
+  in ACSPH1C  len   2 mdt=T R-RCV-PAD-RIGHT-B |AB|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Phone Number 1: Prefix code cannot be zero|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |  AB|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Phone Number 1: Line number code must be A 4 digit number.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  28: ENTER
+INPUT aid=ENTER ACSPH1C=|8310|
+=== task  28 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |27601|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=T |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |373|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Phone Number 1: Line number code must be A 4 digit number.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |373|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Phone Number 2: Not valid North America general purpose area code|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  29: ENTER
+INPUT aid=ENTER ACSPH2A=|919| ACSEFTC=|ABCDEFGHIJ|
+=== task  29 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |27601|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=T |919|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=T |ABCDEFGHIJ|
+  in ACSPFLG  len   1 mdt=A R-MDT-ATTR |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Phone Number 2: Not valid North America general purpose area code|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |919|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |ABCDEFGHIJ|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |EFT Account Id must be all numeric.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  30: ENTER
+INPUT aid=ENTER ACSEFTC=|0053581756| ACSPFLG=|X|
+=== task  30 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=A R-MDT-ATTR |27601|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |919|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=T |0053581756|
+  in ACSPFLG  len   1 mdt=T |X|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |EFT Account Id must be all numeric.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |27601|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |919|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |X|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Primary Card Holder must be Y or N.|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  31: ENTER
+INPUT aid=ENTER ACSPFLG=|Y| ACSZIPC=|12546|
+=== task  31 tran CAUP program COACTUPC aid ENTER calen     2000
+RECEIVE MAP CACTUPA  into COACTUPC site 0005 resp        0 rules=R-RCV-NULLFILL,
+  in TRNNAME  len   4 mdt=F R-MDT-FSET |CAUP|
+  in ACCTSID  len  11 mdt=A R-MDT-ATTR |00000000001|
+  in ACSTTUS  len   1 mdt=A R-MDT-ATTR |Y|
+  in OPNYEAR  len   4 mdt=A R-MDT-ATTR |2014|
+  in OPNMON   len   2 mdt=A R-MDT-ATTR |11|
+  in OPNDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACRDLIM  len  15 mdt=A R-MDT-ATTR |+      2,020.00|
+  in EXPYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in EXPMON   len   2 mdt=A R-MDT-ATTR |05|
+  in EXPDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACSHLIM  len  15 mdt=A R-MDT-ATTR |+      1,020.00|
+  in RISYEAR  len   4 mdt=A R-MDT-ATTR |2025|
+  in RISMON   len   2 mdt=A R-MDT-ATTR |05|
+  in RISDAY   len   2 mdt=A R-MDT-ATTR |20|
+  in ACURBAL  len  15 mdt=A R-MDT-ATTR |+        194.00|
+  in ACRCYCR  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in AADDGRP  len   0 mdt=A R-MDT-ATTR R-RCV-EMPTY-EOF ||
+  in ACRCYDB  len  15 mdt=A R-MDT-ATTR |+           .00|
+  in ACSTNUM  len   9 mdt=A R-MDT-ATTR |000000001|
+  in ACTSSN1  len   3 mdt=A R-MDT-ATTR |020|
+  in ACTSSN2  len   2 mdt=A R-MDT-ATTR |97|
+  in ACTSSN3  len   4 mdt=A R-MDT-ATTR |3888|
+  in DOBYEAR  len   4 mdt=A R-MDT-ATTR |1961|
+  in DOBMON   len   2 mdt=A R-MDT-ATTR |06|
+  in DOBDAY   len   2 mdt=A R-MDT-ATTR |08|
+  in ACSTFCO  len   3 mdt=A R-MDT-ATTR |700|
+  in ACSFNAM  len  25 mdt=A R-MDT-ATTR |Zoe|
+  in ACSMNAM  len  25 mdt=A R-MDT-ATTR |Madeline|
+  in ACSLNAM  len  25 mdt=A R-MDT-ATTR |Kessler|
+  in ACSADL1  len  50 mdt=A R-MDT-ATTR |618 Deshaun Route|
+  in ACSSTTE  len   2 mdt=A R-MDT-ATTR |NC|
+  in ACSADL2  len  50 mdt=A R-MDT-ATTR |Apt. 802|
+  in ACSZIPC  len   5 mdt=T |12546|
+  in ACSCITY  len  50 mdt=A R-MDT-ATTR |Altenwerthshire|
+  in ACSCTRY  len   3 mdt=A R-MDT-ATTR |USA|
+  in ACSPH1A  len   3 mdt=A R-MDT-ATTR |908|
+  in ACSPH1B  len   3 mdt=A R-MDT-ATTR |119|
+  in ACSPH1C  len   4 mdt=A R-MDT-ATTR |8310|
+  in ACSGOVT  len  20 mdt=A R-MDT-ATTR |00000000000049368437|
+  in ACSPH2A  len   3 mdt=A R-MDT-ATTR |919|
+  in ACSPH2B  len   3 mdt=A R-MDT-ATTR |693|
+  in ACSPH2C  len   4 mdt=A R-MDT-ATTR |8684|
+  in ACSEFTC  len  10 mdt=A R-MDT-ATTR |0053581756|
+  in ACSPFLG  len   1 mdt=T |Y|
+  in ERRMSG   len  78 mdt=F R-MDT-FSET |Primary Card Holder must be Y or N.|
+SEND MAP CACTUPA  mapset COACTUP  from COACTUPC site 0006 opts CURSOR ERASE FREEKB
+  TRNNAME  D |CAUP|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COACTUPC|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  ACCTSID  D |00000000001|
+  ACSTTUS  D |Y|
+  OPNYEAR  D |2014|
+  OPNMON   D |11|
+  OPNDAY   D |20|
+  ACRDLIM  D |+      2,020.00|
+  EXPYEAR  D |2025|
+  EXPMON   D |05|
+  EXPDAY   D |20|
+  ACSHLIM  D |+      1,020.00|
+  RISYEAR  D |2025|
+  RISMON   D |05|
+  RISDAY   D |20|
+  ACURBAL  D |+        194.00|
+  ACRCYCR  D |+           .00|
+  AADDGRP  N ||
+  ACRCYDB  D |+           .00|
+  ACSTNUM  D |000000001|
+  ACTSSN1  D |020|
+  ACTSSN2  D |97|
+  ACTSSN3  D |3888|
+  DOBYEAR  D |1961|
+  DOBMON   D |06|
+  DOBDAY   D |08|
+  ACSTFCO  D |700|
+  ACSFNAM  D |Zoe|
+  ACSMNAM  D |Madeline|
+  ACSLNAM  D |Kessler|
+  ACSADL1  D |618 Deshaun Route|
+  ACSSTTE  D |NC|
+  ACSADL2  D |Apt. 802|
+  ACSZIPC  D |12546|
+  ACSCITY  D |Altenwerthshire|
+  ACSCTRY  D |USA|
+  ACSPH1A  D |908|
+  ACSPH1B  D |119|
+  ACSPH1C  D |8310|
+  ACSGOVT  D |00000000000049368437|
+  ACSPH2A  D |919|
+  ACSPH2B  D |693|
+  ACSPH2C  D |8684|
+  ACSEFTC  D |0053581756|
+  ACSPFLG  D |Y|
+  INFOMSG  D |Update account details presented above.|
+  ERRMSG   D |Invalid zip code for state|
+  FKEYS    I |ENTER=Process F3=Exit|
+  FKEY05   I |<dark>|
+  FKEY12   I |F12=Cancel|
+task end: RETURN TRANSID(CAUP) commarea length2000
+##### step  32: PF3
+INPUT aid=PF3
+=== task  32 tran CAUP program COACTUPC aid PF3   calen     2000
+--- XCTL in task  32 to program COMEN01C (EIBAID kept: R-XCTL-AID) calen      160
+SEND MAP COMEN1A  mapset COMEN01  from COMEN01C site 0006 opts ERASE
+  TRNNAME  D |CM00|
+  TITLE01  D |      AWS Mainframe Modernization|
+  CURDATE  D |07/18/22|
+  PGMNAME  D |COMEN01C|
+  TITLE02  D |              CardDemo|
+  CURTIME  D |10:00:00|
+  OPTN001  D |01. Account View|
+  OPTN002  D |02. Account Update|
+  OPTN003  D |03. Credit Card List|
+  OPTN004  D |04. Credit Card View|
+  OPTN005  D |05. Credit Card Update|
+  OPTN006  D |06. Transaction List|
+  OPTN007  D |07. Transaction View|
+  OPTN008  D |08. Transaction Add|
+  OPTN009  D |09. Transaction Reports|
+  OPTN010  D |10. Bill Payment|
+  OPTN011  D |11. Pending Authorization View|
+  OPTN012  I ||
+  OPTION   N ||
+  ERRMSG   D ||
+task end: RETURN TRANSID(CM00) commarea length 160
+END outcome=OK

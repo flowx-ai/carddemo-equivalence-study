@@ -1,0 +1,3672 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 0.0,
+  "equivalence_business": 0.0,
+  "divergent_records": 100,
+  "silent_records": 0,
+  "flagged_records": 100,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-ADDR",
+   "R-STMT-FICO",
+   "R-STMT-TOTAL",
+   "R-STMT-TXN"
+  ],
+  "flags_raised": 36,
+  "flags_unneeded": 18,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.7383
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.8938
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 50
+  }
+ },
+ "by_rule": {
+  "R-STMT-ADDR/flagged": 100,
+  "R-STMT-FICO/flagged": 100,
+  "R-STMT-TOTAL/flagged": 49,
+  "R-STMT-TXN/flagged": 100
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Altenwerthshire NC USA 12546",
+   "cand": "Altenwerthshire NC 12546",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "fico",
+   "golden": "274",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000503557384', 'Purchase at Casper Group', Decimal('81.44')), ('0000000532120892', 'Return item at Frami-Hyatt', Decimal('-70.77')), ('0000000555363230', 'Purchase at Metz, Blanda and Homenick'",
+   "cand": "(('0000000503557384', 'Purchase at Casper Group', Decimal('81.44')), ('0000000532120892', 'Return item at Frami-Hyatt', Decimal('-70.77')), ('0000000555363230', 'Purchase at Metz, Blanda and Homenick'",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "total",
+   "golden": "1108.66",
+   "cand": "1094.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Andersonfurt CT 44803-4279",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000025430891', 'Purchase at Beatty-Hessel', Decimal('94.33')), ('0000000272698228', 'Purchase at Schultz-Morissette', Decimal('457.55')), ('0000000498857207', 'Purchase at Friesen, Murphy and B",
+   "cand": "(('0000000025430891', 'Purchase at Beatty-Hessel', Decimal('94.33')), ('0000000272698228', 'Purchase at Schultz-Morissette', Decimal('457.55')), ('0000000498857207', 'Purchase at Friesen, Murphy and B",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "total",
+   "golden": "1010.87",
+   "cand": "991.76",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Julianneburgh WA 24984",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000196728331', 'Return item at Hane and Sons', Decimal('-744.77')), ('0000000232640164', 'Purchase at Blick LLC', Decimal('160.99')), ('0000000361866674', 'Purchase at Mayer and Daughters', Dec",
+   "cand": "(('0000000196728331', 'Return item at Hane and Sons', Decimal('-744.77')), ('0000000232640164', 'Purchase at Blick LLC', Decimal('160.99')), ('0000000361866674', 'Purchase at Mayer and Daughters', Dec",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "total",
+   "golden": "1353.89",
+   "cand": "1327.99",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Predovicton MN 78861",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "cand": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "total",
+   "golden": "1624.11",
+   "cand": "1594.65",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Bruenfurt OR 02322",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000016259484', 'Return item at Sipes Inc', Decimal('-56.77')), ('0000000201032783', 'Purchase at Heidenreich-Feil', Decimal('326.44')), ('0000000547488622', 'Purchase at Reichert, Kemmer and Fu",
+   "cand": "(('0000000016259484', 'Return item at Sipes Inc', Decimal('-56.77')), ('0000000201032783', 'Purchase at Heidenreich-Feil', Decimal('326.44')), ('0000000547488622', 'Purchase at Reichert, Kemmer and Fu",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "total",
+   "golden": "2855.04",
+   "cand": "2819.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase RI 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000173069364', 'Purchase at Runte-Schmidt', Decimal('985.33')), ('0000000341155503', 'Purchase at Parker-Erdman', Decimal('990.88')), ('0000000549364593', 'Purchase at Waters, Considine and Bor",
+   "cand": "(('0000000173069364', 'Purchase at Runte-Schmidt', Decimal('985.33')), ('0000000341155503', 'Purchase at Parker-Erdman', Decimal('990.88')), ('0000000549364593', 'Purchase at Waters, Considine and Bor",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "total",
+   "golden": "1488.13",
+   "cand": "1460.99",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland DE 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000072220498', 'Purchase at Graham LLC', Decimal('660.11')), ('0000000189414937', 'Return item at Treutel-Douglas', Decimal('-358.44')), ('0000000550860982', 'Purchase at Bogan LLC', Decimal('8",
+   "cand": "(('0000000072220498', 'Purchase at Graham LLC', Decimal('660.11')), ('0000000189414937', 'Return item at Treutel-Douglas', Decimal('-358.44')), ('0000000550860982', 'Purchase at Bogan LLC', Decimal('8",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "total",
+   "golden": "3774.56",
+   "cand": "3723.54",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Concepcionland VT 84390",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000174748684', 'Purchase at McLaughlin-Reichel', Decimal('19.99')), ('0000000194189303', 'Purchase at Dickinson and Sons', Decimal('59.33')), ('0000000498548061', 'Purchase at Bernier and Daugh",
+   "cand": "(('0000000174748684', 'Purchase at McLaughlin-Reichel', Decimal('19.99')), ('0000000194189303', 'Purchase at Dickinson and Sons', Decimal('59.33')), ('0000000498548061', 'Purchase at Bernier and Daugh",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "total",
+   "golden": "1092.71",
+   "cand": "1075.88",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley FM 56181-0584",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "fico",
+   "golden": "054",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000224060323', 'Purchase at Kunze and Sons', Decimal('343.77')), ('0000000569807281', 'Return item at Kiehn, Russel and Schaefer', Decimal('-998.33')), ('2022071800000017', 'Int. for a/c 000000",
+   "cand": "(('0000000224060323', 'Purchase at Kunze and Sons', Decimal('343.77')), ('0000000569807281', 'Return item at Kiehn, Russel and Schaefer', Decimal('-998.33')))",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "total",
+   "golden": "-650.27",
+   "cand": "-654.56",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Hansenville AP 96003-5867",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000137879630', 'Purchase at Wiza-Langworth', Decimal('46.66')), ('0000000373973344', 'Purchase at Wehner LLC', Decimal('958.33')), ('0000000382291356', 'Purchase at Jacobi and Daughters', Decim",
+   "cand": "(('0000000137879630', 'Purchase at Wiza-Langworth', Decimal('46.66')), ('0000000373973344', 'Purchase at Wehner LLC', Decimal('958.33')), ('0000000382291356', 'Purchase at Jacobi and Daughters', Decim",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "total",
+   "golden": "2581.92",
+   "cand": "2548.65",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire RI 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "cand": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "total",
+   "golden": "2600.51",
+   "cand": "2567.53",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita IN 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000070754800', 'Purchase at Blick, Kris and Gerlach', Decimal('355.11')), ('0000000274427056', 'Return item at Gibson-Maggio', Decimal('-763.00')), ('0000000325686503', 'Purchase at Cruickshank",
+   "cand": "(('0000000070754800', 'Purchase at Blick, Kris and Gerlach', Decimal('355.11')), ('0000000274427056', 'Return item at Gibson-Maggio', Decimal('-763.00')), ('0000000325686503', 'Purchase at Cruickshank",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "total",
+   "golden": "1606.21",
+   "cand": "1576.97",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Mitchellmouth MH 72362",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000001774260', 'Return item at Nitzsche, Nicolas and Lowe', Decimal('-919.00')), ('0000000099965527', 'Purchase at Jaskolski-Rolfson', Decimal('555.22')), ('0000000366513257', 'Purchase at Klei",
+   "cand": "(('0000000001774260', 'Return item at Nitzsche, Nicolas and Lowe', Decimal('-919.00')), ('0000000099965527', 'Purchase at Jaskolski-Rolfson', Decimal('555.22')), ('0000000366513257', 'Purchase at Klei",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "total",
+   "golden": "1564.76",
+   "cand": "1534.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton CA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000274596018', 'Purchase at Renner LLC', Decimal('40.00')), ('0000000474475283', 'Purchase at Pouros Inc', Decimal('174.66')), ('0000000490043047', 'Purchase at Yost-Kertzmann', Decimal('584.88",
+   "cand": "(('0000000274596018', 'Purchase at Renner LLC', Decimal('40.00')), ('0000000474475283', 'Purchase at Pouros Inc', Decimal('174.66')), ('0000000490043047', 'Purchase at Yost-Kertzmann', Decimal('584.88",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "total",
+   "golden": "857.98",
+   "cand": "846.88",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Anabelton MD 01993-9116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000043636099', 'Return item at Nader-Bayer', Decimal('-945.66')), ('0000000115716061', 'Purchase at Bednar, Marvin and Kozey', Decimal('401.22')), ('0000000246312084', 'Purchase at Weimann-Grah",
+   "cand": "(('0000000043636099', 'Return item at Nader-Bayer', Decimal('-945.66')), ('0000000115716061', 'Purchase at Bednar, Marvin and Kozey', Decimal('401.22')), ('0000000246312084', 'Purchase at Weimann-Grah",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "total",
+   "golden": "2424.81",
+   "cand": "2383.20",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Hendersonbury KS 78239-9466",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000313527007', 'Purchase at Ebert-Grimes', Decimal('948.22')), ('0000000435144487', 'Purchase at Pacocha, Goyette and Leuschke', Decimal('408.88')), ('0000000618712102', 'Purchase at Hahn-Lueil",
+   "cand": "(('0000000313527007', 'Purchase at Ebert-Grimes', Decimal('948.22')), ('0000000435144487', 'Purchase at Pacocha, Goyette and Leuschke', Decimal('408.88')), ('0000000618712102', 'Purchase at Hahn-Lueil",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "total",
+   "golden": "1069.49",
+   "cand": "1045.98",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho KS 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000341634875', 'Purchase at Medhurst, Bogisich and Schmeler', Decimal('997.88')), ('0000000400762013', 'Purchase at Will-Murazik', Decimal('617.00')), ('0000000482016448', 'Purchase at Becker G",
+   "cand": "(('0000000341634875', 'Purchase at Medhurst, Bogisich and Schmeler', Decimal('997.88')), ('0000000400762013', 'Purchase at Will-Murazik', Decimal('617.00')), ('0000000482016448', 'Purchase at Becker G",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "total",
+   "golden": "1549.14",
+   "cand": "1522.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa NH 75721-7382",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "fico",
+   "golden": "355",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000166444519', 'Purchase at Wyman, Feest and Moen', Decimal('183.22')), ('0000000328781772', 'Purchase at Hayes and Daughters', Decimal('859.44')), ('0000000498615524', 'Return item at Powlowsk",
+   "cand": "(('0000000166444519', 'Purchase at Wyman, Feest and Moen', Decimal('183.22')), ('0000000328781772', 'Purchase at Hayes and Daughters', Decimal('859.44')), ('0000000498615524', 'Return item at Powlowsk",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "total",
+   "golden": "702.63",
+   "cand": "682.76",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Walshberg IL 59945",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000009101861', 'Purchase at Guann LLC', Decimal('281.77')), ('0000000017874199', 'Purchase at Legros Group', Decimal('373.66')), ('0000000160469204', 'Purchase at Greenfelder-Larson', Decimal('",
+   "cand": "(('0000000009101861', 'Purchase at Guann LLC', Decimal('281.77')), ('0000000017874199', 'Purchase at Legros Group', Decimal('373.66')), ('0000000160469204', 'Purchase at Greenfelder-Larson', Decimal('",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "total",
+   "golden": "1166.86",
+   "cand": "1147.87",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight GU 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "cand": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "total",
+   "golden": "3256.45",
+   "cand": "3211.65",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore AS 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000169879332', 'Purchase at Buckridge, Fisher and Schroeder', Decimal('256.00')), ('0000000211219588', 'Purchase at Cummings, Nitzsche and Bosco', Decimal('553.00')), ('0000000379084859', 'Retu",
+   "cand": "(('0000000169879332', 'Purchase at Buckridge, Fisher and Schroeder', Decimal('256.00')), ('0000000211219588', 'Purchase at Cummings, Nitzsche and Bosco', Decimal('553.00')), ('0000000379084859', 'Retu",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "total",
+   "golden": "743.89",
+   "cand": "733.78",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Hayesstad NH 01226",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "cand": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "total",
+   "golden": "2358.27",
+   "cand": "2318.64",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys GA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000085824369', 'Purchase at Pollich-Mosciski', Decimal('999.77')), ('0000000375247552', 'Purchase at Guann Group', Decimal('115.11')), ('0000000540260014', 'Return item at McCullough-Gottlieb',",
+   "cand": "(('0000000085824369', 'Purchase at Pollich-Mosciski', Decimal('999.77')), ('0000000375247552', 'Purchase at Guann Group', Decimal('115.11')), ('0000000540260014', 'Return item at McCullough-Gottlieb',",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "total",
+   "golden": "1743.03",
+   "cand": "1710.65",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Kutchland AK 64266",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000032979555', 'Purchase at Treutel-Leffler', Decimal('29.44')), ('0000000238329981', 'Return item at Effertz, Ortiz and Gusikowski', Decimal('-930.33')), ('2022071800000030', 'Int. for a/c 000",
+   "cand": "(('0000000032979555', 'Purchase at Treutel-Leffler', Decimal('29.44')), ('0000000238329981', 'Return item at Effertz, Ortiz and Gusikowski', Decimal('-930.33')))",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "total",
+   "golden": "-900.53",
+   "cand": "-900.89",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Hermanborough MS 56133-5636",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000220745261', 'Purchase at Swaniawski, Torphy and Bruen', Decimal('495.66')), ('0000000793409700', 'Purchase at Douglas Inc', Decimal('168.66')), ('0000000828072981', 'Return item at Hayes Inc",
+   "cand": "(('0000000220745261', 'Purchase at Swaniawski, Torphy and Bruen', Decimal('495.66')), ('0000000793409700', 'Purchase at Douglas Inc', Decimal('168.66')), ('0000000828072981', 'Return item at Hayes Inc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "total",
+   "golden": "310.40",
+   "cand": "302.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Predovicburgh AK 85943-7605",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000028097268', 'Purchase at Wolf, Cruickshank and Bode', Decimal('250.22')), ('0000000051205286', 'Purchase at Goodwin, Von and Krajcik', Decimal('649.33')), ('0000000107748365', 'Purchase at W",
+   "cand": "(('0000000028097268', 'Purchase at Wolf, Cruickshank and Bode', Decimal('250.22')), ('0000000051205286', 'Purchase at Goodwin, Von and Krajcik', Decimal('649.33')), ('0000000107748365', 'Purchase at W",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "total",
+   "golden": "445.22",
+   "cand": "430.56",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Haleyport AR 19113-4329",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000109506921', 'Purchase at Will, Frami and Lynch', Decimal('769.55')), ('0000000241121967', 'Return item at Kulas and Daughters', Decimal('-445.55')), ('0000000416848414', 'Purchase at Medhurs",
+   "cand": "(('0000000109506921', 'Purchase at Will, Frami and Lynch', Decimal('769.55')), ('0000000241121967', 'Return item at Kulas and Daughters', Decimal('-445.55')), ('0000000416848414', 'Purchase at Medhurs",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "total",
+   "golden": "2986.80",
+   "cand": "2944.43",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh ME 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000202217428', 'Purchase at Simonis and Sons', Decimal('299.33')), ('0000000392772234', 'Purchase at Williamson LLC', Decimal('351.66')), ('0000000482116790', 'Purchase at Erdman-Cartwright', D",
+   "cand": "(('0000000202217428', 'Purchase at Simonis and Sons', Decimal('299.33')), ('0000000392772234', 'Purchase at Williamson LLC', Decimal('351.66')), ('0000000482116790', 'Purchase at Erdman-Cartwright', D",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "total",
+   "golden": "2148.49",
+   "cand": "2116.32",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Pfefferhaven LA 46142",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000415671623', 'Purchase at Kshlerin, Schulist and Oberbrunner', Decimal('0.99')), ('0000000544248006', 'Purchase at Mann Inc', Decimal('659.44')), ('0000000598262041', 'Purchase at Terry-Rohan",
+   "cand": "(('0000000415671623', 'Purchase at Kshlerin, Schulist and Oberbrunner', Decimal('0.99')), ('0000000544248006', 'Purchase at Mann Inc', Decimal('659.44')), ('0000000598262041', 'Purchase at Terry-Rohan",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "total",
+   "golden": "855.95",
+   "cand": "839.21",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh AL 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000054288996', 'Purchase at Cremin and Sons', Decimal('502.66')), ('0000000253685514', 'Purchase at Von-Schmeler', Decimal('496.33')), ('0000000499424514', 'Purchase at Schumm-Stamm', Decimal('",
+   "cand": "(('0000000054288996', 'Purchase at Cremin and Sons', Decimal('502.66')), ('0000000253685514', 'Purchase at Von-Schmeler', Decimal('496.33')), ('0000000499424514', 'Purchase at Schumm-Stamm', Decimal('",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "total",
+   "golden": "1899.30",
+   "cand": "1870.43",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Lubowitzberg NV 11857-8177",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000614267358', 'Return item at Gibson-Abbott', Decimal('-132.88')), ('2022071800000037', 'Int. for a/c 00000000037', Decimal('0.00')))",
+   "cand": "(('0000000614267358', 'Return item at Gibson-Abbott', Decimal('-132.88')),)",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi VA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "cand": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "total",
+   "golden": "2486.87",
+   "cand": "2449.53",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna IA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000061394789', 'Return item at Heaney-Raynor', Decimal('-70.99')), ('0000000152467982', 'Purchase at Kreiger and Sons', Decimal('168.33')), ('0000000191360674', 'Purchase at Wyman, Breitenberg ",
+   "cand": "(('0000000061394789', 'Return item at Heaney-Raynor', Decimal('-70.99')), ('0000000152467982', 'Purchase at Kreiger and Sons', Decimal('168.33')), ('0000000191360674', 'Purchase at Wyman, Breitenberg ",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "total",
+   "golden": "2005.51",
+   "cand": "1979.88",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie MI 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000450622695', 'Purchase at Schmitt, Kohler and Skiles', Decimal('28.33')), ('0000000458331136', 'Purchase at Howe, Rippin and Watsica', Decimal('437.11')), ('0000000600564499', 'Purchase at Sc",
+   "cand": "(('0000000450622695', 'Purchase at Schmitt, Kohler and Skiles', Decimal('28.33')), ('0000000458331136', 'Purchase at Howe, Rippin and Watsica', Decimal('437.11')), ('0000000600564499', 'Purchase at Sc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "total",
+   "golden": "1646.98",
+   "cand": "1622.66",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Erniechester TX USA 87156-8689",
+   "cand": "Erniechester TX 87156-8689",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "fico",
+   "golden": "284",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "cand": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "total",
+   "golden": "1629.53",
+   "cand": "1609.10",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad VT 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000030755266', 'Purchase at Ratke LLC', Decimal('829.55')), ('0000000033688127', 'Purchase at Schinner-Steuber', Decimal('958.99')), ('0000000204143988', 'Purchase at Buckridge-Stiedemann', Dec",
+   "cand": "(('0000000030755266', 'Purchase at Ratke LLC', Decimal('829.55')), ('0000000033688127', 'Purchase at Schinner-Steuber', Decimal('958.99')), ('0000000204143988', 'Purchase at Buckridge-Stiedemann', Dec",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "total",
+   "golden": "1672.86",
+   "cand": "1642.87",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Reillyland FM 83589",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000248557079', 'Purchase at Strosin-Fadel', Decimal('905.00')), ('0000000283702177', 'Purchase at Bradtke-Considine', Decimal('89.99')), ('0000000358543876', 'Purchase at Zulauf Group', Decimal",
+   "cand": "(('0000000248557079', 'Purchase at Strosin-Fadel', Decimal('905.00')), ('0000000283702177', 'Purchase at Bradtke-Considine', Decimal('89.99')), ('0000000358543876', 'Purchase at Zulauf Group', Decimal",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "total",
+   "golden": "1690.36",
+   "cand": "1663.31",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview OK 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000192039153', 'Return item at Smith-Upton', Decimal('-243.00')), ('0000000298806396', 'Purchase at Powlowski-Greenholt', Decimal('936.22')), ('0000000420768809', 'Purchase at Bartell-Rempel', ",
+   "cand": "(('0000000192039153', 'Return item at Smith-Upton', Decimal('-243.00')), ('0000000298806396', 'Purchase at Powlowski-Greenholt', Decimal('936.22')), ('0000000420768809', 'Purchase at Bartell-Rempel', ",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "total",
+   "golden": "2731.91",
+   "cand": "2695.19",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King ID 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000054727064', 'Purchase at McDermott, Lockman and Weimann', Decimal('303.11')), ('0000000132831571', 'Return item at Boehm-Sanford', Decimal('-215.33')), ('0000000400022505', 'Purchase at Kloc",
+   "cand": "(('0000000054727064', 'Purchase at McDermott, Lockman and Weimann', Decimal('303.11')), ('0000000132831571', 'Return item at Boehm-Sanford', Decimal('-215.33')), ('0000000400022505', 'Purchase at Kloc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "total",
+   "golden": "1822.02",
+   "cand": "1796.87",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Abbottshire NV 09048",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000010229018', 'Purchase at Gislason-Medhurst', Decimal('849.99')), ('0000000109340521', 'Purchase at Runte and Sons', Decimal('840.55')), ('0000000312054308', 'Purchase at Bogan LLC', Decimal(",
+   "cand": "(('0000000010229018', 'Purchase at Gislason-Medhurst', Decimal('849.99')), ('0000000109340521', 'Purchase at Runte and Sons', Decimal('840.55')), ('0000000312054308', 'Purchase at Bogan LLC', Decimal(",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "total",
+   "golden": "2092.86",
+   "cand": "2062.77",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Alexandroview PW 63082-4520",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000010142252', 'Purchase at Kertzmann-Schoen', Decimal('454.66')), ('0000000382018782', 'Purchase at Hackett-Kautzer', Decimal('884.99')), ('0000000475609951', 'Purchase at Predovic-Deckow', De",
+   "cand": "(('0000000010142252', 'Purchase at Kertzmann-Schoen', Decimal('454.66')), ('0000000382018782', 'Purchase at Hackett-Kautzer', Decimal('884.99')), ('0000000475609951', 'Purchase at Predovic-Deckow', De",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "total",
+   "golden": "3187.12",
+   "cand": "3142.41",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough GU 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "cand": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "total",
+   "golden": "1032.63",
+   "cand": "1012.66",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Albertville OR 83985-4937",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "cand": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "total",
+   "golden": "995.79",
+   "cand": "976.89",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Langoshstad GA 12288-3495",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "cand": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "total",
+   "golden": "1058.26",
+   "cand": "1033.31",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Alvinaport MI 02251-1698",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000006292564', 'Purchase at Ernser, Roob and Gleason', Decimal('67.88')), ('0000000226849749', 'Return item at Smith, Cummings and Medhurst', Decimal('-428.99')), ('0000000250062442', 'Purchase",
+   "cand": "(('0000000006292564', 'Purchase at Ernser, Roob and Gleason', Decimal('67.88')), ('0000000226849749', 'Return item at Smith, Cummings and Medhurst', Decimal('-428.99')), ('0000000250062442', 'Purchase",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "kind": "field",
+   "field": "total",
+   "golden": "853.69",
+   "cand": "837.86",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester OR 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000058866561', 'Purchase at Blick-Rippin', Decimal('183.88')), ('0000000329724245', 'Purchase at Reichel Group', Decimal('14.00')), ('0000000475746885', 'Purchase at Adams-Watsica', Decimal('96",
+   "cand": "(('0000000058866561', 'Purchase at Blick-Rippin', Decimal('183.88')), ('0000000329724245', 'Purchase at Reichel Group', Decimal('14.00')), ('0000000475746885', 'Purchase at Adams-Watsica', Decimal('96",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "total",
+   "golden": "1472.64",
+   "cand": "1453.87",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad VI 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000142315472', 'Purchase at Kutch-Farrell', Decimal('843.66')), ('0000000202886897', 'Purchase at Ryan-Homenick', Decimal('175.88')), ('0000000397282953', 'Return item at Ankunding Group', Deci",
+   "cand": "(('0000000142315472', 'Purchase at Kutch-Farrell', Decimal('843.66')), ('0000000202886897', 'Purchase at Ryan-Homenick', Decimal('175.88')), ('0000000397282953', 'Return item at Ankunding Group', Deci",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "total",
+   "golden": "2388.57",
+   "cand": "2354.19",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Madieport AL 34206-2974",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000000683580', 'Purchase at Abshire-Lowe', Decimal('504.77')), ('0000000380632461', 'Purchase at Beahan, Little and Sanford', Decimal('428.33')), ('0000000500885895', 'Return item at Klein-Star",
+   "cand": "(('0000000000683580', 'Purchase at Abshire-Lowe', Decimal('504.77')), ('0000000380632461', 'Purchase at Beahan, Little and Sanford', Decimal('428.33')), ('0000000500885895', 'Return item at Klein-Star",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "total",
+   "golden": "723.29",
+   "cand": "707.21",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad SC 27610",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "fico",
+   "golden": "051",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "cand": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "total",
+   "golden": "1562.68",
+   "cand": "1533.08",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden VI 21113",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "fico",
+   "golden": "699",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000021711604', 'Purchase at Gleason, Shanahan and Reynolds', Decimal('416.11')), ('0000000223138231', 'Purchase at Prohaska, Grant and Hirthe', Decimal('851.33')), ('0000000433607101', 'Purchas",
+   "cand": "(('0000000021711604', 'Purchase at Gleason, Shanahan and Reynolds', Decimal('416.11')), ('0000000223138231', 'Purchase at Prohaska, Grant and Hirthe', Decimal('851.33')), ('0000000433607101', 'Purchas",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "total",
+   "golden": "2683.89",
+   "cand": "2647.55",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Altenwerthshire NC USA 12546",
+   "cand": "Altenwerthshire NC 12546",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "field",
+   "field": "fico",
+   "golden": "274",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "1",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000503557384', 'Purchase at Casper Group', Decimal('81.44')), ('0000000532120892', 'Return item at Frami-Hyatt', Decimal('-70.77')), ('0000000555363230', 'Purchase at Metz, Blanda and Homenick'",
+   "cand": "(('0000000503557384', 'Purchase at Casper Group', Decimal('81.44')), ('0000000532120892', 'Return item at Frami-Hyatt', Decimal('-70.77')), ('0000000555363230', 'Purchase at Metz, Blanda and Homenick'",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Andersonfurt CT USA 44803-4279",
+   "cand": "Andersonfurt CT 44803-4279",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "fico",
+   "golden": "476",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "10",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000025430891', 'Purchase at Beatty-Hessel', Decimal('94.33')), ('0000000272698228', 'Purchase at Schultz-Morissette', Decimal('457.55')), ('0000000498857207', 'Purchase at Friesen, Murphy and B",
+   "cand": "(('0000000025430891', 'Purchase at Beatty-Hessel', Decimal('94.33')), ('0000000272698228', 'Purchase at Schultz-Morissette', Decimal('457.55')), ('0000000498857207', 'Purchase at Friesen, Murphy and B",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Julianneburgh WA USA 24984",
+   "cand": "Julianneburgh WA 24984",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "fico",
+   "golden": "209",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "11",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000196728331', 'Return item at Hane and Sons', Decimal('-744.77')), ('0000000232640164', 'Purchase at Blick LLC', Decimal('160.99')), ('0000000361866674', 'Purchase at Mayer and Daughters', Dec",
+   "cand": "(('0000000196728331', 'Return item at Hane and Sons', Decimal('-744.77')), ('0000000232640164', 'Purchase at Blick LLC', Decimal('160.99')), ('0000000361866674', 'Purchase at Mayer and Daughters', Dec",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicton MN USA 78861",
+   "cand": "Predovicton MN 78861",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "fico",
+   "golden": "688",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "12",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "cand": "(('0000000263926805', 'Purchase at Batz-Gaylord', Decimal('210.33')), ('0000000429557611', 'Purchase at Pagac, Funk and Kiehn', Decimal('545.66')), ('0000000462765346', 'Purchase at Marquardt, Ward an",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Bruenfurt OR USA 02322",
+   "cand": "Bruenfurt OR 02322",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "fico",
+   "golden": "053",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "13",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000016259484', 'Return item at Sipes Inc', Decimal('-56.77')), ('0000000201032783', 'Purchase at Heidenreich-Feil', Decimal('326.44')), ('0000000547488622', 'Purchase at Reichert, Kemmer and Fu",
+   "cand": "(('0000000016259484', 'Return item at Sipes Inc', Decimal('-56.77')), ('0000000201032783', 'Purchase at Heidenreich-Feil', Decimal('326.44')), ('0000000547488622', 'Purchase at Reichert, Kemmer and Fu",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West RI USA 12914-8465",
+   "cand": "West Chase RI 12914-8465",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "fico",
+   "golden": "243",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "14",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000173069364', 'Purchase at Runte-Schmidt', Decimal('985.33')), ('0000000341155503', 'Purchase at Parker-Erdman', Decimal('990.88')), ('0000000549364593', 'Purchase at Waters, Considine and Bor",
+   "cand": "(('0000000173069364', 'Purchase at Runte-Schmidt', Decimal('985.33')), ('0000000341155503', 'Purchase at Parker-Erdman', Decimal('990.88')), ('0000000549364593', 'Purchase at Waters, Considine and Bor",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port DE USA 63205-7014",
+   "cand": "Port Efrainland DE 63205-7014",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "fico",
+   "golden": "681",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "15",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000072220498', 'Purchase at Graham LLC', Decimal('660.11')), ('0000000189414937', 'Return item at Treutel-Douglas', Decimal('-358.44')), ('0000000550860982', 'Purchase at Bogan LLC', Decimal('8",
+   "cand": "(('0000000072220498', 'Purchase at Graham LLC', Decimal('660.11')), ('0000000189414937', 'Return item at Treutel-Douglas', Decimal('-358.44')), ('0000000550860982', 'Purchase at Bogan LLC', Decimal('8",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Concepcionland VT USA 84390",
+   "cand": "Concepcionland VT 84390",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "fico",
+   "golden": "326",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "16",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000174748684', 'Purchase at McLaughlin-Reichel', Decimal('19.99')), ('0000000194189303', 'Purchase at Dickinson and Sons', Decimal('59.33')), ('0000000498548061', 'Purchase at Bernier and Daugh",
+   "cand": "(('0000000174748684', 'Purchase at McLaughlin-Reichel', Decimal('19.99')), ('0000000194189303', 'Purchase at Dickinson and Sons', Decimal('59.33')), ('0000000498548061', 'Purchase at Bernier and Daugh",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New FM USA 56181-0584",
+   "cand": "New Presley FM 56181-0584",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "fico",
+   "golden": "054",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "17",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000224060323', 'Purchase at Kunze and Sons', Decimal('343.77')), ('0000000569807281', 'Return item at Kiehn, Russel and Schaefer', Decimal('-998.33')), ('2022071800000017', 'Int. for a/c 000000",
+   "cand": "(('0000000224060323', 'Purchase at Kunze and Sons', Decimal('343.77')), ('0000000569807281', 'Return item at Kiehn, Russel and Schaefer', Decimal('-998.33')))",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hansenville AP USA 96003-5867",
+   "cand": "Hansenville AP 96003-5867",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "fico",
+   "golden": "340",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "18",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000137879630', 'Purchase at Wiza-Langworth', Decimal('46.66')), ('0000000373973344', 'Purchase at Wehner LLC', Decimal('958.33')), ('0000000382291356', 'Purchase at Jacobi and Daughters', Decim",
+   "cand": "(('0000000137879630', 'Purchase at Wiza-Langworth', Decimal('46.66')), ('0000000373973344', 'Purchase at Wehner LLC', Decimal('958.33')), ('0000000382291356', 'Purchase at Jacobi and Daughters', Decim",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New RI USA 48161",
+   "cand": "New Arturoshire RI 48161",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "fico",
+   "golden": "259",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "19",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "cand": "(('0000000407178785', 'Purchase at Cole-Wyman', Decimal('949.77')), ('0000000445507761', 'Purchase at Rice, Luettgen and Aufderhar', Decimal('129.33')), ('0000000446945803', 'Purchase at Yost and Daug",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West IN USA 22770",
+   "cand": "West Bernita IN 22770",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "fico",
+   "golden": "268",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "2",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000070754800', 'Purchase at Blick, Kris and Gerlach', Decimal('355.11')), ('0000000274427056', 'Return item at Gibson-Maggio', Decimal('-763.00')), ('0000000325686503', 'Purchase at Cruickshank",
+   "cand": "(('0000000070754800', 'Purchase at Blick, Kris and Gerlach', Decimal('355.11')), ('0000000274427056', 'Return item at Gibson-Maggio', Decimal('-763.00')), ('0000000325686503', 'Purchase at Cruickshank",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Mitchellmouth MH USA 72362",
+   "cand": "Mitchellmouth MH 72362",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "fico",
+   "golden": "493",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "20",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000001774260', 'Return item at Nitzsche, Nicolas and Lowe', Decimal('-919.00')), ('0000000099965527', 'Purchase at Jaskolski-Rolfson', Decimal('555.22')), ('0000000366513257', 'Purchase at Klei",
+   "cand": "(('0000000001774260', 'Return item at Nitzsche, Nicolas and Lowe', Decimal('-919.00')), ('0000000099965527', 'Purchase at Jaskolski-Rolfson', Decimal('555.22')), ('0000000366513257', 'Purchase at Klei",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North CA USA 72407",
+   "cand": "North Myrnaton CA 72407",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "fico",
+   "golden": "163",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "21",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000274596018', 'Purchase at Renner LLC', Decimal('40.00')), ('0000000474475283', 'Purchase at Pouros Inc', Decimal('174.66')), ('0000000490043047', 'Purchase at Yost-Kertzmann', Decimal('584.88",
+   "cand": "(('0000000274596018', 'Purchase at Renner LLC', Decimal('40.00')), ('0000000474475283', 'Purchase at Pouros Inc', Decimal('174.66')), ('0000000490043047', 'Purchase at Yost-Kertzmann', Decimal('584.88",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Anabelton MD USA 01993-9116",
+   "cand": "Anabelton MD 01993-9116",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "fico",
+   "golden": "597",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "22",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000043636099', 'Return item at Nader-Bayer', Decimal('-945.66')), ('0000000115716061', 'Purchase at Bednar, Marvin and Kozey', Decimal('401.22')), ('0000000246312084', 'Purchase at Weimann-Grah",
+   "cand": "(('0000000043636099', 'Return item at Nader-Bayer', Decimal('-945.66')), ('0000000115716061', 'Purchase at Bednar, Marvin and Kozey', Decimal('401.22')), ('0000000246312084', 'Purchase at Weimann-Grah",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hendersonbury KS USA 78239-9466",
+   "cand": "Hendersonbury KS 78239-9466",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "fico",
+   "golden": "337",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "23",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000313527007', 'Purchase at Ebert-Grimes', Decimal('948.22')), ('0000000435144487', 'Purchase at Pacocha, Goyette and Leuschke', Decimal('408.88')), ('0000000618712102', 'Purchase at Hahn-Lueil",
+   "cand": "(('0000000313527007', 'Purchase at Ebert-Grimes', Decimal('948.22')), ('0000000435144487', 'Purchase at Pacocha, Goyette and Leuschke', Decimal('408.88')), ('0000000618712102', 'Purchase at Hahn-Lueil",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East KS USA 15414",
+   "cand": "East Otho KS 15414",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "fico",
+   "golden": "711",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "24",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000341634875', 'Purchase at Medhurst, Bogisich and Schmeler', Decimal('997.88')), ('0000000400762013', 'Purchase at Will-Murazik', Decimal('617.00')), ('0000000482016448', 'Purchase at Becker G",
+   "cand": "(('0000000341634875', 'Purchase at Medhurst, Bogisich and Schmeler', Decimal('997.88')), ('0000000400762013', 'Purchase at Will-Murazik', Decimal('617.00')), ('0000000482016448', 'Purchase at Becker G",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "add3",
+   "golden": "West NH USA 75721-7382",
+   "cand": "West Alexa NH 75721-7382",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "fico",
+   "golden": "355",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "25",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000166444519', 'Purchase at Wyman, Feest and Moen', Decimal('183.22')), ('0000000328781772', 'Purchase at Hayes and Daughters', Decimal('859.44')), ('0000000498615524', 'Return item at Powlowsk",
+   "cand": "(('0000000166444519', 'Purchase at Wyman, Feest and Moen', Decimal('183.22')), ('0000000328781772', 'Purchase at Hayes and Daughters', Decimal('859.44')), ('0000000498615524', 'Return item at Powlowsk",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Walshberg IL USA 59945",
+   "cand": "Walshberg IL 59945",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "fico",
+   "golden": "001",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "26",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000009101861', 'Purchase at Guann LLC', Decimal('281.77')), ('0000000017874199', 'Purchase at Legros Group', Decimal('373.66')), ('0000000160469204', 'Purchase at Greenfelder-Larson', Decimal('",
+   "cand": "(('0000000009101861', 'Purchase at Guann LLC', Decimal('281.77')), ('0000000017874199', 'Purchase at Legros Group', Decimal('373.66')), ('0000000160469204', 'Purchase at Greenfelder-Larson', Decimal('",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 07923-8822",
+   "cand": "Port Dwight GU 07923-8822",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "fico",
+   "golden": "078",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "27",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "cand": "(('0000000130111733', 'Purchase at Rogahn Group', Decimal('777.33')), ('0000000187573156', 'Purchase at Cruickshank and Daughters', Decimal('579.77')), ('0000000486159054', 'Purchase at Christiansen-J",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South AS USA 77442-7954",
+   "cand": "South Aurore AS 77442-7954",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "fico",
+   "golden": "114",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "28",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000169879332', 'Purchase at Buckridge, Fisher and Schroeder', Decimal('256.00')), ('0000000211219588', 'Purchase at Cummings, Nitzsche and Bosco', Decimal('553.00')), ('0000000379084859', 'Retu",
+   "cand": "(('0000000169879332', 'Purchase at Buckridge, Fisher and Schroeder', Decimal('256.00')), ('0000000211219588', 'Purchase at Cummings, Nitzsche and Bosco', Decimal('553.00')), ('0000000379084859', 'Retu",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hayesstad NH USA 01226",
+   "cand": "Hayesstad NH 01226",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "fico",
+   "golden": "552",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "29",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "cand": "(('0000000139910093', 'Purchase at Harris, Johnston and Harris', Decimal('570.66')), ('0000000184933166', 'Purchase at Walker LLC', Decimal('989.77')), ('0000000357518499', 'Return item at Willms-Beie",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New GA USA 19852-6716",
+   "cand": "New Gladys GA 19852-6716",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "fico",
+   "golden": "616",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "3",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000085824369', 'Purchase at Pollich-Mosciski', Decimal('999.77')), ('0000000375247552', 'Purchase at Guann Group', Decimal('115.11')), ('0000000540260014', 'Return item at McCullough-Gottlieb',",
+   "cand": "(('0000000085824369', 'Purchase at Pollich-Mosciski', Decimal('999.77')), ('0000000375247552', 'Purchase at Guann Group', Decimal('115.11')), ('0000000540260014', 'Return item at McCullough-Gottlieb',",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Kutchland AK USA 64266",
+   "cand": "Kutchland AK 64266",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "fico",
+   "golden": "133",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "30",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000032979555', 'Purchase at Treutel-Leffler', Decimal('29.44')), ('0000000238329981', 'Return item at Effertz, Ortiz and Gusikowski', Decimal('-930.33')), ('2022071800000030', 'Int. for a/c 000",
+   "cand": "(('0000000032979555', 'Purchase at Treutel-Leffler', Decimal('29.44')), ('0000000238329981', 'Return item at Effertz, Ortiz and Gusikowski', Decimal('-930.33')))",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Hermanborough MS USA 56133-5636",
+   "cand": "Hermanborough MS 56133-5636",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "fico",
+   "golden": "058",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "31",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000220745261', 'Purchase at Swaniawski, Torphy and Bruen', Decimal('495.66')), ('0000000793409700', 'Purchase at Douglas Inc', Decimal('168.66')), ('0000000828072981', 'Return item at Hayes Inc",
+   "cand": "(('0000000220745261', 'Purchase at Swaniawski, Torphy and Bruen', Decimal('495.66')), ('0000000793409700', 'Purchase at Douglas Inc', Decimal('168.66')), ('0000000828072981', 'Return item at Hayes Inc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Predovicburgh AK USA 85943-7605",
+   "cand": "Predovicburgh AK 85943-7605",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "fico",
+   "golden": "221",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "32",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000028097268', 'Purchase at Wolf, Cruickshank and Bode', Decimal('250.22')), ('0000000051205286', 'Purchase at Goodwin, Von and Krajcik', Decimal('649.33')), ('0000000107748365', 'Purchase at W",
+   "cand": "(('0000000028097268', 'Purchase at Wolf, Cruickshank and Bode', Decimal('250.22')), ('0000000051205286', 'Purchase at Goodwin, Von and Krajcik', Decimal('649.33')), ('0000000107748365', 'Purchase at W",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Haleyport AR USA 19113-4329",
+   "cand": "Haleyport AR 19113-4329",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "fico",
+   "golden": "469",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "33",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000109506921', 'Purchase at Will, Frami and Lynch', Decimal('769.55')), ('0000000241121967', 'Return item at Kulas and Daughters', Decimal('-445.55')), ('0000000416848414', 'Purchase at Medhurs",
+   "cand": "(('0000000109506921', 'Purchase at Will, Frami and Lynch', Decimal('769.55')), ('0000000241121967', 'Return item at Kulas and Daughters', Decimal('-445.55')), ('0000000416848414', 'Purchase at Medhurs",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South ME USA 49544-2869",
+   "cand": "South Margarettaburgh ME 49544-2869",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "fico",
+   "golden": "104",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "34",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000202217428', 'Purchase at Simonis and Sons', Decimal('299.33')), ('0000000392772234', 'Purchase at Williamson LLC', Decimal('351.66')), ('0000000482116790', 'Purchase at Erdman-Cartwright', D",
+   "cand": "(('0000000202217428', 'Purchase at Simonis and Sons', Decimal('299.33')), ('0000000392772234', 'Purchase at Williamson LLC', Decimal('351.66')), ('0000000482116790', 'Purchase at Erdman-Cartwright', D",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Pfefferhaven LA USA 46142",
+   "cand": "Pfefferhaven LA 46142",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "fico",
+   "golden": "793",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "35",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000415671623', 'Purchase at Kshlerin, Schulist and Oberbrunner', Decimal('0.99')), ('0000000544248006', 'Purchase at Mann Inc', Decimal('659.44')), ('0000000598262041', 'Purchase at Terry-Rohan",
+   "cand": "(('0000000415671623', 'Purchase at Kshlerin, Schulist and Oberbrunner', Decimal('0.99')), ('0000000544248006', 'Purchase at Mann Inc', Decimal('659.44')), ('0000000598262041', 'Purchase at Terry-Rohan",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake AL USA 10932-0480",
+   "cand": "Lake Derekburgh AL 10932-0480",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "fico",
+   "golden": "266",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "36",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000054288996', 'Purchase at Cremin and Sons', Decimal('502.66')), ('0000000253685514', 'Purchase at Von-Schmeler', Decimal('496.33')), ('0000000499424514', 'Purchase at Schumm-Stamm', Decimal('",
+   "cand": "(('0000000054288996', 'Purchase at Cremin and Sons', Decimal('502.66')), ('0000000253685514', 'Purchase at Von-Schmeler', Decimal('496.33')), ('0000000499424514', 'Purchase at Schumm-Stamm', Decimal('",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lubowitzberg NV USA 11857-8177",
+   "cand": "Lubowitzberg NV 11857-8177",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "fico",
+   "golden": "653",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "37",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000614267358', 'Return item at Gibson-Abbott', Decimal('-132.88')), ('2022071800000037', 'Int. for a/c 00000000037', Decimal('0.00')))",
+   "cand": "(('0000000614267358', 'Return item at Gibson-Abbott', Decimal('-132.88')),)",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VA USA 63928-0008",
+   "cand": "East Malachi VA 63928-0008",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "fico",
+   "golden": "446",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "38",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "cand": "(('0000000246307558', 'Purchase at Jacobi and Sons', Decimal('816.77')), ('0000000253579636', \"Purchase at D'Amore-Batz\", Decimal('257.55')), ('0000000265935610', 'Purchase at Morar-Cartwright', Decim",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New IA USA 74267",
+   "cand": "New Sabryna IA 74267",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "fico",
+   "golden": "475",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "39",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000061394789', 'Return item at Heaney-Raynor', Decimal('-70.99')), ('0000000152467982', 'Purchase at Kreiger and Sons', Decimal('168.33')), ('0000000191360674', 'Purchase at Wyman, Breitenberg ",
+   "cand": "(('0000000061394789', 'Return item at Heaney-Raynor', Decimal('-70.99')), ('0000000152467982', 'Purchase at Kreiger and Sons', Decimal('168.33')), ('0000000191360674', 'Purchase at Wyman, Breitenberg ",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake MI USA 39035-0455",
+   "cand": "Lake Virginie MI 39035-0455",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "fico",
+   "golden": "776",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "4",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000450622695', 'Purchase at Schmitt, Kohler and Skiles', Decimal('28.33')), ('0000000458331136', 'Purchase at Howe, Rippin and Watsica', Decimal('437.11')), ('0000000600564499', 'Purchase at Sc",
+   "cand": "(('0000000450622695', 'Purchase at Schmitt, Kohler and Skiles', Decimal('28.33')), ('0000000458331136', 'Purchase at Howe, Rippin and Watsica', Decimal('437.11')), ('0000000600564499', 'Purchase at Sc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Erniechester TX USA 87156-8689",
+   "cand": "Erniechester TX 87156-8689",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "fico",
+   "golden": "284",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "40",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "cand": "(('0000000100915314', 'Purchase at Gislason and Daughters', Decimal('356.22')), ('0000000573732499', 'Purchase at Ortiz, Langworth and Feeney', Decimal('237.44')), ('0000000686167627', 'Purchase at Gi",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "add3",
+   "golden": "East VT USA 72971-7481",
+   "cand": "East Harmonystad VT 72971-7481",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "fico",
+   "golden": "725",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "41",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000030755266', 'Purchase at Ratke LLC', Decimal('829.55')), ('0000000033688127', 'Purchase at Schinner-Steuber', Decimal('958.99')), ('0000000204143988', 'Purchase at Buckridge-Stiedemann', Dec",
+   "cand": "(('0000000030755266', 'Purchase at Ratke LLC', Decimal('829.55')), ('0000000033688127', 'Purchase at Schinner-Steuber', Decimal('958.99')), ('0000000204143988', 'Purchase at Buckridge-Stiedemann', Dec",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Reillyland FM USA 83589",
+   "cand": "Reillyland FM 83589",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "fico",
+   "golden": "044",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "42",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000248557079', 'Purchase at Strosin-Fadel', Decimal('905.00')), ('0000000283702177', 'Purchase at Bradtke-Considine', Decimal('89.99')), ('0000000358543876', 'Purchase at Zulauf Group', Decimal",
+   "cand": "(('0000000248557079', 'Purchase at Strosin-Fadel', Decimal('905.00')), ('0000000283702177', 'Purchase at Bradtke-Considine', Decimal('89.99')), ('0000000358543876', 'Purchase at Zulauf Group', Decimal",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "add3",
+   "golden": "South OK USA 10050-7980",
+   "cand": "South Marisaview OK 10050-7980",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "fico",
+   "golden": "558",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "43",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000192039153', 'Return item at Smith-Upton', Decimal('-243.00')), ('0000000298806396', 'Purchase at Powlowski-Greenholt', Decimal('936.22')), ('0000000420768809', 'Purchase at Bartell-Rempel', ",
+   "cand": "(('0000000192039153', 'Return item at Smith-Upton', Decimal('-243.00')), ('0000000298806396', 'Purchase at Powlowski-Greenholt', Decimal('936.22')), ('0000000420768809', 'Purchase at Bartell-Rempel', ",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Lake ID USA 05704-0501",
+   "cand": "Lake King ID 05704-0501",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "fico",
+   "golden": "145",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "44",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000054727064', 'Purchase at McDermott, Lockman and Weimann', Decimal('303.11')), ('0000000132831571', 'Return item at Boehm-Sanford', Decimal('-215.33')), ('0000000400022505', 'Purchase at Kloc",
+   "cand": "(('0000000054727064', 'Purchase at McDermott, Lockman and Weimann', Decimal('303.11')), ('0000000132831571', 'Return item at Boehm-Sanford', Decimal('-215.33')), ('0000000400022505', 'Purchase at Kloc",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Abbottshire NV USA 09048",
+   "cand": "Abbottshire NV 09048",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "fico",
+   "golden": "629",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "45",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000010229018', 'Purchase at Gislason-Medhurst', Decimal('849.99')), ('0000000109340521', 'Purchase at Runte and Sons', Decimal('840.55')), ('0000000312054308', 'Purchase at Bogan LLC', Decimal(",
+   "cand": "(('0000000010229018', 'Purchase at Gislason-Medhurst', Decimal('849.99')), ('0000000109340521', 'Purchase at Runte and Sons', Decimal('840.55')), ('0000000312054308', 'Purchase at Bogan LLC', Decimal(",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alexandroview PW USA 63082-4520",
+   "cand": "Alexandroview PW 63082-4520",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "fico",
+   "golden": "514",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "46",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000010142252', 'Purchase at Kertzmann-Schoen', Decimal('454.66')), ('0000000382018782', 'Purchase at Hackett-Kautzer', Decimal('884.99')), ('0000000475609951', 'Purchase at Predovic-Deckow', De",
+   "cand": "(('0000000010142252', 'Purchase at Kertzmann-Schoen', Decimal('454.66')), ('0000000382018782', 'Purchase at Hackett-Kautzer', Decimal('884.99')), ('0000000475609951', 'Purchase at Predovic-Deckow', De",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port GU USA 31329-6973",
+   "cand": "Port Aidanborough GU 31329-6973",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "fico",
+   "golden": "722",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "47",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "cand": "(('0000000060921254', 'Purchase at Kihn-Quigley', Decimal('779.33')), ('0000000203305494', 'Purchase at Kunze, Koss and Erdman', Decimal('479.22')), ('0000000246549911', \"Purchase at Kulas, Reichert a",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Albertville OR USA 83985-4937",
+   "cand": "Albertville OR 83985-4937",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "fico",
+   "golden": "746",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "48",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "cand": "(('0000000019065428', 'Return item at Turcotte Group', Decimal('-535.88')), ('0000000263663553', 'Purchase at Wehner, Turcotte and Nikolaus', Decimal('526.11')), ('0000000273137276', 'Purchase at Lowe",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Langoshstad GA USA 12288-3495",
+   "cand": "Langoshstad GA 12288-3495",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "fico",
+   "golden": "148",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "49",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "cand": "(('0000000143386237', 'Purchase at Blanda, Nienow and Hilpert', Decimal('559.88')), ('0000000292939458', \"Purchase at O'Hara, Ledner and Runte\", Decimal('49.55')), ('0000000432231260', 'Return item at",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Alvinaport MI USA 02251-1698",
+   "cand": "Alvinaport MI 02251-1698",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "fico",
+   "golden": "529",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000006292564', 'Purchase at Ernser, Roob and Gleason', Decimal('67.88')), ('0000000226849749', 'Return item at Smith, Cummings and Medhurst', Decimal('-428.99')), ('0000000250062442', 'Purchase",
+   "cand": "(('0000000006292564', 'Purchase at Ernser, Roob and Gleason', Decimal('67.88')), ('0000000226849749', 'Return item at Smith, Cummings and Medhurst', Decimal('-428.99')), ('0000000250062442', 'Purchase",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New OR USA 04257",
+   "cand": "New Aricchester OR 04257",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "fico",
+   "golden": "623",
+   "cand": "Fair",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "50",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000058866561', 'Purchase at Blick-Rippin', Decimal('183.88')), ('0000000329724245', 'Purchase at Reichel Group', Decimal('14.00')), ('0000000475746885', 'Purchase at Adams-Watsica', Decimal('96",
+   "cand": "(('0000000058866561', 'Purchase at Blick-Rippin', Decimal('183.88')), ('0000000329724245', 'Purchase at Reichel Group', Decimal('14.00')), ('0000000475746885', 'Purchase at Adams-Watsica', Decimal('96",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Port VI USA 46713-5148",
+   "cand": "Port Josephstad VI 46713-5148",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "fico",
+   "golden": "753",
+   "cand": "Very Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "6",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000142315472', 'Purchase at Kutch-Farrell', Decimal('843.66')), ('0000000202886897', 'Purchase at Ryan-Homenick', Decimal('175.88')), ('0000000397282953', 'Return item at Ankunding Group', Deci",
+   "cand": "(('0000000142315472', 'Purchase at Kutch-Farrell', Decimal('843.66')), ('0000000202886897', 'Purchase at Ryan-Homenick', Decimal('175.88')), ('0000000397282953', 'Return item at Ankunding Group', Deci",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "add3",
+   "golden": "Madieport AL USA 34206-2974",
+   "cand": "Madieport AL 34206-2974",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "fico",
+   "golden": "499",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "7",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000000683580', 'Purchase at Abshire-Lowe', Decimal('504.77')), ('0000000380632461', 'Purchase at Beahan, Little and Sanford', Decimal('428.33')), ('0000000500885895', 'Return item at Klein-Star",
+   "cand": "(('0000000000683580', 'Purchase at Abshire-Lowe', Decimal('504.77')), ('0000000380632461', 'Purchase at Beahan, Little and Sanford', Decimal('428.33')), ('0000000500885895', 'Return item at Klein-Star",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "add3",
+   "golden": "North SC USA 27610",
+   "cand": "North Nanniestad SC 27610",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "fico",
+   "golden": "051",
+   "cand": "Poor",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "8",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "cand": "(('0000000084515950', 'Purchase at Bradtke Group', Decimal('325.00')), ('0000000095706092', 'Purchase at Swift, Wolf and Goldner', Decimal('482.44')), ('0000000218186931', 'Return item at Reichert and",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "add3",
+   "golden": "New VI USA 21113",
+   "cand": "New Braden VI 21113",
+   "rule": "R-STMT-ADDR",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "fico",
+   "golden": "699",
+   "cand": "Good",
+   "rule": "R-STMT-FICO",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "9",
+   "kind": "field",
+   "field": "txns",
+   "golden": "(('0000000021711604', 'Purchase at Gleason, Shanahan and Reynolds', Decimal('416.11')), ('0000000223138231', 'Purchase at Prohaska, Grant and Hirthe', Decimal('851.33')), ('0000000433607101', 'Purchas",
+   "cand": "(('0000000021711604', 'Purchase at Gleason, Shanahan and Reynolds', Decimal('416.11')), ('0000000223138231', 'Purchase at Prohaska, Grant and Hirthe', Decimal('851.33')), ('0000000433607101', 'Purchas",
+   "rule": "R-STMT-TXN",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-yx3/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 50,
+   "note": "offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 50,
+   "note": "offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 50,
+   "note": "offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 54,
+   "note": "newline and blank records: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 60,
+   "note": "sign bytes: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 62,
+   "note": "overflow: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 62,
+   "note": "overflow: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 63,
+   "note": "malformed record recovery: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 63,
+   "note": "malformed record recovery: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 64,
+   "note": "duplicate account: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 65,
+   "note": "duplicate customer: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 66,
+   "note": "duplicate xref: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 67,
+   "note": "duplicate transaction: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 68,
+   "note": "missing reference recovery: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 68,
+   "note": "missing reference recovery: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 75,
+   "note": "name joining: wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a31/harness/yx3/r3/exec/workflow_3131db11-532b-4838-99c6-f61df377a55e.md",
+   "line": 56,
+   "note": "missing input: wiki silent",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

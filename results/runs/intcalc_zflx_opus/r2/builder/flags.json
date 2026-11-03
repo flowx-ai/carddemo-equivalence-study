@@ -1,0 +1,13 @@
+[
+  {"rule": "R-INT-FORMULA-MONTHLY-1200", "source": "assumptions.md:24"},
+  {"rule": "R-INT-PER-CATEGORY-BALANCE", "source": "assumptions.md:32"},
+  {"rule": "R-INT-RATE-KEY-DEFAULT-FALLBACK", "source": "assumptions.md:40"},
+  {"rule": "R-INT-TRUNC", "source": "assumptions.md:50"},
+  {"rule": "R-INT-ZERO-RATE-NO-TX", "source": "assumptions.md:56"},
+  {"rule": "R-INT-TX-LAYOUT", "source": "assumptions.md:62"},
+  {"output": "intcalc_systran.json", "key": "orig_ts", "source": "assumptions.md:77"},
+  {"output": "intcalc_systran.json", "key": "proc_ts", "source": "assumptions.md:77"},
+  {"rule": "R-INT-CYCLE-RESET", "source": "assumptions.md:83"},
+  {"rule": "R-INT-LAST-ACCOUNT-POSTED", "source": "assumptions.md:89"},
+  {"rule": "R-INT-XREF-FIRST-CARD", "source": "assumptions.md:123"}
+]

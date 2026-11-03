@@ -1,0 +1,282 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 52,
+  "note": "account offsets inferred, copybook absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 53,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 53,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 53,
+  "note": "customer offsets inferred, not verified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 54,
+  "note": "xref offsets not given explicitly",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 55,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 55,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 56,
+  "note": "key-space normalization unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 57,
+  "note": "amount encoding for these inputs absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 57,
+  "note": "amount encoding for these inputs absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 57,
+  "note": "amount encoding for these inputs absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 58,
+  "note": "cycle filter TODO; no period or status filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 58,
+  "note": "no status filter; sibling cards not combined (wiki ambiguous p.21)",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 59,
+  "note": "equal-key and duplicate transaction handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 60,
+  "note": "name assembly rule absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 61,
+  "note": "address assembly not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 62,
+  "note": "FICO conversion and missing-value rules absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 63,
+  "note": "duplicate master keys unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 64,
+  "note": "missing account/customer: no statement-specific rule; card omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 64,
+  "note": "missing account/customer: no statement-specific rule; card omitted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 65,
+  "note": "malformed-record recovery not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 65,
+  "note": "invalid transaction excluded; recovery not defined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 68,
+  "note": "HTML insertion overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 68,
+  "note": "HTML insertion overflow unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 69,
+  "note": "HTML escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 69,
+  "note": "HTML escaping not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OTHER",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 70,
+  "note": "final header padding not given explicitly",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 71,
+  "note": "zero example for the edited pictures not shown",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 71,
+  "note": "zero example for the edited pictures not shown",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 71,
+  "note": "zero example for the edited pictures not shown",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 72,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 72,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a25/harness/bd5/r1/exec/workflow_cdeb133d-1e2a-4817-8a79-90d9a9d830d3.md",
+  "line": 72,
+  "note": "numeric overflow handling not specified",
+  "origin": "build"
+ }
+]

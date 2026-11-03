@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_45947b0b-...md: inputs ledgacc, balcat, rategrp, cardlink, parmDate, businessDate, procTs, updateLastAccount; END keys systxnJson, ledgaccJson as JSON strings, lines 172-173), before execution:
+- files mode, VARIANT=d1; CONTRACT run parameters passed; procTs and updateLastAccount left unset (A4; default = last account not rewritten)
+- decode.json: string outputs -> canonical names; the adapter parses a list returned as a string (pure renaming)

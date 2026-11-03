@@ -1,0 +1,179 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": null,
+ "source": "- A2 version: e7322864 (WIP on the run branch; the project's latest version when the session ended; plan FAILED behaviour_failed at item 1 of 3, the build's own check, A18). The tool's pick (main snapshot, no workflow) discarded as notebook \u00a752; tools/a25_reextract.sh\n- START (Parse statement inputs, lines 53-56): input.acctdata, custdata, cardxref, transact = fixed-width file text, contract names (identity map)\n- END: Render statement outputs (line 113) writes creastmt_statements and creastmt_statements_html (line arrays) at the root; the last node Finalize assumptions adds assumption keys only: contract names, no decode map\n- MODE files\n- Register: rows at lines 86-110 (one per line)",
+ "build": [
+  [
+   "R-STMT-BAL",
+   86,
+   "offsets inferred; copybooks absent"
+  ],
+  [
+   "R-STMT-NAME",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-ADDR",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-FICO",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TXN",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-TOTAL",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-SET",
+   86,
+   "offsets inferred"
+  ],
+  [
+   "R-STMT-BAL",
+   87,
+   "statement-input encoding rule incomplete"
+  ],
+  [
+   "R-STMT-TXN",
+   87,
+   "statement-input encoding rule incomplete"
+  ],
+  [
+   "R-STMT-TOTAL",
+   87,
+   "statement-input encoding rule incomplete"
+  ],
+  [
+   "R-STMT-SET",
+   88,
+   "per card vs account wording (p.21); maker chose per card"
+  ],
+  [
+   "R-STMT-TXN",
+   88,
+   "per card vs account wording (p.21); maker chose per card"
+  ],
+  [
+   "R-STMT-TXN",
+   89,
+   "cycle filter TODO; no filter"
+  ],
+  [
+   "R-STMT-NAME",
+   90,
+   "name assembly silent"
+  ],
+  [
+   "R-STMT-ADDR",
+   91,
+   "address assembly not fixed"
+  ],
+  [
+   "R-STMT-SET",
+   94,
+   "duplicate master records not described"
+  ],
+  [
+   "R-STMT-TXN",
+   95,
+   "duplicate transaction handling absent"
+  ],
+  [
+   "R-STMT-TXN",
+   96,
+   "collation unspecified"
+  ],
+  [
+   "R-STMT-SET",
+   97,
+   "orphan handling silent"
+  ],
+  [
+   "R-STMT-OTHER",
+   98,
+   "identifier conversion rules absent"
+  ],
+  [
+   "R-STMT-FICO",
+   99,
+   "blank handling and conversion silent"
+  ],
+  [
+   "R-STMT-NAME",
+   100,
+   "short-record handling unstated"
+  ],
+  [
+   "R-STMT-ADDR",
+   100,
+   "short-record handling unstated"
+  ],
+  [
+   "R-STMT-SET",
+   103,
+   "statement-level recovery not defined"
+  ],
+  [
+   "R-STMT-ABEND",
+   103,
+   "statement-level recovery not defined"
+  ],
+  [
+   "R-STMT-SET",
+   104,
+   "malformed-transaction handling unspecified"
+  ],
+  [
+   "R-STMT-TXN",
+   104,
+   "malformed-transaction handling unspecified"
+  ],
+  [
+   "R-STMT-BAL",
+   105,
+   "overflow silent; low-order digits kept"
+  ],
+  [
+   "R-STMT-TXN",
+   105,
+   "overflow silent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   105,
+   "overflow silent"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   105,
+   "overflow silent"
+  ],
+  [
+   "R-STMT-NAME",
+   107,
+   "no escaping rule"
+  ],
+  [
+   "R-STMT-ADDR",
+   107,
+   "no escaping rule"
+  ]
+ ],
+ "cr_rule": "line 69: Total EXP = sum of amountCents > 0 per card; credits listed, not subtracted. No register entry on the total rule; coarse R-STMT-TOTAL flags (86, 87, 105) and the wiki TODO (rubric 5)."
+}

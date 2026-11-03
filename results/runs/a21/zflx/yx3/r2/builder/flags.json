@@ -1,0 +1,8 @@
+[
+  {"output": "creastmt_statements.txt", "key": "address line 3 / customer name", "source": "assumptions.md D1, D2 — built with COBOL STRING DELIMITED BY SPACE semantics (first word of each part); the wiki does not define the construction"},
+  {"output": "creastmt_statements_html.txt", "key": "customer name / address lines", "source": "assumptions.md E2 — field cut at first double space before '  </p>'"},
+  {"output": "creastmt_statements.txt", "key": "card with missing customer or account", "source": "assumptions.md C6 — skipped and reported, legacy abends"},
+  {"output": "creastmt_statements.txt", "key": "cards with more than 10 transactions", "source": "assumptions.md C7 — all printed; legacy 51x10 table limit not reproduced"},
+  {"output": "creastmt_statements.txt", "key": "FICO Score field when score blank", "source": "assumptions.md D5 — printed blank"},
+  {"output": "creastmt_statements.txt", "key": "transaction selection", "source": "assumptions.md C3 — no statement-period filter (wiki TODO)"}
+]

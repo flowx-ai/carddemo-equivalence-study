@@ -1,0 +1,142 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet-ni2/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode (truncate vs ROUNDED)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 127,
+  "note": "rounding: BR-08 rounding TODO; truncation chosen",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 128,
+  "note": "record layout inferred; copybook parity unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 128,
+  "note": "record layout inferred; copybook parity unverified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 129,
+  "note": "disclosure rate width: the wiki's picture and example conflict",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 130,
+  "note": "sign encoding mapping not listed; no alternate encoding specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 130,
+  "note": "sign encoding mapping not listed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 131,
+  "note": "line endings and filler validation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 132,
+  "note": "negative balances: no positive-balance-only restriction stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 133,
+  "note": "tenure: leap-day handling absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 134,
+  "note": "card and merchant details not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 135,
+  "note": "timestamp generation not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 136,
+  "note": "ordering, suffix start and exhaustion absent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 137,
+  "note": "accounts absent from the category stream: not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 137,
+  "note": "accounts absent from the category stream: not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 138,
+  "note": "failure cases not settled by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 138,
+  "note": "failure cases not settled by the wiki",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 139,
+  "note": "duplicate keys: no policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 139,
+  "note": "duplicate keys: no policy",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a21/harness/ni2/r2/exec/workflow_4f93ab77-dd3b-4af6-94c5-ba7dd5e5cbb3.md",
+  "line": 140,
+  "note": "overflow behaviour not specified",
+  "origin": "build"
+ }
+]

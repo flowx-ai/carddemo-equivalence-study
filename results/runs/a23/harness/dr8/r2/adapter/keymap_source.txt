@@ -1,0 +1,5 @@
+Read from runs/a23/harness/dr8/r2/exec/workflow_06abebd5-accc-4a96-ad9f-2c47bcf2dcb8.md (and the build's own README/register) before execution; no output opened.
+- START (Calculate daily posting, lines 78-82, 88-91): input.files = list of {name, content} with names dailytran.dat, acctdata.dat, cardxref.dat, tcatbal.dat (file text); processingTimestamp optional, left unset (runtime UTC). businessDate is not read by the code (A14 text only).
+- END: Assemble posting result (line 118) writes output={postingResult:{posttran_transact_json, posttran_dalyrejs_json, posttran_acctdata_json, posttran_tcatbal_json, assumptions_md, summary}}: _root postingResult, names renamed
+- MODE files; '_named' (opt-in, notebook §72, commit bf484ee, added before this build executed) sends the four padded files as [{name, content}] (pure restructuring)
+- Register: assumption() calls A01-A21 at lines 47-67 (one per line)

@@ -1,0 +1,65 @@
+[
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 43,
+  "note": "A4 rate example 5 chars vs S9(4)V99; generic overpunch decoding assumed",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 54,
+  "note": "A6 DEFAULT missing too: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 60,
+  "note": "A8 wiki rounding implemented; uncertain whether legacy truncates, flagged",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 69,
+  "note": "A10 desc account-id format is an assumption",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 71,
+  "note": "A10 merchant fields: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 75,
+  "note": "A11 card number: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 83,
+  "note": "A13 suffix width not stated",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 89,
+  "note": "A15 balances for missing account: wiki silent",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a16/intcalc_zflx_sonnet/r3/builder/assumptions.md",
+  "line": 91,
+  "note": "A16 AC 7 fees DECISION resolved as keep stub",
+  "origin": "build"
+ }
+]

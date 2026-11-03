@@ -1,0 +1,5 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-ll-builds-accrue-zflx-opus-r1/memory ALLOWED
+OUTSIDE Glob ~/Dev/_tests/ll-builds DENIED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-ll-builds-accrue-zflx-opus-r1/memory/accrue-flowx-build.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-ll-builds-accrue-zflx-opus-r1/memory/MEMORY.md ALLOWED
+outside accesses: 4

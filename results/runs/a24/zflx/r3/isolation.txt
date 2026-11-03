@@ -1,0 +1,9 @@
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+OUTSIDE Grep ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a24-sf6-zflx-r3/<uuid>.jsonl ALLOWED
+outside accesses: 8

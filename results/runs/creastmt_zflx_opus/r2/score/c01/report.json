@@ -1,0 +1,220 @@
+{
+ "summary": {
+  "records_union": 100,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 25,
+  "flags_unneeded": 25,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 1.0
+   },
+   "creastmt_statements_html": {
+    "line_match": 1.0
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "creastmt_statements_html": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 41,
+   "note": "A4 no cycle/date filter; the wiki never defines a cycle",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 47,
+   "note": "A5 one statement per account; legacy writes one per card; wiki silent on order and multi-card accounts",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 57,
+   "note": "A6 transaction order; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 61,
+   "note": "A7 unmatched records produce nothing; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 61,
+   "note": "A7 unmatched transactions not printed; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 61,
+   "note": "A7 missing account or customer skipped (legacy abends); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 75,
+   "note": "A9 balance mapped to ACCT-CURR-BAL; wiki lists other figures",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 75,
+   "note": "A9 Total EXP formula; wiki says only 'totals'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 82,
+   "note": "A10 picture overflow truncated as a MOVE",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 82,
+   "note": "A10 picture overflow truncated as a MOVE",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 82,
+   "note": "A10 picture overflow truncated as a MOVE",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A11 sign encoding; data model only says signed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A11 sign encoding; data model only says signed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 87,
+   "note": "A11 sign encoding; data model only says signed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 97,
+   "note": "A12 name assembly; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 102,
+   "note": "A13 address line 3 composition; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 109,
+   "note": "A14 account ID and FICO formatting; wiki gives none",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 112,
+   "note": "A15 which field is the transaction detail; wiki does not say",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 119,
+   "note": "A17 HTML name value; contract gives no width",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 119,
+   "note": "A17 HTML address values; contract gives no width",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/creastmt_zflx_opus/r2/builder/assumptions.md",
+   "line": 135,
+   "note": "A19 no capacity limit; legacy table limit not reproduced",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

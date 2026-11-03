@@ -1,0 +1,79 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "builds/inputs/intcalc-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 83,
+  "note": "unreadable rate handling unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 84,
+  "note": "both rates absent: no result documented",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 91,
+  "note": "run prefix default",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 92,
+  "note": "suffix width and start unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 93,
+  "note": "sequence on rejected accounts undefined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 94,
+  "note": "business date override unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 95,
+  "note": "generated timestamps unspecified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 97,
+  "note": "missing card undefined",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 106,
+  "note": "duplicate keys",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a30/a18a/intcalc_harness_sonnet/r1/exec/workflow_a1e0be8c-eb2f-4c5c-bf67-c6995bedd364.md",
+  "line": 108,
+  "note": "overflow not detailed",
+  "origin": "build"
+ }
+]

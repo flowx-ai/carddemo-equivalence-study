@@ -1,0 +1,133 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "transact": "transact",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "custdata": "custdata"
+ },
+ "decode": {
+  "_root": "result"
+ },
+ "source": "- A2 version 88b17fd2 (head of the build branch, plan COMPLETED)\n- START: transact, acctdata, cardxref, custdata; MODE files\n- END: {\"result\": {...}}; contract names inside\n- Register: manifest lines line 46 (add entries)\n- A2 retry 1 after a platform HTTP 500, plan COMPLETED",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-STMT-BAL",
+   46,
+   "INPUT-ENCODING and INPUT-NUMERIC: copybooks and sign storage absent"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "INPUT-ENCODING and INPUT-NUMERIC: copybooks and sign storage absent"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "INPUT-ENCODING and INPUT-NUMERIC: copybooks and sign storage absent"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "INPUT-ENCODING and INPUT-NUMERIC: copybooks and sign storage absent"
+  ],
+  [
+   "R-STMT-BAL",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-NAME",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-FICO",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "INPUT-WIDTHS: inferred offsets provisional"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "INPUT-LINES: unspecified"
+  ],
+  [
+   "R-STMT-ABEND",
+   46,
+   "INPUT-MISSING: silent"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "ORDER-ACCOUNTS: account order undefined"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "ORDER-TRANSACTIONS: order undefined"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "JOIN-CUSTOMERS and DUPLICATE entries: no rule"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "DUPLICATE-TRANSACTIONS, JOIN-MISSING, SELECTION: no rule"
+  ],
+  [
+   "R-STMT-ADDR",
+   46,
+   "ADDRESS-ASSEMBLY: not defined"
+  ],
+  [
+   "R-STMT-TXN",
+   46,
+   "DETAILS-SOURCE: not specified"
+  ],
+  [
+   "R-STMT-TOTAL",
+   46,
+   "TOTAL-EXP: no computation given"
+  ],
+  [
+   "R-STMT-OVERFLOW",
+   46,
+   "NUMERIC-OVERFLOW and HTML-ESCAPING: no policy"
+  ],
+  [
+   "R-STMT-SET",
+   46,
+   "RECORD-FAILURE, FAILURE-DEPENDENCIES: silent"
+  ],
+  [
+   "R-STMT-ABEND",
+   46,
+   "RECORD-FAILURE, FAILURE-DEPENDENCIES: silent"
+  ]
+ ]
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Table Layout</title>
+</head>
+<body style="margin:0px;">
+<table  align="center" frame="box" style="width:70%; font:12px Segoe UI,sans-serif;">
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>Statement for Account Number: 00000000001         </h3>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#FFAF33;">
+<p style="font-size:16px">Bank of XYZ</p>
+<p>410 Terry Ave N</p>
+<p>Seattle WA 99999</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p style="font-size:16px">Immanuel Madeline Kessler  </p>
+<p>618 Deshaun Route  </p>
+<p>Apt. 802  </p>
+<p>Altenwerthshire NC USA 12546  </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Basic Details</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p>Account ID         : 00000000001         </p>
+<p>Current Balance    : 000001940.00 </p>
+<p>FICO Score         : 742                 </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Transaction Summary</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran ID</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran Details</p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#33FF5E; text-align:right;">
+<p style="font-size:16px">Amount</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000001</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>Interest charge                                  </p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>       40.00 </p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000002</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>Return - Shoes                                   </p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>       30.00-</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000003</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>Purchase - Groceries                             </p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>      100.00 </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>End of Statement</h3>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Table Layout</title>
+</head>
+<body style="margin:0px;">
+<table  align="center" frame="box" style="width:70%; font:12px Segoe UI,sans-serif;">
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>Statement for Account Number: 00000000003         </h3>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#FFAF33;">
+<p style="font-size:16px">Bank of XYZ</p>
+<p>410 Terry Ave N</p>
+<p>Seattle WA 99999</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p style="font-size:16px">Immanuel Madeline Kessler  </p>
+<p>618 Deshaun Route  </p>
+<p>Apt. 802  </p>
+<p>Altenwerthshire NC USA 12546  </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Basic Details</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p>Account ID         : 00000000003         </p>
+<p>Current Balance    : 000000000.00 </p>
+<p>FICO Score         : 742                 </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Transaction Summary</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran ID</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran Details</p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#33FF5E; text-align:right;">
+<p style="font-size:16px">Amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>End of Statement</h3>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Table Layout</title>
+</head>
+<body style="margin:0px;">
+<table  align="center" frame="box" style="width:70%; font:12px Segoe UI,sans-serif;">
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>Statement for Account Number: 00000000002         </h3>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#FFAF33;">
+<p style="font-size:16px">Bank of XYZ</p>
+<p>410 Terry Ave N</p>
+<p>Seattle WA 99999</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p style="font-size:16px">Mary  O  </p>
+<p>12 Main Street  </p>
+<p>Floor 3  </p>
+<p>New NY USA 10001  </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Basic Details</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#f2f2f2;">
+<p>Account ID         : 00000000002         </p>
+<p>Current Balance    : 000000250.75-</p>
+<p>FICO Score         : 650                 </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#33FFD1; text-align:center;">
+<p style="font-size:16px">Transaction Summary</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran ID</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#33FF5E; text-align:left;">
+<p style="font-size:16px">Tran Details</p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#33FF5E; text-align:right;">
+<p style="font-size:16px">Amount</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000004</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>Payment - thank you                              </p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>     1234.56-</p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000005</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>Coffee                                           </p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>       50.25 </p>
+</td>
+</tr>
+<tr>
+<td style="width:25%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>0000000000000006</p>
+</td>
+<td style="width:55%; padding:0px 5px; background-color:#f2f2f2; text-align:left;">
+<p>A very long transaction description that runs wel</p>
+</td>
+<td style="width:20%; padding:0px 5px; background-color:#f2f2f2; text-align:right;">
+<p>      100.00 </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="padding:0px 5px;background-color:#1d1d96b3;">
+<h3>End of Statement</h3>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+       IDENTIFICATION DIVISION.
+      * Stub for the z/OS Language Environment abend service.
+       PROGRAM-ID. LXZ009D.
+       DATA DIVISION.
+       LINKAGE SECTION.
+       01 ABCODE PIC S9(9) BINARY.
+       01 TIMING PIC S9(9) BINARY.
+       PROCEDURE DIVISION USING ABCODE TIMING.
+           DISPLAY 'LXZ009D ABEND CALLED'
+           STOP RUN RETURNING 16.

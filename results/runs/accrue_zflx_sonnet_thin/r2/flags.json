@@ -1,0 +1,58 @@
+[
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "disguise/d1/bundles/accrue-sonnet/02-processes/process-interest-calculation.md",
+  "line": 64,
+  "note": "BR-08 TODO: confirm rounding mode",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 18,
+  "note": "A-01 truncation toward zero; BR-08 TODO",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 26,
+  "note": "A-02 wiki does not say input is sorted; key order fixes suffixes",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-LAST",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 32,
+  "note": "A-03 last account not rewritten; wiki describes no end-of-file update; conflicting evidence noted",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 52,
+  "note": "A-05 no STANDARD row either: wiki silent; no interest, warning",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 66,
+  "note": "A-07 card source not given by wiki; several cards: lowest card number",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 101,
+  "note": "A-10 balance for account not in ledgacc: wiki does not cover; skipped",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/accrue_zflx_sonnet_thin/r2/builder/assumptions.md",
+  "line": 111,
+  "note": "A-12 fees DECISION open: stub kept",
+  "origin": "build"
+ }
+]

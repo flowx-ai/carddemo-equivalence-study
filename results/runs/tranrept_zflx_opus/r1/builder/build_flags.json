@@ -1,0 +1,10 @@
+[
+  {"rule": "R-TRANREPT-EOF-DOUBLE-ADD", "source": "flowx/build_report.js:129; assumptions.md item 6"},
+  {"rule": "R-TRANREPT-EOF-NO-LAST-ACCOUNT-TOTAL", "source": "flowx/build_report.js:126-132; assumptions.md item 6"},
+  {"rule": "R-TRANREPT-SELECT-PROC-DATE", "source": "flowx/build_report.js:71; assumptions.md item 1"},
+  {"rule": "R-TRANREPT-SORT-CARD-STABLE", "source": "flowx/build_report.js:80; assumptions.md item 2"},
+  {"rule": "R-TRANREPT-BREAK-ON-CARD", "source": "flowx/build_report.js:108; assumptions.md item 3"},
+  {"rule": "R-TRANREPT-PAGE-SIZE-20", "source": "flowx/build_report.js:116; assumptions.md item 4"},
+  {"rule": "R-TRANREPT-ZERO-AMOUNT-BLANK", "source": "flowx/build_report.js:42; assumptions.md item 10"},
+  {"rule": "R-TRANREPT-LOOKUP-FAILURE-STOPS", "source": "flowx/build_report.js:110; assumptions.md item 8"}
+]

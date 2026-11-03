@@ -1,0 +1,2 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-ll-builds-a17-accrue-zflx-code-r3/memory ALLOWED
+outside accesses: 1

@@ -1,0 +1,716 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 0.5,
+  "equivalence_business": 0.5,
+  "divergent_records": 49,
+  "silent_records": 0,
+  "flagged_records": 49,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-STMT-TOTAL"
+  ],
+  "flags_raised": 26,
+  "flags_unneeded": 22,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9598
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 0,
+   "equal_business": 0,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {
+  "R-STMT-TOTAL/flagged": 49
+ },
+ "divergences": [
+  {
+   "output": "creastmt_statements",
+   "key": "1",
+   "kind": "field",
+   "field": "total",
+   "golden": "1108.66",
+   "cand": "1179.43",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "10",
+   "kind": "field",
+   "field": "total",
+   "golden": "1010.87",
+   "cand": "1548.31",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "11",
+   "kind": "field",
+   "field": "total",
+   "golden": "1353.89",
+   "cand": "2098.66",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "12",
+   "kind": "field",
+   "field": "total",
+   "golden": "1624.11",
+   "cand": "2386.55",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "13",
+   "kind": "field",
+   "field": "total",
+   "golden": "2855.04",
+   "cand": "2911.81",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "14",
+   "kind": "field",
+   "field": "total",
+   "golden": "1488.13",
+   "cand": "2198.79",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "15",
+   "kind": "field",
+   "field": "total",
+   "golden": "3774.56",
+   "cand": "4133.00",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "16",
+   "kind": "field",
+   "field": "total",
+   "golden": "1092.71",
+   "cand": "1363.70",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "17",
+   "kind": "field",
+   "field": "total",
+   "golden": "-650.27",
+   "cand": "348.06",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "18",
+   "kind": "field",
+   "field": "total",
+   "golden": "2581.92",
+   "cand": "2695.03",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "19",
+   "kind": "field",
+   "field": "total",
+   "golden": "2600.51",
+   "cand": "2672.17",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "2",
+   "kind": "field",
+   "field": "total",
+   "golden": "1606.21",
+   "cand": "2369.21",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "20",
+   "kind": "field",
+   "field": "total",
+   "golden": "1564.76",
+   "cand": "2483.76",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "21",
+   "kind": "field",
+   "field": "total",
+   "golden": "857.98",
+   "cand": "899.75",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "22",
+   "kind": "field",
+   "field": "total",
+   "golden": "2424.81",
+   "cand": "3370.47",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "23",
+   "kind": "field",
+   "field": "total",
+   "golden": "1069.49",
+   "cand": "1904.93",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "24",
+   "kind": "field",
+   "field": "total",
+   "golden": "1549.14",
+   "cand": "2190.91",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "25",
+   "kind": "field",
+   "field": "total",
+   "golden": "702.63",
+   "cand": "1609.63",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "26",
+   "kind": "field",
+   "field": "total",
+   "golden": "1166.86",
+   "cand": "1538.86",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "27",
+   "kind": "field",
+   "field": "total",
+   "golden": "3256.45",
+   "cand": "3629.44",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "28",
+   "kind": "field",
+   "field": "total",
+   "golden": "743.89",
+   "cand": "819.11",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "29",
+   "kind": "field",
+   "field": "total",
+   "golden": "2358.27",
+   "cand": "3210.60",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "3",
+   "kind": "field",
+   "field": "total",
+   "golden": "1743.03",
+   "cand": "2623.25",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "30",
+   "kind": "field",
+   "field": "total",
+   "golden": "-900.53",
+   "cand": "29.80",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "31",
+   "kind": "field",
+   "field": "total",
+   "golden": "310.40",
+   "cand": "672.62",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "32",
+   "kind": "field",
+   "field": "total",
+   "golden": "445.22",
+   "cand": "1188.21",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "33",
+   "kind": "field",
+   "field": "total",
+   "golden": "2986.80",
+   "cand": "3432.35",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "34",
+   "kind": "field",
+   "field": "total",
+   "golden": "2148.49",
+   "cand": "2606.04",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "35",
+   "kind": "field",
+   "field": "total",
+   "golden": "855.95",
+   "cand": "1355.94",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "36",
+   "kind": "field",
+   "field": "total",
+   "golden": "1899.30",
+   "cand": "2338.63",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "37",
+   "kind": "field",
+   "field": "total",
+   "golden": "-132.88",
+   "cand": "0.00",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "38",
+   "kind": "field",
+   "field": "total",
+   "golden": "2486.87",
+   "cand": "3025.09",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "39",
+   "kind": "field",
+   "field": "total",
+   "golden": "2005.51",
+   "cand": "2076.50",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "4",
+   "kind": "field",
+   "field": "total",
+   "golden": "1520.96",
+   "cand": "1969.97",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "40",
+   "kind": "field",
+   "field": "total",
+   "golden": "1629.53",
+   "cand": "1655.52",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "41",
+   "kind": "field",
+   "field": "total",
+   "golden": "1672.86",
+   "cand": "2429.52",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "42",
+   "kind": "field",
+   "field": "total",
+   "golden": "1690.36",
+   "cand": "2191.80",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "43",
+   "kind": "field",
+   "field": "total",
+   "golden": "2731.91",
+   "cand": "2974.91",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "44",
+   "kind": "field",
+   "field": "total",
+   "golden": "1822.02",
+   "cand": "2037.35",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "45",
+   "kind": "field",
+   "field": "total",
+   "golden": "2092.86",
+   "cand": "2437.63",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "46",
+   "kind": "field",
+   "field": "total",
+   "golden": "3187.12",
+   "cand": "3622.12",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "47",
+   "kind": "field",
+   "field": "total",
+   "golden": "1032.63",
+   "cand": "1618.07",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "48",
+   "kind": "field",
+   "field": "total",
+   "golden": "995.79",
+   "cand": "1531.67",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "49",
+   "kind": "field",
+   "field": "total",
+   "golden": "1058.26",
+   "cand": "2021.03",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "50",
+   "kind": "field",
+   "field": "total",
+   "golden": "1472.64",
+   "cand": "1520.52",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "6",
+   "kind": "field",
+   "field": "total",
+   "golden": "2388.57",
+   "cand": "2784.79",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "7",
+   "kind": "field",
+   "field": "total",
+   "golden": "723.29",
+   "cand": "1303.17",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "8",
+   "kind": "field",
+   "field": "total",
+   "golden": "1562.68",
+   "cand": "2397.79",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  },
+  {
+   "output": "creastmt_statements",
+   "key": "9",
+   "kind": "field",
+   "field": "total",
+   "golden": "2683.89",
+   "cand": "2944.00",
+   "rule": "R-STMT-TOTAL",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 46,
+   "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/02-processes/process-statement-generation.md",
+   "line": 57,
+   "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-sonnet-bd5/07-plugins/plugin-statement-document.md",
+   "line": 29,
+   "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 67,
+   "note": "B2 cycle-filter TODO never confirmed; legacy kept (no filter)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 79,
+   "note": "B5 orphan transactions not printed; the wiki has no such output",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 83,
+   "note": "B6 missing customer or account skipped (legacy abends); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 83,
+   "note": "B6 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 117,
+   "note": "C2 name assembly (legacy-derived); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 126,
+   "note": "C3 address line 3 (legacy-derived, country included); AC does not define the format",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 159,
+   "note": "C10 sign encoding not stated by the wiki",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/assumptions.md",
+   "line": 181,
+   "note": "D4 no HTML escaping; the wiki does not mention it",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 2,
+   "note": "builder flag: customer name, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 3,
+   "note": "builder flag: address line 3, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 5,
+   "note": "builder flag: skipped cards, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 5,
+   "note": "builder flag: skipped cards, wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 6,
+   "note": "builder flag: no cycle filter, wiki TODO",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/a21/zflx/bd5/r3/builder/outputs/flags.json",
+   "line": 7,
+   "note": "builder flag: HTML name/address p lines (D2)",
+   "origin": "build"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

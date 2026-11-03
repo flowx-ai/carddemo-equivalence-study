@@ -1,0 +1,56 @@
+{
+ "summary": {
+  "records_union": 457,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 1,
+  "flags_unneeded": 1,
+  "volatile_masked": {}
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 265,
+   "candidate": 265,
+   "equal_strict": 265,
+   "equal_business": 265,
+   "union": 265
+  },
+  "posttran_dalyrejs": {
+   "golden": 42,
+   "candidate": 42,
+   "equal_strict": 42,
+   "equal_business": 42,
+   "union": 42
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "posttran_tcatbal": {
+   "golden": 100,
+   "candidate": 100,
+   "equal_strict": 100,
+   "equal_business": 100,
+   "union": 100
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "step": "posttran",
+   "source": "runs/full/zflx/r2/builder/assumptions.md #24",
+   "note": "limit and expiry both evaluated, last failing reason kept (103 for expired + over-limit)",
+   "origin": "register"
+  }
+ ]
+}

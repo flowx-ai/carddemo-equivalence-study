@@ -1,0 +1,178 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran",
+  "acctdata": "acctdata",
+  "cardxref": "cardxref",
+  "tcatbal": "tcatbal",
+  "discgrp": "discgrp",
+  "custdata": "custdata",
+  "carddata": "carddata",
+  "trantype": "trantype",
+  "trancatg": "trancatg"
+ },
+ "decode": {
+  "_root": "postingResult"
+ },
+ "source": "- A2 version 661c7d2e (head of the build branch, plan COMPLETED)\n- START: nine file contents as text; MODE files\n- END: {\"postingResult\": ${result}}; contract names inside\n- Register: manifest lines 68-109",
+ "cr_rule": null,
+ "register": null,
+ "mode": "files",
+ "build": [
+  [
+   "R-POST-WRITE",
+   68,
+   "daily layout, no copybook"
+  ],
+  [
+   "R-POST-COPY",
+   68,
+   "daily layout, no copybook"
+  ],
+  [
+   "R-POST-102",
+   69,
+   "account layout inferred"
+  ],
+  [
+   "R-POST-BAL",
+   69,
+   "account layout inferred"
+  ],
+  [
+   "R-POST-100",
+   71,
+   "xref layout, copybook absent"
+  ],
+  [
+   "R-POST-TCAT",
+   72,
+   "category layout inferred"
+  ],
+  [
+   "R-POST-COPY",
+   73,
+   "physical encoding assumed"
+  ],
+  [
+   "R-POST-BAL",
+   73,
+   "physical encoding assumed"
+  ],
+  [
+   "R-POST-TCAT",
+   73,
+   "physical encoding assumed"
+  ],
+  [
+   "R-POST-COPY",
+   74,
+   "decimal punctuation not specified"
+  ],
+  [
+   "R-POST-BAL",
+   74,
+   "decimal punctuation not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   74,
+   "decimal punctuation not specified"
+  ],
+  [
+   "R-POST-100",
+   83,
+   "lookup path not specified"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   84,
+   "precedence not stated"
+  ],
+  [
+   "R-POST-100",
+   85,
+   "reject reason provisional, source absent"
+  ],
+  [
+   "R-POST-101",
+   86,
+   "reject reason provisional, source absent"
+  ],
+  [
+   "R-POST-102",
+   90,
+   "reject reason provisional, source absent"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   91,
+   "order and running balance not specified"
+  ],
+  [
+   "R-POST-BAL",
+   91,
+   "order and running balance not specified"
+  ],
+  [
+   "R-POST-BAL",
+   94,
+   "cycle arithmetic not specified"
+  ],
+  [
+   "R-POST-BAL",
+   95,
+   "cycle arithmetic not specified"
+  ],
+  [
+   "R-POST-BAL",
+   92,
+   "exact arithmetic not stated"
+  ],
+  [
+   "R-POST-TCAT",
+   96,
+   "absent category not stated"
+  ],
+  [
+   "R-POST-WRITE",
+   97,
+   "duplicate handling not defined"
+  ],
+  [
+   "R-POST-WRITE",
+   98,
+   "timestamp rewrite not stated"
+  ],
+  [
+   "R-POST-COPY",
+   98,
+   "timestamp rewrite not stated"
+  ],
+  [
+   "R-POST-103",
+   100,
+   "expiry validation not listed, none applied"
+  ],
+  [
+   "R-POST-WRITE",
+   104,
+   "no corrupt field policy"
+  ],
+  [
+   "R-POST-COPY",
+   106,
+   "trailing space trimming not authorized"
+  ],
+  [
+   "R-POST-BAL",
+   107,
+   "duplicate snapshot keys not defined"
+  ],
+  [
+   "R-POST-TCAT",
+   107,
+   "duplicate snapshot keys not defined"
+  ]
+ ]
+}

@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_feea5ea0-...md) and builder/README.md, before execution:
+- inputs (script, line 24 of the definition): parmDate, tcatbal, acctdata, cardxref, discgrp, each raw fixed-width text -> files mode
+- END output keys intcalc_systran, intcalc_acctdata at the root, record fields in contract snake_case -> no decode.json

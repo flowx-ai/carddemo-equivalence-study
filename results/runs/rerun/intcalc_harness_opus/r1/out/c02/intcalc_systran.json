@@ -1,0 +1,17 @@
+[
+ {
+  "tran_id": "2022071800000001",
+  "type_cd": "01",
+  "cat_cd": 0,
+  "source": "INTCALC",
+  "desc": "Interest calculation",
+  "amt": "30914.40",
+  "merchant_id": 0,
+  "merchant_name": "",
+  "merchant_city": "",
+  "merchant_zip": "",
+  "card_num": "",
+  "orig_ts": "2022-07-18 00:00:00.000000",
+  "proc_ts": "2022-07-18 00:00:00.000000"
+ }
+]

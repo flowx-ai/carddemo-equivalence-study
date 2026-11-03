@@ -1,0 +1,565 @@
+{
+ "build": "cd_a24_sf6_zflx_r2",
+ "started": "2026-10-29T20:40:04.760Z",
+ "cases": [
+  {
+   "case": "o-sgn-02",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "note": " cleared 2 browser-autofilled input(s);",
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 3,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 4,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 5,
+     "legacy_nav": "COSGN0A",
+     "excluded": true,
+     "reached": false,
+     "note": " no button for PF5 on COSGN0A"
+    },
+    {
+     "step": 6,
+     "legacy_nav": "TEXT",
+     "excluded": false,
+     "reached": true,
+     "page": "TEXT",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "TEXT": true
+     },
+     "fields": {},
+     "u2011": false,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "case": "o-avw-01",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "note": " cleared 2 browser-autofilled input(s);",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 3,
+     "legacy_nav": "CACTVWA",
+     "excluded": false,
+     "reached": true,
+     "page": "CACTVWA",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACCTSID": true,
+      "ACSTTUS": true,
+      "ADTOPEN": true,
+      "AEXPDT": true,
+      "AREISDT": true,
+      "ACRDLIM": true,
+      "ACSHLIM": true,
+      "ACURBAL": true,
+      "AADDGRP": true,
+      "ACSTNUM": true,
+      "ACSTSSN": true,
+      "ACSTDOB": true,
+      "ACSTFCO": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 4,
+     "legacy_nav": "CACTVWA",
+     "excluded": false,
+     "reached": true,
+     "page": "CACTVWA",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACCTSID": true,
+      "ACSTTUS": true,
+      "ADTOPEN": false,
+      "AEXPDT": false,
+      "AREISDT": false,
+      "ACRDLIM": true,
+      "ACSHLIM": true,
+      "ACURBAL": true,
+      "AADDGRP": true,
+      "ACSTNUM": true,
+      "ACSTSSN": true,
+      "ACSTDOB": false,
+      "ACSTFCO": true
+     },
+     "u2011": false,
+     "ok": false
+    },
+    {
+     "step": 5,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 6,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "case": "o-bil-01",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "note": " cleared 2 browser-autofilled input(s);",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 3,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 4,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 5,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 6,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 7,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "case": "o-bil-03",
+   "steps": [
+    {
+     "step": 1,
+     "legacy_nav": "COSGN0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COSGN0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "USERID": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 2,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "note": " cleared 2 browser-autofilled input(s);",
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 3,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 4,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 5,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 6,
+     "legacy_nav": "COBIL0A",
+     "excluded": false,
+     "reached": true,
+     "page": "COBIL0A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "ACTIDIN": true,
+      "CURBAL": true,
+      "CONFIRM": true
+     },
+     "u2011": false,
+     "ok": true
+    },
+    {
+     "step": 7,
+     "legacy_nav": "COMEN1A",
+     "excluded": false,
+     "reached": true,
+     "page": "COMEN1A",
+     "nav_equals_legacy": true,
+     "nav_equals_workflow": true,
+     "msg": {
+      "ERRMSG": true
+     },
+     "fields": {
+      "OPTION": true,
+      "OPTN001": true,
+      "OPTN002": true,
+      "OPTN003": true,
+      "OPTN004": true,
+      "OPTN005": true,
+      "OPTN006": true,
+      "OPTN007": true,
+      "OPTN008": true,
+      "OPTN009": true,
+      "OPTN010": true
+     },
+     "u2011": false,
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "H18_cases_all_steps_ok": {
+  "o-sgn-02": true,
+  "o-avw-01": false,
+  "o-bil-01": true,
+  "o-bil-03": true
+ },
+ "steps_ok": "24/25"
+}

@@ -1,0 +1,219 @@
+[
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 46,
+  "note": "BR-03 TODO: confirm line layout from COSTM01 / STMT-LINES",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/02-processes/process-statement-generation.md",
+  "line": 57,
+  "note": "TODO: legacy prints all transactions on file; confirm cycle filter",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "builds/inputs/creastmt-sonnet/07-plugins/plugin-statement-document.md",
+  "line": 29,
+  "note": "TODO: confirm the exact statement line layouts in CBSTM03A (not analyzed in detail)",
+  "origin": "wiki"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 29,
+  "note": "account offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 30,
+  "note": "xref offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 32,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 32,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 32,
+  "note": "customer offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 33,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 33,
+  "note": "transaction offsets inferred",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-FICO",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 37,
+  "note": "FICO handling",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 38,
+  "note": "implied scale",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 38,
+  "note": "implied scale",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-BAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 39,
+  "note": "overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 39,
+  "note": "overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 39,
+  "note": "overpunch decode",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 44,
+  "note": "card selection, maker chose",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 45,
+  "note": "transaction order",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 45,
+  "note": "transaction order",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TXN",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 46,
+  "note": "no period filter",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-NAME",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 48,
+  "note": "name assembly, maker chose",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 49,
+  "note": "address lines, maker chose",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ADDR",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 50,
+  "note": "address assembly, maker chose",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-ABEND",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 52,
+  "note": "malformed records",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-SET",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 52,
+  "note": "malformed records",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-TOTAL",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 60,
+  "note": "overflow",
+  "origin": "build"
+ },
+ {
+  "rule": "R-STMT-OVERFLOW",
+  "source": "runs/a30/a18a/creastmt_harness_sonnet/r1/exec/workflow_51745c7b-baef-4286-a847-92532225fb3b.md",
+  "line": 60,
+  "note": "overflow",
+  "origin": "build"
+ }
+]

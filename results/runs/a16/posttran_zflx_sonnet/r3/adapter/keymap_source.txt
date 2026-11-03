@@ -1,0 +1,3 @@
+Read from the workflow definition (exec/workflow_4d676633-...md, script lines 26, 99-154, 256-289) and builder/README.md lines 8-11, before execution:
+- START inputs dailytran, acctdata, cardxref, tcatbal (raw text), businessDate (CONTRACT run parameter); batchId left unset (A4)
+- END keys posttran_transact/dalyrejs/acctdata/tcatbal at the root as lists, contract field names -> no decode.json

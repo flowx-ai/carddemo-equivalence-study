@@ -1,0 +1,737 @@
+{
+ "base": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "rule": "R-INT-RATE"
+  }
+ ],
+ "c01": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "rule": "R-INT-RATE"
+  }
+ ],
+ "c02": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "rule": "R-INT-RATE"
+  }
+ ],
+ "c03": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "rule": "R-INT-RATE"
+  }
+ ],
+ "c04": [
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000008",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000012",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000014",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000015",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000019",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000021",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000023",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000026",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000030",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000034",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000038",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000040",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000043",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_acctdata",
+   "key": "00000000045",
+   "rule": "R-INT-APPLY"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0500024453765740#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "0982496213629795#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "3940246016141489#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "4385271476627819#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "5407099850479866#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6349250331648509#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "6509230362553816#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7058267261837752#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7379335634661142#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "7443870988897530#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8040580410348680#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8112545834239735#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8517866958206008#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "8931369351894783#1",
+   "rule": "R-INT-RATE"
+  },
+  {
+   "output": "intcalc_systran",
+   "key": "9805583408996588#1",
+   "rule": "R-INT-RATE"
+  }
+ ]
+}

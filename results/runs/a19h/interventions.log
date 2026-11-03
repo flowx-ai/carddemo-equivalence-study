@@ -1,0 +1,3 @@
+2026-10-28T08:01:23Z INTERVENTION (infrastructure): relogin all (fxc ok, zflx ok) after AUTH_UNAUTHORIZED at the end of A19 A17 detailed r1 (extraction failed 07:08:48Z); nothing in flight
+2026-10-28T08:32:45Z INCIDENT (disclosed): R10 fix agent's read-only GET /api/run/by_request/<D2 session> (~31 MB) OOMKilled an internal service on dev-env at 08:15:56Z (restart count 1, back in ~30 s); no study build in flight; agent switched to the execution endpoint
+2026-10-28T08:44:24Z DEPLOY (user approved 'Fix, deploy, A20, resume', 2026-10-28): harness -> local-7efcc95ef-1793176993 (sha256:f4cd0b26…7eb3, R10+R11); rollback local-2cd4ec072-1793149068 (sha256:8deba674…8f16); nothing in flight

@@ -1,0 +1,86 @@
+[
+ {
+  "rule": "R-INT-APPLY",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 61,
+  "note": "annual-rate interpretation and formula not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TRUNC",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 62,
+  "note": "no rounding or truncation rule supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-ZERO",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 67,
+  "note": "no amount-not-zero condition in the source",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 69,
+  "note": "missing STANDARD rates and unusable-account handling not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-CYC",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 70,
+  "note": "no no-category-balance rule supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-RATE",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 75,
+  "note": "duplicate-key precedence and malformed-rate fallback not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXID",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 84,
+  "note": "no reference-generation or ordering algorithm",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 85,
+  "note": "transaction source an assumed convention",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 86,
+  "note": "no description literal supplied",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 87,
+  "note": "card selection not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 88,
+  "note": "timestamp selection not specified",
+  "origin": "build"
+ },
+ {
+  "rule": "R-INT-TXFORMAT",
+  "source": "runs/a20h/a17/accrue_harness_summary/r2/exec/workflow_92da8b03-9fa4-4b07-822c-3272bde77f5e.md",
+  "line": 89,
+  "note": "absent-merchant representation not specified",
+  "origin": "build"
+ }
+]

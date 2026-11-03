@@ -1,0 +1,303 @@
+{
+ "summary": {
+  "records_union": 371,
+  "equivalence_strict": 0.9892,
+  "equivalence_business": 0.9946,
+  "divergent_records": 2,
+  "silent_records": 0,
+  "flagged_records": 2,
+  "rules_silent": [],
+  "rules_flagged": [
+   "R-REPT-LASTACCT",
+   "R-REPT-LASTDUP"
+  ],
+  "flags_raised": 37,
+  "flags_unneeded": 34,
+  "layout": {
+   "tranrept_report": {
+    "line_match": 0.8514,
+    "page_totals_equal": false,
+    "pages_golden": 19,
+    "pages_candidate": 7
+   }
+  },
+  "excluded_units": 0,
+  "excluded_differing": 0
+ },
+ "outputs": {
+  "tranrept_report": {
+   "golden": 370,
+   "candidate": 371,
+   "equal_strict": 367,
+   "equal_business": 369,
+   "union": 371
+  }
+ },
+ "by_rule": {
+  "R-REPT-LASTACCT/flagged": 1,
+  "R-REPT-LASTDUP/flagged": 1
+ },
+ "divergences": [
+  {
+   "output": "tranrept_report",
+   "key": "acct:00000000040",
+   "kind": "extra",
+   "field": null,
+   "golden": null,
+   "cand": null,
+   "rule": "R-REPT-LASTACCT",
+   "flagged": true
+  },
+  {
+   "output": "tranrept_report",
+   "key": "grand",
+   "kind": "field",
+   "field": "total",
+   "golden": "79636.18",
+   "cand": "79615.75",
+   "rule": "R-REPT-LASTDUP",
+   "flagged": true
+  }
+ ],
+ "unneeded_flags": [
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "builds/inputs/tranrept-sonnet/02-processes/process-transaction-report.md",
+   "line": 46,
+   "note": "BR-04 TODO: confirm totals layout in CVTRA07Y / CBTRN03C",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "builds/inputs/tranrept-sonnet/10-acceptance-criteria/acceptance-criteria-transaction-report.md",
+   "line": 13,
+   "note": "TODO: confirm legacy abend behaviour on a missing reference",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 73,
+   "note": "[The wiki does not specify encoding] encoding, newlines",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 73,
+   "note": "[The wiki does not specify encoding] encoding, newlines",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 77,
+   "note": "[Original copybook text is absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 77,
+   "note": "[Original copybook text is absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 77,
+   "note": "[Original copybook text is absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 77,
+   "note": "[Original copybook text is absent] offsets assumed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 82,
+   "note": "[The source does not require stricter validation] no extra validation",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 85,
+   "note": "[The wiki does not define invalid batch-parameter handling] run parameters",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 86,
+   "note": "[timestamp conversion is unspecified] date comparison",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 87,
+   "note": "[not tie order] tie order",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 88,
+   "note": "[no precedence for duplicates is specified] duplicate references",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 88,
+   "note": "[no precedence for duplicates is specified] duplicate references",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-LOOKUP",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 89,
+   "note": "[leaves legacy abend behaviour TODO] missing lookups continue",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-XREF",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 89,
+   "note": "[leaves legacy abend behaviour TODO] missing lookups continue",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 89,
+   "note": "[leaves legacy abend behaviour TODO] missing lookups continue",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-SET",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 90,
+   "note": "[does not specify malformed fixed-width record or missing-file policy] malformed records",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 93,
+   "note": "[original copybook encoding is absent] amount encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 93,
+   "note": "[original copybook encoding is absent] amount encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 93,
+   "note": "[original copybook encoding is absent] amount encoding",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 94,
+   "note": "[neither specifies arithmetic overflow] overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 94,
+   "note": "[neither specifies arithmetic overflow] overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 94,
+   "note": "[neither specifies arithmetic overflow] overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-AMT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 95,
+   "note": "[no zero example is provided] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 95,
+   "note": "[no zero example is provided] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 95,
+   "note": "[no zero example is provided] zero printing",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 100,
+   "note": "[explicitly leaves lines per page TODO] page size",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-ACCT",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 101,
+   "note": "[Total ordering and split-card handling are not specified] total ordering",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 101,
+   "note": "[Total ordering and split-card handling are not specified] total ordering",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-GRAND",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 103,
+   "note": "[not the exact empty layout] empty report",
+   "origin": "build"
+  },
+  {
+   "rule": "R-REPT-HEADER",
+   "source": "runs/rerun/tranrept_harness_sonnet/r1/exec/workflow_b91cd14b-ae55-4a40-a41d-aab3489f33a6.md",
+   "line": 103,
+   "note": "[not the exact empty layout] empty report",
+   "origin": "build"
+  }
+ ],
+ "excluded": []
+}

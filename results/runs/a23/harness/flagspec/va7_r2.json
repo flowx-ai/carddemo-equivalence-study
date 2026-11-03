@@ -1,0 +1,134 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "dailytran": "dailytran_dat",
+  "acctdata": "acctdata_dat",
+  "cardxref": "cardxref_dat",
+  "tcatbal": "tcatbal_dat",
+  "business_date": "businessDate",
+  "_wrap": {
+   "files": [
+    "dailytran",
+    "acctdata",
+    "cardxref",
+    "tcatbal"
+   ]
+  }
+ },
+ "decode": {
+  "_root": "posting",
+  "posttran_transact": "posttran_transact_json",
+  "posttran_dalyrejs": "posttran_dalyrejs_json",
+  "posttran_acctdata": "posttran_acctdata_json",
+  "posttran_tcatbal": "posttran_tcatbal_json"
+ },
+ "source": "- START (Post daily transactions, lines 114-116): input.files.{dailytran_dat, acctdata_dat, cardxref_dat, tcatbal_dat} (file contents as strings), businessDate (default 2022-07-18); postingChunkSize, checkpoint, processingTimestamp, nextTransactionId optional (absent: all records, no checkpoint, runtime UTC timestamp, sequence seed 0000000000000001). Run values the contract does not carry are left unset (\u00a741).\n- END: Assemble assumptions (line 148) writes output={posting:{posttran_transact_json, posttran_dalyrejs_json, posttran_acctdata_json, posttran_tcatbal_json, summary, assumptions_md, ...}}: _root posting, names renamed\n- MODE files; _wrap nests the four files under 'files' (pure renaming)\n- Register: assumption() calls at lines 54-78 (layoutNote lines 54-57 add one entry each)",
+ "build": [
+  [
+   "R-POST-BAL",
+   54,
+   "Account offsets inferred; copybooks not supplied, not verified copybook parity"
+  ],
+  [
+   "R-POST-100",
+   55,
+   "CardXref offsets inferred, not verified"
+  ],
+  [
+   "R-POST-COPY",
+   56,
+   "Transaction offsets inferred, not verified"
+  ],
+  [
+   "R-POST-WRITE",
+   56,
+   "Transaction offsets inferred, not verified"
+  ],
+  [
+   "R-POST-TCAT",
+   57,
+   "Category offsets inferred, not verified"
+  ],
+  [
+   "R-POST-COPY",
+   59,
+   "posting input sign encoding is not fully specified"
+  ],
+  [
+   "R-POST-BAL",
+   59,
+   "sign encoding not fully specified"
+  ],
+  [
+   "R-POST-TCAT",
+   59,
+   "sign encoding not fully specified"
+  ],
+  [
+   "R-POST-BAL",
+   60,
+   "no calculation overflow policy; contradictory illustrative format"
+  ],
+  [
+   "R-POST-TCAT",
+   60,
+   "no calculation overflow policy"
+  ],
+  [
+   "R-POST-TCAT",
+   61,
+   "category-balance identifier interpretation resolved (DT-06 strings vs contract)"
+  ],
+  [
+   "R-POST-COPY",
+   62,
+   "no broader posting text normalization is specified"
+  ],
+  [
+   "R-POST-PRECEDENCE",
+   64,
+   "BR-01 conflicts with scenario 6 (card invalid and account expired)"
+  ],
+  [
+   "R-POST-103",
+   65,
+   "timestamp timezone and parsing details are not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   69,
+   "sequence seed/generator not specified; posted ids allocated from 0000000000000001"
+  ],
+  [
+   "R-POST-WRITE",
+   70,
+   "duplicate-feed handling otherwise unspecified"
+  ],
+  [
+   "R-POST-BAL",
+   70,
+   "duplicate-feed handling unspecified"
+  ],
+  [
+   "R-POST-TCAT",
+   70,
+   "duplicate-feed handling unspecified"
+  ],
+  [
+   "R-POST-BAL",
+   71,
+   "duplicate or malformed master handling not specified"
+  ],
+  [
+   "R-POST-TCAT",
+   71,
+   "duplicate or malformed master handling not specified"
+  ],
+  [
+   "R-POST-WRITE",
+   71,
+   "duplicate or malformed master handling not specified"
+  ]
+ ],
+ "cr_rule": "line 67 (item 18): only successfully posted positive amounts consume the four per-card purchase slots; 104 only after reference, limit and expiry checks; counts persist across chunks; 'does not invent a transaction-type-based purchase test'. Stated as source-defined; no unsettled or open wording (CR flag: no)."
+}

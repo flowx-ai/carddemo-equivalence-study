@@ -1,0 +1,10 @@
+[
+  {"rule": "R-POST-LIMIT-FORMULA", "source": "flowx/scripts/03_validate_and_post.js:42-43; output/assumptions.md A9 — wiki formula creditLimit - currentBalance used; legacy CBTRN02C believed to test curr_cyc_credit - curr_cyc_debit + amt <= credit_limit"},
+  {"rule": "R-POST-ACCT-INACTIVE", "source": "flowx/scripts/03_validate_and_post.js:38; output/assumptions.md A7 — reject 104 when active_status != 'Y' (wiki rule + AC scenario 3); legacy believed not to check status"},
+  {"rule": "R-POST-CARD-INACTIVE", "source": "flowx/scripts/03_validate_and_post.js:40; output/assumptions.md A8 — reject 105 when carddata status != 'Y' (wiki rule); legacy believed not to read CARDFILE"},
+  {"rule": "R-POST-EXPIRY-REJECT", "source": "flowx/scripts/03_validate_and_post.js:44-45; output/assumptions.md A10 — reject 103 not in the wiki, added from legacy; overrides 102"},
+  {"rule": "R-POST-REASON-CODES", "source": "flowx/scripts/03_validate_and_post.js:34-45; output/assumptions.md A6 — codes/texts 100-103 from legacy recollection, 104/105 invented; precedence chosen"},
+  {"rule": "R-POST-CYCLE-FIELDS", "source": "flowx/scripts/03_validate_and_post.js:66-68; output/assumptions.md A12 — cycle credit/debit update not in the wiki, legacy behaviour assumed"},
+  {"rule": "R-POST-TCATBAL-CREATE", "source": "flowx/scripts/03_validate_and_post.js:71-75; output/assumptions.md A13 — missing TCATBAL key created with the amount"},
+  {"output": "posttran_transact.json", "key": "proc_ts", "source": "flowx/scripts/03_validate_and_post.js:23,77; output/assumptions.md A15 — run timestamp, cannot equal the oracle's"}
+]

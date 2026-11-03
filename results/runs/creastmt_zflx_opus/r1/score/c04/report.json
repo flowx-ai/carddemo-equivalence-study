@@ -1,0 +1,221 @@
+{
+ "summary": {
+  "records_union": 98,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 22,
+  "flags_unneeded": 22,
+  "layout": {
+   "creastmt_statements": {
+    "line_match": 0.9984
+   },
+   "creastmt_statements_html": {
+    "line_match": 0.9996
+   }
+  },
+  "excluded_units": 2,
+  "excluded_differing": 2
+ },
+ "outputs": {
+  "creastmt_statements": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  },
+  "creastmt_statements_html": {
+   "golden": 49,
+   "candidate": 49,
+   "equal_strict": 49,
+   "equal_business": 49,
+   "union": 49
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-STMT-NAME",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "builds/inputs/creastmt-opus/07-plugins/document-strategy.md",
+   "line": 31,
+   "note": "TODO: read CBSTM03A/B + COSTM01.CPY for the exact statement layout and totals",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 42,
+   "note": "A4 no cycle/date filter; the wiki never defines a cycle",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 56,
+   "note": "B1 one statement per xref card although the wiki says per account",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ABEND",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 65,
+   "note": "B2 missing customer or account skipped (legacy abends); wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 65,
+   "note": "B2 missing customer or account skipped; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 74,
+   "note": "B4 transaction order; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-SET",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 78,
+   "note": "B5 duplicates and orphan cards; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 78,
+   "note": "B5 duplicates and orphan cards; wiki silent",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-OVERFLOW",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 84,
+   "note": "B6 no limit per card; states it will differ from legacy on a table overflow",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 92,
+   "note": "C1 name assembly; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 99,
+   "note": "C2 address layout; wiki silent, legacy followed",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-FICO",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 105,
+   "note": "C3 account ID and FICO formatting; the wiki gives none",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 116,
+   "note": "C5 which transaction detail is shown; wiki does not say",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 121,
+   "note": "C6 total; the wiki says only 'totals'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-BAL",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 126,
+   "note": "C7 physical sign encoding not stated anywhere",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TXN",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 126,
+   "note": "C7 physical sign encoding not stated anywhere",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-TOTAL",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 126,
+   "note": "C7 physical sign encoding not stated anywhere",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-NAME",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 144,
+   "note": "D2 HTML name cut at the first double space, 'the least certain decision'",
+   "origin": "build"
+  },
+  {
+   "rule": "R-STMT-ADDR",
+   "source": "runs/creastmt_zflx_opus/r1/builder/assumptions.md",
+   "line": 144,
+   "note": "D2 HTML address cut at the first double space, 'the least certain decision'",
+   "origin": "build"
+  }
+ ],
+ "excluded": [
+  {
+   "output": "creastmt_statements",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "total",
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  },
+  {
+   "output": "creastmt_statements_html",
+   "key": "5",
+   "rule": "R-STMT-OVERFLOW",
+   "fields_differing": [
+    "txns"
+   ],
+   "present_golden": true,
+   "present_candidate": true
+  }
+ ]
+}

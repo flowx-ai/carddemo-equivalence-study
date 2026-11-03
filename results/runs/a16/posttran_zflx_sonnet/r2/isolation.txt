@@ -1,0 +1,4 @@
+OUTSIDE Glob ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a16-posttran-zflx-sonnet-r2/memory ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a16-posttran-zflx-sonnet-r2/memory/posttran-build-state.md ALLOWED
+OUTSIDE Write ~/.claude/projects/-HOME-Dev--tests-carddemo-builds-a16-posttran-zflx-sonnet-r2/memory/MEMORY.md ALLOWED
+outside accesses: 3

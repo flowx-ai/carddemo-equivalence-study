@@ -1,0 +1,13 @@
+{"wiki": [],
+ "build": [
+  ["R-INT-ZERO", 39, "nonzero rate writes a transaction even if rounded to zero: not separately specified"],
+  ["R-INT-CYC", 40, "accounts with no category balances: wiki silent"],
+  ["R-INT-TXID", 41, "suffix start, width and ordering not specified together"],
+  ["R-INT-TXID", 42, "suffix exhaustion and rerun idempotence not defined"],
+  ["R-INT-TXFORMAT", 43, "card selection / missing card not specified"],
+  ["R-INT-TXFORMAT", 44, "merchant field values not stated"],
+  ["R-INT-TXFORMAT", 45, "generated timestamps not defined"],
+  ["R-INT-RATE", 46, "interest-specific failure outcomes absent (no usable DEFAULT rate etc.)"],
+  ["R-INT-APPLY", 48, "fees marked as a DECISION; stub kept"],
+  ["R-INT-RATE", 102, "duplicate/malformed lookup keys unstated"]
+ ]}

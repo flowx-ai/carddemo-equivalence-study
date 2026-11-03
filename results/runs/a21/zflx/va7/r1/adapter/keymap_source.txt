@@ -1,0 +1,4 @@
+Read from runs/a21/zflx/va7/r1/exec/workflow_ce2cd235-6a97-49ea-b91a-058a604f7165.md (and the build's own README/register) before execution; no output opened.
+- START (README 'Input', script lines 97-157): businessDate, batchId, and dalytranLines/acctdataLines/cardxrefLines/tcatbalLines = 'each line of <file>.dat' as a JSON list of strings. Map: contract file -> build key, with the A21 opt-in '_lines' (adapter_posttran.py files: the same padded records as a list of lines, no value changed; notebook §64 addendum). batchId left unset.
+- END payload {runSummary, posttran_transact, posttran_dalyrejs, posttran_acctdata, posttran_tcatbal} (README 'Output'): contract names, no decode.json
+- MODE files

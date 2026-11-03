@@ -1,0 +1,55 @@
+{
+ "summary": {
+  "records_union": 457,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 1,
+  "flags_unneeded": 1,
+  "volatile_masked": {}
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 265,
+   "candidate": 265,
+   "equal_strict": 265,
+   "equal_business": 265,
+   "union": 265
+  },
+  "posttran_dalyrejs": {
+   "golden": 42,
+   "candidate": 42,
+   "equal_strict": 42,
+   "equal_business": 42,
+   "union": 42
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "posttran_tcatbal": {
+   "golden": 100,
+   "candidate": 100,
+   "equal_strict": 100,
+   "equal_business": 100,
+   "union": 100
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "runs/full/zflx/r3/builder/assumptions.md #B4",
+   "note": "several reject reasons: the last check wins (103 over 102)",
+   "origin": "register"
+  }
+ ]
+}

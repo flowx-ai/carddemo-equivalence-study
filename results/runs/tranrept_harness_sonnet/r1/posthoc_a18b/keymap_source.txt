@@ -1,0 +1,17 @@
+A18(b) post-hoc, TRANREPT harness Sonnet r1, first-attempt version <uuid> (WIP, branch
+ai/carddemo-daily-transaction-rep-968c40). Written and committed before execution; no output of this version opened.
+
+Workflow: DailyTransactionReport, resourceId <uuid> (the version's only workflow,
+exec/workflows.txt).
+
+Input map (adapter/map.json): Transform script reads input.files['transact.dat'|'cardxref.dat'|'trantype.dat'|
+'trancatg.dat'], input.startDate, input.endDate (exec/workflow_cebbec9f...md, Transform line "var f=input.files,
+start=input.startDate ..."). Same as the scored map (file mode).
+
+Output keymap (adapter/decode.json) {"_root":"files"}: the Package outputs script sets
+output={filesChecked:files, assumptionEntries}, with files = {'assumptions.md', tranrept_report}. The definition
+does not show an END output slice (exec/end_slices.md, exec/end_data_model.md: none). The scored version d5ebed04
+has the same definition text once node/resource ids are removed (def_compare.txt: 0 differing lines), and its END
+returned the bundle under "files" (LAB_NOTEBOOK §50, decode-root correction). The same root is therefore used here.
+If this version's END returns the bundle under another key, the result is reported as it decodes, and any
+correction is disclosed separately, never applied silently.

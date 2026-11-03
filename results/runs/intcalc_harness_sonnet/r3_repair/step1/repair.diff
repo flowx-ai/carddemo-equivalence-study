@@ -1,0 +1,4 @@
+deleted from script 'Transform': ||(nonempty&&!v.length)
+
+-function text(v,max,p,nonempty){if(typeof v!=='string'||v.length>max||(nonempty&&!v.length))fail(p+' requires '+(nonempty?'nonempty ':'')+'text of at most '+max+' characters');
++function text(v,max,p,nonempty){if(typeof v!=='string'||v.length>max)fail(p+' requires '+(nonempty?'nonempty ':'')+'text of at most '+max+' characters');

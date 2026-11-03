@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "records_union": 450,
+  "equivalence_strict": 1.0,
+  "equivalence_business": 1.0,
+  "divergent_records": 0,
+  "silent_records": 0,
+  "flagged_records": 0,
+  "rules_silent": [],
+  "rules_flagged": [],
+  "flags_raised": 20,
+  "flags_unneeded": 20,
+  "volatile_masked": {
+   "posttran_transact.proc_ts": 262
+  }
+ },
+ "outputs": {
+  "posttran_transact": {
+   "golden": 262,
+   "candidate": 262,
+   "equal_strict": 262,
+   "equal_business": 262,
+   "union": 262
+  },
+  "posttran_dalyrejs": {
+   "golden": 38,
+   "candidate": 38,
+   "equal_strict": 38,
+   "equal_business": 38,
+   "union": 38
+  },
+  "posttran_acctdata": {
+   "golden": 50,
+   "candidate": 50,
+   "equal_strict": 50,
+   "equal_business": 50,
+   "union": 50
+  },
+  "posttran_tcatbal": {
+   "golden": 100,
+   "candidate": 100,
+   "equal_strict": 100,
+   "equal_business": 100,
+   "union": 100
+  }
+ },
+ "by_rule": {},
+ "divergences": [],
+ "unneeded_flags": [
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet/02-processes/process-daily-transaction-posting.md",
+   "line": 63,
+   "note": "BR-04 DECISION: preserve legacy 102/103 overwrite order, or record both reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-PRECEDENCE",
+   "source": "builds/inputs/posttran-sonnet/10-acceptance-criteria/acceptance-criteria-daily-transaction-posting.md",
+   "line": 62,
+   "note": "DECISION: keep or collect all reject reasons",
+   "origin": "wiki"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 48,
+   "note": "file encoding and physical layout inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 48,
+   "note": "file encoding and physical layout inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 49,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 49,
+   "note": "transaction offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-100",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 50,
+   "note": "account, xref and category offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-102",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 50,
+   "note": "account, xref and category offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 50,
+   "note": "account, xref and category offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 50,
+   "note": "account, xref and category offsets inferred",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 51,
+   "note": "overpunch conventions not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 51,
+   "note": "overpunch conventions not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 51,
+   "note": "overpunch conventions not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 51,
+   "note": "overpunch conventions not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 52,
+   "note": "category balance key type not marked",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 53,
+   "note": "record id preserved, wiki unresolved",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-COPY",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 54,
+   "note": "timestamp format, timezone unstated",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-WRITE",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 56,
+   "note": "malformed input, no reason code given",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-BAL",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 58,
+   "note": "duplicate master key, not specified",
+   "origin": "build"
+  },
+  {
+   "rule": "R-POST-TCAT",
+   "source": "runs/a30/a18a/posttran_harness_sonnet/r1/exec/workflow_17188cad-6f52-4559-8791-e10e8567df59.md",
+   "line": 58,
+   "note": "duplicate master key, not specified",
+   "origin": "build"
+  }
+ ]
+}

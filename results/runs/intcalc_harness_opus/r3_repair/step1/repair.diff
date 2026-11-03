@@ -1,0 +1,4 @@
+deleted from script 'ComputeInterest': throw new Error('Duplicate disclosure group')
+
+-if(rates[k]!==undefined)throw new Error('Duplicate disclosure group');
++if(rates[k]!==undefined);

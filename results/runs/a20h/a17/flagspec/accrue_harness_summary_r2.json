@@ -1,0 +1,88 @@
+{
+ "workflow": "<uuid>",
+ "map": {
+  "acctdata": "ledgacc",
+  "tcatbal": "balcat",
+  "discgrp": "rategrp",
+  "cardxref": "cardlink",
+  "intcalc_parm": "accrueParameter",
+  "business_date": "businessDate",
+  "_wrap": {
+   "fileContents": [
+    "acctdata",
+    "tcatbal",
+    "discgrp",
+    "cardxref"
+   ]
+  }
+ },
+ "decode": {
+  "_root": "result",
+  "intcalc_systran": "accrueSystxn",
+  "intcalc_acctdata": "accrueLedgacc"
+ },
+ "source": "Files mode: Calculate interest (line 97, 99) reads input.fileContents.{ledgacc,balcat,rategrp,cardlink} as text (required) and input.businessDate / input.accrueParameter (defaults 2022-07-18 / 2022071800); the five chain files are ignored (line 79). Format outputs (line 137): output={result:{accrueSystxn, accrueLedgacc, assumptionsMd, assumptions, issues, status}}. Flags: fact() register lines 61-95; a flag when its wikiBasis says the wiki leaves the point open.",
+ "wiki": [],
+ "build": [
+  [
+   "R-INT-APPLY",
+   61,
+   "annual-rate interpretation and formula not specified"
+  ],
+  [
+   "R-INT-TRUNC",
+   62,
+   "no rounding or truncation rule supplied"
+  ],
+  [
+   "R-INT-ZERO",
+   67,
+   "no amount-not-zero condition in the source"
+  ],
+  [
+   "R-INT-RATE",
+   69,
+   "missing STANDARD rates and unusable-account handling not specified"
+  ],
+  [
+   "R-INT-CYC",
+   70,
+   "no no-category-balance rule supplied"
+  ],
+  [
+   "R-INT-RATE",
+   75,
+   "duplicate-key precedence and malformed-rate fallback not specified"
+  ],
+  [
+   "R-INT-TXID",
+   84,
+   "no reference-generation or ordering algorithm"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   85,
+   "transaction source an assumed convention"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   86,
+   "no description literal supplied"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   87,
+   "card selection not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   88,
+   "timestamp selection not specified"
+  ],
+  [
+   "R-INT-TXFORMAT",
+   89,
+   "absent-merchant representation not specified"
+  ]
+ ]
+}
